@@ -1,0 +1,941 @@
+..............E....EEE...E....E.E..E.E.EE........EEEE....E..EE....E.EE.........E............E..E.....E..E..E.E......E.E...E....E.E.E........EE....EEE.E...........EE...E......E..E...E...E.EEEEEE.EE...........E
+======================================================================
+ERROR: test_car_interfaces_014_HYUNDAI_TUCSON_2019 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_014_HYUNDAI_TUCSON_2019)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_019_HYUNDAI_IONIQ_PLUG_IN_HYBRID_2019 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_019_HYUNDAI_IONIQ_PLUG_IN_HYBRID_2019)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_020_GENESIS_GV80_2023 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_020_GENESIS_GV80_2023)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 63, in test_car_interfaces
+    car_interface.update(CC, [])
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 206, in update
+    ret = self._update(c)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\interface.py", line 304, in _update
+    ret = self.CS.update(self.cp, self.cp_cam)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 58, in update
+    return self.update_canfd(cp, cp_cam)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 206, in update_canfd
+    self.clu_Vanz = cp.vl["CLU11"]["CF_Clu_Vanz"] + cp.vl["CLU11"]["CF_Clu_VanzDecimal"]
+                    ~~~~~^^^^^^^^^
+KeyError: 'CLU11'
+
+======================================================================
+ERROR: test_car_interfaces_021_KIA_SPORTAGE_5TH_GEN (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_021_KIA_SPORTAGE_5TH_GEN)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 77, in __init__
+    self.cp_cam = self.CS.get_cam_can_parser(CP)
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 369, in get_cam_can_parser
+    return CarState.get_cam_can_parser_canfd(CP)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 515, in get_cam_can_parser_canfd
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, CanBus(CP).CAM)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 192, in __init__
+    if msg.get_signal_by_name(s) is None if hasattr(msg, "get_signal_by_name") else s not in [x.name for x in msg.signals]:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\cantools\database\can\message.py", line 1215, in get_signal_by_name
+    return self._signal_dict[name]
+           ~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'CRUISE_INACTIVE'
+
+======================================================================
+ERROR: test_car_interfaces_025_KIA_FORTE_E_2018_GT_2021 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_025_KIA_FORTE_E_2018_GT_2021)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_030_HYUNDAI_ELANTRA_2021 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_030_HYUNDAI_ELANTRA_2021)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_032_HYUNDAI_VELOSTER_2019 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_032_HYUNDAI_VELOSTER_2019)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_035_HYUNDAI_ELANTRA_2017 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_035_HYUNDAI_ELANTRA_2017)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_037_GENESIS_G70_2018 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_037_GENESIS_G70_2018)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_039_HYUNDAI_KONA_ELECTRIC_2022 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_039_HYUNDAI_KONA_ELECTRIC_2022)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_040_HYUNDAI_IONIQ_PHEV_2020 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_040_HYUNDAI_IONIQ_PHEV_2020)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_049_GENESIS_GV60_ELECTRIC_1ST_GEN (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_049_GENESIS_GV60_ELECTRIC_1ST_GEN)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 77, in __init__
+    self.cp_cam = self.CS.get_cam_can_parser(CP)
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 369, in get_cam_can_parser
+    return CarState.get_cam_can_parser_canfd(CP)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 515, in get_cam_can_parser_canfd
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, CanBus(CP).CAM)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 192, in __init__
+    if msg.get_signal_by_name(s) is None if hasattr(msg, "get_signal_by_name") else s not in [x.name for x in msg.signals]:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\cantools\database\can\message.py", line 1215, in get_signal_by_name
+    return self._signal_dict[name]
+           ~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'CRUISE_INACTIVE'
+
+======================================================================
+ERROR: test_car_interfaces_050_HYUNDAI_SONATA_HYBRID_2021 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_050_HYUNDAI_SONATA_HYBRID_2021)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_051_HYUNDAI_ELANTRA_HYBRID_2021 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_051_HYUNDAI_ELANTRA_HYBRID_2021)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_052_KIA_SORENTO_GT_LINE_2018 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_052_KIA_SORENTO_GT_LINE_2018)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_057_HYUNDAI_KONA_2020 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_057_HYUNDAI_KONA_2020)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_060_HYUNDAI_PALISADE_2020 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_060_HYUNDAI_PALISADE_2020)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_061_HYUNDAI_IONIQ_ELECTRIC_LIMITED_2019 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_061_HYUNDAI_IONIQ_ELECTRIC_LIMITED_2019)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_066_KIA_NIRO_HYBRID_2021 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_066_KIA_NIRO_HYBRID_2021)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_068_KIA_SORENTO_4TH_GEN (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_068_KIA_SORENTO_4TH_GEN)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 63, in test_car_interfaces
+    car_interface.update(CC, [])
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 206, in update
+    ret = self._update(c)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\interface.py", line 304, in _update
+    ret = self.CS.update(self.cp, self.cp_cam)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 58, in update
+    return self.update_canfd(cp, cp_cam)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 206, in update_canfd
+    self.clu_Vanz = cp.vl["CLU11"]["CF_Clu_Vanz"] + cp.vl["CLU11"]["CF_Clu_VanzDecimal"]
+                    ~~~~~^^^^^^^^^
+KeyError: 'CLU11'
+
+======================================================================
+ERROR: test_car_interfaces_069_KIA_NIRO_HYBRID_2ND_GEN (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_069_KIA_NIRO_HYBRID_2ND_GEN)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 77, in __init__
+    self.cp_cam = self.CS.get_cam_can_parser(CP)
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 369, in get_cam_can_parser
+    return CarState.get_cam_can_parser_canfd(CP)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 515, in get_cam_can_parser_canfd
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, CanBus(CP).CAM)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 192, in __init__
+    if msg.get_signal_by_name(s) is None if hasattr(msg, "get_signal_by_name") else s not in [x.name for x in msg.signals]:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\cantools\database\can\message.py", line 1215, in get_signal_by_name
+    return self._signal_dict[name]
+           ~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'CRUISE_INACTIVE'
+
+======================================================================
+ERROR: test_car_interfaces_079_HYUNDAI_SANTA_FE_PlUG_IN_HYBRID_2022 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_079_HYUNDAI_SANTA_FE_PlUG_IN_HYBRID_2022)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_092_HYUNDAI_TUCSON_HYBRID_4TH_GEN (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_092_HYUNDAI_TUCSON_HYBRID_4TH_GEN)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 77, in __init__
+    self.cp_cam = self.CS.get_cam_can_parser(CP)
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 369, in get_cam_can_parser
+    return CarState.get_cam_can_parser_canfd(CP)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 515, in get_cam_can_parser_canfd
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, CanBus(CP).CAM)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 192, in __init__
+    if msg.get_signal_by_name(s) is None if hasattr(msg, "get_signal_by_name") else s not in [x.name for x in msg.signals]:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\cantools\database\can\message.py", line 1215, in get_signal_by_name
+    return self._signal_dict[name]
+           ~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'CRUISE_INACTIVE'
+
+======================================================================
+ERROR: test_car_interfaces_095_KIA_K5_2021 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_095_KIA_K5_2021)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_101_HYUNDAI_SANTA_FE_HYBRID_2022 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_101_HYUNDAI_SANTA_FE_HYBRID_2022)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_104_KIA_OPTIMA_HYBRID_2017_SPORTS_2019 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_104_KIA_OPTIMA_HYBRID_2017_SPORTS_2019)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'E_EMS11' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_107_KIA_OPTIMA_4TH_GEN (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_107_KIA_OPTIMA_4TH_GEN)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_109_KIA_EV6_2022 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_109_KIA_EV6_2022)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 77, in __init__
+    self.cp_cam = self.CS.get_cam_can_parser(CP)
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 369, in get_cam_can_parser
+    return CarState.get_cam_can_parser_canfd(CP)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 515, in get_cam_can_parser_canfd
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, CanBus(CP).CAM)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 192, in __init__
+    if msg.get_signal_by_name(s) is None if hasattr(msg, "get_signal_by_name") else s not in [x.name for x in msg.signals]:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\cantools\database\can\message.py", line 1215, in get_signal_by_name
+    return self._signal_dict[name]
+           ~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'CRUISE_INACTIVE'
+
+======================================================================
+ERROR: test_car_interfaces_116_HYUNDAI_SONATA_2020 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_116_HYUNDAI_SONATA_2020)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_118_KIA_SORENTO_PLUG_IN_HYBRID_4TH_GEN (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_118_KIA_SORENTO_PLUG_IN_HYBRID_4TH_GEN)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 63, in test_car_interfaces
+    car_interface.update(CC, [])
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 206, in update
+    ret = self._update(c)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\interface.py", line 304, in _update
+    ret = self.CS.update(self.cp, self.cp_cam)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 58, in update
+    return self.update_canfd(cp, cp_cam)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 206, in update_canfd
+    self.clu_Vanz = cp.vl["CLU11"]["CF_Clu_Vanz"] + cp.vl["CLU11"]["CF_Clu_VanzDecimal"]
+                    ~~~~~^^^^^^^^^
+KeyError: 'CLU11'
+
+======================================================================
+ERROR: test_car_interfaces_122_KIA_NIRO_EV_2020 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_122_KIA_NIRO_EV_2020)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_127_HYUNDAI_IONIQ_HYBRID_2020_2022 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_127_HYUNDAI_IONIQ_HYBRID_2020_2022)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_129_HYUNDAI_IONIQ_HYBRID_2017_2019 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_129_HYUNDAI_IONIQ_HYBRID_2017_2019)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_131_KIA_STINGER_2022 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_131_KIA_STINGER_2022)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_140_GENESIS_G80_2017 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_140_GENESIS_G80_2017)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_141_GENESIS_G90_2017 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_141_GENESIS_G90_2017)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_146_KIA_SPORTAGE_HYBRID_5TH_GEN (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_146_KIA_SPORTAGE_HYBRID_5TH_GEN)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 77, in __init__
+    self.cp_cam = self.CS.get_cam_can_parser(CP)
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 369, in get_cam_can_parser
+    return CarState.get_cam_can_parser_canfd(CP)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 515, in get_cam_can_parser_canfd
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, CanBus(CP).CAM)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 192, in __init__
+    if msg.get_signal_by_name(s) is None if hasattr(msg, "get_signal_by_name") else s not in [x.name for x in msg.signals]:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\cantools\database\can\message.py", line 1215, in get_signal_by_name
+    return self._signal_dict[name]
+           ~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'CRUISE_INACTIVE'
+
+======================================================================
+ERROR: test_car_interfaces_147_HYUNDAI_TUCSON_4TH_GEN (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_147_HYUNDAI_TUCSON_4TH_GEN)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 77, in __init__
+    self.cp_cam = self.CS.get_cam_can_parser(CP)
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 369, in get_cam_can_parser
+    return CarState.get_cam_can_parser_canfd(CP)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 515, in get_cam_can_parser_canfd
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, CanBus(CP).CAM)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 192, in __init__
+    if msg.get_signal_by_name(s) is None if hasattr(msg, "get_signal_by_name") else s not in [x.name for x in msg.signals]:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\cantools\database\can\message.py", line 1215, in get_signal_by_name
+    return self._signal_dict[name]
+           ~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'CRUISE_INACTIVE'
+
+======================================================================
+ERROR: test_car_interfaces_148_KIA_CEED_INTRO_ED_2019 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_148_KIA_CEED_INTRO_ED_2019)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_150_HYUNDAI_KONA_ELECTRIC_2019 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_150_HYUNDAI_KONA_ELECTRIC_2019)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_162_HYUNDAI_IONIQ_ELECTRIC_2020 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_162_HYUNDAI_IONIQ_ELECTRIC_2020)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_163_KIA_NIRO_HYBRID_2019 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_163_KIA_NIRO_HYBRID_2019)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_167_HYUNDAI_IONIQ_5_2022 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_167_HYUNDAI_IONIQ_5_2022)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 77, in __init__
+    self.cp_cam = self.CS.get_cam_can_parser(CP)
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 369, in get_cam_can_parser
+    return CarState.get_cam_can_parser_canfd(CP)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 515, in get_cam_can_parser_canfd
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, CanBus(CP).CAM)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 192, in __init__
+    if msg.get_signal_by_name(s) is None if hasattr(msg, "get_signal_by_name") else s not in [x.name for x in msg.signals]:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\cantools\database\can\message.py", line 1215, in get_signal_by_name
+    return self._signal_dict[name]
+           ~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'CRUISE_INACTIVE'
+
+======================================================================
+ERROR: test_car_interfaces_174_KIA_STINGER_GT2_2018 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_174_KIA_STINGER_GT2_2018)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_177_HYUNDAI_SONATA_2019 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_177_HYUNDAI_SONATA_2019)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_181_KIA_NIRO_EV_2ND_GEN (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_181_KIA_NIRO_EV_2ND_GEN)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 77, in __init__
+    self.cp_cam = self.CS.get_cam_can_parser(CP)
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 369, in get_cam_can_parser
+    return CarState.get_cam_can_parser_canfd(CP)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 515, in get_cam_can_parser_canfd
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, CanBus(CP).CAM)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 192, in __init__
+    if msg.get_signal_by_name(s) is None if hasattr(msg, "get_signal_by_name") else s not in [x.name for x in msg.signals]:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\cantools\database\can\message.py", line 1215, in get_signal_by_name
+    return self._signal_dict[name]
+           ~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'CRUISE_INACTIVE'
+
+======================================================================
+ERROR: test_car_interfaces_185_KIA_SELTOS_2021 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_185_KIA_SELTOS_2021)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_187_GENESIS_G70_2020 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_187_GENESIS_G70_2020)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_188_GENESIS_GV70_1ST_GEN (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_188_GENESIS_GV70_1ST_GEN)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 63, in test_car_interfaces
+    car_interface.update(CC, [])
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 206, in update
+    ret = self._update(c)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\interface.py", line 304, in _update
+    ret = self.CS.update(self.cp, self.cp_cam)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 58, in update
+    return self.update_canfd(cp, cp_cam)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 206, in update_canfd
+    self.clu_Vanz = cp.vl["CLU11"]["CF_Clu_Vanz"] + cp.vl["CLU11"]["CF_Clu_VanzDecimal"]
+                    ~~~~~^^^^^^^^^
+KeyError: 'CLU11'
+
+======================================================================
+ERROR: test_car_interfaces_189_HYUNDAI_KONA_HYBRID_2020 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_189_HYUNDAI_KONA_HYBRID_2020)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_190_HYUNDAI_GENESIS_2015_2016 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_190_HYUNDAI_GENESIS_2015_2016)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_191_HYUNDAI_SANTA_FE_2019 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_191_HYUNDAI_SANTA_FE_2019)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_192_KIA_K5_HYBRID_2020 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_192_KIA_K5_HYBRID_2020)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 64, in test_car_interfaces
+    car_interface.apply(CC, sm, 0)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: CarInterface.apply() missing 2 required positional arguments: 'vcruise' and 'now_nanos'
+
+======================================================================
+ERROR: test_car_interfaces_194_HYUNDAI_SANTA_FE_2022 (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_194_HYUNDAI_SANTA_FE_2022)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+======================================================================
+ERROR: test_car_interfaces_195_HYUNDAI_SANTA_CRUZ_1ST_GEN (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_195_HYUNDAI_SANTA_CRUZ_1ST_GEN)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 77, in __init__
+    self.cp_cam = self.CS.get_cam_can_parser(CP)
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 369, in get_cam_can_parser
+    return CarState.get_cam_can_parser_canfd(CP)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 515, in get_cam_can_parser_canfd
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, CanBus(CP).CAM)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 192, in __init__
+    if msg.get_signal_by_name(s) is None if hasattr(msg, "get_signal_by_name") else s not in [x.name for x in msg.signals]:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\cantools\database\can\message.py", line 1215, in get_signal_by_name
+    return self._signal_dict[name]
+           ~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'CRUISE_INACTIVE'
+
+======================================================================
+ERROR: test_car_interfaces_207_KIA_OPTIMA_4TH_GEN_FACELIFT (selfdrive.car.tests.test_car_interfaces.TestCarInterfaces.test_car_interfaces_207_KIA_OPTIMA_4TH_GEN_FACELIFT)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\parameterized\parameterized.py", line 620, in standalone_func
+    return func(*(a + p.args), **p.kwargs, **kw)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_car_interfaces.py", line 29, in test_car_interfaces
+    car_interface = CarInterface(car_params, CarController, CarState)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\interfaces.py", line 76, in __init__
+    self.cp = self.CS.get_can_parser(CP)
+              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\hyundai\carstate.py", line 364, in get_can_parser
+    return CANParser(DBC[CP.carFingerprint]["pt"], signals, checks, 0)
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\tests_windows\fp_shims.py", line 196, in __init__
+    raise RuntimeError(f"Message {m!r} is used but has no check (enforce_checks)")
+RuntimeError: Message 'ELECT_GEAR' is used but has no check (enforce_checks)
+
+----------------------------------------------------------------------
+Ran 208 tests in 14.879s
+
+FAILED (errors=56)

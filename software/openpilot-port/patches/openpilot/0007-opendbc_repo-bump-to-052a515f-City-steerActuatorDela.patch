@@ -1,0 +1,21 @@
+From 89df27131576b165b02a9725ca7e93463c05d281 Mon Sep 17 00:00:00 2001
+From: Bruno Costa <bruno.costa@cat.com>
+Date: Tue, 27 Oct 2026 10:58:36 -0300
+Subject: [PATCH 07/10] opendbc_repo: bump to 052a515f (City steerActuatorDelay
+ fix, City ki 0.3)
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+---
+ opendbc_repo | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/opendbc_repo b/opendbc_repo
+index 07add98b1..052a515f4 160000
+--- a/opendbc_repo
++++ b/opendbc_repo
+@@ -1 +1 @@
+-Subproject commit 07add98b13fcb363307733f7ffb7da31e7535cd6
++Subproject commit 052a515f44b56df5eac4d6e809c0d045f675b759
+-- 
+2.55.0.windows.3
+

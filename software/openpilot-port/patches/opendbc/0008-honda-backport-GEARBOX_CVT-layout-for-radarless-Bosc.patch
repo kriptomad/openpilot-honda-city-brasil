@@ -1,0 +1,345 @@
+From b4125fe6a6d7b109146994cf94ee2967ac80d718 Mon Sep 17 00:00:00 2001
+From: Bruno Costa <bruno.costa@cat.com>
+Date: Tue, 27 Oct 2026 11:48:41 -0300
+Subject: [PATCH 8/9] honda: backport GEARBOX_CVT layout for radarless Bosch
+ (audit2 D-1)
+
+Replace the BO_ 401 GEARBOX signals in honda_civic_ex_2022_can.dbc with the
+upstream _gearbox_common.dbc GEARBOX_CVT layout (upstream opendbc 9ef0b1fb),
+which is what the Honda City 7G was merged against upstream:
+
+  GEAR_SHIFTER 44|5@0+ in byte 5, VAL_ 1 P 2 R 3 N 4 D 7 L 10 S
+  (was 5|6@0+ in byte 0 with VAL_ 32 L 16 S 8 D 4 N 2 R 1 P)
+
+Both layouts decode D identically (6116/6116 frames of the City route), but
+diverge for S and L. Message name stays GEARBOX, so carstate.py is unchanged.
+Affects HONDA_CITY_7G, HONDA_HRV_3G and HONDA_CIVIC_2022 exactly as upstream.
+
+Also normalise pyproject.toml back to LF (5f439d78 was committed with CRLF
+by a Windows clone; only the ruff pin remains as a real change).
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+---
+ .../honda/honda_civic_ex_2022_can.dbc         |  23 +-
+ pyproject.toml                                | 266 +++++++++---------
+ 2 files changed, 148 insertions(+), 141 deletions(-)
+
+diff --git a/opendbc/dbc/generator/honda/honda_civic_ex_2022_can.dbc b/opendbc/dbc/generator/honda/honda_civic_ex_2022_can.dbc
+index bbe3eadb..9cd39a47 100644
+--- a/opendbc/dbc/generator/honda/honda_civic_ex_2022_can.dbc
++++ b/opendbc/dbc/generator/honda/honda_civic_ex_2022_can.dbc
+@@ -3,13 +3,19 @@ CM_ "IMPORT _bosch_2018.dbc";
+ CM_ "IMPORT _steering_sensors_a.dbc";
+ 
+ BO_ 401 GEARBOX: 8 PCM
+- SG_ GEAR_SHIFTER : 5|6@0+ (1,0) [0|63] "" EON
+- SG_ BOH : 45|6@0+ (1,0) [0|63] "" XXX
+- SG_ GEAR2 : 31|8@0+ (1,0) [0|1] "" XXX
+- SG_ GEAR : 39|8@0+ (1,0) [0|255] "" XXX
+- SG_ ZEROS_BOH : 47|2@0+ (1,0) [0|3] "" XXX
+- SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
++ SG_ SELECTED_P : 0|1@0+ (1,0) [0|1] "" XXX
++ SG_ SELECTED_R : 1|1@0+ (1,0) [0|1] "" XXX
++ SG_ SELECTED_N : 2|1@0+ (1,0) [0|1] "" XXX
++ SG_ SELECTED_D : 3|1@0+ (1,0) [0|1] "" XXX
++ SG_ FORWARD_DRIVING_MODE : 23|1@0+ (1,0) [0|1] "" XXX
++ SG_ CVT_UNKNOWN_1 : 31|8@0+ (1,0) [0|255] "" XXX
++ SG_ CVT_UNKNOWN_2 : 39|8@0+ (1,0) [0|255] "" XXX
++ SG_ GEAR_SHIFTER : 44|5@0+ (1,0) [0|31] "" XXX
++ SG_ SHIFTER_POSITION_VALID : 45|1@0+ (1,0) [0|1] "" XXX
++ SG_ NOT_FORWARD_GEAR : 48|1@0+ (1,0) [0|1] "" XXX
++ SG_ CVT_UNKNOWN_3 : 53|2@0+ (1,0) [0|3] "" XXX
+  SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" EON
++ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ 
+ BO_ 419 GEARBOX_ALT: 8 PCM
+  SG_ GEAR : 7|8@0+ (1,0) [0|255] "" EON
+@@ -97,11 +103,12 @@ BO_ 254913108 LKAS_HUD_2: 8 ADAS
+  SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" XXX
+ 
+ CM_ 446 "If exists, describes cruise faults and what the PCM uses for brake press detection.";
++CM_ SG_ 401 CVT_UNKNOWN_1 "Probably measured/actual CVT ratio";
++CM_ SG_ 401 CVT_UNKNOWN_2 "Probably target/commanded CVT ratio";
+ CM_ SG_ 456 IDLESTOP_ALLOW "allows car to turn off engine at a standstill";
+ CM_ SG_ 456 STANDSTILL "set to 1 when camera requests -4.0 m/s^2";
+ CM_ SG_ 495 SPEED_LIMIT "Defaults to 0xFF if no speed limit found";
+ 
+-VAL_ 401 GEAR_SHIFTER 32 "L" 16 "S" 8 "D" 4 "N" 2 "R" 1 "P";
+-VAL_ 401 GEAR 7 "L" 10 "S" 4 "D" 3 "N" 2 "R" 1 "P";
++VAL_ 401 GEAR_SHIFTER 1 "P" 2 "R" 3 "N" 4 "D" 7 "L" 10 "S";
+ VAL_ 419 GEAR_SHIFTER  32 "D" 16 "N" 8 "R" 4 "P" 0 "B" ;
+ VAL_ 477 GEAR_MT 14 "reverse" 6 "6th" 5 "5th" 4 "4th" 3 "3rd" 2 "2nd" 1 "1st" 0 "Clutch";
+diff --git a/pyproject.toml b/pyproject.toml
+index c68f3dc3..cc286ec2 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -1,133 +1,133 @@
+-[project]
+-name = "opendbc"
+-version = "0.2.1"
+-description = "CAN bus databases and tools"
+-license = { file = "LICENSE" }
+-authors = [{ name = "Vehicle Researcher", email = "user@comma.ai" }]
+-readme = "README.md"
+-requires-python = ">=3.9,<3.13"  # pycapnp doesn't work with 3.13
+-
+-urls = { "homepage" = "https://github.com/commaai/opendbc" }
+-
+-# setuptools includes distutils which is needed by Cython.
+-# distutils was removed in python3.12 from the standard library.
+-dependencies = [
+-  "scons",
+-  "numpy",
+-  "Cython",
+-  "crcmod",
+-  "tqdm",
+-  "pycapnp",
+-  "setuptools",
+-  "pycryptodome",
+-]
+-
+-[project.optional-dependencies]
+-testing = [
+-  "cffi",
+-  "gcovr",
+-  "pytest",
+-  "pytest-coverage",
+-  "pytest-mock",
+-  "pytest-randomly",
+-  "pytest-xdist",
+-  "pytest-subtests",
+-  "hypothesis==6.47.*",
+-  "parameterized>=0.8,<0.9",
+-
+-  # static analysis
+-  "ruff==0.11.13",  # CI-only pin: ruff of June 2025 (newer releases add rules the v0.9.9 code never saw)
+-  "ty",
+-  "lefthook",
+-  "cpplint",
+-  "cython-lint",
+-  "codespell",
+-]
+-docs = [
+-  "Jinja2",
+-  "natsort",
+-]
+-examples = [
+-  "inputs",
+-  "matplotlib",
+-]
+-
+-[build-system]
+-requires = ["setuptools"]
+-build-backend = "setuptools.build_meta"
+-
+-[tool.pytest.ini_options]
+-addopts = "-Werror --strict-config --strict-markers --durations=10 -n auto"
+-python_files = "test_*.py"
+-testpaths = [
+-  "opendbc"
+-]
+-
+-[tool.codespell]
+-quiet-level = 3
+-ignore-words-list = "alo,ba,bu,deque,hda,grey,arange"
+-builtin = "clear,rare,informal,code,names,en-GB_to_en-US"
+-check-hidden = true
+-
+-[tool.cython-lint]
+-max-line-length = 120
+-ignore = ["E111", "E114"]
+-
+-[tool.mypy]
+-# helpful warnings
+-warn_redundant_casts=true
+-warn_unreachable=true
+-warn_unused_ignores=true
+-
+-# restrict dynamic typing
+-warn_return_any=true
+-
+-# allow implicit optionals for default args
+-implicit_optional = true
+-
+-explicit_package_bases=true
+-
+-# https://beta.ruff.rs/docs/configuration/#using-pyprojecttoml
+-[tool.ruff]
+-line-length = 160
+-indent-width = 2
+-target-version="py311"
+-
+-[tool.ruff.lint]
+-select = [
+-  "E", "F", "W", "PIE", "C4", "ISC", "A", "B",
+-  "NPY", # numpy
+-  "UP",  # pyupgrade
+-  "TRY203", "TRY400", "TRY401", # try/excepts
+-  "RUF008", "RUF100",
+-  "TID251",
+-  "PLR1704",
+-  "INP001",
+-]
+-ignore = [
+-  "W292",
+-  "E741",
+-  "E402",
+-  "C408",
+-  "ISC003",
+-  "B027",
+-  "B024",
+-  "UP031",
+-  "NPY002",  # new numpy random syntax is worse
+-  "C420",
+-]
+-flake8-implicit-str-concat.allow-multiline=false
+-
+-[tool.ruff.lint.per-file-ignores]
+-"site_scons/*" = ["ALL"]
+-
+-[tool.ruff.lint.flake8-tidy-imports.banned-api]
+-"pytest.main".msg = "pytest.main requires special handling that is easy to mess up!"
+-# TODO: re-enable when all tests are converted to pytest
+-#"unittest".msg = "Use pytest"
+-
+-[tool.setuptools]
+-include-package-data = true
+-
+-[tool.setuptools.package-data]
+-"opendbc.safety" = ["*.h", "board/*.h", "board/drivers/*.h", "modes/*.h"]
++[project]
++name = "opendbc"
++version = "0.2.1"
++description = "CAN bus databases and tools"
++license = { file = "LICENSE" }
++authors = [{ name = "Vehicle Researcher", email = "user@comma.ai" }]
++readme = "README.md"
++requires-python = ">=3.9,<3.13"  # pycapnp doesn't work with 3.13
++
++urls = { "homepage" = "https://github.com/commaai/opendbc" }
++
++# setuptools includes distutils which is needed by Cython.
++# distutils was removed in python3.12 from the standard library.
++dependencies = [
++  "scons",
++  "numpy",
++  "Cython",
++  "crcmod",
++  "tqdm",
++  "pycapnp",
++  "setuptools",
++  "pycryptodome",
++]
++
++[project.optional-dependencies]
++testing = [
++  "cffi",
++  "gcovr",
++  "pytest",
++  "pytest-coverage",
++  "pytest-mock",
++  "pytest-randomly",
++  "pytest-xdist",
++  "pytest-subtests",
++  "hypothesis==6.47.*",
++  "parameterized>=0.8,<0.9",
++
++  # static analysis
++  "ruff==0.11.13",  # CI-only pin: ruff of June 2025 (newer releases add rules the v0.9.9 code never saw)
++  "ty",
++  "lefthook",
++  "cpplint",
++  "cython-lint",
++  "codespell",
++]
++docs = [
++  "Jinja2",
++  "natsort",
++]
++examples = [
++  "inputs",
++  "matplotlib",
++]
++
++[build-system]
++requires = ["setuptools"]
++build-backend = "setuptools.build_meta"
++
++[tool.pytest.ini_options]
++addopts = "-Werror --strict-config --strict-markers --durations=10 -n auto"
++python_files = "test_*.py"
++testpaths = [
++  "opendbc"
++]
++
++[tool.codespell]
++quiet-level = 3
++ignore-words-list = "alo,ba,bu,deque,hda,grey,arange"
++builtin = "clear,rare,informal,code,names,en-GB_to_en-US"
++check-hidden = true
++
++[tool.cython-lint]
++max-line-length = 120
++ignore = ["E111", "E114"]
++
++[tool.mypy]
++# helpful warnings
++warn_redundant_casts=true
++warn_unreachable=true
++warn_unused_ignores=true
++
++# restrict dynamic typing
++warn_return_any=true
++
++# allow implicit optionals for default args
++implicit_optional = true
++
++explicit_package_bases=true
++
++# https://beta.ruff.rs/docs/configuration/#using-pyprojecttoml
++[tool.ruff]
++line-length = 160
++indent-width = 2
++target-version="py311"
++
++[tool.ruff.lint]
++select = [
++  "E", "F", "W", "PIE", "C4", "ISC", "A", "B",
++  "NPY", # numpy
++  "UP",  # pyupgrade
++  "TRY203", "TRY400", "TRY401", # try/excepts
++  "RUF008", "RUF100",
++  "TID251",
++  "PLR1704",
++  "INP001",
++]
++ignore = [
++  "W292",
++  "E741",
++  "E402",
++  "C408",
++  "ISC003",
++  "B027",
++  "B024",
++  "UP031",
++  "NPY002",  # new numpy random syntax is worse
++  "C420",
++]
++flake8-implicit-str-concat.allow-multiline=false
++
++[tool.ruff.lint.per-file-ignores]
++"site_scons/*" = ["ALL"]
++
++[tool.ruff.lint.flake8-tidy-imports.banned-api]
++"pytest.main".msg = "pytest.main requires special handling that is easy to mess up!"
++# TODO: re-enable when all tests are converted to pytest
++#"unittest".msg = "Use pytest"
++
++[tool.setuptools]
++include-package-data = true
++
++[tool.setuptools.package-data]
++"opendbc.safety" = ["*.h", "board/*.h", "board/drivers/*.h", "modes/*.h"]
+-- 
+2.55.0.windows.3
+

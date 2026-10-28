@@ -1,0 +1,41 @@
+From 052a515f44b56df5eac4d6e809c0d045f675b759 Mon Sep 17 00:00:00 2001
+From: Bruno Costa <bruno.costa@cat.com>
+Date: Tue, 27 Oct 2026 10:55:15 -0300
+Subject: [PATCH 7/9] Honda City 7G: torque tune ki 0.3 (City-only deviation
+ from upstream fb5ac6d3)
+
+Upstream fb5ac6d3 ("Torque control defaults: more integrator") raised the
+default torque ki in CarInterfaceBase.configure_torque_tune from 0.1 to 0.3
+for every platform. The City was added upstream after that change, so its
+upstream carParams (see the CI route 56b2cf1dacdcd033/00000017--d24ffdb376)
+carry ki = 0.3.
+
+This is a deliberate deviation scoped to the City: the global default in
+opendbc/car/interfaces.py is left at the v0.9.9 value (0.1) so that no other
+platform on this branch is retuned, and ki = 0.3 is set explicitly in the
+HONDA_CITY_7G block of opendbc/car/honda/interface.py right after
+configure_torque_tune. The resulting City CarParams match the upstream route
+field by field (tools/carparams_compare.py: 80 equal, 2 explained diffs).
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+---
+ opendbc/car/honda/interface.py | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/opendbc/car/honda/interface.py b/opendbc/car/honda/interface.py
+index f837b3e9..b76a4cd3 100755
+--- a/opendbc/car/honda/interface.py
++++ b/opendbc/car/honda/interface.py
+@@ -145,6 +145,9 @@ class CarInterface(CarInterfaceBase):
+       ret.steerActuatorDelay = 0.15
+       ret.lateralParams.torqueBP, ret.lateralParams.torqueV = [[0, 2560], [0, 2560]]
+       CarInterfaceBase.configure_torque_tune(candidate, ret.lateralTuning)
++      # upstream fb5ac6d3 raised the global torque ki to 0.3 (City upstream carParams ki=0.3);
++      # applied per-platform here to avoid retuning other v0.9.9 cars
++      ret.lateralTuning.torque.ki = 0.3
+ 
+     elif candidate in (CAR.HONDA_CRV, CAR.HONDA_CRV_EU):
+       ret.lateralParams.torqueBP, ret.lateralParams.torqueV = [[0, 1000], [0, 1000]]  # TODO: determine if there is a dead zone at the top end
+-- 
+2.55.0.windows.3
+

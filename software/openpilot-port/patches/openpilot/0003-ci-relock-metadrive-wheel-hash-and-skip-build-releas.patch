@@ -1,0 +1,49 @@
+From 52f2611272d7e6b8be2f197bf10b270dbb76087f Mon Sep 17 00:00:00 2001
+From: Bruno Costa <bruno.costa@cat.com>
+Date: Tue, 27 Oct 2026 09:26:12 -0300
+Subject: [PATCH 03/10] ci: relock metadrive wheel hash and skip build release
+ on forks
+
+Backport of commaai/openpilot 4d53a26a0 ("relock after inplace metadrive
+update (#36256)"): the MetaDrive-minimal-0.4.2.4 wheel was re-uploaded
+in place, so the sha256 pinned in uv.lock no longer matches and every
+job that builds the CI docker image fails before running any test.
+metadrive is only in the optional "tools" extra (simulator); nothing on
+the device changes.
+
+Also skip the build_release job outside commaai/openpilot: it fetches
+the commaai-only __nightly ref and cannot succeed on a fork.
+---
+ .github/workflows/selfdrive_tests.yaml | 2 ++
+ uv.lock                                | 2 +-
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/.github/workflows/selfdrive_tests.yaml b/.github/workflows/selfdrive_tests.yaml
+index 8403bdd9c..be68d3802 100644
+--- a/.github/workflows/selfdrive_tests.yaml
++++ b/.github/workflows/selfdrive_tests.yaml
+@@ -32,6 +32,8 @@ env:
+ jobs:
+   build_release:
+     name: build release
++    # release/build_devel.sh fetches the commaai-only __nightly ref; skip on forks
++    if: github.repository == 'commaai/openpilot'
+     runs-on: ${{ 
+       (github.repository == 'commaai/openpilot') && 
+       ((github.event_name != 'pull_request') || 
+diff --git a/uv.lock b/uv.lock
+index 2f8cf6809..339f0cc30 100644
+--- a/uv.lock
++++ b/uv.lock
+@@ -986,7 +986,7 @@ dependencies = [
+     { name = "yapf" },
+ ]
+ wheels = [
+-    { url = "https://github.com/commaai/metadrive/releases/download/MetaDrive-minimal-0.4.2.4/metadrive_simulator-0.4.2.4-py3-none-any.whl", hash = "sha256:fbf0ea9be67e65cd45d38ff930e3d49f705dd76c9ddbd1e1482e3f87b61efcef" },
++    { url = "https://github.com/commaai/metadrive/releases/download/MetaDrive-minimal-0.4.2.4/metadrive_simulator-0.4.2.4-py3-none-any.whl", hash = "sha256:d0afaf3b005e35e14b929d5491d2d5b64562d0c1cd5093ba969fb63908670dd4" },
+ ]
+ 
+ [package.metadata]
+-- 
+2.55.0.windows.3
+

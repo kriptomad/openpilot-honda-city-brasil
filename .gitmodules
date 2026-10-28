@@ -1,0 +1,20 @@
+[submodule "firmware/panda-revive-f4"]
+	path = firmware/panda-revive-f4
+	url = https://github.com/kriptomad/panda.git
+	branch = revive-f4
+[submodule "firmware/panda-hybrid-h725"]
+	path = firmware/panda-hybrid-h725
+	url = https://github.com/kriptomad/panda.git
+	branch = hybrid-h725
+[submodule "software/openpilot-v0.9.9-city-g7"]
+	path = software/openpilot-v0.9.9-city-g7
+	url = https://github.com/kriptomad/openpilot.git
+	branch = v0.9.9-cityg7-blackpanda
+[submodule "software/opendbc-v0.9.9-city-g7"]
+	path = software/opendbc-v0.9.9-city-g7
+	url = https://github.com/kriptomad/opendbc.git
+	branch = firmwarecityg7-v0.9.9
+[submodule "software/flowpilot-city-g7"]
+	path = software/flowpilot-city-g7
+	url = https://github.com/kriptomad/flowpilot-city-g7.git
+	branch = flowpilot-city-g7-brazil

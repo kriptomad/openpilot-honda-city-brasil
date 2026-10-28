@@ -1,0 +1,45 @@
+From d42db0447abd95d311a578397cab1f1f436d686a Mon Sep 17 00:00:00 2001
+From: Bruno Costa <bruno.costa@cat.com>
+Date: Tue, 27 Oct 2026 10:34:22 -0300
+Subject: [PATCH 6/9] Honda: set steerActuatorDelay before per-car tuning
+ (backport of 28a16218)
+
+Upstream commit 28a16218 "Honda: CAN-FD platform cleanup (#2625)" moved the
+generic `ret.steerActuatorDelay = 0.1` from the end of _get_params() to the
+common block before the per-platform section, so platform-specific values
+survive. On this branch the trailing assignment silently overwrote the
+Honda City 7G value (0.15 s) introduced by 43006b9a, making the City run with
+0.1 s instead of the upstream 0.15 s (confirmed by the carParams event of the
+upstream CI route 56b2cf1dacdcd033/00000017--d24ffdb376).
+
+Only the steerActuatorDelay hunk is backported; the dashcamOnly hunk of the
+same commit concerns CAN-FD platforms that do not exist on this branch.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+---
+ opendbc/car/honda/interface.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/opendbc/car/honda/interface.py b/opendbc/car/honda/interface.py
+index 4b9edd81..f837b3e9 100755
+--- a/opendbc/car/honda/interface.py
++++ b/opendbc/car/honda/interface.py
+@@ -90,6 +90,7 @@ class CarInterface(CarInterfaceBase):
+     ret.lateralParams.torqueBP, ret.lateralParams.torqueV = [[0], [0]]
+     ret.lateralTuning.pid.kiBP, ret.lateralTuning.pid.kpBP = [[0.], [0.]]
+     ret.lateralTuning.pid.kf = 0.00006  # conservative feed-forward
++    ret.steerActuatorDelay = 0.1
+ 
+     if candidate in HONDA_BOSCH:
+       ret.longitudinalActuatorDelay = 0.5 # s
+@@ -241,7 +242,6 @@ class CarInterface(CarInterfaceBase):
+     ret.autoResumeSng = candidate in (HONDA_BOSCH | {CAR.HONDA_CIVIC})
+     ret.minEnableSpeed = -1. if ret.autoResumeSng else 25.51 * CV.MPH_TO_MS
+ 
+-    ret.steerActuatorDelay = 0.1
+     ret.steerLimitTimer = 0.8
+     ret.radarDelay = 0.1
+ 
+-- 
+2.55.0.windows.3
+

@@ -1,0 +1,99 @@
+From ae690dd7ceb15424097bbe742519756c02b30fc3 Mon Sep 17 00:00:00 2001
+From: Bruno Costa <bruno.costa@cat.com>
+Date: Tue, 27 Oct 2026 08:56:39 -0300
+Subject: [PATCH 4/9] honda: backport HAS_EPB auto-detection (6fa346ed) and set
+ City G7 CVT transmission type
+
+Verified against the upstream City route 56b2cf1dacdcd033/00000017--d24ffdb376 (public CI log):
+
+- The City G7 does NOT send 0x1C2 EPB_STATUS. v0.9.9 requires EPB_STATUS at 50 Hz for
+  every Bosch car, so the CAN parser would time out and openpilot would never engage.
+  Upstream fixed this in 6fa346ed "Honda: EPB message refactor (#2458)" (2025-07-13),
+  before the City was merged (43006b9a). Backport the Python side only: HondaFlags.HAS_EPB
+  (512), detected from 0x1C2 in the PT fingerprint, gates EPB_STATUS parsing and
+  carState.parkingBrake. The DBC side of that commit is pure consolidation and
+  honda_civic_ex_2022_can_generated already carries EPB_STATUS.
+
+- The City is a traditional CVT sending 0x191 GEARBOX (no 0x1A3). Upstream auto-detects
+  cvt from 0x191; v0.9.9 only did so for Accord/Civic 2022, leaving transmissionType
+  unknown. Report cvt explicitly for HONDA_CITY_7G. Gear decoding keeps the default
+  GEARBOX branch: byte0 one-hot (8 -> D) matches upstream GEARBOX_CVT GEAR_SHIFTER (4 -> D)
+  on every frame of the route.
+
+Signal-level comparison of v0.9.9 honda_civic_ex_2022 vs upstream honda_bosch_radarless
+on all City bus-0 frames: every parsed RX signal decodes identically; LKAS_HUD TX byte 3
+(SET_ME_X48=0x48) equals upstream LDW_OFF(bit27)+SET_ME_X1(bit30).
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+---
+ opendbc/car/honda/carstate.py  | 5 ++---
+ opendbc/car/honda/interface.py | 7 +++++++
+ opendbc/car/honda/values.py    | 4 ++++
+ 3 files changed, 13 insertions(+), 3 deletions(-)
+
+diff --git a/opendbc/car/honda/carstate.py b/opendbc/car/honda/carstate.py
+index 5b30a83e..e2c41620 100644
+--- a/opendbc/car/honda/carstate.py
++++ b/opendbc/car/honda/carstate.py
+@@ -52,7 +52,7 @@ def get_can_messages(CP, gearbox_msg):
+   if CP.flags & HondaFlags.BOSCH_ALT_BRAKE:
+     messages.append(("BRAKE_MODULE", 50))
+ 
+-  if CP.carFingerprint in (HONDA_BOSCH | {CAR.HONDA_CIVIC, CAR.HONDA_ODYSSEY, CAR.HONDA_ODYSSEY_CHN}):
++  if CP.flags & HondaFlags.HAS_EPB:
+     messages.append(("EPB_STATUS", 50))
+ 
+   if CP.carFingerprint in HONDA_BOSCH:
+@@ -186,8 +186,7 @@ class CarState(CarStateBase):
+       250, cp.vl["SCM_FEEDBACK"]["LEFT_BLINKER"], cp.vl["SCM_FEEDBACK"]["RIGHT_BLINKER"])
+     ret.brakeHoldActive = cp.vl["VSA_STATUS"]["BRAKE_HOLD_ACTIVE"] == 1
+ 
+-    # TODO: set for all cars
+-    if self.CP.carFingerprint in (HONDA_BOSCH | {CAR.HONDA_CIVIC, CAR.HONDA_ODYSSEY, CAR.HONDA_ODYSSEY_CHN}):
++    if self.CP.flags & HondaFlags.HAS_EPB:
+       ret.parkingBrake = cp.vl["EPB_STATUS"]["EPB_STATE"] != 0
+ 
+     if self.CP.transmissionType == TransmissionType.manual:
+diff --git a/opendbc/car/honda/interface.py b/opendbc/car/honda/interface.py
+index dd15e024..4b9edd81 100755
+--- a/opendbc/car/honda/interface.py
++++ b/opendbc/car/honda/interface.py
+@@ -66,6 +66,9 @@ class CarInterface(CarInterfaceBase):
+     if any(0x33DA in f for f in fingerprint.values()):
+       ret.flags |= HondaFlags.BOSCH_EXT_HUD.value
+ 
++    if 0x1C2 in fingerprint[CAN.pt]:
++      ret.flags |= HondaFlags.HAS_EPB.value
++
+     # Accord ICE 1.5T CVT has different gearbox message
+     if candidate == CAR.HONDA_ACCORD and 0x191 in fingerprint[CAN.pt]:
+       ret.transmissionType = TransmissionType.cvt
+@@ -75,6 +78,10 @@ class CarInterface(CarInterfaceBase):
+     # New Civics don't have 0x191, but do have 0x1A3
+     elif candidate == CAR.HONDA_CIVIC_2022 and 0x1A3 in fingerprint[CAN.pt]:
+       ret.transmissionType = TransmissionType.cvt
++    # City G7 (Brazil) is a traditional CVT: gear position in 0x191 GEARBOX (same as upstream's auto-detection,
++    # which classifies any Bosch car sending 0x191 as cvt). Decoding is handled by the default GEARBOX branch in carstate.
++    elif candidate == CAR.HONDA_CITY_7G and 0x191 in fingerprint[CAN.pt]:
++      ret.transmissionType = TransmissionType.cvt
+ 
+     # Certain Hondas have an extra steering sensor at the bottom of the steering rack,
+     # which improves controls quality as it removes the steering column torsion from feedback.
+diff --git a/opendbc/car/honda/values.py b/opendbc/car/honda/values.py
+index 8e48d57a..26c68b78 100644
+--- a/opendbc/car/honda/values.py
++++ b/opendbc/car/honda/values.py
+@@ -71,6 +71,10 @@ class HondaFlags(IntFlag):
+ 
+   BOSCH_CANFD = 128
+ 
++  # Detected flag (backport of upstream 6fa346ed "Honda: EPB message refactor"): the City G7 BR does not
++  # send 0x1C2 EPB_STATUS, so requiring it for every Bosch car would make the CAN parser time out.
++  HAS_EPB = 512
++
+ # Car button codes
+ class CruiseButtons:
+   RES_ACCEL = 4
+-- 
+2.55.0.windows.3
+

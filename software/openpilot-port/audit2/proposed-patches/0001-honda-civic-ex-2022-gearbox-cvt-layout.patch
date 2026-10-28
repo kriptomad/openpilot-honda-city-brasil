@@ -1,0 +1,62 @@
+From: audit2 <audit2@local>
+Subject: [PATCH] Honda: civic_ex_2022 DBC: decode GEARBOX 0x191 with the upstream GEARBOX_CVT layout
+
+Base: opendbc firmwarecityg7-v0.9.9 @ 052a515f
+Source: upstream opendbc 9ef0b1fb (_gearbox_common.dbc, GEARBOX_CVT), applied DBC-only to
+honda_civic_ex_2022_can.dbc (consumers on v0.9.9: HONDA_CITY_7G and HONDA_HRV_3G; HONDA_CIVIC_2022
+reads 0x1A3/0x1DD instead). Message name kept as GEARBOX so opendbc/car/honda/carstate.py is unchanged.
+
+Why: on v0.9.9 GEAR_SHIFTER is byte0 bits 5..0 with VAL 16=S 32=L; upstream (and the City/HR-V 3G routes in
+upstream CI) decode GEAR_SHIFTER from byte5 bits 4..0 with VAL 1 P 2 R 3 N 4 D 7 L 10 S. P/R/N/D are
+equivalent on the CI route (byte0=0x08, byte5&0x1F=4 on 6116/6116 frames) but S and L are not: with the
+v0.9.9 layout, S is reported as drive (if byte0 stays 0x08) or unknown -> wrongGear.
+
+CHECKSUM/COUNTER bit positions are unchanged (59|4, 61|2). Signals BOH/GEAR2/GEAR/ZEROS_BOH were not read
+by any v0.9.9 code (grep opendbc/car/honda). Regenerate opendbc/dbc/honda_civic_ex_2022_can_generated.dbc
+after applying (scons / generator.py).
+---
+diff --git a/opendbc/dbc/generator/honda/honda_civic_ex_2022_can.dbc b/opendbc/dbc/generator/honda/honda_civic_ex_2022_can.dbc
+index bbe3ead..9cd39a4 100644
+--- a/opendbc/dbc/generator/honda/honda_civic_ex_2022_can.dbc
++++ b/opendbc/dbc/generator/honda/honda_civic_ex_2022_can.dbc
+@@ -3,13 +3,19 @@ CM_ "IMPORT _bosch_2018.dbc";
+ CM_ "IMPORT _steering_sensors_a.dbc";
+ 
+ BO_ 401 GEARBOX: 8 PCM
+- SG_ GEAR_SHIFTER : 5|6@0+ (1,0) [0|63] "" EON
+- SG_ BOH : 45|6@0+ (1,0) [0|63] "" XXX
+- SG_ GEAR2 : 31|8@0+ (1,0) [0|1] "" XXX
+- SG_ GEAR : 39|8@0+ (1,0) [0|255] "" XXX
+- SG_ ZEROS_BOH : 47|2@0+ (1,0) [0|3] "" XXX
+- SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
++ SG_ SELECTED_P : 0|1@0+ (1,0) [0|1] "" XXX
++ SG_ SELECTED_R : 1|1@0+ (1,0) [0|1] "" XXX
++ SG_ SELECTED_N : 2|1@0+ (1,0) [0|1] "" XXX
++ SG_ SELECTED_D : 3|1@0+ (1,0) [0|1] "" XXX
++ SG_ FORWARD_DRIVING_MODE : 23|1@0+ (1,0) [0|1] "" XXX
++ SG_ CVT_UNKNOWN_1 : 31|8@0+ (1,0) [0|255] "" XXX
++ SG_ CVT_UNKNOWN_2 : 39|8@0+ (1,0) [0|255] "" XXX
++ SG_ GEAR_SHIFTER : 44|5@0+ (1,0) [0|31] "" XXX
++ SG_ SHIFTER_POSITION_VALID : 45|1@0+ (1,0) [0|1] "" XXX
++ SG_ NOT_FORWARD_GEAR : 48|1@0+ (1,0) [0|1] "" XXX
++ SG_ CVT_UNKNOWN_3 : 53|2@0+ (1,0) [0|3] "" XXX
+  SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" EON
++ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ 
+ BO_ 419 GEARBOX_ALT: 8 PCM
+  SG_ GEAR : 7|8@0+ (1,0) [0|255] "" EON
+@@ -97,11 +103,12 @@ BO_ 254913108 LKAS_HUD_2: 8 ADAS
+  SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" XXX
+ 
+ CM_ 446 "If exists, describes cruise faults and what the PCM uses for brake press detection.";
++CM_ SG_ 401 CVT_UNKNOWN_1 "Probably measured/actual CVT ratio";
++CM_ SG_ 401 CVT_UNKNOWN_2 "Probably target/commanded CVT ratio";
+ CM_ SG_ 456 IDLESTOP_ALLOW "allows car to turn off engine at a standstill";
+ CM_ SG_ 456 STANDSTILL "set to 1 when camera requests -4.0 m/s^2";
+ CM_ SG_ 495 SPEED_LIMIT "Defaults to 0xFF if no speed limit found";
+ 
+-VAL_ 401 GEAR_SHIFTER 32 "L" 16 "S" 8 "D" 4 "N" 2 "R" 1 "P";
+-VAL_ 401 GEAR 7 "L" 10 "S" 4 "D" 3 "N" 2 "R" 1 "P";
++VAL_ 401 GEAR_SHIFTER 1 "P" 2 "R" 3 "N" 4 "D" 7 "L" 10 "S";
+ VAL_ 419 GEAR_SHIFTER  32 "D" 16 "N" 8 "R" 4 "P" 0 "B" ;
+ VAL_ 477 GEAR_MT 14 "reverse" 6 "6th" 5 "5th" 4 "4th" 3 "3rd" 2 "2nd" 1 "1st" 0 "Clutch";

@@ -1,0 +1,1507 @@
+...........s.............s..s..............s.............s..s........... [  2%]
+...s.............s..s............sssssss............................ssss [  4%]
+sss........ssssssssssssssssssssssssssssss...s............s..s.............s............s..s..... [  7%]
+.....sssssssssssssssssss [  8%]
+ssssssssssssss...s..............s..s..............s..............s..s...........ssssssssssssssssssssssssssssssssssssssss [ 12%]
+sssssssssssssss.................................ssssssssssssssssssssssssssss.... [ 15%]
+..........................................................ssssssssssssssssssssss [ 17%]
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss [ 20%]
+sssssss...s.............s..s..........s.............s..s.......sssssssss [ 22%]
+ssssssssssssssssssssssssssssssssssssssssssss..s............s..s......... [ 25%]
+.s.............s..s..........s.................s..s..........sssssssssss [ 27%]
+sssssssssssssss..s............s..s..........s.............s..s.......... [ 29%]
+..s..............s..s..........sssssssssss...s...........s..s........... [ 32%]
+......s...........s..s.................s...........s..s................. [ 34%]
+s...........s..s.................s...........s..s.................s..... [ 36%]
+......s..s...................s...............s..s................sssssss [ 39%]
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss.. [ 41%]
+.s...........s..s.................s...........s..s.................s.... [ 44%]
+.......s..s.................s...........s..s.................s.......... [ 46%]
+.s..s.................s...........s..s..............ssssssssssssssssssss [ 48%]
+sssssssssssss...s...........s..s.................s...........s..s....... [ 51%]
+..........s...........s..s.................s...........s..s............. [ 53%]
+....s...........s..s.................s...........s..s..............sssss [ 55%]
+ssssssssssssssssssssssssssss...s...........s..s..............F..s....... [ 58%]
+..F.s..sF.....FFFFF........s.............s..s.....................s..... [ 60%]
+........s..s.....................s.............s..s..................... [ 62%]
+s.............s..s................ssssssssssssssssssssssssssssssssssssss [ 65%]
+s...s...........s..s.....s.......s...........s..s...........s........... [ 67%]
+s..s...........s...........s..s........sssssssssssssssssssssssssssssssss [ 70%]
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss... [ 72%]
+s...........s..s.............sssssssssssssssssssssssssssssss...s........ [ 74%]
+...s..s................s.........F...s..s...F.............s..........F.. [ 77%]
+.s..s...F.............s..........s..s.............s..........s..s....... [ 79%]
+...ssssssssssssssssssssss...s...........s..s...........s.FF........s..s. [ 81%]
+..F....sssssssssssssssssssssssss...s..........s..s..........s..........s [ 84%]
+..s.......ssssssssssssssssssssssssssss....s..........F....s..s.......... [ 86%]
+..........s.............F..s..s.............s...............s..s........ [ 89%]
+........sssssssssssssssssssssssssssss.....s..........F....s..s.......... [ 91%]
+...........s.............F..s..s.........FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFs [ 93%]
+sssssssssssssssssssssssssssss...s..........s..s.................s....... [ 96%]
+.....s..s.............sssssssssssssssssssssssssssss...s..........s..s... [ 98%]
+..............s............s..s.............                             [100%]
+================================== FAILURES ===================================
+________ TestHyundaiCanfdHDA2EVAltSteering.test_against_torque_driver _________
+
+self = <panda.tests.safety.test_hyundai_canfd.TestHyundaiCanfdHDA2EVAltSteering testMethod=test_against_torque_driver>
+
+    def test_against_torque_driver(self):
+      # Tests down limits and driver torque blending
+      self.safety.set_controls_allowed(True)
+    
+      # Cannot stay at MAX_TORQUE if above DRIVER_TORQUE_ALLOWANCE
+      for sign in [-1, 1]:
+        for driver_torque in np.arange(0, self.DRIVER_TORQUE_ALLOWANCE * 2, 1):
+          self._reset_torque_driver_measurement(-driver_torque * sign)
+          self._set_prev_torque(self.MAX_TORQUE * sign)
+          should_tx = abs(driver_torque) <= self.DRIVER_TORQUE_ALLOWANCE
+>         self.assertEqual(should_tx, self._tx(self._torque_cmd_msg(self.MAX_TORQUE * sign)))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+panda\tests\safety\common.py:398: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+panda\tests\safety\test_hyundai_canfd.py:54: in _torque_cmd_msg
+    return self.packer.make_can_msg_panda(self.STEER_MSG, self.STEER_BUS, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+panda\tests\safety\common.py:30: in make_can_msg_panda
+    msg = self.make_can_msg(name_or_addr, bus, values)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <panda.tests.safety.common.CANPackerPanda object at 0x0000026AD73212B0>
+name_or_addr = 'LKAS_ALT', bus = 0
+values = {'TORQUE_REQUEST': -270, 'STEER_REQ': 1}
+
+    def make_can_msg(self, name_or_addr, bus, values):
+      try:
+        msg = self.db.get_message_by_name(name_or_addr) if isinstance(name_or_addr, str) else by_id(self.db, name_or_addr)
+      except KeyError:
+>       raise RuntimeError(f"could not find message {name_or_addr!r}") from None
+E       RuntimeError: could not find message 'LKAS_ALT'
+
+..\tests_windows\fp_shims.py:436: RuntimeError
+________ TestHyundaiCanfdHDA2EVAltSteering.test_non_realtime_limit_up _________
+
+self = <panda.tests.safety.test_hyundai_canfd.TestHyundaiCanfdHDA2EVAltSteering testMethod=test_non_realtime_limit_up>
+
+    def test_non_realtime_limit_up(self):
+      self._reset_torque_driver_measurement(0)
+>     super().test_non_realtime_limit_up()
+
+panda\tests\safety\common.py:386: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+panda\tests\safety\common.py:231: in test_non_realtime_limit_up
+    self.assertTrue(self._tx(self._torque_cmd_msg(self.MAX_RATE_UP)))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+panda\tests\safety\test_hyundai_canfd.py:54: in _torque_cmd_msg
+    return self.packer.make_can_msg_panda(self.STEER_MSG, self.STEER_BUS, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+panda\tests\safety\common.py:30: in make_can_msg_panda
+    msg = self.make_can_msg(name_or_addr, bus, values)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <panda.tests.safety.common.CANPackerPanda object at 0x0000026AD7321940>
+name_or_addr = 'LKAS_ALT', bus = 0
+values = {'TORQUE_REQUEST': 2, 'STEER_REQ': 1}
+
+    def make_can_msg(self, name_or_addr, bus, values):
+      try:
+        msg = self.db.get_message_by_name(name_or_addr) if isinstance(name_or_addr, str) else by_id(self.db, name_or_addr)
+      except KeyError:
+>       raise RuntimeError(f"could not find message {name_or_addr!r}") from None
+E       RuntimeError: could not find message 'LKAS_ALT'
+
+..\tests_windows\fp_shims.py:436: RuntimeError
+___________ TestHyundaiCanfdHDA2EVAltSteering.test_realtime_limits ____________
+
+self = <panda.tests.safety.test_hyundai_canfd.TestHyundaiCanfdHDA2EVAltSteering testMethod=test_realtime_limits>
+
+    def test_realtime_limits(self):
+      self.safety.set_controls_allowed(True)
+    
+      for sign in [-1, 1]:
+        self.safety.init_tests()
+        self._set_prev_torque(0)
+        self._reset_torque_driver_measurement(0)
+        for t in np.arange(0, self.MAX_RT_DELTA, 1):
+          t *= sign
+>         self.assertTrue(self._tx(self._torque_cmd_msg(t)))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+
+panda\tests\safety\common.py:436: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+panda\tests\safety\test_hyundai_canfd.py:54: in _torque_cmd_msg
+    return self.packer.make_can_msg_panda(self.STEER_MSG, self.STEER_BUS, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+panda\tests\safety\common.py:30: in make_can_msg_panda
+    msg = self.make_can_msg(name_or_addr, bus, values)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <panda.tests.safety.common.CANPackerPanda object at 0x0000026AD71EECF0>
+name_or_addr = 'LKAS_ALT', bus = 0
+values = {'TORQUE_REQUEST': np.int64(0), 'STEER_REQ': 1}
+
+    def make_can_msg(self, name_or_addr, bus, values):
+      try:
+        msg = self.db.get_message_by_name(name_or_addr) if isinstance(name_or_addr, str) else by_id(self.db, name_or_addr)
+      except KeyError:
+>       raise RuntimeError(f"could not find message {name_or_addr!r}") from None
+E       RuntimeError: could not find message 'LKAS_ALT'
+
+..\tests_windows\fp_shims.py:436: RuntimeError
+____________ TestHyundaiCanfdHDA2EVAltSteering.test_steer_req_bit _____________
+
+self = <panda.tests.safety.test_hyundai_canfd.TestHyundaiCanfdHDA2EVAltSteering testMethod=test_steer_req_bit>
+
+    def test_steer_req_bit(self):
+      """Asserts all torque safety modes check the steering request bit"""
+      if self.NO_STEER_REQ_BIT:
+        raise unittest.SkipTest("No steering request bit")
+    
+      self.safety.set_controls_allowed(True)
+      self._set_prev_torque(self.MAX_TORQUE)
+    
+      # Send torque successfully, then only drop the request bit and ensure it stays blocked
+      for _ in range(10):
+>       self.assertTrue(self._tx(self._torque_cmd_msg(self.MAX_TORQUE, 1)))
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+panda\tests\safety\common.py:251: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+panda\tests\safety\test_hyundai_canfd.py:54: in _torque_cmd_msg
+    return self.packer.make_can_msg_panda(self.STEER_MSG, self.STEER_BUS, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+panda\tests\safety\common.py:30: in make_can_msg_panda
+    msg = self.make_can_msg(name_or_addr, bus, values)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <panda.tests.safety.common.CANPackerPanda object at 0x0000026AD721E2E0>
+name_or_addr = 'LKAS_ALT', bus = 0
+values = {'TORQUE_REQUEST': 270, 'STEER_REQ': 1}
+
+    def make_can_msg(self, name_or_addr, bus, values):
+      try:
+        msg = self.db.get_message_by_name(name_or_addr) if isinstance(name_or_addr, str) else by_id(self.db, name_or_addr)
+      except KeyError:
+>       raise RuntimeError(f"could not find message {name_or_addr!r}") from None
+E       RuntimeError: could not find message 'LKAS_ALT'
+
+..\tests_windows\fp_shims.py:436: RuntimeError
+_________ TestHyundaiCanfdHDA2EVAltSteering.test_steer_req_bit_frames _________
+
+self = <panda.tests.safety.test_hyundai_canfd.TestHyundaiCanfdHDA2EVAltSteering testMethod=test_steer_req_bit_frames>
+
+    def test_steer_req_bit_frames(self):
+      """
+        Certain safety modes implement some tolerance on their steer request bits matching the
+        requested torque to avoid a steering fault or lockout and maintain torque. This tests:
+          - We can't cut torque for more than one frame
+          - We can't cut torque until at least the minimum number of matching steer_req messages
+          - We can always recover from violations if steer_req=1
+      """
+    
+      for min_valid_steer_frames in range(self.MIN_VALID_STEERING_FRAMES * 2):
+        # Reset match count and rt timer to allow cut (valid_steer_req_count, ts_steer_req_mismatch_last)
+        self.safety.init_tests()
+        self.safety.set_timer(self.MIN_VALID_STEERING_RT_INTERVAL)
+    
+        # Allow torque cut
+        self.safety.set_controls_allowed(True)
+        self._set_prev_torque(self.MAX_TORQUE)
+        for _ in range(min_valid_steer_frames):
+          self.assertTrue(self._tx(self._torque_cmd_msg(self.MAX_TORQUE, steer_req=1)))
+    
+        # should tx if we've sent enough valid frames, and we're not cutting torque for too many frames consecutively
+        should_tx = min_valid_steer_frames >= self.MIN_VALID_STEERING_FRAMES
+        for idx in range(self.MAX_INVALID_STEERING_FRAMES * 2):
+>         tx = self._tx(self._torque_cmd_msg(self.MAX_TORQUE, steer_req=0))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+panda\tests\safety\common.py:294: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+panda\tests\safety\test_hyundai_canfd.py:54: in _torque_cmd_msg
+    return self.packer.make_can_msg_panda(self.STEER_MSG, self.STEER_BUS, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+panda\tests\safety\common.py:30: in make_can_msg_panda
+    msg = self.make_can_msg(name_or_addr, bus, values)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <panda.tests.safety.common.CANPackerPanda object at 0x0000026AD721F2A0>
+name_or_addr = 'LKAS_ALT', bus = 0
+values = {'TORQUE_REQUEST': 270, 'STEER_REQ': 0}
+
+    def make_can_msg(self, name_or_addr, bus, values):
+      try:
+        msg = self.db.get_message_by_name(name_or_addr) if isinstance(name_or_addr, str) else by_id(self.db, name_or_addr)
+      except KeyError:
+>       raise RuntimeError(f"could not find message {name_or_addr!r}") from None
+E       RuntimeError: could not find message 'LKAS_ALT'
+
+..\tests_windows\fp_shims.py:436: RuntimeError
+_____ TestHyundaiCanfdHDA2EVAltSteering.test_steer_req_bit_multi_invalid ______
+
+self = <panda.tests.safety.test_hyundai_canfd.TestHyundaiCanfdHDA2EVAltSteering testMethod=test_steer_req_bit_multi_invalid>
+
+    def test_steer_req_bit_multi_invalid(self):
+      """
+        For safety modes allowing multiple consecutive invalid frames, this ensures that once a valid frame
+        is sent after an invalid frame (even without sending the max number of allowed invalid frames),
+        all counters are reset.
+      """
+      for max_invalid_steer_frames in range(1, self.MAX_INVALID_STEERING_FRAMES * 2):
+        self.safety.init_tests()
+        self.safety.set_timer(self.MIN_VALID_STEERING_RT_INTERVAL)
+    
+        # Allow torque cut
+        self.safety.set_controls_allowed(True)
+        self._set_prev_torque(self.MAX_TORQUE)
+        for _ in range(self.MIN_VALID_STEERING_FRAMES):
+>         self.assertTrue(self._tx(self._torque_cmd_msg(self.MAX_TORQUE, steer_req=1)))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+panda\tests\safety\common.py:320: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+panda\tests\safety\test_hyundai_canfd.py:54: in _torque_cmd_msg
+    return self.packer.make_can_msg_panda(self.STEER_MSG, self.STEER_BUS, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+panda\tests\safety\common.py:30: in make_can_msg_panda
+    msg = self.make_can_msg(name_or_addr, bus, values)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <panda.tests.safety.common.CANPackerPanda object at 0x0000026AD721F380>
+name_or_addr = 'LKAS_ALT', bus = 0
+values = {'TORQUE_REQUEST': 270, 'STEER_REQ': 1}
+
+    def make_can_msg(self, name_or_addr, bus, values):
+      try:
+        msg = self.db.get_message_by_name(name_or_addr) if isinstance(name_or_addr, str) else by_id(self.db, name_or_addr)
+      except KeyError:
+>       raise RuntimeError(f"could not find message {name_or_addr!r}") from None
+E       RuntimeError: could not find message 'LKAS_ALT'
+
+..\tests_windows\fp_shims.py:436: RuntimeError
+________ TestHyundaiCanfdHDA2EVAltSteering.test_steer_req_bit_realtime ________
+
+self = <panda.tests.safety.test_hyundai_canfd.TestHyundaiCanfdHDA2EVAltSteering testMethod=test_steer_req_bit_realtime>
+
+    def test_steer_req_bit_realtime(self):
+      """
+        Realtime safety for cutting steer request bit. This tests:
+          - That we allow messages with mismatching steer request bit if time from last is >= MIN_VALID_STEERING_RT_INTERVAL
+          - That frame mismatch safety does not interfere with this test
+      """
+      for rt_us in np.arange(self.MIN_VALID_STEERING_RT_INTERVAL - 50000, self.MIN_VALID_STEERING_RT_INTERVAL + 50000, 10000):
+        # Reset match count and rt timer (valid_steer_req_count, ts_steer_req_mismatch_last)
+        self.safety.init_tests()
+    
+        # Make sure valid_steer_req_count doesn't affect this test
+        self.safety.set_controls_allowed(True)
+        self._set_prev_torque(self.MAX_TORQUE)
+        for _ in range(self.MIN_VALID_STEERING_FRAMES):
+>         self.assertTrue(self._tx(self._torque_cmd_msg(self.MAX_TORQUE, steer_req=1)))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+panda\tests\safety\common.py:347: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+panda\tests\safety\test_hyundai_canfd.py:54: in _torque_cmd_msg
+    return self.packer.make_can_msg_panda(self.STEER_MSG, self.STEER_BUS, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+panda\tests\safety\common.py:30: in make_can_msg_panda
+    msg = self.make_can_msg(name_or_addr, bus, values)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <panda.tests.safety.common.CANPackerPanda object at 0x0000026AD721D780>
+name_or_addr = 'LKAS_ALT', bus = 0
+values = {'TORQUE_REQUEST': 270, 'STEER_REQ': 1}
+
+    def make_can_msg(self, name_or_addr, bus, values):
+      try:
+        msg = self.db.get_message_by_name(name_or_addr) if isinstance(name_or_addr, str) else by_id(self.db, name_or_addr)
+      except KeyError:
+>       raise RuntimeError(f"could not find message {name_or_addr!r}") from None
+E       RuntimeError: could not find message 'LKAS_ALT'
+
+..\tests_windows\fp_shims.py:436: RuntimeError
+__________ TestHyundaiCanfdHDA2EVAltSteering.test_steer_safety_check __________
+
+self = <panda.tests.safety.test_hyundai_canfd.TestHyundaiCanfdHDA2EVAltSteering testMethod=test_steer_safety_check>
+
+    def test_steer_safety_check(self):
+      for enabled in [0, 1]:
+        for t in range(int(-self.MAX_TORQUE * 1.5), int(self.MAX_TORQUE * 1.5)):
+          self.safety.set_controls_allowed(enabled)
+          self._set_prev_torque(t)
+          if abs(t) > self.MAX_TORQUE or (not enabled and abs(t) > 0):
+>           self.assertFalse(self._tx(self._torque_cmd_msg(t)))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^
+
+panda\tests\safety\common.py:223: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+panda\tests\safety\test_hyundai_canfd.py:54: in _torque_cmd_msg
+    return self.packer.make_can_msg_panda(self.STEER_MSG, self.STEER_BUS, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+panda\tests\safety\common.py:30: in make_can_msg_panda
+    msg = self.make_can_msg(name_or_addr, bus, values)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <panda.tests.safety.common.CANPackerPanda object at 0x0000026AD71BBBD0>
+name_or_addr = 'LKAS_ALT', bus = 0
+values = {'TORQUE_REQUEST': -405, 'STEER_REQ': 1}
+
+    def make_can_msg(self, name_or_addr, bus, values):
+      try:
+        msg = self.db.get_message_by_name(name_or_addr) if isinstance(name_or_addr, str) else by_id(self.db, name_or_addr)
+      except KeyError:
+>       raise RuntimeError(f"could not find message {name_or_addr!r}") from None
+E       RuntimeError: could not find message 'LKAS_ALT'
+
+..\tests_windows\fp_shims.py:436: RuntimeError
+___________ TestSubaruGen1LongitudinalSafety.test_gas_safety_check ____________
+
+self = <panda.tests.safety.test_subaru.TestSubaruGen1LongitudinalSafety testMethod=test_gas_safety_check>
+
+    def test_gas_safety_check(self):
+>     self._generic_limit_safety_check(self._send_gas_msg, self.MIN_GAS, self.MAX_GAS, 0, self.MAX_POSSIBLE_GAS, 1, self.INACTIVE_GAS)
+
+panda\tests\safety\common.py:190: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+panda\tests\safety\common.py:102: in _generic_limit_safety_check
+    self.assertEqual(self._tx(msg_function(v)), should_tx, (controls_allowed, should_tx, v))
+E   AssertionError: True != np.False_ : (False, np.False_, np.int64(5914))
+___________ TestSubaruGen1LongitudinalSafety.test_rpm_safety_check ____________
+
+self = <panda.tests.safety.test_subaru.TestSubaruGen1LongitudinalSafety testMethod=test_rpm_safety_check>
+
+    def test_rpm_safety_check(self):
+>     self._generic_limit_safety_check(self._send_rpm_msg, self.MIN_RPM, self.MAX_RPM, 0, self.MAX_POSSIBLE_RPM, 1)
+
+panda\tests\safety\test_subaru.py:140: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+panda\tests\safety\common.py:102: in _generic_limit_safety_check
+    self.assertEqual(self._tx(msg_function(v)), should_tx, (controls_allowed, should_tx, v))
+E   AssertionError: True != np.False_ : (False, np.False_, np.int64(4096))
+___________ TestSubaruGen2LongitudinalSafety.test_gas_safety_check ____________
+
+self = <panda.tests.safety.test_subaru.TestSubaruGen2LongitudinalSafety testMethod=test_gas_safety_check>
+
+    def test_gas_safety_check(self):
+>     self._generic_limit_safety_check(self._send_gas_msg, self.MIN_GAS, self.MAX_GAS, 0, self.MAX_POSSIBLE_GAS, 1, self.INACTIVE_GAS)
+
+panda\tests\safety\common.py:190: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+panda\tests\safety\common.py:102: in _generic_limit_safety_check
+    self.assertEqual(self._tx(msg_function(v)), should_tx, (controls_allowed, should_tx, v))
+E   AssertionError: True != np.False_ : (False, np.False_, np.int64(5914))
+___________ TestSubaruGen2LongitudinalSafety.test_rpm_safety_check ____________
+
+self = <panda.tests.safety.test_subaru.TestSubaruGen2LongitudinalSafety testMethod=test_rpm_safety_check>
+
+    def test_rpm_safety_check(self):
+>     self._generic_limit_safety_check(self._send_rpm_msg, self.MIN_RPM, self.MAX_RPM, 0, self.MAX_POSSIBLE_RPM, 1)
+
+panda\tests\safety\test_subaru.py:140: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+panda\tests\safety\common.py:102: in _generic_limit_safety_check
+    self.assertEqual(self._tx(msg_function(v)), should_tx, (controls_allowed, should_tx, v))
+E   AssertionError: True != np.False_ : (False, np.False_, np.int64(4096))
+__________ TestTeslaRavenSteeringSafety.test_angle_cmd_when_disabled __________
+
+self = <panda.tests.safety.test_tesla.TestTeslaRavenSteeringSafety testMethod=test_angle_cmd_when_disabled>
+
+    def test_angle_cmd_when_disabled(self):
+      # Tests that only angles close to the meas are allowed while
+      # steer actuation bit is 0, regardless of controls allowed.
+      for controls_allowed in (True, False):
+        self.safety.set_controls_allowed(controls_allowed)
+    
+        for steer_control_enabled in (True, False):
+          for angle_meas in np.arange(-90, 91, 10):
+>           self._reset_angle_measurement(angle_meas)
+
+panda\tests\safety\common.py:678: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+panda\tests\safety\common.py:611: in _reset_angle_measurement
+    self._rx(self._angle_meas_msg(angle))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+panda\tests\safety\test_tesla.py:120: in _angle_meas_msg
+    return self.packer.make_can_msg_panda("EPAS3P_sysStatus", 2, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+panda\tests\safety\common.py:30: in make_can_msg_panda
+    msg = self.make_can_msg(name_or_addr, bus, values)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <panda.tests.safety.common.CANPackerPanda object at 0x0000026AD73E5EF0>
+name_or_addr = 'EPAS3P_sysStatus', bus = 2
+values = {'EPAS_internalSAS': np.int64(-90)}
+
+    def make_can_msg(self, name_or_addr, bus, values):
+      try:
+        msg = self.db.get_message_by_name(name_or_addr) if isinstance(name_or_addr, str) else by_id(self.db, name_or_addr)
+      except KeyError:
+>       raise RuntimeError(f"could not find message {name_or_addr!r}") from None
+E       RuntimeError: could not find message 'EPAS3P_sysStatus'
+
+..\tests_windows\fp_shims.py:436: RuntimeError
+__________ TestTeslaRavenSteeringSafety.test_angle_cmd_when_enabled ___________
+
+self = <panda.tests.safety.test_tesla.TestTeslaRavenSteeringSafety testMethod=test_angle_cmd_when_enabled>
+max_angle = 300
+
+    def test_angle_cmd_when_enabled(self, max_angle=300):
+      # when controls are allowed, angle cmd rate limit is enforced
+      speeds = [0., 1., 5., 10., 15., 50.]
+      angles = np.concatenate((np.arange(-max_angle, max_angle, 5), [0]))
+      for a in angles:
+        for s in speeds:
+          max_delta_up = np.interp(s, self.ANGLE_RATE_BP, self.ANGLE_RATE_UP)
+          max_delta_down = np.interp(s, self.ANGLE_RATE_BP, self.ANGLE_RATE_DOWN)
+    
+          # first test against false positives
+>         self._reset_angle_measurement(a)
+
+panda\tests\safety\common.py:633: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+panda\tests\safety\common.py:611: in _reset_angle_measurement
+    self._rx(self._angle_meas_msg(angle))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+panda\tests\safety\test_tesla.py:120: in _angle_meas_msg
+    return self.packer.make_can_msg_panda("EPAS3P_sysStatus", 2, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+panda\tests\safety\common.py:30: in make_can_msg_panda
+    msg = self.make_can_msg(name_or_addr, bus, values)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <panda.tests.safety.common.CANPackerPanda object at 0x0000026AD750B540>
+name_or_addr = 'EPAS3P_sysStatus', bus = 2
+values = {'EPAS_internalSAS': np.int64(-300)}
+
+    def make_can_msg(self, name_or_addr, bus, values):
+      try:
+        msg = self.db.get_message_by_name(name_or_addr) if isinstance(name_or_addr, str) else by_id(self.db, name_or_addr)
+      except KeyError:
+>       raise RuntimeError(f"could not find message {name_or_addr!r}") from None
+E       RuntimeError: could not find message 'EPAS3P_sysStatus'
+
+..\tests_windows\fp_shims.py:436: RuntimeError
+________ TestTeslaRavenSteeringSafety.test_steering_angle_measurements ________
+
+self = <panda.tests.safety.test_tesla.TestTeslaRavenSteeringSafety testMethod=test_steering_angle_measurements>
+max_angle = 300
+
+    def test_steering_angle_measurements(self, max_angle=300):
+>     self._common_measurement_test(self._angle_meas_msg, -max_angle, max_angle, self.DEG_TO_CAN, self.safety.get_angle_meas_min, self.safety.get_angle_meas_max)
+
+panda\tests\safety\common.py:621: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+panda\tests\safety\common.py:109: in _common_measurement_test
+    self.assertTrue(self._rx(msg_func(val + i * 0.1)))
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+panda\tests\safety\test_tesla.py:120: in _angle_meas_msg
+    return self.packer.make_can_msg_panda("EPAS3P_sysStatus", 2, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+panda\tests\safety\common.py:30: in make_can_msg_panda
+    msg = self.make_can_msg(name_or_addr, bus, values)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <panda.tests.safety.common.CANPackerPanda object at 0x0000026AD75351D0>
+name_or_addr = 'EPAS3P_sysStatus', bus = 2
+values = {'EPAS_internalSAS': np.float64(-300.0)}
+
+    def make_can_msg(self, name_or_addr, bus, values):
+      try:
+        msg = self.db.get_message_by_name(name_or_addr) if isinstance(name_or_addr, str) else by_id(self.db, name_or_addr)
+      except KeyError:
+>       raise RuntimeError(f"could not find message {name_or_addr!r}") from None
+E       RuntimeError: could not find message 'EPAS3P_sysStatus'
+
+..\tests_windows\fp_shims.py:436: RuntimeError
+__________________ TestToyotaSafetyTorque.test_lta_steer_cmd __________________
+
+self = <panda.tests.safety.test_toyota.TestToyotaSafetyTorque testMethod=test_lta_steer_cmd>
+
+    def test_lta_steer_cmd(self):
+      for engaged, req, req2, torque_wind_down, angle in itertools.product([True, False],
+                                                                    [0, 1], [0, 1],
+                                                                    [0, 50, 100],
+                                                                    np.linspace(-20, 20, 5)):
+        self.safety.set_controls_allowed(engaged)
+    
+        should_tx = not req and not req2 and angle == 0 and torque_wind_down == 0
+>       self.assertEqual(should_tx, self._tx(self._lta_msg(req, req2, angle, torque_wind_down)),
+                         f"{req=} {req2=} {angle=} {torque_wind_down=}")
+E       AssertionError: False != True : req=0 req2=0 angle=np.float64(0.0) torque_wind_down=50
+
+panda\tests\safety\test_toyota.py:111: AssertionError
+__________________ TestToyotaSafetyAngle.test_lta_steer_cmd ___________________
+
+self = <panda.tests.safety.test_toyota.TestToyotaSafetyAngle testMethod=test_lta_steer_cmd>
+
+    def test_lta_steer_cmd(self):
+      """
+      Tests the LTA steering command message
+      controls_allowed:
+      * STEER_REQUEST and STEER_REQUEST_2 do not mismatch
+      * TORQUE_WIND_DOWN is only set to 0 or 100 when STEER_REQUEST and STEER_REQUEST_2 are both 1
+      * Full torque messages are blocked if either EPS torque or driver torque is above the threshold
+    
+      not controls_allowed:
+      * STEER_REQUEST, STEER_REQUEST_2, and TORQUE_WIND_DOWN are all 0
+      """
+      for controls_allowed in (True, False):
+        for angle in np.arange(-90, 90, 1):
+          self.safety.set_controls_allowed(controls_allowed)
+          self._reset_angle_measurement(angle)
+          self._set_prev_desired_angle(angle)
+    
+          self.assertTrue(self._tx(self._lta_msg(0, 0, angle, 0)))
+          if controls_allowed:
+            # Test the two steer request bits and TORQUE_WIND_DOWN torque wind down signal
+            for req, req2, torque_wind_down in itertools.product([0, 1], [0, 1], [0, 50, 100]):
+              mismatch = not (req or req2) and torque_wind_down != 0
+              should_tx = req == req2 and (torque_wind_down in (0, 100)) and not mismatch
+>             self.assertEqual(should_tx, self._tx(self._lta_msg(req, req2, angle, torque_wind_down)))
+E             AssertionError: False != True
+
+panda\tests\safety\test_toyota.py:209: AssertionError
+____________ TestToyotaStockLongitudinalTorque.test_lta_steer_cmd _____________
+
+self = <panda.tests.safety.test_toyota.TestToyotaStockLongitudinalTorque testMethod=test_lta_steer_cmd>
+
+    def test_lta_steer_cmd(self):
+      for engaged, req, req2, torque_wind_down, angle in itertools.product([True, False],
+                                                                    [0, 1], [0, 1],
+                                                                    [0, 50, 100],
+                                                                    np.linspace(-20, 20, 5)):
+        self.safety.set_controls_allowed(engaged)
+    
+        should_tx = not req and not req2 and angle == 0 and torque_wind_down == 0
+>       self.assertEqual(should_tx, self._tx(self._lta_msg(req, req2, angle, torque_wind_down)),
+                         f"{req=} {req2=} {angle=} {torque_wind_down=}")
+E       AssertionError: False != True : req=0 req2=0 angle=np.float64(0.0) torque_wind_down=50
+
+panda\tests\safety\test_toyota.py:111: AssertionError
+_____________ TestToyotaStockLongitudinalAngle.test_lta_steer_cmd _____________
+
+self = <panda.tests.safety.test_toyota.TestToyotaStockLongitudinalAngle testMethod=test_lta_steer_cmd>
+
+    def test_lta_steer_cmd(self):
+      """
+      Tests the LTA steering command message
+      controls_allowed:
+      * STEER_REQUEST and STEER_REQUEST_2 do not mismatch
+      * TORQUE_WIND_DOWN is only set to 0 or 100 when STEER_REQUEST and STEER_REQUEST_2 are both 1
+      * Full torque messages are blocked if either EPS torque or driver torque is above the threshold
+    
+      not controls_allowed:
+      * STEER_REQUEST, STEER_REQUEST_2, and TORQUE_WIND_DOWN are all 0
+      """
+      for controls_allowed in (True, False):
+        for angle in np.arange(-90, 90, 1):
+          self.safety.set_controls_allowed(controls_allowed)
+          self._reset_angle_measurement(angle)
+          self._set_prev_desired_angle(angle)
+    
+          self.assertTrue(self._tx(self._lta_msg(0, 0, angle, 0)))
+          if controls_allowed:
+            # Test the two steer request bits and TORQUE_WIND_DOWN torque wind down signal
+            for req, req2, torque_wind_down in itertools.product([0, 1], [0, 1], [0, 50, 100]):
+              mismatch = not (req or req2) and torque_wind_down != 0
+              should_tx = req == req2 and (torque_wind_down in (0, 100)) and not mismatch
+>             self.assertEqual(should_tx, self._tx(self._lta_msg(req, req2, angle, torque_wind_down)))
+E             AssertionError: False != True
+
+panda\tests\safety\test_toyota.py:209: AssertionError
+____________________ TestToyotaSecOcSafety.test_acc_cancel ____________________
+
+self = <panda.tests.safety.test_toyota.TestToyotaSecOcSafety testMethod=test_acc_cancel>
+
+    def setUp(self):
+>     self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+panda\tests\safety\test_toyota.py:336: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+______________ TestToyotaSecOcSafety.test_accel_actuation_limits ______________
+
+self = <panda.tests.safety.test_toyota.TestToyotaSecOcSafety testMethod=test_accel_actuation_limits>
+
+    def setUp(self):
+>     self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+panda\tests\safety\test_toyota.py:336: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+_______________ TestToyotaSecOcSafety.test_accel_limits_correct _______________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+__________ TestToyotaSecOcSafety.test_allow_engage_with_gas_pressed ___________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+__________ TestToyotaSecOcSafety.test_allow_user_brake_at_zero_speed __________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+__________ TestToyotaSecOcSafety.test_allow_user_regen_at_zero_speed __________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+____ TestToyotaSecOcSafety.test_alternative_experience_no_disengage_on_gas ____
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+____________________ TestToyotaSecOcSafety.test_block_aeb _____________________
+
+self = <panda.tests.safety.test_toyota.TestToyotaSecOcSafety testMethod=test_block_aeb>
+
+    def setUp(self):
+>     self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+panda\tests\safety\test_toyota.py:336: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+_______________ TestToyotaSecOcSafety.test_cruise_engaged_prev ________________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+___________ TestToyotaSecOcSafety.test_default_controls_not_allowed ___________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+___________________ TestToyotaSecOcSafety.test_diagnostics ____________________
+
+self = <panda.tests.safety.test_toyota.TestToyotaSecOcSafety testMethod=test_diagnostics>
+
+    def setUp(self):
+>     self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+panda\tests\safety\test_toyota.py:336: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+_______ TestToyotaSecOcSafety.test_disable_control_allowed_from_cruise ________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+_________________ TestToyotaSecOcSafety.test_disengage_on_gas _________________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+________ TestToyotaSecOcSafety.test_enable_control_allowed_from_cruise ________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+_____________________ TestToyotaSecOcSafety.test_fwd_hook _____________________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+_________________ TestToyotaSecOcSafety.test_lta_2_steer_cmd __________________
+
+self = <panda.tests.safety.test_toyota.TestToyotaSecOcSafety testMethod=test_lta_2_steer_cmd>
+
+    def setUp(self):
+>     self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+panda\tests\safety\test_toyota.py:336: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+__________________ TestToyotaSecOcSafety.test_lta_steer_cmd ___________________
+
+self = <panda.tests.safety.test_toyota.TestToyotaSecOcSafety testMethod=test_lta_steer_cmd>
+
+    def setUp(self):
+>     self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+panda\tests\safety\test_toyota.py:336: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+_________ TestToyotaSecOcSafety.test_manually_enable_controls_allowed _________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+_________ TestToyotaSecOcSafety.test_not_allow_user_brake_when_moving _________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+_________ TestToyotaSecOcSafety.test_not_allow_user_regen_when_moving _________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+_____________________ TestToyotaSecOcSafety.test_prev_gas _____________________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+_________________ TestToyotaSecOcSafety.test_prev_user_brake __________________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+_________________ TestToyotaSecOcSafety.test_prev_user_regen __________________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+________________ TestToyotaSecOcSafety.test_relay_malfunction _________________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+_____________________ TestToyotaSecOcSafety.test_rx_hook ______________________
+
+self = <panda.tests.safety.test_toyota.TestToyotaSecOcSafety testMethod=test_rx_hook>
+
+    def setUp(self):
+>     self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+panda\tests\safety\test_toyota.py:336: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+___________________ TestToyotaSecOcSafety.test_safety_tick ____________________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+__________________ TestToyotaSecOcSafety.test_spam_can_buses __________________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+___________ TestToyotaSecOcSafety.test_tx_hook_on_wrong_safety_mode ___________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+_____________ TestToyotaSecOcSafety.test_tx_msg_in_scanned_range ______________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+__________________ TestToyotaSecOcSafety.test_vehicle_moving __________________
+panda\tests\safety\test_toyota.py:336: in setUp
+    self.packer = CANPackerPanda("toyota_rav4_prime_generated")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\tests_windows\fp_shims.py:427: in __init__
+    self.db = load_dbc(dbc_name)
+              ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'toyota_rav4_prime_generated'
+
+    def load_dbc(name):
+      if name not in _dbc_cache:
+        path = os.path.join(DBC_DIR, name + ".dbc")
+        if not os.path.exists(path) and name.endswith("_generated"):
+          # the panda safety tests (newer opendbc naming) ask for *_generated; this older opendbc only has the plain file
+          alt = os.path.join(DBC_DIR, name[:-len("_generated")] + ".dbc")
+          if os.path.exists(alt):
+            path = alt
+        if not os.path.exists(path):
+>         raise RuntimeError(f"DBC not found: {path}")
+E         RuntimeError: DBC not found: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\opendbc\toyota_rav4_prime_generated.dbc
+
+..\tests_windows\fp_shims.py:32: RuntimeError
+=========================== short test summary info ===========================
+FAILED panda\tests\safety\test_hyundai_canfd.py::TestHyundaiCanfdHDA2EVAltSteering::test_against_torque_driver
+FAILED panda\tests\safety\test_hyundai_canfd.py::TestHyundaiCanfdHDA2EVAltSteering::test_non_realtime_limit_up
+FAILED panda\tests\safety\test_hyundai_canfd.py::TestHyundaiCanfdHDA2EVAltSteering::test_realtime_limits
+FAILED panda\tests\safety\test_hyundai_canfd.py::TestHyundaiCanfdHDA2EVAltSteering::test_steer_req_bit
+FAILED panda\tests\safety\test_hyundai_canfd.py::TestHyundaiCanfdHDA2EVAltSteering::test_steer_req_bit_frames
+FAILED panda\tests\safety\test_hyundai_canfd.py::TestHyundaiCanfdHDA2EVAltSteering::test_steer_req_bit_multi_invalid
+FAILED panda\tests\safety\test_hyundai_canfd.py::TestHyundaiCanfdHDA2EVAltSteering::test_steer_req_bit_realtime
+FAILED panda\tests\safety\test_hyundai_canfd.py::TestHyundaiCanfdHDA2EVAltSteering::test_steer_safety_check
+FAILED panda\tests\safety\test_subaru.py::TestSubaruGen1LongitudinalSafety::test_gas_safety_check
+FAILED panda\tests\safety\test_subaru.py::TestSubaruGen1LongitudinalSafety::test_rpm_safety_check
+FAILED panda\tests\safety\test_subaru.py::TestSubaruGen2LongitudinalSafety::test_gas_safety_check
+FAILED panda\tests\safety\test_subaru.py::TestSubaruGen2LongitudinalSafety::test_rpm_safety_check
+FAILED panda\tests\safety\test_tesla.py::TestTeslaRavenSteeringSafety::test_angle_cmd_when_disabled
+FAILED panda\tests\safety\test_tesla.py::TestTeslaRavenSteeringSafety::test_angle_cmd_when_enabled
+FAILED panda\tests\safety\test_tesla.py::TestTeslaRavenSteeringSafety::test_steering_angle_measurements
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSafetyTorque::test_lta_steer_cmd
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSafetyAngle::test_lta_steer_cmd
+FAILED panda\tests\safety\test_toyota.py::TestToyotaStockLongitudinalTorque::test_lta_steer_cmd
+FAILED panda\tests\safety\test_toyota.py::TestToyotaStockLongitudinalAngle::test_lta_steer_cmd
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_acc_cancel
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_accel_actuation_limits
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_accel_limits_correct
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_allow_engage_with_gas_pressed
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_allow_user_brake_at_zero_speed
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_allow_user_regen_at_zero_speed
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_alternative_experience_no_disengage_on_gas
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_block_aeb
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_cruise_engaged_prev
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_default_controls_not_allowed
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_diagnostics
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_disable_control_allowed_from_cruise
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_disengage_on_gas
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_enable_control_allowed_from_cruise
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_fwd_hook
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_lta_2_steer_cmd
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_lta_steer_cmd
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_manually_enable_controls_allowed
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_not_allow_user_brake_when_moving
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_not_allow_user_regen_when_moving
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_prev_gas
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_prev_user_brake
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_prev_user_regen
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_relay_malfunction
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_rx_hook
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_safety_tick
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_spam_can_buses
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_tx_hook_on_wrong_safety_mode
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_tx_msg_in_scanned_range
+FAILED panda\tests\safety\test_toyota.py::TestToyotaSecOcSafety::test_vehicle_moving
+49 failed, 1968 passed, 1019 skipped, 58208 subtests passed in 56.93s
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1

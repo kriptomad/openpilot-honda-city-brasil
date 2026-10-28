@@ -1,0 +1,23 @@
+From bac73ff1b0a6b909f0b391c2b5ccd076db30e3dc Mon Sep 17 00:00:00 2001
+From: Bruno Costa <bruno.costa@cat.com>
+Date: Tue, 27 Oct 2026 09:46:48 -0300
+Subject: [PATCH 04/10] opendbc: bump to 07add98b (EPB_STATUS DBC part of
+ upstream 6fa346ed)
+
+Fixes HONDA_HRV test_models failures in cars (2): with HAS_EPB detected
+from the fingerprint, every Honda DBC must define EPB_STATUS, as in
+upstream. No change for the City 2023 BR (never transmits 0x1C2).
+---
+ opendbc_repo | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/opendbc_repo b/opendbc_repo
+index ae690dd7c..07add98b1 160000
+--- a/opendbc_repo
++++ b/opendbc_repo
+@@ -1 +1 @@
+-Subproject commit ae690dd7ceb15424097bbe742519756c02b30fc3
++Subproject commit 07add98b13fcb363307733f7ffb7da31e7535cd6
+-- 
+2.55.0.windows.3
+

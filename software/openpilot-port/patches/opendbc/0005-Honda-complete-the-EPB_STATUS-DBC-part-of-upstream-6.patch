@@ -1,0 +1,175 @@
+From 07add98b13fcb363307733f7ffb7da31e7535cd6 Mon Sep 17 00:00:00 2001
+From: Bruno Costa <bruno.costa@cat.com>
+Date: Tue, 27 Oct 2026 09:45:25 -0300
+Subject: [PATCH 5/9] Honda: complete the EPB_STATUS DBC part of upstream
+ 6fa346ed
+
+ae690dd7 backported only the python side of "Honda: EPB message refactor
+(#2458)". Upstream also moved the EPB_STATUS (0x1C2) definition from
+_bosch_2018.dbc / civic_touring_2016 / clarity / odyssey / odyssey_chn
+into _honda_common.dbc so every Honda DBC can parse it when 0x1C2 is
+present in the fingerprint. Without that, Nidec cars whose fingerprint
+contains 0x1C2 (e.g. HONDA_HRV on honda_fit_ex_2018) now set HAS_EPB
+and fail with "could not find message 'EPB_STATUS'" (openpilot v0.9.9
+CI, test_models cars (2)).
+
+This applies the remaining 6 DBC hunks of 6fa346ed verbatim. Every
+generated Honda CAN DBC now defines EPB_STATUS exactly once; the bit
+layout of EPB_ACTIVE/EPB_STATE/CHECKSUM/COUNTER is unchanged.
+---
+ opendbc/dbc/generator/honda/_bosch_2018.dbc               | 7 -------
+ opendbc/dbc/generator/honda/_honda_common.dbc             | 8 ++++++++
+ .../dbc/generator/honda/honda_civic_touring_2016_can.dbc  | 7 -------
+ .../dbc/generator/honda/honda_clarity_hybrid_2018_can.dbc | 7 -------
+ opendbc/dbc/generator/honda/honda_odyssey_exl_2018.dbc    | 8 --------
+ .../honda_odyssey_extreme_edition_2018_china_can.dbc      | 7 -------
+ 6 files changed, 8 insertions(+), 36 deletions(-)
+
+diff --git a/opendbc/dbc/generator/honda/_bosch_2018.dbc b/opendbc/dbc/generator/honda/_bosch_2018.dbc
+index 9da5c1e0..242f74f8 100644
+--- a/opendbc/dbc/generator/honda/_bosch_2018.dbc
++++ b/opendbc/dbc/generator/honda/_bosch_2018.dbc
+@@ -37,12 +37,6 @@ BO_ 399 STEER_STATUS: 7 EPS
+  SG_ COUNTER : 53|2@0+ (1,0) [0|3] "" EON
+  SG_ CHECKSUM : 51|4@0+ (1,0) [0|15] "" EON
+ 
+-BO_ 450 EPB_STATUS: 8 EPB
+- SG_ EPB_ACTIVE : 3|1@0+ (1,0) [0|1] "" EON
+- SG_ EPB_STATE : 29|2@0+ (1,0) [0|3] "" EON
+- SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" XXX
+- SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" XXX
+-
+ BO_ 545 XXX_16: 6 SCM
+  SG_ ECON_ON : 23|1@0+ (1,0) [0|1] "" XXX
+  SG_ DRIVE_MODE : 37|2@0+ (1,0) [0|3] "" XXX
+@@ -209,7 +203,6 @@ BO_ 13275 LKAS_HUD_B: 8 ADAS
+  SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" BDY
+  SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" BDY
+ 
+-CM_ SG_ 450 EPB_STATE "3: On, 2: Disengaging, 1: Engaging, 0: Off";
+ CM_ SG_ 576 LINE_DISTANCE_VISIBLE "Length of line visible, undecoded";
+ CM_ SG_ 577 LINE_FAR_EDGE_POSITION "Appears to be a measure of line thickness, indicates location of the portion of the line furthest from the car, undecoded";
+ CM_ SG_ 577 LINE_PARAMETER "Unclear if this is low quality line curvature rate or if this is something else, but it is correlated with line curvature, undecoded";
+diff --git a/opendbc/dbc/generator/honda/_honda_common.dbc b/opendbc/dbc/generator/honda/_honda_common.dbc
+index 6983249e..3d35df78 100644
+--- a/opendbc/dbc/generator/honda/_honda_common.dbc
++++ b/opendbc/dbc/generator/honda/_honda_common.dbc
+@@ -48,6 +48,13 @@ BO_ 427 STEER_MOTOR_TORQUE: 3 EPS
+  SG_ COUNTER : 21|2@0+ (1,0) [0|3] "" EON
+  SG_ CHECKSUM : 19|4@0+ (1,0) [0|15] "" EON
+ 
++BO_ 450 EPB_STATUS: 8 XXX
++ SG_ EPB_BRAKE_AND_PULL : 6|1@0+ (1,0) [0|1] "" XXX
++ SG_ EPB_ACTIVE : 3|1@0+ (1,0) [0|1] "" XXX
++ SG_ EPB_STATE : 29|2@0+ (1,0) [0|1] "" XXX
++ SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" XXX
++ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" XXX
++
+ BO_ 464 WHEEL_SPEEDS: 8 VSA
+  SG_ WHEEL_SPEED_FL : 7|15@0+ (0.01,0) [0|250] "kph" EON
+  SG_ WHEEL_SPEED_FR : 8|15@0+ (0.01,0) [0|250] "kph" EON
+@@ -173,6 +180,7 @@ CM_ SG_ 780 PCM_SPEED "Used by Nidec";
+ CM_ SG_ 780 PCM_GAS "Used by Nidec";
+ CM_ SG_ 804 CRUISE_SPEED_PCM "255 = no speed";
+ 
++VAL_ 450 EPB_STATE 3 "engaged" 2 "disengaging" 1 "engaging" 0 "disengaged" ;
+ VAL_ 780 CRUISE_SPEED 255 "no_speed" 252 "stopped";
+ VAL_ 780 HUD_LEAD 3 "acc_off" 2 "solid_car" 1 "dashed_car" 0 "no_car";
+ VAL_ 884 DASHBOARD_ALERT 0 "none" 51 "acc_problem" 55 "cmbs_problem" 75 "key_not_detected" 79 "fasten_seatbelt" 111 "lkas_problem" 131 "brake_system_problem" 132 "brake_hold_problem" 139 "tbd" 161 "door_open";
+diff --git a/opendbc/dbc/generator/honda/honda_civic_touring_2016_can.dbc b/opendbc/dbc/generator/honda/honda_civic_touring_2016_can.dbc
+index 8da61057..5497112a 100644
+--- a/opendbc/dbc/generator/honda/honda_civic_touring_2016_can.dbc
++++ b/opendbc/dbc/generator/honda/honda_civic_touring_2016_can.dbc
+@@ -18,12 +18,6 @@ BO_ 401 GEARBOX: 8 PCM
+  SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+  SG_ CHECKSUM : 59|4@0+ (1,0) [0|3] "" EON
+ 
+-BO_ 450 EPB_STATUS: 8 EPB
+- SG_ EPB_ACTIVE : 3|1@0+ (1,0) [0|1] "" EON
+- SG_ EPB_STATE : 29|2@0+ (1,0) [0|3] "" EON
+- SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+- SG_ CHECKSUM : 59|4@0+ (1,0) [0|3] "" EON
+-
+ BO_ 493 HUD_SETTING: 5 XXX
+  SG_ IMPERIAL_UNIT : 5|1@0+ (1,0) [0|1] "" EON
+ 
+@@ -62,7 +56,6 @@ CM_ SG_ 806 REVERSE_LIGHT "Might be reverse gear selected and not the lights";
+ VAL_ 399 STEER_STATUS 7 "permanent_fault" 6 "tmp_fault" 5 "fault_1" 4 "no_torque_alert_2" 3 "low_speed_lockout" 2 "no_torque_alert_1" 0 "normal" ;
+ VAL_ 401 GEAR_SHIFTER 32 "L" 16 "S" 8 "D" 4 "N" 2 "R" 1 "P" ;
+ VAL_ 401 GEAR 7 "L" 10 "S" 4 "D" 3 "N" 2 "R" 1 "P" ;
+-VAL_ 450 EPB_STATE 3 "engaged" 2 "disengaging" 1 "engaging" 0 "disengaged" ;
+ VAL_ 545 ECON_ON_2 0 "off" 3 "on" ;
+ VAL_ 662 CRUISE_BUTTONS 7 "tbd" 6 "tbd" 5 "tbd" 4 "accel_res" 3 "decel_set" 2 "cancel" 1 "main" 0 "none" ;
+ VAL_ 662 CRUISE_SETTING 3 "distance_adj" 2 "tbd" 1 "lkas_button" 0 "none" ;
+diff --git a/opendbc/dbc/generator/honda/honda_clarity_hybrid_2018_can.dbc b/opendbc/dbc/generator/honda/honda_clarity_hybrid_2018_can.dbc
+index a9405090..7bff1666 100644
+--- a/opendbc/dbc/generator/honda/honda_clarity_hybrid_2018_can.dbc
++++ b/opendbc/dbc/generator/honda/honda_clarity_hybrid_2018_can.dbc
+@@ -24,12 +24,6 @@ BO_ 419 GEARBOX: 8 PCM
+  SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+  SG_ CHECKSUM : 59|4@0+ (1,0) [0|3] "" EON
+ 
+-BO_ 450 EPB_STATUS: 8 EPB
+- SG_ EPB_ACTIVE : 3|1@0+ (1,0) [0|1] "" EON
+- SG_ EPB_STATE : 29|2@0+ (1,0) [0|3] "" EON
+- SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+- SG_ CHECKSUM : 59|4@0+ (1,0) [0|3] "" EON
+-
+ BO_ 545 ECON_STATUS: 6 XXX
+  SG_ ECON_ON_2 : 37|2@0+ (1,0) [0|3] "" EON
+  SG_ ECON_ON : 23|1@0+ (1,0) [0|1] "" EON
+@@ -80,7 +74,6 @@ CM_ SG_ 806 REVERSE_LIGHT "Might be reverse gear selected and not the lights";
+ 
+ VAL_ 399 STEER_STATUS 5 "tmp_fault" 4 "no_torque_alert_2" 2 "no_torque_alert_1" 0 "normal" ;
+ VAL_ 419 GEAR_SHIFTER 10 "S" 4 "D" 3 "N" 2 "R" 1 "P" ;
+-VAL_ 450 EPB_STATE 3 "engaged" 2 "disengaging" 1 "engaging" 0 "disengaged" ;
+ VAL_ 545 ECON_ON_2 0 "off" 3 "on" ;
+ VAL_ 662 CRUISE_BUTTONS 7 "tbd" 6 "tbd" 5 "tbd" 4 "accel_res" 3 "decel_set" 2 "cancel" 1 "main" 0 "none" ;
+ VAL_ 662 CRUISE_SETTING 3 "distance_adj" 2 "tbd" 1 "lkas_button" 0 "none" ;
+diff --git a/opendbc/dbc/generator/honda/honda_odyssey_exl_2018.dbc b/opendbc/dbc/generator/honda/honda_odyssey_exl_2018.dbc
+index 9d53b737..14b40396 100644
+--- a/opendbc/dbc/generator/honda/honda_odyssey_exl_2018.dbc
++++ b/opendbc/dbc/generator/honda/honda_odyssey_exl_2018.dbc
+@@ -18,13 +18,6 @@ BO_ 419 GEARBOX: 8 PCM
+  SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+  SG_ CHECKSUM : 59|4@0+ (1,0) [0|3] "" EON
+ 
+-BO_ 450 EPB_STATUS: 8 XXX
+- SG_ EPB_BRAKE_AND_PULL : 6|1@0+ (1,0) [0|1] "" XXX
+- SG_ EPB_ACTIVE : 3|1@0+ (1,0) [0|1] "" XXX
+- SG_ EPB_STATE : 29|2@0+ (1,0) [0|1] "" XXX
+- SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" XXX
+- SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" XXX
+-
+ BO_ 662 SCM_BUTTONS: 4 SCM
+  SG_ CRUISE_BUTTONS : 7|3@0+ (1,0) [0|7] "" EON
+  SG_ CRUISE_SETTING : 3|2@0+ (1,0) [0|3] "" EON
+@@ -54,7 +47,6 @@ CM_ SG_ 806 REVERSE_LIGHT "Might be reverse gear selected and not the lights";
+ 
+ VAL_ 399 STEER_STATUS 6 "tmp_fault" 5 "fault_1" 4 "no_torque_alert_2" 3 "low_speed_lockout" 2 "no_torque_alert_1" 0 "normal" ;
+ VAL_ 419 GEAR_SHIFTER 10 "S" 4 "D" 3 "N" 2 "R" 1 "P" ;
+-VAL_ 450 EPB_STATE 3 "engaged" 2 "disengaging" 1 "engaging" 0 "disengaged" ;
+ VAL_ 662 CRUISE_BUTTONS 7 "tbd" 6 "tbd" 5 "tbd" 4 "accel_res" 3 "decel_set" 2 "cancel" 1 "main" 0 "none" ;
+ VAL_ 662 CRUISE_SETTING 3 "distance_adj" 2 "tbd" 1 "lkas_button" 0 "none" ;
+ VAL_ 780 HUD_LEAD 3 "no_car" 2 "solid_car" 1 "dashed_car" 0 "no_car" ;
+diff --git a/opendbc/dbc/generator/honda/honda_odyssey_extreme_edition_2018_china_can.dbc b/opendbc/dbc/generator/honda/honda_odyssey_extreme_edition_2018_china_can.dbc
+index af6d1195..90840a9c 100644
+--- a/opendbc/dbc/generator/honda/honda_odyssey_extreme_edition_2018_china_can.dbc
++++ b/opendbc/dbc/generator/honda/honda_odyssey_extreme_edition_2018_china_can.dbc
+@@ -38,13 +38,6 @@ BO_ 422 SCM_BUTTONS: 8 SCM
+  SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+  SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" EON
+ 
+-BO_ 450 EPB_STATUS: 8 XXX
+- SG_ EPB_BRAKE_AND_PULL : 6|1@0+ (1,0) [0|1] "" XXX
+- SG_ EPB_ACTIVE : 3|1@0+ (1,0) [0|1] "" XXX
+- SG_ EPB_STATE : 29|2@0+ (1,0) [0|1] "" XXX
+- SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" XXX
+- SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" XXX
+-
+ BO_ 660 SCM_FEEDBACK: 8 SCM
+  SG_ RIGHT_BLINKER : 6|1@0+ (1,0) [0|1] "" EON
+  SG_ LEFT_BLINKER : 5|1@0+ (1,0) [0|1] "" EON
+-- 
+2.55.0.windows.3
+

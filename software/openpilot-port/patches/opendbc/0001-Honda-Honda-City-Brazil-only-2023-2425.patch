@@ -1,0 +1,175 @@
+From 34dd823bd6e385c1d096e393e08a4134de15edcf Mon Sep 17 00:00:00 2001
+From: Thales Ceolin <thalesac@users.noreply.github.com>
+Date: Tue, 19 Aug 2025 16:27:29 -0300
+Subject: [PATCH 1/9] Honda: Honda City (Brazil only) 2023 (#2425)
+
+* init Honda City
+
+* tmp fix EPB status error
+
+* test route and comments
+
+* updates
+
+* add this
+
+* fix handbrake
+
+* minSteerSpeed
+
+* fix
+
+* change
+
+* fix
+
+* current test route
+
+* follow parking brake signal name change
+
+* i hope this is wrong :(
+
+* wheelbase was wrong, also wants more SR
+
+* rm torque substitute
+
+* add generation to CAR name
+
+* one more ref
+
+* separate config block, rescaled actuator range
+
+* remove, will be restored with #2481
+
+* adjust steeringPressed threshold
+
+* ultra swag due to undetected steer overrides
+
+* one more tweak
+
+* maybe two
+
+* this thing really wants SR
+
+---------
+
+Co-authored-by: vanillagorillaa <31773928+vanillagorillaa@users.noreply.github.com>
+Co-authored-by: Jason Young <jyoung8607@gmail.com>
+(cherry picked from commit 43006b9a41e233325cb7cbcb6ff40de0234217a0)
+---
+ opendbc/car/honda/fingerprints.py     | 20 ++++++++++++++++++++
+ opendbc/car/honda/interface.py        |  5 +++++
+ opendbc/car/honda/values.py           | 11 +++++++++--
+ opendbc/car/tests/routes.py           |  1 +
+ opendbc/car/torque_data/override.toml |  1 +
+ 5 files changed, 36 insertions(+), 2 deletions(-)
+
+diff --git a/opendbc/car/honda/fingerprints.py b/opendbc/car/honda/fingerprints.py
+index f8d872d1..63e61490 100644
+--- a/opendbc/car/honda/fingerprints.py
++++ b/opendbc/car/honda/fingerprints.py
+@@ -942,4 +942,24 @@ FW_VERSIONS = {
+       b'8S302-T90-A040\x00\x00',
+     ],
+   },
++  CAR.HONDA_CITY_7G: {
++    (Ecu.eps, 0x18da30f1, None): [
++      b'39990-T14-B030\x00\x00',
++    ],
++    (Ecu.gateway, 0x18daeff1, None): [
++      b'38897-T14-M110\x00\x00',
++    ],
++    (Ecu.srs, 0x18da53f1, None): [
++      b'77959-T00-B830\x00\x00',
++    ],
++    (Ecu.fwdRadar, 0x18dab0f1, None): [
++      b'36161-T14-P050\x00\x00',
++    ],
++    (Ecu.vsa, 0x18da28f1, None): [
++      b'57114-T14-B030\x00\x00',
++    ],
++    (Ecu.transmission, 0x18da1ef1, None): [
++      b'28101-63B-M420\x00\x00',
++    ],
++  },
+ }
+diff --git a/opendbc/car/honda/interface.py b/opendbc/car/honda/interface.py
+index e464cf1f..dd15e024 100755
+--- a/opendbc/car/honda/interface.py
++++ b/opendbc/car/honda/interface.py
+@@ -133,6 +133,11 @@ class CarInterface(CarInterfaceBase):
+       ret.lateralParams.torqueBP, ret.lateralParams.torqueV = [[0, 3840], [0, 3840]]  # TODO: determine if there is a dead zone at the top end
+       ret.lateralTuning.pid.kpV, ret.lateralTuning.pid.kiV = [[0.8], [0.24]]
+ 
++    elif candidate == CAR.HONDA_CITY_7G:
++      ret.steerActuatorDelay = 0.15
++      ret.lateralParams.torqueBP, ret.lateralParams.torqueV = [[0, 2560], [0, 2560]]
++      CarInterfaceBase.configure_torque_tune(candidate, ret.lateralTuning)
++
+     elif candidate in (CAR.HONDA_CRV, CAR.HONDA_CRV_EU):
+       ret.lateralParams.torqueBP, ret.lateralParams.torqueV = [[0, 1000], [0, 1000]]  # TODO: determine if there is a dead zone at the top end
+       ret.lateralTuning.pid.kpV, ret.lateralTuning.pid.kiV = [[0.8], [0.24]]
+diff --git a/opendbc/car/honda/values.py b/opendbc/car/honda/values.py
+index 4e8ad3ee..8e48d57a 100644
+--- a/opendbc/car/honda/values.py
++++ b/opendbc/car/honda/values.py
+@@ -195,6 +195,12 @@ class CAR(Platforms):
+     {Bus.pt: 'honda_civic_ex_2022_can_generated'},
+     flags=HondaFlags.BOSCH_RADARLESS,
+   )
++  HONDA_CITY_7G = HondaBoschPlatformConfig(
++    [HondaCarDocs("Honda City (Brazil only) 2023", "All")],
++    CarSpecs(mass=3125 * CV.LB_TO_KG, wheelbase=2.6, steerRatio=19.0, centerToFrontRatio=0.41, minSteerSpeed=23. * CV.KPH_TO_MS),
++    {Bus.pt: 'honda_civic_ex_2022_can_generated'},
++    flags=HondaFlags.BOSCH_RADARLESS,
++  )
+   ACURA_RDX_3G = HondaBoschPlatformConfig(
+     [HondaCarDocs("Acura RDX 2019-21", "All", min_steer_speed=3. * CV.MPH_TO_MS)],
+     CarSpecs(mass=4068 * CV.LB_TO_KG, wheelbase=2.75, steerRatio=11.95, centerToFrontRatio=0.41, tireStiffnessFactor=0.677),  # as spec
+@@ -338,9 +344,9 @@ FW_QUERY_CONFIG = FwQueryConfig(
+   # Note that we still attempt to match with them when they are present
+   # This is or'd with (ALL_ECUS - ESSENTIAL_ECUS) from fw_versions.py
+   non_essential_ecus={
+-    Ecu.eps: [CAR.ACURA_RDX_3G, CAR.HONDA_ACCORD, CAR.HONDA_CIVIC_2022, CAR.HONDA_E, CAR.HONDA_HRV_3G],
++    Ecu.eps: [CAR.ACURA_RDX_3G, CAR.HONDA_ACCORD, CAR.HONDA_CIVIC_2022, CAR.HONDA_E, CAR.HONDA_HRV_3G, CAR.HONDA_CITY_7G],
+     Ecu.vsa: [CAR.ACURA_RDX_3G, CAR.HONDA_ACCORD, CAR.HONDA_CIVIC, CAR.HONDA_CIVIC_BOSCH, CAR.HONDA_CIVIC_2022, CAR.HONDA_CRV_5G, CAR.HONDA_CRV_HYBRID,
+-              CAR.HONDA_E, CAR.HONDA_HRV_3G, CAR.HONDA_INSIGHT],
++              CAR.HONDA_E, CAR.HONDA_HRV_3G, CAR.HONDA_INSIGHT, CAR.HONDA_CITY_7G],
+   },
+   extra_ecus=[
+     (Ecu.combinationMeter, 0x18da60f1, None),
+@@ -357,6 +363,7 @@ STEER_THRESHOLD = {
+   # default is 1200, overrides go here
+   CAR.ACURA_RDX: 400,
+   CAR.HONDA_CRV_EU: 400,
++  CAR.HONDA_CITY_7G: 600,
+ }
+ 
+ HONDA_NIDEC_ALT_PCM_ACCEL = CAR.with_flags(HondaFlags.NIDEC_ALT_PCM_ACCEL)
+diff --git a/opendbc/car/tests/routes.py b/opendbc/car/tests/routes.py
+index 7ef4cdbc..33d39b7f 100644
+--- a/opendbc/car/tests/routes.py
++++ b/opendbc/car/tests/routes.py
+@@ -108,6 +108,7 @@ routes = [
+   CarTestRoute("1f032f5173c8ad99/00000006--573b3fcaf5", HONDA.HONDA_CIVIC_2022),  # Civic Type R with manual transmission
+   CarTestRoute("b1c832ad56b6bc9d/00000010--debfcf5867", HONDA.HONDA_CIVIC_2022),  # 2025 Civic Hatch Hybrid with new eCVT transmission
+   CarTestRoute("f9c43864cf057d05|2024-01-15--23-01-20", HONDA.HONDA_PILOT_4G),  # TODO: Replace with a newer route
++  CarTestRoute("56b2cf1dacdcd033/00000048--3267801001", HONDA.HONDA_CITY_7G),  # Brazilian model
+ 
+   CarTestRoute("87d7f06ade479c2e|2023-09-11--23-30-11", HYUNDAI.HYUNDAI_AZERA_6TH_GEN),
+   CarTestRoute("66189dd8ec7b50e6|2023-09-20--07-02-12", HYUNDAI.HYUNDAI_AZERA_HEV_6TH_GEN),
+diff --git a/opendbc/car/torque_data/override.toml b/opendbc/car/torque_data/override.toml
+index af2ef323..6267666b 100644
+--- a/opendbc/car/torque_data/override.toml
++++ b/opendbc/car/torque_data/override.toml
+@@ -80,6 +80,7 @@ legend = ["LAT_ACCEL_FACTOR", "MAX_LAT_ACCEL_MEASURED", "FRICTION"]
+ 
+ # Dashcam or fallback configured as ideal car
+ "MOCK" = [10.0, 10, 0.0]
++"HONDA_CITY_7G" = [1.2, 1.2, 0.23]
+ 
+ # Manually checked
+ "HONDA_CIVIC_2022" = [2.5, 1.2, 0.15]
+-- 
+2.55.0.windows.3
+

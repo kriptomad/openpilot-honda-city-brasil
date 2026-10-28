@@ -1,0 +1,1487 @@
+s......ss..s....ss........s..ss....ssss............sss....ssss..s..s..ss........sss....sss..s......s..s..ssssss....s..s....s..s..s............ssss......ss....sss......s..ss....ss..s..s..s..sss....sssss............sssssss........s....s....s....ss........s..s..ss......ssss..sss......s....sss......ss....sss........s..s..............s....................................................................................................................................................................................Setting OBD multiplexing to False
+Exception in thread Thread-31 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py:74: ResourceWarning: Unclosed socket <zmq.Socket(zmq.PUSH) at 0x278720888a0>
+  self.sock = self.zctx.socket(zmq.PUSH)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py:74: ResourceWarning: Unclosed context <zmq.Context() at 0x27871e30770>
+  self.sock = self.zctx.socket(zmq.PUSH)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+Exception in thread Thread-32 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py:74: ResourceWarning: Unclosed socket <zmq.Socket(zmq.PUSH) at 0x278720890f0>
+  self.sock = self.zctx.socket(zmq.PUSH)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py:74: ResourceWarning: Unclosed context <zmq.Context() at 0x27871f03230>
+  self.sock = self.zctx.socket(zmq.PUSH)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+Exception in thread Thread-33 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py:74: ResourceWarning: Unclosed socket <zmq.Socket(zmq.PUSH) at 0x278720cde80>
+  self.sock = self.zctx.socket(zmq.PUSH)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py:74: ResourceWarning: Unclosed context <zmq.Context() at 0x27871e30d70>
+  self.sock = self.zctx.socket(zmq.PUSH)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+Exception in thread Thread-34 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+Exception in thread Thread-35 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py:74: ResourceWarning: Unclosed socket <zmq.Socket(zmq.PUSH) at 0x27871fd1a20>
+  self.sock = self.zctx.socket(zmq.PUSH)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+Exception in thread Thread-36 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+Exception in thread Thread-37 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+Exception in thread Thread-38 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+Exception in thread Thread-39 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+Exception in thread Thread-40 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+FSetting OBD multiplexing to False
+Exception in thread Thread-41 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py:74: ResourceWarning: Unclosed socket <zmq.Socket(zmq.PUSH) at 0x27872098bb0>
+  self.sock = self.zctx.socket(zmq.PUSH)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py:74: ResourceWarning: Unclosed context <zmq.Context() at 0x2787218c1d0>
+  self.sock = self.zctx.socket(zmq.PUSH)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+Exception in thread Thread-42 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py:74: ResourceWarning: Unclosed socket <zmq.Socket(zmq.PUSH) at 0x278720991d0>
+  self.sock = self.zctx.socket(zmq.PUSH)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+Exception in thread Thread-43 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+Exception in thread Thread-44 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+Exception in thread Thread-45 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+Exception in thread Thread-46 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+Exception in thread Thread-47 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+Exception in thread Thread-48 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py:74: ResourceWarning: Unclosed socket <zmq.Socket(zmq.PUSH) at 0x2787209bd20>
+  self.sock = self.zctx.socket(zmq.PUSH)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+Exception in thread Thread-49 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py:74: ResourceWarning: Unclosed socket <zmq.Socket(zmq.PUSH) at 0x2787209acf0>
+  self.sock = self.zctx.socket(zmq.PUSH)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+Exception in thread Thread-50 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+FssssSetting OBD multiplexing to False
+Exception in thread Thread-111 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py:74: ResourceWarning: Unclosed socket <zmq.Socket(zmq.PUSH) at 0x278720cc590>
+  self.sock = self.zctx.socket(zmq.PUSH)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+Exception in thread Thread-112 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py:74: ResourceWarning: Unclosed socket <zmq.Socket(zmq.PUSH) at 0x27872089080>
+  self.sock = self.zctx.socket(zmq.PUSH)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+Exception in thread Thread-113 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+Exception in thread Thread-114 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py:74: ResourceWarning: Unclosed socket <zmq.Socket(zmq.PUSH) at 0x27872089710>
+  self.sock = self.zctx.socket(zmq.PUSH)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+Exception in thread Thread-115 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+Exception in thread Thread-116 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+Exception in thread Thread-117 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+Exception in thread Thread-118 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+Exception in thread Thread-119 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+Setting OBD multiplexing to False
+Exception in thread Thread-120 (get_fw_versions):
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 286, in get_fw_versions
+    set_obd_multiplexing(params, r.obd_multiplexing)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\fw_versions.py", line 210, in set_obd_multiplexing
+    cloudlog.warning(f"Setting OBD multiplexing to {obd_multiplexing}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1532, in warning
+    self._log(WARNING, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 81, in emit
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\system\swaglog.py", line 76, in connect
+    self.sock.connect("ipc://@logmessage")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\.venv_fp\Lib\site-packages\zmq\sugar\socket.py", line 348, in connect
+    super().connect(addr)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1036, in zmq.backend.cython._zmq.Socket.connect
+    _check_rc(rc)
+    
+  File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+    raise ZMQError(errno)
+    
+zmq.error.ZMQError: Protocol not supported (addr='ipc://@logmessage')
+FssssssF
+======================================================================
+FAIL: test_fw_query_timing (selfdrive.car.tests.test_fw_fingerprint.TestFwFingerprintTiming.test_fw_query_timing) (brand='honda', num_pandas=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_fw_fingerprint.py", line 173, in test_fw_query_timing
+    self._assert_timing(avg_time, brand_ref_times[num_pandas][brand], tol)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_fw_fingerprint.py", line 139, in _assert_timing
+    self.assertGreater(avg_time, ref_time - tol, "Performance seems to have improved, update test refs.")
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.31 not greater than 0.4 : Performance seems to have improved, update test refs.
+
+======================================================================
+FAIL: test_fw_query_timing (selfdrive.car.tests.test_fw_fingerprint.TestFwFingerprintTiming.test_fw_query_timing) (brand='hyundai', num_pandas=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_fw_fingerprint.py", line 173, in test_fw_query_timing
+    self._assert_timing(avg_time, brand_ref_times[num_pandas][brand], tol)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_fw_fingerprint.py", line 139, in _assert_timing
+    self.assertGreater(avg_time, ref_time - tol, "Performance seems to have improved, update test refs.")
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.31 not greater than 0.6 : Performance seems to have improved, update test refs.
+
+======================================================================
+FAIL: test_fw_query_timing (selfdrive.car.tests.test_fw_fingerprint.TestFwFingerprintTiming.test_fw_query_timing) (brand='hyundai', num_pandas=2)
+brand='body', num_pandas=1, len(config.requests)=1, avg FW query time=0.09 seconds
+brand='chrysler', num_pandas=1, len(config.requests)=3, avg FW query time=0.3 seconds
+brand='ford', num_pandas=1, len(config.requests)=2, avg FW query time=0.21 seconds
+brand='mazda', num_pandas=1, len(config.requests)=1, avg FW query time=0.09 seconds
+brand='nissan', num_pandas=1, len(config.requests)=3, avg FW query time=0.3 seconds
+brand='subaru', num_pandas=1, len(config.requests)=1, avg FW query time=0.09 seconds
+brand='tesla', num_pandas=1, len(config.requests)=2, avg FW query time=0.21 seconds
+brand='toyota', num_pandas=1, len(config.requests)=3, avg FW query time=0.7 seconds
+brand='volkswagen', num_pandas=1, len(config.requests)=2, avg FW query time=0.21 seconds
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_fw_fingerprint.py", line 173, in test_fw_query_timing
+    self._assert_timing(avg_time, brand_ref_times[num_pandas][brand], tol)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_fw_fingerprint.py", line 139, in _assert_timing
+    self.assertGreater(avg_time, ref_time - tol, "Performance seems to have improved, update test refs.")
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.33 not greater than 1.0 : Performance seems to have improved, update test refs.
+
+======================================================================
+FAIL: test_fw_query_timing (selfdrive.car.tests.test_fw_fingerprint.TestFwFingerprintTiming.test_fw_query_timing) (brand='all_brands')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_fw_fingerprint.py", line 177, in test_fw_query_timing
+    self._assert_timing(total_time, total_ref_time, tol)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\selfdrive\car\tests\test_fw_fingerprint.py", line 139, in _assert_timing
+    self.assertGreater(avg_time, ref_time - tol, "Performance seems to have improved, update test refs.")
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3.1500000000000004 not greater than 4.5 : Performance seems to have improved, update test refs.
+
+----------------------------------------------------------------------
+Ran 411 tests in 117.230s
+
+FAILED (failures=4, skipped=114)

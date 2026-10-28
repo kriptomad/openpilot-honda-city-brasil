@@ -1,0 +1,80 @@
+From 9ad0dbb08be5890291e776715bb2394963c581a1 Mon Sep 17 00:00:00 2001
+From: Bruno Costa <bruno.costa@cat.com>
+Date: Tue, 27 Oct 2026 12:13:26 -0300
+Subject: [PATCH 10/10] README: branch changelog; opendbc_repo bump to 6cbc8005
+ (README only)
+
+Replace the first fork note with a full list of what this branch changes
+on top of v0.9.9 (11 commits), the opendbc fork branch it consumes, the
+audits that were run and the platform-level divergences deliberately not
+ported. The opendbc bump only brings the matching README changelog.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+---
+ README.md    | 40 ++++++++++++++++++++++++++++++----------
+ opendbc_repo |  2 +-
+ 2 files changed, 31 insertions(+), 11 deletions(-)
+
+diff --git a/README.md b/README.md
+index bf0c8dd7c..909cdad96 100644
+--- a/README.md
++++ b/README.md
+@@ -30,18 +30,38 @@ Quick start: `bash <(curl -fsSL openpilot.comma.ai)`
+ 
+ </div>
+ 
++<!-- fork-branch-note:start -->
+ > [!IMPORTANT]
+-> **Fork branch `v0.9.9-cityg7-blackpanda` — work in progress.**
+-> This branch ports the **Honda City (Brazil only) 2023 (G7)** support, merged upstream in
+-> opendbc after openpilot 0.9.9, back onto openpilot **v0.9.9** — the last release that still
+-> supports the STM32F4 **black panda**. The goal is a byte-for-byte faithful port of every
+-> upstream change the City depends on (fingerprints, DBC, car interface, safety, docs, tests),
+-> plus the follow-up upstream fixes the City needs to engage (EPB message refactor).
++> **Fork branch `v0.9.9-cityg7-blackpanda` -- Honda City (Brazil only) 2023 (G7) on openpilot v0.9.9.**
++> This branch ports the City support, merged upstream after openpilot 0.9.9, back onto **v0.9.9** -- the last
++> release that still supports the STM32F4 **black panda**. Goal: a byte-for-byte faithful port of every upstream
++> change the City depends on, plus the follow-up upstream fixes it needs to engage. Two independent code audits
++> were run (commit-by-commit over 73 upstream Honda commits, CarParams field by field, TX byte by byte, safety,
++> firmware recognition, plus an adversarial second pass with a real-code replay of the City route).
++> **Status: port complete, CI green on the fork, not road tested.** CI badge above points at upstream.
+ >
+-> Status: port complete, under CI validation and code audit. Not yet road tested.
+-> See `RELEASES.md`, `docs/CARS.md` and the `opendbc_repo` submodule
+-> ([kriptomad/opendbc@firmwarecityg7-v0.9.9](https://github.com/kriptomad/opendbc/tree/firmwarecityg7-v0.9.9)).
+-> Base: commaai/openpilot v0.9.9 (`8aadf02b`). CI badge above points at upstream, not this fork.
++> **What is new / modified on this branch (11 commits on top of v0.9.9 `8aadf02b`):**
++>
++> | Commit | Files | Change |
++> |---|---|---|
++> | `857dee1dc` | `.gitmodules`, `opendbc_repo`, `docs/CARS.md`, `RELEASES.md` | `opendbc_repo` submodule points at the fork branch below; City line in `docs/CARS.md` (same format as upstream `09aa21390`); release note |
++> | `4937c6391` | -- | empty commit (workflow indexing on the fork) |
++> | `52f261127` | `uv.lock`, `.github/workflows` | CI only: relock `metadrive-simulator` wheel hash (upstream `4d53a26a0`); skip `build release` outside `commaai/openpilot` |
++> | `bac73ff1b` | `opendbc_repo` | bump to `07add98b` (EPB_STATUS DBC) |
++> | `0a5c06856` | `README.md` | first fork note (replaced by this changelog) |
++> | `c3e422ae9` | `selfdrive/car/car_specific.py` | `GearShifter.sport` accepted for Honda (upstream `bae7a610f`); the City CVT has an S position, without this S raises `wrongGear` |
++> | `89df27131` | `opendbc_repo` | bump to `052a515f` (City `steerActuatorDelay` 0.15, City-only torque `ki` 0.3) |
++> | `8be62bc95` | `selfdrive/locationd/torqued.py` | `ALLOWED_CARS += 'honda'` (upstream `839a77334`): live lateral-accel-factor learning; only active for torque-tuned Hondas, i.e. the City on v0.9.9 |
++> | `e841f3cc3` | `opendbc_repo` | bump to `b4125fe6` (`GEARBOX_CVT` layout: S/L decode as upstream) |
++> | (HEAD) | `README.md`, `opendbc_repo` | this changelog; bump to `6cbc8005` (opendbc README changelog only, no code change) |
++>
++> Everything car-specific lives in the submodule:
++> [kriptomad/opendbc@firmwarecityg7-v0.9.9](https://github.com/kriptomad/opendbc/tree/firmwarecityg7-v0.9.9)
++> (8 commits, listed in its README). Known, deliberate differences from upstream that are platform-wide and were
++> **not** ported: `common/pid.py` / `latcontrol_torque.py` anti-windup (`455a6a586`, `ab44c9a4f`), `pandad`
++> relay/IsOnroad changes, global torque `ki` default. Audit reports, tools and the `git format-patch` series:
++> [kriptomad/PandaH7Openpilot](https://github.com/kriptomad/PandaH7Openpilot/tree/main/09_FIRMWARECITYG7_BLACKPANDA).
++<!-- fork-branch-note:end -->
+ 
+ <table>
+   <tr>
+diff --git a/opendbc_repo b/opendbc_repo
+index b4125fe6a..6cbc8005a 160000
+--- a/opendbc_repo
++++ b/opendbc_repo
+@@ -1 +1 @@
+-Subproject commit b4125fe6a6d7b109146994cf94ee2967ac80d718
++Subproject commit 6cbc8005a43c04d601e1d9279cc5306631942334
+-- 
+2.55.0.windows.3
+

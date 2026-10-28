@@ -1,0 +1,25 @@
+From: audit2 <audit2@local>
+Subject: [PATCH] torqued: enable lateral accel factor learning for Honda (backport of upstream 839a77334)
+
+Base: openpilot v0.9.9-cityg7-blackpanda @ 89df27131
+Upstream openpilot 839a77334 (2025-08-06, "enable lateral accel factor learning for Honda", #35936) was
+already in 09aa21390 when the City was merged, so on upstream the City's latAccelFactor/friction are
+learned live by torqued (`CP.lateralTuning.which() == 'torque'` and brand honda) and the values from
+override.toml ([1.2, 1.2, 0.23]) are only the starting point. The first audit left this out on purpose
+(process-replay refs for torqued); it is a conscious divergence, not a correctness bug. Apply only if
+full parity with upstream is wanted; then regenerate the torqued process-replay refs for the Honda
+segments.
+---
+diff --git a/selfdrive/locationd/torqued.py b/selfdrive/locationd/torqued.py
+index 5ed86e4..9984c2e 100644
+--- a/selfdrive/locationd/torqued.py
++++ b/selfdrive/locationd/torqued.py
+@@ -32,7 +32,7 @@ MIN_BUCKET_POINTS = np.array([100, 300, 500, 500, 500, 500, 300, 100])
+ MIN_ENGAGE_BUFFER = 2  # secs
+ 
+ VERSION = 1  # bump this to invalidate old parameter caches
+-ALLOWED_CARS = ['toyota', 'hyundai', 'rivian']
++ALLOWED_CARS = ['toyota', 'hyundai', 'rivian', 'honda']
+ 
+ 
+ def slope2rot(slope):

@@ -1,0 +1,284 @@
+From 5f439d787a113acd265b7f26a286e8d2adb70dac Mon Sep 17 00:00:00 2001
+From: Bruno Costa <bruno.costa@cat.com>
+Date: Mon, 26 Oct 2026 16:31:47 -0300
+Subject: [PATCH 2/9] ci: pin ruff to 0.11.13 (June 2025) so lint matches the
+ v0.9.9 era; not part of the City port
+
+---
+ pyproject.toml | 266 ++++++++++++++++++++++++-------------------------
+ 1 file changed, 133 insertions(+), 133 deletions(-)
+
+diff --git a/pyproject.toml b/pyproject.toml
+index d923f39f..c68f3dc3 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -1,133 +1,133 @@
+-[project]
+-name = "opendbc"
+-version = "0.2.1"
+-description = "CAN bus databases and tools"
+-license = { file = "LICENSE" }
+-authors = [{ name = "Vehicle Researcher", email = "user@comma.ai" }]
+-readme = "README.md"
+-requires-python = ">=3.9,<3.13"  # pycapnp doesn't work with 3.13
+-
+-urls = { "homepage" = "https://github.com/commaai/opendbc" }
+-
+-# setuptools includes distutils which is needed by Cython.
+-# distutils was removed in python3.12 from the standard library.
+-dependencies = [
+-  "scons",
+-  "numpy",
+-  "Cython",
+-  "crcmod",
+-  "tqdm",
+-  "pycapnp",
+-  "setuptools",
+-  "pycryptodome",
+-]
+-
+-[project.optional-dependencies]
+-testing = [
+-  "cffi",
+-  "gcovr",
+-  "pytest",
+-  "pytest-coverage",
+-  "pytest-mock",
+-  "pytest-randomly",
+-  "pytest-xdist",
+-  "pytest-subtests",
+-  "hypothesis==6.47.*",
+-  "parameterized>=0.8,<0.9",
+-
+-  # static analysis
+-  "ruff",
+-  "ty",
+-  "lefthook",
+-  "cpplint",
+-  "cython-lint",
+-  "codespell",
+-]
+-docs = [
+-  "Jinja2",
+-  "natsort",
+-]
+-examples = [
+-  "inputs",
+-  "matplotlib",
+-]
+-
+-[build-system]
+-requires = ["setuptools"]
+-build-backend = "setuptools.build_meta"
+-
+-[tool.pytest.ini_options]
+-addopts = "-Werror --strict-config --strict-markers --durations=10 -n auto"
+-python_files = "test_*.py"
+-testpaths = [
+-  "opendbc"
+-]
+-
+-[tool.codespell]
+-quiet-level = 3
+-ignore-words-list = "alo,ba,bu,deque,hda,grey,arange"
+-builtin = "clear,rare,informal,code,names,en-GB_to_en-US"
+-check-hidden = true
+-
+-[tool.cython-lint]
+-max-line-length = 120
+-ignore = ["E111", "E114"]
+-
+-[tool.mypy]
+-# helpful warnings
+-warn_redundant_casts=true
+-warn_unreachable=true
+-warn_unused_ignores=true
+-
+-# restrict dynamic typing
+-warn_return_any=true
+-
+-# allow implicit optionals for default args
+-implicit_optional = true
+-
+-explicit_package_bases=true
+-
+-# https://beta.ruff.rs/docs/configuration/#using-pyprojecttoml
+-[tool.ruff]
+-line-length = 160
+-indent-width = 2
+-target-version="py311"
+-
+-[tool.ruff.lint]
+-select = [
+-  "E", "F", "W", "PIE", "C4", "ISC", "A", "B",
+-  "NPY", # numpy
+-  "UP",  # pyupgrade
+-  "TRY203", "TRY400", "TRY401", # try/excepts
+-  "RUF008", "RUF100",
+-  "TID251",
+-  "PLR1704",
+-  "INP001",
+-]
+-ignore = [
+-  "W292",
+-  "E741",
+-  "E402",
+-  "C408",
+-  "ISC003",
+-  "B027",
+-  "B024",
+-  "UP031",
+-  "NPY002",  # new numpy random syntax is worse
+-  "C420",
+-]
+-flake8-implicit-str-concat.allow-multiline=false
+-
+-[tool.ruff.lint.per-file-ignores]
+-"site_scons/*" = ["ALL"]
+-
+-[tool.ruff.lint.flake8-tidy-imports.banned-api]
+-"pytest.main".msg = "pytest.main requires special handling that is easy to mess up!"
+-# TODO: re-enable when all tests are converted to pytest
+-#"unittest".msg = "Use pytest"
+-
+-[tool.setuptools]
+-include-package-data = true
+-
+-[tool.setuptools.package-data]
+-"opendbc.safety" = ["*.h", "board/*.h", "board/drivers/*.h", "modes/*.h"]
++[project]
++name = "opendbc"
++version = "0.2.1"
++description = "CAN bus databases and tools"
++license = { file = "LICENSE" }
++authors = [{ name = "Vehicle Researcher", email = "user@comma.ai" }]
++readme = "README.md"
++requires-python = ">=3.9,<3.13"  # pycapnp doesn't work with 3.13
++
++urls = { "homepage" = "https://github.com/commaai/opendbc" }
++
++# setuptools includes distutils which is needed by Cython.
++# distutils was removed in python3.12 from the standard library.
++dependencies = [
++  "scons",
++  "numpy",
++  "Cython",
++  "crcmod",
++  "tqdm",
++  "pycapnp",
++  "setuptools",
++  "pycryptodome",
++]
++
++[project.optional-dependencies]
++testing = [
++  "cffi",
++  "gcovr",
++  "pytest",
++  "pytest-coverage",
++  "pytest-mock",
++  "pytest-randomly",
++  "pytest-xdist",
++  "pytest-subtests",
++  "hypothesis==6.47.*",
++  "parameterized>=0.8,<0.9",
++
++  # static analysis
++  "ruff==0.11.13",  # CI-only pin: ruff of June 2025 (newer releases add rules the v0.9.9 code never saw)
++  "ty",
++  "lefthook",
++  "cpplint",
++  "cython-lint",
++  "codespell",
++]
++docs = [
++  "Jinja2",
++  "natsort",
++]
++examples = [
++  "inputs",
++  "matplotlib",
++]
++
++[build-system]
++requires = ["setuptools"]
++build-backend = "setuptools.build_meta"
++
++[tool.pytest.ini_options]
++addopts = "-Werror --strict-config --strict-markers --durations=10 -n auto"
++python_files = "test_*.py"
++testpaths = [
++  "opendbc"
++]
++
++[tool.codespell]
++quiet-level = 3
++ignore-words-list = "alo,ba,bu,deque,hda,grey,arange"
++builtin = "clear,rare,informal,code,names,en-GB_to_en-US"
++check-hidden = true
++
++[tool.cython-lint]
++max-line-length = 120
++ignore = ["E111", "E114"]
++
++[tool.mypy]
++# helpful warnings
++warn_redundant_casts=true
++warn_unreachable=true
++warn_unused_ignores=true
++
++# restrict dynamic typing
++warn_return_any=true
++
++# allow implicit optionals for default args
++implicit_optional = true
++
++explicit_package_bases=true
++
++# https://beta.ruff.rs/docs/configuration/#using-pyprojecttoml
++[tool.ruff]
++line-length = 160
++indent-width = 2
++target-version="py311"
++
++[tool.ruff.lint]
++select = [
++  "E", "F", "W", "PIE", "C4", "ISC", "A", "B",
++  "NPY", # numpy
++  "UP",  # pyupgrade
++  "TRY203", "TRY400", "TRY401", # try/excepts
++  "RUF008", "RUF100",
++  "TID251",
++  "PLR1704",
++  "INP001",
++]
++ignore = [
++  "W292",
++  "E741",
++  "E402",
++  "C408",
++  "ISC003",
++  "B027",
++  "B024",
++  "UP031",
++  "NPY002",  # new numpy random syntax is worse
++  "C420",
++]
++flake8-implicit-str-concat.allow-multiline=false
++
++[tool.ruff.lint.per-file-ignores]
++"site_scons/*" = ["ALL"]
++
++[tool.ruff.lint.flake8-tidy-imports.banned-api]
++"pytest.main".msg = "pytest.main requires special handling that is easy to mess up!"
++# TODO: re-enable when all tests are converted to pytest
++#"unittest".msg = "Use pytest"
++
++[tool.setuptools]
++include-package-data = true
++
++[tool.setuptools.package-data]
++"opendbc.safety" = ["*.h", "board/*.h", "board/drivers/*.h", "modes/*.h"]
+-- 
+2.55.0.windows.3
+

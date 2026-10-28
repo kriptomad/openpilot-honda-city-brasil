@@ -1,0 +1,87 @@
+From 857dee1dcbd2a76428ddc0c953bb0b653cced9d4 Mon Sep 17 00:00:00 2001
+From: Bruno Costa <bruno.costa@cat.com>
+Date: Tue, 27 Oct 2026 09:09:16 -0300
+Subject: [PATCH 01/10] Honda City 2023 (Brazil) on openpilot v0.9.9 for the
+ black panda
+
+Branch off tag v0.9.9 (8aadf02b). Only the opendbc submodule moves:
+e370a036 -> kriptomad/opendbc ae690dd7 (branch firmwarecityg7-v0.9.9), which is
+v0.9.9's opendbc plus:
+  - commaai/opendbc 43006b9a "Honda: Honda City (Brazil only) 2023 (#2425)"
+  - HAS_EPB auto-detection backported from commaai/opendbc 6fa346ed (#2458); the City
+    does not send 0x1C2 EPB_STATUS and v0.9.9 required it for every Bosch car
+  - explicit cvt transmissionType for HONDA_CITY_7G
+  - test route 56b2cf1dacdcd033/00000017--d24ffdb376, CARS.md row
+
+panda stays at e462c34d (last revision with black panda / STM32F4 support).
+.gitmodules points the opendbc submodule at ../../kriptomad/opendbc.git so the
+fork-relative URL resolves to the repo that actually contains the commit.
+docs/CARS.md and RELEASES.md updated by hand in the v0.9.9 generator format.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+---
+ .gitmodules  | 2 +-
+ RELEASES.md  | 7 +++++++
+ docs/CARS.md | 3 ++-
+ opendbc_repo | 2 +-
+ 4 files changed, 11 insertions(+), 3 deletions(-)
+
+diff --git a/.gitmodules b/.gitmodules
+index ad6530de9..7d32b4291 100644
+--- a/.gitmodules
++++ b/.gitmodules
+@@ -3,7 +3,7 @@
+   url = ../../commaai/panda.git
+ [submodule "opendbc"]
+   path = opendbc_repo
+-  url = ../../commaai/opendbc.git
++  url = ../../kriptomad/opendbc.git
+ [submodule "msgq"]
+   path = msgq_repo
+   url = ../../commaai/msgq.git
+diff --git a/RELEASES.md b/RELEASES.md
+index 5d74689a2..fecc2c075 100644
+--- a/RELEASES.md
++++ b/RELEASES.md
+@@ -1,3 +1,10 @@
++Version 0.9.9-cityg7-blackpanda (2026-10-27)
++========================
++* Community fork of openpilot 0.9.9 for the comma black panda (STM32F4)
++  * Honda City 2023 (Brazil) support, backported from commaai/opendbc #2425 (vanillagorillaa and drFritz)
++  * Honda: EPB_STATUS parsing gated by HAS_EPB auto-detection (backport of commaai/opendbc #2458)
++  * opendbc submodule tracks kriptomad/opendbc branch firmwarecityg7-v0.9.9; panda stays at e462c34d (last with black panda support)
++
+ Version 0.9.9 (2025-05-23)
+ ========================
+ * New driving model
+diff --git a/docs/CARS.md b/docs/CARS.md
+index cdaeb3889..fc06be481 100644
+--- a/docs/CARS.md
++++ b/docs/CARS.md
+@@ -4,7 +4,7 @@
+ 
+ A supported vehicle is one that just works when you install a comma device. All supported cars provide a better experience than any stock system. Supported vehicles reference the US market unless otherwise specified.
+ 
+-# 312 Supported Cars
++# 313 Supported Cars
+ 
+ |Make|Model|Supported Package|ACC|No ACC accel below|No ALC below|Steering Torque|Resume from stop|<a href="##"><img width=2000></a>Hardware Needed<br>&nbsp;|Video|Setup Video|
+ |---|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+@@ -72,6 +72,7 @@ A supported vehicle is one that just works when you install a comma device. All
+ |GMC|Sierra 1500 2020-21|Driver Alert Package II|openpilot available[<sup>1</sup>](#footnotes)|0 mph|6 mph|[![star](assets/icon-star-full.svg)](##)|[![star](assets/icon-star-empty.svg)](##)|<details><summary>Parts</summary><sub>- 1 GM connector<br>- 1 comma 3X<br>- 1 harness box<br>- 1 mount<br>- 1 right angle OBD-C cable (1.5 ft)<br><a href="https://comma.ai/shop/comma-3x.html?make=GMC&model=Sierra 1500 2020-21">Buy Here</a></sub></details>|<a href="https://youtu.be/5HbNoBLzRwE" target="_blank"><img height="18px" src="assets/icon-youtube.svg"></img></a>||
+ |Honda|Accord 2018-22|All|openpilot available[<sup>1</sup>](#footnotes)|0 mph|3 mph|[![star](assets/icon-star-empty.svg)](##)|[![star](assets/icon-star-full.svg)](##)|<details><summary>Parts</summary><sub>- 1 Honda Bosch A connector<br>- 1 comma 3X<br>- 1 comma power v3<br>- 1 harness box<br>- 1 mount<br>- 1 right angle OBD-C cable (1.5 ft)<br><a href="https://comma.ai/shop/comma-3x.html?make=Honda&model=Accord 2018-22">Buy Here</a></sub></details>|<a href="https://www.youtube.com/watch?v=mrUwlj3Mi58" target="_blank"><img height="18px" src="assets/icon-youtube.svg"></img></a>||
+ |Honda|Accord Hybrid 2018-22|All|openpilot available[<sup>1</sup>](#footnotes)|0 mph|3 mph|[![star](assets/icon-star-empty.svg)](##)|[![star](assets/icon-star-full.svg)](##)|<details><summary>Parts</summary><sub>- 1 Honda Bosch A connector<br>- 1 comma 3X<br>- 1 comma power v3<br>- 1 harness box<br>- 1 mount<br>- 1 right angle OBD-C cable (1.5 ft)<br><a href="https://comma.ai/shop/comma-3x.html?make=Honda&model=Accord Hybrid 2018-22">Buy Here</a></sub></details>|||
++|Honda|City (Brazil only) 2023|All|openpilot available[<sup>1</sup>](#footnotes)|0 mph|14 mph|[![star](assets/icon-star-full.svg)](##)|[![star](assets/icon-star-full.svg)](##)|<details><summary>Parts</summary><sub>- 1 Honda Bosch B connector<br>- 1 comma 3X<br>- 1 comma power v3<br>- 1 harness box<br>- 1 mount<br>- 1 right angle OBD-C cable (1.5 ft)<br><a href="https://comma.ai/shop/comma-3x.html?make=Honda&model=City (Brazil only) 2023">Buy Here</a></sub></details>|||
+ |Honda|Civic 2016-18|Honda Sensing|openpilot|0 mph|12 mph|[![star](assets/icon-star-empty.svg)](##)|[![star](assets/icon-star-full.svg)](##)|<details><summary>Parts</summary><sub>- 1 Honda Nidec connector<br>- 1 comma 3X<br>- 1 comma power v3<br>- 1 harness box<br>- 1 mount<br>- 1 right angle OBD-C cable (1.5 ft)<br><a href="https://comma.ai/shop/comma-3x.html?make=Honda&model=Civic 2016-18">Buy Here</a></sub></details>|<a href="https://youtu.be/-IkImTe1NYE" target="_blank"><img height="18px" src="assets/icon-youtube.svg"></img></a>||
+ |Honda|Civic 2019-21|All|openpilot available[<sup>1</sup>](#footnotes)|0 mph|2 mph[<sup>5</sup>](#footnotes)|[![star](assets/icon-star-empty.svg)](##)|[![star](assets/icon-star-full.svg)](##)|<details><summary>Parts</summary><sub>- 1 Honda Bosch A connector<br>- 1 comma 3X<br>- 1 comma power v3<br>- 1 harness box<br>- 1 mount<br>- 1 right angle OBD-C cable (1.5 ft)<br><a href="https://comma.ai/shop/comma-3x.html?make=Honda&model=Civic 2019-21">Buy Here</a></sub></details>|<a href="https://www.youtube.com/watch?v=4Iz1Mz5LGF8" target="_blank"><img height="18px" src="assets/icon-youtube.svg"></img></a>||
+ |Honda|Civic 2022-24|All|openpilot available[<sup>1</sup>](#footnotes)|0 mph|0 mph|[![star](assets/icon-star-full.svg)](##)|[![star](assets/icon-star-full.svg)](##)|<details><summary>Parts</summary><sub>- 1 Honda Bosch B connector<br>- 1 comma 3X<br>- 1 comma power v3<br>- 1 harness box<br>- 1 mount<br>- 1 right angle OBD-C cable (1.5 ft)<br><a href="https://comma.ai/shop/comma-3x.html?make=Honda&model=Civic 2022-24">Buy Here</a></sub></details>|<a href="https://youtu.be/ytiOT5lcp6Q" target="_blank"><img height="18px" src="assets/icon-youtube.svg"></img></a>||
+diff --git a/opendbc_repo b/opendbc_repo
+index e370a0360..ae690dd7c 160000
+--- a/opendbc_repo
++++ b/opendbc_repo
+@@ -1 +1 @@
+-Subproject commit e370a036073bf38856f3cd9936c0bd44ff349dea
++Subproject commit ae690dd7ceb15424097bbe742519756c02b30fc3
+-- 
+2.55.0.windows.3
+

@@ -1,0 +1,18 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.9, pytest-9.1.1, pluggy-1.7.0
+rootdir: C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\10_FLOWPILOT\flowpilot\panda
+configfile: pyproject.toml
+plugins: hypothesis-6.170.12, timeout-2.4.0, xdist-3.8.0
+collected 413 items / 299 deselected / 114 selected
+
+panda\tests\safety\test_honda.py ssssssssssssssssssssssssss..s.......... [ 34%]
+..s..s..........s.............s..s............s..............s..s....... [ 97%]
+...                                                                      [100%]
+
+=========================== short test summary info ===========================
+SKIPPED [26] ..\.venv_fp\Lib\site-packages\_pytest\unittest.py:523: Skipped
+SKIPPED [9] panda\tests\safety\common.py:46: Safety mode implements no _user_regen_msg
+=============== 79 passed, 35 skipped, 299 deselected in 0.54s ================
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
+Temporary fault occurred: 0x1
