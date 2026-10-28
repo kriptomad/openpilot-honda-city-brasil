@@ -344,8 +344,10 @@ carState fields). Both are in Portuguese.
   [jagheterfredrik](https://github.com/jagheterfredrik/flowpilot) used as base.
 - KiCad (design), Freerouting 2.5.0 (autorouting, GPL, not redistributed here),
   STMicroelectronics (DS13313 datasheet, cited; redistribution subject to ST terms).
-- Repository author: Bruno Costa (kriptomad). The license inventory, obligations and the
-  upstream license texts are in [LICENSE.md](LICENSE.md) and [licenses/](licenses).
+- Repository author: Bruno Costa (kriptomad). Original hardware work (Hybrid Panda design,
+  fabrication outputs, hardware reports and research) is licensed under CERN-OHL-S-2.0;
+  original software and documentation under MIT. The license inventory, obligations and the
+  license texts are in [LICENSE.md](LICENSE.md) and [licenses/](licenses).
 
 ## Cloning
 

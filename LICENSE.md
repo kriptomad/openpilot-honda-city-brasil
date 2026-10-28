@@ -7,11 +7,24 @@ repository's layout. Upstream license texts are in [licenses/](licenses).
 
 ## Original work in this repository
 
-The Hybrid Panda KiCad project ([hardware/hybrid-panda](hardware/hybrid-panda)) is a
-derivative of lukasloetkolben/OpenBlackPanda and keeps its MIT notice. The author's own
-additions (board changes, scripts, documentation, port patches, firmware branches) are
-published under the MIT License, copyright (c) 2026 Bruno Costa, unless a file states
-otherwise. Documentation files that reproduce upstream text keep the upstream notice.
+Copyright (c) 2026 Bruno Costa. Two licenses apply to the author's own work, by area:
+
+- **Hardware** - the Hybrid Panda design and its outputs ([hardware/hybrid-panda](hardware/hybrid-panda),
+  [hardware/fabrication](hardware/fabrication), [hardware/reports](hardware/reports),
+  [hardware/research](hardware/research)) are released under the
+  **CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S-2.0)**,
+  text in [licenses/cern-ohl-s-2.0.txt](licenses/cern-ohl-s-2.0.txt). The project is a
+  derivative of lukasloetkolben/OpenBlackPanda (MIT); the original MIT notice is kept and
+  the MIT-licensed portions remain available under MIT as required by that license.
+  Source location for CERN-OHL-S purposes: https://github.com/kriptomad/openpilot-honda-city-brasil
+- **Software and documentation** - scripts ([hardware/scripts](hardware/scripts),
+  [software/openpilot-port/tools](software/openpilot-port/tools)), port patches, firmware
+  branch modifications, prebuilt binaries and all documentation ([docs](docs), readmes,
+  reports text) are released under the **MIT License**, text in
+  [licenses/license-mit-bruno-costa.txt](licenses/license-mit-bruno-costa.txt).
+
+A file that states a different license keeps that license. Documentation that reproduces
+upstream text keeps the upstream notice.
 
 ## Inventory of upstream sources
 
