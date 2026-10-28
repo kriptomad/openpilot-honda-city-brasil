@@ -1,0 +1,21 @@
+* text=auto eol=lf
+
+# binaries
+*.bin binary
+*.elf binary
+*.signed binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.zip binary
+*.step binary
+*.stp binary
+*.wrl binary
+*.sqlite3 binary
+*.xlsx binary
+
+# keep generated fabrication outputs, archived material and patches byte-exact
+hardware/fabrication/** -text
+archive/** -text
+*.sha256 -text
+*.patch -text

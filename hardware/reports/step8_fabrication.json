@@ -1,0 +1,240 @@
+{
+ "date": "2026-10-28 10:19:21",
+ "commands": [
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export gerbers --layers F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts --use-drill-file-origin --no-x2 --no-netlist --subtract-soldermask --disable-aperture-macros -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\gerbers\\ C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.0,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export drill --format excellon --drill-origin plot --excellon-separate-th --excellon-units mm --excellon-zeros-format suppressleading --generate-map --map-format pdf -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\drill\\ C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 0.9,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export drill --format excellon --drill-origin plot --excellon-separate-th --excellon-units mm --excellon-zeros-format suppressleading --generate-map --map-format gerberx2 -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\drill\\ C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 0.8,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch export pdf -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_schematic.pdf C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_sch",
+   "exit": 0,
+   "seconds": 1.2,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers F.Cu,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_copper_F.pdf C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.0,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers In1.Cu,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_copper_In1.pdf C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 0.9,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers In2.Cu,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_copper_In2.pdf C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.0,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers B.Cu,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_copper_B.pdf --mirror C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.0,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers F.Fab,F.SilkS,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_fab_top.pdf C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.2,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers B.Fab,B.SilkS,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_fab_bottom.pdf --mirror C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.0,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers F.Fab,F.CrtYd,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_assembly_top.pdf C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.1,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers B.Fab,B.CrtYd,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_assembly_bottom.pdf --mirror C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.1,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export step --subst-models --include-tracks --include-zones --force -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\3d\\HybridPanda.step C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "exit": 2,
+   "seconds": 14.3,
+   "stderr": "RML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats."
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch export bom --fields Reference,Value,Footprint,${DNP},MPN,LCSC,Manufacturer --labels Reference,Value,Footprint,DNP,MPN,LCSC,Manufacturer --group-by Value,Footprint,MPN,LCSC --exclude-dnp -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\assembly\\_bom_fields.csv C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_sch",
+   "exit": 0,
+   "seconds": 0.7,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pos --format csv --units mm --side both --use-drill-file-origin -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\assembly\\pos_kicad_both.csv C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 0.7,
+   "stderr": ""
+  }
+ ],
+ "files": {
+  "gerbers": [
+   "HybridPanda-B_Cu.gbl",
+   "HybridPanda-B_Mask.gbs",
+   "HybridPanda-B_Paste.gbp",
+   "HybridPanda-B_Silkscreen.gbo",
+   "HybridPanda-Edge_Cuts.gm1",
+   "HybridPanda-F_Cu.gtl",
+   "HybridPanda-F_Mask.gts",
+   "HybridPanda-F_Paste.gtp",
+   "HybridPanda-F_Silkscreen.gto",
+   "HybridPanda-In1_Cu.g1",
+   "HybridPanda-In2_Cu.g2",
+   "HybridPanda-job.gbrjob"
+  ],
+  "drill": [
+   "HybridPanda-NPTH-drl_map.gbr",
+   "HybridPanda-NPTH-drl_map.pdf",
+   "HybridPanda-NPTH.drl",
+   "HybridPanda-PTH-drl_map.gbr",
+   "HybridPanda-PTH-drl_map.pdf",
+   "HybridPanda-PTH.drl"
+  ],
+  "assembly": [
+   "BOM_JLC.csv",
+   "CPL_JLC.csv",
+   "pos_kicad_both.csv"
+  ],
+  "pdf": [
+   "HybridPanda_assembly_bottom.pdf",
+   "HybridPanda_assembly_top.pdf",
+   "HybridPanda_copper_B.pdf",
+   "HybridPanda_copper_F.pdf",
+   "HybridPanda_copper_In1.pdf",
+   "HybridPanda_copper_In2.pdf",
+   "HybridPanda_fab_bottom.pdf",
+   "HybridPanda_fab_top.pdf",
+   "HybridPanda_schematic.pdf"
+  ],
+  "3d": [
+   "HybridPanda.step"
+  ]
+ },
+ "problems": [],
+ "notes": [
+  "STEP gerado (28.2 MB) com aviso: modelos VRML ignorados (kicad-cli exit 2; 6 avisos no stderr truncado) — corpos 3D desses footprints ausentes"
+ ],
+ "assembly": {
+  "bom_lines": 54,
+  "bom_refs": 119,
+  "cpl_rows": 118,
+  "cpl_top": 76,
+  "cpl_bottom": 42,
+  "refs_without_LCSC": [
+   "JP1",
+   "U1"
+  ],
+  "refs_without_MPN": [
+   "JP1"
+  ],
+  "aux_origin_mm": [
+   0.0,
+   0.0
+  ],
+  "note": "Rotação CPL = orientação KiCad; JLC pode exigir correção por footprint (não verificado). LCSC lido do campo 'LCSC' do esquemático (códigos 'a verificar' em 06_REPORTS/bom_real/BOM_HYBRIDPANDA_v1.csv)."
+ },
+ "drill": {
+  "total": 270,
+  "by_kind": {
+   "PTH": 26,
+   "NPTH": 2,
+   "VIA": 242
+  },
+  "min_drill_mm": 0.3,
+  "min_annular_mm": {
+   "PTH": 0.125,
+   "VIA": 0.15
+  },
+  "rule_min_annular_mm": 0.125,
+  "rule_min_drill_mm": 0.3,
+  "sizes": [
+   {
+    "kind": "NPTH",
+    "drill_mm": 0.8,
+    "slot": false,
+    "count": 2
+   },
+   {
+    "kind": "PTH",
+    "drill_mm": 0.3,
+    "slot": false,
+    "count": 8
+   },
+   {
+    "kind": "PTH",
+    "drill_mm": 0.4,
+    "slot": false,
+    "count": 12
+   },
+   {
+    "kind": "PTH",
+    "drill_mm": 1.199,
+    "slot": true,
+    "count": 2
+   },
+   {
+    "kind": "PTH",
+    "drill_mm": 1.2,
+    "slot": true,
+    "count": 2
+   },
+   {
+    "kind": "PTH",
+    "drill_mm": 2.5,
+    "slot": true,
+    "count": 2
+   },
+   {
+    "kind": "VIA",
+    "drill_mm": 0.3,
+    "slot": false,
+    "count": 242
+   }
+  ]
+ },
+ "gerber_check": {
+  "files": 13,
+  "excellon_vs_pcb": {
+   "excellon": 270,
+   "pcb_holes": 270,
+   "match": true
+  }
+ },
+ "readme_blocks": [
+  "Impedância/skew CAN-FD e USB: apenas estimativa analítica (step6_reports.py); o DRC do KiCad não verifica impedância; stackup 4 camadas 1.59 mm assumido, não confirmado com o fabricante.",
+  "USB_D± não é par acoplado: Freerouting roteou com vias (ver STEP5_layout_H725.md §5/§7); FS 12 Mb/s tolera, mas não foi validado.",
+  "Nenhuma placa foi fabricada, montada ou medida — zero validação física; firmware red panda oficial NUNCA foi executado neste hardware.",
+  "BOM: 1 referências sem MPN e 2 sem código LCSC (de 119); códigos LCSC marcados 'a verificar' em 06_REPORTS\\bom_real\\BOM_HYBRIDPANDA_v1.csv ainda não confirmados no catálogo JLC — montagem JLC exige confirmar.",
+  "Violações DRC herdadas do baseline OpenBlackPanda não corrigidas (hole_clearance 8, lib_footprint_mismatch 73, silk_edge_clearance 4, silk_over_copper 1, silk_overlap 4, text_height 45) — ver STEP5_layout_H725.md §7.3 e 06_REPORTS\\CORRECOES_APLICADAS.md.",
+  "Verificação em visualizador de gerber: NÃO EXECUTADA automaticamente (sem gerbv/gerbview CLI); apenas verificação sintática (gerber_check.json). Abrir gerbers/ no KiCad GerbView antes de qualquer pedido.",
+  "Toolchain ARM: instalada localmente (Arm GNU 14.2.Rel1, %LOCALAPPDATA%\\arm-gnu-toolchain) mas firmware ainda NÃO compilado/assinado para este hardware; dependência do fluxo oficial de DFU/assinatura do commaai (ver STEP9).",
+  "Rotação dos componentes no CPL não normalizada para a convenção JLC (requer ajuste manual por footprint no painel JLC).",
+  "Via-in-pad: 0 após o relayout leste (step5e_relayout_east.py, D-33) + fix_audit.py + fix_vip_reroute.py (U8.3 +5V: via movida para a trilha F.Cu a oeste de C30 e trilha B.Cu reencaminhada). Contagem pela definição do final_audit.py (centro da via dentro da bbox de pad SMD) sobre o tabuleiro actual — reconfirmar em 06_REPORTS\\final_audit.json antes de qualquer pedido."
+ ],
+ "seconds": 221.2
+}

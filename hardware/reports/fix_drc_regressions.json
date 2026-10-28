@@ -1,0 +1,43 @@
+{
+ "actions": [
+  {
+   "via_3v3": "115.250,68.752 -> 115.300,68.752",
+   "track_ends_moved": 2
+  },
+  {
+   "BUS2_H": "vertical x 130.28 -> 130.36",
+   "ends": 4
+  },
+  {
+   "BUS1N_L": "bend 136.355,64.37 -> 136.07,64.27 ; 137.96,64.37 -> 137.96,64.27",
+   "ends": 4
+  },
+  {
+   "removed_dangling_5v": "118.918..120.167,46.592 In2.Cu"
+  },
+  {
+   "FID2": "137.485,35.260 -> 128.410,74.510 (keepout 2.2 mm)"
+  },
+  {
+   "FID5": "137.485,35.260 -> 128.410,74.510 (keepout 2.2 mm)"
+  }
+ ],
+ "drc_after": {
+  "unconnected": 0,
+  "total": 186,
+  "by_type": {
+   "hole_clearance": 8,
+   "copper_edge_clearance": 2,
+   "footprint_type_mismatch": 10,
+   "drill_out_of_range": 1,
+   "starved_thermal": 18,
+   "isolated_copper": 1,
+   "silk_edge_clearance": 4,
+   "lib_footprint_mismatch": 64,
+   "text_height": 72,
+   "silk_overlap": 4,
+   "silk_over_copper": 2
+  },
+  "errors": []
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "before": [
+  "C61.1<-+3V3@96.72,56.91",
+  "C62.1<-+3V3@117.53,41.09",
+  "C5.1<-+3V3@109.27,66.15",
+  "D13.1<-GND@127.59,67.11",
+  "Y1.2<-GND@104.01,72.80",
+  "U1.2<-GND@119.00,53.42",
+  "C61.2<-GND@93.74,57.54",
+  "U6.9<-GND@108.25,44.74",
+  "C60.2<-GND@115.91,74.28",
+  "C26.2<-GND@124.36,64.40",
+  "C30.2<-+5V@121.86,61.99",
+  "U11.3<-+5V@132.26,72.51",
+  "C33.2<-+5V@132.26,72.51"
+ ],
+ "actions": [
+  {
+   "D13.1": "remocao criaria 1 nao ligados -> revertido"
+  },
+  {
+   "U1.2": "remocao criaria 1 nao ligados -> revertido"
+  },
+  {
+   "C30": "dx=-0.35 dy=0.00, 2 extremidades de trilha"
+  },
+  {
+   "C33": "dx=0.00 dy=0.40, 2 extremidades de trilha"
+  }
+ ],
+ "after": [
+  "U1.2<-GND@119.00,53.42",
+  "D13.1<-GND@127.59,67.11",
+  "C61.1<-+3V3@96.72,56.91",
+  "C62.1<-+3V3@117.53,41.09",
+  "C5.1<-+3V3@109.27,66.15",
+  "Y1.2<-GND@104.01,72.80",
+  "C61.2<-GND@93.74,57.54",
+  "U6.9<-GND@108.25,44.74",
+  "C60.2<-GND@115.91,74.28",
+  "C26.2<-GND@124.36,64.40",
+  "U11.3<-+5V@132.26,72.51"
+ ],
+ "drc_after": {
+  "unconnected": 0,
+  "total": 191,
+  "by_type": {
+   "shorting_items": 2,
+   "clearance": 1,
+   "hole_clearance": 8,
+   "copper_edge_clearance": 2,
+   "footprint_type_mismatch": 10,
+   "drill_out_of_range": 1,
+   "starved_thermal": 18,
+   "solder_mask_bridge": 2,
+   "isolated_copper": 1,
+   "silk_edge_clearance": 4,
+   "lib_footprint_mismatch": 64,
+   "text_height": 72,
+   "silk_overlap": 4,
+   "silk_over_copper": 2
+  },
+  "errors": [
+   [
+    "shorting_items",
+    "Items shorting two nets (nets +5V and BUS0_RX)",
+    [
+     "Pad 2 [+5V] of C33 on F.Cu",
+     "Track [BUS0_RX] on F.Cu, length 1,4303 mm"
+    ]
+   ],
+   [
+    "shorting_items",
+    "Items shorting two nets (nets +5V and GND)",
+    [
+     "Track [+5V] on F.Cu, length 4,9450 mm",
+     "Pad 1 [GND] of C30 on F.Cu"
+    ]
+   ],
+   [
+    "clearance",
+    "Clearance violation ( clearance 0,1000 mm; actual 0,0800 mm)",
+    [
+     "Track [GND] on F.Cu, length 0,8000 mm",
+     "Track [+5V] on F.Cu, length 4,9450 mm"
+    ]
+   ],
+   [
+    "isolated_copper",
+    "Isolated copper fill",
+    [
+     "Zone [GND] on F.Cu, B.Cu and 2 more, priority 0"
+    ]
+   ]
+  ]
+ }
+}

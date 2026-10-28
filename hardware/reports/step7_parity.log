@@ -1,0 +1,9 @@
+[INFO] MCU {'ref': 'U7', 'value': 'STM32H725ZGT6', 'footprint': 'Package_QFP:LQFP-144_20x20mm_P0.5mm'}
+[INFO] CAN group FDCAN1 {'xcvr': ['U11'], 'stb_ok': True}
+[INFO] CAN group FDCAN2_OBD {'xcvr': ['U8'], 'stb_ok': True}
+[INFO] CAN group FDCAN2_NORMAL {'xcvr': ['U10'], 'stb_ok': True}
+[INFO] CAN group FDCAN3 {'xcvr': ['U9'], 'stb_ok': True}
+log -> C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\06_REPORTS\parity_red_h7_hybrid_HybridPanda_netlist.json
+report -> C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\06_REPORTS\parity_red_h7_hybrid_HybridPanda_netlist.md
+
+--- stderr ---

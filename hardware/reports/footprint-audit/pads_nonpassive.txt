@@ -1,0 +1,247 @@
+=== D1 SMAJ16CA-13-F [BlackPanda:DIOM4325X250N] F.Cu rot=90 attrs=THT models=${KIPRJMOD}/HybridPanda.3d/SMAJ16CA.step crt=3,15x6,94
+  1 GND (-2.115,0) 2.12x1.5 rect SMD d= rr=0.25 L=3
+  2 +12V (2.115,-0) 2.12x1.5 rect SMD d= rr=0.25 L=3
+=== D10 BAS70H 115 [Diode_SMD:D_SOD-123F] F.Cu rot=180 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step crt=4,49x2,39
+  1 +5V (-1.4,0) 1.1x1.1 roundrect SMD d= rr=0.227 L=3
+  2 USB_PWR (1.4,-0) 1.1x1.1 roundrect SMD d= rr=0.227 L=3
+=== D11 B320AE-13 [Diode_SMD:D_SMA] F.Cu rot=180 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step crt=7,09x3,59
+  1 Net-(D11-K) (-2,0) 2.5x1.8 roundrect SMD d= rr=0.139 L=3
+  2 GND (2,-0) 2.5x1.8 roundrect SMD d= rr=0.139 L=3
+=== D12 SM540C [Diode_SMD:D_SMC] F.Cu rot=180 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMC.step crt=9,89x6,79
+  1 L4 (-3.4,0) 3.3x2.5 roundrect SMD d= rr=0.1 L=3
+  2 GND (3.4,-0) 3.3x2.5 roundrect SMD d= rr=0.1 L=3
+=== D13 BAT54S [Package_TO_SOT_SMD:SOT-23] B.Cu rot=0 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step crt=3,95x3,49
+  1 GND (-0.9375,0.95) 1.475x0.6 roundrect SMD d= rr=0.25 L=3
+  2 +3V3 (-0.9375,-0.95) 1.475x0.6 roundrect SMD d= rr=0.25 L=3
+  3 SBU1_ADC (0.9375,0) 1.475x0.6 roundrect SMD d= rr=0.25 L=3
+=== D14 BAT54S [Package_TO_SOT_SMD:SOT-23] B.Cu rot=0 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step crt=3,95x3,49
+  1 GND (-0.9375,0.95) 1.475x0.6 roundrect SMD d= rr=0.25 L=3
+  2 +3V3 (-0.9375,-0.95) 1.475x0.6 roundrect SMD d= rr=0.25 L=3
+  3 SBU2_ADC (0.9375,0) 1.475x0.6 roundrect SMD d= rr=0.25 L=3
+=== D2 BAS40WS 43 [Diode_SMD:D_SOD-323] F.Cu rot=-90 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step crt=1,99x3,29
+  1 12V_Protected (-1.05,-0) 0.6x0.45 roundrect SMD d= rr=0.25 L=3
+  2 Net-(D2-A) (1.05,0) 0.6x0.45 roundrect SMD d= rr=0.25 L=3
+=== D5 PESD2CAN,215 [BlackPanda:SOT95P230X110-3N] F.Cu rot=-90 attrs=THT models=${KIPRJMOD}/HybridPanda.3d/SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR.wrl crt=3,59x3,89
+  1 SBU1 (-1.15,-0.95) 1x0.6 rect SMD d= rr=0.25 L=3
+  2 SBU2 (-1.15,0.95) 1x0.6 rect SMD d= rr=0.25 L=3
+  3 GND (1.15,0) 1x0.6 rect SMD d= rr=0.25 L=3
+=== D6 PESD2CAN,215 [BlackPanda:SOT95P230X110-3N] F.Cu rot=180 attrs=THT models=${KIPRJMOD}/HybridPanda.3d/SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR.wrl crt=3,89x3,59
+  1 BUS1O_L (-1.15,-0.95) 1x0.6 rect SMD d= rr=0.25 L=3
+  2 BUS1O_H (-1.15,0.95) 1x0.6 rect SMD d= rr=0.25 L=3
+  3 GND (1.15,-0) 1x0.6 rect SMD d= rr=0.25 L=3
+=== D7 PESD2CAN,215 [BlackPanda:SOT95P230X110-3N] F.Cu rot=180 attrs=THT models=${KIPRJMOD}/HybridPanda.3d/SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR.wrl crt=3,89x3,59
+  1 BUS2_L (-1.15,-0.95) 1x0.6 rect SMD d= rr=0.25 L=3
+  2 BUS2_H (-1.15,0.95) 1x0.6 rect SMD d= rr=0.25 L=3
+  3 GND (1.15,-0) 1x0.6 rect SMD d= rr=0.25 L=3
+=== D8 PESD2CAN,215 [BlackPanda:SOT95P230X110-3N] F.Cu rot=-90 attrs=THT models= crt=3,59x3,89
+  1 BUS1N_L (-1.15,-0.95) 1x0.6 rect SMD d= rr=0.25 L=3
+  2 BUS1N_H (-1.15,0.95) 1x0.6 rect SMD d= rr=0.25 L=3
+  3 GND (1.15,0) 1x0.6 rect SMD d= rr=0.25 L=3
+=== D9 PESD2CAN,215 [BlackPanda:SOT95P230X110-3N] F.Cu rot=-90 attrs=THT models= crt=3,59x3,89
+  1 BUS0_L (-1.15,-0.95) 1x0.6 rect SMD d= rr=0.25 L=3
+  2 BUS0_H (-1.15,0.95) 1x0.6 rect SMD d= rr=0.25 L=3
+  3 GND (1.15,0) 1x0.6 rect SMD d= rr=0.25 L=3
+=== FB1 600R@100MHz [Inductor_SMD:L_0603_1608Metric] B.Cu rot=-90 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step crt=1,55x3,05
+  1 VDDA (-0.7875,-0) 0.875x0.95 roundrect SMD d= rr=0.25 L=3
+  2 +3V3 (0.7875,0) 0.875x0.95 roundrect SMD d= rr=0.25 L=3
+=== FID1 Fiducial [Fiducial:Fiducial_1mm_Mask2mm] F.Cu rot=0 attrs=EXCL_POS,EXCL_BOM models= crt=0x0
+    (0,0) 1x1 circle SMD d= rr=0.25 L=2
+=== FID2 Fiducial [Fiducial:Fiducial_1mm_Mask2mm] F.Cu rot=0 attrs=EXCL_POS,EXCL_BOM models= crt=0x0
+    (0,0) 1x1 circle SMD d= rr=0.25 L=2
+=== FID3 Fiducial [Fiducial:Fiducial_1mm_Mask2mm] F.Cu rot=0 attrs=EXCL_POS,EXCL_BOM models= crt=0x0
+    (0,0) 1x1 circle SMD d= rr=0.25 L=2
+=== FID4 Fiducial [Fiducial:Fiducial_1mm_Mask2mm] B.Cu rot=180 attrs=EXCL_POS,EXCL_BOM models= crt=0x0
+    (-0,0) 1x1 circle SMD d= rr=0.25 L=2
+=== FID5 Fiducial [Fiducial:Fiducial_1mm_Mask2mm] B.Cu rot=180 attrs=EXCL_POS,EXCL_BOM models= crt=0x0
+    (-0,0) 1x1 circle SMD d= rr=0.25 L=2
+=== FID6 Fiducial [Fiducial:Fiducial_1mm_Mask2mm] B.Cu rot=180 attrs=EXCL_POS,EXCL_BOM models= crt=0x0
+    (-0,0) 1x1 circle SMD d= rr=0.25 L=2
+=== J1 SWD [Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD] B.Cu rot=0 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Connector_PinHeader_1.27mm.3dshapes/PinHeader_2x05_P1.27mm_Vertical_SMD.step crt=8,67x7,45
+  1 +3V3 (-1.95,2.54) 2.4x0.74 rect SMD d= rr=0.25 L=3
+  2 SWDIO (1.95,2.54) 2.4x0.74 rect SMD d= rr=0.25 L=3
+  3 GND (-1.95,1.27) 2.4x0.74 rect SMD d= rr=0.25 L=3
+  4 SWCLK (1.95,1.27) 2.4x0.74 rect SMD d= rr=0.25 L=3
+  5 GND (-1.95,0) 2.4x0.74 rect SMD d= rr=0.25 L=3
+  6 unconnected-(J1-Pin_6-Pad6) (1.95,0) 2.4x0.74 rect SMD d= rr=0.25 L=3
+  7 unconnected-(J1-Pin_7-Pad7) (-1.95,-1.27) 2.4x0.74 rect SMD d= rr=0.25 L=3
+  8 unconnected-(J1-Pin_8-Pad8) (1.95,-1.27) 2.4x0.74 rect SMD d= rr=0.25 L=3
+  9 GND (-1.95,-2.54) 2.4x0.74 rect SMD d= rr=0.25 L=3
+  10 NRST (1.95,-2.54) 2.4x0.74 rect SMD d= rr=0.25 L=3
+=== L3 47uH 2A - SMMS0650-470M [BlackPanda:IND-SMD_L7.3-W6.8] F.Cu rot=180 attrs=THT models=${KIPRJMOD}/HybridPanda.3d/IND-SMD_L7.3-W6.8.wrl crt=0x0
+  1 Net-(D11-K) (-3,0) 2.35x3.5 rect SMD d= rr=0.25 L=3
+  2 +3V3 (3,-0) 2.35x3.5 rect SMD d= rr=0.25 L=3
+=== L4 15uH [BlackPanda:L_10.5x11.5_H4.0] F.Cu rot=-90 attrs=SMD models=${KIPRJMOD}/HybridPanda.3d/IND-SMD_L11.5-W10.5_MWSA1004.wrl crt=11,73x12,73
+  1 L4 (-4.75,-0) 3.5x4 rect SMD d= rr=0.25 L=3
+  2 +5V (4.75,0) 3.5x4 rect SMD d= rr=0.25 L=3
+=== L5 2.2uH DFE201610E-2R2M [Inductor_SMD:L_Murata_DFE201610P] B.Cu rot=180 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Murata_DFE201610P.step crt=2,59x2,19
+  1 VLXSMPS (-0.725,0) 0.55x1.6 roundrect SMD d= rr=0.25 L=3
+  2 VFBSMPS (0.725,-0) 0.55x1.6 roundrect SMD d= rr=0.25 L=3
+=== P1 TYPE-C-31-M-04 [BlackPanda:USB-C-SMD_TYPE-C-USB-20] F.Cu rot=90 attrs=THT models=${KIPRJMOD}/HybridPanda.3d/USB-C-SMD_TYPE-C-USB-20.wrl crt=0x0
+    (-3.6749,-2.545) 0.8x0.8 circle NPTH d=0,8x0,8 rr=0.25 L=34
+    (3.6751,-2.545) 0.8x0.8 circle NPTH d=0,8x0,8 rr=0.25 L=34
+  0 GND (-4.49,3.105) 1x1.6 oval PTH d=0,6x1,1999 rr=0.25 L=34
+  0 GND (-4.13,-1.3049) 1x1.6 oval PTH d=0,6x1,199 rr=0.25 L=34
+  0 GND (4.13,-1.3049) 1x1.6 oval PTH d=0,6x1,199 rr=0.25 L=34
+  0 GND (4.49,3.105) 1x1.6 oval PTH d=0,6x1,1999 rr=0.25 L=34
+  A1 GND (-2.7503,-3.105) 0.3x0.9 rect SMD d= rr=0.25 L=3
+  A2 BUS1O_H (-2.2502,-3.105) 0.3x0.9 rect SMD d= rr=0.25 L=3
+  A3 BUS1O_L (-1.7501,-3.105) 0.3x0.9 rect SMD d= rr=0.25 L=3
+  A4 +12V (-1.2502,-3.105) 0.3x0.9 rect SMD d= rr=0.25 L=3
+  A5 unconnected-(P1-CC1-PadA5) (-0.7501,-3.105) 0.3x0.9 rect SMD d= rr=0.25 L=3
+  A6 unconnected-(P1-DP1-PadA6) (-0.2502,-3.105) 0.3x0.9 rect SMD d= rr=0.25 L=3
+  A7 unconnected-(P1-DN1-PadA7) (0.2499,-3.105) 0.3x0.9 rect SMD d= rr=0.25 L=3
+  A8 SBU1 (0.7498,-3.105) 0.3x0.9 rect SMD d= rr=0.25 L=3
+  A9 +12V (1.2499,-3.105) 0.3x0.9 rect SMD d= rr=0.25 L=3
+  B1 GND (2.8001,-1.895) 0.6x0.6 circle PTH d=0,4x0,4 rr=0.25 L=34
+  B2 BUS1N_H (2.4001,-1.1949) 0.6x0.6 circle PTH d=0,4x0,4 rr=0.25 L=34
+  B3 BUS1N_L (1.5999,-1.1949) 0.6x0.6 circle PTH d=0,4x0,4 rr=0.25 L=34
+  B4 +12V (1.2002,-1.895) 0.6x0.6 circle PTH d=0,4x0,4 rr=0.25 L=34
+  B5 unconnected-(P1-CC2-PadB5) (0.8001,-1.1949) 0.6x0.6 circle PTH d=0,4x0,4 rr=0.25 L=34
+  B6 unconnected-(P1-DP2-PadB6) (0.4001,-1.895) 0.6x0.6 circle PTH d=0,4x0,4 rr=0.25 L=34
+  B7 unconnected-(P1-DN2-PadB7) (-0.4001,-1.895) 0.6x0.6 circle PTH d=0,4x0,4 rr=0.25 L=34
+  B8 SBU2 (-0.7998,-1.1949) 0.6x0.6 circle PTH d=0,4x0,4 rr=0.25 L=34
+  B9 +12V (-1.1999,-1.895) 0.6x0.6 circle PTH d=0,4x0,4 rr=0.25 L=34
+  A10 BUS2_L (1.7498,-3.105) 0.3x0.9 rect SMD d= rr=0.25 L=3
+  A11 BUS2_H (2.2499,-3.105) 0.3x0.9 rect SMD d= rr=0.25 L=3
+  A12 GND (2.7498,-3.105) 0.3x0.9 rect SMD d= rr=0.25 L=3
+  B10 BUS0_L (-1.5999,-1.1949) 0.6x0.6 circle PTH d=0,4x0,4 rr=0.25 L=34
+  B11 BUS0_H (-2.4001,-1.1949) 0.6x0.6 circle PTH d=0,4x0,4 rr=0.25 L=34
+  B12 GND (-2.7998,-1.895) 0.6x0.6 circle PTH d=0,4x0,4 rr=0.25 L=34
+=== Q1 DDTA143ECA-7-F P08 [BlackPanda:SOT23-3] F.Cu rot=180 attrs=THT models=${KIPRJMOD}/HybridPanda.3d/SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR.wrl crt=0x0
+  1 relay_SBU2 (0.889,-1.016) 0.9144x0.9144 rect SMD d= rr=0.25 L=3
+  2 +5V (-0.889,-1.016) 0.9144x0.9144 rect SMD d= rr=0.25 L=3
+  3 SBU2 (0,1.0008) 0.9144x0.9144 rect SMD d= rr=0.25 L=3
+=== Q2 DDTA143ECA-7-F P08 [BlackPanda:SOT23-3] F.Cu rot=180 attrs=THT models=${KIPRJMOD}/HybridPanda.3d/SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR.wrl crt=0x0
+  1 relay_SBU1 (0.889,-1.016) 0.9144x0.9144 rect SMD d= rr=0.25 L=3
+  2 +5V (-0.889,-1.016) 0.9144x0.9144 rect SMD d= rr=0.25 L=3
+  3 SBU1 (0,1.0008) 0.9144x0.9144 rect SMD d= rr=0.25 L=3
+=== Q3 PDTC114EU [Package_TO_SOT_SMD:SOT-323_SC-70] F.Cu rot=0 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.step crt=3,49x2,69
+  1 USB_LOAD (-1,-0.65) 0.45x0.7 rect SMD d= rr=0.25 L=3
+  2 GND (-1,0.65) 0.45x0.7 rect SMD d= rr=0.25 L=3
+  3 Net-(Q3-C) (1,0) 0.45x0.7 rect SMD d= rr=0.25 L=3
+=== Q4 HY12P03C2 [Package_SO:PowerPAK_SO-8_Single] F.Cu rot=0 attrs=SMD models=${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/PowerPAK_SO-8_Single.wrl crt=7,19x5,59
+  1 12V_Protected (-2.67,-1.905) 1.27x0.61 rect SMD d= rr=0.25 L=3
+  2 12V_Protected (-2.67,-0.635) 1.27x0.61 rect SMD d= rr=0.25 L=3
+  3 12V_Protected (-2.67,0.635) 1.27x0.61 rect SMD d= rr=0.25 L=3
+  4 Net-(D2-A) (-2.67,1.905) 1.27x0.61 rect SMD d= rr=0.25 L=3
+  5 +12V (0.69,0) 3.81x3.91 rect SMD d= rr=0.25 L=3
+  5 +12V (2.795,-1.905) 1.02x0.61 rect SMD d= rr=0.25 L=3
+  5 +12V (2.795,-0.635) 1.02x0.61 rect SMD d= rr=0.25 L=3
+  5 +12V (2.795,0.635) 1.02x0.61 rect SMD d= rr=0.25 L=3
+  5 +12V (2.795,1.905) 1.02x0.61 rect SMD d= rr=0.25 L=3
+=== SW1 SW_Push [Button_Switch_SMD:SW_SPST_SKQG_WithStem] F.Cu rot=0 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_SKQG_WithStem.step crt=8,59x5,79
+  1 BOOT0 (-3.1,-1.85) 1.8x1.1 rect SMD d= rr=0.25 L=3
+  1 BOOT0 (3.1,-1.85) 1.8x1.1 rect SMD d= rr=0.25 L=3
+  2 +3V3 (-3.1,1.85) 1.8x1.1 rect SMD d= rr=0.25 L=3
+  2 +3V3 (3.1,1.85) 1.8x1.1 rect SMD d= rr=0.25 L=3
+=== U1 AP22615AWU-7 [Package_TO_SOT_SMD:SOT-23-6] F.Cu rot=180 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step crt=4,19x3,49
+  1 USB_PWR (-1.1375,-0.95) 1.325x0.6 roundrect SMD d= rr=0.25 L=3
+  2 GND (-1.1375,0) 1.325x0.6 roundrect SMD d= rr=0.25 L=3
+  3 Net-(U1-FLG) (-1.1375,0.95) 1.325x0.6 roundrect SMD d= rr=0.25 L=3
+  4 Net-(Q3-C) (1.1375,0.95) 1.325x0.6 roundrect SMD d= rr=0.25 L=3
+  5 Net-(U1-ISET) (1.1375,-0) 1.325x0.6 roundrect SMD d= rr=0.25 L=3
+  6 +5V (1.1375,-0.95) 1.325x0.6 roundrect SMD d= rr=0.25 L=3
+=== U10 TJA1042TK-3 [Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm] F.Cu rot=90 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm.step crt=3,59x4,35
+    (-0.3875,-0.6) 0.6x1 rect SMD d= rr=0.25 L=1
+    (-0.3875,0.6) 0.6x1 rect SMD d= rr=0.25 L=1
+    (0.3875,-0.6) 0.6x1 rect SMD d= rr=0.25 L=1
+    (0.3875,0.6) 0.6x1 rect SMD d= rr=0.25 L=1
+  1 BUS1N_TX (-1.55,-0.975) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  2 GND (-1.55,-0.325) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  3 +5V (-1.55,0.325) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  4 BUS1N_RX (-1.55,0.975) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  5 +3V3 (1.55,0.975) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  6 BUS1N_L (1.55,0.325) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  7 BUS1N_H (1.55,-0.325) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  8 BUS1N_STB (1.55,-0.975) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  9 GND (0,0) 1.55x2.4 rect SMD d= rr=0.25 L=2
+=== U11 TJA1042TK-3 [Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm] F.Cu rot=90 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm.step crt=3,59x4,35
+    (-0.3875,-0.6) 0.6x1 rect SMD d= rr=0.25 L=1
+    (-0.3875,0.6) 0.6x1 rect SMD d= rr=0.25 L=1
+    (0.3875,-0.6) 0.6x1 rect SMD d= rr=0.25 L=1
+    (0.3875,0.6) 0.6x1 rect SMD d= rr=0.25 L=1
+  1 BUS0_TX (-1.55,-0.975) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  2 GND (-1.55,-0.325) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  3 +5V (-1.55,0.325) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  4 BUS0_RX (-1.55,0.975) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  5 +3V3 (1.55,0.975) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  6 BUS0_L (1.55,0.325) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  7 BUS0_H (1.55,-0.325) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  8 BUS0_STB (1.55,-0.975) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  9 GND (0,0) 1.55x2.4 rect SMD d= rr=0.25 L=2
+=== U12 XL1509-3.3 [Package_SO:Diodes_PSOP-8] F.Cu rot=-90 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/PowerIntegrations_SO-8.step crt=5,49x7,49
+  1 +5V (-2.7,-1.905) 1.5x0.65 rect SMD d= rr=0.25 L=3
+  2 Net-(D11-K) (-2.7,-0.635) 1.5x0.65 rect SMD d= rr=0.25 L=3
+  3 +3V3 (-2.7,0.635) 1.5x0.65 rect SMD d= rr=0.25 L=3
+  4 GND (-2.7,1.905) 1.5x0.65 rect SMD d= rr=0.25 L=3
+  5 GND (2.7,1.905) 1.5x0.65 rect SMD d= rr=0.25 L=3
+  6 GND (2.7,0.635) 1.5x0.65 rect SMD d= rr=0.25 L=3
+  7 GND (2.7,-0.635) 1.5x0.65 rect SMD d= rr=0.25 L=3
+  8 GND (2.7,-1.905) 1.5x0.65 rect SMD d= rr=0.25 L=3
+  9  (-0.675,-0.9) 1.35x1.8 rect SMD d= rr=0.25 L=3
+  9  (-0.675,0.9) 1.35x1.8 rect SMD d= rr=0.25 L=3
+  9  (0.675,-0.9) 1.35x1.8 rect SMD d= rr=0.25 L=3
+  9  (0.675,0.9) 1.35x1.8 rect SMD d= rr=0.25 L=3
+=== U3 10_0_QHHTZB6_3 [BlackPanda:USB-A-TH_10.0QHHTZB6.3] F.Cu rot=90 attrs=THT models=${KIPRJMOD}/HybridPanda.3d/USB-A-TH_10.0QHHTZB6.3.wrl crt=0x0
+  1 USB_PWR (-3.4999,-4.395) 1.12x2.88 rect SMD d= rr=0.25 L=3
+  2 USB_R_D- (-1,-4.395) 1.12x2.88 rect SMD d= rr=0.25 L=3
+  3 USB_R_D+ (1,-4.395) 1.12x2.88 rect SMD d= rr=0.25 L=3
+  4 GND (3.4999,-4.395) 1.12x2.88 rect SMD d= rr=0.25 L=3
+  5 unconnected-(U3-Pad5) (-6.4501,4.395) 1.2x3.1 oval PTH d=0,7x2,5 rr=0.25 L=34
+  6 unconnected-(U3-Pad6) (6.4501,4.395) 1.2x3.1 oval PTH d=0,7x2,5 rr=0.25 L=34
+=== U5 FM-B1921RGBA-SH [BlackPanda:LED-ARRAY-SMD_4P-L2.2-W2.1-BR] F.Cu rot=0 attrs=THT models=${KIPRJMOD}/HybridPanda.3d/LED-ARRAY-SMD_4P-L2.2-W2.1-BR.wrl crt=0x0
+  1 +3V3 (0.8301,0.5) 0.66x0.7 rect SMD d= rr=0.25 L=3
+  2 RED- (0.8301,-0.5) 0.66x0.7 rect SMD d= rr=0.25 L=3
+  3 GREEN- (-0.8301,-0.5) 0.66x0.7 rect SMD d= rr=0.25 L=3
+  4 BLUE- (-0.8301,0.5) 0.66x0.7 rect SMD d= rr=0.25 L=3
+=== U6 TPS5450DDAR [BlackPanda:CONV_TPS5450DDAR] F.Cu rot=0 attrs=THT models=${KIPRJMOD}/HybridPanda.3d/SOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP.wrl crt=7,54x5,49
+  1 Net-(U6-BOOT) (-2.7,-1.905) 1.55x0.6 roundrect SMD d= rr=0.03 L=2
+  2 unconnected-(U6-NC_2-Pad2) (-2.7,-0.635) 1.55x0.6 roundrect SMD d= rr=0.03 L=2
+  3 unconnected-(U6-NC_3-Pad3) (-2.7,0.635) 1.55x0.6 roundrect SMD d= rr=0.03 L=2
+  4 VSENSE (-2.7,1.905) 1.55x0.6 roundrect SMD d= rr=0.03 L=2
+  5 unconnected-(U6-ENA-Pad5) (2.7,1.905) 1.55x0.6 roundrect SMD d= rr=0.03 L=2
+  6 GND (2.7,0.635) 1.55x0.6 roundrect SMD d= rr=0.03 L=2
+  7 12V_Protected (2.7,-0.635) 1.55x0.6 roundrect SMD d= rr=0.03 L=2
+  8 L4 (2.7,-1.905) 1.55x0.6 roundrect SMD d= rr=0.03 L=2
+  9 GND (-0.65,-1.95) 0.6x0.6 circle PTH d=0,3x0,3 rr=0.25 L=32
+  9 GND (-0.65,-0.65) 0.6x0.6 circle PTH d=0,3x0,3 rr=0.25 L=32
+  9 GND (-0.65,0.65) 0.6x0.6 circle PTH d=0,3x0,3 rr=0.25 L=32
+  9 GND (-0.65,1.95) 0.6x0.6 circle PTH d=0,3x0,3 rr=0.25 L=32
+  9 GND (0,0) 2.95x4.9 rect SMD d= rr=0.25 L=1
+  9 GND (0.65,-1.95) 0.6x0.6 circle PTH d=0,3x0,3 rr=0.25 L=32
+  9 GND (0.65,-0.65) 0.6x0.6 circle PTH d=0,3x0,3 rr=0.25 L=32
+  9 GND (0.65,0.65) 0.6x0.6 circle PTH d=0,3x0,3 rr=0.25 L=32
+  9 GND (0.65,1.95) 0.6x0.6 circle PTH d=0,3x0,3 rr=0.25 L=32
+=== U8 TJA1042TK-3 [Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm] F.Cu rot=0 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm.step crt=4,35x3,59
+    (-0.3875,-0.6) 0.6x1 rect SMD d= rr=0.25 L=1
+    (-0.3875,0.6) 0.6x1 rect SMD d= rr=0.25 L=1
+    (0.3875,-0.6) 0.6x1 rect SMD d= rr=0.25 L=1
+    (0.3875,0.6) 0.6x1 rect SMD d= rr=0.25 L=1
+  1 BUS1O_TX (-1.55,-0.975) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  2 GND (-1.55,-0.325) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  3 +5V (-1.55,0.325) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  4 BUS1O_RX (-1.55,0.975) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  5 +3V3 (1.55,0.975) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  6 BUS1O_L (1.55,0.325) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  7 BUS1O_H (1.55,-0.325) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  8 BUS1O_STB (1.55,-0.975) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  9 GND (0,0) 1.55x2.4 rect SMD d= rr=0.25 L=2
+=== U9 TJA1042TK-3 [Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm] F.Cu rot=0 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm.step crt=4,35x3,59
+    (-0.3875,-0.6) 0.6x1 rect SMD d= rr=0.25 L=1
+    (-0.3875,0.6) 0.6x1 rect SMD d= rr=0.25 L=1
+    (0.3875,-0.6) 0.6x1 rect SMD d= rr=0.25 L=1
+    (0.3875,0.6) 0.6x1 rect SMD d= rr=0.25 L=1
+  1 BUS2_TX (-1.55,-0.975) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  2 GND (-1.55,-0.325) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  3 +5V (-1.55,0.325) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  4 BUS2_RX (-1.55,0.975) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  5 +3V3 (1.55,0.975) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  6 BUS2_L (1.55,0.325) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  7 BUS2_H (1.55,-0.325) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  8 BUS2_STB (1.55,-0.975) 0.65x0.35 rect SMD d= rr=0.25 L=3
+  9 GND (0,0) 1.55x2.4 rect SMD d= rr=0.25 L=2
+=== Y1 25MHz X322525MOB4SI [Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm] B.Cu rot=180 attrs=SMD models=${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step crt=4,29x3,49
+  1 HSE_IN (-1.1,-0.85) 1.4x1.2 rect SMD d= rr=0.25 L=3
+  2 GND (1.1,-0.85) 1.4x1.2 rect SMD d= rr=0.25 L=3
+  3 HSE_OUT (1.1,0.85) 1.4x1.2 rect SMD d= rr=0.25 L=3
+  4 GND (-1.1,0.85) 1.4x1.2 rect SMD d= rr=0.25 L=3

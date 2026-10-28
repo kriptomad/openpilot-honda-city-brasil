@@ -1,0 +1,385 @@
+{
+  "meta": {
+    "script": "coverage_matrix",
+    "started": "2026-10-23T08:42:14",
+    "dry_run": false,
+    "output_root": "C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616",
+    "python": "3.13.9"
+  },
+  "summary": {
+    "total": 61,
+    "proven": 61,
+    "not_found": 0,
+    "csv": "C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\03_RESEARCH\\coverage_matrix.csv",
+    "md": "C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\03_RESEARCH\\coverage_matrix.md"
+  },
+  "events": [
+    {
+      "t": 0.2,
+      "level": "INFO",
+      "msg": "HRS-01 FOUND",
+      "where": "panda/board/boards/board_declarations.h:50"
+    },
+    {
+      "t": 0.387,
+      "level": "INFO",
+      "msg": "HRS-02 FOUND",
+      "where": "panda/board/stm32h7/board.h:25"
+    },
+    {
+      "t": 0.572,
+      "level": "INFO",
+      "msg": "HRS-03 FOUND",
+      "where": "panda/board/stm32h7/board.h:38"
+    },
+    {
+      "t": 0.754,
+      "level": "INFO",
+      "msg": "HRS-04 FOUND",
+      "where": "panda/board/stm32h7/board.h:30"
+    },
+    {
+      "t": 0.941,
+      "level": "INFO",
+      "msg": "HRS-05 FOUND",
+      "where": "panda/board/drivers/gpio.h:77"
+    },
+    {
+      "t": 1.125,
+      "level": "INFO",
+      "msg": "HRS-06 FOUND",
+      "where": "panda/python/__init__.py:133"
+    },
+    {
+      "t": 1.31,
+      "level": "INFO",
+      "msg": "HRS-10 FOUND",
+      "where": "panda/SConscript:139"
+    },
+    {
+      "t": 1.485,
+      "level": "INFO",
+      "msg": "HRS-11 FOUND",
+      "where": "panda/board/stm32h7/stm32h7_config.h:5"
+    },
+    {
+      "t": 1.666,
+      "level": "INFO",
+      "msg": "HRS-12 FOUND",
+      "where": "panda/board/stm32h7/clock.h:4"
+    },
+    {
+      "t": 1.844,
+      "level": "INFO",
+      "msg": "HRS-13 FOUND",
+      "where": "panda/board/stm32h7/clock.h:7"
+    },
+    {
+      "t": 2.037,
+      "level": "INFO",
+      "msg": "HRS-14 FOUND",
+      "where": "panda/board/stm32h7/clock.h:66"
+    },
+    {
+      "t": 2.222,
+      "level": "INFO",
+      "msg": "HRS-15 FOUND",
+      "where": "panda/board/stm32h7/clock.h:6"
+    },
+    {
+      "t": 2.407,
+      "level": "INFO",
+      "msg": "HRS-16 FOUND",
+      "where": "panda/board/stm32h7/clock.h:71"
+    },
+    {
+      "t": 2.577,
+      "level": "INFO",
+      "msg": "HRS-17 FOUND",
+      "where": "panda/board/stm32h7/clock.h:121"
+    },
+    {
+      "t": 2.742,
+      "level": "INFO",
+      "msg": "HRS-20 FOUND",
+      "where": "panda/board/stm32h7/stm32h7x5_flash.ld:71"
+    },
+    {
+      "t": 2.922,
+      "level": "INFO",
+      "msg": "HRS-21 FOUND",
+      "where": "panda/board/stm32h7/stm32h7_config.h:45"
+    },
+    {
+      "t": 3.106,
+      "level": "INFO",
+      "msg": "HRS-22 FOUND",
+      "where": "panda/board/stm32h7/stm32h7_config.h:14"
+    },
+    {
+      "t": 3.286,
+      "level": "INFO",
+      "msg": "HRS-23 FOUND",
+      "where": "panda/board/bootstub.c:72"
+    },
+    {
+      "t": 3.461,
+      "level": "INFO",
+      "msg": "HRS-24 FOUND",
+      "where": "panda/board/debug/dfu_util_h7.sh:10"
+    },
+    {
+      "t": 3.655,
+      "level": "INFO",
+      "msg": "HRS-25 FOUND",
+      "where": "panda/board/stm32h7/llfdcan_declarations.h:16"
+    },
+    {
+      "t": 3.854,
+      "level": "INFO",
+      "msg": "HRS-30 FOUND",
+      "where": "panda/board/config.h:16"
+    },
+    {
+      "t": 4.051,
+      "level": "INFO",
+      "msg": "HRS-31 FOUND",
+      "where": "panda/board/stm32h7/peripherals.h:9"
+    },
+    {
+      "t": 4.235,
+      "level": "INFO",
+      "msg": "HRS-32 FOUND",
+      "where": "panda/board/stm32h7/llusb.h:41"
+    },
+    {
+      "t": 4.419,
+      "level": "INFO",
+      "msg": "HRS-40 FOUND",
+      "where": "panda/board/boards/red.h:12"
+    },
+    {
+      "t": 4.593,
+      "level": "INFO",
+      "msg": "HRS-41 FOUND",
+      "where": "panda/board/boards/red.h:15"
+    },
+    {
+      "t": 4.771,
+      "level": "INFO",
+      "msg": "HRS-42 FOUND",
+      "where": "panda/board/boards/red.h:18"
+    },
+    {
+      "t": 4.963,
+      "level": "INFO",
+      "msg": "HRS-43 FOUND",
+      "where": "panda/board/boards/red.h:21"
+    },
+    {
+      "t": 5.153,
+      "level": "INFO",
+      "msg": "HRS-44 FOUND",
+      "where": "panda/board/boards/red.h:44"
+    },
+    {
+      "t": 5.344,
+      "level": "INFO",
+      "msg": "HRS-45 FOUND",
+      "where": "panda/board/boards/red.h:58"
+    },
+    {
+      "t": 5.525,
+      "level": "INFO",
+      "msg": "HRS-46 FOUND",
+      "where": "panda/board/stm32h7/peripherals.h:32"
+    },
+    {
+      "t": 5.705,
+      "level": "INFO",
+      "msg": "HRS-47 FOUND",
+      "where": "panda/board/stm32h7/peripherals.h:49"
+    },
+    {
+      "t": 5.884,
+      "level": "INFO",
+      "msg": "HRS-48 FOUND",
+      "where": "panda/board/boards/red.h:71"
+    },
+    {
+      "t": 6.073,
+      "level": "INFO",
+      "msg": "HRS-49 FOUND",
+      "where": "panda/board/stm32h7/peripherals.h:26"
+    },
+    {
+      "t": 6.258,
+      "level": "INFO",
+      "msg": "HRS-50 FOUND",
+      "where": "panda/board/boards/red.h:92"
+    },
+    {
+      "t": 6.446,
+      "level": "INFO",
+      "msg": "HRS-51 FOUND",
+      "where": "panda/board/boards/red.h:95"
+    },
+    {
+      "t": 6.629,
+      "level": "INFO",
+      "msg": "HRS-52 FOUND",
+      "where": "panda/board/boards/red.h:106"
+    },
+    {
+      "t": 6.816,
+      "level": "INFO",
+      "msg": "HRS-53 FOUND",
+      "where": "panda/board/boards/red.h:108"
+    },
+    {
+      "t": 7.026,
+      "level": "INFO",
+      "msg": "HRS-54 FOUND",
+      "where": "panda/board/boards/red.h:123"
+    },
+    {
+      "t": 7.235,
+      "level": "INFO",
+      "msg": "HRS-55 FOUND",
+      "where": "panda/board/drivers/led.h:23"
+    },
+    {
+      "t": 7.421,
+      "level": "INFO",
+      "msg": "HRS-56 FOUND",
+      "where": "panda/board/boards/red.h:119"
+    },
+    {
+      "t": 7.59,
+      "level": "INFO",
+      "msg": "HRS-57 FOUND",
+      "where": "panda/board/boards/red.h:117"
+    },
+    {
+      "t": 7.76,
+      "level": "INFO",
+      "msg": "HRS-58 FOUND",
+      "where": "panda/board/boards/red.h:118"
+    },
+    {
+      "t": 7.945,
+      "level": "INFO",
+      "msg": "HRS-60 FOUND",
+      "where": "panda/board/drivers/harness.h:66"
+    },
+    {
+      "t": 8.139,
+      "level": "INFO",
+      "msg": "HRS-61 FOUND",
+      "where": "panda/board/drivers/harness.h:82"
+    },
+    {
+      "t": 8.328,
+      "level": "INFO",
+      "msg": "HRS-62 FOUND",
+      "where": "panda/board/drivers/harness.h:98"
+    },
+    {
+      "t": 8.52,
+      "level": "INFO",
+      "msg": "HRS-63 FOUND",
+      "where": "panda/board/drivers/harness.h:43"
+    },
+    {
+      "t": 8.7,
+      "level": "INFO",
+      "msg": "HRS-64 FOUND",
+      "where": "panda/board/drivers/can_common.h:131"
+    },
+    {
+      "t": 8.879,
+      "level": "INFO",
+      "msg": "HRS-65 FOUND",
+      "where": "panda/board/stm32h7/stm32h7_config.h:95"
+    },
+    {
+      "t": 9.079,
+      "level": "INFO",
+      "msg": "HRS-66 FOUND",
+      "where": "panda/board/main.c:130"
+    },
+    {
+      "t": 9.259,
+      "level": "INFO",
+      "msg": "HW-01 FOUND",
+      "where": "hardware/panda/README.md:31"
+    },
+    {
+      "t": 9.447,
+      "level": "INFO",
+      "msg": "HW-02 FILE_PRESENT",
+      "where": "hardware/harness/OBD-C.sch.pdf"
+    },
+    {
+      "t": 9.63,
+      "level": "INFO",
+      "msg": "HW-03 FILE_PRESENT",
+      "where": "hardware/harness/v3/Harness_Box.pdf"
+    },
+    {
+      "t": 9.818,
+      "level": "INFO",
+      "msg": "HW-04 FILE_PRESENT",
+      "where": "hardware/harness/v3/Honda_Bosch_B_Harness.pdf"
+    },
+    {
+      "t": 10.006,
+      "level": "INFO",
+      "msg": "HW-05 FOUND",
+      "where": "hardware/panda/ (11 files, 1 schematic/pcb/pdf)"
+    },
+    {
+      "t": 10.19,
+      "level": "INFO",
+      "msg": "VEH-01 FOUND",
+      "where": "opendbc/opendbc/car/honda/values.py:248"
+    },
+    {
+      "t": 10.375,
+      "level": "INFO",
+      "msg": "F4-01 FOUND",
+      "where": "panda_legacy_f4/board/boards/black.h:12"
+    },
+    {
+      "t": 10.554,
+      "level": "INFO",
+      "msg": "F4-02 FOUND",
+      "where": "panda_legacy_f4/board/boards/black.h:75"
+    },
+    {
+      "t": 10.736,
+      "level": "INFO",
+      "msg": "F4-03 FOUND",
+      "where": "panda_legacy_f4/board/boards/black.h:120"
+    },
+    {
+      "t": 10.91,
+      "level": "INFO",
+      "msg": "OP-01 FOUND",
+      "where": "openpilot/.gitmodules:2"
+    },
+    {
+      "t": 11.108,
+      "level": "INFO",
+      "msg": "OP-02 FOUND",
+      "where": "openpilot/openpilot/selfdrive/pandad/pandad.py:21"
+    },
+    {
+      "t": 11.292,
+      "level": "INFO",
+      "msg": "OP-03 FOUND",
+      "where": "datasheets/DS13313_text.txt:5528"
+    }
+  ],
+  "finished": "2026-10-23T08:42:25"
+}

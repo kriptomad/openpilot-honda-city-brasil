@@ -1,0 +1,71 @@
+{
+ "rounds": [
+  {
+   "round": 0,
+   "unconnected": 1,
+   "fixes": [
+    [
+     "ilhas GND",
+     "2 vias"
+    ],
+    [
+     "pontes +3V3",
+     [
+      [
+       "+3V3 ilha 15 itens @(120.162, 52.85)",
+       "ponte F.Cu (116.525, 50.75)->(113.125, 50.75) via 0.5"
+      ]
+     ]
+    ]
+   ],
+   "unfixed": [
+    "Track [+3V3] on B.Cu, length 2,1200 mm <> Track [+3V3] on B.Cu, length 0,2828 mm"
+   ]
+  },
+  {
+   "round": 1,
+   "unconnected": 0,
+   "fixes": [],
+   "unfixed": []
+  }
+ ],
+ "warnings": [],
+ "added": [
+  [
+   "via",
+   [
+    138.755,
+    61.108
+   ]
+  ],
+  [
+   "via",
+   [
+    125.485,
+    53.009
+   ]
+  ],
+  [
+   "via",
+   [
+    113.125,
+    50.75
+   ]
+  ],
+  [
+   "track",
+   [
+    116.525,
+    50.75
+   ],
+   [
+    113.125,
+    50.75
+   ],
+   "F.Cu"
+  ]
+ ],
+ "dangling_vias_removed": 0,
+ "micro_segments_removed": 0,
+ "unrouted_final": 0
+}

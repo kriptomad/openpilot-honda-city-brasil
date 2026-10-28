@@ -1,0 +1,45 @@
+{
+ "date": "2026-10-27 11:25:08",
+ "dry": false,
+ "found": [
+  {
+   "via": "125.567,61.835",
+   "pad": "U8.3",
+   "net": "+5V"
+  }
+ ],
+ "actions": [
+  {
+   "via": "125.567,61.835",
+   "pad": "U8.3",
+   "net": "+5V",
+   "new_via": "123.060,61.990",
+   "walk_mm": 2.51,
+   "paths": [
+    [
+     "123.060,61.990",
+     "125.560,62.740",
+     "126.591,73.128"
+    ]
+   ],
+   "result": "ok",
+   "unconnected": 0
+  }
+ ],
+ "via_in_pad_after": 0,
+ "drc_after": {
+  "unconnected": 0,
+  "total": 182,
+  "by_type": {
+   "hole_clearance": 8,
+   "copper_edge_clearance": 2,
+   "footprint_type_mismatch": 10,
+   "drill_out_of_range": 1,
+   "starved_thermal": 17,
+   "silk_edge_clearance": 4,
+   "lib_footprint_mismatch": 64,
+   "text_height": 72,
+   "silk_overlap": 4
+  }
+ }
+}

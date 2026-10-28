@@ -1,0 +1,581 @@
+{
+  "meta": {
+    "script": "parity_black_f4_baseline_BlackPanda_netlist",
+    "started": "2026-10-23T08:53:55",
+    "dry_run": false,
+    "output_root": "C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616",
+    "python": "3.13.9"
+  },
+  "summary": {
+    "result": "OK",
+    "problems": 0,
+    "counts": {
+      "OK": 35
+    },
+    "rows": [
+      {
+        "pin": "PA11",
+        "pad": "44",
+        "role": "usb_dm",
+        "signal": "",
+        "net": "USB_D-",
+        "status": "OK",
+        "detail": "reaches R20",
+        "src": "board/stm32f4/peripherals.h:5-10",
+        "optional": false
+      },
+      {
+        "pin": "PA12",
+        "pad": "45",
+        "role": "usb_dp",
+        "signal": "",
+        "net": "USB_D+",
+        "status": "OK",
+        "detail": "reaches R21",
+        "src": "board/stm32f4/peripherals.h:5-10",
+        "optional": false
+      },
+      {
+        "pin": "PB8",
+        "pad": "61",
+        "role": "can_rx",
+        "signal": "CAN1",
+        "net": "CAN2_RX",
+        "status": "OK",
+        "detail": "xcvr=U11",
+        "src": "board/stm32f4/peripherals.h:46",
+        "optional": false
+      },
+      {
+        "pin": "PB9",
+        "pad": "62",
+        "role": "can_tx",
+        "signal": "CAN1",
+        "net": "CAN2_TX",
+        "status": "OK",
+        "detail": "xcvr=U11",
+        "src": "board/stm32f4/peripherals.h:47",
+        "optional": false
+      },
+      {
+        "pin": "PC1",
+        "pad": "9",
+        "role": "can_stb",
+        "signal": "CAN1",
+        "net": "CAN2_EN",
+        "status": "OK",
+        "detail": "xcvr=U11; STB reaches the same transceiver",
+        "src": "board/boards/black.h:12",
+        "optional": false
+      },
+      {
+        "pin": "PB12",
+        "pad": "33",
+        "role": "can_rx",
+        "signal": "CAN2_OBD",
+        "net": "CAN1_RX",
+        "status": "OK",
+        "detail": "xcvr=U8",
+        "src": "board/boards/black.h:33-57",
+        "optional": false
+      },
+      {
+        "pin": "PB13",
+        "pad": "34",
+        "role": "can_tx",
+        "signal": "CAN2_OBD",
+        "net": "CAN1_TX",
+        "status": "OK",
+        "detail": "xcvr=U8",
+        "src": "board/boards/black.h:33-57",
+        "optional": false
+      },
+      {
+        "pin": "PB10",
+        "pad": "29",
+        "role": "can_stb",
+        "signal": "CAN2_OBD",
+        "net": "CAN1_EN",
+        "status": "OK",
+        "detail": "xcvr=U8; STB reaches the same transceiver",
+        "src": "board/boards/black.h:21",
+        "optional": false
+      },
+      {
+        "pin": "PB5",
+        "pad": "57",
+        "role": "can_rx",
+        "signal": "CAN2_NORMAL",
+        "net": "CAN3_RX",
+        "status": "OK",
+        "detail": "xcvr=U10",
+        "src": "board/boards/black.h:33-57",
+        "optional": false
+      },
+      {
+        "pin": "PB6",
+        "pad": "58",
+        "role": "can_tx",
+        "signal": "CAN2_NORMAL",
+        "net": "CAN3_TX",
+        "status": "OK",
+        "detail": "xcvr=U10",
+        "src": "board/boards/black.h:33-57",
+        "optional": false
+      },
+      {
+        "pin": "PC13",
+        "pad": "2",
+        "role": "can_stb",
+        "signal": "CAN2_NORMAL",
+        "net": "CAN3_EN",
+        "status": "OK",
+        "detail": "xcvr=U10; STB reaches the same transceiver",
+        "src": "board/boards/black.h:15",
+        "optional": false
+      },
+      {
+        "pin": "PA8",
+        "pad": "41",
+        "role": "can_rx",
+        "signal": "CAN3",
+        "net": "CAN0_RX",
+        "status": "OK",
+        "detail": "xcvr=U9",
+        "src": "board/boards/black.h:72-74",
+        "optional": false
+      },
+      {
+        "pin": "PA15",
+        "pad": "50",
+        "role": "can_tx",
+        "signal": "CAN3",
+        "net": "CAN0_TX",
+        "status": "OK",
+        "detail": "xcvr=U9",
+        "src": "board/boards/black.h:72-74",
+        "optional": false
+      },
+      {
+        "pin": "PA0",
+        "pad": "14",
+        "role": "can_stb",
+        "signal": "CAN3",
+        "net": "CAN0_EN",
+        "status": "OK",
+        "detail": "xcvr=U9; STB reaches the same transceiver",
+        "src": "board/boards/black.h:18",
+        "optional": false
+      },
+      {
+        "pin": "PC2",
+        "pad": "10",
+        "role": "adc",
+        "signal": "VOLT_S",
+        "net": "VoltageSens",
+        "status": "OK",
+        "detail": "reaches R2,R3",
+        "src": "board/stm32f4/peripherals.h:42; white.h:68-70",
+        "optional": false
+      },
+      {
+        "pin": "PB1",
+        "pad": "27",
+        "role": "out",
+        "signal": "USB load switch (active low)",
+        "net": "USB_LOAD",
+        "status": "OK",
+        "detail": "reaches Q3",
+        "src": "board/boards/black.h:30",
+        "optional": false
+      },
+      {
+        "pin": "PC0",
+        "pad": "8",
+        "role": "adc",
+        "signal": "SBU1",
+        "net": "SBU1",
+        "status": "OK",
+        "detail": "reaches D5,P1,Q2,R24",
+        "src": "board/boards/black.h:91-100",
+        "optional": false
+      },
+      {
+        "pin": "PC3",
+        "pad": "11",
+        "role": "adc",
+        "signal": "SBU2",
+        "net": "SBU2",
+        "status": "OK",
+        "detail": "reaches D5,P1,Q1,R23",
+        "src": "board/boards/black.h:91-100",
+        "optional": false
+      },
+      {
+        "pin": "PC10",
+        "pad": "51",
+        "role": "relay",
+        "signal": "relay_SBU1",
+        "net": "relay_SBU1",
+        "status": "OK",
+        "detail": "reaches Q2",
+        "src": "board/boards/black.h:91-100",
+        "optional": false
+      },
+      {
+        "pin": "PC11",
+        "pad": "52",
+        "role": "relay",
+        "signal": "relay_SBU2",
+        "net": "relay_SBU2",
+        "status": "OK",
+        "detail": "reaches Q1",
+        "src": "board/boards/black.h:91-100",
+        "optional": false
+      },
+      {
+        "pin": "PC9",
+        "pad": "40",
+        "role": "led",
+        "signal": "LED_RED",
+        "net": "Net-(U7-PC9)",
+        "status": "OK",
+        "detail": "reaches R19",
+        "src": "board/boards/black.h:119-120",
+        "optional": false
+      },
+      {
+        "pin": "PC7",
+        "pad": "38",
+        "role": "led",
+        "signal": "LED_GREEN",
+        "net": "Net-(U7-PC7)",
+        "status": "OK",
+        "detail": "reaches R18",
+        "src": "board/boards/black.h:119-120",
+        "optional": false
+      },
+      {
+        "pin": "PC6",
+        "pad": "37",
+        "role": "led",
+        "signal": "LED_BLUE",
+        "net": "Net-(U7-PC6)",
+        "status": "OK",
+        "detail": "reaches R17",
+        "src": "board/boards/black.h:119-120",
+        "optional": false
+      },
+      {
+        "pin": "PC5",
+        "pad": "25",
+        "role": "out",
+        "signal": "GPS off",
+        "net": "GPS_BOOT",
+        "status": "OK",
+        "detail": "reaches U4",
+        "src": "board/boards/black.h:76-78",
+        "optional": true
+      },
+      {
+        "pin": "PC12",
+        "pad": "53",
+        "role": "out",
+        "signal": "GPS off",
+        "net": "GPS_LOAD",
+        "status": "OK",
+        "detail": "reaches U2",
+        "src": "board/boards/black.h:76-78",
+        "optional": true
+      },
+      {
+        "pin": "PB7",
+        "pad": "59",
+        "role": "hwtype",
+        "signal": "",
+        "net": "unconnected-(U7-PB7-Pad59)",
+        "status": "OK",
+        "detail": "floating; expect=float_or_high",
+        "src": "board/stm32f4/board.h:24 (DOS needs PB1&PB7 low)",
+        "optional": false
+      },
+      {
+        "pin": "PA4",
+        "pad": "20",
+        "role": "hwtype",
+        "signal": "",
+        "net": "SPI_NSS",
+        "status": "OK",
+        "detail": "net=SPI_NSS; expect=float_or_low",
+        "src": "board/stm32f4/board.h:27 (WHITE if PA4-7 high w/ pull-down)",
+        "optional": false
+      },
+      {
+        "pin": "PA5",
+        "pad": "21",
+        "role": "hwtype",
+        "signal": "",
+        "net": "SPI_SCK",
+        "status": "OK",
+        "detail": "net=SPI_SCK; expect=float_or_low",
+        "src": "board/stm32f4/board.h:27",
+        "optional": false
+      },
+      {
+        "pin": "PA6",
+        "pad": "22",
+        "role": "hwtype",
+        "signal": "",
+        "net": "SPI_MISO",
+        "status": "OK",
+        "detail": "net=SPI_MISO; expect=float_or_low",
+        "src": "board/stm32f4/board.h:27",
+        "optional": false
+      },
+      {
+        "pin": "PA7",
+        "pad": "23",
+        "role": "hwtype",
+        "signal": "",
+        "net": "SPI_MOSI",
+        "status": "OK",
+        "detail": "net=SPI_MOSI; expect=float_or_low",
+        "src": "board/stm32f4/board.h:27",
+        "optional": false
+      },
+      {
+        "pin": "PA13",
+        "pad": "46",
+        "role": "hwtype",
+        "signal": "",
+        "net": "unconnected-(U7-PA13-Pad46)",
+        "status": "OK",
+        "detail": "floating; expect=float_or_low",
+        "src": "board/stm32f4/board.h:30 (GREY if PA13 high w/ pull-down)",
+        "optional": false
+      },
+      {
+        "pin": "PB15",
+        "pad": "36",
+        "role": "hwtype",
+        "signal": "",
+        "net": "unconnected-(U7-PB15-Pad36)",
+        "status": "OK",
+        "detail": "floating; expect=float_or_high",
+        "src": "board/stm32f4/board.h:32 (UNO if PB15 low)",
+        "optional": false
+      },
+      {
+        "pin": "PH0",
+        "pad": "5",
+        "role": "hse",
+        "signal": "",
+        "net": "Net-(U7-PH0)",
+        "status": "OK",
+        "detail": "reaches C23,Y1",
+        "src": "board/stm32f4/clock.h (HSE)",
+        "optional": false
+      },
+      {
+        "pin": "PH1",
+        "pad": "6",
+        "role": "hse",
+        "signal": "",
+        "net": "Net-(U7-PH1)",
+        "status": "OK",
+        "detail": "reaches C24,Y1",
+        "src": "idem",
+        "optional": false
+      },
+      {
+        "pin": "BOOT0",
+        "pad": "60",
+        "role": "boot0",
+        "signal": "",
+        "net": "Net-(U7-BOOT0)",
+        "status": "OK",
+        "detail": "reaches R14,SW1",
+        "src": "DFU via BOOT0",
+        "optional": false
+      }
+    ],
+    "extra": [
+      {
+        "pin": "PC14",
+        "pad": "3",
+        "net": "GPS_RESET",
+        "comps": [
+          "U4"
+        ]
+      },
+      {
+        "pin": "PA2",
+        "pad": "16",
+        "net": "UART_TX",
+        "comps": []
+      },
+      {
+        "pin": "PA3",
+        "pad": "17",
+        "net": "UART_RX",
+        "comps": []
+      },
+      {
+        "pin": "PC4",
+        "pad": "24",
+        "net": "Net-(U7-PC4)",
+        "comps": [
+          "R15",
+          "R16"
+        ]
+      },
+      {
+        "pin": "PB0",
+        "pad": "26",
+        "net": "GPS_TIMEPULSE",
+        "comps": [
+          "U4"
+        ]
+      },
+      {
+        "pin": "PB2",
+        "pad": "28",
+        "net": "Net-(U7-PB2)",
+        "comps": [
+          "R22"
+        ]
+      },
+      {
+        "pin": "PA9",
+        "pad": "42",
+        "net": "GPS_RX",
+        "comps": [
+          "U4"
+        ]
+      },
+      {
+        "pin": "PA10",
+        "pad": "43",
+        "net": "GPS_TX",
+        "comps": [
+          "U4"
+        ]
+      }
+    ],
+    "power": [
+      {
+        "pin": "VBAT",
+        "pad": "1",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDDA",
+        "pad": "13",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "19",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "32",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "48",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "64",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VSSA",
+        "pad": "12",
+        "net": "GND"
+      },
+      {
+        "pin": "VSS",
+        "pad": "18",
+        "net": "GND"
+      },
+      {
+        "pin": "VSS",
+        "pad": "31",
+        "net": "GND"
+      },
+      {
+        "pin": "VSS",
+        "pad": "47",
+        "net": "GND"
+      },
+      {
+        "pin": "VSS",
+        "pad": "63",
+        "net": "GND"
+      },
+      {
+        "pin": "VCAP_1",
+        "pad": "30",
+        "net": "Net-(U7-VCAP_1)"
+      },
+      {
+        "pin": "NRST",
+        "pad": "7",
+        "net": "unconnected-(U7-NRST-Pad7)"
+      }
+    ],
+    "report": "C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\06_REPORTS\\parity_black_f4_baseline_BlackPanda_netlist.md"
+  },
+  "events": [
+    {
+      "t": 0.004,
+      "level": "INFO",
+      "msg": "MCU",
+      "ref": "U7",
+      "value": "STM32F413RGTx",
+      "footprint": "Package_QFP:LQFP-64_10x10mm_P0.5mm"
+    },
+    {
+      "t": 0.004,
+      "level": "INFO",
+      "msg": "CAN group CAN1",
+      "xcvr": [
+        "U11"
+      ],
+      "stb_ok": true
+    },
+    {
+      "t": 0.004,
+      "level": "INFO",
+      "msg": "CAN group CAN2_OBD",
+      "xcvr": [
+        "U8"
+      ],
+      "stb_ok": true
+    },
+    {
+      "t": 0.004,
+      "level": "INFO",
+      "msg": "CAN group CAN2_NORMAL",
+      "xcvr": [
+        "U10"
+      ],
+      "stb_ok": true
+    },
+    {
+      "t": 0.004,
+      "level": "INFO",
+      "msg": "CAN group CAN3",
+      "xcvr": [
+        "U9"
+      ],
+      "stb_ok": true
+    }
+  ],
+  "finished": "2026-10-23T08:53:55"
+}

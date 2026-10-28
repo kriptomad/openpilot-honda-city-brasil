@@ -1,0 +1,2702 @@
+[
+{
+"kind": "PTH",
+"ref": "U6",
+"pad": "9",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 107.41,
+"y": 40.19
+},
+{
+"kind": "PTH",
+"ref": "U6",
+"pad": "9",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 107.41,
+"y": 41.49
+},
+{
+"kind": "PTH",
+"ref": "U6",
+"pad": "9",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 107.41,
+"y": 42.79
+},
+{
+"kind": "PTH",
+"ref": "U6",
+"pad": "9",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 107.41,
+"y": 44.09
+},
+{
+"kind": "PTH",
+"ref": "U6",
+"pad": "9",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 108.71,
+"y": 40.19
+},
+{
+"kind": "PTH",
+"ref": "U6",
+"pad": "9",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 108.71,
+"y": 41.49
+},
+{
+"kind": "PTH",
+"ref": "U6",
+"pad": "9",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 108.71,
+"y": 42.79
+},
+{
+"kind": "PTH",
+"ref": "U6",
+"pad": "9",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 108.71,
+"y": 44.09
+},
+{
+"kind": "PTH",
+"ref": "U3",
+"pad": "5",
+"drill_mm": 2.5,
+"slot": true,
+"annular_mm": 0.25,
+"x": 140.84,
+"y": 46.23
+},
+{
+"kind": "PTH",
+"ref": "U3",
+"pad": "6",
+"drill_mm": 2.5,
+"slot": true,
+"annular_mm": 0.25,
+"x": 140.84,
+"y": 33.33
+},
+{
+"kind": "NPTH",
+"ref": "P1",
+"pad": "",
+"drill_mm": 0.8,
+"slot": false,
+"annular_mm": null,
+"x": 134.94,
+"y": 62.555
+},
+{
+"kind": "NPTH",
+"ref": "P1",
+"pad": "",
+"drill_mm": 0.8,
+"slot": false,
+"annular_mm": null,
+"x": 134.94,
+"y": 55.205
+},
+{
+"kind": "PTH",
+"ref": "P1",
+"pad": "0",
+"drill_mm": 1.2,
+"slot": true,
+"annular_mm": 0.2,
+"x": 140.59,
+"y": 63.37
+},
+{
+"kind": "PTH",
+"ref": "P1",
+"pad": "0",
+"drill_mm": 1.199,
+"slot": true,
+"annular_mm": 0.2,
+"x": 136.18,
+"y": 63.01
+},
+{
+"kind": "PTH",
+"ref": "P1",
+"pad": "0",
+"drill_mm": 1.199,
+"slot": true,
+"annular_mm": 0.2,
+"x": 136.18,
+"y": 54.75
+},
+{
+"kind": "PTH",
+"ref": "P1",
+"pad": "0",
+"drill_mm": 1.2,
+"slot": true,
+"annular_mm": 0.2,
+"x": 140.59,
+"y": 54.39
+},
+{
+"kind": "PTH",
+"ref": "P1",
+"pad": "B1",
+"drill_mm": 0.4,
+"slot": false,
+"annular_mm": 0.125,
+"x": 135.59,
+"y": 56.08
+},
+{
+"kind": "PTH",
+"ref": "P1",
+"pad": "B2",
+"drill_mm": 0.4,
+"slot": false,
+"annular_mm": 0.125,
+"x": 136.29,
+"y": 56.48
+},
+{
+"kind": "PTH",
+"ref": "P1",
+"pad": "B3",
+"drill_mm": 0.4,
+"slot": false,
+"annular_mm": 0.125,
+"x": 136.29,
+"y": 57.28
+},
+{
+"kind": "PTH",
+"ref": "P1",
+"pad": "B4",
+"drill_mm": 0.4,
+"slot": false,
+"annular_mm": 0.125,
+"x": 135.59,
+"y": 57.68
+},
+{
+"kind": "PTH",
+"ref": "P1",
+"pad": "B5",
+"drill_mm": 0.4,
+"slot": false,
+"annular_mm": 0.125,
+"x": 136.29,
+"y": 58.08
+},
+{
+"kind": "PTH",
+"ref": "P1",
+"pad": "B6",
+"drill_mm": 0.4,
+"slot": false,
+"annular_mm": 0.125,
+"x": 135.59,
+"y": 58.48
+},
+{
+"kind": "PTH",
+"ref": "P1",
+"pad": "B7",
+"drill_mm": 0.4,
+"slot": false,
+"annular_mm": 0.125,
+"x": 135.59,
+"y": 59.28
+},
+{
+"kind": "PTH",
+"ref": "P1",
+"pad": "B8",
+"drill_mm": 0.4,
+"slot": false,
+"annular_mm": 0.125,
+"x": 136.29,
+"y": 59.68
+},
+{
+"kind": "PTH",
+"ref": "P1",
+"pad": "B9",
+"drill_mm": 0.4,
+"slot": false,
+"annular_mm": 0.125,
+"x": 135.59,
+"y": 60.08
+},
+{
+"kind": "PTH",
+"ref": "P1",
+"pad": "B10",
+"drill_mm": 0.4,
+"slot": false,
+"annular_mm": 0.125,
+"x": 136.29,
+"y": 60.48
+},
+{
+"kind": "PTH",
+"ref": "P1",
+"pad": "B11",
+"drill_mm": 0.4,
+"slot": false,
+"annular_mm": 0.125,
+"x": 136.29,
+"y": 61.28
+},
+{
+"kind": "PTH",
+"ref": "P1",
+"pad": "B12",
+"drill_mm": 0.4,
+"slot": false,
+"annular_mm": 0.125,
+"x": 135.59,
+"y": 61.68
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 103.0,
+"y": 65.863
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 131.303,
+"y": 68.465
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 117.978,
+"y": 43.639
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 117.53,
+"y": 41.091
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 96.231,
+"y": 64.269
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 101.237,
+"y": 48.85
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 101.615,
+"y": 44.502
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 110.99,
+"y": 55.39
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 98.922,
+"y": 69.962
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 115.3,
+"y": 68.752
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 110.75,
+"y": 69.062
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 137.981,
+"y": 69.8
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 114.54,
+"y": 72.246
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 109.272,
+"y": 66.153
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 121.859,
+"y": 65.969
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 106.275,
+"y": 48.329
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 141.195,
+"y": 68.875
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 112.192,
+"y": 71.724
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 113.125,
+"y": 50.75
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 126.229,
+"y": 63.49
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 96.717,
+"y": 56.906
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 118.763,
+"y": 64.35
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 97.638,
+"y": 62.6
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 100.12,
+"y": 63.47
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 100.25,
+"y": 52.83
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 97.184,
+"y": 57.597
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 120.635,
+"y": 70.662
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 129.26,
+"y": 64.6
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 129.402,
+"y": 65.81
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 103.5,
+"y": 41.938
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 129.428,
+"y": 57.658
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 129.474,
+"y": 65.147
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 116.525,
+"y": 50.75
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 128.38,
+"y": 56.764
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 136.61,
+"y": 68.46
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 103.613,
+"y": 66.039
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 122.738,
+"y": 52.016
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 99.541,
+"y": 75.577
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 136.491,
+"y": 69.18
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 129.954,
+"y": 68.547
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 109.75,
+"y": 48.337
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 117.0,
+"y": 44.738
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 96.761,
+"y": 55.101
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 97.21,
+"y": 41.72
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 121.362,
+"y": 58.6
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 97.2,
+"y": 42.54
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 116.577,
+"y": 72.296
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 123.044,
+"y": 58.777
+},
+{
+"kind": "VIA",
+"ref": "+3V3",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 97.278,
+"y": 43.114
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 115.37,
+"y": 42.665
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 111.75,
+"y": 65.863
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 95.114,
+"y": 47.964
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 95.173,
+"y": 49.146
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 137.375,
+"y": 70.65
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 108.06,
+"y": 41.2
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 109.99,
+"y": 33.32
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 138.755,
+"y": 61.108
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 121.362,
+"y": 64.1
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 121.662,
+"y": 52.1
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 101.43,
+"y": 73.687
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 95.009,
+"y": 55.809
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 135.0,
+"y": 43.5
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 108.71,
+"y": 40.84
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 102.004,
+"y": 41.999
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 105.5,
+"y": 34.5
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 100.237,
+"y": 56.35
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 108.405,
+"y": 37.171
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 109.425,
+"y": 75.697
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 135.0,
+"y": 76.0
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 106.269,
+"y": 47.349
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 113.949,
+"y": 40.931
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 127.47,
+"y": 49.64
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 112.75,
+"y": 65.863
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 138.0,
+"y": 45.0
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 113.571,
+"y": 48.453
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 123.989,
+"y": 57.918
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 97.638,
+"y": 63.6
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 138.0,
+"y": 77.5
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 104.25,
+"y": 43.337
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 93.739,
+"y": 57.539
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 130.5,
+"y": 76.0
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 94.99,
+"y": 68.47
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 95.61,
+"y": 43.03
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 117.43,
+"y": 48.775
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 115.666,
+"y": 40.266
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 116.28,
+"y": 42.75
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 138.0,
+"y": 40.5
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 100.913,
+"y": 71.075
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 115.824,
+"y": 55.88
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 135.0,
+"y": 34.5
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 131.32,
+"y": 55.23
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 128.85,
+"y": 39.2
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 95.26,
+"y": 42.53
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 141.0,
+"y": 42.0
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 111.564,
+"y": 73.887
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 131.513,
+"y": 70.047
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 132.0,
+"y": 42.0
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 116.0,
+"y": 68.462
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 115.221,
+"y": 38.915
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 123.605,
+"y": 62.717
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 123.875,
+"y": 65.753
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 105.98,
+"y": 49.18
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 122.362,
+"y": 57.1
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 106.622,
+"y": 75.331
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 95.34,
+"y": 55.2
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 124.067,
+"y": 53.321
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 116.357,
+"y": 69.879
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 102.609,
+"y": 71.529
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 95.075,
+"y": 63.16
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 101.75,
+"y": 65.863
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 135.0,
+"y": 39.0
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 121.35,
+"y": 53.4
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 108.71,
+"y": 42.14
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 132.0,
+"y": 37.5
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 106.21,
+"y": 69.22
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 94.88,
+"y": 63.75
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 117.618,
+"y": 42.204
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 94.13,
+"y": 70.66
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 115.905,
+"y": 74.283
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 96.13,
+"y": 33.7
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 106.75,
+"y": 65.5
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 109.15,
+"y": 71.042
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 94.026,
+"y": 50.02
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 130.5,
+"y": 34.5
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 104.125,
+"y": 50.945
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 132.0,
+"y": 49.5
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 125.485,
+"y": 53.009
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 141.0,
+"y": 37.5
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 137.96,
+"y": 66.47
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 107.41,
+"y": 42.14
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 108.639,
+"y": 71.374
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 102.627,
+"y": 42.18
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 108.25,
+"y": 44.738
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 131.083,
+"y": 64.441
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 117.093,
+"y": 38.87
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 108.25,
+"y": 65.863
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 138.132,
+"y": 53.922
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 141.58,
+"y": 67.15
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 138.0,
+"y": 36.0
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 107.41,
+"y": 40.84
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 114.079,
+"y": 73.567
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 125.018,
+"y": 63.673
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 107.6,
+"y": 74.4
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 115.375,
+"y": 48.25
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.2,
+"x": 104.01,
+"y": 72.805
+},
+{
+"kind": "VIA",
+"ref": "BOOT0",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 117.49,
+"y": 61.972
+},
+{
+"kind": "VIA",
+"ref": "+5V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 135.305,
+"y": 72.567
+},
+{
+"kind": "VIA",
+"ref": "+5V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 116.502,
+"y": 54.954
+},
+{
+"kind": "VIA",
+"ref": "+5V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 129.353,
+"y": 73.176
+},
+{
+"kind": "VIA",
+"ref": "+5V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 115.25,
+"y": 53.66
+},
+{
+"kind": "VIA",
+"ref": "+5V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 130.499,
+"y": 72.702
+},
+{
+"kind": "VIA",
+"ref": "+5V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 114.55,
+"y": 54.05
+},
+{
+"kind": "VIA",
+"ref": "+5V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 121.63,
+"y": 51.31
+},
+{
+"kind": "VIA",
+"ref": "+5V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 121.575,
+"y": 56.425
+},
+{
+"kind": "VIA",
+"ref": "+5V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 140.096,
+"y": 72.583
+},
+{
+"kind": "VIA",
+"ref": "+5V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 128.049,
+"y": 73.865
+},
+{
+"kind": "VIA",
+"ref": "+5V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 123.06,
+"y": 61.99
+},
+{
+"kind": "VIA",
+"ref": "+5V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 117.3,
+"y": 55.0
+},
+{
+"kind": "VIA",
+"ref": "+5V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 119.533,
+"y": 46.437
+},
+{
+"kind": "VIA",
+"ref": "+5V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 120.275,
+"y": 46.7
+},
+{
+"kind": "VIA",
+"ref": "+5V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 126.591,
+"y": 73.128
+},
+{
+"kind": "VIA",
+"ref": "SBU2",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 123.789,
+"y": 67.126
+},
+{
+"kind": "VIA",
+"ref": "Net-(D15-A)",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 134.7,
+"y": 51.5
+},
+{
+"kind": "VIA",
+"ref": "SBU1",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 128.938,
+"y": 67.303
+},
+{
+"kind": "VIA",
+"ref": "SBU1",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 131.817,
+"y": 59.053
+},
+{
+"kind": "VIA",
+"ref": "VoltageSens",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 103.037,
+"y": 55.112
+},
+{
+"kind": "VIA",
+"ref": "12V_Protected",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 112.7,
+"y": 36.65
+},
+{
+"kind": "VIA",
+"ref": "12V_Protected",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 115.425,
+"y": 36.15
+},
+{
+"kind": "VIA",
+"ref": "12V_Protected",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 135.925,
+"y": 50.475
+},
+{
+"kind": "VIA",
+"ref": "12V_Protected",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 103.766,
+"y": 52.516
+},
+{
+"kind": "VIA",
+"ref": "12V_Protected",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 135.95,
+"y": 49.225
+},
+{
+"kind": "VIA",
+"ref": "12V_Protected",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 114.6,
+"y": 36.125
+},
+{
+"kind": "VIA",
+"ref": "12V_Protected",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 134.75,
+"y": 49.425
+},
+{
+"kind": "VIA",
+"ref": "12V_Protected",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 134.8,
+"y": 50.35
+},
+{
+"kind": "VIA",
+"ref": "12V_Protected",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 113.175,
+"y": 36.175
+},
+{
+"kind": "VIA",
+"ref": "12V_Protected",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 134.75,
+"y": 48.6
+},
+{
+"kind": "VIA",
+"ref": "12V_Protected",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 113.85,
+"y": 36.125
+},
+{
+"kind": "VIA",
+"ref": "5VOUT_S",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 97.411,
+"y": 61.474
+},
+{
+"kind": "VIA",
+"ref": "BUS2_TX",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 125.362,
+"y": 53.734
+},
+{
+"kind": "VIA",
+"ref": "BUS2_RX",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 125.362,
+"y": 56.756
+},
+{
+"kind": "VIA",
+"ref": "BUS2_STB",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 127.738,
+"y": 51.65
+},
+{
+"kind": "VIA",
+"ref": "BUS2_STB",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 117.366,
+"y": 51.192
+},
+{
+"kind": "VIA",
+"ref": "LED_RED",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 115.081,
+"y": 64.398
+},
+{
+"kind": "VIA",
+"ref": "LED_RED",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 107.207,
+"y": 69.04
+},
+{
+"kind": "VIA",
+"ref": "USB_PWR",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 128.85,
+"y": 43.547
+},
+{
+"kind": "VIA",
+"ref": "USB_PWR",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 129.78,
+"y": 46.5
+},
+{
+"kind": "VIA",
+"ref": "BUS1O_TX",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 123.142,
+"y": 56.932
+},
+{
+"kind": "VIA",
+"ref": "BUS1O_TX",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 102.971,
+"y": 47.674
+},
+{
+"kind": "VIA",
+"ref": "BUS1O_RX",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 121.352,
+"y": 62.645
+},
+{
+"kind": "VIA",
+"ref": "BUS1O_RX",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 101.508,
+"y": 47.525
+},
+{
+"kind": "VIA",
+"ref": "BUS1O_STB",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 129.682,
+"y": 60.487
+},
+{
+"kind": "VIA",
+"ref": "BUS1O_STB",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 126.816,
+"y": 59.676
+},
+{
+"kind": "VIA",
+"ref": "BUS1O_STB",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 130.095,
+"y": 59.033
+},
+{
+"kind": "VIA",
+"ref": "BUS1O_STB",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 118.726,
+"y": 59.955
+},
+{
+"kind": "VIA",
+"ref": "LED_GREEN",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 102.915,
+"y": 72.639
+},
+{
+"kind": "VIA",
+"ref": "LED_GREEN",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 117.319,
+"y": 64.398
+},
+{
+"kind": "VIA",
+"ref": "GREEN-",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 99.276,
+"y": 69.262
+},
+{
+"kind": "VIA",
+"ref": "GREEN-",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 100.725,
+"y": 66.044
+},
+{
+"kind": "VIA",
+"ref": "relay_SBU2",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 122.31,
+"y": 74.108
+},
+{
+"kind": "VIA",
+"ref": "relay_SBU2",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 124.718,
+"y": 47.267
+},
+{
+"kind": "VIA",
+"ref": "LED_BLUE",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 98.217,
+"y": 69.255
+},
+{
+"kind": "VIA",
+"ref": "LED_BLUE",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 120.626,
+"y": 68.583
+},
+{
+"kind": "VIA",
+"ref": "BLUE-",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 101.015,
+"y": 72.165
+},
+{
+"kind": "VIA",
+"ref": "BLUE-",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 98.538,
+"y": 68.36
+},
+{
+"kind": "VIA",
+"ref": "relay_SBU1",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 126.9,
+"y": 70.0
+},
+{
+"kind": "VIA",
+"ref": "relay_SBU1",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 122.607,
+"y": 47.015
+},
+{
+"kind": "VIA",
+"ref": "USB_LOAD",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 110.263,
+"y": 49.899
+},
+{
+"kind": "VIA",
+"ref": "USB_LOAD",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 101.13,
+"y": 42.732
+},
+{
+"kind": "VIA",
+"ref": "+12V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 140.737,
+"y": 53.038
+},
+{
+"kind": "VIA",
+"ref": "+12V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 139.32,
+"y": 53.19
+},
+{
+"kind": "VIA",
+"ref": "+12V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 140.09,
+"y": 53.19
+},
+{
+"kind": "VIA",
+"ref": "+12V",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 138.55,
+"y": 53.19
+},
+{
+"kind": "VIA",
+"ref": "BUS1N_TX",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 136.834,
+"y": 74.108
+},
+{
+"kind": "VIA",
+"ref": "BUS1N_TX",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 121.468,
+"y": 60.328
+},
+{
+"kind": "VIA",
+"ref": "BUS1N_RX",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 140.141,
+"y": 74.867
+},
+{
+"kind": "VIA",
+"ref": "BUS1N_RX",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 121.684,
+"y": 59.537
+},
+{
+"kind": "VIA",
+"ref": "BUS1N_STB",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 139.07,
+"y": 67.802
+},
+{
+"kind": "VIA",
+"ref": "BUS1N_STB",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 118.697,
+"y": 58.851
+},
+{
+"kind": "VIA",
+"ref": "BUS0_TX",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 118.831,
+"y": 62.316
+},
+{
+"kind": "VIA",
+"ref": "BUS0_TX",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 132.117,
+"y": 69.254
+},
+{
+"kind": "VIA",
+"ref": "BUS0_RX",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 136.128,
+"y": 74.835
+},
+{
+"kind": "VIA",
+"ref": "BUS0_STB",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 133.852,
+"y": 66.067
+},
+{
+"kind": "VIA",
+"ref": "USB_R_D-",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 128.8,
+"y": 45.1
+},
+{
+"kind": "VIA",
+"ref": "USB_R_D-",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 113.635,
+"y": 42.75
+},
+{
+"kind": "VIA",
+"ref": "USB_R_D+",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 113.635,
+"y": 44.78
+},
+{
+"kind": "VIA",
+"ref": "USB_R_D+",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 127.9,
+"y": 45.65
+},
+{
+"kind": "VIA",
+"ref": "Net-(JP1-B)",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 107.3,
+"y": 66.2
+},
+{
+"kind": "VIA",
+"ref": "NRST",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 111.444,
+"y": 38.141
+},
+{
+"kind": "VIA",
+"ref": "NRST",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 105.446,
+"y": 64.4
+},
+{
+"kind": "VIA",
+"ref": "NRST",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 104.297,
+"y": 74.178
+},
+{
+"kind": "VIA",
+"ref": "SBU2_ADC",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 101.295,
+"y": 63.415
+},
+{
+"kind": "VIA",
+"ref": "SBU2_ADC",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 120.004,
+"y": 66.013
+},
+{
+"kind": "VIA",
+"ref": "VCAP",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 118.193,
+"y": 62.679
+},
+{
+"kind": "VIA",
+"ref": "VCAP",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 114.514,
+"y": 48.642
+},
+{
+"kind": "VIA",
+"ref": "VCAP",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 110.725,
+"y": 72.752
+},
+{
+"kind": "VIA",
+"ref": "SBU1_ADC",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 128.094,
+"y": 69.325
+},
+{
+"kind": "VIA",
+"ref": "SBU1_ADC",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 131.013,
+"y": 66.303
+},
+{
+"kind": "VIA",
+"ref": "SBU1_ADC",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 100.729,
+"y": 61.66
+},
+{
+"kind": "VIA",
+"ref": "SWDIO",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 115.56,
+"y": 43.42
+},
+{
+"kind": "VIA",
+"ref": "SWDIO",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 100.12,
+"y": 42.936
+},
+{
+"kind": "VIA",
+"ref": "SWCLK",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 119.899,
+"y": 41.934
+},
+{
+"kind": "VIA",
+"ref": "SWCLK",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 104.331,
+"y": 42.133
+}
+]

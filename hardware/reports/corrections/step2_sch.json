@@ -1,0 +1,171 @@
+{
+ "info": {
+  "u7_pos": [
+   701.04,
+   266.7
+  ],
+  "pf9": [
+   652.78,
+   248.92
+  ],
+  "pf7": [
+   652.78,
+   243.84
+  ],
+  "pf8": [
+   652.78,
+   246.38
+  ],
+  "pf10": [
+   652.78,
+   251.46
+  ],
+  "near_wires": [
+   [
+    652.78,
+    243.84,
+    647.7,
+    243.84
+   ],
+   [
+    652.78,
+    246.38,
+    647.7,
+    246.38
+   ],
+   [
+    652.78,
+    248.92,
+    647.7,
+    248.92
+   ],
+   [
+    652.78,
+    251.46,
+    647.7,
+    251.46
+   ],
+   [
+    652.78,
+    254,
+    647.7,
+    254
+   ],
+   [
+    647.7,
+    241.3,
+    647.7,
+    251.46
+   ]
+  ],
+  "near_junctions": [
+   [
+    647.7,
+    243.84
+   ],
+   [
+    647.7,
+    246.38
+   ],
+   [
+    647.7,
+    248.92
+   ]
+  ],
+  "near_pwr": [
+   [
+    "#PWR184",
+    647.7,
+    241.3,
+    180
+   ]
+  ],
+  "vfbsmps_labels": [
+   [
+    "VFBSMPS",
+    647.7,
+    203.2
+   ],
+   [
+    "VFBSMPS",
+    812.8,
+    314.96
+   ]
+  ]
+ },
+ "changes": [
+  {
+   "label_renamed": [
+    647.7,
+    203.2
+   ]
+  },
+  {
+   "label_renamed": [
+    812.8,
+    314.96
+   ]
+  },
+  {
+   "added": "C64 2.2uF C_0603 VCAP"
+  },
+  {
+   "added": "C65 4.7uF C_0603 +3V3/VDDSMPS"
+  },
+  {
+   "added": "JP1 SolderJumper_2_Open PF9-GND"
+  }
+ ],
+ "added": [
+  {
+   "ref": "C64",
+   "lib_id": "Device:C_Small",
+   "value": "2.2uF",
+   "footprint": "Capacitor_SMD:C_0603_1608Metric",
+   "pos": [
+    807.72,
+    297.18
+   ]
+  },
+  {
+   "ref": "#PWR220",
+   "lib_id": "power:GND",
+   "value": "GND",
+   "footprint": "",
+   "pos": [
+    807.72,
+    302.26
+   ]
+  },
+  {
+   "ref": "C65",
+   "lib_id": "Device:C_Small",
+   "value": "4.7uF",
+   "footprint": "Capacitor_SMD:C_0603_1608Metric",
+   "pos": [
+    363.22,
+    284.48
+   ]
+  },
+  {
+   "ref": "JP1",
+   "lib_id": "Jumper:SolderJumper_2_Open",
+   "value": "HW_ID1",
+   "footprint": "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+   "pos": [
+    632.46,
+    248.92
+   ]
+  },
+  {
+   "ref": "#PWR221",
+   "lib_id": "power:GND",
+   "value": "GND",
+   "footprint": "",
+   "pos": [
+    627.38,
+    246.38
+   ]
+  }
+ ]
+}

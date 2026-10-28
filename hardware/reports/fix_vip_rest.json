@@ -1,0 +1,55 @@
+{
+ "date": "2026-10-26 17:07:47",
+ "items": [
+  {
+   "pad": "D13.1",
+   "net": "GND",
+   "via": "127.59,67.11",
+   "dia": 0.5,
+   "drill": 0.3,
+   "attached": 1,
+   "result": "NAO RESOLVIDO"
+  },
+  {
+   "pad": "U1.2",
+   "net": "GND",
+   "via": "119.00,53.42",
+   "dia": 0.5,
+   "drill": 0.3,
+   "attached": 0,
+   "result": "NAO RESOLVIDO"
+  },
+  {
+   "pad": "C30.2",
+   "net": "+5V",
+   "via": "121.86,61.99",
+   "dia": 0.6,
+   "drill": 0.3,
+   "attached": 4,
+   "result": "NAO RESOLVIDO"
+  },
+  {
+   "pad": "C33.2",
+   "net": "+5V",
+   "via": "132.26,72.51",
+   "dia": 0.6,
+   "drill": 0.3,
+   "attached": 4,
+   "result": "NAO RESOLVIDO"
+  },
+  {
+   "pad": "U9.4",
+   "net": "BUS2_RX",
+   "via": "123.02,56.62",
+   "dia": 0.5,
+   "drill": 0.3,
+   "attached": 2,
+   "to": "122.96,56.70",
+   "dia_new": 0.5,
+   "stub_w": 0.25,
+   "unconnected": 0,
+   "result": "moved"
+  }
+ ],
+ "unconnected_final": 0
+}

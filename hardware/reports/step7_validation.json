@@ -1,0 +1,323 @@
+{
+ "date": "2026-10-28 10:16:52",
+ "commands": [
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch erc --format json --severity-all -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\06_REPORTS\\hybrid_ERC_step7.json C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_sch",
+   "exit": 0,
+   "seconds": 3.9,
+   "log": "step7_erc.log"
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb drc --format json --severity-all --units mm -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\06_REPORTS\\hybrid_DRC_step7.json C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 5.6,
+   "log": "step7_drc.log"
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch export netlist --format kicadxml -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\06_REPORTS\\hybrid_HybridPanda_netlist.xml C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_sch",
+   "exit": 0,
+   "seconds": 0.7,
+   "log": "step7_netlist.log"
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch export bom --fields Reference,Value,Footprint,${QUANTITY},${DNP},MPN,Manufacturer,Datasheet --labels Reference,Value,Footprint,Qty,DNP,MPN,Manufacturer,Datasheet --group-by Value,Footprint,MPN --exclude-dnp -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\06_REPORTS\\hybrid_BOM.csv C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_sch",
+   "exit": 0,
+   "seconds": 0.7,
+   "log": "step7_bom.log"
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\05_SCRIPTS\\.venv\\Scripts\\python.exe C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\05_SCRIPTS\\parity_check.py --netlist C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\06_REPORTS\\hybrid_HybridPanda_netlist.xml --profile red_h7",
+   "exit": 0,
+   "seconds": 0.4,
+   "log": "step7_parity.log"
+  },
+  {
+   "cmd": "powershell -NoProfile -ExecutionPolicy Bypass -File C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\05_SCRIPTS\\Make-Manifest.ps1 -Step STEP7 -Original",
+   "exit": 0,
+   "seconds": 136.3,
+   "log": "step7_manifest.log"
+  }
+ ],
+ "failures": [],
+ "notes": [
+  "1 referências sem MPN na BOM (PROVISÓRIO — ver STEP4/R3v2)"
+ ],
+ "erc": {
+  "errors": 0,
+  "warnings": 373,
+  "by_type": {
+   "warning/endpoint_off_grid": 145,
+   "warning/lib_symbol_issues": 6,
+   "warning/lib_symbol_mismatch": 185,
+   "warning/pin_to_pin": 37
+  },
+  "error_items": []
+ },
+ "drc": {
+  "unconnected_items": 0,
+  "unconnected_list": [],
+  "violations_total": 135,
+  "baseline_total": 194,
+  "by_type": {
+   "copper_edge_clearance": {
+    "hibrida": 0,
+    "baseline": 3
+   },
+   "courtyards_overlap": {
+    "hibrida": 0,
+    "baseline": 1
+   },
+   "drill_out_of_range": {
+    "hibrida": 0,
+    "baseline": 1
+   },
+   "footprint_type_mismatch": {
+    "hibrida": 0,
+    "baseline": 11
+   },
+   "hole_clearance": {
+    "hibrida": 8,
+    "baseline": 8
+   },
+   "isolated_copper": {
+    "hibrida": 0,
+    "baseline": 1
+   },
+   "lib_footprint_mismatch": {
+    "hibrida": 73,
+    "baseline": 67
+   },
+   "silk_edge_clearance": {
+    "hibrida": 4,
+    "baseline": 4
+   },
+   "silk_over_copper": {
+    "hibrida": 1,
+    "baseline": 0
+   },
+   "silk_overlap": {
+    "hibrida": 4,
+    "baseline": 3
+   },
+   "starved_thermal": {
+    "hibrida": 0,
+    "baseline": 13
+   },
+   "text_height": {
+    "hibrida": 45,
+    "baseline": 82
+   }
+  },
+  "new_vs_baseline": [
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda'",
+    "items": [
+     "Footprint D7"
+    ]
+   },
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda'",
+    "items": [
+     "Footprint D9"
+    ]
+   },
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'SOT23-3' does not match copy in library 'BlackPanda'",
+    "items": [
+     "Footprint Q1"
+    ]
+   },
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda'",
+    "items": [
+     "Footprint D5"
+    ]
+   },
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda'",
+    "items": [
+     "Footprint D6"
+    ]
+   },
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'SOT23-3' does not match copy in library 'BlackPanda'",
+    "items": [
+     "Footprint Q2"
+    ]
+   },
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda'",
+    "items": [
+     "Footprint D8"
+    ]
+   },
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'LED-ARRAY-SMD_4P-L2.2-W2.1-BR' does not match copy in library 'BlackPanda'",
+    "items": [
+     "Footprint U5"
+    ]
+   },
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+    "items": [
+     "Footprint FID2"
+    ]
+   },
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'IND-SMD_L7.3-W6.8' does not match copy in library 'BlackPanda'",
+    "items": [
+     "Footprint L3"
+    ]
+   },
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+    "items": [
+     "Footprint FID3"
+    ]
+   },
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'DIOM4325X250N' does not match copy in library 'BlackPanda'",
+    "items": [
+     "Footprint D1"
+    ]
+   },
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+    "items": [
+     "Footprint FID1"
+    ]
+   },
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'USB-C-SMD_TYPE-C-USB-20' does not match copy in library 'BlackPanda'",
+    "items": [
+     "Footprint P1"
+    ]
+   },
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+    "items": [
+     "Footprint FID4"
+    ]
+   },
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+    "items": [
+     "Footprint FID6"
+    ]
+   },
+   {
+    "type": "lib_footprint_mismatch",
+    "severity": "warning",
+    "desc": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+    "items": [
+     "Footprint FID5"
+    ]
+   },
+   {
+    "type": "silk_over_copper",
+    "severity": "warning",
+    "desc": "Silkscreen clipped by solder mask",
+    "items": [
+     "Segment of P1 on F.Silkscreen",
+     "Pad 1 [GND] of R1 on F.Cu"
+    ]
+   },
+   {
+    "type": "silk_overlap",
+    "severity": "warning",
+    "desc": "Silkscreen clearance",
+    "items": [
+     "Reference field of C23",
+     "Segment of Y1 on B.Silkscreen"
+    ]
+   }
+  ],
+  "clearance": 0,
+  "shorting_items": 0,
+  "courtyards_overlap": 0,
+  "track_width": 0
+ },
+ "netlist": {
+  "sch_components": 119,
+  "pcb_footprints": 119,
+  "only_in_sch": [],
+  "only_in_pcb": [],
+  "value_diff": [],
+  "footprint_diff": [],
+  "pads_compared": 481,
+  "net_divergences": [],
+  "other_pin_pad_notes": [
+   {
+    "ref": "U12",
+    "pin": "9",
+    "sch": null,
+    "pcb": "",
+    "kind": "pad sem pino no esquemático"
+   }
+  ],
+  "other_pin_pad_notes_count": 1
+ },
+ "bom": {
+  "lines_refs": 119,
+  "dnp_in_sch": [],
+  "only_in_bom": [],
+  "sch_not_in_bom": [],
+  "value_diff_bom_sch": [],
+  "footprint_diff_bom_pcb": [],
+  "refs_without_MPN": [
+   "JP1"
+  ]
+ },
+ "parity": {
+  "exit": 0,
+  "result": "OK",
+  "status_counts": {
+   "OK": 36
+  },
+  "report_md": "06_REPORTS\\parity_red_h7_hybrid_HybridPanda_netlist.md",
+  "conflicts": [],
+  "optional_not_ok": []
+ },
+ "manifests": {
+  "exit": 0,
+  "tail": [
+   "OUTPUT_ROOT manifest: 20789 files -> C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\00_MANIFESTS\\OUTPUT_ROOT_STEP7_20261028_1017.sha256",
+   "02_REFERENCE unchanged vs reference_clones.sha256: False",
+   "ORIGINAL vs BEFORE: IDENTICAL (377 files)",
+   "INDEX.md rows: 14938"
+  ]
+ },
+ "seconds": 148.0
+}

@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv*/
+venv/
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+
+# KiCad temporaries and backups
+*-backups/
+_autosave-*
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl-bak
+fp-info-cache
+~*.lck
+*.lck
+*.pre_*
+*.relayout_best
+*.step5e_in
+
+# Freerouting / report scratch
+hardware/reports/en/
+hardware/reports/tmp_*.json
+hardware/scripts/tools/freerouting/*.jar
+
+# Local working clones, build outputs and scratch (use the submodules instead)
+apk_out/
+ci_logs/
+p4a_src/
+api_cache/
+*.tgz
+*.log.tmp
+99_BACKUPS/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

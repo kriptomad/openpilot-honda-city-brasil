@@ -1,0 +1,1944 @@
+{
+ "when": "2026-10-27 10:40:13",
+ "params": {
+  "DX": 3.0,
+  "EDGE_SPLIT": 115.0,
+  "X_CUT": 123.0,
+  "EXTRA": {
+   "C30": [
+    2.0,
+    0.0
+   ],
+   "C31": [
+    2.0,
+    0.0
+   ],
+   "C33": [
+    0.0,
+    1.0
+   ],
+   "C32": [
+    0.0,
+    1.0
+   ],
+   "D13": [
+    0.5,
+    0.3
+   ],
+   "Q1": [
+    -0.6,
+    0.0
+   ],
+   "Q2": [
+    -0.6,
+    0.0
+   ],
+   "R24": [
+    0.0,
+    -0.8
+   ]
+  },
+  "ZONE_5V_IN2_GROW_S": 1.5
+ },
+ "warnings": [],
+ "snapshot_in_restored": true,
+ "edge_before": {
+  "min": [
+   91.91,
+   32.01
+  ],
+  "max": [
+   139.535,
+   78.76
+  ]
+ },
+ "footprints_moved": {
+  "D7": {
+   "from": [
+    128.24,
+    55.24
+   ],
+   "to": [
+    131.24,
+    55.24
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "PESD2CAN,215"
+  },
+  "R24": {
+   "from": [
+    127.675,
+    69.65
+   ],
+   "to": [
+    130.675,
+    68.85
+   ],
+   "d": [
+    3.0,
+    -0.8
+   ],
+   "layer": "F.Cu",
+   "value": "10K"
+  },
+  "D2": {
+   "from": [
+    130.95,
+    50.25
+   ],
+   "to": [
+    133.95,
+    50.25
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "BAS40WS 43"
+  },
+  "C28": {
+   "from": [
+    138.912,
+    69.562
+   ],
+   "to": [
+    141.912,
+    69.562
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "100NF"
+  },
+  "U9": {
+   "from": [
+    124.27,
+    55.245
+   ],
+   "to": [
+    127.27,
+    55.245
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "TJA1042TK-3"
+  },
+  "C27": {
+   "from": [
+    125.33,
+    57.535
+   ],
+   "to": [
+    128.33,
+    57.535
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "100NF"
+  },
+  "U8": {
+   "from": [
+    124.118,
+    61.51
+   ],
+   "to": [
+    127.118,
+    61.51
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "TJA1042TK-3"
+  },
+  "C29": {
+   "from": [
+    134.252,
+    69.552
+   ],
+   "to": [
+    137.252,
+    69.552
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "100NF"
+  },
+  "C30": {
+   "from": [
+    121.46,
+    61.51
+   ],
+   "to": [
+    123.46,
+    61.51
+   ],
+   "d": [
+    2.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "100NF"
+  },
+  "D9": {
+   "from": [
+    133.93,
+    66.22
+   ],
+   "to": [
+    136.93,
+    66.22
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "PESD2CAN,215"
+  },
+  "Q1": {
+   "from": [
+    123.15,
+    71.35
+   ],
+   "to": [
+    125.55,
+    71.35
+   ],
+   "d": [
+    2.4,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "DDTA143ECA-7-F P08"
+  },
+  "C32": {
+   "from": [
+    136.653,
+    73.052
+   ],
+   "to": [
+    139.653,
+    74.052
+   ],
+   "d": [
+    3.0,
+    1.0
+   ],
+   "layer": "F.Cu",
+   "value": "100NF"
+  },
+  "D5": {
+   "from": [
+    124.325,
+    67.65
+   ],
+   "to": [
+    127.325,
+    67.65
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "PESD2CAN,215"
+  },
+  "D6": {
+   "from": [
+    128.22,
+    62.46
+   ],
+   "to": [
+    131.22,
+    62.46
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "PESD2CAN,215"
+  },
+  "Q2": {
+   "from": [
+    126.4,
+    71.35
+   ],
+   "to": [
+    128.8,
+    71.35
+   ],
+   "d": [
+    2.4,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "DDTA143ECA-7-F P08"
+  },
+  "D8": {
+   "from": [
+    137.71,
+    66.22
+   ],
+   "to": [
+    140.71,
+    66.22
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "PESD2CAN,215"
+  },
+  "C17": {
+   "from": [
+    124.3,
+    51.65
+   ],
+   "to": [
+    127.3,
+    51.65
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "47uF"
+  },
+  "C31": {
+   "from": [
+    121.625,
+    55.35
+   ],
+   "to": [
+    123.625,
+    55.35
+   ],
+   "d": [
+    2.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "100NF"
+  },
+  "Q4": {
+   "from": [
+    135.6,
+    50.475
+   ],
+   "to": [
+    138.6,
+    50.475
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "HY12P03C2"
+  },
+  "U10": {
+   "from": [
+    136.645,
+    70.4
+   ],
+   "to": [
+    139.645,
+    70.4
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "TJA1042TK-3"
+  },
+  "U11": {
+   "from": [
+    131.98,
+    70.372
+   ],
+   "to": [
+    134.98,
+    70.372
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "TJA1042TK-3"
+  },
+  "D1": {
+   "from": [
+    128.225,
+    49.8
+   ],
+   "to": [
+    131.225,
+    49.8
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "SMAJ16CA-13-F"
+  },
+  "C26": {
+   "from": [
+    124.96,
+    63.78
+   ],
+   "to": [
+    127.96,
+    63.78
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "100NF"
+  },
+  "U3": {
+   "from": [
+    133.445,
+    39.78
+   ],
+   "to": [
+    136.445,
+    39.78
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "10_0_QHHTZB6_3"
+  },
+  "C33": {
+   "from": [
+    131.893,
+    73.022
+   ],
+   "to": [
+    134.893,
+    74.022
+   ],
+   "d": [
+    3.0,
+    1.0
+   ],
+   "layer": "F.Cu",
+   "value": "100NF"
+  },
+  "R1": {
+   "from": [
+    130.975,
+    52.4
+   ],
+   "to": [
+    133.975,
+    52.4
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "1K"
+  },
+  "P1": {
+   "from": [
+    134.485,
+    58.88
+   ],
+   "to": [
+    137.485,
+    58.88
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "F.Cu",
+   "value": "TYPE-C-31-M-04"
+  },
+  "R28": {
+   "from": [
+    124.949,
+    65.503
+   ],
+   "to": [
+    127.949,
+    65.503
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "B.Cu",
+   "value": "10k"
+  },
+  "R30": {
+   "from": [
+    131.98,
+    70.372
+   ],
+   "to": [
+    134.98,
+    70.372
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "B.Cu",
+   "value": "10k"
+  },
+  "D13": {
+   "from": [
+    127.949,
+    66.003
+   ],
+   "to": [
+    131.449,
+    66.303
+   ],
+   "d": [
+    3.5,
+    0.3
+   ],
+   "layer": "B.Cu",
+   "value": "BAT54S"
+  },
+  "R32": {
+   "from": [
+    123.764,
+    61.156
+   ],
+   "to": [
+    126.764,
+    61.156
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "B.Cu",
+   "value": "10k"
+  },
+  "R31": {
+   "from": [
+    136.645,
+    70.4
+   ],
+   "to": [
+    139.645,
+    70.4
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "B.Cu",
+   "value": "10k"
+  },
+  "R33": {
+   "from": [
+    124.27,
+    55.245
+   ],
+   "to": [
+    127.27,
+    55.245
+   ],
+   "d": [
+    3.0,
+    0.0
+   ],
+   "layer": "B.Cu",
+   "value": "10k"
+  }
+ },
+ "detached_tracks": [
+  {
+   "net": "+3V3",
+   "layer": "F.Cu",
+   "seg": [
+    [
+     127.4,
+     69.14
+    ],
+    [
+     127.675,
+     69.14
+    ]
+   ],
+   "pad": "R24"
+  },
+  {
+   "net": "+3V3",
+   "layer": "F.Cu",
+   "seg": [
+    [
+     128.313,
+     69.14
+    ],
+    [
+     127.675,
+     69.14
+    ]
+   ],
+   "pad": "R24"
+  },
+  {
+   "net": "+3V3",
+   "layer": "F.Cu",
+   "seg": [
+    [
+     130.423,
+     69.14
+    ],
+    [
+     127.675,
+     69.14
+    ]
+   ],
+   "pad": "R24"
+  },
+  {
+   "net": "+3V3",
+   "layer": "F.Cu",
+   "seg": [
+    [
+     126.26,
+     68.0
+    ],
+    [
+     127.4,
+     69.14
+    ]
+   ],
+   "pad": "R24"
+  },
+  {
+   "net": "GND",
+   "layer": "F.Cu",
+   "seg": [
+    [
+     121.46,
+     61.03
+    ],
+    [
+     121.91,
+     61.03
+    ]
+   ],
+   "pad": "C30"
+  },
+  {
+   "net": "GND",
+   "layer": "F.Cu",
+   "seg": [
+    [
+     122.72,
+     54.92
+    ],
+    [
+     121.675,
+     54.92
+    ]
+   ],
+   "pad": "C31"
+  },
+  {
+   "net": "GND",
+   "layer": "F.Cu",
+   "seg": [
+    [
+     120.025,
+     56.471
+    ],
+    [
+     121.625,
+     54.87
+    ]
+   ],
+   "pad": "C31"
+  },
+  {
+   "net": "+5V",
+   "layer": "F.Cu",
+   "seg": [
+    [
+     126.455,
+     73.2
+    ],
+    [
+     127.289,
+     72.366
+    ]
+   ],
+   "pad": "Q2"
+  },
+  {
+   "net": "+5V",
+   "layer": "F.Cu",
+   "seg": [
+    [
+     124.039,
+     72.366
+    ],
+    [
+     124.873,
+     73.2
+    ]
+   ],
+   "pad": "Q1"
+  },
+  {
+   "net": "+5V",
+   "layer": "F.Cu",
+   "seg": [
+    [
+     121.01,
+     61.54
+    ],
+    [
+     121.46,
+     61.99
+    ]
+   ],
+   "pad": "C30"
+  },
+  {
+   "net": "+5V",
+   "layer": "F.Cu",
+   "seg": [
+    [
+     121.885,
+     55.57
+    ],
+    [
+     121.625,
+     55.83
+    ]
+   ],
+   "pad": "C31"
+  },
+  {
+   "net": "+5V",
+   "layer": "F.Cu",
+   "seg": [
+    [
+     127.289,
+     72.366
+    ],
+    [
+     128.096,
+     72.366
+    ]
+   ],
+   "pad": "Q2"
+  },
+  {
+   "net": "+5V",
+   "layer": "F.Cu",
+   "seg": [
+    [
+     124.039,
+     71.751
+    ],
+    [
+     124.039,
+     72.366
+    ]
+   ],
+   "pad": "Q1"
+  },
+  {
+   "net": "+5V",
+   "layer": "F.Cu",
+   "seg": [
+    [
+     121.575,
+     55.88
+    ],
+    [
+     121.575,
+     56.425
+    ]
+   ],
+   "pad": "C31"
+  },
+  {
+   "net": "+5V",
+   "layer": "F.Cu",
+   "seg": [
+    [
+     121.46,
+     61.99
+    ],
+    [
+     121.86,
+     61.99
+    ]
+   ],
+   "pad": "C30"
+  }
+ ],
+ "tracks": {
+  "moved_or_stretched": 215,
+  "vias_moved": 18,
+  "stretched": [
+   {
+    "net": "+3V3",
+    "layer": "F.Cu",
+    "from": [
+     [
+      121.995,
+      71.03
+     ],
+     [
+      127.92,
+      71.03
+     ]
+    ],
+    "d_start": [
+     0.0,
+     0.0
+    ],
+    "d_end": [
+     3.0,
+     0.0
+    ],
+    "pad_start": null,
+    "pad_end": null,
+    "w": 0.2
+   },
+   {
+    "net": "GND",
+    "layer": "F.Cu",
+    "from": [
+     [
+      136.173,
+      73.052
+     ],
+     [
+      136.173,
+      72.653
+     ]
+    ],
+    "d_start": [
+     3.0,
+     1.0
+    ],
+    "d_end": [
+     3.0,
+     0.0
+    ],
+    "pad_start": "C32",
+    "pad_end": null,
+    "w": 0.2
+   },
+   {
+    "net": "GND",
+    "layer": "F.Cu",
+    "from": [
+     [
+      122.065,
+      61.185
+     ],
+     [
+      122.567,
+      61.185
+     ]
+    ],
+    "d_start": [
+     0.0,
+     0.0
+    ],
+    "d_end": [
+     3.0,
+     0.0
+    ],
+    "pad_start": null,
+    "pad_end": "U8",
+    "w": 0.2
+   },
+   {
+    "net": "GND",
+    "layer": "F.Cu",
+    "from": [
+     [
+      131.412,
+      73.022
+     ],
+     [
+      131.412,
+      72.688
+     ]
+    ],
+    "d_start": [
+     3.0,
+     1.0
+    ],
+    "d_end": [
+     3.0,
+     0.0
+    ],
+    "pad_start": "C33",
+    "pad_end": null,
+    "w": 0.2
+   },
+   {
+    "net": "GND",
+    "layer": "F.Cu",
+    "from": [
+     [
+      122.39,
+      50.4
+     ],
+     [
+      123.15,
+      49.64
+     ]
+    ],
+    "d_start": [
+     0.0,
+     0.0
+    ],
+    "d_end": [
+     3.0,
+     0.0
+    ],
+    "pad_start": null,
+    "pad_end": null,
+    "w": 0.2
+   },
+   {
+    "net": "+5V",
+    "layer": "F.Cu",
+    "from": [
+     [
+      136.97,
+      71.95
+     ],
+     [
+      136.97,
+      72.889
+     ]
+    ],
+    "d_start": [
+     3.0,
+     0.0
+    ],
+    "d_end": [
+     3.0,
+     1.0
+    ],
+    "pad_start": "U10",
+    "pad_end": "C32",
+    "w": 0.2
+   },
+   {
+    "net": "+5V",
+    "layer": "F.Cu",
+    "from": [
+     [
+      132.373,
+      72.623
+     ],
+     [
+      132.373,
+      73.022
+     ]
+    ],
+    "d_start": [
+     3.0,
+     0.0
+    ],
+    "d_end": [
+     3.0,
+     1.0
+    ],
+    "pad_start": null,
+    "pad_end": "C33",
+    "w": 0.2
+   },
+   {
+    "net": "+5V",
+    "layer": "F.Cu",
+    "from": [
+     [
+      122.015,
+      61.835
+     ],
+     [
+      122.567,
+      61.835
+     ]
+    ],
+    "d_start": [
+     0.0,
+     0.0
+    ],
+    "d_end": [
+     3.0,
+     0.0
+    ],
+    "pad_start": null,
+    "pad_end": "U8",
+    "w": 0.2
+   },
+   {
+    "net": "+5V",
+    "layer": "F.Cu",
+    "from": [
+     [
+      122.72,
+      55.57
+     ],
+     [
+      121.885,
+      55.57
+     ]
+    ],
+    "d_start": [
+     3.0,
+     0.0
+    ],
+    "d_end": [
+     0.0,
+     0.0
+    ],
+    "pad_start": "U9",
+    "pad_end": null,
+    "w": 0.2
+   },
+   {
+    "net": "USB_PWR",
+    "layer": "F.Cu",
+    "from": [
+     [
+      120.245,
+      54.375
+     ],
+     [
+      123.92,
+      50.7
+     ]
+    ],
+    "d_start": [
+     0.0,
+     0.0
+    ],
+    "d_end": [
+     3.0,
+     0.0
+    ],
+    "pad_start": null,
+    "pad_end": "C17",
+    "w": 0.6
+   },
+   {
+    "net": "USB_R_D+",
+    "layer": "F.Cu",
+    "from": [
+     [
+      123.952,
+      48.49
+     ],
+     [
+      122.795,
+      48.49
+     ]
+    ],
+    "d_start": [
+     3.0,
+     0.0
+    ],
+    "d_end": [
+     0.0,
+     0.0
+    ],
+    "pad_start": null,
+    "pad_end": null,
+    "w": 0.2
+   },
+   {
+    "net": "USB_R_D-",
+    "layer": "F.Cu",
+    "from": [
+     [
+      124.138,
+      48.94
+     ],
+     [
+      122.795,
+      48.94
+     ]
+    ],
+    "d_start": [
+     3.0,
+     0.0
+    ],
+    "d_end": [
+     0.0,
+     0.0
+    ],
+    "pad_start": null,
+    "pad_end": null,
+    "w": 0.2
+   }
+  ]
+ },
+ "edge_after": {
+  "min": [
+   91.91,
+   32.01
+  ],
+  "max": [
+   142.535,
+   78.76
+  ],
+  "vertices_moved": 66,
+  "size_mm": [
+   50.625,
+   46.75
+  ]
+ },
+ "drawings_moved": 0,
+ "zones": [
+  {
+   "net": "+5V",
+   "layers": [
+    "F.Cu"
+   ],
+   "bbox_before": [
+    [
+     118.925,
+     42.525
+    ],
+    [
+     123.25,
+     47.275
+    ]
+   ],
+   "bbox_after": [
+    [
+     118.925,
+     42.525
+    ],
+    [
+     126.25,
+     47.275
+    ]
+   ],
+   "vertices_changed": 2,
+   "grow_s": 0
+  },
+  {
+   "net": "USB_PWR",
+   "layers": [
+    "F.Cu"
+   ],
+   "bbox_before": [
+    [
+     118.66,
+     49.92
+    ],
+    [
+     125.0,
+     54.73
+    ]
+   ],
+   "bbox_after": [
+    [
+     118.66,
+     49.92
+    ],
+    [
+     128.0,
+     54.73
+    ]
+   ],
+   "vertices_changed": 2,
+   "grow_s": 0
+  },
+  {
+   "net": "+12V",
+   "layers": [
+    "B.Cu"
+   ],
+   "bbox_before": [
+    [
+     129.14,
+     51.89
+    ],
+    [
+     138.97,
+     60.47
+    ]
+   ],
+   "bbox_after": [
+    [
+     132.14,
+     51.89
+    ],
+    [
+     141.97,
+     60.47
+    ]
+   ],
+   "vertices_changed": 11,
+   "grow_s": 0
+  },
+  {
+   "net": "12V_Protected",
+   "layers": [
+    "B.Cu"
+   ],
+   "bbox_before": [
+    [
+     112.19,
+     34.945
+    ],
+    [
+     133.625,
+     51.4
+    ]
+   ],
+   "bbox_after": [
+    [
+     112.19,
+     34.945
+    ],
+    [
+     136.625,
+     51.4
+    ]
+   ],
+   "vertices_changed": 4,
+   "grow_s": 0
+  },
+  {
+   "net": "+5V",
+   "layers": [
+    "In2.Cu"
+   ],
+   "bbox_before": [
+    [
+     124.88,
+     70.65
+    ],
+    [
+     138.01,
+     73.39
+    ]
+   ],
+   "bbox_after": [
+    [
+     127.88,
+     70.65
+    ],
+    [
+     141.01,
+     74.89
+    ]
+   ],
+   "vertices_changed": 6,
+   "grow_s": 1.5
+  }
+ ],
+ "courtyard_gaps_below_1mm": [
+  {
+   "a": "U8",
+   "b": "D6",
+   "layer": "F.Cu",
+   "gap_mm": 0.0
+  },
+  {
+   "a": "U8",
+   "b": "C26",
+   "layer": "F.Cu",
+   "gap_mm": 0.0
+  },
+  {
+   "a": "U9",
+   "b": "D7",
+   "layer": "F.Cu",
+   "gap_mm": 0.0
+  },
+  {
+   "a": "U9",
+   "b": "C27",
+   "layer": "F.Cu",
+   "gap_mm": 0.0
+  },
+  {
+   "a": "U10",
+   "b": "C28",
+   "layer": "F.Cu",
+   "gap_mm": 0.0
+  },
+  {
+   "a": "U11",
+   "b": "C29",
+   "layer": "F.Cu",
+   "gap_mm": 0.0
+  },
+  {
+   "a": "D6",
+   "b": "P1",
+   "layer": "F.Cu",
+   "gap_mm": 0.0
+  },
+  {
+   "a": "D7",
+   "b": "P1",
+   "layer": "F.Cu",
+   "gap_mm": 0.0
+  },
+  {
+   "a": "D7",
+   "b": "C27",
+   "layer": "F.Cu",
+   "gap_mm": 0.01
+  },
+  {
+   "a": "U11",
+   "b": "D9",
+   "layer": "F.Cu",
+   "gap_mm": 0.032
+  },
+  {
+   "a": "U10",
+   "b": "D8",
+   "layer": "F.Cu",
+   "gap_mm": 0.06
+  },
+  {
+   "a": "U10",
+   "b": "D9",
+   "layer": "F.Cu",
+   "gap_mm": 0.06
+  },
+  {
+   "a": "R24",
+   "b": "Q2",
+   "layer": "F.Cu",
+   "gap_mm": 0.067
+  },
+  {
+   "a": "U10",
+   "b": "C29",
+   "layer": "F.Cu",
+   "gap_mm": 0.092
+  },
+  {
+   "a": "Q1",
+   "b": "Q2",
+   "layer": "F.Cu",
+   "gap_mm": 0.148
+  },
+  {
+   "a": "D8",
+   "b": "D9",
+   "layer": "F.Cu",
+   "gap_mm": 0.19
+  },
+  {
+   "a": "D5",
+   "b": "Q1",
+   "layer": "F.Cu",
+   "gap_mm": 0.297
+  },
+  {
+   "a": "D5",
+   "b": "Q2",
+   "layer": "F.Cu",
+   "gap_mm": 0.297
+  },
+  {
+   "a": "D8",
+   "b": "P1",
+   "layer": "F.Cu",
+   "gap_mm": 0.343
+  },
+  {
+   "a": "D9",
+   "b": "P1",
+   "layer": "F.Cu",
+   "gap_mm": 0.343
+  },
+  {
+   "a": "D6",
+   "b": "C26",
+   "layer": "F.Cu",
+   "gap_mm": 0.36
+  },
+  {
+   "a": "D9",
+   "b": "C29",
+   "layer": "F.Cu",
+   "gap_mm": 0.432
+  },
+  {
+   "a": "D8",
+   "b": "C28",
+   "layer": "F.Cu",
+   "gap_mm": 0.442
+  },
+  {
+   "a": "R29",
+   "b": "D14",
+   "layer": "B.Cu",
+   "gap_mm": 0.583
+  },
+  {
+   "a": "U9",
+   "b": "C31",
+   "layer": "F.Cu",
+   "gap_mm": 0.965
+  },
+  {
+   "a": "U11",
+   "b": "C33",
+   "layer": "F.Cu",
+   "gap_mm": 0.97
+  },
+  {
+   "a": "U10",
+   "b": "C32",
+   "layer": "F.Cu",
+   "gap_mm": 0.972
+  },
+  {
+   "a": "U8",
+   "b": "C30",
+   "layer": "F.Cu",
+   "gap_mm": 0.978
+  }
+ ],
+ "footprints_bbox_outside_edge": [
+  {
+   "ref": "U3",
+   "bbox": [
+    [
+     130.61,
+     32.287
+    ],
+    [
+     143.684,
+     47.273
+    ]
+   ]
+  },
+  {
+   "ref": "P1",
+   "bbox": [
+    [
+     133.078,
+     53.828
+    ],
+    [
+     143.234,
+     63.932
+    ]
+   ]
+  }
+ ],
+ "decoupling_cc_mm": {
+  "C30.2->U8.3": 2.11,
+  "C31.2->U9.3": 2.11,
+  "C33.2->U11.3": 2.1,
+  "C32.2->U10.3": 2.11,
+  "C26.1->U8.5": 1.31,
+  "C27.1->U9.5": 1.32,
+  "C29.1->U11.5": 1.32,
+  "C28.1->U10.5": 1.31
+ },
+ "unconnected_after": 151,
+ "drc": {
+  "unconnected_items": 151,
+  "by_type": {
+   "text_height": 72,
+   "lib_footprint_mismatch": 58,
+   "track_dangling": 28,
+   "silk_overlap": 21,
+   "silk_over_copper": 17,
+   "starved_thermal": 15,
+   "footprint_type_mismatch": 10,
+   "hole_clearance": 8,
+   "silk_edge_clearance": 4,
+   "copper_edge_clearance": 2,
+   "courtyards_overlap": 1,
+   "drill_out_of_range": 1
+  },
+  "copper_issues": [
+   [
+    "hole_clearance",
+    "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actual 0,1444 mm)",
+    [
+     [
+      136.18,
+      63.01
+     ],
+     [
+      134.94,
+      62.555
+     ]
+    ]
+   ],
+   [
+    "hole_clearance",
+    "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actual 0,1444 mm)",
+    [
+     [
+      136.18,
+      63.01
+     ],
+     [
+      134.94,
+      62.555
+     ]
+    ]
+   ],
+   [
+    "hole_clearance",
+    "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actual 0,1444 mm)",
+    [
+     [
+      136.18,
+      63.01
+     ],
+     [
+      134.94,
+      62.555
+     ]
+    ]
+   ],
+   [
+    "hole_clearance",
+    "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actual 0,1444 mm)",
+    [
+     [
+      136.18,
+      63.01
+     ],
+     [
+      134.94,
+      62.555
+     ]
+    ]
+   ],
+   [
+    "hole_clearance",
+    "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actual 0,1443 mm)",
+    [
+     [
+      136.18,
+      54.75
+     ],
+     [
+      134.94,
+      55.205
+     ]
+    ]
+   ],
+   [
+    "hole_clearance",
+    "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actual 0,1443 mm)",
+    [
+     [
+      136.18,
+      54.75
+     ],
+     [
+      134.94,
+      55.205
+     ]
+    ]
+   ],
+   [
+    "hole_clearance",
+    "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actual 0,1443 mm)",
+    [
+     [
+      136.18,
+      54.75
+     ],
+     [
+      134.94,
+      55.205
+     ]
+    ]
+   ],
+   [
+    "hole_clearance",
+    "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actual 0,1443 mm)",
+    [
+     [
+      136.18,
+      54.75
+     ],
+     [
+      134.94,
+      55.205
+     ]
+    ]
+   ],
+   [
+    "courtyards_overlap",
+    "Courtyards overlap",
+    [
+     [
+      131.24,
+      55.24
+     ],
+     [
+      127.27,
+      55.245
+     ]
+    ]
+   ],
+   [
+    "copper_edge_clearance",
+    "Board edge clearance violation (board setup constraints edge clearance 0,2000 mm; actual 0,0950 mm)",
+    [
+     [
+      141.535,
+      32.061
+     ],
+     [
+      140.84,
+      46.23
+     ]
+    ]
+   ],
+   [
+    "copper_edge_clearance",
+    "Board edge clearance violation (board setup constraints edge clearance 0,2000 mm; actual 0,1824 mm)",
+    [
+     [
+      141.535,
+      32.061
+     ],
+     [
+      140.84,
+      33.33
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      112.87,
+      70.71
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      131.39,
+      69.217
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      100.12,
+      63.47
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      110.985,
+      55.39
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      102.475,
+      54.05
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      129.26,
+      64.6
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      133.643,
+      69.36
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      96.18,
+      65.1
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      99.05,
+      56.975
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      108.625,
+      53.9
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      128.64,
+      56.95
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      136.61,
+      68.46
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      140.51,
+      69.56
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      108.49,
+      66.61
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      102.975,
+      55.975
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      110.4,
+      56.475
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      107.975,
+      64.565
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      99.05,
+      62.975
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      99.05,
+      56.475
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      120.41,
+      53.18
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      96.47,
+      34.04
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      121.86,
+      61.99
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      125.72,
+      55.57
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      120.86,
+      61.54
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      127.13,
+      71.66
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      127.873,
+      73.2
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      104.16,
+      49.325
+     ]
+    ]
+   ],
+   [
+    "track_dangling",
+    "Track has unconnected end",
+    [
+     [
+      109.27,
+      48.45
+     ]
+    ]
+   ]
+  ],
+  "delta_vs_step5a": {
+   "silk_overlap": 4,
+   "track_dangling": 1,
+   "starved_thermal": -6,
+   "silk_over_copper": -11
+  }
+ }
+}

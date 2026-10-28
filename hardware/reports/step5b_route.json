@@ -1,0 +1,1218 @@
+{
+ "phases": {
+  "N": {
+   "classes": [
+    "Default",
+    "CAN_DIFF",
+    "USB"
+   ],
+   "patterns": 12
+  },
+  "Z": {
+   "+3V3_In1_outline": [
+    [
+     96.1,
+     38.7
+    ],
+    [
+     118.5,
+     38.7
+    ],
+    [
+     118.5,
+     47.6
+    ],
+    [
+     130.0,
+     47.6
+    ],
+    [
+     130.0,
+     76.5
+    ],
+    [
+     96.1,
+     76.5
+    ]
+   ],
+   "+3V3_In1_clearance": 0.254,
+   "gnd_zone_clearance": {
+    "new": 0.254,
+    "changed": [
+     [
+      [
+       85.07,
+       26.88
+      ],
+      0.508
+     ]
+    ]
+   }
+  },
+  "cleanup_duplicates_removed": 3,
+  "cleanup_fragments_removed": 62,
+  "C": {
+   "routed": [
+    [
+     "C39",
+     68,
+     "L",
+     2.95
+    ],
+    [
+     "C40",
+     140,
+     "reto",
+     2.52
+    ],
+    [
+     "Y1",
+     26,
+     "escape1.2",
+     4.25
+    ],
+    [
+     "C23",
+     25,
+     "escape1.2",
+     4.84
+    ],
+    [
+     "C24",
+     26,
+     "escape1.2",
+     5.84
+    ],
+    [
+     "L5",
+     15,
+     "reto",
+     3.01
+    ],
+    [
+     "L5",
+     17,
+     "reto",
+     3.01
+    ],
+    [
+     "C41",
+     15,
+     "reto",
+     4.93
+    ],
+    [
+     "C42",
+     17,
+     "reto",
+     5.55
+    ],
+    [
+     "C44",
+     36,
+     "reto",
+     2.12
+    ],
+    [
+     "C43",
+     35,
+     "reto",
+     4.81
+    ],
+    [
+     "FB1",
+     36,
+     "L",
+     6.78
+    ],
+    [
+     "C45",
+     7,
+     "reto",
+     2.12
+    ],
+    [
+     "C46",
+     13,
+     "L",
+     2.92
+    ],
+    [
+     "C49",
+     42,
+     "reto",
+     2.12
+    ],
+    [
+     "C50",
+     56,
+     "reto",
+     2.12
+    ],
+    [
+     "C51",
+     71,
+     "reto",
+     2.12
+    ],
+    [
+     "C52",
+     79,
+     "L",
+     2.92
+    ],
+    [
+     "C53",
+     92,
+     "L",
+     4.52
+    ],
+    [
+     "C54",
+     106,
+     "reto",
+     2.12
+    ],
+    [
+     "C55",
+     119,
+     "reto",
+     2.12
+    ],
+    [
+     "C56",
+     129,
+     "reto",
+     2.12
+    ],
+    [
+     "C57",
+     144,
+     "reto",
+     2.12
+    ],
+    [
+     "C59",
+     90,
+     "L",
+     7.59
+    ],
+    [
+     "C61",
+     56,
+     "escape1.2",
+     4.44
+    ],
+    [
+     "C63",
+     8,
+     "reto",
+     4.7
+    ],
+    [
+     "Y1",
+     25,
+     "contorno x=107.91",
+     4.71
+    ]
+   ],
+   "skipped_to_freerouting": [
+    [
+     "C38",
+     "colisão: pad U7.26"
+    ],
+    [
+     "C47",
+     "em F.Cu -> Freerouting"
+    ],
+    [
+     "C48",
+     "em F.Cu -> Freerouting"
+    ],
+    [
+     "C58",
+     "em F.Cu -> Freerouting"
+    ],
+    [
+     "C60",
+     "colisão: pad C45.2"
+    ],
+    [
+     "C62",
+     "colisão: pad C54.2"
+    ]
+   ]
+  },
+  "M": {
+   "ok": true,
+   "x": 117.6,
+   "u1_2_via": true,
+   "u1_2_via_at": [
+    121.35,
+    53.4
+   ],
+   "via_in_pad": false,
+   "usb_pwr_rerouted": true
+  },
+  "R": {
+   "U7.122<->U9.1": {
+    "ok": true,
+    "via": [
+     125.42,
+     53.87
+    ],
+    "tried": 1,
+    "segs": 2
+   },
+   "U7.123<->U9.4": {
+    "ok": true,
+    "via": [
+     125.42,
+     56.62
+    ],
+    "tried": 2,
+    "segs": 3
+   },
+   "U7.137<->U11.1": {
+    "ok": false,
+    "why": "sem posição de via livre",
+    "tried": 1188
+   },
+   "U7.136<->U11.4": {
+    "ok": false,
+    "why": "sem posição de via livre",
+    "tried": 1188
+   },
+   "U7.133<->U10.1": {
+    "ok": false,
+    "why": "sem posição de via livre",
+    "tried": 1188
+   },
+   "U7.132<->U10.4": {
+    "ok": false,
+    "why": "sem posição de via livre",
+    "tried": 1188
+   },
+   "U7.73<->U8.1": {
+    "ok": false,
+    "why": "sem posição de via livre",
+    "tried": 1184
+   },
+   "U7.72<->U8.4": {
+    "ok": false,
+    "why": "sem posição de via livre",
+    "tried": 1186
+   }
+  },
+  "V": {
+   "ok": 43,
+   "detail": [
+    [
+     "C39.2",
+     "ok",
+     [
+      94.163,
+      50.069
+     ]
+    ],
+    [
+     "C40.2",
+     "ok",
+     [
+      124.919,
+      63.662
+     ]
+    ],
+    [
+     "C23.2",
+     "ok",
+     [
+      108.639,
+      71.374
+     ]
+    ],
+    [
+     "C24.2",
+     "ok",
+     [
+      102.609,
+      71.529
+     ]
+    ],
+    [
+     "Y1.2",
+     "ok",
+     [
+      104.162,
+      72.574
+     ]
+    ],
+    [
+     "Y1.4",
+     "ok",
+     [
+      106.192,
+      69.533
+     ]
+    ],
+    [
+     "C41.2",
+     "ok",
+     [
+      111.564,
+      73.887
+     ]
+    ],
+    [
+     "C42.2",
+     "ok",
+     [
+      109.422,
+      75.402
+     ]
+    ],
+    [
+     "C43.2",
+     "ok",
+     [
+      101.43,
+      73.687
+     ]
+    ],
+    [
+     "C44.2",
+     "ok",
+     [
+      100.913,
+      71.075
+     ]
+    ],
+    [
+     "C38.2",
+     "ok",
+     [
+      106.622,
+      75.331
+     ]
+    ],
+    [
+     "C45.2",
+     "ok",
+     [
+      116.357,
+      69.879
+     ]
+    ],
+    [
+     "C46.2",
+     "sem espaço"
+    ],
+    [
+     "C47.2",
+     "ok",
+     [
+      107.934,
+      67.572
+     ]
+    ],
+    [
+     "C48.2",
+     "ok",
+     [
+      100.985,
+      71.477
+     ]
+    ],
+    [
+     "C49.2",
+     "ok",
+     [
+      95.075,
+      63.16
+     ]
+    ],
+    [
+     "C50.2",
+     "ok",
+     [
+      95.009,
+      55.809
+     ]
+    ],
+    [
+     "C51.2",
+     "ok",
+     [
+      95.114,
+      47.964
+     ]
+    ],
+    [
+     "C52.2",
+     "ok",
+     [
+      102.627,
+      42.18
+     ]
+    ],
+    [
+     "C53.2",
+     "ok",
+     [
+      113.921,
+      42.061
+     ]
+    ],
+    [
+     "C54.2",
+     "ok",
+     [
+      117.618,
+      42.204
+     ]
+    ],
+    [
+     "C55.2",
+     "ok",
+     [
+      124.067,
+      53.321
+     ]
+    ],
+    [
+     "C56.2",
+     "ok",
+     [
+      123.989,
+      57.918
+     ]
+    ],
+    [
+     "C57.2",
+     "ok",
+     [
+      123.875,
+      65.753
+     ]
+    ],
+    [
+     "C58.2",
+     "ok",
+     [
+      106.269,
+      47.349
+     ]
+    ],
+    [
+     "C59.2",
+     "ok",
+     [
+      108.405,
+      37.171
+     ]
+    ],
+    [
+     "C60.2",
+     "ok",
+     [
+      116.01,
+      74.207
+     ]
+    ],
+    [
+     "C61.2",
+     "ok",
+     [
+      93.786,
+      57.586
+     ]
+    ],
+    [
+     "C62.2",
+     "ok",
+     [
+      117.046,
+      39.007
+     ]
+    ],
+    [
+     "C63.2",
+     "ok",
+     [
+      114.079,
+      73.567
+     ]
+    ],
+    [
+     "C45.1",
+     "sem espaço"
+    ],
+    [
+     "C46.1",
+     "sem espaço"
+    ],
+    [
+     "C47.1",
+     "ok",
+     [
+      109.292,
+      66.083
+     ]
+    ],
+    [
+     "C48.1",
+     "sem espaço"
+    ],
+    [
+     "C49.1",
+     "ok",
+     [
+      96.231,
+      64.269
+     ]
+    ],
+    [
+     "C50.1",
+     "ok",
+     [
+      96.761,
+      55.101
+     ]
+    ],
+    [
+     "C51.1",
+     "sem espaço"
+    ],
+    [
+     "C52.1",
+     "ok",
+     [
+      101.615,
+      44.502
+     ]
+    ],
+    [
+     "C53.1",
+     "sem espaço"
+    ],
+    [
+     "C54.1",
+     "ok",
+     [
+      117.978,
+      43.639
+     ]
+    ],
+    [
+     "C55.1",
+     "ok",
+     [
+      122.738,
+      52.016
+     ]
+    ],
+    [
+     "C56.1",
+     "ok",
+     [
+      123.044,
+      58.777
+     ]
+    ],
+    [
+     "C57.1",
+     "ok",
+     [
+      121.859,
+      65.969
+     ]
+    ],
+    [
+     "C58.1",
+     "ok",
+     [
+      106.275,
+      48.329
+     ]
+    ],
+    [
+     "C59.1",
+     "sem espaço"
+    ],
+    [
+     "C60.1",
+     "ok",
+     [
+      116.441,
+      72.245
+     ]
+    ],
+    [
+     "C61.1",
+     "ok",
+     [
+      96.576,
+      56.973
+     ]
+    ],
+    [
+     "C62.1",
+     "ok",
+     [
+      117.456,
+      40.993
+     ]
+    ],
+    [
+     "C63.1",
+     "ok",
+     [
+      114.54,
+      72.246
+     ]
+    ],
+    [
+     "FB1.2",
+     "ok",
+     [
+      99.533,
+      75.413
+     ]
+    ]
+   ],
+   "u7_gnd_vias": [
+    [
+     6,
+     "fora",
+     1.2,
+     -0.25
+    ],
+    [
+     12,
+     "dentro",
+     1.4,
+     0
+    ],
+    [
+     14,
+     "dentro",
+     1.4,
+     0
+    ],
+    [
+     18,
+     "fora",
+     1.5,
+     0.5
+    ],
+    [
+     "21+22+23+24",
+     "dentro",
+     1.4,
+     0
+    ],
+    [
+     33,
+     "dentro",
+     1.4,
+     0
+    ],
+    [
+     34,
+     "dentro",
+     1.4,
+     0
+    ],
+    [
+     41,
+     "fora",
+     1.2,
+     0.25
+    ],
+    [
+     55,
+     "dentro",
+     1.4,
+     0
+    ],
+    [
+     69,
+     "fora",
+     1.2,
+     -0.25
+    ],
+    [
+     80,
+     "fora",
+     2.6,
+     0
+    ],
+    [
+     89,
+     "fora",
+     1.2,
+     0.5
+    ],
+    [
+     104,
+     "fora",
+     1.5,
+     0
+    ],
+    [
+     118,
+     "fora",
+     1.5,
+     -0.25
+    ],
+    [
+     128,
+     "fora",
+     2.2,
+     -0.25
+    ],
+    [
+     141,
+     "fora",
+     1.2,
+     0.25
+    ]
+   ],
+   "u7_gnd_fail_reasons": {
+    "6": {
+     "track +3V3": 2
+    },
+    "12": {
+     "keepout": 54,
+     "pad SW1.2": 9
+    },
+    "14": {
+     "keepout": 30,
+     "track VLXSMPS": 12,
+     "pad L5.1": 16,
+     "pad SW1.2": 5
+    },
+    "18": {
+     "track VFBSMPS": 3
+    },
+    "21": {
+     "fora ponte": [
+      "track HSE_IN",
+      "track HSE_IN",
+      "track HSE_IN",
+      "track HSE_IN",
+      "track HSE_IN"
+     ]
+    },
+    "33": {
+     "fora ponte": [
+      "track HSE_OUT"
+     ]
+    },
+    "34": {
+     "pad C48.1": 18,
+     "pad C44.1": 12,
+     "track HSE_OUT": 3,
+     "track VDDA": 13,
+     "pad R17.1": 3,
+     "pad C24.1": 5,
+     "pad U5.3": 6,
+     "pad U5.4": 3
+    },
+    "41": {
+     "track +3V3": 1
+    },
+    "55": {
+     "fora ponte": [
+      "track +3V3"
+     ]
+    },
+    "69": {
+     "track VCAP": 2
+    },
+    "80": {
+     "pad U6.4": 19,
+     "pad C3.1": 12,
+     "track +3V3": 5
+    },
+    "89": {
+     "pad R5.2": 3
+    },
+    "118": {
+     "pad R9.2": 4,
+     "track +3V3": 4,
+     "pad R9.1": 2,
+     "pad C55.1": 1
+    },
+    "128": {
+     "pad D10.1": 22,
+     "track +5V": 4,
+     "pad C56.1": 3
+    },
+    "141": {
+     "track VCAP": 1
+    }
+   },
+   "u7_3v3_vias": [
+    [
+     "7+8",
+     "fora",
+     1.8,
+     -0.25
+    ],
+    [
+     13,
+     "fora",
+     3.5,
+     0
+    ],
+    [
+     16,
+     "fora",
+     1.8,
+     0
+    ],
+    [
+     19,
+     "dentro",
+     1.4,
+     0
+    ],
+    [
+     32,
+     "dentro",
+     1.4,
+     -0.25
+    ],
+    [
+     42,
+     "fora",
+     1.2,
+     -0.25
+    ],
+    [
+     56,
+     "fora",
+     1.2,
+     1.0
+    ],
+    [
+     "70+71",
+     "dentro",
+     2.4,
+     0
+    ],
+    [
+     79,
+     "fora",
+     4.0,
+     0.25
+    ],
+    [
+     "90+91+92",
+     "dentro",
+     2.4,
+     0
+    ],
+    [
+     105,
+     "fora",
+     1.2,
+     -0.25
+    ],
+    [
+     106,
+     "fora",
+     1.2,
+     0
+    ],
+    [
+     119,
+     "via C55.1"
+    ],
+    [
+     129,
+     "fora",
+     1.2,
+     0.75
+    ],
+    [
+     "142+143+144",
+     "dentro",
+     1.4,
+     0
+    ]
+   ],
+   "u7_3v3_fail_reasons": {
+    "7": {
+     "keepout": 28,
+     "track GND": 12
+    },
+    "13": {
+     "keepout": 42,
+     "track VLXSMPS": 4,
+     "pad L5.1": 8
+    },
+    "16": {
+     "track VLXSMPS": 8,
+     "track VFBSMPS": 6,
+     "pad C47.2": 2,
+     "keepout": 2
+    },
+    "19": {
+     "pad C47.2": 20,
+     "track HSE_IN": 6,
+     "track VFBSMPS": 9,
+     "pad C23.1": 16,
+     "pad L5.2": 21,
+     "pad C23.2": 9
+    },
+    "32": {
+     "fora ponte": [
+      "track HSE_OUT"
+     ],
+     "track GND": 2
+    },
+    "42": {
+     "track GND": 2
+    },
+    "56": {
+     "pad C2.2": 5,
+     "track GND": 2
+    },
+    "70": {
+     "fora ponte": [
+      "track GND",
+      "track GND"
+     ],
+     "pad U12.8": 10,
+     "track +5V": 44
+    },
+    "79": {
+     "pad C3.2": 5,
+     "track GND": 6,
+     "pad U6.4": 11,
+     "pad C3.1": 30,
+     "pad U6.3": 8,
+     "pad C52.2": 4
+    },
+    "90": {
+     "pad R5.2": 8,
+     "pad U6.9": 103,
+     "pad U6.5": 69,
+     "pad U6.6": 33,
+     "pad U6.7": 30,
+     "pad C10.2": 37,
+     "pad C10.1": 45
+    },
+    "105": {
+     "track GND": 2
+    },
+    "119": {
+     "pad U1.3": 9,
+     "pad U1.2": 11,
+     "track +5V": 1,
+     "pad U1.1": 1,
+     "pad C34.2": 1,
+     "track USB_PWR": 9,
+     "track Net-(U1-ISET)": 4
+    },
+    "129": {
+     "pad D10.1": 5
+    },
+    "142": {
+     "fora ponte": [
+      "track GND",
+      "track GND"
+     ]
+    }
+   }
+  },
+  "L": {
+   "can_tracks_locked": 64,
+   "can_vias_baseline": [],
+   "baseline_items_temp_locked": 404
+  },
+  "P": {
+   "rounds": [
+    [
+     0,
+     74,
+     21,
+     [
+      "Pad 1 [+3V3] of C48 on F.Cu <> Pad 1 [+3V3] of U5 on F.Cu",
+      "Track [+3V3] on B.Cu, length 0,9000 mm <> Pad 1 [+3V3] of C48 on F.Cu",
+      "Pad 1 [BOOT0] of SW1 on F.Cu <> Pad 1 [BOOT0] of SW1 on F.Cu",
+      "Pad 1 [BOOT0] of SW1 on F.Cu <> Pad 135 [BOOT0] of U7 on B.Cu",
+      "Pad 135 [BOOT0] of U7 on B.Cu <> Pad 1 [BOOT0] of R14 on F.Cu",
+      "Pad 2 [SBU2] of R23 on F.Cu <> Pad 3 [SBU2] of Q1 on F.Cu",
+      "Pad 1 [SBU2] of R29 on B.Cu <> Pad 2 [SBU2] of R23 on F.Cu",
+      "Pad 3 [SBU2] of Q1 on F.Cu <> Pad 2 [SBU2] of D5 on F.Cu",
+      "PTH pad B8 [SBU2] of P1 <> Pad 2 [SBU2] of D5 on F.Cu",
+      "Pad 1 [SBU1] of D5 on F.Cu <> Pad 1 [SBU1] of R28 on B.Cu",
+      "Pad 3 [SBU1] of Q2 on F.Cu <> Pad 2 [SBU1] of R24 on F.Cu",
+      "Pad 2 [SBU1] of R24 on F.Cu <> Pad 1 [SBU1] of D5 on F.Cu",
+      "Pad A8 [SBU1] of P1 on F.Cu <> Pad 1 [SBU1] of R28 on B.Cu",
+      "Pad 52 [VoltageSens] of U7 on B.Cu <> Pad 2 [VoltageSens] of R2 on F.Cu",
+      "Pad 2 [VoltageSens] of R2 on F.Cu <> Pad 1 [VoltageSens] of R3 on F.Cu",
+      "Pad 2 [12V_Protected] of R3 on F.Cu <> Track [12V_Protected] on F.Cu, length 2,0167 mm",
+      "Pad 2 [5VOUT_S] of R15 on F.Cu <> Pad 1 [5VOUT_S] of R16 on F.Cu",
+      "Pad 1 [5VOUT_S] of R16 on F.Cu <> Pad 50 [5VOUT_S] of U7 on B.Cu",
+      "Pad 121 [BUS2_STB] of U7 on B.Cu <> Pad 2 [BUS2_STB] of R33 on B.Cu",
+      "Pad 2 [BUS2_STB] of R33 on B.Cu <> Pad 8 [BUS2_STB] of U9 on F.Cu",
+      "Pad 1 [LED_RED] of R19 on F.Cu <> Pad 3 [LED_RED] of U7 on B.Cu",
+      "Pad 2 [RED-] of R19 on F.Cu <> Pad 2 [RED-] of U5 on F.Cu",
+      "Pad 73 [BUS1O_TX] of U7 on B.Cu <> Pad 1 [BUS1O_TX] of U8 on F.Cu",
+      "Pad 72 [BUS1O_RX] of U7 on B.Cu <> Pad 4 [BUS1O_RX] of U8 on F.Cu",
+      "Pad 131 [BUS1O_STB] of U7 on B.Cu <> Pad 2 [BUS1O_STB] of R32 on B.Cu",
+      "Pad 2 [BUS1O_STB] of R32 on B.Cu <> Pad 8 [BUS1O_STB] of U8 on F.Cu",
+      "Pad 1 [LED_GREEN] of R18 on F.Cu <> Pad 2 [LED_GREEN] of U7 on B.Cu",
+      "Pad 3 [GREEN-] of U5 on F.Cu <> Pad 2 [GREEN-] of R18 on F.Cu",
+      "Pad 110 [relay_SBU2] of U7 on B.Cu <> Pad 1 [relay_SBU2] of Q1 on F.Cu",
+      "Pad 1 [LED_BLUE] of R17 on F.Cu <> Pad 1 [LED_BLUE] of U7 on B.Cu",
+      "Pad 2 [BLUE-] of R17 on F.Cu <> Pad 4 [BLUE-] of U5 on F.Cu",
+      "Pad 109 [relay_SBU1] of U7 on B.Cu <> Pad 1 [relay_SBU1] of Q2 on F.Cu",
+      "Pad 101 [USB_D+] of U7 on B.Cu <> Pad 2 [USB_D+] of R21 on F.Cu",
+      "Pad 74 [USB_LOAD] of U7 on B.Cu <> Pad 1 [USB_LOAD] of Q3 on F.Cu",
+      "Pad 133 [BUS1N_TX] of U7 on B.Cu <> Pad 1 [BUS1N_TX] of U10 on F.Cu",
+      "Pad 132 [BUS1N_RX] of U7 on B.Cu <> Pad 4 [BUS1N_RX] of U10 on F.Cu",
+      "Pad 8 [BUS1N_STB] of U10 on F.Cu <> Pad 130 [BUS1N_STB] of U7 on B.Cu",
+      "Pad 2 [BUS1N_STB] of R31 on B.Cu <> Pad 8 [BUS1N_STB] of U10 on F.Cu",
+      "Pad 137 [BUS0_TX] of U7 on B.Cu <> Pad 1 [BUS0_TX] of U11 on F.Cu",
+      "Pad 136 [BUS0_RX] of U7 on B.Cu <> Pad 4 [BUS0_RX] of U11 on F.Cu",
+      "Pad 8 [BUS0_STB] of U11 on F.Cu <> Pad 124 [BUS0_STB] of U7 on B.Cu",
+      "Pad 2 [BUS0_STB] of R30 on B.Cu <> Pad 8 [BUS0_STB] of U11 on F.Cu",
+      "Pad 100 [USB_D-] of U7 on B.Cu <> Pad 1 [USB_D-] of R20 on F.Cu",
+      "Pad 10 [NRST] of J1 on B.Cu <> Pad 27 [NRST] of U7 on B.Cu",
+      "Pad 27 [NRST] of U7 on B.Cu <> Pad 1 [NRST] of C38 on B.Cu",
+      "Track [VDDA] on B.Cu, length 4,8121 mm <> Track [VDDA] on B.Cu, length 0,8660 mm",
+      "Pad 2 [SBU2_ADC] of R29 on B.Cu <> Pad 38 [SBU2_ADC] of U7 on B.Cu",
+      "Pad 3 [SBU2_ADC] of D14 on B.Cu <> Pad 2 [SBU2_ADC] of R29 on B.Cu",
+      "Pad 2 [SBU1_ADC] of R28 on B.Cu <> Pad 47 [SBU1_ADC] of U7 on B.Cu",
+      "Pad 3 [SBU1_ADC] of D13 on B.Cu <> Pad 2 [SBU1_ADC] of R28 on B.Cu",
+      "Track [VCAP] on B.Cu, length 2,4345 mm <> Pad 103 [VCAP] of U7 on B.Cu",
+      "Track [VCAP] on B.Cu, length 2,5250 mm <> Pad 103 [VCAP] of U7 on B.Cu",
+      "Pad 2 [SWDIO] of J1 on B.Cu <> Pad 102 [SWDIO] of U7 on B.Cu",
+      "Pad 4 [SWCLK] of J1 on B.Cu <> Pad 107 [SWCLK] of U7 on B.Cu"
+     ]
+    ],
+    [
+     1,
+     58,
+     4,
+     [
+      "Pad 1 [+3V3] of C48 on F.Cu <> Track [+3V3] on B.Cu, length 0,9000 mm",
+      "Pad 1 [+3V3] of C48 on F.Cu <> Pad 1 [+3V3] of U5 on F.Cu",
+      "Pad 1 [BOOT0] of SW1 on F.Cu <> Pad 1 [BOOT0] of SW1 on F.Cu",
+      "Pad 1 [BOOT0] of SW1 on F.Cu <> Pad 135 [BOOT0] of U7 on B.Cu",
+      "Pad 135 [BOOT0] of U7 on B.Cu <> Pad 1 [BOOT0] of R14 on F.Cu",
+      "Pad 2 [SBU2] of R23 on F.Cu <> Pad 3 [SBU2] of Q1 on F.Cu",
+      "Pad 1 [SBU2] of R29 on B.Cu <> Pad 2 [SBU2] of R23 on F.Cu",
+      "Pad 3 [SBU2] of Q1 on F.Cu <> Pad 2 [SBU2] of D5 on F.Cu",
+      "PTH pad B8 [SBU2] of P1 <> Pad 2 [SBU2] of D5 on F.Cu",
+      "Pad 1 [SBU1] of D5 on F.Cu <> Pad 1 [SBU1] of R28 on B.Cu",
+      "Pad 3 [SBU1] of Q2 on F.Cu <> Pad 2 [SBU1] of R24 on F.Cu",
+      "Pad 2 [SBU1] of R24 on F.Cu <> Pad 1 [SBU1] of D5 on F.Cu",
+      "Pad A8 [SBU1] of P1 on F.Cu <> Pad 1 [SBU1] of R28 on B.Cu",
+      "Pad 52 [VoltageSens] of U7 on B.Cu <> Pad 2 [VoltageSens] of R2 on F.Cu",
+      "Pad 2 [VoltageSens] of R2 on F.Cu <> Pad 1 [VoltageSens] of R3 on F.Cu",
+      "Pad 2 [12V_Protected] of R3 on F.Cu <> Track [12V_Protected] on F.Cu, length 2,0167 mm",
+      "Pad 2 [5VOUT_S] of R15 on F.Cu <> Pad 1 [5VOUT_S] of R16 on F.Cu",
+      "Pad 1 [5VOUT_S] of R16 on F.Cu <> Pad 50 [5VOUT_S] of U7 on B.Cu",
+      "Pad 121 [BUS2_STB] of U7 on B.Cu <> Pad 2 [BUS2_STB] of R33 on B.Cu",
+      "Pad 2 [BUS2_STB] of R33 on B.Cu <> Pad 8 [BUS2_STB] of U9 on F.Cu",
+      "Pad 1 [LED_RED] of R19 on F.Cu <> Pad 3 [LED_RED] of U7 on B.Cu",
+      "Pad 2 [RED-] of R19 on F.Cu <> Pad 2 [RED-] of U5 on F.Cu",
+      "Pad 73 [BUS1O_TX] of U7 on B.Cu <> Pad 1 [BUS1O_TX] of U8 on F.Cu",
+      "Pad 72 [BUS1O_RX] of U7 on B.Cu <> Pad 4 [BUS1O_RX] of U8 on F.Cu",
+      "Pad 131 [BUS1O_STB] of U7 on B.Cu <> Pad 2 [BUS1O_STB] of R32 on B.Cu",
+      "Pad 2 [BUS1O_STB] of R32 on B.Cu <> Pad 8 [BUS1O_STB] of U8 on F.Cu",
+      "Pad 1 [LED_GREEN] of R18 on F.Cu <> Pad 2 [LED_GREEN] of U7 on B.Cu",
+      "Pad 3 [GREEN-] of U5 on F.Cu <> Pad 2 [GREEN-] of R18 on F.Cu",
+      "Pad 110 [relay_SBU2] of U7 on B.Cu <> Pad 1 [relay_SBU2] of Q1 on F.Cu",
+      "Pad 1 [LED_BLUE] of R17 on F.Cu <> Pad 1 [LED_BLUE] of U7 on B.Cu",
+      "Pad 2 [BLUE-] of R17 on F.Cu <> Pad 4 [BLUE-] of U5 on F.Cu",
+      "Pad 109 [relay_SBU1] of U7 on B.Cu <> Pad 1 [relay_SBU1] of Q2 on F.Cu",
+      "Pad 101 [USB_D+] of U7 on B.Cu <> Pad 2 [USB_D+] of R21 on F.Cu",
+      "Pad 74 [USB_LOAD] of U7 on B.Cu <> Pad 1 [USB_LOAD] of Q3 on F.Cu",
+      "Pad 133 [BUS1N_TX] of U7 on B.Cu <> Pad 1 [BUS1N_TX] of U10 on F.Cu",
+      "Pad 132 [BUS1N_RX] of U7 on B.Cu <> Pad 4 [BUS1N_RX] of U10 on F.Cu",
+      "Pad 8 [BUS1N_STB] of U10 on F.Cu <> Pad 130 [BUS1N_STB] of U7 on B.Cu",
+      "Pad 2 [BUS1N_STB] of R31 on B.Cu <> Pad 8 [BUS1N_STB] of U10 on F.Cu",
+      "Pad 137 [BUS0_TX] of U7 on B.Cu <> Pad 1 [BUS0_TX] of U11 on F.Cu",
+      "Pad 136 [BUS0_RX] of U7 on B.Cu <> Pad 4 [BUS0_RX] of U11 on F.Cu",
+      "Pad 8 [BUS0_STB] of U11 on F.Cu <> Pad 124 [BUS0_STB] of U7 on B.Cu",
+      "Pad 2 [BUS0_STB] of R30 on B.Cu <> Pad 8 [BUS0_STB] of U11 on F.Cu",
+      "Pad 100 [USB_D-] of U7 on B.Cu <> Pad 1 [USB_D-] of R20 on F.Cu",
+      "Pad 10 [NRST] of J1 on B.Cu <> Pad 27 [NRST] of U7 on B.Cu",
+      "Pad 27 [NRST] of U7 on B.Cu <> Pad 1 [NRST] of C38 on B.Cu",
+      "Track [VDDA] on B.Cu, length 4,8121 mm <> Track [VDDA] on B.Cu, length 0,8660 mm",
+      "Pad 2 [SBU2_ADC] of R29 on B.Cu <> Pad 38 [SBU2_ADC] of U7 on B.Cu",
+      "Pad 3 [SBU2_ADC] of D14 on B.Cu <> Pad 2 [SBU2_ADC] of R29 on B.Cu",
+      "Pad 2 [SBU1_ADC] of R28 on B.Cu <> Pad 47 [SBU1_ADC] of U7 on B.Cu",
+      "Pad 3 [SBU1_ADC] of D13 on B.Cu <> Pad 2 [SBU1_ADC] of R28 on B.Cu",
+      "Track [VCAP] on B.Cu, length 2,4345 mm <> Pad 103 [VCAP] of U7 on B.Cu",
+      "Track [VCAP] on B.Cu, length 2,5250 mm <> Pad 103 [VCAP] of U7 on B.Cu",
+      "Pad 2 [SWDIO] of J1 on B.Cu <> Pad 102 [SWDIO] of U7 on B.Cu",
+      "Pad 4 [SWCLK] of J1 on B.Cu <> Pad 107 [SWCLK] of U7 on B.Cu"
+     ]
+    ]
+   ],
+   "added": 48,
+   "warnings": []
+  },
+  "X": {
+   "unrouted_before": 55,
+   "dsn_exported": true,
+   "dsn_small_via_removed": true,
+   "dsn_inner_layers_power": 0,
+   "dsn_via_clearance_rule": true,
+   "dsn_default_via_500": true,
+   "freerouting_rc": 0,
+   "freerouting_s": 358.1,
+   "freerouting_tail": [
+    "    - P1-B9  ->  P1-B4",
+    "  Net 'HSE_IN' (1 unrouted connection):",
+    "    - Y1-1  ->  C23-1",
+    "2026-10-27 10:59:17.905 INFO   [35C233\\CF7A5A] Auto-routing stage completed: started with 152 unrouted nets, completed in 346.39 seconds, final score: 902.60 (24 unrouted and 149 violations), using 342.98 total CPU seconds, 204.50 GB total allocated, and 320.1 MB peak heap usage.",
+    "2026-10-27 10:59:19.675 INFO   [35C233\\CF7A5A] Skipping optimization stage: the board has 24 unrouted connection(s) (optimizer only runs on completely routed boards).",
+    "2026-10-27 10:59:19.706 INFO   [35C233\\CF7A5A] Job '35C233\\CF7A5A' finished with state: COMPLETED (elapsed: 5 minutes 51.58 seconds, finished at UTC: 2026-10-27T13:59:19.705614200Z).",
+    "2026-10-27 10:59:19.743 INFO   Saving output file 'C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\06_REPORTS\\HybridPanda_step5b.ses' (SES)...",
+    "2026-10-27 10:59:19.749 INFO   Successfully saved output file 'C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\06_REPORTS\\HybridPanda_step5b.ses' (53522 bytes)."
+   ],
+   "ses_imported": true,
+   "thin_tracks_widened": [
+    [
+     "GREEN-",
+     [
+      102.867,
+      66.5
+     ],
+     0.14
+    ],
+    [
+     "GREEN-",
+     [
+      102.78,
+      66.414
+     ],
+     0.14
+    ]
+   ]
+  },
+  "F": {
+   "cleanup_final_removed": 5,
+   "unrouted_after": 4,
+   "tracks": 1188,
+   "vias": 204
+  }
+ },
+ "warnings": [
+  "R: pré-rota U7.137<->U11.1 falhou: sem posição de via livre",
+  "R: pré-rota U7.136<->U11.4 falhou: sem posição de via livre",
+  "R: pré-rota U7.133<->U10.1 falhou: sem posição de via livre",
+  "R: pré-rota U7.132<->U10.4 falhou: sem posição de via livre",
+  "R: pré-rota U7.73<->U8.1 falhou: sem posição de via livre",
+  "R: pré-rota U7.72<->U8.4 falhou: sem posição de via livre"
+ ]
+}

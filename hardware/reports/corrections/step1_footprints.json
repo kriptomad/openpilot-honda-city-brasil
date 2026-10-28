@@ -1,0 +1,210 @@
+{
+ "fixes": [
+  {
+   "fix": "q3_sot323",
+   "ref": "Q3",
+   "log": [
+    "  Q3 pad 1: (-1.0000, -0.6500) 0.450x0.700 -> (-0.8875, -0.6500) 0.925x0.450",
+    "  Q3 pad 2: (-1.0000, 0.6500) 0.450x0.700 -> (-0.8875, 0.6500) 0.925x0.450",
+    "  Q3 pad 3: (1.0000, 0.0000) 0.450x0.700 -> (0.8875, 0.0000) 0.925x0.450"
+   ]
+  },
+  {
+   "fix": "sot23_comma",
+   "ref": "Q1",
+   "log": [
+    "  Q1 pad 1: (0.8890, -1.0160) 0.914x0.914 -> (0.9500, -1.0000) 0.600x1.475",
+    "  Q1 pad 2: (-0.8890, -1.0160) 0.914x0.914 -> (-0.9500, -1.0000) 0.600x1.475",
+    "  Q1 pad 3: (0.0000, 1.0008) 0.914x0.914 -> (0.0000, 1.0000) 0.600x1.475",
+    "  Q1: adicionar courtyard F.CrtYd 3.30 x 3.30"
+   ]
+  },
+  {
+   "fix": "sot23_comma",
+   "ref": "Q2",
+   "log": [
+    "  Q2 pad 1: (0.8890, -1.0160) 0.914x0.914 -> (0.9500, -1.0000) 0.600x1.475",
+    "  Q2 pad 2: (-0.8890, -1.0160) 0.914x0.914 -> (-0.9500, -1.0000) 0.600x1.475",
+    "  Q2 pad 3: (0.0000, 1.0008) 0.914x0.914 -> (0.0000, 1.0000) 0.600x1.475",
+    "  Q2: adicionar courtyard F.CrtYd 3.30 x 3.30"
+   ]
+  },
+  {
+   "fix": "led_u5",
+   "ref": "U5",
+   "log": [
+    "  U5 pad 1: (0.8301, 0.5000) 0.660x0.700 -> (0.8301, 0.6000) 0.660x0.700",
+    "  U5 pad 2: (0.8301, -0.5000) 0.660x0.700 -> (0.8301, -0.6000) 0.660x0.700",
+    "  U5 pad 3: (-0.8301, -0.5000) 0.660x0.700 -> (-0.8301, -0.6000) 0.660x0.700",
+    "  U5 pad 4: (-0.8301, 0.5000) 0.660x0.700 -> (-0.8301, 0.6000) 0.660x0.700"
+   ]
+  },
+  {
+   "fix": "xl1509_u12",
+   "ref": "U12",
+   "log": [
+    "  U12 pad '9' 1.35x1.80: remover F.Paste e F.Mask (SOP-8 sem EP)",
+    "  U12 pad '9' 1.35x1.80: remover F.Paste e F.Mask (SOP-8 sem EP)",
+    "  U12 pad '9' 1.35x1.80: remover F.Paste e F.Mask (SOP-8 sem EP)",
+    "  U12 pad '9' 1.35x1.80: remover F.Paste e F.Mask (SOP-8 sem EP)"
+   ]
+  },
+  {
+   "fix": "attr_smd",
+   "ref": "D1",
+   "log": [
+    "  D1: atributo 1 -> SMD"
+   ]
+  },
+  {
+   "fix": "attr_smd",
+   "ref": "D5",
+   "log": [
+    "  D5: atributo 1 -> SMD"
+   ]
+  },
+  {
+   "fix": "attr_smd",
+   "ref": "D6",
+   "log": [
+    "  D6: atributo 1 -> SMD"
+   ]
+  },
+  {
+   "fix": "attr_smd",
+   "ref": "D7",
+   "log": [
+    "  D7: atributo 1 -> SMD"
+   ]
+  },
+  {
+   "fix": "attr_smd",
+   "ref": "D8",
+   "log": [
+    "  D8: atributo 1 -> SMD"
+   ]
+  },
+  {
+   "fix": "attr_smd",
+   "ref": "D9",
+   "log": [
+    "  D9: atributo 1 -> SMD"
+   ]
+  },
+  {
+   "fix": "attr_smd",
+   "ref": "Q1",
+   "log": [
+    "  Q1: atributo 1 -> SMD"
+   ]
+  },
+  {
+   "fix": "attr_smd",
+   "ref": "Q2",
+   "log": [
+    "  Q2: atributo 1 -> SMD"
+   ]
+  },
+  {
+   "fix": "attr_smd",
+   "ref": "U5",
+   "log": [
+    "  U5: atributo 1 -> SMD"
+   ]
+  },
+  {
+   "fix": "attr_smd",
+   "ref": "L3",
+   "log": [
+    "  L3: atributo 1 -> SMD"
+   ]
+  },
+  {
+   "fix": "model_3d",
+   "ref": "D8",
+   "log": [
+    "  D8: modelos [] -> ${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+   ]
+  },
+  {
+   "fix": "model_3d",
+   "ref": "D9",
+   "log": [
+    "  D9: modelos [] -> ${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+   ]
+  },
+  {
+   "fix": "model_3d",
+   "ref": "Q4",
+   "log": [
+    "  Q4: modelos ['${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/PowerPAK_SO-8_Single.wrl'] -> ${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/PowerPAK_SO-8_Single.step"
+   ]
+  },
+  {
+   "fix": "model_3d",
+   "ref": "U12",
+   "log": [
+    "  U12: modelos ['${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/PowerIntegrations_SO-8.step'] -> ${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
+   ]
+  },
+  {
+   "fix": "courtyard_l3",
+   "ref": "L3",
+   "log": [
+    "  L3: adicionar courtyard F.CrtYd 8.90 x 7.60"
+   ]
+  }
+ ],
+ "p1": [
+  "pad B1 0.60 -> 0.65 (furo 0.40, anel 0.125)",
+  "pad B2 0.60 -> 0.65 (furo 0.40, anel 0.125)",
+  "pad B3 0.60 -> 0.65 (furo 0.40, anel 0.125)",
+  "pad B4 0.60 -> 0.65 (furo 0.40, anel 0.125)",
+  "pad B5 0.60 -> 0.65 (furo 0.40, anel 0.125)",
+  "pad B6 0.60 -> 0.65 (furo 0.40, anel 0.125)",
+  "pad B7 0.60 -> 0.65 (furo 0.40, anel 0.125)",
+  "pad B8 0.60 -> 0.65 (furo 0.40, anel 0.125)",
+  "pad B9 0.60 -> 0.65 (furo 0.40, anel 0.125)",
+  "pad B10 0.60 -> 0.65 (furo 0.40, anel 0.125)",
+  "pad B11 0.60 -> 0.65 (furo 0.40, anel 0.125)",
+  "pad B12 0.60 -> 0.65 (furo 0.40, anel 0.125)",
+  "  P1: remover 12 graficos em F.Paste"
+ ],
+ "r6": {
+  "old_fpid": "Capacitor_SMD:C_0603_1608Metric",
+  "new_fpid": "R_0603_1608Metric",
+  "pos": [
+   105.81,
+   45.64
+  ],
+  "rot": 0.0,
+  "layer": "F.Cu",
+  "nets": {
+   "1": "GND",
+   "2": "VSENSE"
+  },
+  "old_pads": [
+   [
+    105.035,
+    45.64
+   ],
+   [
+    106.585,
+    45.64
+   ]
+  ],
+  "new_pads": [
+   [
+    104.985,
+    45.64
+   ],
+   [
+    106.635,
+    45.64
+   ]
+  ]
+ },
+ "pad_moves": [],
+ "pad_net_diff": {},
+ "sch": "R6 Footprint -> Resistor_SMD:R_0603_1608Metric"
+}

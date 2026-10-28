@@ -1,0 +1,20 @@
+{
+  "_note": "Values consumed by step4_build_schematic.py. Source: 03_RESEARCH/R3v2_componentes_STEP4.md (2026-10-23). Items marked PROVISORIO must be re-checked against the final MPN datasheets before STEP 6.",
+  "hse": {
+    "crystal_value": "25MHz X322525MOB4SI",
+    "crystal_fp": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+    "crystal_ds": "https://www.lcsc.com/product-detail/C9006.html",
+    "cl_value": "15pF",
+    "cl_rationale": "AN2867: C_load = 2*(CL - Cstray). YXC X322525MOB4SI CL = 12 pF (R3v2 sec 4.1, [F] via LCSC listing, not fetched directly). Cstray assumed 4 pF -> 16 pF -> nearest E12 15 pF. Fine-tune (15/18 pF) after measuring HSE frequency on hardware.",
+    "status": "PROVISORIO (CL do cristal lido via busca, nao do datasheet YXC)"
+  },
+  "sw_fp": "Button_Switch_SMD:SW_SPST_SKQG_WithStem",
+  "swd_fp": "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD",
+  "smps": {
+    "l_value": "2.2uH DFE201610E-2R2M",
+    "l_fp": "Inductor_SMD:L_Murata_DFE201610P",
+    "l_ds": "https://www.lcsc.com/product-detail/C337891.html",
+    "l_rationale": "R3v2 sec 2.1: Murata DFE201610E-2R2M=P2, 2.2 uH, 1.7 A (temp rise), Isat ~2.4 A, DCR 140 mOhm max, 2016 package. Alternative TDK TFM201610ALMA2R2MTAA (AEC-Q200, DCR 152 mOhm max). KiCad footprint L_Murata_DFE201610P (same 2.0x1.6 body) - verify land pattern vs Murata drawing in STEP 5.",
+    "status": "PROVISORIO (Isat nao lido no datasheet Murata; footprint a conferir)"
+  }
+}

@@ -1,0 +1,404 @@
+{
+ "date": "2026-10-27 11:10:17",
+ "via_in_pad": [
+  {
+   "via": "+3V3 @131.30,68.46 d0.60/0.30",
+   "pad": "R24.1",
+   "from": null,
+   "to": "131.30,68.46",
+   "result": "moved"
+  },
+  {
+   "via": "+3V3 @117.53,41.09 d0.70/0.30",
+   "pad": "C62.1",
+   "from": null,
+   "to": "117.53,41.09",
+   "result": "moved"
+  },
+  {
+   "via": "+3V3 @115.25,68.75 d0.60/0.30",
+   "pad": "C45.1",
+   "from": null,
+   "to": "115.25,68.75",
+   "result": "moved"
+  },
+  {
+   "via": "+3V3 @137.98,69.80 d0.60/0.30",
+   "pad": "C29.1",
+   "from": null,
+   "to": "137.98,69.80",
+   "result": "moved"
+  },
+  {
+   "via": "+3V3 @109.27,66.15 d0.70/0.30",
+   "pad": "C5.1",
+   "from": null,
+   "to": "109.27,66.15",
+   "result": "moved"
+  },
+  {
+   "via": "+3V3 @112.19,71.72 d0.60/0.30",
+   "pad": "SW1.2",
+   "from": null,
+   "to": "112.19,71.72",
+   "result": "moved"
+  },
+  {
+   "via": "+3V3 @96.72,56.91 d0.60/0.30",
+   "pad": "C61.1",
+   "from": null,
+   "to": "96.72,56.91",
+   "result": "moved"
+  },
+  {
+   "via": "+3V3 @97.18,57.60 d0.60/0.30",
+   "pad": "C2.1",
+   "from": null,
+   "to": "97.18,57.60",
+   "result": "moved"
+  },
+  {
+   "via": "+3V3 @120.64,70.66 d0.60/0.30",
+   "pad": "D14.2",
+   "from": null,
+   "to": "120.64,70.66",
+   "result": "moved"
+  },
+  {
+   "via": "+3V3 @129.43,57.66 d0.60/0.30",
+   "pad": "C27.1",
+   "from": null,
+   "to": "129.43,57.66",
+   "result": "moved"
+  },
+  {
+   "via": "+3V3 @129.47,65.15 d0.60/0.30",
+   "pad": "D13.2",
+   "from": null,
+   "to": "129.47,65.15",
+   "result": "moved"
+  },
+  {
+   "via": "+3V3 @99.54,75.58 d0.70/0.30",
+   "pad": "FB1.2",
+   "from": null,
+   "to": "99.54,75.58",
+   "result": "moved"
+  },
+  {
+   "via": "+3V3 @136.49,69.18 d0.60/0.30",
+   "pad": "U11.5",
+   "from": null,
+   "to": "136.49,69.18",
+   "result": "moved"
+  },
+  {
+   "via": "+3V3 @116.58,72.30 d0.70/0.30",
+   "pad": "C60.1",
+   "from": null,
+   "to": "116.58,72.30",
+   "result": "moved"
+  },
+  {
+   "via": "+3V3 @97.26,40.93 d0.60/0.30",
+   "pad": "J1.1",
+   "from": "97.26,40.93",
+   "to": "97.28,43.11",
+   "result": "moved (passe 3: grelha + stub L)"
+  },
+  {
+   "via": "GND @115.39,42.70 d0.60/0.30",
+   "pad": "C12.2",
+   "from": null,
+   "to": "115.39,42.70",
+   "result": "moved"
+  },
+  {
+   "via": "GND @95.17,49.15 d0.60/0.30",
+   "pad": "U12.6",
+   "from": null,
+   "to": "95.17,49.15",
+   "result": "moved"
+  },
+  {
+   "via": "GND @137.38,70.65 d0.60/0.30",
+   "pad": "C29.2",
+   "from": null,
+   "to": "137.38,70.65",
+   "result": "moved"
+  },
+  {
+   "via": "GND @107.05,66.22 d0.70/0.30",
+   "pad": "U7.22",
+   "from": null,
+   "to": "107.05,66.22",
+   "result": "moved"
+  },
+  {
+   "via": "GND @109.42,75.70 d0.70/0.30",
+   "pad": "C42.2",
+   "from": null,
+   "to": "109.42,75.70",
+   "result": "moved"
+  },
+  {
+   "via": "GND @113.95,40.93 d0.60/0.30",
+   "pad": "C7.2",
+   "from": null,
+   "to": "113.95,40.93",
+   "result": "moved"
+  },
+  {
+   "via": "GND @113.57,48.45 d0.60/0.30",
+   "pad": "C18.1",
+   "from": null,
+   "to": "113.57,48.45",
+   "result": "moved"
+  },
+  {
+   "via": "GND @93.74,57.54 d0.70/0.30",
+   "pad": "C61.2",
+   "from": null,
+   "to": "93.74,57.54",
+   "result": "moved"
+  },
+  {
+   "via": "GND @117.43,48.77 d0.60/0.30",
+   "pad": "C21.1",
+   "from": null,
+   "to": "117.43,48.77",
+   "result": "moved"
+  },
+  {
+   "via": "GND @115.67,40.27 d0.70/0.30",
+   "pad": "C7.2",
+   "from": null,
+   "to": "115.67,40.27",
+   "result": "moved"
+  },
+  {
+   "via": "GND @115.22,38.91 d0.60/0.30",
+   "pad": "C6.2",
+   "from": null,
+   "to": "115.22,38.91",
+   "result": "moved"
+  },
+  {
+   "via": "GND @123.60,62.72 d0.60/0.30",
+   "pad": "C40.2",
+   "from": null,
+   "to": "123.60,62.72",
+   "result": "moved"
+  },
+  {
+   "via": "GND @106.21,69.22 d0.70/0.30",
+   "pad": "Y1.4",
+   "from": null,
+   "to": "106.21,69.22",
+   "result": "moved"
+  },
+  {
+   "via": "GND @115.91,74.28 d0.70/0.30",
+   "pad": "C60.2",
+   "from": null,
+   "to": "115.91,74.28",
+   "result": "moved"
+  },
+  {
+   "via": "GND @109.25,68.76 d0.60/0.30",
+   "pad": "C47.2",
+   "from": "109.25,68.76",
+   "to": "109.15,71.04",
+   "result": "moved (passe 3: grelha + stub L)"
+  },
+  {
+   "via": "GND @94.03,50.02 d0.70/0.30",
+   "pad": "C39.2",
+   "from": null,
+   "to": "94.03,50.02",
+   "result": "moved"
+  },
+  {
+   "via": "GND @108.25,44.74 d0.60/0.30",
+   "pad": "U6.9",
+   "from": "108.25,44.74",
+   "to": null,
+   "result": "aceite (pad termico >= 2 mm; via-in-pad e pratica normal em exposed pad)"
+  },
+  {
+   "via": "GND @117.09,38.87 d0.70/0.30",
+   "pad": "C62.2",
+   "from": null,
+   "to": "117.09,38.87",
+   "result": "moved"
+  },
+  {
+   "via": "GND @124.92,63.66 d0.70/0.30",
+   "pad": "C40.2",
+   "from": "124.92,63.66",
+   "to": "125.02,63.67",
+   "result": "moved (passe 2: d0,50, folga 0,10)"
+  },
+  {
+   "via": "GND @104.01,72.80 d0.70/0.30",
+   "pad": "Y1.2",
+   "from": null,
+   "to": "104.01,72.80",
+   "result": "moved"
+  },
+  {
+   "via": "+5V @135.31,72.57 d0.60/0.30",
+   "pad": "U11.3",
+   "from": null,
+   "to": "135.31,72.57",
+   "result": "moved"
+  },
+  {
+   "via": "+5V @116.50,54.95 d0.60/0.30",
+   "pad": "C8.2",
+   "from": null,
+   "to": "116.50,54.95",
+   "result": "moved"
+  },
+  {
+   "via": "+5V @129.35,73.18 d0.60/0.30",
+   "pad": "Q2.2",
+   "from": null,
+   "to": "129.35,73.18",
+   "result": "moved"
+  },
+  {
+   "via": "+5V @130.50,72.70 d0.60/0.30",
+   "pad": "Q2.2",
+   "from": null,
+   "to": "130.50,72.70",
+   "result": "moved"
+  },
+  {
+   "via": "+5V @140.10,72.58 d0.60/0.30",
+   "pad": "U10.3",
+   "from": null,
+   "to": "140.10,72.58",
+   "result": "moved"
+  },
+  {
+   "via": "+5V @125.57,61.84 d0.60/0.30",
+   "pad": "U8.3",
+   "from": "125.57,61.84",
+   "to": null,
+   "result": "NAO RESOLVIDO"
+  },
+  {
+   "via": "+5V @119.53,46.44 d0.60/0.30",
+   "pad": "C21.2",
+   "from": null,
+   "to": "119.53,46.44",
+   "result": "moved"
+  },
+  {
+   "via": "+5V @126.59,73.13 d0.60/0.30",
+   "pad": "Q1.2",
+   "from": null,
+   "to": "126.59,73.13",
+   "result": "moved"
+  },
+  {
+   "via": "BUS2_TX @125.36,53.73 d0.50/0.30",
+   "pad": "U9.1",
+   "from": null,
+   "to": "125.36,53.73",
+   "result": "moved"
+  },
+  {
+   "via": "BUS2_RX @125.36,56.76 d0.50/0.30",
+   "pad": "U9.4",
+   "from": null,
+   "to": "125.36,56.76",
+   "result": "moved"
+  },
+  {
+   "via": "+12V @140.74,53.04 d0.60/0.30",
+   "pad": "Q4.5",
+   "from": null,
+   "to": "140.74,53.04",
+   "result": "moved"
+  }
+ ],
+ "courtyard": [
+  {
+   "pair": "D7xU9",
+   "ref": "U9",
+   "dx": -0.25,
+   "dy": 0,
+   "ok": true,
+   "how": "moved 16 trilhas",
+   "still_overlap": false
+  },
+  {
+   "pair": "D8 x borda",
+   "dx": -0.17,
+   "ok": true,
+   "how": "moved 5 trilhas"
+  }
+ ],
+ "fiducials": [
+  {
+   "ref": "FID1",
+   "layer": "F.Cu",
+   "corner": "BL",
+   "pos": "93.96,72.31"
+  },
+  {
+   "ref": "FID2",
+   "layer": "F.Cu",
+   "corner": "TR",
+   "pos": "140.48,35.26"
+  },
+  {
+   "ref": "FID3",
+   "layer": "F.Cu",
+   "corner": "TL",
+   "pos": "96.76,35.26"
+  },
+  {
+   "ref": "FID4",
+   "layer": "B.Cu",
+   "corner": "BL",
+   "pos": "93.96,72.31"
+  },
+  {
+   "ref": "FID5",
+   "layer": "B.Cu",
+   "corner": "TR",
+   "pos": "140.48,35.26"
+  },
+  {
+   "ref": "FID6",
+   "layer": "B.Cu",
+   "corner": "TL",
+   "pos": "93.96,43.66"
+  }
+ ],
+ "thin_3v3": [
+  {
+   "at": "95.74,45.18",
+   "layer": "F.Cu",
+   "w": 0.15,
+   "result": "0,20"
+  }
+ ],
+ "warnings": [],
+ "via_in_pad_total": 46,
+ "via_in_pad_fixed": 44,
+ "via_in_pad_open": [
+  {
+   "via": "+5V @125.57,61.84 d0.60/0.30",
+   "pad": "U8.3",
+   "from": "125.57,61.84",
+   "to": null,
+   "result": "NAO RESOLVIDO"
+  }
+ ],
+ "unconnected_after": 1,
+ "seconds": 73.5
+}

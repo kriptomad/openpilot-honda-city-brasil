@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "script": "extract_ds_pins",
+    "started": "2026-10-22T16:51:15",
+    "dry_run": false,
+    "output_root": "C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616",
+    "python": "3.13.9"
+  },
+  "summary": {
+    "rows": 147,
+    "missing": [],
+    "not_confirmed": []
+  },
+  "events": [
+    {
+      "t": 0.0,
+      "level": "INFO",
+      "msg": "rows_parsed",
+      "n": 147
+    },
+    {
+      "t": 0.0,
+      "level": "INFO",
+      "msg": "missing",
+      "pins": []
+    },
+    {
+      "t": 0.004,
+      "level": "INFO",
+      "msg": "written",
+      "files": [
+        "03_RESEARCH\\P3_tabela_pinos_LQFP144_vs_firmware.md",
+        "03_RESEARCH\\P3_pinos_LQFP144.json"
+      ]
+    }
+  ],
+  "finished": "2026-10-22T16:51:15"
+}

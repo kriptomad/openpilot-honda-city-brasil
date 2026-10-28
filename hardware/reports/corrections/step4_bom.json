@@ -1,0 +1,20 @@
+{
+ "edited": [
+  "C4,C6,C7,C12",
+  "C60-C62",
+  "D10",
+  "R1,R2",
+  "R6"
+ ],
+ "added": [
+  "C4,C12",
+  "R1",
+  "C64",
+  "D15",
+  "U13",
+  "JP1"
+ ],
+ "deleted": [],
+ "symbols_with_mpn": 119,
+ "kicad_cli_bom_exit": 0
+}

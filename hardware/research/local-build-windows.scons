@@ -1,0 +1,43 @@
+# local-only helper: identical to SConstruct but
+#  - skips tests/libpanda (needs a host gcc, absent on this Windows machine)
+#  - forces the SCons posix platform (gcc-style flags) instead of msvc
+#  - spawns commands directly (no sh), handling the "VAR=1 script.py ..." sign step
+import os
+import sys
+import subprocess
+import SCons.Platform
+import SCons.Platform.posix
+import SCons.Script
+
+def _spawn(sh, escape, cmd, args, env):
+  args = list(args)
+  env = dict(env)
+  while args and '=' in args[0] and not args[0].startswith('-'):
+    k, v = args.pop(0).split('=', 1)
+    env[k] = v
+  if args[0].endswith('.py'):
+    args = [sys.executable] + args
+  return subprocess.call(args, env=env)
+
+_orig_generate = SCons.Platform.posix.generate
+def _generate(env):
+  _orig_generate(env)
+  env['SPAWN'] = _spawn
+  env['ESCAPE'] = lambda x: x
+SCons.Platform.posix.generate = _generate
+
+_orig_platform = SCons.Platform.Platform
+SCons.Platform.Platform = lambda name='posix': _orig_platform(name)
+
+_s = sys.modules['SCons.Script.SConscript']
+_s.BuildDefaultGlobals()
+_orig = _s.GlobalDict['SConscript']
+def _patched(*a, **k):
+  if a and 'libpanda' in str(a[0]):
+    return None
+  return _orig(*a, **k)
+_s.GlobalDict['SConscript'] = _patched
+
+env = Environment(tools=["default", "compilation_db"])
+SetOption('num_jobs', max(1, int((os.cpu_count() or 1)-1)))
+SConscript('SConscript')

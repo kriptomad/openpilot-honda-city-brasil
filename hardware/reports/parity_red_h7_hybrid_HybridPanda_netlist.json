@@ -1,0 +1,697 @@
+{
+  "meta": {
+    "script": "parity_red_h7_hybrid_HybridPanda_netlist",
+    "started": "2026-10-28T10:17:04",
+    "dry_run": false,
+    "output_root": "C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616",
+    "python": "3.13.9"
+  },
+  "summary": {
+    "result": "OK",
+    "problems": 0,
+    "counts": {
+      "OK": 36
+    },
+    "rows": [
+      {
+        "pin": "PA11",
+        "pad": "100",
+        "role": "usb_dm",
+        "signal": "",
+        "net": "USB_D-",
+        "status": "OK",
+        "detail": "reaches R20",
+        "src": "board/stm32h7/peripherals.h:8",
+        "optional": false
+      },
+      {
+        "pin": "PA12",
+        "pad": "101",
+        "role": "usb_dp",
+        "signal": "",
+        "net": "USB_D+",
+        "status": "OK",
+        "detail": "reaches R21",
+        "src": "board/stm32h7/peripherals.h:9",
+        "optional": false
+      },
+      {
+        "pin": "PB8",
+        "pad": "136",
+        "role": "can_rx",
+        "signal": "FDCAN1",
+        "net": "BUS0_RX",
+        "status": "OK",
+        "detail": "xcvr=U11",
+        "src": "board/stm32h7/peripherals.h:31",
+        "optional": false
+      },
+      {
+        "pin": "PB9",
+        "pad": "137",
+        "role": "can_tx",
+        "signal": "FDCAN1",
+        "net": "BUS0_TX",
+        "status": "OK",
+        "detail": "xcvr=U11",
+        "src": "board/stm32h7/peripherals.h:32",
+        "optional": false
+      },
+      {
+        "pin": "PG11",
+        "pad": "124",
+        "role": "can_stb",
+        "signal": "FDCAN1",
+        "net": "BUS0_STB",
+        "status": "OK",
+        "detail": "xcvr=U11; STB reaches the same transceiver",
+        "src": "board/boards/red.h:11",
+        "optional": false
+      },
+      {
+        "pin": "PB12",
+        "pad": "72",
+        "role": "can_rx",
+        "signal": "FDCAN2_OBD",
+        "net": "BUS1O_RX",
+        "status": "OK",
+        "detail": "xcvr=U8",
+        "src": "board/boards/red.h:53",
+        "optional": false
+      },
+      {
+        "pin": "PB13",
+        "pad": "73",
+        "role": "can_tx",
+        "signal": "FDCAN2_OBD",
+        "net": "BUS1O_TX",
+        "status": "OK",
+        "detail": "xcvr=U8",
+        "src": "board/boards/red.h:54",
+        "optional": false
+      },
+      {
+        "pin": "PB4",
+        "pad": "131",
+        "role": "can_stb",
+        "signal": "FDCAN2_OBD",
+        "net": "BUS1O_STB",
+        "status": "OK",
+        "detail": "xcvr=U8; STB reaches the same transceiver",
+        "src": "board/boards/red.h:20",
+        "optional": false
+      },
+      {
+        "pin": "PB5",
+        "pad": "132",
+        "role": "can_rx",
+        "signal": "FDCAN2_NORMAL",
+        "net": "BUS1N_RX",
+        "status": "OK",
+        "detail": "xcvr=U10",
+        "src": "board/boards/red.h:40",
+        "optional": false
+      },
+      {
+        "pin": "PB6",
+        "pad": "133",
+        "role": "can_tx",
+        "signal": "FDCAN2_NORMAL",
+        "net": "BUS1N_TX",
+        "status": "OK",
+        "detail": "xcvr=U10",
+        "src": "board/boards/red.h:41",
+        "optional": false
+      },
+      {
+        "pin": "PB3",
+        "pad": "130",
+        "role": "can_stb",
+        "signal": "FDCAN2_NORMAL",
+        "net": "BUS1N_STB",
+        "status": "OK",
+        "detail": "xcvr=U10; STB reaches the same transceiver",
+        "src": "board/boards/red.h:14",
+        "optional": false
+      },
+      {
+        "pin": "PG9",
+        "pad": "122",
+        "role": "can_tx",
+        "signal": "FDCAN3",
+        "net": "BUS2_TX",
+        "status": "OK",
+        "detail": "xcvr=U9",
+        "src": "board/stm32h7/peripherals.h:46 (AF2; DS13311 Tab.8 PG9=FDCAN3_TX)",
+        "optional": false
+      },
+      {
+        "pin": "PG10",
+        "pad": "123",
+        "role": "can_rx",
+        "signal": "FDCAN3",
+        "net": "BUS2_RX",
+        "status": "OK",
+        "detail": "xcvr=U9",
+        "src": "board/stm32h7/peripherals.h:47 (DS13311 PG10=FDCAN3_RX)",
+        "optional": false
+      },
+      {
+        "pin": "PD7",
+        "pad": "121",
+        "role": "can_stb",
+        "signal": "FDCAN3",
+        "net": "BUS2_STB",
+        "status": "OK",
+        "detail": "xcvr=U9; STB reaches the same transceiver",
+        "src": "board/boards/red.h:17",
+        "optional": false
+      },
+      {
+        "pin": "PF11",
+        "pad": "52",
+        "role": "adc",
+        "signal": "VOLT_S",
+        "net": "VoltageSens",
+        "status": "OK",
+        "detail": "reaches R2,R3",
+        "src": "board/boards/red.h:71; peripherals.h:26",
+        "optional": false
+      },
+      {
+        "pin": "PB1",
+        "pad": "50",
+        "role": "analog_nc",
+        "signal": "5VOUT_S (not read)",
+        "net": "5VOUT_S",
+        "status": "OK",
+        "detail": "reaches R15,R16",
+        "src": "board/boards/red.h:92",
+        "optional": false
+      },
+      {
+        "pin": "PB14",
+        "pad": "74",
+        "role": "out",
+        "signal": "USB load switch (obsolete, OD pull-up)",
+        "net": "USB_LOAD",
+        "status": "OK",
+        "detail": "reaches Q3",
+        "src": "board/boards/red.h:96-98",
+        "optional": true
+      },
+      {
+        "pin": "PC4",
+        "pad": "47",
+        "role": "adc",
+        "signal": "SBU1",
+        "net": "SBU1_ADC",
+        "status": "OK",
+        "detail": "reaches D13,R28",
+        "src": "board/boards/red.h:110",
+        "optional": false
+      },
+      {
+        "pin": "PA1",
+        "pad": "38",
+        "role": "adc",
+        "signal": "SBU2",
+        "net": "SBU2_ADC",
+        "status": "OK",
+        "detail": "reaches D14,R29",
+        "src": "board/boards/red.h:111",
+        "optional": false
+      },
+      {
+        "pin": "PC10",
+        "pad": "109",
+        "role": "relay",
+        "signal": "relay_SBU1",
+        "net": "relay_SBU1",
+        "status": "OK",
+        "detail": "reaches Q2",
+        "src": "board/boards/red.h:106",
+        "optional": false
+      },
+      {
+        "pin": "PC11",
+        "pad": "110",
+        "role": "relay",
+        "signal": "relay_SBU2",
+        "net": "relay_SBU2",
+        "status": "OK",
+        "detail": "reaches Q1",
+        "src": "board/boards/red.h:108",
+        "optional": false
+      },
+      {
+        "pin": "PE4",
+        "pad": "3",
+        "role": "led",
+        "signal": "LED_RED",
+        "net": "LED_RED",
+        "status": "OK",
+        "detail": "reaches R19",
+        "src": "board/boards/red.h:124-125",
+        "optional": false
+      },
+      {
+        "pin": "PE3",
+        "pad": "2",
+        "role": "led",
+        "signal": "LED_GREEN",
+        "net": "LED_GREEN",
+        "status": "OK",
+        "detail": "reaches R18",
+        "src": "board/boards/red.h:124-125",
+        "optional": false
+      },
+      {
+        "pin": "PE2",
+        "pad": "1",
+        "role": "led",
+        "signal": "LED_BLUE",
+        "net": "LED_BLUE",
+        "status": "OK",
+        "detail": "reaches R17",
+        "src": "board/boards/red.h:124-125",
+        "optional": false
+      },
+      {
+        "pin": "PF7",
+        "pad": "21",
+        "role": "hwtype",
+        "signal": "",
+        "net": "GND",
+        "status": "OK",
+        "detail": "net=GND; expect=low",
+        "src": "board/stm32h7/board.h:25 (id1 bit0, RED needs 0)",
+        "optional": false
+      },
+      {
+        "pin": "PF8",
+        "pad": "22",
+        "role": "hwtype",
+        "signal": "",
+        "net": "GND",
+        "status": "OK",
+        "detail": "net=GND; expect=low",
+        "src": "board/stm32h7/board.h:26",
+        "optional": false
+      },
+      {
+        "pin": "PF9",
+        "pad": "23",
+        "role": "hwtype",
+        "signal": "",
+        "net": "Net-(JP1-B)",
+        "status": "OK",
+        "detail": "net=Net-(JP1-B); expect=float_or_low",
+        "src": "board/stm32h7/board.h:27 (PCR-1: strap via JP1 - fechado = RED id1=0, aberto = HYBRID id1=4; ver 03_RESEARCH/HYBRID_FW_PORT.md)",
+        "optional": false
+      },
+      {
+        "pin": "PF10",
+        "pad": "24",
+        "role": "hwtype",
+        "signal": "",
+        "net": "GND",
+        "status": "OK",
+        "detail": "net=GND; expect=low",
+        "src": "board/stm32h7/board.h:28",
+        "optional": false
+      },
+      {
+        "pin": "PD4",
+        "pad": "116",
+        "role": "hwtype",
+        "signal": "",
+        "net": "unconnected-(U7-PD4-Pad116)",
+        "status": "OK",
+        "detail": "floating; expect=float_or_high",
+        "src": "board/stm32h7/board.h:30 (id2 must not be 3)",
+        "optional": false
+      },
+      {
+        "pin": "PD5",
+        "pad": "117",
+        "role": "hwtype",
+        "signal": "",
+        "net": "unconnected-(U7-PD5-Pad117)",
+        "status": "OK",
+        "detail": "floating; expect=float_or_high",
+        "src": "board/stm32h7/board.h:31",
+        "optional": false
+      },
+      {
+        "pin": "PD6",
+        "pad": "120",
+        "role": "hwtype",
+        "signal": "",
+        "net": "unconnected-(U7-PD6-Pad120)",
+        "status": "OK",
+        "detail": "floating; expect=float_or_high",
+        "src": "board/stm32h7/board.h:32",
+        "optional": false
+      },
+      {
+        "pin": "PH0",
+        "pad": "25",
+        "role": "hse",
+        "signal": "",
+        "net": "HSE_IN",
+        "status": "OK",
+        "detail": "reaches C23,Y1",
+        "src": "board/stm32h7/clock.h:66 (HSE 25 MHz)",
+        "optional": false
+      },
+      {
+        "pin": "PH1",
+        "pad": "26",
+        "role": "hse",
+        "signal": "",
+        "net": "HSE_OUT",
+        "status": "OK",
+        "detail": "reaches C24,Y1",
+        "src": "board/stm32h7/clock.h:66",
+        "optional": false
+      },
+      {
+        "pin": "BOOT0",
+        "pad": "135",
+        "role": "boot0",
+        "signal": "",
+        "net": "BOOT0",
+        "status": "OK",
+        "detail": "reaches R14,SW1",
+        "src": "DS13311 pin 135; firmware enters DFU by software, BOOT0 must be low at reset",
+        "optional": false
+      },
+      {
+        "pin": "PA13",
+        "pad": "102",
+        "role": "swd",
+        "signal": "SWDIO",
+        "net": "SWDIO",
+        "status": "OK",
+        "detail": "reaches J1",
+        "src": "early_gpio_float keeps AF (stm32h7_config.h:95)",
+        "optional": true
+      },
+      {
+        "pin": "PA14",
+        "pad": "107",
+        "role": "swd",
+        "signal": "SWCLK",
+        "net": "SWCLK",
+        "status": "OK",
+        "detail": "reaches J1",
+        "src": "idem",
+        "optional": true
+      }
+    ],
+    "extra": [
+      {
+        "pin": "VLXSMPS_15",
+        "pad": "15",
+        "net": "VLXSMPS",
+        "comps": [
+          "C41",
+          "L5"
+        ]
+      },
+      {
+        "pin": "VFBSMPS_17",
+        "pad": "17",
+        "net": "VCAP",
+        "comps": [
+          "C39",
+          "C40",
+          "C42",
+          "C64",
+          "L5"
+        ]
+      }
+    ],
+    "power": [
+      {
+        "pin": "VDDLDO",
+        "pad": "105",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "106",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "119",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "129",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "13",
+        "net": "+3V3"
+      },
+      {
+        "pin": "PDR_ON",
+        "pad": "142",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDDLDO",
+        "pad": "143",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "144",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDDSMPS",
+        "pad": "16",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "19",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "32",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "42",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "56",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "7",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDDLDO",
+        "pad": "70",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "71",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "79",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VBAT",
+        "pad": "8",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD50USB",
+        "pad": "90",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD33USB",
+        "pad": "91",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VDD",
+        "pad": "92",
+        "net": "+3V3"
+      },
+      {
+        "pin": "VSS",
+        "pad": "104",
+        "net": "GND"
+      },
+      {
+        "pin": "VSS",
+        "pad": "118",
+        "net": "GND"
+      },
+      {
+        "pin": "VSS",
+        "pad": "12",
+        "net": "GND"
+      },
+      {
+        "pin": "VSS",
+        "pad": "128",
+        "net": "GND"
+      },
+      {
+        "pin": "VSSSMPS",
+        "pad": "14",
+        "net": "GND"
+      },
+      {
+        "pin": "VSS",
+        "pad": "141",
+        "net": "GND"
+      },
+      {
+        "pin": "VSS",
+        "pad": "18",
+        "net": "GND"
+      },
+      {
+        "pin": "VSS",
+        "pad": "33",
+        "net": "GND"
+      },
+      {
+        "pin": "VSSA",
+        "pad": "34",
+        "net": "GND"
+      },
+      {
+        "pin": "VSS",
+        "pad": "41",
+        "net": "GND"
+      },
+      {
+        "pin": "VSS",
+        "pad": "55",
+        "net": "GND"
+      },
+      {
+        "pin": "VSS",
+        "pad": "6",
+        "net": "GND"
+      },
+      {
+        "pin": "VSS",
+        "pad": "69",
+        "net": "GND"
+      },
+      {
+        "pin": "VSS",
+        "pad": "80",
+        "net": "GND"
+      },
+      {
+        "pin": "VSS",
+        "pad": "89",
+        "net": "GND"
+      },
+      {
+        "pin": "NRST",
+        "pad": "27",
+        "net": "NRST"
+      },
+      {
+        "pin": "VCAP",
+        "pad": "103",
+        "net": "VCAP"
+      },
+      {
+        "pin": "VCAP",
+        "pad": "140",
+        "net": "VCAP"
+      },
+      {
+        "pin": "VCAP",
+        "pad": "68",
+        "net": "VCAP"
+      },
+      {
+        "pin": "VREF+",
+        "pad": "35",
+        "net": "VDDA"
+      },
+      {
+        "pin": "VDDA",
+        "pad": "36",
+        "net": "VDDA"
+      }
+    ],
+    "report": "C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\06_REPORTS\\parity_red_h7_hybrid_HybridPanda_netlist.md"
+  },
+  "events": [
+    {
+      "t": 0.005,
+      "level": "INFO",
+      "msg": "MCU",
+      "ref": "U7",
+      "value": "STM32H725ZGT6",
+      "footprint": "Package_QFP:LQFP-144_20x20mm_P0.5mm"
+    },
+    {
+      "t": 0.008,
+      "level": "INFO",
+      "msg": "CAN group FDCAN1",
+      "xcvr": [
+        "U11"
+      ],
+      "stb_ok": true
+    },
+    {
+      "t": 0.008,
+      "level": "INFO",
+      "msg": "CAN group FDCAN2_OBD",
+      "xcvr": [
+        "U8"
+      ],
+      "stb_ok": true
+    },
+    {
+      "t": 0.008,
+      "level": "INFO",
+      "msg": "CAN group FDCAN2_NORMAL",
+      "xcvr": [
+        "U10"
+      ],
+      "stb_ok": true
+    },
+    {
+      "t": 0.008,
+      "level": "INFO",
+      "msg": "CAN group FDCAN3",
+      "xcvr": [
+        "U9"
+      ],
+      "stb_ok": true
+    }
+  ],
+  "finished": "2026-10-28T10:17:04"
+}

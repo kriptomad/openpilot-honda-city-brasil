@@ -1,0 +1,1090 @@
+{
+  "schematic": "C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_sch",
+  "baseline_counts": {
+    "symbols": 179,
+    "labels": 90,
+    "wires": 399
+  },
+  "deleted": {
+    "symbols": [
+      "#PWR0172",
+      "C24",
+      "#PWR0163",
+      "#PWR0147",
+      "C15",
+      "#PWR0123",
+      "#PWR0169",
+      "#PWR0148",
+      "#PWR0171",
+      "#PWR01",
+      "C25",
+      "R19",
+      "ANT1",
+      "#PWR0139",
+      "#PWR0143",
+      "C9",
+      "U2",
+      "#PWR0168",
+      "#PWR0142",
+      "#PWR0146",
+      "R17",
+      "R15",
+      "#PWR0183",
+      "Y1",
+      "#PWR0165",
+      "U7",
+      "U4",
+      "#PWR0166",
+      "L1",
+      "SW1",
+      "C23",
+      "#PWR02",
+      "R14",
+      "R18",
+      "#PWR0167",
+      "R10",
+      "R22",
+      "#PWR0144",
+      "#PWR0170",
+      "R16"
+    ],
+    "wires_or_graphics": 106,
+    "junctions": 15,
+    "noConnects": 18,
+    "globalLabels": 41,
+    "labels": 0,
+    "texts": 0
+  },
+  "label_renames": {
+    "CAN2_H": "BUS0_H",
+    "CAN2_TX": "BUS0_TX",
+    "CAN3_L": "BUS1N_L",
+    "CAN3_RX": "BUS1N_RX",
+    "CAN0_L": "BUS2_L",
+    "CAN1_RX": "BUS1O_RX",
+    "CAN1_H": "BUS1O_H",
+    "CAN2_EN": "BUS0_STB",
+    "CAN0_EN": "BUS2_STB",
+    "CAN0_H": "BUS2_H",
+    "CAN2_RX": "BUS0_RX",
+    "CAN0_RX": "BUS2_RX",
+    "CAN3_TX": "BUS1N_TX",
+    "CAN3_H": "BUS1N_H",
+    "CAN3_EN": "BUS1N_STB",
+    "CAN2_L": "BUS0_L",
+    "CAN1_EN": "BUS1O_STB",
+    "CAN1_TX": "BUS1O_TX",
+    "CAN1_L": "BUS1O_L",
+    "CAN0_TX": "BUS2_TX"
+  },
+  "mcu_pins_used": {
+    "PE2#1": "LED_BLUE",
+    "PE3#2": "LED_GREEN",
+    "PE4#3": "LED_RED",
+    "VSS#6": "GND",
+    "VDD#7": "+3.3V",
+    "VBAT#8": "+3.3V",
+    "VSS#12": "GND",
+    "VDD#13": "+3.3V",
+    "VSSSMPS#14": "GND",
+    "VLXSMPS#15": "VLXSMPS",
+    "VDDSMPS#16": "+3.3V",
+    "VFBSMPS#17": "VFBSMPS",
+    "VSS#18": "GND",
+    "VDD#19": "+3.3V",
+    "PF7#21": "GND",
+    "PF8#22": "GND",
+    "PF9#23": "GND",
+    "PF10#24": "GND",
+    "PH0#25": "HSE_IN",
+    "PH1#26": "HSE_OUT",
+    "NRST#27": "NRST",
+    "VDD#32": "+3.3V",
+    "VSS#33": "GND",
+    "VSSA#34": "GND",
+    "VREF+#35": "VDDA",
+    "VDDA#36": "VDDA",
+    "PA1#38": "SBU2_ADC",
+    "VSS#41": "GND",
+    "VDD#42": "+3.3V",
+    "PC4#47": "SBU1_ADC",
+    "PB1#50": "5VOUT_S",
+    "PF11#52": "VoltageSens",
+    "VSS#55": "GND",
+    "VDD#56": "+3.3V",
+    "VCAP#68": "VCAP",
+    "VSS#69": "GND",
+    "VDDLDO#70": "+3.3V",
+    "VDD#71": "+3.3V",
+    "PB12#72": "BUS1O_RX",
+    "PB13#73": "BUS1O_TX",
+    "PB14#74": "USB_LOAD",
+    "VDD#79": "+3.3V",
+    "VSS#80": "GND",
+    "VSS#89": "GND",
+    "VDD50USB#90": "+3.3V",
+    "VDD33USB#91": "+3.3V",
+    "VDD#92": "+3.3V",
+    "PA11#100": "USB_D-",
+    "PA12#101": "USB_D+",
+    "PA13#102": "SWDIO",
+    "VCAP#103": "VCAP",
+    "VSS#104": "GND",
+    "VDDLDO#105": "+3.3V",
+    "VDD#106": "+3.3V",
+    "PA14#107": "SWCLK",
+    "PC10#109": "relay_SBU1",
+    "PC11#110": "relay_SBU2",
+    "VSS#118": "GND",
+    "VDD#119": "+3.3V",
+    "PD7#121": "BUS2_STB",
+    "PG9#122": "BUS2_TX",
+    "PG10#123": "BUS2_RX",
+    "PG11#124": "BUS0_STB",
+    "VSS#128": "GND",
+    "VDD#129": "+3.3V",
+    "PB3#130": "BUS1N_STB",
+    "PB4#131": "BUS1O_STB",
+    "PB5#132": "BUS1N_RX",
+    "PB6#133": "BUS1N_TX",
+    "BOOT0#135": "BOOT0",
+    "PB8#136": "BUS0_RX",
+    "PB9#137": "BUS0_TX",
+    "VCAP#140": "VCAP",
+    "VSS#141": "GND",
+    "PDR_ON#142": "+3.3V",
+    "VDDLDO#143": "+3.3V",
+    "VDD#144": "+3.3V"
+  },
+  "added_symbols": [
+    {
+      "ref": "U7",
+      "lib_id": "MCU_ST_STM32H7:STM32H725ZGTx",
+      "value": "STM32H725ZGT6",
+      "footprint": "Package_QFP:LQFP-144_20x20mm_P0.5mm",
+      "pos": [
+        701.04,
+        266.7
+      ]
+    },
+    {
+      "ref": "#PWR183",
+      "lib_id": "power:+3.3V",
+      "value": "+3.3V",
+      "footprint": "",
+      "pos": [
+        647.7,
+        200.66
+      ]
+    },
+    {
+      "ref": "#PWR184",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        647.7,
+        241.3
+      ]
+    },
+    {
+      "ref": "#PWR185",
+      "lib_id": "power:+3.3V",
+      "value": "+3.3V",
+      "footprint": "",
+      "pos": [
+        675.64,
+        167.64
+      ]
+    },
+    {
+      "ref": "#PWR186",
+      "lib_id": "power:+3.3V",
+      "value": "+3.3V",
+      "footprint": "",
+      "pos": [
+        726.44,
+        167.64
+      ]
+    },
+    {
+      "ref": "#PWR187",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        701.04,
+        368.3
+      ]
+    },
+    {
+      "ref": "Y1",
+      "lib_id": "Device:Crystal_GND24_Small",
+      "value": "25MHz X322525MOB4SI",
+      "footprint": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+      "pos": [
+        800.1,
+        190.5
+      ]
+    },
+    {
+      "ref": "#PWR188",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        800.1,
+        185.42
+      ]
+    },
+    {
+      "ref": "C23",
+      "lib_id": "Device:C_Small",
+      "value": "15pF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        792.48,
+        195.58
+      ]
+    },
+    {
+      "ref": "C24",
+      "lib_id": "Device:C_Small",
+      "value": "15pF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        807.72,
+        195.58
+      ]
+    },
+    {
+      "ref": "#PWR189",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        792.48,
+        200.66
+      ]
+    },
+    {
+      "ref": "#PWR190",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        807.72,
+        200.66
+      ]
+    },
+    {
+      "ref": "#PWR191",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        800.1,
+        195.58
+      ]
+    },
+    {
+      "ref": "SW1",
+      "lib_id": "Switch:SW_Push",
+      "value": "SW_Push",
+      "footprint": "Button_Switch_SMD:SW_SPST_SKQG_WithStem",
+      "pos": [
+        800.1,
+        218.44
+      ]
+    },
+    {
+      "ref": "#PWR192",
+      "lib_id": "power:+3.3V",
+      "value": "+3.3V",
+      "footprint": "",
+      "pos": [
+        807.72,
+        218.44
+      ]
+    },
+    {
+      "ref": "R14",
+      "lib_id": "Device:R_Small",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "pos": [
+        792.48,
+        223.52
+      ]
+    },
+    {
+      "ref": "#PWR193",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        792.48,
+        228.6
+      ]
+    },
+    {
+      "ref": "C38",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        792.48,
+        243.84
+      ]
+    },
+    {
+      "ref": "#PWR194",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        792.48,
+        248.92
+      ]
+    },
+    {
+      "ref": "J1",
+      "lib_id": "Connector_Generic:Conn_02x05_Odd_Even",
+      "value": "SWD",
+      "footprint": "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD",
+      "pos": [
+        800.1,
+        269.24
+      ]
+    },
+    {
+      "ref": "#PWR195",
+      "lib_id": "power:+3.3V",
+      "value": "+3.3V",
+      "footprint": "",
+      "pos": [
+        789.94,
+        264.16
+      ]
+    },
+    {
+      "ref": "#PWR196",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        789.94,
+        276.86
+      ]
+    },
+    {
+      "ref": "C39",
+      "lib_id": "Device:C_Small",
+      "value": "2.2uF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "pos": [
+        792.48,
+        297.18
+      ]
+    },
+    {
+      "ref": "#PWR197",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        792.48,
+        302.26
+      ]
+    },
+    {
+      "ref": "C40",
+      "lib_id": "Device:C_Small",
+      "value": "2.2uF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "pos": [
+        800.1,
+        297.18
+      ]
+    },
+    {
+      "ref": "#PWR198",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        800.1,
+        302.26
+      ]
+    },
+    {
+      "ref": "#FLG1",
+      "lib_id": "power:PWR_FLAG",
+      "value": "PWR_FLAG",
+      "footprint": "",
+      "pos": [
+        795.02,
+        314.96
+      ]
+    },
+    {
+      "ref": "L5",
+      "lib_id": "Device:L",
+      "value": "2.2uH DFE201610E-2R2M",
+      "footprint": "Inductor_SMD:L_Murata_DFE201610P",
+      "pos": [
+        803.91,
+        314.96
+      ]
+    },
+    {
+      "ref": "C41",
+      "lib_id": "Device:C_Small",
+      "value": "220pF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        792.48,
+        320.04
+      ]
+    },
+    {
+      "ref": "#PWR199",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        792.48,
+        325.12
+      ]
+    },
+    {
+      "ref": "C42",
+      "lib_id": "Device:C_Small",
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "pos": [
+        807.72,
+        320.04
+      ]
+    },
+    {
+      "ref": "#PWR200",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        807.72,
+        325.12
+      ]
+    },
+    {
+      "ref": "#FLG2",
+      "lib_id": "power:PWR_FLAG",
+      "value": "PWR_FLAG",
+      "footprint": "",
+      "pos": [
+        795.02,
+        337.82
+      ]
+    },
+    {
+      "ref": "FB1",
+      "lib_id": "Device:FerriteBead_Small",
+      "value": "600R@100MHz",
+      "footprint": "Inductor_SMD:L_0603_1608Metric",
+      "pos": [
+        802.64,
+        337.82
+      ]
+    },
+    {
+      "ref": "#PWR201",
+      "lib_id": "power:+3.3V",
+      "value": "+3.3V",
+      "footprint": "",
+      "pos": [
+        807.72,
+        337.82
+      ]
+    },
+    {
+      "ref": "C43",
+      "lib_id": "Device:C_Small",
+      "value": "1uF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        792.48,
+        342.9
+      ]
+    },
+    {
+      "ref": "#PWR202",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        792.48,
+        347.98
+      ]
+    },
+    {
+      "ref": "C44",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        797.56,
+        342.9
+      ]
+    },
+    {
+      "ref": "#PWR203",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        797.56,
+        347.98
+      ]
+    },
+    {
+      "ref": "R19",
+      "lib_id": "Device:R_Small",
+      "value": "100R",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "pos": [
+        792.48,
+        355.6
+      ]
+    },
+    {
+      "ref": "R18",
+      "lib_id": "Device:R_Small",
+      "value": "110R",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "pos": [
+        792.48,
+        360.68
+      ]
+    },
+    {
+      "ref": "R17",
+      "lib_id": "Device:R_Small",
+      "value": "180R",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "pos": [
+        792.48,
+        365.76
+      ]
+    },
+    {
+      "ref": "R28",
+      "lib_id": "Device:R_Small",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "pos": [
+        792.48,
+        378.46
+      ]
+    },
+    {
+      "ref": "D13",
+      "lib_id": "Diode:BAT54S",
+      "value": "BAT54S",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "pos": [
+        800.1,
+        383.54
+      ]
+    },
+    {
+      "ref": "#PWR204",
+      "lib_id": "power:+3.3V",
+      "value": "+3.3V",
+      "footprint": "",
+      "pos": [
+        792.48,
+        386.08
+      ]
+    },
+    {
+      "ref": "#PWR205",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        807.72,
+        386.08
+      ]
+    },
+    {
+      "ref": "R29",
+      "lib_id": "Device:R_Small",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "pos": [
+        792.48,
+        398.78
+      ]
+    },
+    {
+      "ref": "D14",
+      "lib_id": "Diode:BAT54S",
+      "value": "BAT54S",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "pos": [
+        800.1,
+        403.86
+      ]
+    },
+    {
+      "ref": "#PWR206",
+      "lib_id": "power:+3.3V",
+      "value": "+3.3V",
+      "footprint": "",
+      "pos": [
+        792.48,
+        406.4
+      ]
+    },
+    {
+      "ref": "#PWR207",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        807.72,
+        406.4
+      ]
+    },
+    {
+      "ref": "#PWR208",
+      "lib_id": "power:+5V",
+      "value": "+5V",
+      "footprint": "",
+      "pos": [
+        792.48,
+        419.1
+      ]
+    },
+    {
+      "ref": "R15",
+      "lib_id": "Device:R_Small",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "pos": [
+        792.48,
+        424.18
+      ]
+    },
+    {
+      "ref": "R16",
+      "lib_id": "Device:R_Small",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "pos": [
+        792.48,
+        431.8
+      ]
+    },
+    {
+      "ref": "#PWR209",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        792.48,
+        436.88
+      ]
+    },
+    {
+      "ref": "R30",
+      "lib_id": "Device:R_Small",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "pos": [
+        271.78,
+        254.0
+      ]
+    },
+    {
+      "ref": "#PWR210",
+      "lib_id": "power:+3.3V",
+      "value": "+3.3V",
+      "footprint": "",
+      "pos": [
+        271.78,
+        248.92
+      ]
+    },
+    {
+      "ref": "R31",
+      "lib_id": "Device:R_Small",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "pos": [
+        281.94,
+        254.0
+      ]
+    },
+    {
+      "ref": "#PWR211",
+      "lib_id": "power:+3.3V",
+      "value": "+3.3V",
+      "footprint": "",
+      "pos": [
+        281.94,
+        248.92
+      ]
+    },
+    {
+      "ref": "R32",
+      "lib_id": "Device:R_Small",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "pos": [
+        292.1,
+        254.0
+      ]
+    },
+    {
+      "ref": "#PWR212",
+      "lib_id": "power:+3.3V",
+      "value": "+3.3V",
+      "footprint": "",
+      "pos": [
+        292.1,
+        248.92
+      ]
+    },
+    {
+      "ref": "R33",
+      "lib_id": "Device:R_Small",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "pos": [
+        302.26,
+        254.0
+      ]
+    },
+    {
+      "ref": "#PWR213",
+      "lib_id": "power:+3.3V",
+      "value": "+3.3V",
+      "footprint": "",
+      "pos": [
+        302.26,
+        248.92
+      ]
+    },
+    {
+      "ref": "C45",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        266.7,
+        284.48
+      ]
+    },
+    {
+      "ref": "C46",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        271.78,
+        284.48
+      ]
+    },
+    {
+      "ref": "C47",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        276.86,
+        284.48
+      ]
+    },
+    {
+      "ref": "C48",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        281.94,
+        284.48
+      ]
+    },
+    {
+      "ref": "C49",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        287.02,
+        284.48
+      ]
+    },
+    {
+      "ref": "C50",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        292.1,
+        284.48
+      ]
+    },
+    {
+      "ref": "C51",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        297.18,
+        284.48
+      ]
+    },
+    {
+      "ref": "C52",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        302.26,
+        284.48
+      ]
+    },
+    {
+      "ref": "C53",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        307.34,
+        284.48
+      ]
+    },
+    {
+      "ref": "C54",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        312.42,
+        284.48
+      ]
+    },
+    {
+      "ref": "C55",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        317.5,
+        284.48
+      ]
+    },
+    {
+      "ref": "C56",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        322.58,
+        284.48
+      ]
+    },
+    {
+      "ref": "C57",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        327.66,
+        284.48
+      ]
+    },
+    {
+      "ref": "C58",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        332.74,
+        284.48
+      ]
+    },
+    {
+      "ref": "C59",
+      "lib_id": "Device:C_Small",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        337.82,
+        284.48
+      ]
+    },
+    {
+      "ref": "C60",
+      "lib_id": "Device:C_Small",
+      "value": "4.7uF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "pos": [
+        342.9,
+        284.48
+      ]
+    },
+    {
+      "ref": "C61",
+      "lib_id": "Device:C_Small",
+      "value": "4.7uF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "pos": [
+        347.98,
+        284.48
+      ]
+    },
+    {
+      "ref": "C62",
+      "lib_id": "Device:C_Small",
+      "value": "4.7uF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "pos": [
+        353.06,
+        284.48
+      ]
+    },
+    {
+      "ref": "C63",
+      "lib_id": "Device:C_Small",
+      "value": "1uF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "pos": [
+        358.14,
+        284.48
+      ]
+    },
+    {
+      "ref": "#PWR214",
+      "lib_id": "power:+3.3V",
+      "value": "+3.3V",
+      "footprint": "",
+      "pos": [
+        266.7,
+        279.4
+      ]
+    },
+    {
+      "ref": "#PWR215",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        358.14,
+        289.56
+      ]
+    },
+    {
+      "ref": "#FLG3",
+      "lib_id": "power:PWR_FLAG",
+      "value": "PWR_FLAG",
+      "footprint": "",
+      "pos": [
+        120.65,
+        300.99
+      ]
+    },
+    {
+      "ref": "#PWR216",
+      "lib_id": "power:GND",
+      "value": "GND",
+      "footprint": "",
+      "pos": [
+        120.65,
+        306.07
+      ]
+    },
+    {
+      "ref": "#FLG4",
+      "lib_id": "power:PWR_FLAG",
+      "value": "PWR_FLAG",
+      "footprint": "",
+      "pos": [
+        133.35,
+        300.99
+      ]
+    },
+    {
+      "ref": "#PWR217",
+      "lib_id": "power:+3.3V",
+      "value": "+3.3V",
+      "footprint": "",
+      "pos": [
+        133.35,
+        306.07
+      ]
+    },
+    {
+      "ref": "#FLG5",
+      "lib_id": "power:PWR_FLAG",
+      "value": "PWR_FLAG",
+      "footprint": "",
+      "pos": [
+        146.05,
+        300.99
+      ]
+    },
+    {
+      "ref": "#PWR218",
+      "lib_id": "power:+5V",
+      "value": "+5V",
+      "footprint": "",
+      "pos": [
+        146.05,
+        306.07
+      ]
+    },
+    {
+      "ref": "#FLG6",
+      "lib_id": "power:PWR_FLAG",
+      "value": "PWR_FLAG",
+      "footprint": "",
+      "pos": [
+        158.75,
+        300.99
+      ]
+    },
+    {
+      "ref": "#PWR219",
+      "lib_id": "power:+12V",
+      "value": "+12V",
+      "footprint": "",
+      "pos": [
+        158.75,
+        306.07
+      ]
+    },
+    {
+      "ref": "#FLG7",
+      "lib_id": "power:PWR_FLAG",
+      "value": "PWR_FLAG",
+      "footprint": "",
+      "pos": [
+        171.45,
+        300.99
+      ]
+    }
+  ],
+  "instances_renamed": 139,
+  "auto_junctions": 0,
+  "final_counts": {
+    "symbols": 231,
+    "labels": 113,
+    "wires": 433,
+    "noconnects": 79,
+    "junctions": 136
+  }
+}

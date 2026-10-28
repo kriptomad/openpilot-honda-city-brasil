@@ -1,0 +1,59 @@
+    cand D1 ~ Diode_SMD/D_SMA: {'rot': 0, 'mirror': False, 'rms': 0.115, 'n': 2}
+    cand D1 ~ Diode_SMD/D_SMA_Handsoldering: {'rot': 180, 'mirror': True, 'rms': 0.385, 'n': 2}
+    cand D5 ~ Package_TO_SOT_SMD/SOT-23: {'rot': 0, 'mirror': False, 'rms': 0.212, 'n': 3}
+    cand D5 ~ Package_TO_SOT_SMD/SOT-23_Handsoldering: {'rot': 0, 'mirror': False, 'rms': 0.35, 'n': 3}
+    cand D6 ~ Package_TO_SOT_SMD/SOT-23: {'rot': 0, 'mirror': False, 'rms': 0.212, 'n': 3}
+    cand D6 ~ Package_TO_SOT_SMD/SOT-23_Handsoldering: {'rot': 0, 'mirror': False, 'rms': 0.35, 'n': 3}
+    cand D7 ~ Package_TO_SOT_SMD/SOT-23: {'rot': 0, 'mirror': False, 'rms': 0.212, 'n': 3}
+    cand D7 ~ Package_TO_SOT_SMD/SOT-23_Handsoldering: {'rot': 0, 'mirror': False, 'rms': 0.35, 'n': 3}
+    cand D8 ~ Package_TO_SOT_SMD/SOT-23: {'rot': 0, 'mirror': False, 'rms': 0.212, 'n': 3}
+    cand D8 ~ Package_TO_SOT_SMD/SOT-23_Handsoldering: {'rot': 0, 'mirror': False, 'rms': 0.35, 'n': 3}
+    cand D9 ~ Package_TO_SOT_SMD/SOT-23: {'rot': 0, 'mirror': False, 'rms': 0.212, 'n': 3}
+    cand D9 ~ Package_TO_SOT_SMD/SOT-23_Handsoldering: {'rot': 0, 'mirror': False, 'rms': 0.35, 'n': 3}
+    cand L3 ~ Inductor_SMD/L_Bourns-SRN6045: NOT FOUND
+    cand L3 ~ Inductor_SMD/L_Bourns_SRN6045TA: {'rot': 180, 'mirror': True, 'rms': 0.925, 'n': 2}
+    cand L3 ~ Inductor_SMD/L_Bourns-SRU8028_8.0x8.0mm: {'rot': 180, 'mirror': True, 'rms': 0.9, 'n': 2}
+    cand L3 ~ Inductor_SMD/L_Taiyo-Yuden_NR-60xx: {'rot': 180, 'mirror': True, 'rms': 0.65, 'n': 2}
+    cand L4 ~ Inductor_SMD/L_Wuerth_WE-PD-Typ-LS_10x11: NOT FOUND
+    cand L4 ~ Inductor_SMD/L_Bourns-SRR1210A: NOT FOUND
+    cand L4 ~ Inductor_SMD/L_Coilcraft_XAL1010: NOT FOUND
+    cand P1 ~ Connector_USB/USB_C_Receptacle_HRO_TYPE-C-31-M-12: {'rot': 0, 'mirror': False, 'rms': 1.945, 'n': 16}
+    cand P1 ~ Connector_USB/USB_C_Receptacle_XKB_U262-16XN-4BVC11: {'rot': 0, 'mirror': False, 'rms': 1.63, 'n': 16}
+    cand Q1 ~ Package_TO_SOT_SMD/SOT-23: {'rot': 90, 'mirror': False, 'rms': 0.089, 'n': 3}
+    cand Q1 ~ Package_TO_SOT_SMD/SOT-23_Handsoldering: {'rot': 90, 'mirror': False, 'rms': 0.492, 'n': 3}
+    cand Q2 ~ Package_TO_SOT_SMD/SOT-23: {'rot': 90, 'mirror': False, 'rms': 0.089, 'n': 3}
+    cand Q2 ~ Package_TO_SOT_SMD/SOT-23_Handsoldering: {'rot': 90, 'mirror': False, 'rms': 0.492, 'n': 3}
+--- Q3 Package_TO_SOT_SMD:SOT-323_SC-70
+    pad '1'[0] x: board=-1.0 lib=-0.8875
+    pad '1'[0] sx: board=0.45 lib=0.925
+    pad '1'[0] sy: board=0.7 lib=0.45
+    pad '1'[0] shape: board=1 lib=4
+    pad '2'[0] x: board=-1.0 lib=-0.8875
+    pad '2'[0] sx: board=0.45 lib=0.925
+    pad '2'[0] sy: board=0.7 lib=0.45
+    pad '2'[0] shape: board=1 lib=4
+    pad '3'[0] x: board=1.0 lib=0.8875
+    pad '3'[0] sx: board=0.45 lib=0.925
+    pad '3'[0] sy: board=0.7 lib=0.45
+    pad '3'[0] shape: board=1 lib=4
+    cand U5 ~ LED_SMD/LED_Cree-PLCC4_2x2mm_CW: {'rot': 90, 'mirror': True, 'rms': 0.375, 'n': 4}
+    cand U5 ~ LED_SMD/LED_RGB_PLCC-4_2x2mm: NOT FOUND
+--- U6 BlackPanda:CONV_TPS5450DDAR
+    pad '9': count board=9 lib=1
+    pad '10': count board=0 lib=1
+    pad '11': count board=0 lib=1
+    pad '12': count board=0 lib=1
+    pad '13': count board=0 lib=1
+    pad '14': count board=0 lib=1
+    pad '15': count board=0 lib=1
+    pad '16': count board=0 lib=1
+    pad '17': count board=0 lib=1
+    [vs original comma BlackPanda.pretty] U6: ["pad '9': count board=9 lib=1", "pad '10': count board=0 lib=1", "pad '11': count board=0 lib=1", "pad '12': count board=0 lib=1", "pad '13': count board=0 lib=1", "pad '14': count board=0 lib=1"]
+    cand U6 ~ Package_SO/HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.1mm: {'rot': 0, 'mirror': False, 'rms': 1.093, 'n': 17}
+    cand U6 ~ Package_SO/Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm: NOT FOUND
+    cand U6 ~ Package_SO/SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm: {'rot': 0, 'mirror': False, 'rms': 1.103, 'n': 17}
+--- Y1 Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    pad '1'[0] shape: board=1 lib=4
+    pad '2'[0] shape: board=1 lib=4
+    pad '3'[0] shape: board=1 lib=4
+    pad '4'[0] shape: board=1 lib=4

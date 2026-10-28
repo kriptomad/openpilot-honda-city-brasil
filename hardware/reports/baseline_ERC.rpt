@@ -1,0 +1,1019 @@
+ERC report (2026-10-22T16:20:44, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
+
+***** Sheet /
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(103.251 mm, 109.093 mm): Symbol U6 Pin 7 [VIN, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(148.59 mm, 302.26 mm): Symbol U4 Pin 22 [V_BCKP, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(195.58 mm, 312.42 mm): Symbol #PWR01 Hidden pin 1 [GND, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(203.327 mm, 114.173 mm): Symbol #PWR010 Hidden pin 1 [+5V, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(308.61 mm, 247.65 mm): Symbol U7 Pin 30 [VCAP_1, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(358.394 mm, 73.914 mm): Symbol #PWR03 Hidden pin 1 [+12V, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(435.61 mm, 326.39 mm): Symbol #PWR0102 Hidden pin 1 [+3V3, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(45.847 mm, 168.021 mm): Symbol #PWR0162 Hidden pin 1 [+12V, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(45.847 mm, 168.021 mm): Horizontal Wire, length 1.27 mm
+[lib_symbol_mismatch]: Symbol '+12V' doesn't match copy in library 'power'
+    ; warning
+    @(45.847 mm, 168.021 mm): Symbol #PWR0162 [+12V]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(47.117 mm, 168.021 mm): Vertical Wire, length 11.43 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(47.117 mm, 168.021 mm): Horizontal Wire, length 5.08 mm
+[lib_symbol_mismatch]: Symbol 'SMAJ16CA' doesn't match copy in library 'SMAJ16CA'
+    ; warning
+    @(47.117 mm, 184.531 mm): Symbol D1 [SMAJ16CA]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(47.117 mm, 189.611 mm): Symbol D1 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(47.117 mm, 189.611 mm): Symbol #PWR0153 Hidden pin 1 [GND, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(47.117 mm, 189.611 mm): Symbol #PWR0153 [GND]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(57.277 mm, 142.621 mm): Symbol #PWR0140 Hidden pin 1 [GND, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(57.277 mm, 142.621 mm): Vertical Wire, length 1.27 mm
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(57.277 mm, 142.621 mm): Symbol #PWR0140 [GND]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(57.277 mm, 143.891 mm): Symbol R1 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(57.277 mm, 148.971 mm): Vertical Wire, length 3.81 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(57.277 mm, 152.781 mm): Vertical Wire, length 7.62 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(57.277 mm, 152.781 mm): Horizontal Wire, length 6.35 mm
+[lib_symbol_mismatch]: Symbol 'Si7141DP' doesn't match copy in library 'Transistor_FET'
+    ; warning
+    @(57.277 mm, 165.481 mm): Symbol Q4 [Si7141DP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(62.357 mm, 168.021 mm): Symbol Q4 Pin 1 [S, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(62.357 mm, 168.021 mm): Horizontal Wire, length 10.16 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(64.135 mm, 109.093 mm): Horizontal Wire, length 3.302 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(67.437 mm, 77.978 mm): Vertical Wire, length 2.54 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(67.437 mm, 77.978 mm): Symbol #PWR0152 Hidden pin 1 [GND, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(67.437 mm, 77.978 mm): Symbol #PWR0152 [GND]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(67.437 mm, 80.518 mm): Symbol R2 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(67.437 mm, 85.598 mm): Vertical Wire, length 1.27 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(67.437 mm, 86.868 mm): Vertical Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(67.437 mm, 91.948 mm): Symbol R3 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(67.437 mm, 109.093 mm): Horizontal Wire, length 3.302 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(67.437 mm, 109.093 mm): Vertical Wire, length 12.065 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(70.739 mm, 98.933 mm): Horizontal Wire, length 10.16 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(70.739 mm, 102.743 mm): Vertical Wire, length 3.81 mm
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(70.739 mm, 105.283 mm): Symbol C4 [C_Small]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(70.739 mm, 107.823 mm): Vertical Wire, length 1.27 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(70.739 mm, 107.823 mm): Symbol C4 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(70.739 mm, 109.093 mm): Horizontal Wire, length 10.16 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(71.247 mm, 152.781 mm): Symbol D2 Pin 1 [K, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(72.517 mm, 86.868 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(72.517 mm, 152.781 mm): Vertical Wire, length 15.24 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(72.517 mm, 152.781 mm): Horizontal Wire, length 1.27 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(72.517 mm, 152.781 mm): Horizontal Wire, length 3.81 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(76.327 mm, 148.971 mm): Vertical Wire, length 3.81 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(80.899 mm, 98.933 mm): Horizontal Wire, length 6.35 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(80.899 mm, 98.933 mm): Vertical Wire, length 3.81 mm
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(80.899 mm, 105.283 mm): Symbol C6 [C_Small]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(80.899 mm, 107.823 mm): Vertical Wire, length 1.27 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(80.899 mm, 107.823 mm): Symbol C6 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(80.899 mm, 109.093 mm): Horizontal Wire, length 10.16 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(87.249 mm, 97.663 mm): Symbol #PWR0151 Hidden pin 1 [GND, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(87.249 mm, 97.663 mm): Vertical Wire, length 1.27 mm
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(87.249 mm, 97.663 mm): Symbol #PWR0151 [GND]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(87.249 mm, 98.933 mm): Horizontal Wire, length 3.81 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(91.059 mm, 98.933 mm): Horizontal Wire, length 10.16 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(91.059 mm, 102.743 mm): Vertical Wire, length 3.81 mm
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(91.059 mm, 105.283 mm): Symbol C7 [C_Small]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(91.059 mm, 107.823 mm): Vertical Wire, length 1.27 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(91.059 mm, 107.823 mm): Symbol C7 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(91.059 mm, 109.093 mm): Horizontal Wire, length 10.16 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(101.219 mm, 98.933 mm): Vertical Wire, length 3.81 mm
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(101.219 mm, 105.283 mm): Symbol C12 [C_Small]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(101.219 mm, 107.823 mm): Symbol C12 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(101.219 mm, 107.823 mm): Vertical Wire, length 1.27 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(101.219 mm, 109.093 mm): Horizontal Wire, length 2.032 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(101.981 mm, 121.793 mm): Vertical Wire, length 3.81 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(101.981 mm, 121.793 mm): Horizontal Wire, length 1.27 mm
+[lib_symbol_mismatch]: Symbol '+3.3V' doesn't match copy in library 'power'
+    ; warning
+    @(107.95 mm, 224.79 mm): Symbol #PWR0176 [+3.3V]
+[lib_symbol_mismatch]: Symbol '+3.3V' doesn't match copy in library 'power'
+    ; warning
+    @(110.49 mm, 269.24 mm): Symbol #PWR0144 [+3.3V]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(113.03 mm, 229.87 mm): Symbol C16 [C_Small]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(113.03 mm, 232.41 mm): Symbol #PWR0156 [GND]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'TPS5450DDAR'
+    ; warning
+    @(121.031 mm, 124.333 mm): Symbol U6 [TPS5450DDAR]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(124.46 mm, 281.94 mm): Symbol #PWR0147 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(133.35 mm, 209.55 mm): Symbol #PWR0155 [GND]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(138.811 mm, 114.173 mm): Horizontal Wire, length 2.159 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(138.811 mm, 119.253 mm): Horizontal Wire, length 2.159 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(138.811 mm, 119.253 mm): Symbol U6 Pin 1 [BOOT, Output, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(138.811 mm, 134.493 mm): Symbol #PWR05 Hidden pin 1 [GND, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(138.811 mm, 134.493 mm): Symbol #PWR05 [GND]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(138.811 mm, 137.033 mm): Symbol #PWR06 Hidden pin 1 [GND, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(138.811 mm, 137.033 mm): Symbol #PWR06 [GND]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(140.97 mm, 114.173 mm): Horizontal Wire, length 3.683 mm
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(140.97 mm, 116.713 mm): Symbol C37 [C_Small]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(140.97 mm, 119.253 mm): Symbol C37 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(144.653 mm, 97.028 mm): Vertical Wire, length 0.635 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(144.653 mm, 97.028 mm): Symbol #PWR07 Hidden pin 1 [GND, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(144.653 mm, 97.028 mm): Symbol #PWR07 [GND]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(144.653 mm, 105.283 mm): Vertical Wire, length 8.89 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(144.653 mm, 105.283 mm): Symbol D12 Pin 1 [K, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(144.653 mm, 114.173 mm): Horizontal Wire, length 1.905 mm
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(144.78 mm, 219.71 mm): Symbol #PWR0159 [+5V]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(146.558 mm, 114.173 mm): Symbol L4 Pin 1 [1, Passive, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(151.13 mm, 212.09 mm): Symbol #PWR0158 [GND]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(151.13 mm, 215.90 mm): Symbol C3 [C_Small]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(151.13 mm, 302.26 mm): Symbol #PWR0148 [GND]
+[lib_symbol_mismatch]: Symbol 'NEO-M8M' doesn't match copy in library 'RF_GPS'
+    ; warning
+    @(151.13 mm, 325.12 mm): Symbol U4 [NEO-M8M]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(151.13 mm, 347.98 mm): Symbol #PWR0142 [GND]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(154.178 mm, 114.173 mm): Horizontal Wire, length 5.461 mm
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(157.48 mm, 280.67 mm): Symbol C9 [C_Small]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(159.639 mm, 104.013 mm): Vertical Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(159.639 mm, 104.013 mm): Horizontal Wire, length 7.366 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(159.639 mm, 109.093 mm): Symbol C10 Pin 1 [Passive, Line]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(159.639 mm, 111.633 mm): Symbol C10 [C_Small]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(159.639 mm, 114.046 mm): Vertical Wire, length 0.127 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(159.766 mm, 114.173 mm): Wire, length 0.18 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(159.766 mm, 114.173 mm): Horizontal Wire, length 7.239 mm
+[lib_symbol_issues]: Symbol 'XL1509-3.3' not found in symbol library 'Regulator_Linear'
+    ; warning
+    @(165.10 mm, 224.79 mm): Symbol U12 [XL1509-3.3]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(167.005 mm, 104.013 mm): Vertical Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(167.005 mm, 109.093 mm): Symbol C21 Pin 1 [Passive, Line]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(167.005 mm, 111.633 mm): Symbol C21 [C_Small]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(167.005 mm, 114.173 mm): Horizontal Wire, length 8.89 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(160.02 mm, 280.67 mm): Horizontal Wire, length 6.985 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(167.005 mm, 280.67 mm): Symbol #PWR0146 Hidden pin 1 [GND, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(167.005 mm, 280.67 mm): Symbol #PWR0146 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(168.91 mm, 232.41 mm): Symbol #PWR0157 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(172.72 mm, 222.25 mm): Symbol #PWR0180 [GND]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(175.895 mm, 104.013 mm): Horizontal Wire, length 8.89 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(175.895 mm, 104.013 mm): Vertical Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(175.895 mm, 109.093 mm): Symbol C20 Pin 1 [Passive, Line]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(175.895 mm, 111.633 mm): Symbol C20 [C_Small]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(175.895 mm, 114.173 mm): Horizontal Wire, length 8.89 mm
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(176.53 mm, 290.83 mm): Symbol #PWR0143 [GND]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(176.53 mm, 295.91 mm): Symbol C15 [C_Small]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(179.578 mm, 102.362 mm): Symbol #PWR0138 Hidden pin 1 [GND, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(179.578 mm, 102.362 mm): Vertical Wire, length 1.651 mm
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(179.578 mm, 102.362 mm): Symbol #PWR0138 [GND]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(179.578 mm, 104.013 mm): Horizontal Wire, length 3.683 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(184.785 mm, 104.013 mm): Horizontal Wire, length 5.207 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(184.785 mm, 104.013 mm): Vertical Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(184.785 mm, 109.093 mm): Symbol C19 Pin 1 [Passive, Line]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(184.785 mm, 111.633 mm): Symbol C19 [C_Small]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(184.785 mm, 114.173 mm): Horizontal Wire, length 8.89 mm
+[lib_symbol_mismatch]: Symbol 'U.FL-R-SMT-1' doesn't match copy in library 'U.FL-R-SMT-1'
+    ; warning
+    @(190.50 mm, 314.96 mm): Symbol ANT1 [U.FL-R-SMT-1]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(193.675 mm, 104.013 mm): Vertical Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(193.675 mm, 104.013 mm): Horizontal Wire, length 8.89 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(193.675 mm, 109.093 mm): Symbol C18 Pin 1 [Passive, Line]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(193.675 mm, 111.633 mm): Symbol C18 [C_Small]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(193.675 mm, 114.173 mm): Horizontal Wire, length 5.207 mm
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(195.58 mm, 312.42 mm): Symbol #PWR01 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(195.58 mm, 317.50 mm): Symbol #PWR02 [GND]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(198.882 mm, 114.173 mm): Horizontal Wire, length 4.445 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(198.882 mm, 114.173 mm): Vertical Wire, length 0.889 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(198.882 mm, 122.682 mm): Symbol R5 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(198.882 mm, 122.682 mm): Vertical Wire, length 1.143 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(198.882 mm, 123.825 mm): Horizontal Wire, length 3.175 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(198.882 mm, 123.825 mm): Vertical Wire, length 2.286 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(198.882 mm, 133.731 mm): Symbol R6 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(198.882 mm, 133.731 mm): Vertical Wire, length 2.286 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(198.882 mm, 136.017 mm): Symbol #PWR09 Hidden pin 1 [GND, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(198.882 mm, 136.017 mm): Symbol #PWR09 [GND]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(203.327 mm, 114.173 mm): Symbol #PWR010 Hidden pin 1 [+5V, Power input, Line]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(203.327 mm, 114.173 mm): Symbol #PWR010 [+5V]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(234.95 mm, 99.06 mm): Symbol #PWR0177 [+5V]
+[pin_to_pin]: Pins of type Unspecified and Passive are connected
+    ; warning
+    @(236.474 mm, 297.561 mm): Symbol U5 Pin 3 [G-, Unspecified, Line]
+    @(276.86 mm, 298.45 mm): Symbol R18 Pin 1 [Passive, Line]
+[pin_to_pin]: Pins of type Unspecified and Passive are connected
+    ; warning
+    @(236.474 mm, 302.641 mm): Symbol U5 Pin 4 [B-, Unspecified, Line]
+    @(276.86 mm, 293.37 mm): Symbol R17 Pin 1 [Passive, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(241.30 mm, 88.90 mm): Symbol #PWR0175 [GND]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(241.30 mm, 93.98 mm): Symbol C8 [C_Small]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(241.30 mm, 259.08 mm): Symbol #PWR0168 [+5V]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(241.30 mm, 279.40 mm): Symbol #PWR0169 [GND]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(245.11 mm, 128.27 mm): Symbol #PWR0173 [+5V]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(246.634 mm, 302.641 mm): Symbol #PWR0154 Hidden pin 1 [+3V3, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(246.634 mm, 302.641 mm): Symbol U5 Pin 1 [+, Unspecified, Line]
+[lib_symbol_mismatch]: Symbol '+3.3V' doesn't match copy in library 'power'
+    ; warning
+    @(246.634 mm, 302.641 mm): Symbol #PWR0154 [+3.3V]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(246.634 mm, 302.641 mm): Symbol U5 Pin 1 [+, Unspecified, Line]
+    @(246.634 mm, 302.641 mm): Symbol #PWR0154 Hidden pin 1 [+3V3, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(247.65 mm, 110.49 mm): Symbol #PWR0174 [GND]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(248.92 mm, 186.69 mm): Symbol C1 [C_Small]
+[pin_to_pin]: Pins of type Unspecified and Passive are connected
+    ; warning
+    @(251.714 mm, 297.561 mm): Symbol U5 Pin 2 [R-, Unspecified, Line]
+    @(276.86 mm, 303.53 mm): Symbol R19 Pin 1 [Passive, Line]
+[lib_symbol_issues]: Symbol 'AP22615AWU-7' not found in symbol library 'Analog_ADC'
+    ; warning
+    @(257.81 mm, 110.49 mm): Symbol U1 [AP22615AWU-7]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(260.223 mm, 61.341 mm): Symbol #PWR0137 Hidden pin 1 [GND, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(260.223 mm, 61.341 mm): Symbol #PWR0137 [GND]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(260.223 mm, 61.341 mm): Symbol U3 Pin 4 [GND, Unspecified, Line]
+    @(260.223 mm, 61.341 mm): Symbol #PWR0137 Hidden pin 1 [GND, Power input, Line]
+[pin_to_pin]: Pins of type Unspecified and Passive are connected
+    ; warning
+    @(260.223 mm, 63.881 mm): Symbol U3 Pin 3 [D+, Unspecified, Line]
+    @(280.67 mm, 64.008 mm): Symbol R21 Pin 1 [Passive, Line]
+[pin_to_pin]: Pins of type Unspecified and Passive are connected
+    ; warning
+    @(260.223 mm, 66.421 mm): Symbol U3 Pin 2 [D-, Unspecified, Line]
+    @(280.67 mm, 66.548 mm): Symbol R20 Pin 2 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(260.223 mm, 68.961 mm): Symbol U3 Pin 1 [VCC, Unspecified, Line]
+[pin_to_pin]: Pins of type Unspecified and Passive are connected
+    ; warning
+    @(260.223 mm, 68.961 mm): Symbol U3 Pin 1 [VCC, Unspecified, Line]
+    @(262.89 mm, 81.28 mm): Symbol C17 Pin 2 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(260.35 mm, 69.088 mm): Wire, length 0.18 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(260.35 mm, 69.088 mm): Vertical Wire, length 3.302 mm
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(261.62 mm, 186.69 mm): Symbol C2 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(265.43 mm, 81.28 mm): Symbol C17 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(265.43 mm, 93.98 mm): Symbol C34 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(265.43 mm, 270.51 mm): Symbol C23 [C_Small]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(265.43 mm, 274.32 mm): Symbol #PWR0172 [GND]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(267.97 mm, 124.46 mm): Symbol #PWR0182 [+5V]
+[lib_symbol_mismatch]: Symbol '+3.3V' doesn't match copy in library 'power'
+    ; warning
+    @(267.97 mm, 242.57 mm): Symbol #PWR0183 [+3.3V]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(270.51 mm, 81.28 mm): Symbol #PWR0127 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(270.51 mm, 93.98 mm): Symbol #PWR0178 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(273.05 mm, 265.43 mm): Symbol #PWR0166 [GND]
+[lib_symbol_mismatch]: Symbol 'Crystal_GND24_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(273.05 mm, 267.97 mm): Symbol Y1 [Crystal_GND24_Small]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(273.05 mm, 270.51 mm): Symbol #PWR0171 [GND]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(276.86 mm, 186.69 mm): Symbol C5 [C_Small]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(278.13 mm, 110.49 mm): Symbol #PWR0179 [GND]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(280.416 mm, 66.421 mm): Horizontal Wire, length 20.193 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(280.416 mm, 66.548 mm): Vertical Wire, length 0.127 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(280.416 mm, 66.548 mm): Horizontal Wire, length 0.254 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(280.543 mm, 63.881 mm): Horizontal Wire, length 20.32 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(280.543 mm, 64.008 mm): Horizontal Wire, length 0.127 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(280.543 mm, 64.008 mm): Vertical Wire, length 0.127 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(280.67 mm, 64.008 mm): Symbol R21 Pin 1 [Passive, Line]
+[lib_symbol_mismatch]: Symbol '+3.3V' doesn't match copy in library 'power'
+    ; warning
+    @(284.48 mm, 179.07 mm): Symbol #PWR0149 [+3.3V]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(284.48 mm, 196.85 mm): Symbol #PWR0150 [GND]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(284.48 mm, 270.51 mm): Symbol C24 [C_Small]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(284.48 mm, 274.32 mm): Symbol #PWR0170 [GND]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(284.607 mm, 295.91 mm): Horizontal Wire, length 24.003 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(284.607 mm, 295.91 mm): Vertical Wire, length 2.54 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(284.607 mm, 298.45 mm): Horizontal Wire, length 2.667 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(285.75 mm, 64.008 mm): Horizontal Wire, length 1.143 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(285.75 mm, 66.548 mm): Symbol R20 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(285.75 mm, 66.548 mm): Horizontal Wire, length 1.143 mm
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(285.75 mm, 82.55 mm): Symbol #PWR0164 [+5V]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(288.29 mm, 233.68 mm): Symbol #PWR0139 [GND]
+[lib_symbol_issues]: Symbol 'Q_NPN_BEC_BRT' not found in symbol library 'Device'
+    ; warning
+    @(290.83 mm, 127.00 mm): Symbol Q3 [Q_NPN_BEC_BRT]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(297.18 mm, 128.27 mm): Symbol #PWR0145 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(297.18 mm, 247.65 mm): Symbol #PWR0167 [GND]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(299.72 mm, 247.65 mm): Symbol C25 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(300.99 mm, 186.69 mm): Symbol C11 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(316.23 mm, 186.69 mm): Symbol C14 [C_Small]
+[lib_symbol_mismatch]: Symbol 'STM32F413RGTx' doesn't match copy in library 'MCU_ST_STM32F4'
+    ; warning
+    @(326.39 mm, 275.59 mm): Symbol U7 [STM32F413RGTx]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(326.39 mm, 325.12 mm): Symbol #PWR0163 [GND]
+[lib_symbol_mismatch]: Symbol '+3.3V' doesn't match copy in library 'power'
+    ; warning
+    @(328.93 mm, 228.60 mm): Symbol #PWR0123 [+3.3V]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(330.454 mm, 86.614 mm): Symbol #PWR014 Hidden pin 1 [GND, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(330.454 mm, 86.614 mm): Symbol #PWR014 [GND]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(330.454 mm, 86.614 mm): Symbol P1 Pin 0 [0, Unspecified, Line]
+    @(330.454 mm, 86.614 mm): Symbol #PWR014 Hidden pin 1 [GND, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(330.454 mm, 89.154 mm): Symbol #PWR015 Hidden pin 1 [GND, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(330.454 mm, 89.154 mm): Symbol P1 Pin 0 [0, Unspecified, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(330.454 mm, 89.154 mm): Symbol #PWR015 [GND]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(330.454 mm, 89.154 mm): Symbol P1 Pin 0 [0, Unspecified, Line]
+    @(330.454 mm, 89.154 mm): Symbol #PWR015 Hidden pin 1 [GND, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(338.074 mm, 73.914 mm): Symbol #PWR013 Hidden pin 1 [GND, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(338.074 mm, 73.914 mm): Symbol #PWR013 [GND]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(338.074 mm, 73.914 mm): Symbol P1 Pin A12 [GND, Unspecified, Line]
+    @(338.074 mm, 73.914 mm): Symbol #PWR013 Hidden pin 1 [GND, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(338.074 mm, 101.854 mm): Symbol #PWR012 Hidden pin 1 [GND, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(338.074 mm, 101.854 mm): Symbol #PWR012 [GND]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(338.074 mm, 101.854 mm): Symbol P1 Pin B1 [GND, Unspecified, Line]
+    @(338.074 mm, 101.854 mm): Symbol #PWR012 Hidden pin 1 [GND, Power input, Line]
+[pin_to_pin]: Pins of type Unspecified and Bidirectional are connected
+    ; warning
+    @(340.614 mm, 73.914 mm): Symbol P1 Pin A11 [SSRXp2, Unspecified, Line]
+    @(464.82 mm, 222.25 mm): Symbol U9 Pin 7 [CANH, Bidirectional, Line]
+[pin_to_pin]: Pins of type Unspecified and Bidirectional are connected
+    ; warning
+    @(340.614 mm, 101.854 mm): Symbol P1 Pin B2 [SSTXp2, Unspecified, Line]
+    @(464.82 mm, 271.78 mm): Symbol U10 Pin 7 [CANH, Bidirectional, Line]
+[pin_to_pin]: Pins of type Unspecified and Bidirectional are connected
+    ; warning
+    @(343.154 mm, 73.914 mm): Symbol P1 Pin A10 [SSRXn2, Unspecified, Line]
+    @(464.82 mm, 227.33 mm): Symbol U9 Pin 6 [CANL, Bidirectional, Line]
+[pin_to_pin]: Pins of type Unspecified and Bidirectional are connected
+    ; warning
+    @(343.154 mm, 101.854 mm): Symbol P1 Pin B3 [SSTXn2, Unspecified, Line]
+    @(464.82 mm, 276.86 mm): Symbol U10 Pin 6 [CANL, Bidirectional, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(345.694 mm, 73.914 mm): Symbol #PWR04 Hidden pin 1 [+12V, Power input, Line]
+[lib_symbol_mismatch]: Symbol '+12V' doesn't match copy in library 'power'
+    ; warning
+    @(345.694 mm, 73.914 mm): Symbol #PWR04 [+12V]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(345.694 mm, 73.914 mm): Symbol P1 Pin A9 [VBUS, Unspecified, Line]
+    @(345.694 mm, 73.914 mm): Symbol #PWR04 Hidden pin 1 [+12V, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(345.694 mm, 101.854 mm): Symbol #PWR0128 Hidden pin 1 [+12V, Power input, Line]
+[lib_symbol_mismatch]: Symbol '+12V' doesn't match copy in library 'power'
+    ; warning
+    @(345.694 mm, 101.854 mm): Symbol #PWR0128 [+12V]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(345.694 mm, 101.854 mm): Symbol P1 Pin B4 [VBUS, Unspecified, Line]
+    @(345.694 mm, 101.854 mm): Symbol #PWR0128 Hidden pin 1 [+12V, Power input, Line]
+[pin_to_pin]: Pins of type Unspecified and Passive are connected
+    ; warning
+    @(348.234 mm, 73.914 mm): Symbol P1 Pin A8 [SUB1, Unspecified, Line]
+    @(448.31 mm, 91.44 mm): Symbol R24 Pin 2 [Passive, Line]
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(350.52 mm, 242.57 mm): Global Label 'UART_TX'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(350.52 mm, 245.11 mm): Global Label 'UART_RX'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(350.52 mm, 247.65 mm): Global Label 'SPI_NSS'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(350.52 mm, 250.19 mm): Global Label 'SPI_SCK'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(350.52 mm, 252.73 mm): Global Label 'SPI_MISO'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(350.52 mm, 255.27 mm): Global Label 'SPI_MOSI'
+[pin_to_pin]: Pins of type Unspecified and Passive are connected
+    ; warning
+    @(355.854 mm, 101.854 mm): Symbol P1 Pin B8 [SUB2, Unspecified, Line]
+    @(443.23 mm, 99.06 mm): Symbol D5 Pin 2 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(358.394 mm, 73.914 mm): Symbol #PWR03 Hidden pin 1 [+12V, Power input, Line]
+[lib_symbol_mismatch]: Symbol '+12V' doesn't match copy in library 'power'
+    ; warning
+    @(358.394 mm, 73.914 mm): Symbol #PWR03 [+12V]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(358.394 mm, 73.914 mm): Symbol P1 Pin A4 [VBUS, Unspecified, Line]
+    @(358.394 mm, 73.914 mm): Symbol #PWR03 Hidden pin 1 [+12V, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(358.394 mm, 101.854 mm): Symbol #PWR08 Hidden pin 1 [+12V, Power input, Line]
+[lib_symbol_mismatch]: Symbol '+12V' doesn't match copy in library 'power'
+    ; warning
+    @(358.394 mm, 101.854 mm): Symbol #PWR08 [+12V]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(358.394 mm, 101.854 mm): Symbol P1 Pin B9 [VBUS, Unspecified, Line]
+    @(358.394 mm, 101.854 mm): Symbol #PWR08 Hidden pin 1 [+12V, Power input, Line]
+[pin_to_pin]: Pins of type Unspecified and Bidirectional are connected
+    ; warning
+    @(360.934 mm, 73.914 mm): Symbol P1 Pin A3 [SSTXn1, Unspecified, Line]
+    @(463.55 mm, 175.26 mm): Symbol U8 Pin 6 [CANL, Bidirectional, Line]
+[pin_to_pin]: Pins of type Unspecified and Bidirectional are connected
+    ; warning
+    @(360.934 mm, 101.854 mm): Symbol P1 Pin B10 [SSRXn1, Unspecified, Line]
+    @(464.82 mm, 326.39 mm): Symbol U11 Pin 6 [CANL, Bidirectional, Line]
+[pin_to_pin]: Pins of type Unspecified and Bidirectional are connected
+    ; warning
+    @(363.474 mm, 73.914 mm): Symbol P1 Pin A2 [SSTXP1, Unspecified, Line]
+    @(463.55 mm, 170.18 mm): Symbol U8 Pin 7 [CANH, Bidirectional, Line]
+[pin_to_pin]: Pins of type Unspecified and Bidirectional are connected
+    ; warning
+    @(363.474 mm, 101.854 mm): Symbol P1 Pin B11 [SSRXp1, Unspecified, Line]
+    @(464.82 mm, 321.31 mm): Symbol U11 Pin 7 [CANH, Bidirectional, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(366.014 mm, 73.914 mm): Symbol #PWR0181 Hidden pin 1 [GND, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(366.014 mm, 73.914 mm): Symbol #PWR0181 [GND]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(366.014 mm, 73.914 mm): Symbol P1 Pin A1 [GND, Unspecified, Line]
+    @(366.014 mm, 73.914 mm): Symbol #PWR0181 Hidden pin 1 [GND, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(366.014 mm, 101.854 mm): Symbol #PWR011 Hidden pin 1 [GND, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(366.014 mm, 101.854 mm): Symbol #PWR011 [GND]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(366.014 mm, 101.854 mm): Symbol P1 Pin B12 [GND, Unspecified, Line]
+    @(366.014 mm, 101.854 mm): Symbol #PWR011 Hidden pin 1 [GND, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(373.634 mm, 86.614 mm): Symbol #PWR016 Hidden pin 1 [GND, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(373.634 mm, 86.614 mm): Symbol #PWR016 [GND]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(373.634 mm, 86.614 mm): Symbol P1 Pin 0 [0, Unspecified, Line]
+    @(373.634 mm, 86.614 mm): Symbol #PWR016 Hidden pin 1 [GND, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(373.634 mm, 89.154 mm): Symbol #PWR017 Hidden pin 1 [GND, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(373.634 mm, 89.154 mm): Symbol #PWR017 [GND]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(373.634 mm, 89.154 mm): Symbol P1 Pin 0 [0, Unspecified, Line]
+    @(373.634 mm, 89.154 mm): Symbol #PWR017 Hidden pin 1 [GND, Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(377.19 mm, 285.75 mm): Symbol #PWR0165 [GND]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(423.672 mm, 318.77 mm): Horizontal Wire, length 15.748 mm
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(430.53 mm, 180.34 mm): Symbol #PWR0111 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(431.80 mm, 232.41 mm): Symbol #PWR0121 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(431.80 mm, 281.94 mm): Symbol #PWR0101 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(431.80 mm, 331.47 mm): Symbol #PWR0105 [GND]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(433.07 mm, 180.34 mm): Symbol C26 [C_Small]
+[lib_symbol_mismatch]: Symbol '+3.3V' doesn't match copy in library 'power'
+    ; warning
+    @(434.34 mm, 175.26 mm): Symbol #PWR0112 [+3.3V]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(434.34 mm, 232.41 mm): Symbol C27 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(434.34 mm, 281.94 mm): Symbol C28 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(434.34 mm, 331.47 mm): Symbol C29 [C_Small]
+[lib_symbol_mismatch]: Symbol '+3.3V' doesn't match copy in library 'power'
+    ; warning
+    @(435.61 mm, 227.33 mm): Symbol #PWR0120 [+3.3V]
+[lib_symbol_mismatch]: Symbol '+3.3V' doesn't match copy in library 'power'
+    ; warning
+    @(435.61 mm, 276.86 mm): Symbol #PWR0116 [+3.3V]
+[lib_symbol_mismatch]: Symbol '+3.3V' doesn't match copy in library 'power'
+    ; warning
+    @(435.61 mm, 326.39 mm): Symbol #PWR0102 [+3.3V]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(439.42 mm, 161.29 mm): Symbol #PWR0113 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(440.69 mm, 213.36 mm): Symbol #PWR0133 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(440.69 mm, 262.89 mm): Symbol #PWR0119 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(440.69 mm, 312.42 mm): Symbol #PWR0104 [GND]
+[lib_symbol_mismatch]: Symbol '+3.3V' doesn't match copy in library 'power'
+    ; warning
+    @(443.23 mm, 62.23 mm): Symbol #PWR0125 [+3.3V]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(444.50 mm, 161.29 mm): Symbol C30 [C_Small]
+[lib_symbol_mismatch]: Symbol 'PESD2CAN,215' doesn't match copy in library 'PESD2CAN_215'
+    ; warning
+    @(445.77 mm, 109.22 mm): Symbol D5 [PESD2CAN,215]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(445.77 mm, 119.38 mm): Symbol #PWR0131 [GND]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(445.77 mm, 213.36 mm): Symbol C31 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(445.77 mm, 262.89 mm): Symbol C32 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(445.77 mm, 312.42 mm): Symbol C33 [C_Small]
+[lib_symbol_mismatch]: Symbol '+3.3V' doesn't match copy in library 'power'
+    ; warning
+    @(448.31 mm, 86.36 mm): Symbol #PWR0132 [+3.3V]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(450.85 mm, 158.75 mm): Symbol #PWR0114 [+5V]
+[lib_symbol_mismatch]: Symbol 'TJA1042TK-3' doesn't match copy in library 'Interface_CAN_LIN'
+    ; warning
+    @(450.85 mm, 172.72 mm): Symbol U8 [TJA1042TK-3]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(450.85 mm, 186.69 mm): Symbol #PWR0109 [GND]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(452.12 mm, 210.82 mm): Symbol #PWR0134 [+5V]
+[lib_symbol_mismatch]: Symbol 'TJA1042TK-3' doesn't match copy in library 'Interface_CAN_LIN'
+    ; warning
+    @(452.12 mm, 224.79 mm): Symbol U9 [TJA1042TK-3]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(452.12 mm, 238.76 mm): Symbol #PWR0117 [GND]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(452.12 mm, 260.35 mm): Symbol #PWR0118 [+5V]
+[lib_symbol_mismatch]: Symbol 'TJA1042TK-3' doesn't match copy in library 'Interface_CAN_LIN'
+    ; warning
+    @(452.12 mm, 274.32 mm): Symbol U10 [TJA1042TK-3]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(452.12 mm, 288.29 mm): Symbol #PWR0106 [GND]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(452.12 mm, 309.88 mm): Symbol #PWR0103 [+5V]
+[lib_symbol_mismatch]: Symbol 'TJA1042TK-3' doesn't match copy in library 'Interface_CAN_LIN'
+    ; warning
+    @(452.12 mm, 323.85 mm): Symbol U11 [TJA1042TK-3]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(452.12 mm, 337.82 mm): Symbol #PWR0108 [GND]
+[lib_symbol_issues]: Symbol 'Q_PNP_BEC_BRT' not found in symbol library 'Device'
+    ; warning
+    @(464.82 mm, 68.58 mm): Symbol Q1 [Q_PNP_BEC_BRT]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(469.90 mm, 67.31 mm): Symbol #PWR0129 [+5V]
+[lib_symbol_mismatch]: Symbol 'PESD2CAN,215' doesn't match copy in library 'PESD2CAN_215'
+    ; warning
+    @(478.79 mm, 187.96 mm): Symbol D6 [PESD2CAN,215]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(478.79 mm, 198.12 mm): Symbol #PWR0107 [GND]
+[lib_symbol_mismatch]: Symbol 'PESD2CAN,215' doesn't match copy in library 'PESD2CAN_215'
+    ; warning
+    @(480.06 mm, 240.03 mm): Symbol D7 [PESD2CAN,215]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(480.06 mm, 250.19 mm): Symbol #PWR0141 [GND]
+[lib_symbol_mismatch]: Symbol 'PESD2CAN,215' doesn't match copy in library 'PESD2CAN_215'
+    ; warning
+    @(480.06 mm, 289.56 mm): Symbol D8 [PESD2CAN,215]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(480.06 mm, 299.72 mm): Symbol #PWR0115 [GND]
+[lib_symbol_mismatch]: Symbol 'PESD2CAN,215' doesn't match copy in library 'PESD2CAN_215'
+    ; warning
+    @(480.06 mm, 339.09 mm): Symbol D9 [PESD2CAN,215]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(480.06 mm, 349.25 mm): Symbol #PWR0110 [GND]
+[lib_symbol_issues]: Symbol 'Q_PNP_BEC_BRT' not found in symbol library 'Device'
+    ; warning
+    @(486.41 mm, 92.71 mm): Symbol Q2 [Q_PNP_BEC_BRT]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(491.49 mm, 91.44 mm): Symbol #PWR0130 [+5V]
+
+ ** ERC messages: 326  Errors 7  Warnings 319
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - Assigned footprint doesn't match footprint filters

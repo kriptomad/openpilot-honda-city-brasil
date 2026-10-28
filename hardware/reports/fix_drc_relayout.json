@@ -1,0 +1,238 @@
+{
+ "date": "2026-10-27 11:11:50",
+ "dry": false,
+ "rounds": [
+  {
+   "round": 0,
+   "drc_before": {
+    "unconnected": 1,
+    "total": 191,
+    "by_type": {
+     "items_not_allowed": 1,
+     "hole_clearance": 12,
+     "clearance": 1,
+     "copper_edge_clearance": 2,
+     "footprint_type_mismatch": 10,
+     "drill_out_of_range": 1,
+     "starved_thermal": 16,
+     "track_dangling": 1,
+     "silk_edge_clearance": 4,
+     "lib_footprint_mismatch": 64,
+     "text_height": 72,
+     "silk_overlap": 4,
+     "silk_over_copper": 3
+    }
+   },
+   "actions": [
+    {
+     "fix": "keepout_via",
+     "net": "+3V3",
+     "from": "115.250,68.752",
+     "to": "115.300,68.752",
+     "tracks": 2
+    },
+    {
+     "fix": "via_via",
+     "net": "GND",
+     "from": "115.388,42.699",
+     "to": "115.370,42.665",
+     "tracks": 1
+    },
+    {
+     "fix": "track_pad",
+     "net": "BUS1N_L",
+     "pad": "D8.2",
+     "from": [
+      "139.070,64.655",
+      "139.355,64.370"
+     ],
+     "to": [
+      "139.000,64.585",
+      "139.285,64.300"
+     ],
+     "shift_mm": 0.1,
+     "neighbours": 2
+    },
+    {
+     "fix": "dangling",
+     "net": "+5V",
+     "at": "118.918,46.592",
+     "result": "removida"
+    },
+    {
+     "fix": "fiducial",
+     "ref": "FID2",
+     "layer": "F.Cu",
+     "from": "140.485,35.260",
+     "to": "140.485,76.710"
+    }
+   ],
+   "handled": 5
+  },
+  {
+   "round": 1,
+   "drc_before": {
+    "unconnected": 1,
+    "total": 181,
+    "by_type": {
+     "hole_clearance": 8,
+     "copper_edge_clearance": 2,
+     "footprint_type_mismatch": 10,
+     "drill_out_of_range": 1,
+     "starved_thermal": 16,
+     "silk_edge_clearance": 4,
+     "lib_footprint_mismatch": 64,
+     "text_height": 72,
+     "silk_overlap": 4
+    }
+   },
+   "actions": [],
+   "handled": 0
+  }
+ ],
+ "drc_after": {
+  "unconnected": 1,
+  "total": 181,
+  "by_type": {
+   "hole_clearance": 8,
+   "copper_edge_clearance": 2,
+   "footprint_type_mismatch": 10,
+   "drill_out_of_range": 1,
+   "starved_thermal": 16,
+   "silk_edge_clearance": 4,
+   "lib_footprint_mismatch": 64,
+   "text_height": 72,
+   "silk_overlap": 4
+  },
+  "errors": [
+   [
+    "hole_clearance",
+    "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actu",
+    [
+     [
+      "PTH pad 0 [GND] of P1",
+      136.180072,
+      63.010048
+     ],
+     [
+      "NPTH pad of P1",
+      134.940042,
+      62.554879
+     ]
+    ]
+   ],
+   [
+    "hole_clearance",
+    "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actu",
+    [
+     [
+      "PTH pad 0 [GND] of P1",
+      136.180072,
+      63.010048
+     ],
+     [
+      "NPTH pad of P1",
+      134.940042,
+      62.554879
+     ]
+    ]
+   ],
+   [
+    "hole_clearance",
+    "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actu",
+    [
+     [
+      "PTH pad 0 [GND] of P1",
+      136.180072,
+      63.010048
+     ],
+     [
+      "NPTH pad of P1",
+      134.940042,
+      62.554879
+     ]
+    ]
+   ],
+   [
+    "hole_clearance",
+    "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actu",
+    [
+     [
+      "PTH pad 0 [GND] of P1",
+      136.180072,
+      63.010048
+     ],
+     [
+      "NPTH pad of P1",
+      134.940042,
+      62.554879
+     ]
+    ]
+   ],
+   [
+    "hole_clearance",
+    "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actu",
+    [
+     [
+      "PTH pad 0 [GND] of P1",
+      136.180072,
+      54.749952
+     ],
+     [
+      "NPTH pad of P1",
+      134.940042,
+      55.204867
+     ]
+    ]
+   ],
+   [
+    "hole_clearance",
+    "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actu",
+    [
+     [
+      "PTH pad 0 [GND] of P1",
+      136.180072,
+      54.749952
+     ],
+     [
+      "NPTH pad of P1",
+      134.940042,
+      55.204867
+     ]
+    ]
+   ],
+   [
+    "hole_clearance",
+    "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actu",
+    [
+     [
+      "PTH pad 0 [GND] of P1",
+      136.180072,
+      54.749952
+     ],
+     [
+      "NPTH pad of P1",
+      134.940042,
+      55.204867
+     ]
+    ]
+   ],
+   [
+    "hole_clearance",
+    "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actu",
+    [
+     [
+      "PTH pad 0 [GND] of P1",
+      136.180072,
+      54.749952
+     ],
+     [
+      "NPTH pad of P1",
+      134.940042,
+      55.204867
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,1650 @@
+{
+ "date": "2026-10-28 10:16:21",
+ "board": "04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+ "findings": [
+  {
+   "sev": "ALTO",
+   "area": "curto",
+   "msg": "folga furo < 0,20",
+   "layer": "F.Cu",
+   "hole": "pad P1. []",
+   "item": "pad P1.0 [GND]",
+   "kind": "folga furo < 0,20"
+  },
+  {
+   "sev": "ALTO",
+   "area": "curto",
+   "msg": "folga furo < 0,20",
+   "layer": "F.Cu",
+   "hole": "pad P1. []",
+   "item": "pad P1.0 [GND]",
+   "kind": "folga furo < 0,20"
+  },
+  {
+   "sev": "ALTO",
+   "area": "curto",
+   "msg": "folga furo < 0,20",
+   "layer": "In1.Cu",
+   "hole": "pad P1. []",
+   "item": "pad P1.0 [GND]",
+   "kind": "folga furo < 0,20"
+  },
+  {
+   "sev": "ALTO",
+   "area": "curto",
+   "msg": "folga furo < 0,20",
+   "layer": "In1.Cu",
+   "hole": "pad P1. []",
+   "item": "pad P1.0 [GND]",
+   "kind": "folga furo < 0,20"
+  },
+  {
+   "sev": "ALTO",
+   "area": "curto",
+   "msg": "folga furo < 0,20",
+   "layer": "In2.Cu",
+   "hole": "pad P1. []",
+   "item": "pad P1.0 [GND]",
+   "kind": "folga furo < 0,20"
+  },
+  {
+   "sev": "ALTO",
+   "area": "curto",
+   "msg": "folga furo < 0,20",
+   "layer": "In2.Cu",
+   "hole": "pad P1. []",
+   "item": "pad P1.0 [GND]",
+   "kind": "folga furo < 0,20"
+  },
+  {
+   "sev": "ALTO",
+   "area": "curto",
+   "msg": "folga furo < 0,20",
+   "layer": "B.Cu",
+   "hole": "pad P1. []",
+   "item": "pad P1.0 [GND]",
+   "kind": "folga furo < 0,20"
+  },
+  {
+   "sev": "ALTO",
+   "area": "curto",
+   "msg": "folga furo < 0,20",
+   "layer": "B.Cu",
+   "hole": "pad P1. []",
+   "item": "pad P1.0 [GND]",
+   "kind": "folga furo < 0,20"
+  },
+  {
+   "sev": "INFO",
+   "area": "montagem",
+   "msg": "0 vias dentro de pads SMD (via-in-pad): risco de sucção de solda/tombstone em 0402 — exigir vias tapadas (plugged/capped, IPC-4761 tipo VI/VII) ou aceitar retrabalho; sem isso, montagem por refluxo pode falhar nesses pads"
+  },
+  {
+   "sev": "INFO",
+   "area": "montagem",
+   "msg": "5 vias térmicas (mesma rede) em pads expostos (CONV_TPS5450DDAR): voiding/sucção de solda no EP é esperado; posicionadas entre os quadrados de pasta"
+  },
+  {
+   "sev": "MEDIO",
+   "area": "borda",
+   "msg": "footprint com caixa fora do contorno (verificar visualmente)",
+   "ref": "U3",
+   "bbox": [
+    130.61,
+    32.29,
+    143.68,
+    47.27
+   ]
+  },
+  {
+   "sev": "MEDIO",
+   "area": "borda",
+   "msg": "footprint com caixa fora do contorno (verificar visualmente)",
+   "ref": "P1",
+   "bbox": [
+    133.08,
+    53.83,
+    143.23,
+    63.93
+   ]
+  },
+  {
+   "sev": "INFO",
+   "area": "montagem",
+   "msg": "footprints sem courtyard (sem verificação de colisão possível): U5, FID2, FID3, U3, FID1, P1, FID4, FID6, FID5"
+  },
+  {
+   "sev": "INFO",
+   "area": "montagem",
+   "msg": "124 vias sob corpos de componentes (tenting F/B = True/True)"
+  },
+  {
+   "sev": "INFO",
+   "area": "montagem",
+   "msg": "125 componentes, 45 no lado B (C38, FB1, D14, C52, C42, C63, C23, C50, R28, C62, D15, C53…), THT: U6, U3, P1; 52 referências sem serigrafia (identificação só pelo CPL)"
+  },
+  {
+   "sev": "INFO",
+   "area": "montagem",
+   "msg": "polaridade/pino 1 a confirmar visualmente no render/F.Fab: D12, D7, U12, D2, U9, U1, U8, D11, D9, Q1, D5, D6, Q2, D8, U6, U5, D10, Q3, Q4, U10, U11, D1, U3, P1, U13, JP1, D14, D15, D13, U7, J1, Y1"
+  },
+  {
+   "sev": "BAIXO",
+   "area": "fabrico",
+   "msg": "122 junções de trilha com ângulo agudo (< 90°) — 'acid traps' cosméticos em processo moderno; o Freerouting gera 45°/90° mas o A* do 5c pode gerar outros"
+  },
+  {
+   "sev": "INFO",
+   "area": "fabrico",
+   "msg": "trilha mín 0.1400 mm, broca mín 0.30 mm (regra 0,30 — 1 via herdada 0,25); folga mín testada 0,10 mm"
+  },
+  {
+   "sev": "INFO",
+   "area": "esquemático",
+   "msg": "U7 BOOT0 → ['BOOT0'] ; outros nós: [('R14', '1'), ('SW1', '1')]"
+  },
+  {
+   "sev": "INFO",
+   "area": "esquemático",
+   "msg": "U7 NRST → ['NRST'] ; outros nós: [('C38', '1'), ('J1', '10')]"
+  },
+  {
+   "sev": "INFO",
+   "area": "esquemático",
+   "msg": "U7 PDR_ON → ['+3V3'] ; outros nós: [('C1', '1'), ('C11', '1'), ('C14', '1'), ('C16', '1'), ('C2', '1'), ('C26', '1'), ('C27', '1'), ('C28', '1')]"
+  },
+  {
+   "sev": "INFO",
+   "area": "esquemático",
+   "msg": "U7 VBAT → ['+3V3'] ; outros nós: [('C1', '1'), ('C11', '1'), ('C14', '1'), ('C16', '1'), ('C2', '1'), ('C26', '1'), ('C27', '1'), ('C28', '1')]"
+  },
+  {
+   "sev": "INFO",
+   "area": "esquemático",
+   "msg": "U7 VDD50USB → ['+3V3'] ; outros nós: [('C1', '1'), ('C11', '1'), ('C14', '1'), ('C16', '1'), ('C2', '1'), ('C26', '1'), ('C27', '1'), ('C28', '1')]"
+  },
+  {
+   "sev": "INFO",
+   "area": "esquemático",
+   "msg": "U7 VDD33USB → ['+3V3'] ; outros nós: [('C1', '1'), ('C11', '1'), ('C14', '1'), ('C16', '1'), ('C2', '1'), ('C26', '1'), ('C27', '1'), ('C28', '1')]"
+  },
+  {
+   "sev": "INFO",
+   "area": "esquemático",
+   "msg": "U7 VREF+ → ['VDDA'] ; outros nós: [('C43', '1'), ('C44', '1'), ('FB1', '1')]"
+  },
+  {
+   "sev": "INFO",
+   "area": "esquemático",
+   "msg": "U7 VDDA → ['VDDA'] ; outros nós: [('C43', '1'), ('C44', '1'), ('FB1', '1')]"
+  },
+  {
+   "sev": "INFO",
+   "area": "esquemático",
+   "msg": "U8 TJA1042: {'1': 'BUS1O_TX', '2': 'GND', '3': '+5V', '4': 'BUS1O_RX', '5': '+3V3', '6': 'BUS1O_L', '7': 'BUS1O_H', '8': 'BUS1O_STB'}"
+  },
+  {
+   "sev": "INFO",
+   "area": "esquemático",
+   "msg": "U9 TJA1042: {'1': 'BUS2_TX', '2': 'GND', '3': '+5V', '4': 'BUS2_RX', '5': '+3V3', '6': 'BUS2_L', '7': 'BUS2_H', '8': 'BUS2_STB'}"
+  },
+  {
+   "sev": "INFO",
+   "area": "esquemático",
+   "msg": "U10 TJA1042: {'1': 'BUS1N_TX', '2': 'GND', '3': '+5V', '4': 'BUS1N_RX', '5': '+3V3', '6': 'BUS1N_L', '7': 'BUS1N_H', '8': 'BUS1N_STB'}"
+  },
+  {
+   "sev": "INFO",
+   "area": "esquemático",
+   "msg": "U11 TJA1042: {'1': 'BUS0_TX', '2': 'GND', '3': '+5V', '4': 'BUS0_RX', '5': '+3V3', '6': 'BUS0_L', '7': 'BUS0_H', '8': 'BUS0_STB'}"
+  },
+  {
+   "sev": "ALTO",
+   "area": "BOM",
+   "msg": "54 linhas / 76 referências; 53 linhas com MPN — não encomendável sem preencher as restantes; itens críticos marcados (VCAP ESR, SMPS, L5, Y1 CL)"
+  }
+ ],
+ "shorts": {
+  "pairs_tested": 748,
+  "copper_overlap_other_net": [],
+  "clearance_lt_0.10": [],
+  "zone_overlap_other_net": [],
+  "zone_clearance_lt_0.10": [],
+  "hole_vs_other_net": [
+   {
+    "layer": "F.Cu",
+    "hole": "pad P1. []",
+    "item": "pad P1.0 [GND]",
+    "kind": "folga furo < 0,20"
+   },
+   {
+    "layer": "F.Cu",
+    "hole": "pad P1. []",
+    "item": "pad P1.0 [GND]",
+    "kind": "folga furo < 0,20"
+   },
+   {
+    "layer": "In1.Cu",
+    "hole": "pad P1. []",
+    "item": "pad P1.0 [GND]",
+    "kind": "folga furo < 0,20"
+   },
+   {
+    "layer": "In1.Cu",
+    "hole": "pad P1. []",
+    "item": "pad P1.0 [GND]",
+    "kind": "folga furo < 0,20"
+   },
+   {
+    "layer": "In2.Cu",
+    "hole": "pad P1. []",
+    "item": "pad P1.0 [GND]",
+    "kind": "folga furo < 0,20"
+   },
+   {
+    "layer": "In2.Cu",
+    "hole": "pad P1. []",
+    "item": "pad P1.0 [GND]",
+    "kind": "folga furo < 0,20"
+   },
+   {
+    "layer": "B.Cu",
+    "hole": "pad P1. []",
+    "item": "pad P1.0 [GND]",
+    "kind": "folga furo < 0,20"
+   },
+   {
+    "layer": "B.Cu",
+    "hole": "pad P1. []",
+    "item": "pad P1.0 [GND]",
+    "kind": "folga furo < 0,20"
+   }
+  ],
+  "kicad_unconnected": 0,
+  "nets_split": [],
+  "nets_total": 142,
+  "nets_multi_pad": 63
+ },
+ "via_in_pad": [],
+ "thermal_vias": [
+  {
+   "via": "GND @108.06,41.20 d0.60/0.30",
+   "pad": "pad U6.9 [GND]",
+   "mesma_rede": true,
+   "footprint": "CONV_TPS5450DDAR"
+  },
+  {
+   "via": "GND @108.71,40.84 d0.60/0.30",
+   "pad": "pad U6.9 [GND]",
+   "mesma_rede": true,
+   "footprint": "CONV_TPS5450DDAR"
+  },
+  {
+   "via": "GND @108.71,42.14 d0.60/0.30",
+   "pad": "pad U6.9 [GND]",
+   "mesma_rede": true,
+   "footprint": "CONV_TPS5450DDAR"
+  },
+  {
+   "via": "GND @107.41,42.14 d0.60/0.30",
+   "pad": "pad U6.9 [GND]",
+   "mesma_rede": true,
+   "footprint": "CONV_TPS5450DDAR"
+  },
+  {
+   "via": "GND @107.41,40.84 d0.60/0.30",
+   "pad": "pad U6.9 [GND]",
+   "mesma_rede": true,
+   "footprint": "CONV_TPS5450DDAR"
+  }
+ ],
+ "mask": {
+  "expansion_mm_global": 0.0,
+  "webs_lt_0.10": [],
+  "count": 0
+ },
+ "edge": {
+  "pads_fora": [],
+  "pads_a_lt_0.3_da_borda": [
+   "pad C28.1 [+3V3]",
+   "pad C28.2 [GND]"
+  ],
+  "footprints_fora_bbox": [
+   {
+    "ref": "U3",
+    "bbox": [
+     130.61,
+     32.29,
+     143.68,
+     47.27
+    ]
+   },
+   {
+    "ref": "P1",
+    "bbox": [
+     133.08,
+     53.83,
+     143.23,
+     63.93
+    ]
+   }
+  ],
+  "board_mm": [
+   91.96,
+   32.06,
+   142.88,
+   78.71
+  ]
+ },
+ "courtyard": {
+  "overlaps": [],
+  "sem_courtyard": [
+   "U5",
+   "FID2",
+   "FID3",
+   "U3",
+   "FID1",
+   "P1",
+   "FID4",
+   "FID6",
+   "FID5"
+  ]
+ },
+ "vias_under_components": {
+  "tent_front": true,
+  "tent_back": true,
+  "count": 124,
+  "list": [
+   {
+    "via": "+3V3 @103.00,65.86",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @117.98,43.64",
+    "sob": "L4",
+    "rede_do_componente": false
+   },
+   {
+    "via": "+3V3 @117.53,41.09",
+    "sob": "L4",
+    "rede_do_componente": false
+   },
+   {
+    "via": "+3V3 @101.24,48.85",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @110.99,55.39",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @115.30,68.75",
+    "sob": "SW1",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @137.98,69.80",
+    "sob": "U10",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @109.27,66.15",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @106.27,48.33",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @141.19,68.88",
+    "sob": "U10",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @113.13,50.75",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @96.72,56.91",
+    "sob": "C61",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @118.76,64.35",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @100.12,63.47",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @100.25,52.83",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @116.53,50.75",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @128.38,56.76",
+    "sob": "U9",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @103.61,66.04",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @136.49,69.18",
+    "sob": "U11",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @109.75,48.34",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @117.00,44.74",
+    "sob": "L4",
+    "rede_do_componente": false
+   },
+   {
+    "via": "+3V3 @97.21,41.72",
+    "sob": "D11",
+    "rede_do_componente": false
+   },
+   {
+    "via": "+3V3 @97.21,41.72",
+    "sob": "J1",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+3V3 @97.20,42.54",
+    "sob": "D11",
+    "rede_do_componente": false
+   },
+   {
+    "via": "GND @111.75,65.86",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @95.11,47.96",
+    "sob": "U12",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @95.17,49.15",
+    "sob": "U12",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @108.06,41.20",
+    "sob": "U6",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @109.99,33.32",
+    "sob": "D12",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @108.71,40.84",
+    "sob": "U6",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @105.50,34.50",
+    "sob": "D12",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @100.24,56.35",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @108.40,37.17",
+    "sob": "D12",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @106.27,47.35",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @113.95,40.93",
+    "sob": "C7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @112.75,65.86",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @113.57,48.45",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @117.43,48.77",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @115.67,40.27",
+    "sob": "L4",
+    "rede_do_componente": false
+   },
+   {
+    "via": "GND @116.28,42.75",
+    "sob": "L4",
+    "rede_do_componente": false
+   },
+   {
+    "via": "GND @115.82,55.88",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @131.32,55.23",
+    "sob": "D7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @128.85,39.20",
+    "sob": "U13",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @95.26,42.53",
+    "sob": "D11",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @116.00,68.46",
+    "sob": "SW1",
+    "rede_do_componente": false
+   },
+   {
+    "via": "GND @115.22,38.91",
+    "sob": "C6",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @123.60,62.72",
+    "sob": "C40",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @105.98,49.18",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @116.36,69.88",
+    "sob": "SW1",
+    "rede_do_componente": false
+   },
+   {
+    "via": "GND @101.75,65.86",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @108.71,42.14",
+    "sob": "U6",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @117.62,42.20",
+    "sob": "L4",
+    "rede_do_componente": false
+   },
+   {
+    "via": "GND @96.13,33.70",
+    "sob": "L3",
+    "rede_do_componente": false
+   },
+   {
+    "via": "GND @106.75,65.50",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @104.12,50.95",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @132.00,49.50",
+    "sob": "D1",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @137.96,66.47",
+    "sob": "D9",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @107.41,42.14",
+    "sob": "U6",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @108.64,71.37",
+    "sob": "JP1",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @108.25,44.74",
+    "sob": "U6",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @117.09,38.87",
+    "sob": "L4",
+    "rede_do_componente": false
+   },
+   {
+    "via": "GND @108.25,65.86",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @141.58,67.15",
+    "sob": "D8",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @107.41,40.84",
+    "sob": "U6",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @107.60,74.40",
+    "sob": "JP1",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @115.38,48.25",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "BOOT0 @117.49,61.97",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+5V @116.50,54.95",
+    "sob": "U1",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+5V @116.50,54.95",
+    "sob": "U7",
+    "rede_do_componente": false
+   },
+   {
+    "via": "+5V @115.25,53.66",
+    "sob": "U7",
+    "rede_do_componente": false
+   },
+   {
+    "via": "+5V @114.55,54.05",
+    "sob": "Q3",
+    "rede_do_componente": false
+   },
+   {
+    "via": "+5V @114.55,54.05",
+    "sob": "U7",
+    "rede_do_componente": false
+   },
+   {
+    "via": "+5V @121.58,56.42",
+    "sob": "D10",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+5V @123.06,61.99",
+    "sob": "C30",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+5V @117.30,55.00",
+    "sob": "U1",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+5V @117.30,55.00",
+    "sob": "U7",
+    "rede_do_componente": false
+   },
+   {
+    "via": "+5V @119.53,46.44",
+    "sob": "U7",
+    "rede_do_componente": false
+   },
+   {
+    "via": "Net-(D15-A) @134.70,51.50",
+    "sob": "D2",
+    "rede_do_componente": true
+   },
+   {
+    "via": "Net-(D15-A) @134.70,51.50",
+    "sob": "D15",
+    "rede_do_componente": true
+   },
+   {
+    "via": "SBU1 @128.94,67.30",
+    "sob": "D5",
+    "rede_do_componente": true
+   },
+   {
+    "via": "VoltageSens @103.04,55.11",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "12V_Protected @135.93,50.48",
+    "sob": "Q4",
+    "rede_do_componente": true
+   },
+   {
+    "via": "12V_Protected @103.77,52.52",
+    "sob": "U7",
+    "rede_do_componente": false
+   },
+   {
+    "via": "12V_Protected @135.95,49.23",
+    "sob": "Q4",
+    "rede_do_componente": true
+   },
+   {
+    "via": "12V_Protected @134.75,49.42",
+    "sob": "D2",
+    "rede_do_componente": true
+   },
+   {
+    "via": "12V_Protected @134.75,49.42",
+    "sob": "D15",
+    "rede_do_componente": true
+   },
+   {
+    "via": "12V_Protected @134.80,50.35",
+    "sob": "D2",
+    "rede_do_componente": true
+   },
+   {
+    "via": "12V_Protected @134.80,50.35",
+    "sob": "D15",
+    "rede_do_componente": true
+   },
+   {
+    "via": "12V_Protected @134.75,48.60",
+    "sob": "D15",
+    "rede_do_componente": true
+   },
+   {
+    "via": "BUS2_TX @125.36,53.73",
+    "sob": "U9",
+    "rede_do_componente": true
+   },
+   {
+    "via": "BUS2_RX @125.36,56.76",
+    "sob": "U9",
+    "rede_do_componente": true
+   },
+   {
+    "via": "BUS2_STB @127.74,51.65",
+    "sob": "C17",
+    "rede_do_componente": false
+   },
+   {
+    "via": "BUS2_STB @117.37,51.19",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "LED_RED @115.08,64.40",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "USB_PWR @129.78,46.50",
+    "sob": "D1",
+    "rede_do_componente": false
+   },
+   {
+    "via": "BUS1O_TX @102.97,47.67",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "BUS1O_RX @101.51,47.52",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "BUS1O_STB @118.73,59.95",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "LED_GREEN @117.32,64.40",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GREEN- @100.72,66.04",
+    "sob": "U7",
+    "rede_do_componente": false
+   },
+   {
+    "via": "relay_SBU1 @126.90,70.00",
+    "sob": "Q1",
+    "rede_do_componente": false
+   },
+   {
+    "via": "USB_LOAD @110.26,49.90",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+12V @140.74,53.04",
+    "sob": "Q4",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+12V @139.32,53.19",
+    "sob": "Q4",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+12V @140.09,53.19",
+    "sob": "Q4",
+    "rede_do_componente": true
+   },
+   {
+    "via": "+12V @138.55,53.19",
+    "sob": "Q4",
+    "rede_do_componente": true
+   },
+   {
+    "via": "BUS1N_STB @139.07,67.80",
+    "sob": "D8",
+    "rede_do_componente": false
+   },
+   {
+    "via": "BUS1N_STB @118.70,58.85",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "BUS0_TX @118.83,62.32",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "USB_R_D- @113.64,42.75",
+    "sob": "C7",
+    "rede_do_componente": false
+   },
+   {
+    "via": "USB_R_D- @113.64,42.75",
+    "sob": "R20",
+    "rede_do_componente": true
+   },
+   {
+    "via": "USB_R_D+ @113.64,44.78",
+    "sob": "C12",
+    "rede_do_componente": false
+   },
+   {
+    "via": "Net-(JP1-B) @107.30,66.20",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "NRST @111.44,38.14",
+    "sob": "D12",
+    "rede_do_componente": false
+   },
+   {
+    "via": "NRST @105.45,64.40",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "SBU2_ADC @101.29,63.41",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "VCAP @118.19,62.68",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "VCAP @114.51,48.64",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "SBU1_ADC @128.09,69.33",
+    "sob": "D5",
+    "rede_do_componente": false
+   },
+   {
+    "via": "SBU1_ADC @131.01,66.30",
+    "sob": "D13",
+    "rede_do_componente": true
+   },
+   {
+    "via": "SBU1_ADC @100.73,61.66",
+    "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "SWDIO @115.56,43.42",
+    "sob": "L4",
+    "rede_do_componente": false
+   },
+   {
+    "via": "SWDIO @100.12,42.94",
+    "sob": "D11",
+    "rede_do_componente": false
+   },
+   {
+    "via": "SWCLK @119.90,41.93",
+    "sob": "L4",
+    "rede_do_componente": false
+   }
+  ]
+ },
+ "assembly": {
+  "tht": [
+   "U6",
+   "U3",
+   "P1"
+  ],
+  "bottom_side": [
+   "C38",
+   "FB1",
+   "D14",
+   "C52",
+   "C42",
+   "C63",
+   "C23",
+   "C50",
+   "R28",
+   "C62",
+   "D15",
+   "C53",
+   "C46",
+   "C24",
+   "C57",
+   "R30",
+   "D13",
+   "U7",
+   "C59",
+   "C61",
+   "C56",
+   "C43",
+   "C49",
+   "C51",
+   "J1",
+   "R21",
+   "C44",
+   "C54",
+   "R32",
+   "R31",
+   "C41",
+   "FID4",
+   "C40",
+   "C39",
+   "R29",
+   "C45",
+   "FID6",
+   "R20",
+   "R33",
+   "C60",
+   "Y1",
+   "FID5",
+   "C64",
+   "C55",
+   "L5"
+  ],
+  "polarizados": [
+   "D12",
+   "D7",
+   "U12",
+   "D2",
+   "U9",
+   "U1",
+   "U8",
+   "D11",
+   "D9",
+   "Q1",
+   "D5",
+   "D6",
+   "Q2",
+   "D8",
+   "U6",
+   "U5",
+   "D10",
+   "Q3",
+   "Q4",
+   "U10",
+   "U11",
+   "D1",
+   "U3",
+   "P1",
+   "U13",
+   "JP1",
+   "D14",
+   "D15",
+   "D13",
+   "U7",
+   "J1",
+   "Y1"
+  ],
+  "ref_silk_escondida": [
+   "R1",
+   "C47",
+   "C58",
+   "L4",
+   "FID2",
+   "FID3",
+   "C65",
+   "FID1",
+   "U13",
+   "C48",
+   "JP1",
+   "C38",
+   "FB1",
+   "D14",
+   "C52",
+   "C42",
+   "C63",
+   "C50",
+   "R28",
+   "C62",
+   "D15",
+   "C53",
+   "C46",
+   "C57",
+   "R30",
+   "D13",
+   "C59",
+   "C61",
+   "C56",
+   "C43",
+   "C49",
+   "C51",
+   "J1",
+   "R21",
+   "C44",
+   "C54",
+   "R32",
+   "R31",
+   "C41",
+   "FID4",
+   "C40",
+   "C39",
+   "R29",
+   "C45",
+   "FID6",
+   "R20",
+   "R33",
+   "C60",
+   "FID5",
+   "C64",
+   "C55",
+   "L5"
+  ],
+  "fiduciais": [
+   "FID2",
+   "FID3",
+   "FID1",
+   "FID4",
+   "FID6",
+   "FID5"
+  ],
+  "total_fp": 125
+ },
+ "power_tracks": {
+  "+3V3": {
+   "min_w": 0.2,
+   "max_w": 1.0,
+   "len_mm": 320.0,
+   "n": 244,
+   "vias": 49,
+   "min_w_at": "136.64,68.46 F.Cu"
+  },
+  "GND": {
+   "min_w": 0.2,
+   "max_w": 0.8,
+   "len_mm": 215.5,
+   "n": 222,
+   "vias": 96,
+   "min_w_at": "97.94,63.39 F.Cu"
+  },
+  "+5V": {
+   "min_w": 0.2,
+   "max_w": 1.0,
+   "len_mm": 131.3,
+   "n": 95,
+   "vias": 15,
+   "min_w_at": "125.47,55.57 F.Cu"
+  },
+  "USB_PWR": {
+   "min_w": 0.2,
+   "max_w": 1.0,
+   "len_mm": 31.1,
+   "n": 19,
+   "vias": 2,
+   "min_w_at": "119.08,54.38 F.Cu"
+  },
+  "+12V": {
+   "min_w": 0.2,
+   "max_w": 1.5,
+   "len_mm": 34.2,
+   "n": 30,
+   "vias": 4,
+   "min_w_at": "141.40,51.11 F.Cu"
+  }
+ },
+ "acute_angles": 122,
+ "rules": {
+  "min_track_mm": 0.14,
+  "min_via_drill_mm": 0.3,
+  "ds_min_track": 0.127,
+  "ds_min_clear": 0.1,
+  "ds_min_drill": 0.3
+ },
+ "sch_u7_system": {
+  "VCAP": [
+   "VCAP"
+  ],
+  "VDDLDO": [
+   "+3V3"
+  ],
+  "VDDSMPS": [
+   "+3V3"
+  ],
+  "VSSSMPS": [
+   "GND"
+  ],
+  "VLXSMPS": [
+   "VLXSMPS"
+  ],
+  "VFBSMPS": [
+   "VCAP"
+  ],
+  "VDD50USB": [
+   "+3V3"
+  ],
+  "VDD33USB": [
+   "+3V3"
+  ],
+  "VREF+": [
+   "VDDA"
+  ],
+  "VDDA": [
+   "VDDA"
+  ],
+  "VSSA": [
+   "GND"
+  ],
+  "VBAT": [
+   "+3V3"
+  ],
+  "BOOT0": [
+   "BOOT0"
+  ],
+  "NRST": [
+   "NRST"
+  ],
+  "PDR_ON": [
+   "+3V3"
+  ],
+  "PH0/OSC_IN": [
+   "HSE_IN"
+  ],
+  "PH1/OSC_OUT": [
+   "HSE_OUT"
+  ],
+  "PF7": [
+   "GND"
+  ],
+  "PF8": [
+   "GND"
+  ],
+  "PF9": [
+   "Net-(JP1-B)"
+  ],
+  "PF10": [
+   "GND"
+  ]
+ },
+ "sch_single_pin_nets": {},
+ "bom": [
+  {
+   "refs": "C1,C2,C5,C11,C14,C26-C33",
+   "value": "100NF",
+   "footprint": "C_0402_1005Metric",
+   "qty": "13",
+   "notas": []
+  },
+  {
+   "refs": "C3,C10,C16-C21",
+   "value": "47uF",
+   "footprint": "C_0805_2012Metric",
+   "qty": "8",
+   "notas": []
+  },
+  {
+   "refs": "C4,C12",
+   "value": "10uF",
+   "footprint": "C_0805_2012Metric",
+   "qty": "2",
+   "notas": []
+  },
+  {
+   "refs": "C6,C7",
+   "value": "2.2uF",
+   "footprint": "C_0805_2012Metric",
+   "qty": "2",
+   "notas": []
+  },
+  {
+   "refs": "C8",
+   "value": "10uF",
+   "footprint": "C_0402_1005Metric",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "C23,C24",
+   "value": "18pF",
+   "footprint": "C_0402_1005Metric",
+   "qty": "2",
+   "notas": []
+  },
+  {
+   "refs": "C34",
+   "value": "0.1uF",
+   "footprint": "C_0402_1005Metric",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "C37",
+   "value": "10nF (LOW ESR)",
+   "footprint": "C_0402_1005Metric",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "C38,C44-C59",
+   "value": "100nF",
+   "footprint": "C_0402_1005Metric",
+   "qty": "17",
+   "notas": [
+    "VCAP: exigir ESR < 100 mΩ, X7R/X5R, ≥6,3 V (DS13311 §6.3.2)"
+   ]
+  },
+  {
+   "refs": "C39,C40",
+   "value": "2.2uF",
+   "footprint": "C_0603_1608Metric",
+   "qty": "2",
+   "notas": [
+    "VCAP: exigir ESR < 100 mΩ, X7R/X5R, ≥6,3 V (DS13311 §6.3.2)"
+   ]
+  },
+  {
+   "refs": "C41",
+   "value": "220pF",
+   "footprint": "C_0402_1005Metric",
+   "qty": "1",
+   "notas": [
+    "SMPS Cin/Cfilt (DS13311 §6.3.3)"
+   ]
+  },
+  {
+   "refs": "C42",
+   "value": "10uF",
+   "footprint": "C_0805_2012Metric",
+   "qty": "1",
+   "notas": [
+    "SMPS Cout 10 µF ESR 20 mΩ (DS13311 §6.3.3)"
+   ]
+  },
+  {
+   "refs": "C43,C63",
+   "value": "1uF",
+   "footprint": "C_0402_1005Metric",
+   "qty": "2",
+   "notas": []
+  },
+  {
+   "refs": "C60-C62,C65",
+   "value": "4.7uF",
+   "footprint": "C_0603_1608Metric",
+   "qty": "4",
+   "notas": []
+  },
+  {
+   "refs": "C64",
+   "value": "2.2uF",
+   "footprint": "C_0402_1005Metric",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "D1",
+   "value": "SMAJ16CA-13-F",
+   "footprint": "DIOM4325X250N",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "D2",
+   "value": "BAS40WS 43",
+   "footprint": "D_SOD-323",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "D5-D9",
+   "value": "PESD2CAN,215",
+   "footprint": "SOT95P230X110-3N",
+   "qty": "5",
+   "notas": []
+  },
+  {
+   "refs": "D10",
+   "value": "BAS70H 115",
+   "footprint": "D_SOD-123F",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "D11",
+   "value": "B320AE-13",
+   "footprint": "D_SMA",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "D12",
+   "value": "SM540C",
+   "footprint": "D_SMC",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "D13,D14",
+   "value": "BAT54S",
+   "footprint": "SOT-23",
+   "qty": "2",
+   "notas": []
+  },
+  {
+   "refs": "D15",
+   "value": "BZT52C12",
+   "footprint": "D_SOD-123",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "FB1",
+   "value": "600R@100MHz",
+   "footprint": "L_0603_1608Metric",
+   "qty": "1",
+   "notas": [
+    "ferrite VDDA: PROVISÓRIO (ex. BLM18 600 Ω/100 MHz)"
+   ]
+  },
+  {
+   "refs": "J1",
+   "value": "SWD",
+   "footprint": "PinHeader_2x05_P1.27mm_Vertical_SMD",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "JP1",
+   "value": "HW_ID1",
+   "footprint": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+   "qty": "1",
+   "notas": [
+    "sem MPN"
+   ]
+  },
+  {
+   "refs": "L3",
+   "value": "47uH 2A - SMMS0650-470M",
+   "footprint": "IND-SMD_L7.3-W6.8",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "L4",
+   "value": "15uH",
+   "footprint": "L_10.5x11.5_H4.0",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "L5",
+   "value": "2.2uH DFE201610E-2R2M",
+   "footprint": "L_Murata_DFE201610P",
+   "qty": "1",
+   "notas": [
+    "DFE201610E 2,2 µH: Isat ≥ 1,7 A / DCR ≤ 150 mΩ (PROVISÓRIO)"
+   ]
+  },
+  {
+   "refs": "P1",
+   "value": "TYPE-C-31-M-04",
+   "footprint": "USB-C-SMD_TYPE-C-USB-20",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "Q1,Q2",
+   "value": "DDTA143ECA-7-F P08",
+   "footprint": "SOT23-3",
+   "qty": "2",
+   "notas": []
+  },
+  {
+   "refs": "Q3",
+   "value": "PDTC114EU",
+   "footprint": "SOT-323_SC-70",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "Q4",
+   "value": "HY12P03C2",
+   "footprint": "PowerPAK_SO-8_Single",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "R1",
+   "value": "10k",
+   "footprint": "R_0603_1608Metric",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "R2",
+   "value": "1K",
+   "footprint": "R_0402_1005Metric",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "R3,R9,R23,R24,R26",
+   "value": "10K",
+   "footprint": "R_0402_1005Metric",
+   "qty": "5",
+   "notas": []
+  },
+  {
+   "refs": "R5",
+   "value": "10K (1%)",
+   "footprint": "R_0402_1005Metric",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "R6",
+   "value": "3.16K (1%)",
+   "footprint": "R_0603_1608Metric",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "R14-R16,R28-R33",
+   "value": "10k",
+   "footprint": "R_0402_1005Metric",
+   "qty": "9",
+   "notas": []
+  },
+  {
+   "refs": "R17",
+   "value": "180R",
+   "footprint": "R_0402_1005Metric",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "R18",
+   "value": "110R",
+   "footprint": "R_0402_1005Metric",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "R19",
+   "value": "100R",
+   "footprint": "R_0402_1005Metric",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "R20,R21",
+   "value": "22R",
+   "footprint": "R_0402_1005Metric",
+   "qty": "2",
+   "notas": []
+  },
+  {
+   "refs": "R27",
+   "value": "2.4K",
+   "footprint": "R_0402_1005Metric",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "SW1",
+   "value": "SW_Push",
+   "footprint": "SW_SPST_SKQG_WithStem",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "U1",
+   "value": "AP22615AWU-7",
+   "footprint": "SOT-23-6",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "U3",
+   "value": "10_0_QHHTZB6_3",
+   "footprint": "USB-A-TH_10.0QHHTZB6.3",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "U5",
+   "value": "FM-B1921RGBA-SH",
+   "footprint": "LED-ARRAY-SMD_4P-L2.2-W2.1-BR",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "U6",
+   "value": "TPS5450DDAR",
+   "footprint": "CONV_TPS5450DDAR",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "U7",
+   "value": "STM32H725ZGT6",
+   "footprint": "LQFP-144_20x20mm_P0.5mm",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "U8-U11",
+   "value": "TJA1042TK-3",
+   "footprint": "DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm",
+   "qty": "4",
+   "notas": []
+  },
+  {
+   "refs": "U12",
+   "value": "XL1509-3.3",
+   "footprint": "Diodes_PSOP-8",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "U13",
+   "value": "USBLC6-2SC6",
+   "footprint": "SOT-23-6",
+   "qty": "1",
+   "notas": []
+  },
+  {
+   "refs": "Y1",
+   "value": "25MHz X322525MOB4SI",
+   "footprint": "Crystal_SMD_3225-4Pin_3.2x2.5mm",
+   "qty": "1",
+   "notas": [
+    "25 MHz: CL = 2·(C_load − C_stray) — C de carga 15 pF PROVISÓRIO; validar com CL do cristal escolhido"
+   ]
+  }
+ ],
+ "seconds": 21.2,
+ "by_severity": {
+  "ALTO": 9,
+  "INFO": 19,
+  "MEDIO": 2,
+  "BAIXO": 1
+ }
+}

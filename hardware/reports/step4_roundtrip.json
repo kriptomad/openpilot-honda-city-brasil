@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "script": "step4_roundtrip",
+    "started": "2026-10-23T09:03:04",
+    "dry_run": false,
+    "output_root": "C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616",
+    "python": "3.13.9"
+  },
+  "summary": {
+    "roundtrip_ok": true
+  },
+  "events": [
+    {
+      "t": 0.074,
+      "level": "INFO",
+      "msg": "kiutils schematic loaded",
+      "symbols": 179,
+      "wires": 399,
+      "labels": 0,
+      "version": 20230121
+    },
+    {
+      "t": 1.726,
+      "level": "INFO",
+      "msg": "netlist compare",
+      "tuples_original": 348,
+      "tuples_roundtrip": 348,
+      "only_original": 0,
+      "only_roundtrip": 0
+    },
+    {
+      "t": 2.547,
+      "level": "INFO",
+      "msg": "pcbnew board round-trip",
+      "footprints": 86,
+      "pads": 387,
+      "tracks": 998,
+      "zones": 11,
+      "nets": 107,
+      "footprints_equal": true,
+      "pads_equal": true,
+      "tracks_equal": true,
+      "zones_equal": true,
+      "ok": true
+    }
+  ],
+  "finished": "2026-10-23T09:03:07"
+}

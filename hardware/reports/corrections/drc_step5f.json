@@ -1,0 +1,2563 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T09:30:03",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "HybridPanda.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actual 0,1444 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 0 [GND] of P1",
+                    "pos": {
+                        "x": 136.180072,
+                        "y": 63.010048
+                    },
+                    "uuid": "54a9f320-30f7-4648-b630-aec37cffb924"
+                },
+                {
+                    "description": "NPTH pad of P1",
+                    "pos": {
+                        "x": 134.940042,
+                        "y": 62.554879
+                    },
+                    "uuid": "3537f85f-94c3-4945-a43e-c54c5ef0310d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actual 0,1444 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 0 [GND] of P1",
+                    "pos": {
+                        "x": 136.180072,
+                        "y": 63.010048
+                    },
+                    "uuid": "54a9f320-30f7-4648-b630-aec37cffb924"
+                },
+                {
+                    "description": "NPTH pad of P1",
+                    "pos": {
+                        "x": 134.940042,
+                        "y": 62.554879
+                    },
+                    "uuid": "3537f85f-94c3-4945-a43e-c54c5ef0310d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actual 0,1444 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 0 [GND] of P1",
+                    "pos": {
+                        "x": 136.180072,
+                        "y": 63.010048
+                    },
+                    "uuid": "54a9f320-30f7-4648-b630-aec37cffb924"
+                },
+                {
+                    "description": "NPTH pad of P1",
+                    "pos": {
+                        "x": 134.940042,
+                        "y": 62.554879
+                    },
+                    "uuid": "3537f85f-94c3-4945-a43e-c54c5ef0310d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actual 0,1444 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 0 [GND] of P1",
+                    "pos": {
+                        "x": 136.180072,
+                        "y": 63.010048
+                    },
+                    "uuid": "54a9f320-30f7-4648-b630-aec37cffb924"
+                },
+                {
+                    "description": "NPTH pad of P1",
+                    "pos": {
+                        "x": 134.940042,
+                        "y": 62.554879
+                    },
+                    "uuid": "3537f85f-94c3-4945-a43e-c54c5ef0310d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actual 0,1443 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 0 [GND] of P1",
+                    "pos": {
+                        "x": 136.180072,
+                        "y": 54.749952
+                    },
+                    "uuid": "1f7c6ebc-dcc0-47cf-8058-db09994f81e8"
+                },
+                {
+                    "description": "NPTH pad of P1",
+                    "pos": {
+                        "x": 134.940042,
+                        "y": 55.204867
+                    },
+                    "uuid": "c2c21dd7-2782-4dc3-9789-16d006076289"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actual 0,1443 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 0 [GND] of P1",
+                    "pos": {
+                        "x": 136.180072,
+                        "y": 54.749952
+                    },
+                    "uuid": "1f7c6ebc-dcc0-47cf-8058-db09994f81e8"
+                },
+                {
+                    "description": "NPTH pad of P1",
+                    "pos": {
+                        "x": 134.940042,
+                        "y": 55.204867
+                    },
+                    "uuid": "c2c21dd7-2782-4dc3-9789-16d006076289"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actual 0,1443 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 0 [GND] of P1",
+                    "pos": {
+                        "x": 136.180072,
+                        "y": 54.749952
+                    },
+                    "uuid": "1f7c6ebc-dcc0-47cf-8058-db09994f81e8"
+                },
+                {
+                    "description": "NPTH pad of P1",
+                    "pos": {
+                        "x": 134.940042,
+                        "y": 55.204867
+                    },
+                    "uuid": "c2c21dd7-2782-4dc3-9789-16d006076289"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0,2500 mm; actual 0,1443 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 0 [GND] of P1",
+                    "pos": {
+                        "x": 136.180072,
+                        "y": 54.749952
+                    },
+                    "uuid": "1f7c6ebc-dcc0-47cf-8058-db09994f81e8"
+                },
+                {
+                    "description": "NPTH pad of P1",
+                    "pos": {
+                        "x": 134.940042,
+                        "y": 55.204867
+                    },
+                    "uuid": "c2c21dd7-2782-4dc3-9789-16d006076289"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole size out of range (board setup constraints min hole 0,3000 mm; actual 0,2500 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.125,
+                        "y": 50.945
+                    },
+                    "uuid": "d02771eb-9657-4523-8e1d-887bcaed7462"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Segment of U3 on F.Silkscreen",
+                    "pos": {
+                        "x": 133.397019,
+                        "y": 32.413885
+                    },
+                    "uuid": "fa981cbe-1b73-4223-aecb-64836a9c51d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Segment of U3 on F.Silkscreen",
+                    "pos": {
+                        "x": 143.55704,
+                        "y": 47.145915
+                    },
+                    "uuid": "90478043-66c4-42dc-87b0-666a5e56b1a2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Segment of P1 on F.Silkscreen",
+                    "pos": {
+                        "x": 143.107022,
+                        "y": 54.38
+                    },
+                    "uuid": "243818ee-e5c7-4382-ac2b-320091170a04"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Segment of P1 on F.Silkscreen",
+                    "pos": {
+                        "x": 143.107022,
+                        "y": 63.38
+                    },
+                    "uuid": "51031052-8579-43f3-ab11-d98bb0866760"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C14",
+                    "pos": {
+                        "x": 102.445,
+                        "y": 51.985
+                    },
+                    "uuid": "04de2401-2753-4aae-aa35-c1a95552c314"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R27",
+                    "pos": {
+                        "x": 117.48,
+                        "y": 55.75
+                    },
+                    "uuid": "0b463a10-e560-467c-9b60-8b38b8772d5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint D7",
+                    "pos": {
+                        "x": 131.24,
+                        "y": 55.24
+                    },
+                    "uuid": "0c47f109-2869-4efd-92e8-34b9a65f7737"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C10",
+                    "pos": {
+                        "x": 109.63,
+                        "y": 47.33
+                    },
+                    "uuid": "0d037015-dc79-4794-bf3f-5e129bcab677"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R23",
+                    "pos": {
+                        "x": 121.675,
+                        "y": 70.2
+                    },
+                    "uuid": "0d2cb21f-4e5a-48af-ba1e-1bf383833646"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R24",
+                    "pos": {
+                        "x": 130.675,
+                        "y": 68.5
+                    },
+                    "uuid": "13e9b04a-3f0c-46ce-b36b-9447d39609be"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R5",
+                    "pos": {
+                        "x": 108.31,
+                        "y": 45.39
+                    },
+                    "uuid": "1866b60a-06ef-43a1-ad93-b22a2986af80"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Diodes_PSOP-8' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U12",
+                    "pos": {
+                        "x": 97.74,
+                        "y": 46.83
+                    },
+                    "uuid": "1ca779e4-ed8d-495e-9fa2-47eb99f78245"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 103.65,
+                        "y": 50.325
+                    },
+                    "uuid": "2180c155-ed34-49e7-8215-e499917b3044"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C37",
+                    "pos": {
+                        "x": 103.8,
+                        "y": 40.225
+                    },
+                    "uuid": "27bf1f6b-c3bb-4934-b9be-42c1ab88ef3b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R16",
+                    "pos": {
+                        "x": 97.065,
+                        "y": 59.335
+                    },
+                    "uuid": "2d7d905f-6a86-4ee2-bdd3-c082dce4daaa"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C28",
+                    "pos": {
+                        "x": 141.9125,
+                        "y": 69.562
+                    },
+                    "uuid": "2d9820d7-af2e-4535-8dfa-d21f34ec92cd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U9",
+                    "pos": {
+                        "x": 127.02,
+                        "y": 55.245
+                    },
+                    "uuid": "301e5505-10c7-4272-b5d2-2f3051556e31"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R19",
+                    "pos": {
+                        "x": 104.68,
+                        "y": 67.46
+                    },
+                    "uuid": "35782a08-ea57-499d-851d-78d41327c1bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C27",
+                    "pos": {
+                        "x": 128.33,
+                        "y": 57.535
+                    },
+                    "uuid": "3ac142d1-5997-40a6-aa31-bc77d430db72"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R9",
+                    "pos": {
+                        "x": 120.875,
+                        "y": 51.675
+                    },
+                    "uuid": "3dca25b9-6df2-4b36-97a9-a295e9960cd3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT-23-6' does not match copy in library 'Package_TO_SOT_SMD'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 118.3125,
+                        "y": 53.425
+                    },
+                    "uuid": "4333b92e-e347-4c8f-b82a-806c8ec6250d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C18",
+                    "pos": {
+                        "x": 112.37,
+                        "y": 46.7
+                    },
+                    "uuid": "441d35a3-7a34-40d6-b094-61186da73131"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C11",
+                    "pos": {
+                        "x": 112.025,
+                        "y": 55.885
+                    },
+                    "uuid": "4470a828-03a4-4ce3-9e7b-0385d96f1d77"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U8",
+                    "pos": {
+                        "x": 127.1175,
+                        "y": 61.51
+                    },
+                    "uuid": "4b966269-6289-4d3c-9cf0-545505f6968d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C29",
+                    "pos": {
+                        "x": 137.2525,
+                        "y": 69.552
+                    },
+                    "uuid": "4c7c524b-48a4-4112-8aa8-b4b9bd366728"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R18",
+                    "pos": {
+                        "x": 103.67,
+                        "y": 67.46
+                    },
+                    "uuid": "5aed9885-2eeb-452d-a191-a2b15be50f15"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C20",
+                    "pos": {
+                        "x": 116.4,
+                        "y": 47.825
+                    },
+                    "uuid": "5d7e45c6-052e-4218-8d6c-8578dc0c2f70"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C30",
+                    "pos": {
+                        "x": 123.46,
+                        "y": 61.51
+                    },
+                    "uuid": "608faeb4-bf2c-4e1a-947d-30d2e8a7a29c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint D9",
+                    "pos": {
+                        "x": 136.93,
+                        "y": 66.22
+                    },
+                    "uuid": "60fd2a5c-43f9-4f41-a8ae-36456f518ae3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT23-3' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint Q1",
+                    "pos": {
+                        "x": 125.55,
+                        "y": 71.35
+                    },
+                    "uuid": "6b991e2c-bfd1-4063-8250-d77127f423d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C32",
+                    "pos": {
+                        "x": 139.6525,
+                        "y": 74.052
+                    },
+                    "uuid": "6e26cda2-1f0b-4e74-8cd9-bfa5f0cd3b5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C21",
+                    "pos": {
+                        "x": 118.475,
+                        "y": 47.825
+                    },
+                    "uuid": "6e6f2f20-4a62-4a44-a8e1-d999b0fdf563"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint D5",
+                    "pos": {
+                        "x": 127.325,
+                        "y": 67.65
+                    },
+                    "uuid": "73704966-8cae-4809-989b-d2d4ecc12698"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R17",
+                    "pos": {
+                        "x": 102.66,
+                        "y": 67.45
+                    },
+                    "uuid": "772ea7c6-1af6-4503-bc15-81dc4e4c13b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint D6",
+                    "pos": {
+                        "x": 131.22,
+                        "y": 62.46
+                    },
+                    "uuid": "7ae74b2f-03e8-4c73-a168-76d3f9c9def7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT23-3' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint Q2",
+                    "pos": {
+                        "x": 128.8,
+                        "y": 71.35
+                    },
+                    "uuid": "7bf54be9-9d9d-4f6f-84bc-757bebf528c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C12",
+                    "pos": {
+                        "x": 113.635,
+                        "y": 43.9
+                    },
+                    "uuid": "84ba9a39-f8ea-4e95-b6f1-ac9b26a8021e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C19",
+                    "pos": {
+                        "x": 114.37,
+                        "y": 46.7
+                    },
+                    "uuid": "886e2174-d7fd-400a-ba9d-a619475133c8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint D8",
+                    "pos": {
+                        "x": 140.539998,
+                        "y": 66.22
+                    },
+                    "uuid": "95b49ab4-c370-41cd-87af-75c52e37f927"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'CONV_TPS5450DDAR' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint U6",
+                    "pos": {
+                        "x": 108.06,
+                        "y": 42.14
+                    },
+                    "uuid": "981ce348-4cf2-4530-b4d2-e5d0d4f560a0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C17",
+                    "pos": {
+                        "x": 127.3,
+                        "y": 51.65
+                    },
+                    "uuid": "98c0d906-5f05-409d-9cb3-82a81581c31d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 103.1,
+                        "y": 44.625
+                    },
+                    "uuid": "9cd0fa05-54b5-401f-adc7-9108a004d671"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 98.425,
+                        "y": 64.435
+                    },
+                    "uuid": "9e70049b-270b-4c38-8ee7-db60a9f3835e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'LED-ARRAY-SMD_4P-L2.2-W2.1-BR' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint U5",
+                    "pos": {
+                        "x": 104.025,
+                        "y": 70.175
+                    },
+                    "uuid": "a3ec704c-cc8d-494f-838f-68fbe4f560ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+            "items": [
+                {
+                    "description": "Footprint FID2",
+                    "pos": {
+                        "x": 140.484998,
+                        "y": 76.710002
+                    },
+                    "uuid": "a5dc672d-8132-4a5c-b63c-d308de338c97"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'IND-SMD_L7.3-W6.8' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint L3",
+                    "pos": {
+                        "x": 97.25,
+                        "y": 36.025
+                    },
+                    "uuid": "a7521b3b-2142-47b4-ad5a-7b5b11ec26c3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+            "items": [
+                {
+                    "description": "Footprint FID3",
+                    "pos": {
+                        "x": 96.759999,
+                        "y": 35.26
+                    },
+                    "uuid": "afae8b79-bfb6-4cb9-bab0-151c286ced24"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C31",
+                    "pos": {
+                        "x": 123.625,
+                        "y": 55.35
+                    },
+                    "uuid": "b18b44b5-45d2-4f1e-85de-2af9ea6ca68b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT-323_SC-70' does not match copy in library 'Package_TO_SOT_SMD'",
+            "items": [
+                {
+                    "description": "Footprint Q3",
+                    "pos": {
+                        "x": 113.425,
+                        "y": 53.025
+                    },
+                    "uuid": "b624e904-da82-4809-8d8d-00e37bd15264"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PowerPAK_SO-8_Single' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint Q4",
+                    "pos": {
+                        "x": 138.6,
+                        "y": 50.475
+                    },
+                    "uuid": "b728cfaf-e177-42f3-9080-39070bfc95c2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 113.635,
+                        "y": 37.85
+                    },
+                    "uuid": "bb1b3107-151c-4a44-95db-dd3c3f7b8dcb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U10",
+                    "pos": {
+                        "x": 139.645,
+                        "y": 70.4
+                    },
+                    "uuid": "bd1a5fec-ff84-4fac-a4db-e91547e4d548"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C16",
+                    "pos": {
+                        "x": 93.47,
+                        "y": 44.86
+                    },
+                    "uuid": "c29d4f0d-623a-4249-9cd7-f1e318ce396f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C8",
+                    "pos": {
+                        "x": 115.7025,
+                        "y": 54.635
+                    },
+                    "uuid": "c33f3c98-3e49-469a-842b-ad47eef6b0a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U11",
+                    "pos": {
+                        "x": 134.98,
+                        "y": 70.372
+                    },
+                    "uuid": "cb383547-35cc-4aee-a0a2-4bd2bda8cf6f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R15",
+                    "pos": {
+                        "x": 97.065,
+                        "y": 58.315
+                    },
+                    "uuid": "cbb7a860-e00a-4f5b-81ac-95a1aa01a755"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'DIOM4325X250N' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 131.225,
+                        "y": 49.8
+                    },
+                    "uuid": "cefc3c7a-7646-4878-a357-4f599daf8692"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 97.425,
+                        "y": 56.535
+                    },
+                    "uuid": "d3ff01b0-900d-4e63-bc02-ce790f309a3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C5",
+                    "pos": {
+                        "x": 109.875,
+                        "y": 65.535
+                    },
+                    "uuid": "d531bc23-3551-4e96-8228-25a6e350e518"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C26",
+                    "pos": {
+                        "x": 127.96,
+                        "y": 63.78
+                    },
+                    "uuid": "d999ced4-4372-49fe-9ea0-688e9912652a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C33",
+                    "pos": {
+                        "x": 134.8925,
+                        "y": 74.022
+                    },
+                    "uuid": "dcade19c-5e03-47be-8f07-2f676ea60fa4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R14",
+                    "pos": {
+                        "x": 113.56,
+                        "y": 58.1
+                    },
+                    "uuid": "ddfe9f7e-7c87-4528-b6ec-72d1d8d87100"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+            "items": [
+                {
+                    "description": "Footprint FID1",
+                    "pos": {
+                        "x": 93.96,
+                        "y": 72.310002
+                    },
+                    "uuid": "de6699c9-5a3d-430f-8750-993947cb7365"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R3",
+                    "pos": {
+                        "x": 103.65,
+                        "y": 49.325
+                    },
+                    "uuid": "de98c4b5-c2a5-411d-8239-83087a63b8a2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R26",
+                    "pos": {
+                        "x": 115.7125,
+                        "y": 52.665
+                    },
+                    "uuid": "e0492c47-aa7e-4bfe-b922-fb257a2e6492"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'USB-C-SMD_TYPE-C-USB-20' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint P1",
+                    "pos": {
+                        "x": 137.485,
+                        "y": 58.88
+                    },
+                    "uuid": "e9d49a08-3f11-4d1a-a7c1-56f7b7e34b27"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C34",
+                    "pos": {
+                        "x": 119.45,
+                        "y": 51.225
+                    },
+                    "uuid": "e9efbbdb-5bae-49dc-9379-6a7decf925b6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C7",
+                    "pos": {
+                        "x": 113.635,
+                        "y": 41.8833
+                    },
+                    "uuid": "f01acd8c-3e90-4727-b00d-60c31d3a6ac8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C6",
+                    "pos": {
+                        "x": 113.635,
+                        "y": 39.8667
+                    },
+                    "uuid": "fa4091f1-bd4f-4d75-8898-8ca1b35f0728"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C23",
+                    "pos": {
+                        "x": 108.6828,
+                        "y": 70.1453
+                    },
+                    "uuid": "3629e877-423d-4419-84c1-f86c5959f114"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C24",
+                    "pos": {
+                        "x": 102.3172,
+                        "y": 70.1453
+                    },
+                    "uuid": "57b4d8ea-91d7-4617-99d1-037cfce30156"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R21",
+                    "pos": {
+                        "x": 114.25,
+                        "y": 44.25
+                    },
+                    "uuid": "90e39039-09cb-4966-b38f-67dbc12f60f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+            "items": [
+                {
+                    "description": "Footprint FID4",
+                    "pos": {
+                        "x": 93.96,
+                        "y": 72.310002
+                    },
+                    "uuid": "a90387d8-db33-46de-bfcf-d200661bfdf1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+            "items": [
+                {
+                    "description": "Footprint FID6",
+                    "pos": {
+                        "x": 93.96,
+                        "y": 43.66
+                    },
+                    "uuid": "cd63b18e-4ddf-4dc4-a694-668df5c12ffa"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R20",
+                    "pos": {
+                        "x": 114.25,
+                        "y": 43.15
+                    },
+                    "uuid": "d14ff9c1-3bfc-460f-979c-cb31d8e01ed9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Crystal_SMD_3225-4Pin_3.2x2.5mm' does not match copy in library 'Crystal'",
+            "items": [
+                {
+                    "description": "Footprint Y1",
+                    "pos": {
+                        "x": 105.5,
+                        "y": 71.0125
+                    },
+                    "uuid": "e5cd965a-3afd-42da-858c-50349fc918f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+            "items": [
+                {
+                    "description": "Footprint FID5",
+                    "pos": {
+                        "x": 140.484998,
+                        "y": 35.26
+                    },
+                    "uuid": "e663b141-ba85-4d79-b3a8-95b056aa8d82"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C14",
+                    "pos": {
+                        "x": 101.705,
+                        "y": 51.995
+                    },
+                    "uuid": "f821a95b-59d4-4bac-b7ca-6f8d226dc932"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of SW1",
+                    "pos": {
+                        "x": 116.02,
+                        "y": 68.83
+                    },
+                    "uuid": "1eed01e9-a589-4fb7-9ab8-b45dbfddc991"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of D12",
+                    "pos": {
+                        "x": 112.4,
+                        "y": 33.245
+                    },
+                    "uuid": "dd5bdef5-7902-41ea-bbd3-510273e4cda9"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of R27",
+                    "pos": {
+                        "x": 117.348,
+                        "y": 56.642
+                    },
+                    "uuid": "975d273a-9e94-48ae-9c1a-d2013b774ee9"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of D7",
+                    "pos": {
+                        "x": 130.12,
+                        "y": 54.38
+                    },
+                    "uuid": "aa7d0dad-7560-4fbe-85b5-1d40486ec15d"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C10",
+                    "pos": {
+                        "x": 109.34,
+                        "y": 48.58
+                    },
+                    "uuid": "fe606d2f-533d-4df9-bd0a-db5e5c4fead3"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of R23",
+                    "pos": {
+                        "x": 120.88,
+                        "y": 70.21
+                    },
+                    "uuid": "d5ec42d9-4150-49f8-828e-879a8d870a19"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of R24",
+                    "pos": {
+                        "x": 131.6,
+                        "y": 68.51
+                    },
+                    "uuid": "eeaf9007-459f-4d42-a8c5-230fff7afcb5"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of R5",
+                    "pos": {
+                        "x": 107.77,
+                        "y": 46.26
+                    },
+                    "uuid": "bcf69eaf-8e5c-41f5-98e9-196b20b9e2bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of U12",
+                    "pos": {
+                        "x": 101.04,
+                        "y": 46.83
+                    },
+                    "uuid": "528e87e8-1b4f-4f48-9e68-c465fd52e35d"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of R2",
+                    "pos": {
+                        "x": 102.13,
+                        "y": 50.33
+                    },
+                    "uuid": "8aa848d6-50ba-4f43-8685-28b6b51d927a"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C37",
+                    "pos": {
+                        "x": 102.95,
+                        "y": 40.19
+                    },
+                    "uuid": "adf57f80-92e9-4829-957a-4e1742d4dd3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of D2",
+                    "pos": {
+                        "x": 133.68,
+                        "y": 48.16
+                    },
+                    "uuid": "ae2a8f45-b989-4c2e-b874-4c92e0894391"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of R16",
+                    "pos": {
+                        "x": 98.615,
+                        "y": 59.365
+                    },
+                    "uuid": "aa59ed81-7b5d-4f0d-83a7-7cad91071673"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C28",
+                    "pos": {
+                        "x": 142.06,
+                        "y": 67.92
+                    },
+                    "uuid": "cf3b2836-c0b5-4c7b-8bda-d092967414cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of U9",
+                    "pos": {
+                        "x": 124.96,
+                        "y": 53.35
+                    },
+                    "uuid": "08980029-c2ce-4719-a8e5-97a88e7ffa2d"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of R19",
+                    "pos": {
+                        "x": 105.59,
+                        "y": 67.47
+                    },
+                    "uuid": "c04f0ac1-0f3f-40c7-9f4f-383924bdc05b"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C27",
+                    "pos": {
+                        "x": 128.32,
+                        "y": 58.4
+                    },
+                    "uuid": "9767cbed-9525-4530-b97e-95d927a15c77"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of R9",
+                    "pos": {
+                        "x": 121.75,
+                        "y": 52.03
+                    },
+                    "uuid": "7629c2cb-d602-4294-a7a0-31f4c5435b70"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of U1",
+                    "pos": {
+                        "x": 117.79,
+                        "y": 51.5
+                    },
+                    "uuid": "f6a8e846-e3e4-4a1f-b57e-596e1ee2c384"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C18",
+                    "pos": {
+                        "x": 112.385,
+                        "y": 48.72
+                    },
+                    "uuid": "4e556f0e-3763-4685-b9a8-144779b340f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C11",
+                    "pos": {
+                        "x": 112.725,
+                        "y": 55.855
+                    },
+                    "uuid": "e557362d-51cf-4195-8c55-b4b2c1930f2c"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of U8",
+                    "pos": {
+                        "x": 125.09,
+                        "y": 59.53
+                    },
+                    "uuid": "0cfa4747-3d23-4854-844a-f3d05d9a8c52"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C29",
+                    "pos": {
+                        "x": 137.2675,
+                        "y": 68.417
+                    },
+                    "uuid": "86d39629-0f88-431d-8fd6-6eb0765026d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of R18",
+                    "pos": {
+                        "x": 103.67,
+                        "y": 68.67
+                    },
+                    "uuid": "7aedd011-6c32-4759-af97-3ddbbf5c3930"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C20",
+                    "pos": {
+                        "x": 116.38,
+                        "y": 49.83
+                    },
+                    "uuid": "0139f66a-98bf-4ea0-8ec6-e48121cf13b7"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of D11",
+                    "pos": {
+                        "x": 101.3,
+                        "y": 42.2
+                    },
+                    "uuid": "1958b045-470e-4c27-ab06-b84a311848d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C30",
+                    "pos": {
+                        "x": 122.77,
+                        "y": 61.51
+                    },
+                    "uuid": "5b394403-cb07-4170-9e2f-03da85bf768e"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of D9",
+                    "pos": {
+                        "x": 135.71,
+                        "y": 67.3
+                    },
+                    "uuid": "96382667-2ebc-4a3d-b37e-9a63d262a4bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C32",
+                    "pos": {
+                        "x": 138.01,
+                        "y": 74.19
+                    },
+                    "uuid": "c331dac1-02cb-4f6c-8ff1-b357430962f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C21",
+                    "pos": {
+                        "x": 118.47,
+                        "y": 49.82
+                    },
+                    "uuid": "4bbea2db-1022-44e1-946c-f8cc838f1a66"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of D5",
+                    "pos": {
+                        "x": 128.51,
+                        "y": 68.57
+                    },
+                    "uuid": "008360f0-8d23-41f3-901f-1b2151f63bb2"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of R17",
+                    "pos": {
+                        "x": 101.9,
+                        "y": 67.45
+                    },
+                    "uuid": "152fc61e-4a9f-47a1-b2ae-7ea782fb5441"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of D6",
+                    "pos": {
+                        "x": 130.08,
+                        "y": 61.63
+                    },
+                    "uuid": "04c92876-a528-490e-9a02-64d469362f93"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C12",
+                    "pos": {
+                        "x": 115.45,
+                        "y": 43.88
+                    },
+                    "uuid": "670df32e-ac80-48bf-84c4-3a591e30e044"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C19",
+                    "pos": {
+                        "x": 114.235,
+                        "y": 48.71
+                    },
+                    "uuid": "dec847b5-52b9-46ac-ac33-d174234c7757"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of D8",
+                    "pos": {
+                        "x": 139.539998,
+                        "y": 67.35
+                    },
+                    "uuid": "ae5052a8-f2e3-414d-9bd3-2a34c61d2a61"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of U6",
+                    "pos": {
+                        "x": 103.96,
+                        "y": 42.02
+                    },
+                    "uuid": "abcad46a-630f-4e09-8327-fb7a519ca3e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C17",
+                    "pos": {
+                        "x": 128.6,
+                        "y": 51.64
+                    },
+                    "uuid": "24ea8271-a933-429f-b9f2-e1f70430327f"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C3",
+                    "pos": {
+                        "x": 101.95,
+                        "y": 44.625
+                    },
+                    "uuid": "a04f26ec-20c3-4192-8e99-eaf37f2278d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C1",
+                    "pos": {
+                        "x": 98.69,
+                        "y": 65.31
+                    },
+                    "uuid": "829b88d2-9be3-4616-8c07-e54f5fc4225d"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of U5",
+                    "pos": {
+                        "x": 104.78,
+                        "y": 71.78
+                    },
+                    "uuid": "87922dfd-e2e7-4d9a-ae15-34fd426f9798"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of L3",
+                    "pos": {
+                        "x": 101.41,
+                        "y": 33.03
+                    },
+                    "uuid": "eee65287-db7f-484b-b46d-fa59016bb8f6"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of D10",
+                    "pos": {
+                        "x": 119.902,
+                        "y": 59.355
+                    },
+                    "uuid": "dfba311f-43de-4cbc-b6cc-76558d855cd2"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C31",
+                    "pos": {
+                        "x": 122.945,
+                        "y": 55.32
+                    },
+                    "uuid": "06d07bc6-9f8f-42a8-a0aa-5e93e1119532"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of Q3",
+                    "pos": {
+                        "x": 113.375,
+                        "y": 51.075
+                    },
+                    "uuid": "fa879818-b816-48d7-9197-45ba6b76d2aa"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of Q4",
+                    "pos": {
+                        "x": 136.05,
+                        "y": 53.53
+                    },
+                    "uuid": "3adae13b-93f3-4ff8-8fc0-7d139655f2f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C4",
+                    "pos": {
+                        "x": 115.45,
+                        "y": 37.85
+                    },
+                    "uuid": "62721716-74be-41a4-9d01-4ac4d87a36d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of U10",
+                    "pos": {
+                        "x": 137.59,
+                        "y": 71.32
+                    },
+                    "uuid": "99f769fc-b2f4-46b6-93c3-d68f42d33347"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C16",
+                    "pos": {
+                        "x": 93.465,
+                        "y": 46.95
+                    },
+                    "uuid": "e919d8fa-8477-4da1-9e91-d8ca44180efa"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C8",
+                    "pos": {
+                        "x": 114.5425,
+                        "y": 54.635
+                    },
+                    "uuid": "814b7768-e0e8-4ef0-a3a7-830d2e535ef4"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of U11",
+                    "pos": {
+                        "x": 132.92,
+                        "y": 71.32
+                    },
+                    "uuid": "ffcb9e22-ddaa-4fc2-a888-d7380e74ae30"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of R15",
+                    "pos": {
+                        "x": 98.665,
+                        "y": 58.275
+                    },
+                    "uuid": "824352c1-f056-44f3-8e4e-6742c6a05211"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of D1",
+                    "pos": {
+                        "x": 129.5,
+                        "y": 49.77
+                    },
+                    "uuid": "8c673fde-b5c3-49d2-a944-31297b8e6934"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C2",
+                    "pos": {
+                        "x": 96.54,
+                        "y": 56.26
+                    },
+                    "uuid": "7177938d-c9ef-4aa9-ba8d-87655fea018b"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C5",
+                    "pos": {
+                        "x": 110.525,
+                        "y": 64.785
+                    },
+                    "uuid": "8d8c46f2-b584-4374-afdf-162d7b66e135"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C26",
+                    "pos": {
+                        "x": 127.96,
+                        "y": 64.7
+                    },
+                    "uuid": "ec4722c2-173c-49ca-92ca-c10822032599"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of U3",
+                    "pos": {
+                        "x": 136.579971,
+                        "y": 36.739989
+                    },
+                    "uuid": "d9c5f04c-ced1-4764-b913-6900a0fb1acc"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C33",
+                    "pos": {
+                        "x": 133.25,
+                        "y": 74.18
+                    },
+                    "uuid": "ed040160-c0c0-4967-9c6c-1e03bdf459da"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of R14",
+                    "pos": {
+                        "x": 113.51,
+                        "y": 57.32
+                    },
+                    "uuid": "f8370212-ff49-4b5a-880b-9fe84f892028"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of R3",
+                    "pos": {
+                        "x": 103.91,
+                        "y": 48.55
+                    },
+                    "uuid": "b38a6789-c666-4b76-af23-25171563a65d"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of R26",
+                    "pos": {
+                        "x": 115.72,
+                        "y": 51.44
+                    },
+                    "uuid": "b0dee745-e296-4a30-9dc4-ec86ecf64141"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C34",
+                    "pos": {
+                        "x": 119.83,
+                        "y": 50.5
+                    },
+                    "uuid": "806e4144-cdba-42ad-af40-ae3445097334"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C7",
+                    "pos": {
+                        "x": 115.48,
+                        "y": 41.769968
+                    },
+                    "uuid": "e9c48bc9-8341-4375-98f3-8f4f0779b97a"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C6",
+                    "pos": {
+                        "x": 115.51,
+                        "y": 39.800034
+                    },
+                    "uuid": "d68c7c17-aa04-4641-98cf-dda666c4912d"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C23",
+                    "pos": {
+                        "x": 107.7778,
+                        "y": 70.1353
+                    },
+                    "uuid": "117dc74f-f763-4397-8337-7897458d194f"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C24",
+                    "pos": {
+                        "x": 101.5672,
+                        "y": 70.1253
+                    },
+                    "uuid": "5d04869c-26b4-4860-a155-d1be93729da1"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0,8000 mm; actual 0,5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of Y1",
+                    "pos": {
+                        "x": 103.125,
+                        "y": 72.5625
+                    },
+                    "uuid": "f1765ca1-a819-4903-b1f6-411190a384f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of C11 on F.Silkscreen",
+                    "pos": {
+                        "x": 112.385,
+                        "y": 55.777164
+                    },
+                    "uuid": "6624b6c3-3513-47bb-bf37-d473d8f7ab52"
+                },
+                {
+                    "description": "Reference field of C11",
+                    "pos": {
+                        "x": 112.725,
+                        "y": 55.855
+                    },
+                    "uuid": "e557362d-51cf-4195-8c55-b4b2c1930f2c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of C30 on F.Silkscreen",
+                    "pos": {
+                        "x": 123.1,
+                        "y": 61.402164
+                    },
+                    "uuid": "3a4c173c-c11e-4e7a-acde-cff3eb235a84"
+                },
+                {
+                    "description": "Reference field of C30",
+                    "pos": {
+                        "x": 122.77,
+                        "y": 61.51
+                    },
+                    "uuid": "5b394403-cb07-4170-9e2f-03da85bf768e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of C31",
+                    "pos": {
+                        "x": 122.945,
+                        "y": 55.32
+                    },
+                    "uuid": "06d07bc6-9f8f-42a8-a0aa-5e93e1119532"
+                },
+                {
+                    "description": "Segment of C31 on F.Silkscreen",
+                    "pos": {
+                        "x": 123.265,
+                        "y": 55.242164
+                    },
+                    "uuid": "fa217c00-99cd-4e7b-ad96-46571e81dd69"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of P1 on F.Silkscreen",
+                    "pos": {
+                        "x": 133.205066,
+                        "y": 53.955032
+                    },
+                    "uuid": "8a7db01b-d277-4b11-b85d-dc9b12f4c438"
+                },
+                {
+                    "description": "Pad 1 [GND] of R1 on F.Cu",
+                    "pos": {
+                        "x": 134.0,
+                        "y": 54.225
+                    },
+                    "uuid": "be25bf2f-0cc5-4b0c-9ac5-144846913499"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of C23",
+                    "pos": {
+                        "x": 107.7778,
+                        "y": 70.1353
+                    },
+                    "uuid": "117dc74f-f763-4397-8337-7897458d194f"
+                },
+                {
+                    "description": "Segment of Y1 on B.Silkscreen",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 69.3625
+                    },
+                    "uuid": "6387df72-f06e-4375-b731-0ee1b55676dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}

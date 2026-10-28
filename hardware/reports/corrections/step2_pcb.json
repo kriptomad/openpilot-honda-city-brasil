@@ -1,0 +1,127 @@
+{
+ "removed": [
+  "PCB_TRACK GND B.Cu (107.25, 67.263)->(107.25, 66.362) | PF9 stub (pad 23) -> lifted from GND",
+  "PCB_TRACK GND B.Cu (108.25, 66.362)->(106.75, 66.362) | GND bus over PF9 (clearance to lifted pad)",
+  "PCB_TRACK GND B.Cu (107.75, 67.263)->(107.051, 66.217) | GND diag over PF9 pad corner",
+  "PCB_TRACK GND B.Cu (106.75, 67.263)->(106.75, 66.362) | pad 24 stub (rebuilt)",
+  "PCB_TRACK GND B.Cu (107.75, 67.263)->(107.75, 66.362) | pad 22 stub (rebuilt)",
+  "PCB_VIA GND (107.051, 66.217) | GND via touching lifted PF9 pad",
+  "PCB_TRACK GND F.Cu (109.25, 68.942)->(107.051, 66.217) | redundant F.Cu GND diag (plane In2 carries GND); frees pocket for C65/JP1",
+  "PCB_TRACK GND F.Cu (109.25, 68.942)->(109.15, 71.042) | redundant F.Cu GND wall (via 109.15,71.042 stays)",
+  "PCB_TRACK SWDIO B.Cu (115.711, 43.3)->(115.25, 43.761) | SWDIO via relocation",
+  "PCB_TRACK SWDIO In2.Cu (115.371, 43.64)->(115.711, 43.3) | SWDIO via relocation",
+  "PCB_VIA SWDIO (115.711, 43.3) | SWDIO via relocation",
+  "PCB_TRACK GND B.Cu (116.25, 45.938)->(116.25, 45.038) | pad 104 GND stub (via sat under C64 pad 1)",
+  "PCB_TRACK GND B.Cu (116.25, 45.038)->(116.25, 44.438) | pad 104 GND stub (via sat under C64 pad 1)",
+  "PCB_VIA GND (116.25, 44.438) | pad 104 GND via (under C64 pad 1)",
+  "PCB_TRACK +3V3 B.Cu (117.25, 43.818)->(117.25, 45.938) | C54 slide",
+  "PCB_TRACK +3V3 B.Cu (117.25, 43.818)->(117.978, 43.639) | C54 slide",
+  "PCB_TRACK GND B.Cu (117.25, 42.858)->(117.618, 42.204) | C54 slide"
+ ],
+ "added": [
+  "track GND B.Cu (108.25, 66.362)->(108.25, 65.8625) w=0.25",
+  "track GND B.Cu (107.75, 67.263)->(108.25, 65.8625) w=0.20",
+  "via GND (106.75, 65.5) d=0.60",
+  "track GND B.Cu (106.75, 67.263)->(106.75, 65.5) w=0.20",
+  "track Net-(JP1-B) B.Cu (107.25, 67.263)->(107.3, 66.2) w=0.20",
+  "via Net-(JP1-B) (107.3, 66.2) d=0.60",
+  "track Net-(JP1-B) F.Cu (107.3, 66.2)->(107.72, 66.62) w=0.20",
+  "track Net-(JP1-B) F.Cu (107.72, 66.62)->(107.72, 72.25) w=0.20",
+  "footprint JP1 HW_ID1 Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm at (107.6, 72.9) rot 90 F.Cu pads {'1': ('GND', (107.6, 73.55)), '2': ('Net-(JP1-B)', (107.6, 72.25))}",
+  "track Net-(JP1-B) F.Cu (107.6, 72.25)->(107.72, 72.25) w=0.20",
+  "via GND (107.6, 74.4) d=0.60",
+  "track GND F.Cu (107.6, 73.55)->(107.6, 74.4) w=0.30",
+  "footprint C65 4.7uF Capacitor_SMD:C_0603_1608Metric at (109.3, 70.1) rot 180 F.Cu pads {'1': ('+3V3', (110.075, 70.1)), '2': ('GND', (108.525, 70.1))}",
+  "track +3V3 F.Cu (110.075, 70.1)->(110.75, 69.062) w=0.30",
+  "track GND F.Cu (108.525, 70.1)->(108.5, 70.6) w=0.30",
+  "track GND F.Cu (108.5, 70.6)->(109.15, 71.042) w=0.30",
+  "track GND F.Cu (109.25, 68.9425)->(108.3, 68.9425) w=0.25",
+  "track GND F.Cu (108.3, 68.9425)->(108.3, 69.9) w=0.25",
+  "track GND F.Cu (108.3, 69.9)->(108.525, 70.1) w=0.25",
+  "C54 moved (117.25,43.3375) -> (117.4,43.3375)",
+  "track +3V3 B.Cu (117.4, 43.818)->(117.25, 44.1) w=0.20",
+  "track +3V3 B.Cu (117.25, 44.1)->(117.25, 45.9375) w=0.20",
+  "track +3V3 B.Cu (117.4, 43.818)->(117.978439, 43.63896) w=0.25",
+  "track GND B.Cu (117.4, 42.858)->(117.618412, 42.204221) w=0.25",
+  "footprint C64 2.2uF Capacitor_SMD:C_0402_1005Metric at (116.28, 44.0) rot 90 B.Cu pads {'1': ('VCAP', (116.28, 44.48)), '2': ('GND', (116.28, 43.52))}",
+  "track SWDIO In2.Cu (115.371, 43.64)->(115.56, 43.42) w=0.20",
+  "via SWDIO (115.56, 43.42) d=0.50",
+  "track SWDIO B.Cu (115.56, 43.42)->(115.25, 43.761) w=0.20",
+  "track VCAP B.Cu (116.28, 44.48)->(115.75, 45.0) w=0.25",
+  "track VCAP B.Cu (115.75, 45.0)->(115.75, 45.938) w=0.25",
+  "via GND (116.28, 42.75) d=0.60",
+  "track GND B.Cu (116.28, 43.52)->(116.28, 42.75) w=0.25",
+  "track VCAP B.Cu (109.425, 72.752)->(110.725, 72.752) w=0.30",
+  "via VCAP (110.725, 72.752) d=0.60",
+  "track VCAP In1.Cu (110.725, 72.752)->(110.975, 72.502) w=0.30",
+  "track VCAP In1.Cu (110.975, 72.502)->(112.225, 72.502) w=0.30",
+  "track VCAP In1.Cu (112.225, 72.502)->(114.725, 70.002) w=0.30",
+  "track VCAP In1.Cu (114.725, 70.002)->(114.725, 68.502) w=0.30",
+  "track VCAP In1.Cu (114.725, 68.502)->(115.475, 67.752) w=0.30",
+  "track VCAP In1.Cu (115.475, 67.752)->(115.475, 67.252) w=0.30",
+  "track VCAP In1.Cu (115.475, 67.252)->(117.975, 64.752) w=0.30",
+  "track VCAP In1.Cu (117.975, 64.752)->(117.975, 63.002) w=0.30",
+  "track VCAP In1.Cu (117.975, 63.002)->(118.193, 62.679) w=0.30"
+ ],
+ "nets": {
+  "VFBSMPS->VCAP items": 5,
+  "VFBSMPS": "removed",
+  "Net-(JP1-B)": "created"
+ },
+ "warnings": [],
+ "vcap_link_via_candidates": 11,
+ "vcap_link": {
+  "from": "C42.1",
+  "via": [
+   110.725,
+   72.752
+  ],
+  "target_in1": [
+   118.1934,
+   62.6786
+  ],
+  "length_mm": 13.88,
+  "pts": [
+   [
+    110.725,
+    72.752
+   ],
+   [
+    110.975,
+    72.502
+   ],
+   [
+    112.225,
+    72.502
+   ],
+   [
+    114.725,
+    70.002
+   ],
+   [
+    114.725,
+    68.502
+   ],
+   [
+    115.475,
+    67.752
+   ],
+   [
+    115.475,
+    67.252
+   ],
+   [
+    117.975,
+    64.752
+   ],
+   [
+    117.975,
+    63.002
+   ],
+   [
+    118.193,
+    62.679
+   ]
+  ]
+ }
+}
