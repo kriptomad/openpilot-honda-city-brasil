@@ -113,9 +113,10 @@ flowchart LR
 
 ### A. Instalar o APK do flowpilot
 
-1. Baixe `flowpilot-city-g7-brazil-ffd228c.apk` do release
-   [v0.1-city-g7-brazil](https://github.com/kriptomad/flowpilot-city-g7/releases/tag/v0.1-city-g7-brazil)
-   de `kriptomad/flowpilot-city-g7`.
+1. Baixe `flowpilot-city-g7-brazil-ffd228c.apk` do release deste repositorio
+   [v0.1-city-g7-brazil](https://github.com/kriptomad/openpilot-honda-city-brasil/releases/tag/v0.1-city-g7-brazil)
+   (espelho do build publicado em
+   [kriptomad/flowpilot-city-g7](https://github.com/kriptomad/flowpilot-city-g7/releases/tag/v0.1-city-g7-brazil)).
 2. Verifique o hash antes de instalar:
    `SHA256 493891cd62d3f2eaf094e414489d7b0dae8bde297a673c305fba6eef298d4adb`
    (235.399.803 bytes).
