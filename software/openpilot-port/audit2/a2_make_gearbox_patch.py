@@ -1,4 +1,4 @@
-"""Audit 2: build proposed_patches/0001-honda-civic-ex-2022-gearbox-cvt-layout.patch (DBC-only) and verify it.
+"""Audit 2: build proposed-patches/0001-honda-civic-ex-2022-gearbox-cvt-layout.patch (DBC-only) and verify it.
 
 Replaces the legacy byte0 one-hot GEARBOX 0x191 layout in honda_civic_ex_2022_can.dbc (used by HONDA_CITY_7G and
 HONDA_HRV_3G on v0.9.9) with the upstream GEARBOX_CVT bit layout from opendbc 9ef0b1fb (_gearbox_common.dbc),
@@ -13,10 +13,10 @@ import subprocess
 import sys
 import tempfile
 
-BASE = r"C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\09_FIRMWARECITYG7_BLACKPANDA"
-REPO = os.path.join(BASE, "opendbc_firmwarecityg7")
-AUDIT2 = os.path.join(BASE, "audit2")
-PATCH_DIR = os.path.join(AUDIT2, "proposed_patches")
+AUDIT2 = os.path.dirname(os.path.abspath(__file__))
+BASE = os.path.dirname(AUDIT2)  # software/openpilot-port
+REPO = os.path.join(BASE, "..", "opendbc-v0.9.9-city-g7")
+PATCH_DIR = os.path.join(AUDIT2, "proposed-patches")
 TMP = os.path.join(tempfile.gettempdir(), "audit2_gearbox")
 GEN_REL = "opendbc/dbc/generator/honda/honda_civic_ex_2022_can.dbc"
 

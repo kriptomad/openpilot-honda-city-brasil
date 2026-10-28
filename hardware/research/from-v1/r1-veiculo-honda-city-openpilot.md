@@ -248,9 +248,9 @@ Mesmo com a forte evidência de que o City 7G é CAN clássico (seção 1), é p
 
 | Evento | Data | Commit | Fonte |
 |---|---|---|---|
-| Remoção de white/black panda do firmware (`board/boards/black.h` apagado, `HW_TYPE_BLACK_PANDA` removido) | 2025-07-19 | panda `3d272335` "Deprecate white and black pandas (#2227)" | `02_REFERENCE\panda_full` |
-| Último release openpilot com F4 | 2025-06-05 | tag `v0.9.9` | `02_REFERENCE\openpilot` |
-| Honda City (Brazil only) 2023 adicionado | **2025-08-19** | opendbc `43006b9a` "Honda: Honda City (Brazil only) 2023 (#2425)" | `02_REFERENCE\opendbc` |
+| Remoção de white/black panda do firmware (`board/boards/black.h` apagado, `HW_TYPE_BLACK_PANDA` removido) | 2025-07-19 | panda `3d272335` "Deprecate white and black pandas (#2227)" | `hardware\reference\panda_full` |
+| Último release openpilot com F4 | 2025-06-05 | tag `v0.9.9` | `hardware\reference\openpilot` |
+| Honda City (Brazil only) 2023 adicionado | **2025-08-19** | opendbc `43006b9a` "Honda: Honda City (Brazil only) 2023 (#2425)" | `hardware\reference\opendbc` |
 | openpilot actual (`ff47f484`, 2026-10-22) | — | `panda/python/__init__.py:153` `SUPPORTED_DEVICES = H7_DEVICES`; `:355/:436` `assert hw_type in SUPPORTED_DEVICES` | — |
 
 Conclusão: **não existe versão oficial do openpilot que suporte simultaneamente o black panda (STM32F4) e o

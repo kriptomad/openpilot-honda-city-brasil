@@ -23,7 +23,7 @@ Novo HEAD opendbc: `052a515f`; o gitlink do submodule `opendbc_repo` em
 openpilot foi atualizado para ele (ver secao 10). Novo HEAD openpilot: ver
 secao 10.
 
-**Adendo 2026-10-28 (auditoria 2 independente, `audit2/AUDITORIA2_INDEPENDENTE.md`):**
+**Adendo 2026-10-28 (auditoria 2 independente, `audit2/audit2/auditoria2-independente.md`):**
 duas das diferencas residuais abaixo foram fechadas - GEARBOX S/L (opendbc
 `b4125fe6`, layout `GEARBOX_CVT` upstream) e `torqued` para Honda (openpilot
 `8be62bc95`); gitlink em openpilot `e841f3cc3`. Correcoes a este relatorio:
@@ -314,7 +314,7 @@ experimental for ligado (a rota foi gravada com 10). Sem `ALT_BRAKE`, sem
 
 ## 7. interface.py / CarParams do City
 
-`tools/carparams_compare.py opendbc_firmwarecityg7 _scratch/route_scan4.json
+`tools/carparams_compare.py ../opendbc-v0.9.9-city-g7 _scratch/route_scan4.json
 --alpha-long` (apos D1 e D2): **80 campos iguais, 2 diferentes, 11 so no log**.
 
 - Iguais (entre outros): `mass 1553.47`, `wheelbase 2.6`, `steerRatio 19.0`,
@@ -448,7 +448,7 @@ Apos a auditoria 2 (2026-10-28):
 - openpilot `e841f3cc3` opendbc_repo: bump to b4125fe6
 - HEADs finais: opendbc `b4125fe6`, openpilot `e841f3cc3`; CI `40525385443`.
 
-HybridPanda `main`: este relatorio, `LEIA-ME.md` atualizado, patches
+HybridPanda `main`: este relatorio, `readme.md` atualizado, patches
 regenerados em `patches/opendbc` e `patches/openpilot`, e as ferramentas
 `tools/gen_dbc_from_tree.py`, `tools/dbc_struct_compare.py`,
 `tools/route_scan4_audit.py`, `tools/carparams_compare.py`,
@@ -464,7 +464,7 @@ steerActuatorDelay 0.15),
 
 Branches enviados aos remotos (`fork firmwarecityg7-v0.9.9`, `origin
 v0.9.9-cityg7-blackpanda`, HybridPanda `origin main`); o run de CI
-`selfdrive_tests.yaml` disparado pelo push esta registrado no `LEIA-ME.md`.
+`selfdrive_tests.yaml` disparado pelo push esta registrado no `readme.md`.
 
 ## 11. O que nao foi possivel verificar e por que
 

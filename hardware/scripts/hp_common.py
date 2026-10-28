@@ -5,7 +5,7 @@ Rules implemented (prompt 0x00 §2-3, Diretriz 6):
   * OUTPUT_ROOT / ORIGINAL_ROOT constants
   * assert_inside_output(path): resolves symlinks and '..'; refuses writes outside OUTPUT_ROOT or inside ORIGINAL_ROOT
   * backup_before_write(path): dated copy into 99_BACKUPS before any overwrite
-  * JsonLog: structured log written to 06_REPORTS
+  * JsonLog: structured log written to hardware/reports
   * DRY_RUN flag honoured by write helpers
 """
 from __future__ import annotations
@@ -20,11 +20,11 @@ import time
 from pathlib import Path
 
 # ---------------------------------------------------------------- constants (edit here only)
-OUTPUT_ROOT = Path(r"C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616")
+OUTPUT_ROOT = Path(__file__).resolve().parents[2]  # repository root (this file is hardware/scripts/hp_common.py)
 ORIGINAL_ROOT = Path(r"C:\Users\costabr\Downloads\openpilot\OpenpilotHardware-main\OpenpilotHardware-main")
-REFERENCE_ROOT = OUTPUT_ROOT / "02_REFERENCE"
+REFERENCE_ROOT = OUTPUT_ROOT / "hardware/reference"
 BACKUP_DIR = OUTPUT_ROOT / "99_BACKUPS"
-REPORT_DIR = OUTPUT_ROOT / "06_REPORTS"
+REPORT_DIR = OUTPUT_ROOT / "hardware/reports"
 KICAD_BIN = Path(r"C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin")
 KICAD_CLI = KICAD_BIN / "kicad-cli.exe"
 # ----------------------------------------------------------------
@@ -58,7 +58,7 @@ def assert_inside_output(path: os.PathLike | str) -> Path:
     if not _is_inside(rp, out):
         raise GuardError(f"REFUSED: write outside OUTPUT_ROOT: {rp}")
     if _is_inside(rp, _real(REFERENCE_ROOT)):
-        raise GuardError(f"REFUSED: write inside read-only 02_REFERENCE: {rp}")
+        raise GuardError(f"REFUSED: write inside read-only hardware/reference: {rp}")
     return rp
 
 
@@ -95,7 +95,7 @@ def guarded_write_text(path: os.PathLike | str, text: str, tag: str = "", encodi
 
 
 class JsonLog:
-    """Structured JSON log stored in 06_REPORTS/<name>.json (list of events + summary)."""
+    """Structured JSON log stored in hardware/reports/<name>.json (list of events + summary)."""
 
     def __init__(self, name: str):
         self.path = REPORT_DIR / f"{name}.json"
@@ -136,8 +136,8 @@ def apply_args(args) -> None:
 
 
 def selftest() -> None:
-    """Prove the guard: OUTPUT_ROOT ok, ORIGINAL refused, outside refused, '..' escape refused, 02_REFERENCE refused."""
-    ok = assert_inside_output(OUTPUT_ROOT / "06_REPORTS" / "x.txt")
+    """Prove the guard: OUTPUT_ROOT ok, ORIGINAL refused, outside refused, '..' escape refused, hardware/reference refused."""
+    ok = assert_inside_output(OUTPUT_ROOT / "hardware/reports" / "x.txt")
     assert ok
     for bad in (ORIGINAL_ROOT / "a.txt", Path(r"C:\Windows\Temp\x.txt"),
                 OUTPUT_ROOT / ".." / "HybridPanda_v1" / "x.txt", REFERENCE_ROOT / "panda" / "x"):

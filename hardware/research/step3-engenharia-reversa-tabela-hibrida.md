@@ -1,13 +1,13 @@
 # STEP 3 — Engenharia reversa do baseline (OpenBlackPanda F413) e tabela híbrida para STM32H725ZGT6
 
-Fontes: `06_REPORTS\baseline_BlackPanda_netlist.xml` (exportada com kicad-cli 10.0.7 de `01_BASELINE\original_copy\BlackPanda\kicad_project\BlackPanda.kicad_sch`), `03_RESEARCH\from_v1\FASE1_inventario.md`, `HRS_red_panda.md`, `P10_OBDC_harness_SBU.md`, `05_SCRIPTS\firmware_pins.json`.
-Verificador: `05_SCRIPTS\parity_check.py --profile black_f4` sobre o baseline → **35/35 OK, 0 divergências** (`06_REPORTS\parity_black_f4_baseline_BlackPanda_netlist.md`) — prova de que o método reconhece um projeto que o firmware legado aceita. **[F]**
+Fontes: `hardware\reports\baseline_BlackPanda_netlist.xml` (exportada com kicad-cli 10.0.7 de `archive\baseline-original\BlackPanda\kicad_project\BlackPanda.kicad_sch`), `hardware\research\from-v1\fase1-inventario.md`, `hrs-red-panda.md`, `p10-obdc-harness-sbu.md`, `hardware\scripts\firmware_pins.json`.
+Verificador: `hardware\scripts\parity_check.py --profile black_f4` sobre o baseline → **35/35 OK, 0 divergências** (`hardware\reports\parity-black-f4-baseline-blackpanda-netlist.md`) — prova de que o método reconhece um projeto que o firmware legado aceita. **[F]**
 Legenda: **[F]** fato · **[I]** inferência · **NV** não verificado.
 
 ---
 ## (a) Periférico × pino F413 (baseline) × pino exigido pelo firmware no H725 × rede
 
-| Função firmware | F413 pino (pad) | Rede no baseline | Componente destino | H725 pino (LQFP144 pad) | Rede proposta (04_PROJECT) | Fonte H7 |
+| Função firmware | F413 pino (pad) | Rede no baseline | Componente destino | H725 pino (LQFP144 pad) | Rede proposta (hardware) | Fonte H7 |
 |---|---|---|---|---|---|---|
 | USB D− / D+ | PA11 (44) / PA12 (45) | USB_D− / USB_D+ | R20/R21 22 Ω → U3 USB-A | PA11 (100) / PA12 (101) | USB_D− / USB_D+ | peripherals.h:8-9 |
 | bus0 CAN RX/TX (xcvr 1) | PB8 (61) / PB9 (62) — CAN1 | CAN2_RX / CAN2_TX | U11 TJA1042 → P1 B10/B11 | PB8 (136) / PB9 (137) — FDCAN1 AF9 | BUS0_RX / BUS0_TX | peripherals.h:31-32 |
@@ -99,7 +99,7 @@ Legenda: **[F]** fato · **[I]** inferência · **NV** não verificado.
 
 ## (g) Conflitos e riscos (regra 9 — PIN_PARITY_CONFLICT)
 
-**g-0. PIN_PARITY_CONFLICT: nenhum identificado.** Todos os 36 pinos exigidos pelo firmware red (firmware_pins.json) existem no LQFP144 com a AF correta (P3 39/39; coverage 61/61). Será confirmado pelo `parity_check.py --profile red_h7` sobre a netlist do 04_PROJECT no STEP 4/7.
+**g-0. PIN_PARITY_CONFLICT: nenhum identificado.** Todos os 36 pinos exigidos pelo firmware red (firmware_pins.json) existem no LQFP144 com a AF correta (P3 39/39; coverage 61/61). Será confirmado pelo `parity_check.py --profile red_h7` sobre a netlist do hardware no STEP 4/7.
 
 **g-1. Mapeamento P1 ↔ OBD-C oficial [F + I].** Baseline (netlist): bus0 (xcvr U11) → P1 **B10/B11**; bus1-normal (U10) → **B2/B3**; bus1-OBD (U8) → **A2/A3**; bus2 (U9) → **A10/A11**; SBU1 A8, SBU2 B8; VIN A4/A9/B4/B9. O pinout oficial da *harness side* (P10 §1) tem CAN0=A2/A3, CAN1=A10/A11, CAN2=B2/B3, CAN3=B10/B11. Num cabo USB-C full-featured, TX1± (A2/A3) de um plugue liga a RX1± (B11/B10) do outro, RX2± (A11/A10) ↔ TX2± (B2/B3) e SBU1 ↔ SBU2 (USB Type-C spec, cabo "fully connected" exigido pela comma — hardware/harness/README.md). Logo, na orientação normal: panda B10/B11 → harness A2/A3 = **CAN0 = carro** (bus0 ✓); panda B2/B3 → harness A10/A11 = **CAN1 = radar** (bus1 normal ✓); panda A2/A3 → harness B10/B11 = **CAN3 = comma power / OBD** (bus1 em modo OBD ✓ — explica o nome `CAN_MODE_OBD_CAN2`); panda A10/A11 → harness B2/B3 = **CAN2 = câmera** (bus2 ✓); panda SBU1 (A8) → harness SBU2 = ignição; panda SBU2 (B8) → harness SBU1 = relé — exatamente o comentário em harness.h:71-73 ("orientation normal: PANDA_SBU2→HARNESS_SBU1(relay), PANDA_SBU1→HARNESS_SBU2(ign)"). **Conclusão: manter a pinagem de P1 do baseline sem alteração.** Caso invertido tratado pelo firmware (bus0↔bus2 e xcvr 2↔4).
 

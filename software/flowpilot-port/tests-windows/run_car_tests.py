@@ -1,6 +1,6 @@
 """Run flowpilot's selfdrive/car tests on a Windows host without compiling
 the Cython extensions (see fp_shims.py). Must be executed with the
-10_FLOWPILOT\\.venv_fp interpreter.
+software\\flowpilot-port\\.venv_fp interpreter.
 
   python run_car_tests.py <repo_root> [unittest args...]
 """

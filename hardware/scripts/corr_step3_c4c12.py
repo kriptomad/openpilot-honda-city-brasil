@@ -15,7 +15,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import hp_common as hp  # noqa: E402
 
-SCH = hp.OUTPUT_ROOT / "04_PROJECT" / "HybridPanda" / "HybridPanda.kicad_sch"
+SCH = hp.OUTPUT_ROOT / "hardware" / "hybrid-panda" / "HybridPanda.kicad_sch"
 
 
 def main():

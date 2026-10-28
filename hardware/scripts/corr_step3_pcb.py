@@ -1,9 +1,9 @@
-"""Step 3 (PCB side): SI/PI HIGH items 4, 5, 6 (fallback), 8, 11, 18, 19 of proposed_changes.md.
+"""Step 3 (PCB side): SI/PI HIGH items 4, 5, 6 (fallback), 8, 11, 18, 19 of ../reports/si-pi-audit/proposed-changes.md.
 
 Run with KiCad python:  python -u corr_step3_pcb.py [--dry] [--from-backup]
   --from-backup  restores %TEMP%/hp_backup/step3/HybridPanda.kicad_pcb first (replayable run)
 
-Geometry (mm) comes from scans of the post-step-2 board (06_REPORTS/corr/_q_out.txt), not from the report,
+Geometry (mm) comes from scans of the post-step-2 board (hardware/reports/corrections/_q_out.txt), not from the report,
 whose U7 pad coordinates were off (pads 100/101 are at x 114.25/114.75, not 108.5/109.0).
 """
 import json
@@ -17,10 +17,10 @@ import pcbnew
 from pcbnew import VECTOR2I, FromMM, ToMM
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
-PCB = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb")
-SCH = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_sch")
-REPORT = os.path.join(ROOT, "06_REPORTS", "corr", "step3_pcb.json")
+ROOT = os.path.dirname(os.path.dirname(HERE))  # repository root
+PCB = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pcb")
+SCH = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_sch")
+REPORT = os.path.join(ROOT, "hardware/reports", "corrections", "step3_pcb.json")
 FP_LIB = r"C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\share\kicad\footprints"
 SHEET_PATH = "/5994f1e8-15cb-459b-8e2e-160b94fba244"
 DRY = "--dry" in sys.argv

@@ -1,6 +1,6 @@
 # P3 / P4 / P5 / P6 — Mapa de pinos, identificação, clock e boot exigidos pelo firmware (lado firmware)
 
-Data: 2026-10-22. Fonte primária: clone somente leitura `02_REFERENCE/panda` (github.com/commaai/panda, **commit `408e14d46ebb7da45a7d21f8db315922e10242a8`**, 2026-10-21). Licença MIT (`02_REFERENCE/panda/LICENSE`).
+Data: 2026-10-22. Fonte primária: clone somente leitura `hardware/reference/panda` (github.com/commaai/panda, **commit `408e14d46ebb7da45a7d21f8db315922e10242a8`**, 2026-10-21). Licença MIT (`hardware/reference/panda/LICENSE`).
 Todas as linhas abaixo são FATO (código lido), salvo indicação INFERÊNCIA / NÃO VERIFICADO.
 Os nomes de arquivo candidatos no prompt (`llcan.h`, `clock_init`, `detect_configuration()`) **não existem**; os reais são `board/stm32h7/llfdcan.h`, `board/stm32h7/clock.h` (`clock_init()`), `board/stm32h7/board.h` (`detect_board_type()`), `board/boards/red.h`, `board/stm32h7/peripherals.h` (`common_init_gpio()`), `board/early_init.h`.
 
@@ -35,7 +35,7 @@ Não existem em `red.h`: fan, IR, siren, SOM GPIO, bootkick, amp (`unused_*`, `r
 
 ### Tabela (a): periférico × pino no F413 (projeto original) × pino exigido pelo firmware H7 × rede × observações
 
-Fonte do lado F413: `01_BASELINE/original_copy/BlackPanda/kicad_project/BlackPanda.kicad_sch` (netlist extraída, ver `03_RESEARCH/from_v1/original_mcu_pinout.txt`).
+Fonte do lado F413: `archive/baseline-original/BlackPanda/kicad_project/BlackPanda.kicad_sch` (netlist extraída, ver `hardware/research/from-v1/original-mcu-pinout.txt`).
 
 | Função | F413 (original) | H7 exigido (red) | Rede proposta v2 | Observação |
 |---|---|---|---|---|
@@ -87,7 +87,7 @@ Falha de detecção (`main.c:306`, `libc.h assert_fatal`): `hw_type == UNKNOWN` 
 - Entrada em DFU **por software**: o host envia um comando USB (`main_comms.h:184`) que grava `enter_bootloader_mode = ENTER_BOOTLOADER_MAGIC` e reinicia; em `early_init.h:60-64`, antes de `main`, o firmware acende o LED verde e salta para `BOOTLOADER_ADDRESS` (`jump_to_bootloader()`). Também salta se `DBGMCU->IDCODE != 0x483` (`early_init.h:46-50`) — proteção contra MCU errado.
 - "Softloader" (`ENTER_SOFTLOADER_MAGIC`): bootstub próprio da comma via USB (`bootstub.c:46`, `flasher.h`), com verificação RSA da aplicação (`bootstub.c:52-72`).
 - **Pino BOOT0 físico**: não há código que dependa dele, mas é o único caminho de recuperação quando o bootstub está vazio/corrompido (placa nova). O prompt pergunta por BOOT1: o STM32H7 **não tem BOOT1**; o boot alternativo é por option bytes BOOT_ADD0/1 — confirmar no RM0468 (pesquisa ST, NÃO VERIFICADO aqui). Resistor de pull-down de BOOT0 e botão: valor conforme AN5419 (pesquisa ST); o original usa 10 kΩ + botão para +3V3 (`original_copy` SW1/R14 — FATO do projeto original, não da ST).
-- Primeira gravação: via DFU de sistema (BOOT0 = 1 no reset) ou SWD (`PA13/PA14`); upstream usa `python -m panda.flash` / `dfu-util` (scripts em `02_REFERENCE/panda/scripts` — não lidos em detalhe).
+- Primeira gravação: via DFU de sistema (BOOT0 = 1 no reset) ou SWD (`PA13/PA14`); upstream usa `python -m panda.flash` / `dfu-util` (scripts em `hardware/reference/panda/scripts` — não lidos em detalhe).
 
 ## Conflitos de paridade 1:1 (Diretriz 2) — decisão: STM32H723 TFBGA100
 

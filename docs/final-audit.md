@@ -1,6 +1,6 @@
 # Auditoria final — PCB, esquemático e BOM (independente do DRC)
 
-Data: 2026-10-28 10:16:21 · `05_SCRIPTS\final_audit.py` (21 s) · placa `04_PROJECT\HybridPanda\HybridPanda.kicad_pcb` · JSON `06_REPORTS\final_audit.json`
+Data: 2026-10-28 10:16:21 · `hardware\scripts\final_audit.py` (21 s) · placa `hardware\hybrid-panda\HybridPanda.kicad_pcb` · JSON `hardware\reports\final_audit.json`
 
 ## Resumo por gravidade
 

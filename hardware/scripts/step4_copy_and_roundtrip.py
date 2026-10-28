@@ -1,10 +1,10 @@
 """step4_copy_and_roundtrip.py - STEP 4 pre-conditions.
 
-1. Copy 01_BASELINE/original_copy/BlackPanda/kicad_project -> 04_PROJECT/HybridPanda (rename project files).
+1. Copy archive/baseline-original/BlackPanda/kicad_project -> hardware/hybrid-panda (rename project files).
 2. kiutils round-trip proof: load schematic and PCB with kiutils, save to temp, re-export netlist with kicad-cli
    from both original copy and round-tripped copy, compare the set of (ref, pin, net) tuples. Exact text equality
    is not required (kiutils reformats); electrical equality is.
-Writes 06_REPORTS/step4_roundtrip.json/.md. Exit 0 if electrically identical.
+Writes hardware/reports/step4_roundtrip.json/.md. Exit 0 if electrically identical.
 """
 from __future__ import annotations
 
@@ -21,8 +21,8 @@ import hp_common as hp
 from kiutils.schematic import Schematic
 from kiutils.board import Board
 
-SRC = hp.OUTPUT_ROOT / "01_BASELINE" / "original_copy" / "BlackPanda" / "kicad_project"
-DST = hp.OUTPUT_ROOT / "04_PROJECT" / "HybridPanda"
+SRC = hp.OUTPUT_ROOT / "archive/baseline-original" / "original_copy" / "BlackPanda" / "kicad_project"
+DST = hp.OUTPUT_ROOT / "hardware" / "hybrid-panda"
 OLD, NEW = "BlackPanda", "HybridPanda"
 SKIP = {"BlackPanda.kicad_sch-bak", "untitled.kicad_pcb", "fp-info-cache", "BlackPanda.step",
         "BlackPanda.csv", "BlackPanda2.csv", "BlackPanda2.xlsx"}
@@ -65,7 +65,7 @@ def netlist_tuples(sch: Path, out_xml: Path) -> set[tuple[str, str, str]]:
 
 def copy_project(log: hp.JsonLog) -> None:
     if DST.exists():
-        log.warn("04_PROJECT/HybridPanda exists; backing up and replacing")
+        log.warn("hardware/hybrid-panda exists; backing up and replacing")
         stamp = hp.time.strftime("%Y%m%d_%H%M%S")
         bk = hp.BACKUP_DIR / f"{stamp}_04_PROJECT_HybridPanda"
         hp.assert_inside_output(bk)
@@ -156,7 +156,7 @@ def main() -> int:
           f"- Origem: `{SRC}`", f"- Destino: `{DST}`", f"- Resultado: **{'OK' if ok else 'FALHOU'}** (ver step4_roundtrip.json)", ""]
     md += [f"- [{e['level']}] {e['msg']} " + ", ".join(f"{k}={v}" for k, v in e.items() if k not in ('t', 'level', 'msg'))
            for e in log.events]
-    hp.guarded_write_text(hp.REPORT_DIR / "step4_roundtrip.md", "\n".join(md) + "\n")
+    hp.guarded_write_text(hp.REPORT_DIR / "step4-roundtrip.md", "\n".join(md) + "\n")
     return 0 if ok else 1
 
 

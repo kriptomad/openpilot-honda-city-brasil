@@ -1,6 +1,6 @@
-# STEP 7 — Validação automatizada (logs reais em `06_REPORTS`)
+# STEP 7 — Validação automatizada (logs reais em `hardware/reports`)
 
-Data: 2026-10-28 10:16:52. Gerado por `05_SCRIPTS\step7_validate.py` (148 s).
+Data: 2026-10-28 10:16:52. Gerado por `hardware\scripts\step7_validate.py` (148 s).
 
 ## Resumo
 
@@ -55,7 +55,7 @@ Violações cuja assinatura (tipo + itens) **não existe no baseline**: 19
 - silk_over_copper [warning]: Silkscreen clipped by solder mask — Segment of P1 on F.Silkscreen <> Pad 1 [GND] of R1 on F.Cu
 - silk_overlap [warning]: Silkscreen clearance — Reference field of C23 <> Segment of Y1 on B.Silkscreen
 
-Nota: quase todas as 'novas' são do mesmo tipo das herdadas (text_height/lib_footprint_mismatch/silk) com itens renomeados (U7, C38–C63, R28–R33, J1, L5, D13/D14, FB1) ou deslocados pela placa +5 mm; as de cobre relevantes estão discutidas em `STEP5_layout_H725.md` §7.
+Nota: quase todas as 'novas' são do mesmo tipo das herdadas (text_height/lib_footprint_mismatch/silk) com itens renomeados (U7, C38–C63, R28–R33, J1, L5, D13/D14, FB1) ou deslocados pela placa +5 mm; as de cobre relevantes estão discutidas em `step5-layout-h725.md` §7.
 
 ## 3. Netlist esquemático × PCB
 
@@ -68,21 +68,21 @@ Nota: quase todas as 'novas' são do mesmo tipo das herdadas (text_height/lib_fo
 - Referências na BOM: 119 · DNP no esquemático (excluídos): — · só na BOM: — · no esquemático e fora da BOM: —
 - Valores BOM≠sch: 0 · footprints BOM≠pcb: 0 · **sem MPN (PROVISÓRIO)**: 1 → JP1
 
-## 5. Paridade firmware × hardware (`06_REPORTS\parity_red_h7_hybrid_HybridPanda_netlist.md`)
+## 5. Paridade firmware × hardware (`hardware\reports\parity-red-h7-hybrid-hybridpanda-netlist.md`)
 
 - Código de saída: 0 · estados: {'OK': 36} · **PIN_PARITY_CONFLICT: 0**
 
 ## 6. Skew / comprimentos / impedância
 
-- Ver `03_RESEARCH\STEP6_roteamento_impedancia.md` e `06_REPORTS\step6_reports.json` (gerados por `step6_reports.py`). **O DRC do KiCad não verifica impedância**; os valores são estimativas analíticas (Hammerstad–Jensen) sobre o stackup declarado, não medidos.
+- Ver `hardware\research\step6-roteamento-impedancia.md` e `hardware\reports\step6_reports.json` (gerados por `step6_reports.py`). **O DRC do KiCad não verifica impedância**; os valores são estimativas analíticas (Hammerstad–Jensen) sobre o stackup declarado, não medidos.
 
 ## 7. Manifestos
 
 - `Make-Manifest.ps1 -Step STEP7 -Original` exit 0:
-  - OUTPUT_ROOT manifest: 20789 files -> C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\00_MANIFESTS\OUTPUT_ROOT_STEP7_20261028_1017.sha256
-  - 02_REFERENCE unchanged vs reference_clones.sha256: False
+  - OUTPUT_ROOT manifest: 20789 files -> archive\manifests\OUTPUT_ROOT_STEP7_20261028_1017.sha256
+  - hardware/reference unchanged vs reference_clones.sha256: False
   - ORIGINAL vs BEFORE: IDENTICAL (377 files)
-  - INDEX.md rows: 14938
+  - docs/legacy-index.md rows: 14938
 
 ## 8. Comandos executados
 
@@ -92,5 +92,5 @@ Nota: quase todas as 'novas' são do mesmo tipo das herdadas (text_height/lib_fo
 | `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe pcb drc --format json --severity-all --units mm -o C:\Users\costabr\Downloads\openpilot\Hyb` | 0 | 5.6 | step7_drc.log |
 | `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe sch export netlist --format kicadxml -o C:\Users\costabr\Downloads\openpilot\HybridPanda_v2` | 0 | 0.7 | step7_netlist.log |
 | `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe sch export bom --fields Reference,Value,Footprint,${QUANTITY},${DNP},MPN,Manufacturer,Datas` | 0 | 0.7 | step7_bom.log |
-| `C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\05_SCRIPTS\.venv\Scripts\python.exe C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_202610` | 0 | 0.4 | step7_parity.log |
-| `powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\05_SCRIPTS\Make-Manifest.ps1 -Step STEP7 -` | 0 | 136.3 | step7_manifest.log |
+| `hardware\scripts\.venv\Scripts\python.exe C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_202610` | 0 | 0.4 | step7_parity.log |
+| `powershell -NoProfile -ExecutionPolicy Bypass -File hardware\scripts\Make-Manifest.ps1 -Step STEP7 -` | 0 | 136.3 | step7_manifest.log |

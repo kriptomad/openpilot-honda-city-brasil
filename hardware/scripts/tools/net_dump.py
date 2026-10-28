@@ -1,4 +1,4 @@
-"""Dump every track/via/pad of the given nets (all layers) to 06_REPORTS/corr/net_dump.txt.
+"""Dump every track/via/pad of the given nets (all layers) to hardware/reports/corrections/net_dump.txt.
 
 Usage: python -u tools/net_dump.py NET [NET ...]
 (stdout is redirected to the file; pcbnew asserts on PCB_VIA.GetWidth() without a layer, hence GetWidth(F_Cu))
@@ -7,13 +7,13 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(os.path.dirname(HERE))
-OUT = os.path.join(ROOT, "06_REPORTS", "corr", "net_dump.txt")
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))  # repository root
+OUT = os.path.join(ROOT, "hardware/reports", "corrections", "net_dump.txt")
 sys.stdout = open(OUT, "w", encoding="utf-8")
 import pcbnew  # noqa: E402
 
 M = pcbnew.ToMM
-b = pcbnew.LoadBoard(os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb"))
+b = pcbnew.LoadBoard(os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pcb"))
 nets = set(sys.argv[1:])
 for t in b.GetTracks():
     if t.GetNetname() not in nets:

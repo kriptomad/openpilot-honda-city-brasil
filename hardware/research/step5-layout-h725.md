@@ -1,19 +1,19 @@
 # STEP 5 — PCB Hybrid Panda (STM32H725ZGT6 LQFP-144) — relatório
 
-Data: 2026-10-26 · Protocolo v3 (STEP 5 + parte do STEP 6: roteamento/zonas) · Projeto: `04_PROJECT\HybridPanda\HybridPanda.kicad_pcb`
+Data: 2026-10-26 · Protocolo v3 (STEP 5 + parte do STEP 6: roteamento/zonas) · Projeto: `hardware\hybrid-panda\HybridPanda.kicad_pcb`
 
 > Status honesto: PCB **gerada e roteada por script** (5a → 5b → 5c → 5d), DRC do KiCad com **0 itens não ligados** na corrida final (ver §7). **Não** é "pronto para fabricar": restam itens herdados do baseline (§7.3), impedância só estimada analiticamente no STEP 6 (§8), BOM com itens PROVISÓRIOS (STEP 4) e nenhuma prova física. O Freerouting é não-determinista — qualquer nova corrida do pipeline tem de ser re-validada pelo DRC.
 
 ## 1. Método (reprodutível)
 | Passo | Script | Entrada → saída | Evidência |
 |---|---|---|---|
-| 5a — placa a partir do baseline | `05_SCRIPTS\step5_update_pcb.py` | `HybridPanda.kicad_pcb.baseline` → `.kicad_pcb` (+ snapshot `.step5a`) | `06_REPORTS\step5_update_pcb.json` |
-| 5b — trilhas críticas + Freerouting | `05_SCRIPTS\step5b_route.py --passes 60` | `.step5a` → `.kicad_pcb` | `06_REPORTS\step5b_route.json`, `step5b_freerouting.log`, `HybridPanda_step5b.dsn/.ses` |
-| 5c — corretor orientado pelo DRC | `05_SCRIPTS\step5c_fix_unrouted.py --rounds 6` | `.kicad_pcb` (in place) | `06_REPORTS\step5c_fix.json` (`step5c_pre.json` para a fase P do 5b) |
-| 5d — serigrafia das referências novas | `05_SCRIPTS\step5d_silk.py` | `.kicad_pcb` (in place) + DRC | `06_REPORTS\step5d_silk.json` (D-31) |
-| DRC | `kicad-cli pcb drc --format json --severity-all --units mm` | → `06_REPORTS\hybrid_DRC_step5_final.json` | §7 |
+| 5a — placa a partir do baseline | `hardware\scripts\step5_update_pcb.py` | `HybridPanda.kicad_pcb.baseline` → `.kicad_pcb` (+ snapshot `.step5a`) | `hardware\reports\step5_update_pcb.json` |
+| 5b — trilhas críticas + Freerouting | `hardware\scripts\step5b_route.py --passes 60` | `.step5a` → `.kicad_pcb` | `hardware\reports\step5b_route.json`, `step5b_freerouting.log`, `HybridPanda_step5b.dsn/.ses` |
+| 5c — corretor orientado pelo DRC | `hardware\scripts\step5c_fix_unrouted.py --rounds 6` | `.kicad_pcb` (in place) | `hardware\reports\step5c_fix.json` (`step5c_pre.json` para a fase P do 5b) |
+| 5d — serigrafia das referências novas | `hardware\scripts\step5d_silk.py` | `.kicad_pcb` (in place) + DRC | `hardware\reports\step5d_silk.json` (D-31) |
+| DRC | `kicad-cli pcb drc --format json --severity-all --units mm` | → `hardware\reports\hybrid_DRC_step5_final.json` | §7 |
 
-Ferramentas: KiCad 10.0.7 (python embutido 3.11), Freerouting 2.5.0 (jar) + Java 25, headless. Comandos exactos em `05_SCRIPTS\README.md` (secção STEP 5). Nenhum ficheiro do baseline (`01_BASELINE`, `02_REFERENCE`) é alterado; tudo parte de cópias em `04_PROJECT`.
+Ferramentas: KiCad 10.0.7 (python embutido 3.11), Freerouting 2.5.0 (jar) + Java 25, headless. Comandos exactos em `hardware\scripts\readme.md` (secção STEP 5). Nenhum ficheiro do baseline (`archive/baseline-original`, `hardware/reference`) é alterado; tudo parte de cópias em `hardware`.
 
 ## 2. 5a — o que mudou no baseline (`step5_update_pcb.py`)
 - **Removidos** (9): ANT1, C15, C25, C9, L1, R10, R22, U2, U4 (GPS e periféricos do F413 sem equivalente no red panda). U7 (F413 LQFP-100, F.Cu) substituído pelo **U7 = STM32H725ZGT6 LQFP-144 em B.Cu**, centro (109,5; 56,6), rotação 90° (D-21/D-22 — colocação por pontuação de distância pad→pad, 348,1 mm).
@@ -37,10 +37,10 @@ Fases, por ordem: **Z** zonas (+3V3 In1 sob o MCU, clearance das zonas) → limp
 Lê o DRC JSON e, por item não ligado, aplica por ordem: via de costura em pad (8 direcções), via-in-pad (0,6/0,5), trilha→pour da mesma rede (só se o contorno vertido tiver via/PTH da rede), ligação de ilhas GND, trilha directa / em Z / por via (In1/In2), A* local (grelha 0,2–0,25 mm; obstáculos incluem furos com folga 0,25), rip-up de cadeia destravada de outra rede (revertido se falhar); `fix_clusters` para agrupamentos GND/+3V3 isolados (D-29; fallback D-30: trilha directa/A* até item do agrupamento principal, sem via nova); `fix_holes` (afunilamento de trilha do FR sobre furo PTH/via primeiro; depois fusão/remoção de vias do FR com `hole_to_hole`/`hole_clearance`); `fix_shorts` (`shorting_items`/`clearance` com item destravado do FR — observado uma vez: via BUS1O_RX × trilha SBU1_ADC In2 na saída do próprio Freerouting). No fim remove vias destravadas ligadas numa só camada e micro-segmentos < 0,02 mm. Pára quando o DRC não tem itens não ligados, furos, curtos nem clearance corrigíveis.
 
 ## 6. Verificação de integridade do baseline após o pipeline
-- USB D+/D− (P1 → U7.PA11/PA12): as trilhas do baseline em F.Cu iam ao F413 (F.Cu); como o U7 está em B.Cu, o troço final é **re-roteado pelo Freerouting** com vias (medição em STEP 6: `03_RESEARCH\STEP6_roteamento_impedancia.md` — 5 vias, 4 camadas, skew ≈ 2 mm, gap > 2 mm, i.e. par **não acoplado**). USB Full-Speed (12 Mbit/s) é tolerante a isto no comprimento em causa (< 40 mm), mas fica registado como risco em §8 e no LEIA-ME de fabricação.
+- USB D+/D− (P1 → U7.PA11/PA12): as trilhas do baseline em F.Cu iam ao F413 (F.Cu); como o U7 está em B.Cu, o troço final é **re-roteado pelo Freerouting** com vias (medição em STEP 6: `hardware\research\step6-roteamento-impedancia.md` — 5 vias, 4 camadas, skew ≈ 2 mm, gap > 2 mm, i.e. par **não acoplado**). USB Full-Speed (12 Mbit/s) é tolerante a isto no comprimento em causa (< 40 mm), mas fica registado como risco em §8 e no LEIA-ME de fabricação.
 - CAN H/L (BUS0–3_H/L, P1 ↔ U8–U11): trilhas do baseline em F.Cu **travadas permanentemente** (`re.match(r"BUS\w+_[HL]$")` em 5b/5c) — sem vias nos pares (requisito STEP 6 cumprido por herança; medição de comprimento/skew em STEP 6).
 
-## 7. Resultado DRC (corrida final — pipeline 5a→5b→5c→5d de 2026-10-26 12:15–12:45; `06_REPORTS\hybrid_DRC_step5_final.json`, placa `HybridPanda.kicad_pcb` = snapshot `.step5_final`)
+## 7. Resultado DRC (corrida final — pipeline 5a→5b→5c→5d de 2026-10-26 12:15–12:45; `hardware\reports\hybrid_DRC_step5_final.json`, placa `HybridPanda.kicad_pcb` = snapshot `.step5_final`)
 Corrida 20 do pipeline (as corridas 10–19 serviram para tornar o 5b/5c deterministas face ao Freerouting — D-26…D-30). Freerouting: 151 redes, 459 s, 30 ligações por fechar no seu critério (`step5b_freerouting.log`); KiCad após 5b: **6** itens não ligados; após 5c (3 rodadas, 40 itens adicionados, 46 micro-segmentos removidos, 0 vias soltas): **0**. Fases do 5b: M `u1_2_via: true` (via-in-pad GND U1.2 a 0,250 mm da trilha USB_PWR — aceite pelo DRC), R = 2/8 pares pré-roteados (BUS2_TX via 122,42; 53,87 · BUS2_RX via 123,02; 56,62), V = 42/50 vias de costura. 5d (`step5d_silk.py`): serigrafia das referências dos 37 componentes novos escondida (só cosmético). Totais: 1201 trilhas, 204 vias (0,45/0,25 do baseline; 0,5/0,6/0,7 com furo 0,3).
 
 ### 7.1 Itens não ligados
@@ -71,11 +71,11 @@ Antes do 5d havia ainda 20 `silk_over_copper` + 18 `silk_overlap` de referência
 | **Total** | **194** | **179** | |
 
 ## 8. NÃO VERIFICADO / BLOQUEADO / pendente
-- Impedância CAN_DIFF (120 Ω dif.) e USB (90 Ω dif.): **só estimada analiticamente** (STEP 6, `STEP6_roteamento_impedancia.md`); o DRC não verifica; sem TDR nem stackup do fabricante.
+- Impedância CAN_DIFF (120 Ω dif.) e USB (90 Ω dif.): **só estimada analiticamente** (STEP 6, `step6-roteamento-impedancia.md`); o DRC não verifica; sem TDR nem stackup do fabricante.
 - Skew e comprimentos dos pares CAN/USB: medidos no STEP 6 (CAN 1,1–1,9 mm de skew, 0 vias; USB_D± 2,5 mm, **4 vias**, par não acoplado — risco registado no LEIA-ME de fabricação).
 - Continuidade do plano GND In2: 1 agrupamento de conectividade (STEP 6 §4); fragmentos do pour documentados.
 - `starved_thermal` novas (§7.2) — exceção justificada, não corrigida.
 - Courtyard D7/U9 sobreposto e `isolated_copper`/`drill_out_of_range` são do baseline (ver §7.3) — não alterados (regra: não "melhorar" o baseline fora do escopo).
-- Caixa mecânica: STLs de `01_BASELINE` **não servem** (placa +5 mm, D-24).
+- Caixa mecânica: STLs de `archive/baseline-original` **não servem** (placa +5 mm, D-24).
 - Reprodutibilidade: o Freerouting é não-determinista; 20 corridas do pipeline foram necessárias para que 5b/5c fechassem sempre os pares problemáticos (D-26…D-30). Qualquer nova corrida exige repetir o DRC e o 5d.
 - Nenhuma validação física (protótipo) — STEP 9 descreve o bring-up.

@@ -16,9 +16,9 @@ import os, sys, json, math, time
 import pcbnew
 from pcbnew import VECTOR2I, FromMM, ToMM
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PCB = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb")
-REPORT = os.path.join(ROOT, "06_REPORTS", "fix_vip_rest.json")
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repository root
+PCB = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pcb")
+REPORT = os.path.join(ROOT, "hardware/reports", "fix_vip_rest.json")
 DRY = "--dry" in sys.argv
 HOLE_PAD_CLR = 0.15; VIA_CLR = 0.12; HOLE_CLR = 0.25; SEG_CLR = 0.10
 LAYERS4 = (pcbnew.F_Cu, pcbnew.In1_Cu, pcbnew.In2_Cu, pcbnew.B_Cu)

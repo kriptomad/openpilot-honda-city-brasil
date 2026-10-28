@@ -1,4 +1,4 @@
-# FLOWPILOT_SCOPE.md - Fase A: pesquisa e escopo do port do Honda City G7 2023 (BR) para flowpilot
+# flowpilot-scope.md - Fase A: pesquisa e escopo do port do Honda City G7 2023 (BR) para flowpilot
 
 Data da pesquisa: 2026-10-27. Fonte: API do GitHub (`gh api`), READMEs e wikis dos
 repositorios, codigo-fonte baixado por API (copias em `api_cache\`). Nada aqui foi
@@ -6,8 +6,8 @@ testado em carro ou em telefone; ver secao 9 (nao verificado).
 
 Alvo do dono: Honda City G7 2023 (Brasil) + Xiaomi Poco F3 (Snapdragon 870, Android 11-13)
 + black panda (STM32F4). Base ja existente: port fiel do City em openpilot v0.9.9
-(`09_FIRMWARECITYG7_BLACKPANDA\`, relatorios `AUDITORIA_PORT_CITY_V099.md`,
-`audit2\AUDITORIA2_INDEPENDENTE.md`, `LEIA-ME.md`).
+(`software\openpilot-port\`, relatorios `../openpilot-port/auditoria-port-city-v099.md`,
+`../openpilot-port/audit2/auditoria2-independente.md`, `../openpilot-port/readme.md`).
 
 ## 1. Estado do projeto flowpilot
 
@@ -90,12 +90,12 @@ Limitacoes aceitas:
 
 ### 2.3 Veredito de compatibilidade
 - Firmware v0.9.9 (panda `e462c34d` + opendbc/safety) usa tambem CAN v4 / HEALTH 16 /
-  CAN_HEALTH 5 (verificado em `02_REFERENCE\panda_legacy_f4`), portanto a lib python do
+  CAN_HEALTH 5 (verificado em `hardware\reference\panda_legacy_f4`), portanto a lib python do
   jag conseguiria falar com ele. **Porem e irrelevante**: o app regrava a panda com o
   firmware da propria arvore. Logo o firmware **tem de ser construido da arvore
   `flowpilot/panda`** (alvo F4 `panda`), e e esse que vai no APK. Nosso toolchain
-  `arm-none-eabi-gcc` em Windows ja compilou F4 antes (`03_RESEARCH\PANDAREVIVE_SCOPE.md`,
-  `local_build_windows.scons`).
+  `arm-none-eabi-gcc` em Windows ja compilou F4 antes (`hardware\research\pandarevive-scope.md`,
+  `../../hardware/research/local-build-windows.scons`).
 - Safety: `HONDA_BOSCH` com param `RADARLESS (8)` existe na arvore jag. Nao e preciso
   portar codigo de safety; e preciso garantir que `interface.py` do City envie
   `safetyParam |= FLAG_HONDA_RADARLESS` (o codigo generico do radarless ja faz isso
@@ -123,7 +123,7 @@ Limitacoes aceitas:
 ## 4. Lista de lacunas (gap list) e classificacao
 
 Mapeamento com os commits upstream da tabela de 73 commits em
-`AUDITORIA_PORT_CITY_V099.md` secao 2 (so os que afetam o City; os demais ja estao
+`../openpilot-port/auditoria-port-city-v099.md` secao 2 (so os que afetam o City; os demais ja estao
 no upstream da arvore jag ou nao se aplicam).
 
 | # | Lacuna | Commit(s) upstream (opendbc/openpilot) | Classe | Esforco | Risco |
@@ -132,7 +132,7 @@ no upstream da arvore jag ou nao se aplicam).
 | G2 | FW_VERSIONS do City (6 ECUs) | `fingerprints.py` do port | backport direto | baixo | baixo (nao usado em runtime no jag) |
 | G3 | Fingerprint CAN legado + `allcars.txt` | nao existe upstream (upstream usa FW) | **adaptacao**: derivar `{addr: dlc}` do bus 0 do rlog `56b2cf1dacdcd033/00000017` | baixo | medio: fingerprint CAN e fragil (opcionais, versoes); mitigado pelo `Mycar` fixo |
 | G4 | Tune torque (1.2 / 0.23 / ki 0.3), delay 0.15 | `override.toml` + `interface.py` do port | backport direto (`override.yaml`, `configure_torque_tune`) | baixo | baixo |
-| G5 | `GEARBOX_CVT` em `honda_civic_ex_2022_can` BO_ 401 | opendbc `audit2\proposed_patches\0001-*.patch` (upstream Civic/HRV CVT) | adaptacao (gerador do opendbc jag + regenerar) | medio | medio: afeta CIVIC_2022/HRV_3G (igual ao upstream, que tambem usa CVT nesses) |
+| G5 | `GEARBOX_CVT` em `honda_civic_ex_2022_can` BO_ 401 | opendbc `audit2\proposed-patches\0001-*.patch` (upstream Civic/HRV CVT) | adaptacao (gerador do opendbc jag + regenerar) | medio | medio: afeta CIVIC_2022/HRV_3G (igual ao upstream, que tambem usa CVT nesses) |
 | G6 | `HAS_EPB` condicional (sem 0x1C2) | openpilot 6fa346ed | adaptacao (flag por presenca de 0x1C2 no fingerprint) | baixo | baixo |
 | G7 | Marcha S aceita | openpilot (GearShifter sport) | verificar/ajustar | baixo | baixo |
 | G8 | `transmissionType = cvt` quando 0x191 presente, `minSteerSpeed 23 km/h` | `interface.py` do port | backport direto | baixo | baixo |
@@ -164,11 +164,11 @@ Esforco total estimado: 2-3 dias de trabalho de engenharia + validacao em carro
 
 ## 7. Decisao
 Fase B prossegue na arvore jag, branch local `flowpilot-city-g7-brazil`, sem push.
-Detalhes do port em `PORT_CITY_FLOWPILOT.md`.
+Detalhes do port em `port-city-flowpilot.md`.
 
 ## 8. Arquivos de referencia
 - `api_cache\` - copias dos arquivos consultados por API (flowdriveai e jag).
-- `..\09_FIRMWARECITYG7_BLACKPANDA\AUDITORIA_PORT_CITY_V099.md` - fatos do City.
+- `..\software\openpilot-port\auditoria-port-city-v099.md` - fatos do City.
 
 ## 9. Nao verificado
 - Funcionamento do flowpilot (qualquer versao) em Poco F3 com MIUI/HyperOS.

@@ -1,4 +1,4 @@
-"""Step 3 (schematic side): SI/PI HIGH items from 06_REPORTS/si_pi_audit/proposed_changes.md.
+"""Step 3 (schematic side): SI/PI HIGH items from hardware/reports/si-pi-audit/proposed-changes.md.
 
   item 4  R1 1k -> 10k, R_0402 -> R_0603 (Q4 gate)
   item 5  D15 zener 12 V BZT52C12 SOD-123, cathode 12V_Protected (Q4 source), anode Net-(D2-A) (Q4 gate)
@@ -18,9 +18,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from step4_build_schematic import Builder, SHEET_PATH  # noqa: E402
 from kiutils.schematic import Schematic  # noqa: E402
 
-ROOT = Path(__file__).resolve().parents[1]
-SCH = ROOT / "04_PROJECT" / "HybridPanda" / "HybridPanda.kicad_sch"
-REPORT = ROOT / "06_REPORTS" / "corr" / "step3_sch.json"
+ROOT = Path(__file__).resolve().parents[2]  # repository root
+SCH = ROOT / "hardware" / "hybrid-panda" / "HybridPanda.kicad_sch"
+REPORT = ROOT / "hardware/reports" / "corrections" / "step3_sch.json"
 
 
 def ref_of(s):

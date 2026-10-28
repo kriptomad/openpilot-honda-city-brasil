@@ -1,10 +1,10 @@
 # P10 — Conector OBD-C, harness box v3 e lógica SBU (fonte oficial commaai/hardware)
 
-Fontes: `02_REFERENCE\hardware` @ a42a4752dc5872a8a1136dee0cf0636aa6da57d6 (sem LICENSE; folha de rosto diz "comma.ai — you can copy this!"):
-- `harness\OBD-C.sch.pdf` → render `03_RESEARCH\renders\OBDC_sch_p1.png`
+Fontes: `hardware\reference\hardware` @ a42a4752dc5872a8a1136dee0cf0636aa6da57d6 (sem LICENSE; folha de rosto diz "comma.ai — you can copy this!"):
+- `harness\OBD-C.sch.pdf` → render `hardware\research\renders\OBDC_sch_p1.png`
 - `harness\v3\Harness_Box.pdf` ("car harness v3", 20 Aug 2024) → `renders\HarnessBox_p1.png`
 - `harness\v3\Honda_Bosch_B_Harness.pdf` → `renders\HondaBoschB_p1.png`
-- Firmware: `02_REFERENCE\panda\board\drivers\harness.h`, `boards\red.h` @408e14d4.
+- Firmware: `hardware\reference\panda\board\drivers\harness.h`, `boards\red.h` @408e14d4.
 Legenda: **[F]** fato · **[I]** inferência · **NV** não verificado.
 
 ## 1. Pinout OBD-C (lado harness, fêmea USB-C) **[F]** — OBD-C.sch.pdf

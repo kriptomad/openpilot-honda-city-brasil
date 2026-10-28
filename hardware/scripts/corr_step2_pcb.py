@@ -13,10 +13,10 @@ import pcbnew
 from pcbnew import VECTOR2I, FromMM, ToMM
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
-PCB = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb")
-SCH = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_sch")
-REPORT = os.path.join(ROOT, "06_REPORTS", "corr", "step2_pcb.json")
+ROOT = os.path.dirname(os.path.dirname(HERE))  # repository root
+PCB = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pcb")
+SCH = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_sch")
+REPORT = os.path.join(ROOT, "hardware/reports", "corrections", "step2_pcb.json")
 FP_LIB = r"C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\share\kicad\footprints"
 SHEET_PATH = "/5994f1e8-15cb-459b-8e2e-160b94fba244"
 DRY = "--dry" in sys.argv

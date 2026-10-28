@@ -19,8 +19,8 @@ import pcbnew
 from pcbnew import FromMM, ToMM, VECTOR2I
 
 ROOT = str(hp.OUTPUT_ROOT)
-PCB = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb")
-OUT = os.path.join(ROOT, "06_REPORTS", "corr", "step1b_fix.json")
+PCB = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pcb")
+OUT = os.path.join(ROOT, "hardware/reports", "corrections", "step1b_fix.json")
 board = pcbnew.LoadBoard(PCB)
 log = []
 P = lambda x, y: VECTOR2I(FromMM(x), FromMM(y))

@@ -1,13 +1,13 @@
 """coverage_matrix.py - STEP 2: prove every HRS requirement against the official commaai sources.
 
 For each requirement (id, description, repo, file glob, regex) the script greps the read-only clones in
-02_REFERENCE and records the first matching file:line plus the matched text. A requirement with no match is
-reported as NOT_FOUND so that HRS_red_panda.md cannot silently drift from the firmware.
+hardware/reference and records the first matching file:line plus the matched text. A requirement with no match is
+reported as NOT_FOUND so that ../research/hrs-red-panda.md cannot silently drift from the firmware.
 
 Outputs (OUTPUT_ROOT only):
-  03_RESEARCH/coverage_matrix.csv
-  03_RESEARCH/coverage_matrix.md
-  06_REPORTS/coverage_matrix.json
+  hardware/research/coverage-matrix.csv
+  hardware/research/coverage-matrix.md
+  hardware/reports/coverage_matrix.json
 """
 from __future__ import annotations
 
@@ -145,8 +145,8 @@ def main():
                      "evidence": where, "match": match})
         (log.info if status in ("FOUND", "FILE_PRESENT", "CONFIRMED_ABSENT") else log.warn)(f"{rid} {status}", where=where)
 
-    out_csv = hp.OUTPUT_ROOT / "03_RESEARCH" / "coverage_matrix.csv"
-    out_md = hp.OUTPUT_ROOT / "03_RESEARCH" / "coverage_matrix.md"
+    out_csv = hp.OUTPUT_ROOT / "hardware/research" / "coverage-matrix.csv"
+    out_md = hp.OUTPUT_ROOT / "hardware/research" / "coverage-matrix.md"
     hp.assert_inside_output(out_csv)
     hp.backup_before_write(out_csv, "coverage")
     if not hp.DRY_RUN:
@@ -156,7 +156,7 @@ def main():
             w.writerows(rows)
     n_ok = sum(r["status"] in ("FOUND", "FILE_PRESENT", "CONFIRMED_ABSENT") for r in rows)
     md = ["# Coverage matrix — HRS vs. fontes oficiais commaai", "",
-          f"Gerado por `05_SCRIPTS/coverage_matrix.py`. Requisitos: {len(rows)}, provados: {n_ok}, não encontrados: {len(rows)-n_ok}.", "",
+          f"Gerado por `hardware/scripts/coverage_matrix.py`. Requisitos: {len(rows)}, provados: {n_ok}, não encontrados: {len(rows)-n_ok}.", "",
           "HEADs: " + ", ".join(f"{k}={v[:12]}" for k, v in heads.items()), "",
           "| ID | Requisito | Status | Evidência (repo/arquivo:linha) | Texto |", "|---|---|---|---|---|"]
     for r in rows:

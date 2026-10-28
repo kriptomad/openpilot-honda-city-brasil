@@ -1,6 +1,6 @@
 """
 final_audit.py — auditoria final independente do DRC (PCB + esquemático + BOM).
-Só leitura. Python do KiCad 10 (pcbnew). Saídas: 06_REPORTS\final_audit.json, 03_RESEARCH\AUDITORIA_FINAL.md
+Só leitura. Python do KiCad 10 (pcbnew). Saídas: hardware\\reports\final_audit.json, docs\\final-audit.md
 
 PCB:  A) curtos virtuais: cobre×cobre de redes diferentes (folga 0 e 0,10 mm), zona×cobre, furo×cobre, conectividade por rede
       B) montagem: via-in-pad, teia de máscara entre pads, pads/corpos perto da borda, corpos sobrepostos, THT, polaridade,
@@ -15,7 +15,7 @@ import pcbnew
 from pcbnew import FromMM, ToMM
 
 ROOT = hp.OUTPUT_ROOT; REP = hp.REPORT_DIR
-PCB = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb")
+PCB = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pcb")
 NETXML = os.path.join(REP, "hybrid_HybridPanda_netlist.xml")
 BOMCSV = os.path.join(REP, "hybrid_BOM.csv")
 T0 = time.time()
@@ -330,7 +330,7 @@ n_mpn = sum(1 for f in flags if "sem MPN" not in f["notas"])
 if n_mpn < len(flags):
     F("ALTO", "BOM", "%d linhas / %d referências; %d linhas com MPN — não encomendável sem preencher as restantes; itens críticos marcados (VCAP ESR, SMPS, L5, Y1 CL)" % (len(flags), n_refs, n_mpn))
 else:
-    F("INFO", "BOM", "%d linhas / %d referências; todas com MPN (LCSC 'a verificar' em 06_REPORTS/bom_real/BOM_HYBRIDPANDA_v1.csv); itens críticos marcados (VCAP ESR, SMPS, L5, Y1 CL)" % (len(flags), n_refs))
+    F("INFO", "BOM", "%d linhas / %d referências; todas com MPN (LCSC 'a verificar' em hardware/reports/bom-real/BOM_HYBRIDPANDA_v1.csv); itens críticos marcados (VCAP ESR, SMPS, L5, Y1 CL)" % (len(flags), n_refs))
 for f in flags:
     if any("duvidos" in n or "não serve" in n for n in f["notas"]): F("MEDIO", "BOM", "; ".join(f["notas"]), refs=f["refs"], value=f["value"], footprint=f["footprint"])
 
@@ -339,7 +339,7 @@ out["seconds"] = round(time.time() - T0, 1)
 sevc = collections.Counter(f["sev"] for f in out["findings"]); out["by_severity"] = dict(sevc)
 hp.assert_inside_output(os.path.join(REP, "final_audit.json"))
 json.dump(out, open(os.path.join(REP, "final_audit.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False, default=str)
-L = ["# Auditoria final — PCB, esquemático e BOM (independente do DRC)", "", "Data: %s · `05_SCRIPTS\\final_audit.py` (%.0f s) · placa `%s` · JSON `06_REPORTS\\final_audit.json`" % (out["date"], out["seconds"], out["board"]), "",
+L = ["# Auditoria final — PCB, esquemático e BOM (independente do DRC)", "", "Data: %s · `hardware\\scripts\\final_audit.py` (%.0f s) · placa `%s` · JSON `hardware\\reports\\final_audit.json`" % (out["date"], out["seconds"], out["board"]), "",
      "## Resumo por gravidade", "", "| Gravidade | Qtd |", "|---|---|"] + ["| %s | %d |" % (k, sevc.get(k, 0)) for k in ("CRITICO", "ALTO", "MEDIO", "BAIXO", "INFO")]
 L += ["", "## A. Teste de curtos virtuais (geométrico, folga 0)", "",
       "- Pares cobre×cobre de redes diferentes testados (caixas a < 0,10 mm): **%d** → sobreposições (curto): **%d**; folga < 0,10 mm: %d" % (pairs_tested, len(shorts), len(clr_viol)),
@@ -365,7 +365,7 @@ L += ["| %s | %s | %s | %s | %s |" % (f["refs"], f["value"], f["footprint"], f["
 L += ["", "## Veredicto honesto", "",
       "Curtos virtuais: ver §A (0 = nenhum item de cobre de redes diferentes se sobrepõe na geometria real da placa, incluindo preenchimentos de zona e furos). Isto é prova **geométrica estática**; não substitui teste eléctrico de continuidade/isolamento na placa fabricada (flying probe do fabricante ou multímetro no bring-up — STEP 9 passos 1–3).",
       "Os achados ALTO/MEDIO de montagem (via-in-pad, teia de máscara, fiduciais, BOM sem MPN) têm de ser resolvidos antes de qualquer encomenda. **Não fabricar** nesta revisão."]
-hp.guarded_write_text(os.path.join(ROOT, "03_RESEARCH", "AUDITORIA_FINAL.md"), "\n".join(L) + "\n")
+hp.guarded_write_text(os.path.join(ROOT, "docs", "final-audit.md"), "\n".join(L) + "\n")
 print(json.dumps({"by_severity": out["by_severity"], "shorts": len(shorts), "zone_shorts": len(zone_shorts), "hole_hits": len(hole_hits), "clr": len(clr_viol), "zone_clr": len(zone_clr), "split": len(split_nets), "unconn": unconn, "vip": len(vip), "mask_web": len(mask_web), "cy": len(cy_overlap), "seconds": out["seconds"]}, ensure_ascii=False))
 sys.stdout.flush(); os._exit(0)  # pcbnew teardown can hang the interpreter (KiCad 10)
 

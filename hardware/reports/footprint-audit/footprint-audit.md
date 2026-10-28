@@ -1,6 +1,6 @@
 # Auditoria de footprints - Hybrid Panda (KiCad 10)
 
-Placa: 04_PROJECT/HybridPanda/HybridPanda.kicad_pcb (somente leitura). 120 footprints, 30 grupos lib:footprint.
+Placa: hardware/hybrid-panda/HybridPanda.kicad_pcb (somente leitura). 120 footprints, 30 grupos lib:footprint.
 Data da auditoria: gerado por build_report.py. Nenhum arquivo rastreado foi alterado; proposed_fixes.py so foi executado em --dry-run (e em --apply apenas sobre uma COPIA temporaria, depois apagada).
 
 **STATUS: PARCIAL.** Geometria de todos os 120 footprints medida e comparada com biblioteca/IPC; datasheets online obtidos apenas para U8-U11 (NXP SOT782-1), U6 (TI TPS5450), P1 (HRO TYPE-C-31-M-04) e U5 (FM-B1921RGBA-SH). Pendente ('a verificar' quando a rede permitir): PDFs de ST (U7), Diodes (D1, D11, Q1/Q2, U1), Nexperia (D2, D5-D9, D10, D13/D14, Q3), XLSEMI (U12), HY (Q4), Murata (L5), Alps (SW1), Yangxing (Y1), SHOU HAN (U3), SMMS0650 (L3). Para esses, os valores 'tipicos' citados vem de catalogo/memoria e NAO foram reconfirmados online.
@@ -8,7 +8,7 @@ Data da auditoria: gerado por build_report.py. Nenhum arquivo rastreado foi alte
 ## Metodo
 
 1. footprint_dump.py (pcbnew): referencia, lib id, camada, rotacao, atributo, modelos 3D, cada pad (numero, rede, posicao local sem rotacao, tamanho, forma, PTH/SMD/NPTH, furo, camadas) -> board_dump.json.
-2. lib_compare.py: diff pad a pad contra a copia de biblioteca (KiCad 10 share/footprints e 01_BASELINE/.../BlackPanda.pretty, HybridPanda.pretty) -> lib_compare.txt/json. Resultado: so Q3, U6 e Y1 tem pads diferentes da lib; os 64 'lib_footprint_mismatch' do DRC restantes sao graficos (courtyard convertido em 4 linhas, marcas de pino 1 em silk, atributos de fiducial).
+2. lib_compare.py: diff pad a pad contra a copia de biblioteca (KiCad 10 share/footprints e archive/baseline-original/.../BlackPanda.pretty, HybridPanda.pretty) -> lib_compare.txt/json. Resultado: so Q3, U6 e Y1 tem pads diferentes da lib; os 64 'lib_footprint_mismatch' do DRC restantes sao graficos (courtyard convertido em 4 linhas, marcas de pino 1 em silk, atributos de fiducial).
 3. kicad-cli pcb drc --severity-all: 64 lib_footprint_mismatch, 10 footprint_type_mismatch (D1, D5-D9, Q1, Q2, U5, L3: atributo THT com pads SMD), 8 hole_clearance em P1 (slot PTH x NPTH 0.144 mm), 1 drill_out_of_range (via 0.25 mm, nao e footprint).
 4. Datasheets: download via Python urllib com retries (ds_bulk.py), texto via pypdf (ds_fetch.py), desenhos renderizados com pymupdf (ds_render.py) e lidos visualmente. O proxy corporativo bloqueou/zerou a maioria dos downloads (Nexperia/Diodes 403, ST timeout, XLSEMI/LCSC reset, Murata SSL). Obtidos: NXP SOT782-1, TI TPS5450, HRO TYPE-C-31-M-04, FM-B1921RGBA-SH. Para os demais o veredito e UNVERIFIABLE ou NOTE comparando com a biblioteca KiCad 10 (IPC-7351 nominal) e valores tipicos de catalogo - indicados como tal.
 5. Polaridade/pino 1: polarity_dump.py lista pads + graficos de silk/fab por footprint; verificado D1, D2, D10, D11, D12, D5, Q1, U5 e os mapeamentos de rede de U1, U6, U7, U8-U11, Q4, D13.

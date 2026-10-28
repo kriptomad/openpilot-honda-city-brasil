@@ -1,6 +1,6 @@
 # Paridade firmware x hardware — perfil `black_f4` — netlist `baseline_BlackPanda_netlist.xml`
 
-Firmware: 02_REFERENCE/panda_legacy_f4 @ f849893bdcfc6cd05d4547d64d2802b5a83f409c. MCU: U7 (STM32F413RGTx, Package_QFP:LQFP-64_10x10mm_P0.5mm).
+Firmware: hardware/reference/panda_legacy_f4 @ f849893bdcfc6cd05d4547d64d2802b5a83f409c. MCU: U7 (STM32F413RGTx, Package_QFP:LQFP-64_10x10mm_P0.5mm).
 Resultado: **SEM DIVERGÊNCIA** — OK=35
 
 | Pino FW | Pad | Papel | Sinal/grupo | Net | Status | Detalhe | Fonte firmware |

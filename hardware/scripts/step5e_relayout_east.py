@@ -15,10 +15,10 @@ O que faz (deterministico; corre DEPOIS de step5_update_pcb.py e ANTES de step5b
      C33/C32 +1.0 mm ao sul (livra a via do pino 3), D13 +0.5/+0.3, Q1/Q2 -0.5/+0.6, R24 +1.0/-0.5
   6. desenhos (serigrafia, textos) com centro x >= X_CUT acompanham o bloco
   7. refill, grava HybridPanda.kicad_pcb, apaga o snapshot .step5a (o 5b cria um novo a partir desta saida),
-     DRC rapido (kicad-cli) e relatorio 06_REPORTS/step5e_relayout_east.json
+     DRC rapido (kicad-cli) e relatorio hardware/reports/step5e_relayout_east.json
 
 Idempotente: na 1.a execucao guarda HybridPanda.kicad_pcb.step5e_in (saida do 5a); depois parte sempre dele.
-Uso: "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\python.exe" 05_SCRIPTS\\step5e_relayout_east.py [--dry] [--no-drc]
+Uso: "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\python.exe" hardware\\scripts\\step5e_relayout_east.py [--dry] [--no-drc]
 """
 import json, os, shutil, subprocess, sys, time, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -27,11 +27,11 @@ import pcbnew
 from pcbnew import VECTOR2I, FromMM, ToMM
 
 ROOT = str(hp.OUTPUT_ROOT)
-PCB = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb")
+PCB = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pcb")
 SNAP_IN = PCB + ".step5e_in"
-SNAP_5A = PCB + ".step5a"
-REPORT = os.path.join(ROOT, "06_REPORTS", "step5e_relayout_east.json")
-DRC_OUT = os.path.join(ROOT, "06_REPORTS", "hybrid_DRC_step5e.json")
+SNAP_5A = os.path.join(os.path.dirname(PCB), "snapshots", "HybridPanda.kicad_pcb.step5a")
+REPORT = os.path.join(ROOT, "hardware/reports", "step5e_relayout_east.json")
+DRC_OUT = os.path.join(ROOT, "hardware/reports", "hybrid_DRC_step5e.json")
 DRY = "--dry" in sys.argv
 NO_DRC = "--no-drc" in sys.argv
 
@@ -263,7 +263,7 @@ if not DRY:
         rep["drc"] = {"unconnected_items": len(d["unconnected_items"]), "by_type": dict(c.most_common()),
                       "copper_issues": [(v["type"], v["description"], [P(VECTOR2I(int(i["pos"]["x"] * 1e6), int(i["pos"]["y"] * 1e6))) for i in v["items"] if "pos" in i])
                                         for v in d["violations"] if v["type"] in ("clearance", "shorting_items", "hole_clearance", "copper_edge_clearance", "courtyards_overlap", "track_dangling", "via_dangling", "tracks_crossing")]}
-        ref5a = os.path.join(ROOT, "06_REPORTS", "hybrid_DRC_step5a.json")
+        ref5a = os.path.join(ROOT, "hardware/reports", "hybrid_DRC_step5a.json")
         if os.path.exists(ref5a):
             c0 = collections.Counter(v["type"] for v in json.load(open(ref5a, encoding="utf-8"))["violations"])
             rep["drc"]["delta_vs_step5a"] = {k: c[k] - c0.get(k, 0) for k in set(c) | set(c0) if c[k] != c0.get(k, 0)}

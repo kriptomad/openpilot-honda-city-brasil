@@ -1,7 +1,7 @@
 """corr_gate.py - portao DRC/ERC reutilizado pelas correcoes auditadas (corr_step*.py).
 
 Uso:
-  python -u corr_gate.py drc  [--out 06_REPORTS\\corr\\drc_<tag>.json] [--tag X]   -> resumo por tipo + delta vs baseline
+  python -u corr_gate.py drc  [--out hardware\\reports\\corr\\drc_<tag>.json] [--tag X]   -> resumo por tipo + delta vs baseline
   python -u corr_gate.py erc  [--tag X]
   python -u corr_gate.py backup <stepN>   -> copia .kicad_pcb/.kicad_sch/.kicad_pro para %TEMP%\\hp_backup\\stepN
   python -u corr_gate.py padnets <out.json> -> dump pad->rede de todos os footprints (para diff antes/depois)
@@ -20,15 +20,15 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import hp_common as hp
 
 ROOT = str(hp.OUTPUT_ROOT)
-PCB = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb")
-SCH = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_sch")
-PRO = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pro")
+PCB = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pcb")
+SCH = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_sch")
+PRO = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pro")
 CLI = str(hp.KICAD_CLI)
-CORR_DIR = os.path.join(ROOT, "06_REPORTS", "corr")
+CORR_DIR = os.path.join(ROOT, "hardware/reports", "corrections")
 # frozen copy of the pre-correction step7 DRC (step7_validate.py rewrites hybrid_DRC_step7.json on every run)
 BASELINE = os.path.join(CORR_DIR, "drc_baseline_step7_orig.json")
 if not os.path.exists(BASELINE):
-    BASELINE = os.path.join(ROOT, "06_REPORTS", "hybrid_DRC_step7.json")
+    BASELINE = os.path.join(ROOT, "hardware/reports", "hybrid_DRC_step7.json")
 
 
 def summarize(path):

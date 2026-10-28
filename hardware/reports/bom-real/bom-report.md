@@ -1,11 +1,11 @@
 # Hybrid Panda - BOM com MPN reais (v1) - RELATORIO PARCIAL
 
-Data: 2026-10-27. Projeto: 04_PROJECT\HybridPanda\HybridPanda.kicad_sch (STM32H725ZGT6, 4x TJA1042TK/3).
+Data: 2026-10-27. Projeto: hardware\hybrid-panda\HybridPanda.kicad_sch (STM32H725ZGT6, 4x TJA1042TK/3).
 Arquivos gerados (apenas novos, nada rastreado foi alterado):
 
-- BOM_HYBRIDPANDA_v1.csv - BOM completa (48 linhas, 114 componentes - bate com 06_REPORTS\hybrid_BOM.csv).
+- BOM_HYBRIDPANDA_v1.csv - BOM completa (48 linhas, 114 componentes - bate com hardware\reports\hybrid_BOM.csv).
 - BOM_JLCPCB.csv - formato JLCPCB (Comment, Designator, Footprint, LCSC Part #).
-- BOM_REPORT.md - este relatorio.
+- bom-report.md - este relatorio.
 
 **STATUS: PARCIAL.** Toda a parte LCSC/JLCPCB (numero LCSC, estoque, Basic/Extended, preco @10, datasheet)
 foi obtida de base de dados real. A coluna Mouser/Digi-Key tem SKU e preco verificados apenas para
@@ -136,8 +136,8 @@ Para 2-5 prototipos (max. 5 pcs de cada, 20 pcs de TJA1042) todos os estoques ac
 
 ## 10. Passo 4 da campanha de correcoes (2026-10-28) - delta da BOM apos passos 1-3
 
-Script: 05_SCRIPTS\corr_step4_bom.py (edita BOM_HYBRIDPANDA_v1.csv, regenera BOM_JLCPCB.csv, grava MPN/Manufacturer/LCSC
-como propriedades ocultas nos simbolos do esquema e regenera 06_REPORTS\hybrid_BOM.csv com kicad-cli, agrupado por
+Script: hardware\scripts\corr_step4_bom.py (edita BOM_HYBRIDPANDA_v1.csv, regenera BOM_JLCPCB.csv, grava MPN/Manufacturer/LCSC
+como propriedades ocultas nos simbolos do esquema e regenera hardware\reports\hybrid_BOM.csv com kicad-cli, agrupado por
 Value,Footprint,MPN). Resultado: 53 linhas / 119 referencias; 118 com MPN (JP1 e jumper de solda, sem peca).
 
 | Ref | Antes | Depois | LCSC | Status |
@@ -152,7 +152,7 @@ Value,Footprint,MPN). Resultado: 53 linhas / 119 referencias; 118 com MPN (JP1 e
 | U13 (novo) | - | USBLC6-2SC6 SOT-23-6 ST (passo 3 item 8) | C7519 | OK (confirmado lcsc.com) |
 | D10 | datasheet onsemi MBR1020 (errado) | datasheet Nexperia BAS70H | C426766 | OK; funcao (item 9) deferida |
 
-Nao alterados nesta rodada (decisao documentada em 06_REPORTS\CORRECOES_APLICADAS.md): 47uF 0805 mantidos com a peca 10V
+Nao alterados nesta rodada (decisao documentada em hardware\reports\correcoes-aplicadas.md): 47uF 0805 mantidos com a peca 10V
 (0805X476M100NT); C8 10uF 0402 mantido (troca para 0603 exige espaco no PCB); U1 AP22615AWU-7 mantido, TPS2553DBVR
 (C55266) apenas como alternativa documentada (exige recalcular R27); C21 polimero 100uF (item 36) nao aplicado.
 Os numeros LCSC marcados TO-VERIFY vieram de busca web (nao da base jlcparts) e devem ser confirmados antes de encomendar.

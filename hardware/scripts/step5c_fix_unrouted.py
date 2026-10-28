@@ -20,16 +20,16 @@ import json, os, re, subprocess, sys, math
 import pcbnew
 from pcbnew import VECTOR2I, FromMM, ToMM
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PCB = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb")
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repository root
+PCB = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pcb")
 KICAD_CLI = os.path.join(os.path.dirname(sys.executable), "kicad-cli.exe")
-DRC_TMP = os.path.join(ROOT, "06_REPORTS", "tmp_drc_5c.json")
-REPORT = os.path.join(ROOT, "06_REPORTS", "step5c_fix.json")
+DRC_TMP = os.path.join(ROOT, "hardware/reports", "tmp_drc_5c.json")
+REPORT = os.path.join(ROOT, "hardware/reports", "step5c_fix.json")
 ROUNDS = int(sys.argv[sys.argv.index("--rounds") + 1]) if "--rounds" in sys.argv else 5
 DRY = "--dry" in sys.argv
 POWER_ONLY = "--pre" in sys.argv
 LOCK_ADDED = POWER_ONLY
-if POWER_ONLY: REPORT = os.path.join(ROOT, "06_REPORTS", "step5c_pre.json")
+if POWER_ONLY: REPORT = os.path.join(ROOT, "hardware/reports", "step5c_pre.json")
 PLANE_NETS = {"GND": None, "+3V3": "In1.Cu"}  # via em qualquer lugar liga ao GND; +3V3 so dentro da zona In1
 LAYERS4 = (pcbnew.F_Cu, pcbnew.In1_Cu, pcbnew.In2_Cu, pcbnew.B_Cu)
 
@@ -928,7 +928,7 @@ def manual_fixes():
 def main(rounds=None, power_only=None, lock=None):
   global ROUNDS, POWER_ONLY, LOCK_ADDED, REPORT
   if rounds is not None: ROUNDS = rounds
-  if power_only is not None: POWER_ONLY = power_only; REPORT = os.path.join(ROOT, "06_REPORTS", "step5c_pre.json" if power_only else "step5c_fix.json")
+  if power_only is not None: POWER_ONLY = power_only; REPORT = os.path.join(ROOT, "hardware/reports", "step5c_pre.json" if power_only else "step5c_fix.json")
   if lock is not None: LOCK_ADDED = lock
   for rnd in range(ROUNDS):
       pcbnew.ZONE_FILLER(board).Fill(board.Zones()); board.BuildConnectivity()

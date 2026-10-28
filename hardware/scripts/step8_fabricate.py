@@ -1,4 +1,4 @@
-"""step8_fabricate.py - STEP 8 (protocolo v3): pacote de fabricação em 07_FABRICATION.
+"""step8_fabricate.py - STEP 8 (protocolo v3): pacote de fabricação em hardware/fabrication.
 
 Gera (kicad-cli 10 + pcbnew):
   gerbers/   F.Cu In1.Cu In2.Cu B.Cu, máscaras, serigrafia, pasta, Edge.Cuts (Protel ext., X2 off, p/ JLC)
@@ -8,7 +8,7 @@ Gera (kicad-cli 10 + pcbnew):
   3d/        HybridPanda.step
   drill_table.md / drill_table.json : furos PTH/NPTH/vias com anel anular mínimo calculado
   gerber_check.json : verificação sintática dos gerbers (RS-274X: aperturas, D-codes, M02) — NÃO substitui visualizador
-  LEIA-ME.txt : estado real ("NÃO FABRICAR" enquanto houver bloqueios) com motivos
+  ../fabrication/readme.md : estado real ("NÃO FABRICAR" enquanto houver bloqueios) com motivos
 Lê step7_validation.json para decidir o estado. Nada fora de OUTPUT_ROOT.
 """
 import csv, json, os, re, subprocess, sys, time, zipfile, collections
@@ -17,11 +17,11 @@ import hp_common as hp
 import pcbnew
 
 ROOT = str(hp.OUTPUT_ROOT)
-PROJ = os.path.join(ROOT, "04_PROJECT", "HybridPanda")
+PROJ = os.path.join(ROOT, "hardware", "hybrid-panda")
 SCH = os.path.join(PROJ, "HybridPanda.kicad_sch")
 PCB = os.path.join(PROJ, "HybridPanda.kicad_pcb")
-FAB = os.path.join(ROOT, "07_FABRICATION")
-REP = os.path.join(ROOT, "06_REPORTS")
+FAB = os.path.join(ROOT, "hardware/fabrication")
+REP = os.path.join(ROOT, "hardware/reports")
 CLI = str(hp.KICAD_CLI)
 T0 = time.time()
 out = {"date": time.strftime("%Y-%m-%d %H:%M:%S"), "commands": [], "files": {}, "problems": [], "notes": []}
@@ -105,7 +105,7 @@ run([CLI, "pcb", "export", "pos", "--format", "csv", "--units", "mm", "--side", 
 out["assembly"] = {"bom_lines": len(bom_rows), "bom_refs": sum(r["Qty"] for r in bom_rows), "cpl_rows": len(cpl), "cpl_top": sum(1 for c in cpl if c["Layer"] == "Top"),
                    "cpl_bottom": sum(1 for c in cpl if c["Layer"] == "Bottom"), "refs_without_LCSC": sorted(set(no_lcsc)), "refs_without_MPN": sorted(set(no_mpn)),
                    "aux_origin_mm": [pcbnew.ToMM(aux.x), pcbnew.ToMM(aux.y)],
-                   "note": "Rotação CPL = orientação KiCad; JLC pode exigir correção por footprint (não verificado). LCSC lido do campo 'LCSC' do esquemático (códigos 'a verificar' em 06_REPORTS/bom_real/BOM_HYBRIDPANDA_v1.csv)."}
+                   "note": "Rotação CPL = orientação KiCad; JLC pode exigir correção por footprint (não verificado). LCSC lido do campo 'LCSC' do esquemático (códigos 'a verificar' em hardware/reports/bom-real/BOM_HYBRIDPANDA_v1.csv)."}
 # ------------------------------------------------------------------ tabela de furação
 holes = []
 for fp in board.GetFootprints():
@@ -172,19 +172,19 @@ for fkey in v7.get("failures", []): blocks.append("STEP 7: " + fkey)
 drc7 = v7.get("drc", {})
 inherited = {k: v for k, v in drc7.get("by_type", {}).items() if v.get("hibrida")}
 blocks += ["Impedância/skew CAN-FD e USB: apenas estimativa analítica (step6_reports.py); o DRC do KiCad não verifica impedância; stackup 4 camadas 1.59 mm assumido, não confirmado com o fabricante.",
-           "USB_D± não é par acoplado: Freerouting roteou com vias (ver STEP5_layout_H725.md §5/§7); FS 12 Mb/s tolera, mas não foi validado.",
+           "USB_D± não é par acoplado: Freerouting roteou com vias (ver hardware\\research\\step5-layout-h725.md §5/§7); FS 12 Mb/s tolera, mas não foi validado.",
            "Nenhuma placa foi fabricada, montada ou medida — zero validação física; firmware red panda oficial NUNCA foi executado neste hardware.",
-           "BOM: %d referências sem MPN e %d sem código LCSC (de %d); códigos LCSC marcados 'a verificar' em 06_REPORTS\\bom_real\\BOM_HYBRIDPANDA_v1.csv ainda não confirmados no catálogo JLC — montagem JLC exige confirmar." % (len(out["assembly"]["refs_without_MPN"]), len(out["assembly"]["refs_without_LCSC"]), out["assembly"]["bom_refs"]),
-           "Violações DRC herdadas do baseline OpenBlackPanda não corrigidas (%s) — ver STEP5_layout_H725.md §7.3 e 06_REPORTS\\CORRECOES_APLICADAS.md." % (", ".join("%s %d" % (k, v["hibrida"]) for k, v in inherited.items()) or "nenhuma"),
+           "BOM: %d referências sem MPN e %d sem código LCSC (de %d); códigos LCSC marcados 'a verificar' em hardware\\reports\\bom-real\\BOM_HYBRIDPANDA_v1.csv ainda não confirmados no catálogo JLC — montagem JLC exige confirmar." % (len(out["assembly"]["refs_without_MPN"]), len(out["assembly"]["refs_without_LCSC"]), out["assembly"]["bom_refs"]),
+           "Violações DRC herdadas do baseline OpenBlackPanda não corrigidas (%s) — ver hardware\\research\\step5-layout-h725.md §7.3 e hardware\\reports\\correcoes-aplicadas.md." % (", ".join("%s %d" % (k, v["hibrida"]) for k, v in inherited.items()) or "nenhuma"),
            "Verificação em visualizador de gerber: NÃO EXECUTADA automaticamente (sem gerbv/gerbview CLI); apenas verificação sintática (gerber_check.json). Abrir gerbers/ no KiCad GerbView antes de qualquer pedido.",
            "Toolchain ARM: instalada localmente (Arm GNU 14.2.Rel1, %LOCALAPPDATA%\\arm-gnu-toolchain) mas firmware ainda NÃO compilado/assinado para este hardware; dependência do fluxo oficial de DFU/assinatura do commaai (ver STEP9).",
            "Rotação dos componentes no CPL não normalizada para a convenção JLC (requer ajuste manual por footprint no painel JLC).",
-           "Via-in-pad: 0 após o relayout leste (step5e_relayout_east.py, D-33) + fix_audit.py + fix_vip_reroute.py (U8.3 +5V: via movida para a trilha F.Cu a oeste de C30 e trilha B.Cu reencaminhada). Contagem pela definição do final_audit.py (centro da via dentro da bbox de pad SMD) sobre o tabuleiro actual — reconfirmar em 06_REPORTS\\final_audit.json antes de qualquer pedido."]
-R = ["HYBRID PANDA (Black Panda form factor + STM32H725ZGT6 / firmware red panda) — PACOTE DE FABRICAÇÃO", "Gerado: %s por 05_SCRIPTS\\step8_fabricate.py (KiCad 10.0.7 kicad-cli)" % out["date"], "",
+           "Via-in-pad: 0 após o relayout leste (step5e_relayout_east.py, D-33) + fix_audit.py + fix_vip_reroute.py (U8.3 +5V: via movida para a trilha F.Cu a oeste de C30 e trilha B.Cu reencaminhada). Contagem pela definição do final_audit.py (centro da via dentro da bbox de pad SMD) sobre o tabuleiro actual — reconfirmar em hardware\\reports\\final_audit.json antes de qualquer pedido."]
+R = ["HYBRID PANDA (Black Panda form factor + STM32H725ZGT6 / firmware red panda) — PACOTE DE FABRICAÇÃO", "Gerado: %s por hardware\\scripts\\step8_fabricate.py (KiCad 10.0.7 kicad-cli)" % out["date"], "",
      "=" * 78, "   ESTADO: NÃO FABRICAR", "=" * 78, "",
      "Este pacote foi gerado automaticamente para arquivo/revisão. NÃO foi validado para produção. Motivos:", ""]
 R += ["  %d. %s" % (i + 1, b) for i, b in enumerate(blocks)]
-R += ["", "Resultados do STEP 7 (06_REPORTS\\step7_validation.json):",
+R += ["", "Resultados do STEP 7 (hardware\\reports\\step7_validation.json):",
       "  ERC erros=%s avisos=%s | DRC não ligados=%s clearance=%s curtos=%s courtyards=%s | netlist divergências=%s | paridade conflitos=%s" %
       (v7.get("erc", {}).get("errors"), v7.get("erc", {}).get("warnings"), drc7.get("unconnected_items"), drc7.get("clearance"), drc7.get("shorting_items"), drc7.get("courtyards_overlap"),
        len(v7.get("netlist", {}).get("net_divergences", [])), len(v7.get("parity", {}).get("conflicts", []))),
@@ -199,9 +199,9 @@ R += ["", "Resultados do STEP 7 (06_REPORTS\\step7_validation.json):",
       "Especificação pretendida: 4 camadas, 1.59 mm, FR-4 (εr≈4.5 assumido), cobre 1 oz ext/0.5 oz int, trilha/espaço mín 0.1375/0.1 mm, via 0.4/0.3 mm, furo mín %.2f mm, ENIG recomendado (QFN/LQFP 0.5 mm), máscara verde, HASL NÃO recomendado." % out["drill"]["rule_min_drill_mm"],
       "", "Problemas na geração: " + ("nenhum" if not out["problems"] else "; ".join(out["problems"])),
       "Notas: " + ("nenhuma" if not out["notes"] else "; ".join(out["notes"]))]
-open(os.path.join(FAB, "LEIA-ME.txt"), "w", encoding="utf-8").write("\n".join(R) + "\n")
+open(os.path.join(FAB, "readme.md"), "w", encoding="utf-8").write("\n".join(R) + "\n")
 out["readme_blocks"] = blocks
 out["files"] = {d: sorted(os.listdir(os.path.join(FAB, d))) for d in ("gerbers", "drill", "assembly", "pdf", "3d")}
 out["seconds"] = round(time.time() - T0, 1)
 json.dump(out, open(os.path.join(REP, "step8_fabrication.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False, default=str)
-print("problemas:", out["problems"]); print("-> 07_FABRICATION (%.0f s)" % out["seconds"])
+print("problemas:", out["problems"]); print("-> hardware/fabrication (%.0f s)" % out["seconds"])

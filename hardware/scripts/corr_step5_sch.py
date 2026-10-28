@@ -14,7 +14,7 @@ import uuid
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import hp_common as hp  # noqa: E402
 
-SCH = os.path.join(str(hp.OUTPUT_ROOT), "04_PROJECT", "HybridPanda", "HybridPanda.kicad_sch")
+SCH = os.path.join(str(hp.OUTPUT_ROOT), "hardware", "hybrid-panda", "HybridPanda.kicad_sch")
 NEW_CAP = {"Value": "18pF", "MPN": "0402CG180J500NT", "LCSC": "C1555"}
 PINS = [((247.523, 53.721), 180), ((247.523, 76.581), 0)]  # (pin end, GND symbol rotation)
 

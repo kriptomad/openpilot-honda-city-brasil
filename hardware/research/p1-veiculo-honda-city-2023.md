@@ -1,18 +1,18 @@
 # P1 — Honda City 2023 BR: CAN-FD? ADAS Bosch?
 
 Status: **REFUTADA (parte CAN-FD) / CONFIRMADA (parte ADAS Bosch)**
-Data da verificação: 2026-10-22 (pesquisa completa em `from_v1/R1_veiculo_honda_city_openpilot.md`,
-re-verificada contra o clone local `02_REFERENCE/opendbc` @ `c3955753ae7258412814e2cdca3ee8af979e4679`).
+Data da verificação: 2026-10-22 (pesquisa completa em `from_v1/from-v1/r1-veiculo-honda-city-openpilot.md`,
+re-verificada contra o clone local `hardware/reference/opendbc` @ `c3955753ae7258412814e2cdca3ee8af979e4679`).
 
 ## Fatos com fonte
 
 | # | Fato | Fonte (caminho no clone / URL) |
 |---|------|-------------------------------|
-| 1 | `HONDA_CITY_7G = HondaBoschPlatformConfig(... {Bus.pt: 'honda_bosch_radarless_generated'}, flags=HondaFlags.BOSCH_RADARLESS)` — classe **CAN clássico**, DBC radarless | `02_REFERENCE/opendbc/opendbc/car/honda/values.py` |
+| 1 | `HONDA_CITY_7G = HondaBoschPlatformConfig(... {Bus.pt: 'honda_bosch_radarless_generated'}, flags=HondaFlags.BOSCH_RADARLESS)` — classe **CAN clássico**, DBC radarless | `hardware/reference/opendbc/opendbc/car/honda/values.py` |
 | 2 | Veículos CAN-FD Honda usam `HondaBoschCANFDPlatformConfig` (flag `BOSCH_CANFD`, DBC `honda_common_canfd_generated`): Accord 11G, CR-V 6G, Pilot 4G, Passport 4G, MDX/TLX MMR. City **não** está nessa lista | idem |
-| 3 | Safety: flags separadas `HONDA_PARAM_RADARLESS=8` e `HONDA_PARAM_BOSCH_CANFD=16` | `02_REFERENCE/opendbc/opendbc/safety/modes/honda.h` |
+| 3 | Safety: flags separadas `HONDA_PARAM_RADARLESS=8` e `HONDA_PARAM_BOSCH_CANFD=16` | `hardware/reference/opendbc/opendbc/safety/modes/honda.h` |
 | 4 | Harness oficial: `CarHarness.bosch_b` ("Honda Bosch B") | `values.py` (HondaCarDocs/HondaBoschPlatformConfig → `car_parts`) |
-| 5 | Layout de bus: 0 = ACC-CAN lado radar/câmera (pt+lkas no radarless), 1 = F-CAN B, 2 = ACC-CAN lado câmera, 3 = F-CAN A (OBD) | `02_REFERENCE/opendbc/opendbc/car/honda/hondacan.py` |
+| 5 | Layout de bus: 0 = ACC-CAN lado radar/câmera (pt+lkas no radarless), 1 = F-CAN B, 2 = ACC-CAN lado câmera, 3 = F-CAN A (OBD) | `hardware/reference/opendbc/opendbc/car/honda/hondacan.py` |
 | 6 | Câmera Honda Sensing do City é Bosch (radarless = só câmera) | inferência direta da flag `BOSCH_RADARLESS` (fonte primária: código) |
 
 ## Conclusão e impacto no projeto

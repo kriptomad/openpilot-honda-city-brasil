@@ -3,14 +3,14 @@
 Esconde o texto de referência (serigrafia) dos componentes ADICIONADOS no 5a (C38-C63, D13, D14, FB1, J1, L5, R28-R33):
 0402/0603 colocados a 1,1 mm do LQFP-144 não têm espaço para referência sem cair sobre pads vizinhos
 (DRC `silk_over_copper` / `silk_overlap`). Os componentes do baseline mantêm a serigrafia original.
-Depois corre o DRC e grava 06_REPORTS\hybrid_DRC_step5_final.json. Só escreve dentro de OUTPUT_ROOT.
+Depois corre o DRC e grava hardware\\reports\hybrid_DRC_step5_final.json. Só escreve dentro de OUTPUT_ROOT.
 """
 import json, os, re, subprocess, sys, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import hp_common as hp
 import pcbnew
 
-PCB = str(hp.OUTPUT_ROOT / "04_PROJECT" / "HybridPanda" / "HybridPanda.kicad_pcb")
+PCB = str(hp.OUTPUT_ROOT / "hardware" / "hybrid-panda" / "HybridPanda.kicad_pcb")
 OUT = str(hp.REPORT_DIR / "hybrid_DRC_step5_final.json")
 ADDED = re.compile(r"^(C(3[89]|[4-5]\d|6[0-3])|D1[34]|FB1|J1|L5|R(2[89]|3[0-3]))$")
 board = pcbnew.LoadBoard(PCB)

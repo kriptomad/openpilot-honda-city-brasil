@@ -17,7 +17,7 @@ localizado pelo relatorio DRC (uuid) e a correccao e calculada sobre a geometria
 Repete DRC -> correccao ate --rounds (default 3) ou ate nao haver itens tratados.
 
 Uso: python fix_drc_relayout.py [--dry] [--rounds N]   (python do KiCad 10)
-Relatorio: 06_REPORTS\fix_drc_relayout.json ; DRC final: 06_REPORTS\hybrid_DRC_fix_relayout.json
+Relatorio: hardware\\reports\fix_drc_relayout.json ; DRC final: hardware\\reports\hybrid_DRC_fix_relayout.json
 """
 import os, sys, json, math, time, subprocess
 import pcbnew
@@ -25,10 +25,10 @@ from pcbnew import VECTOR2I, FromMM, ToMM
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import hp_common as hp
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PCB = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb")
-REPORT = os.path.join(ROOT, "06_REPORTS", "fix_drc_relayout.json")
-DRC_OUT = os.path.join(ROOT, "06_REPORTS", "hybrid_DRC_fix_relayout.json")
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repository root
+PCB = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pcb")
+REPORT = os.path.join(ROOT, "hardware/reports", "fix_drc_relayout.json")
+DRC_OUT = os.path.join(ROOT, "hardware/reports", "hybrid_DRC_fix_relayout.json")
 KICAD_CLI = str(hp.KICAD_CLI)
 DRY = "--dry" in sys.argv
 ROUNDS = int(sys.argv[sys.argv.index("--rounds") + 1]) if "--rounds" in sys.argv else 3

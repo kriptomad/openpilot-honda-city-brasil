@@ -10,7 +10,7 @@ Correccao dos achados da AUDITORIA_FINAL (final_audit.py), do maior para o menor
   4. +3V3 fina  : segmentos de +3V3 < 0,20 mm alargados para 0,20 mm quando a folga permite.
 
 Autor: Bruno Costa
-Uso: python fix_audit.py [--dry]  (python do KiCad 10). Relatorio: 06_REPORTS\fix_audit.json
+Uso: python fix_audit.py [--dry]  (python do KiCad 10). Relatorio: hardware\\reports\fix_audit.json
 Depois correr: kicad-cli drc, step7_validate.py, step8_fabricate.py, final_audit.py.
 """
 import os, sys, json, math, time, subprocess, collections
@@ -18,9 +18,9 @@ T0 = time.time()
 import pcbnew
 from pcbnew import VECTOR2I, FromMM, ToMM
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PCB = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb")
-REPORT = os.path.join(ROOT, "06_REPORTS", "fix_audit.json")
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repository root
+PCB = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pcb")
+REPORT = os.path.join(ROOT, "hardware/reports", "fix_audit.json")
 DRY = "--dry" in sys.argv
 DEBUG = sys.argv[sys.argv.index("--debug") + 1] if "--debug" in sys.argv else None
 DBG = collections.Counter() if False else None
@@ -29,7 +29,7 @@ VIA_CLR = 0.12           # folga cobre via -> cobre de outra rede (clearance do 
 LAYERS4 = (pcbnew.F_Cu, pcbnew.In1_Cu, pcbnew.In2_Cu, pcbnew.B_Cu)
 
 board = pcbnew.LoadBoard(PCB)
-g = {"PRELOADED_BOARD": board, "AS_LIBRARY": True, "__file__": os.path.join(ROOT, "05_SCRIPTS", "step5c_fix_unrouted.py"), "__name__": "step5c_lib"}
+g = {"PRELOADED_BOARD": board, "AS_LIBRARY": True, "__file__": os.path.join(ROOT, "hardware/scripts", "step5c_fix_unrouted.py"), "__name__": "step5c_lib"}
 with open(g["__file__"], encoding="utf-8") as f: exec(compile(f.read(), g["__file__"], "exec"), g)
 via_collides, seg_collides, plane_ok, add_track, add_via = g["via_collides"], g["seg_collides"], g["plane_ok"], g["add_track"], g["add_via"]
 

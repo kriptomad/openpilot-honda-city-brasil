@@ -9,7 +9,7 @@ Fases:
   V  vias GND / +3V3 junto aos pads dos capacitores de suporte
   L  trava (lock) trilhas do baseline em BUS*_H/_L + tudo criado aqui
   X  exporta DSN -> Freerouting (Java 25) -> importa SES
-  F  refill de zonas, salva, relatório 06_REPORTS/step5b_route.json
+  F  refill de zonas, salva, relatório hardware/reports/step5b_route.json
 
 Uso:  python step5b_route.py [--no-freerouting]
 Idempotente: parte de HybridPanda.kicad_pcb.step5a (criado na 1ª execução a partir do PCB atual).
@@ -18,15 +18,15 @@ import json, os, shutil, subprocess, sys, time, re
 import pcbnew
 from pcbnew import VECTOR2I, FromMM, ToMM
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PCB = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb")
-PRO = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pro")
-SNAP = PCB + ".step5a"
-DSN = os.path.join(ROOT, "06_REPORTS", "HybridPanda_step5b.dsn")
-SES = os.path.join(ROOT, "06_REPORTS", "HybridPanda_step5b.ses")
-REPORT = os.path.join(ROOT, "06_REPORTS", "step5b_route.json")
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repository root
+PCB = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pcb")
+PRO = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pro")
+SNAP = os.path.join(os.path.dirname(PCB), "snapshots", "HybridPanda.kicad_pcb.step5a")
+DSN = os.path.join(ROOT, "hardware/reports", "HybridPanda_step5b.dsn")
+SES = os.path.join(ROOT, "hardware/reports", "HybridPanda_step5b.ses")
+REPORT = os.path.join(ROOT, "hardware/reports", "step5b_route.json")
 JAVA = r"C:\Program Files\Java\jdk-25.0.4.1\bin\java.exe"
-FR_JAR = os.path.join(ROOT, "05_SCRIPTS", "tools", "freerouting", "freerouting-2.5.0.jar")
+FR_JAR = os.path.join(ROOT, "hardware/scripts", "tools", "freerouting", "freerouting-2.5.0.jar")
 NO_FR = "--no-freerouting" in sys.argv
 INNER_POWER = "--inner-power" in sys.argv   # proibir In1/In2 ao autorouter (baseline usa In1/In2 p/ sinais; default: permitido)
 FR_PASSES = int(sys.argv[sys.argv.index("--passes") + 1]) if "--passes" in sys.argv else 60
@@ -554,7 +554,7 @@ pcbnew.SaveBoard(PCB, board)
 # Pads GND/+3V3/+5V que ficaram sem ligação ao plano depois do 5a (ex.: via do baseline removida por colidir com
 # pad do U7) recebem via/stub ANTES do Freerouting, travados, para o autorouter os respeitar (ver D-26).
 if not NO_PRE:
-    g = {"PRELOADED_BOARD": board, "AS_LIBRARY": True, "__file__": os.path.join(ROOT, "05_SCRIPTS", "step5c_fix_unrouted.py"), "__name__": "step5c_pre"}
+    g = {"PRELOADED_BOARD": board, "AS_LIBRARY": True, "__file__": os.path.join(ROOT, "hardware/scripts", "step5c_fix_unrouted.py"), "__name__": "step5c_pre"}
     with open(g["__file__"], encoding="utf-8") as f: exec(compile(f.read(), g["__file__"], "exec"), g)
     pre = g["main"](rounds=PRE_ROUNDS, power_only=True, lock=True)
     report["phases"]["P"] = {"rounds": [(r["round"], r["unconnected"], len(r["fixes"]), r["unfixed"]) for r in pre["rounds"]], "added": len(pre["added"]), "warnings": pre["warnings"]}
@@ -577,7 +577,7 @@ for z in list(b.Zones()):
     if not z.GetIsRuleArea() and z.GetNetname() != "GND": b.RemoveNative(z)
 print("DSN", pcbnew.ExportSpecctraDSN(b, sys.argv[2]))
 '''
-    hp = os.path.join(ROOT, "06_REPORTS", "_dsn_export_helper.py")
+    hp = os.path.join(ROOT, "hardware/reports", "_dsn_export_helper.py")
     with open(hp, "w", encoding="utf-8") as f: f.write(helper)
     r0 = subprocess.run([sys.executable, hp, PCB, DSN], capture_output=True, text=True, timeout=600)
     os.remove(hp)
@@ -607,14 +607,14 @@ print("DSN", pcbnew.ExportSpecctraDSN(b, sys.argv[2]))
     dsn2 = dsn4
     with open(DSN, "w", encoding="utf-8") as f: f.write(dsn2)
     cmd = [JAVA, "-jar", FR_JAR, "-l", "en", "--gui.enabled=false", "-de", DSN, "-do", SES,
-           "--router.autorouter.max_passes=%d" % FR_PASSES, "--router.plane_nets=GND", "--router.via_costs=80", "--router.automatic_neckdown=false", "--router.result_json=" + os.path.join(ROOT, "06_REPORTS", "step5b_fr_result.json")]
+           "--router.autorouter.max_passes=%d" % FR_PASSES, "--router.plane_nets=GND", "--router.via_costs=80", "--router.automatic_neckdown=false", "--router.result_json=" + os.path.join(ROOT, "hardware/reports", "step5b_fr_result.json")]
     t0 = time.time()
     if os.path.exists(SES): os.remove(SES)
     r = subprocess.run(cmd, capture_output=True, text=True, timeout=3600, cwd=os.path.dirname(DSN))
     report["phases"]["X"]["freerouting_rc"] = r.returncode
     report["phases"]["X"]["freerouting_s"] = round(time.time() - t0, 1)
     log = (r.stdout + r.stderr)
-    with open(os.path.join(ROOT, "06_REPORTS", "step5b_freerouting.log"), "w", encoding="utf-8") as f: f.write(log)
+    with open(os.path.join(ROOT, "hardware/reports", "step5b_freerouting.log"), "w", encoding="utf-8") as f: f.write(log)
     report["phases"]["X"]["freerouting_tail"] = log.strip().splitlines()[-8:]
     if os.path.exists(SES):
         ok = pcbnew.ImportSpecctraSES(board, SES)

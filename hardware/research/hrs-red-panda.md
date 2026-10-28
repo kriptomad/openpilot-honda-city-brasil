@@ -1,8 +1,8 @@
 # HRS — Especificação de Hardware derivada do firmware (Red Panda) + controle Black Panda
 
-Fonte primária: clone oficial `02_REFERENCE\panda` = github.com/commaai/panda @ **408e14d46ebb7da45a7d21f8db315922e10242a8** (2026-10-21, MIT).
-Firmware legado F4 (controle): `02_REFERENCE\panda_legacy_f4` = worktree de `panda_full` em **f849893bdcfc6cd05d4547d64d2802b5a83f409c** (2025-07-03; último commit antes de "Deprecate white and black pandas (#2227)" = 3d272335, 2025-07-19; `stm32f4/` removido em 1ce986f7 "bye bye f4 (#2259)", 2025-08-26).
-Datasheet: `02_REFERENCE\datasheets\DS13313_STM32H725_ae.pdf` (= DS13311 Rev 5, STM32H725xE/G). Referência de registradores: RM0468 (citado em panda/README.md:3; **não baixado** — itens de registrador marcados como "RM0468 NÃO VERIFICADO" onde o CMSIS `stm32h725xx.h` não basta).
+Fonte primária: clone oficial `hardware\reference\panda` = github.com/commaai/panda @ **408e14d46ebb7da45a7d21f8db315922e10242a8** (2026-10-21, MIT).
+Firmware legado F4 (controle): `hardware\reference\panda_legacy_f4` = worktree de `panda_full` em **f849893bdcfc6cd05d4547d64d2802b5a83f409c** (2025-07-03; último commit antes de "Deprecate white and black pandas (#2227)" = 3d272335, 2025-07-19; `stm32f4/` removido em 1ce986f7 "bye bye f4 (#2259)", 2025-08-26).
+Datasheet: `hardware\reference\datasheets\DS13313_STM32H725_ae.pdf` (= DS13311 Rev 5, STM32H725xE/G). Referência de registradores: RM0468 (citado em panda/README.md:3; **não baixado** — itens de registrador marcados como "RM0468 NÃO VERIFICADO" onde o CMSIS `stm32h725xx.h` não basta).
 Legenda: **[F]** fato com fonte · **[I]** inferência · **[H]** hipótese · **NV** = NÃO VERIFICADO.
 
 ---
@@ -20,7 +20,7 @@ Legenda: **[F]** fato com fonte · **[I]** inferência · **[H]** hipótese · *
 **Requisito de hardware HW_TYPE (Red):** PF7, PF8, PF9, PF10 devem ler **0** contra pull-up interno → ligados a GND (direto ou resistor baixo). PD4, PD5, PD6 **não** podem formar `id2 == 3` (PD4=1, PD5=1, PD6=0, PD7=0): como PD7 é saída STB (bus2) e PD4–PD6 não são usados no red, deixá-los **flutuando** (pull-up interno lê 1 → id2 = 0b0111 ou 0b1111 ≠ 3) é o que o firmware tolera; para robustez, PD6 pode ser amarrado... **[I]** a referência real não é publicada (ver P2) → valor de resistor **NV**; decisão conservadora: PF7–PF10 → GND via 0 Ω/direto; PD4–PD6 sem conexão (NC) **[D-08]**.
 Pull-up interno típico H7: RPU 30–50 kΩ (DS13311 Tabela "I/O static characteristics" — valor exato **NV** neste dump).
 
-Pinos LQFP144 (DS13311 Tab. 8 via `P3_pinos_LQFP144.json`): PF7=21, PF8=22, PF9=23, PF10=24, PD4=116, PD5=117, PD6=120, PD7=121.
+Pinos LQFP144 (DS13311 Tab. 8 via `p3-pinos-lqfp144.json`): PF7=21, PF8=22, PF9=23, PF10=24, PD4=116, PD5=117, PD6=120, PD7=121.
 
 ## 2. MCU, defines, clock
 
@@ -156,7 +156,7 @@ CAN_MODE: `set_can_mode(NORMAL/OBD_CAN2)` escolhe qual par FDCAN2 ativa, depende
 | GPS | PC5, PC12 (desligado) | black.h:76-78 |
 | USB | PA11/PA12 AF10 OTG_FS | peripherals.h:5-10 |
 
-Validação do método: `parity_check.py` (STEP 3) será executado **primeiro** contra a netlist do baseline (01_BASELINE) com esta tabela F4; divergências → variante da placa ou erro de leitura, resolvidas antes de aplicar ao H7.
+Validação do método: `parity_check.py` (STEP 3) será executado **primeiro** contra a netlist do baseline (archive/baseline-original) com esta tabela F4; divergências → variante da placa ou erro de leitura, resolvidas antes de aplicar ao H7.
 
 ## 10. Requisitos de tensão/temperatura
 - VDD 3,3 V (avdd_mV = 3300); VDDA/VREF+ = 3,3 V (calibração VREFINT assume referência = AVDD).

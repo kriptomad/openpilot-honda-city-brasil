@@ -15,9 +15,9 @@ import json, math, os, sys, subprocess, tempfile
 import pcbnew
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
-PCB = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb")
-OUT = os.path.join(ROOT, "06_REPORTS", "fix_drc_regressions.json")
+ROOT = os.path.dirname(os.path.dirname(HERE))  # repository root
+PCB = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pcb")
+OUT = os.path.join(ROOT, "hardware/reports", "fix_drc_regressions.json")
 KICAD_CLI = os.path.join(os.path.dirname(sys.executable), "kicad-cli.exe")
 DRY = "--dry" in sys.argv
 

@@ -7,7 +7,7 @@ Mede (não altera a placa):
     impedância; o valor é uma estimativa a partir do stackup do ficheiro (.kicad_pcb);
   * continuidade dos planos: nº de polígonos preenchidos e área por camada para GND (F/In2/B) e +3V3 (In1), nº de agrupamentos
     de conectividade por rede (1 = contínuo).
-Saídas: 06_REPORTS\\step6_reports.json e 03_RESEARCH\\STEP6_roteamento_impedancia.md.
+Saídas: hardware\\reports\\step6_reports.json e hardware\\research\\step6-roteamento-impedancia.md.
 Uso: python (do KiCad) step6_reports.py [--pcb caminho]
 """
 import sys, os, json, math, re, argparse, time
@@ -17,7 +17,7 @@ from pcbnew import ToMM
 from hp_common import OUTPUT_ROOT, guarded_write_text
 
 ap = argparse.ArgumentParser()
-ap.add_argument("--pcb", default=str(OUTPUT_ROOT / "04_PROJECT" / "HybridPanda" / "HybridPanda.kicad_pcb"))
+ap.add_argument("--pcb", default=str(OUTPUT_ROOT / "hardware" / "hybrid-panda" / "HybridPanda.kicad_pcb"))
 args = ap.parse_args()
 
 board = pcbnew.LoadBoard(args.pcb)
@@ -154,11 +154,11 @@ tr = [t for t in board.GetTracks() if t.GetClass() == "PCB_TRACK"]; vi = [t for 
 rep["totals"] = {"tracks": len(tr), "vias": len(vi), "min_track_width_mm": round(min(ToMM(t.GetWidth()) for t in tr), 4),
                  "via_sizes": sorted({(round(ToMM(v.GetWidth(pcbnew.F_Cu)), 2), round(ToMM(v.GetDrillValue()), 2)) for v in vi})}
 
-guarded_write_text(OUTPUT_ROOT / "06_REPORTS" / "step6_reports.json", json.dumps(rep, indent=1, ensure_ascii=False), tag="step6")
+guarded_write_text(OUTPUT_ROOT / "hardware/reports" / "step6_reports.json", json.dumps(rep, indent=1, ensure_ascii=False), tag="step6")
 
 # ---------------------------------------------------------------- markdown
 L = ["# STEP 6 — Roteamento, impedância e zonas — relatório de medições", "",
-     "Data: %s · Placa: `%s` · Script: `05_SCRIPTS\\step6_reports.py` (só leitura) · JSON: `06_REPORTS\\step6_reports.json`" % (rep["when"], os.path.relpath(args.pcb, OUTPUT_ROOT)), "",
+     "Data: %s · Placa: `%s` · Script: `hardware\\scripts\\step6_reports.py` (só leitura) · JSON: `hardware\\reports\\step6_reports.json`" % (rep["when"], os.path.relpath(args.pcb, OUTPUT_ROOT)), "",
      "> O DRC do KiCad **não verifica impedância**. Os valores abaixo são estimativas analíticas (Hammerstad-Jensen / IPC-2141) a partir do stackup gravado no ficheiro; a referência de retorno real depende de onde há cobre em In1 (zona +3V3 só sob o MCU) — fora dela a referência é In2 (GND) a ≈1,28 mm, o que sobe Z0. Validação só com o fabricante (stackup controlado) ou TDR.", "",
      "## 1. Stackup (do ficheiro)", "| Camada | Espessura (mm) | εr |", "|---|---|---|"]
 for s in stack: L.append("| %s | %s | %s |" % (s["layer"], s["thickness_mm"], s["epsilon_r"] or ""))
@@ -183,5 +183,5 @@ for name, d in rep["planes"].items():
 L += ["", "Continuidade: 1 agrupamento = rede inteiramente ligada (zonas + vias + trilhas). Fragmentos pequenos do pour são cobre isolado da zona (não são erro de ligação; o DRC acusa `isolated_copper` só quando sem ligação alguma).",
       "", "## 5. Totais", "- Trilhas: %d · Vias: %d · Largura mínima de trilha: %.4f mm · Tamanhos de via (Ø/furo): %s" % (rep["totals"]["tracks"], rep["totals"]["vias"], rep["totals"]["min_track_width_mm"], rep["totals"]["via_sizes"]),
       "", "## 6. NÃO VERIFICADO", "- Impedância por medição (TDR) e stackup real do fabricante.", "- Meandros de compensação de skew: não gerados (skew medido acima; pares do baseline mantidos como estão).", "- Integridade de sinal CAN FD a 5 Mbit/s (tempo de subida vs. stubs): fora do âmbito desta medição."]
-guarded_write_text(OUTPUT_ROOT / "03_RESEARCH" / "STEP6_roteamento_impedancia.md", "\n".join(L) + "\n", tag="step6")
+guarded_write_text(OUTPUT_ROOT / "hardware/research" / "step6-roteamento-impedancia.md", "\n".join(L) + "\n", tag="step6")
 print(json.dumps({"pairs": {k: (v.get("skew_mm"), v.get("vias_on_pair"), v.get("layers")) for k, v in rep["pairs"].items()}, "planes": {k: v["clusters"][:5] for k, v in rep["planes"].items()}, "totals": rep["totals"]}, ensure_ascii=False, default=str))

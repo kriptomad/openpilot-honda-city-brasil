@@ -14,9 +14,9 @@ from step4_build_schematic import Builder, SHEET_PATH  # noqa: E402
 from sch_geom import r2  # noqa: E402
 from kiutils.schematic import Schematic  # noqa: E402
 
-ROOT = Path(__file__).resolve().parents[1]
-SCH = ROOT / "04_PROJECT" / "HybridPanda" / "HybridPanda.kicad_sch"
-REPORT = ROOT / "06_REPORTS" / "corr" / "step2_sch.json"
+ROOT = Path(__file__).resolve().parents[2]  # repository root
+SCH = ROOT / "hardware" / "hybrid-panda" / "HybridPanda.kicad_sch"
+REPORT = ROOT / "hardware/reports" / "corrections" / "step2_sch.json"
 
 
 def ref_of(s):

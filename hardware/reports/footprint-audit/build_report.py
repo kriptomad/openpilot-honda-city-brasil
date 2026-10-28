@@ -1,6 +1,6 @@
-"""Gera FOOTPRINT_AUDIT.md e footprint_audit.json a partir de board_dump.json
+"""Gera footprint-audit.md e footprint_audit.json a partir de board_dump.json
 (medidas reais da placa) + tabela de veredictos/datasheets abaixo.
-Somente leitura da placa (usa o dump). Nao modifica nada fora de 06_REPORTS/footprint_audit.
+Somente leitura da placa (usa o dump). Nao modifica nada fora de hardware/reports/footprint-audit.
 Uso: python build_report.py
 """
 import json
@@ -8,7 +8,7 @@ import os
 from collections import defaultdict, OrderedDict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PRJ = os.path.normpath(os.path.join(HERE, "..", "..", "04_PROJECT", "HybridPanda"))
+PRJ = os.path.normpath(os.path.join(HERE, "..", "..", "..", "hardware", "hybrid-panda"))
 KICAD3D = r"C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\share\kicad\3dmodels"
 
 dump = json.load(open(os.path.join(HERE, "board_dump.json"), encoding="utf-8"))
@@ -254,7 +254,7 @@ L = []
 w = L.append
 w("# Auditoria de footprints - Hybrid Panda (KiCad 10)")
 w("")
-w("Placa: 04_PROJECT/HybridPanda/HybridPanda.kicad_pcb (somente leitura). %d footprints, %d grupos lib:footprint." % (len(fps), len(groups)))
+w("Placa: hardware/hybrid-panda/HybridPanda.kicad_pcb (somente leitura). %d footprints, %d grupos lib:footprint." % (len(fps), len(groups)))
 w("Data da auditoria: gerado por build_report.py. Nenhum arquivo rastreado foi alterado; proposed_fixes.py so foi executado em --dry-run (e em --apply apenas sobre uma COPIA temporaria, depois apagada).")
 w("")
 w("**STATUS: PARCIAL.** Geometria de todos os 120 footprints medida e comparada com biblioteca/IPC; datasheets online obtidos apenas para U8-U11 (NXP SOT782-1), U6 (TI TPS5450), P1 (HRO TYPE-C-31-M-04) e U5 (FM-B1921RGBA-SH). Pendente ('a verificar' quando a rede permitir): PDFs de ST (U7), Diodes (D1, D11, Q1/Q2, U1), Nexperia (D2, D5-D9, D10, D13/D14, Q3), XLSEMI (U12), HY (Q4), Murata (L5), Alps (SW1), Yangxing (Y1), SHOU HAN (U3), SMMS0650 (L3). Para esses, os valores 'tipicos' citados vem de catalogo/memoria e NAO foram reconfirmados online.")
@@ -262,7 +262,7 @@ w("")
 w("## Metodo")
 w("")
 w("1. footprint_dump.py (pcbnew): referencia, lib id, camada, rotacao, atributo, modelos 3D, cada pad (numero, rede, posicao local sem rotacao, tamanho, forma, PTH/SMD/NPTH, furo, camadas) -> board_dump.json.")
-w("2. lib_compare.py: diff pad a pad contra a copia de biblioteca (KiCad 10 share/footprints e 01_BASELINE/.../BlackPanda.pretty, HybridPanda.pretty) -> lib_compare.txt/json. Resultado: so Q3, U6 e Y1 tem pads diferentes da lib; os 64 'lib_footprint_mismatch' do DRC restantes sao graficos (courtyard convertido em 4 linhas, marcas de pino 1 em silk, atributos de fiducial).")
+w("2. lib_compare.py: diff pad a pad contra a copia de biblioteca (KiCad 10 share/footprints e archive/baseline-original/.../BlackPanda.pretty, HybridPanda.pretty) -> lib_compare.txt/json. Resultado: so Q3, U6 e Y1 tem pads diferentes da lib; os 64 'lib_footprint_mismatch' do DRC restantes sao graficos (courtyard convertido em 4 linhas, marcas de pino 1 em silk, atributos de fiducial).")
 w("3. kicad-cli pcb drc --severity-all: 64 lib_footprint_mismatch, 10 footprint_type_mismatch (D1, D5-D9, Q1, Q2, U5, L3: atributo THT com pads SMD), 8 hole_clearance em P1 (slot PTH x NPTH 0.144 mm), 1 drill_out_of_range (via 0.25 mm, nao e footprint).")
 w("4. Datasheets: download via Python urllib com retries (ds_bulk.py), texto via pypdf (ds_fetch.py), desenhos renderizados com pymupdf (ds_render.py) e lidos visualmente. O proxy corporativo bloqueou/zerou a maioria dos downloads (Nexperia/Diodes 403, ST timeout, XLSEMI/LCSC reset, Murata SSL). Obtidos: NXP SOT782-1, TI TPS5450, HRO TYPE-C-31-M-04, FM-B1921RGBA-SH. Para os demais o veredito e UNVERIFIABLE ou NOTE comparando com a biblioteca KiCad 10 (IPC-7351 nominal) e valores tipicos de catalogo - indicados como tal.")
 w("5. Polaridade/pino 1: polarity_dump.py lista pads + graficos de silk/fab por footprint; verificado D1, D2, D10, D11, D12, D5, Q1, U5 e os mapeamentos de rede de U1, U6, U7, U8-U11, Q4, D13.")
@@ -344,5 +344,5 @@ w("- ds_bulk.py / ds_fetch.py / ds_render.py: ferramentas de datasheet; datashee
 w("- proposed_fixes.py: aplica as correcoes por referencia (Q3, Q1/Q2, U5, P1, U6, U12, atributos SMD, modelos 3D). Padrao --dry-run; com --apply faz backup antes. NAO foi executado contra a placa real (apenas dry-run).")
 w("")
 w("Observacao: esta auditoria compara geometria; nao substitui a revisao do fabricante de montagem nem o DFM da fab.")
-open(os.path.join(HERE, "FOOTPRINT_AUDIT.md"), "w", encoding="ascii", errors="replace").write("\n".join(L))
+open(os.path.join(HERE, "footprint-audit.md"), "w", encoding="ascii", errors="replace").write("\n".join(L))
 print("refs", dict(counts), "groups", dict(counts_groups))

@@ -246,7 +246,7 @@ afeta o aviso do pycapnp no macOS), opendbc clone em
 Observacao sobre o SConstruct no Windows: o `SConstruct` upstream nao e
 portavel (SCons escolhe msvc e `tests/libpanda` precisa de gcc de host).
 O build local usou um arquivo auxiliar NAO commitado
-(`local_build_windows.scons`, copia deixada ao lado deste documento):
+(`local-build-windows.scons`, copia deixada ao lado deste documento):
 mesmo conteudo do SConstruct + plataforma posix forcada + spawn direto
 + `tests/libpanda` pulado. O `SConscript` do repositorio e o mesmo que
 o CI Linux usa.
@@ -435,7 +435,7 @@ Nao fazem parte desta execucao; lista do que conferir:
   e78c41e6).
 - `.github/workflows/test.yaml` inalterado (ja cobre o F4 via `scons`);
   se quiser artefatos separados do F4, adicionar depois.
-- Arquivo auxiliar `local_build_windows.scons` existe so fora do repo
+- Arquivo auxiliar `local-build-windows.scons` existe so fora do repo
   (idem `run_misra.ps1` em `pandarevive\`).
 - Branch `revive-f4` enviada para kriptomad/panda (push autorizado em
   27/10); nada foi enviado para commaai/panda.

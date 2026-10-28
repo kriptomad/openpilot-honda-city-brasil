@@ -100,7 +100,7 @@ HEAD do opendbc: `b4125fe6`.
 
 Relatorio completo da auditoria commit a commit (73 commits Honda + genericos,
 CarParams campo a campo, TX byte a byte, safety, FW, diferencas residuais):
-`AUDITORIA_PORT_CITY_V099.md`. Ferramentas novas em `tools/`:
+`auditoria-port-city-v099.md`. Ferramentas novas em `tools/`:
 `gen_dbc_from_tree.py`, `dbc_struct_compare.py`, `route_scan4_audit.py`,
 `carparams_compare.py`, `tx_byte_compare.py`. Nada validado no carro.
 
@@ -112,7 +112,7 @@ openpilot `origin/v0.9.9-cityg7-blackpanda` = `89df27131`. Run de CI
 ### Auditoria 2, independente e adversarial (2026-10-28)
 
 Segundo auditor, sem acesso as conclusoes do primeiro, em
-`audit2/AUDITORIA2_INDEPENDENTE.md` (11 scripts `audit2/a2_*.py`, replay
+`audit2/audit2/auditoria2-independente.md` (11 scripts `audit2/a2_*.py`, replay
 com o codigo real do carstate/carcontroller sobre a rota: 0xE4 5410/5410,
 0x1C8 2705/2705, 0x30C 541/541, 0x33D 541/541 identicos incluindo counter
 e checksum; 0 diferencas em 33 campos de carState). Resultado:
@@ -144,7 +144,7 @@ build, unit, cars (0-3) verdes; process replay so com o diff esperado de
 
 ## Auditoria do port (hunk a hunk)
 
-`tools/audit_port_hunks.py` (rodar dentro de `opendbc_firmwarecityg7/`) le
+`tools/audit_port_hunks.py` (rodar dentro de `../opendbc-v0.9.9-city-g7/`) le
 `git show -U0` dos commits upstream portados e confere, para cada arquivo, que
 toda linha adicionada existe no HEAD do branch e toda linha removida nao existe.
 Resultado para `43006b9a` + `6fa346ed` (2026-10-27): 13 avisos, todos
@@ -216,8 +216,8 @@ docs/CARS.md, opendbc_repo): equivalente.
 
 ## Arquivos locais
 
-- `opendbc_firmwarecityg7/` - clone de trabalho (ignorado pelo git do HybridPanda).
-- `openpilot_cityg7_v0.9.9/` - clone `--shared` do 02_REFERENCE/openpilot (ignorado).
+- `../opendbc-v0.9.9-city-g7/` - clone de trabalho (ignorado pelo git do HybridPanda).
+- `../openpilot-v0.9.9-city-g7/` - clone `--shared` do hardware/reference/openpilot (ignorado).
 - `.venv_city/` - venv para lint/scripts (ruff 0.11.13, cantools, pycapnp, zstandard).
 - `patches/` - serie format-patch (versionada).
 - `tools/` - `audit_port_hunks.py` (auditoria hunk a hunk), `gen_honda_dbcs_windows.py`

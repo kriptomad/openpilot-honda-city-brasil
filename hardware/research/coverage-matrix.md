@@ -1,6 +1,6 @@
 # Coverage matrix — HRS vs. fontes oficiais commaai
 
-Gerado por `05_SCRIPTS/coverage_matrix.py`. Requisitos: 61, provados: 61, não encontrados: 0.
+Gerado por `hardware/scripts/coverage_matrix.py`. Requisitos: 61, provados: 61, não encontrados: 0.
 
 HEADs: panda=408e14d46ebb, hardware=a42a4752dc58, opendbc=c3955753ae72, panda_legacy_f4=f849893bdcfc, openpilot=ff47f484e606, datasheets=-
 

@@ -1,7 +1,7 @@
 # P2 — Hardware do Red Panda: o que a commaai publica e o que NÃO publica
 
 ## Resultado da busca (2026-10-23)
-`gh repo list commaai --limit 300` → 300 repositórios inspecionados por nome. Clonados em `02_REFERENCE\`:
+`gh repo list commaai --limit 300` → 300 repositórios inspecionados por nome. Clonados em `hardware\reference\`:
 
 | Repo | HEAD | Conteúdo relevante | Esquema do red panda? |
 |---|---|---|---|
@@ -12,7 +12,7 @@
 | commaai/openpilot-docs | 8a007654 | docs | não |
 | commaai/panda | 408e14d4 | **firmware** (fonte de verdade: red.h, stm32h7/*) | pinout derivado |
 
-**Conclusão [F]:** a commaai **não publica** esquema/PCB/BOM do red panda (nem do black/white/uno/dos). O firmware (MIT) é a única especificação pública do hardware → metodologia do protocolo (HRS derivado do firmware) é a correta e a única possível. Valores de componentes passivos (pull-ups, divisor VOLT_S, ESD) são **inferências** marcadas NV e precisam de decisão de engenharia própria (DECISIONS.md).
+**Conclusão [F]:** a commaai **não publica** esquema/PCB/BOM do red panda (nem do black/white/uno/dos). O firmware (MIT) é a única especificação pública do hardware → metodologia do protocolo (HRS derivado do firmware) é a correta e a única possível. Valores de componentes passivos (pull-ups, divisor VOLT_S, ESD) são **inferências** marcadas NV e precisam de decisão de engenharia própria (../../docs/decisions.md).
 
 ## Identificação do MCU
 - README: "STM32H725" (sem sufixo) **[F]**.

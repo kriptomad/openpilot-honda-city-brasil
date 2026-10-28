@@ -2,21 +2,21 @@
 
 Data: 2026-10-26 · Projeto: Hybrid Panda (Black Panda form factor + STM32H725ZGT6, firmware red panda) · Protocolo v3 STEP 9
 
-> **Nenhum passo abaixo foi executado.** Não existe protótipo; este é um plano escrito a partir do firmware (`02_REFERENCE\panda`, HRS em `03_RESEARCH\HRS_red_panda.md`), do esquemático (`STEP4_esquematico_H725.md`) e do datasheet DS13311. Onde um valor depende de hardware não publicado pela comma está marcado **NV** (não verificado). Fabricação está marcada **NÃO FABRICAR** em `07_FABRICATION\LEIA-ME.txt` até os bloqueios serem removidos.
+> **Nenhum passo abaixo foi executado.** Não existe protótipo; este é um plano escrito a partir do firmware (`hardware\reference\panda`, HRS em `hardware\research\hrs-red-panda.md`), do esquemático (`step4-esquematico-h725.md`) e do datasheet DS13311. Onde um valor depende de hardware não publicado pela comma está marcado **NV** (não verificado). Fabricação está marcada **NÃO FABRICAR** em `hardware\fabrication\readme.md` até os bloqueios serem removidos.
 
 ## 0. Pré-requisitos
 | Item | Estado | Nota |
 |---|---|---|
-| Placa montada (ENIG, 4 camadas) | NÃO EXISTE | ver `07_FABRICATION` |
+| Placa montada (ENIG, 4 camadas) | NÃO EXISTE | ver `hardware/fabrication` |
 | Fonte de bancada 12 V limitada em corrente (≤ 300 mA no 1.º arranque), multímetro, osciloscópio ≥ 100 MHz, analisador CAN FD (ou segunda panda), ST-Link V3 / J-Link, cabo USB-C | a providenciar | |
-| Firmware: build **DEBUG** de `02_REFERENCE\panda` (`scons -u -j8` sem `RELEASE=1`) → `board/obj/bootstub.panda_h7.bin` + `panda_h7.bin.signed` (chave debug publicada, SConscript:12-21) | **BLOQUEADO**: toolchain `arm-none-eabi-gcc`/`scons` não instalada nesta máquina (PROGRESS.md) | o bootstub oficial **release** só aceita binários assinados pela comma (bootstub.c:60-84); numa placa de terceiros usar bootstub+app DEBUG — não se propõe remover a verificação |
-| `dfu-util`, `python -m pip install -e 02_REFERENCE\panda` (lib host `panda`) | a providenciar | `debug/dfu_util_h7.sh:9-11` |
+| Firmware: build **DEBUG** de `hardware\reference\panda` (`scons -u -j8` sem `RELEASE=1`) → `board/obj/bootstub.panda_h7.bin` + `panda_h7.bin.signed` (chave debug publicada, SConscript:12-21) | **BLOQUEADO**: toolchain `arm-none-eabi-gcc`/`scons` não instalada nesta máquina (../../docs/progress.md) | o bootstub oficial **release** só aceita binários assinados pela comma (bootstub.c:60-84); numa placa de terceiros usar bootstub+app DEBUG — não se propõe remover a verificação |
+| `dfu-util`, `python -m pip install -e hardware\reference\panda` (lib host `panda`) | a providenciar | `debug/dfu_util_h7.sh:9-11` |
 | Harness box v3 + cabo OBD-C do carro (comma) | **NÃO** possuído (P10) | a panda **não** tem terminação de 120 Ω — está na harness box (D-04) |
 
 ## 1. Bring-up em bancada (ordem obrigatória; parar na primeira falha)
 | # | Passo | Como | Critério de aceitação | Fonte |
 |---|---|---|---|---|
-| 1 | Inspeção visual | lupa/microscópio: U7 LQFP-144 (passo 0,5 mm) sem pontes, orientação do pino 1 (B.Cu, rot. 90°), U8–U11, L5, Y1, J1; sem componentes em falta vs `07_FABRICATION\assembly\CPL_JLC.csv` | 0 pontes, 0 faltas | STEP5 §2 |
+| 1 | Inspeção visual | lupa/microscópio: U7 LQFP-144 (passo 0,5 mm) sem pontes, orientação do pino 1 (B.Cu, rot. 90°), U8–U11, L5, Y1, J1; sem componentes em falta vs `hardware\fabrication\assembly\CPL_JLC.csv` | 0 pontes, 0 faltas | STEP5 §2 |
 | 2 | Continuidade / curtos sem alimentar | ohmímetro: GND↔+3V3, GND↔+5V, GND↔+12V, GND↔VCAP, GND↔VDDA, VLXSMPS↔GND; cada par CAN_H/L↔GND; USB D+/D−↔GND; PF7–PF10↔GND (devem ser 0 Ω — strap RED) | nenhum curto em rails (> 1 kΩ após carga de caps); PF7–PF10 = 0 Ω | D-08; HRS §1 |
 | 3 | Alimentação **sem MCU alimentado**? | não é possível desmontar o U7; alternativa: alimentar 12 V com limite 100 mA e medir **sem** USB | consumo < 60 mA **NV** (a confirmar com a placa real); U1/U3/U6 reguladores a 5 V/3,3 V ±3 % | baseline Black Panda |
 | 4 | Regulação | medir +5V, +3V3, VDDA (FB1), VCAP (≈1,2–1,35 V quando o core arranca em SMPS Direct), VFBSMPS; osciloscópio no VLXSMPS: comutação 2,4 MHz | 3,3 V ±3 %; VCAP 1,1–1,4 V; ripple VDD < 50 mVpp **NV** | DS13311 §6.3.3; PROGRESS "fatos-chave" |

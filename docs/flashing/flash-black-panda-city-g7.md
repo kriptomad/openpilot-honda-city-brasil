@@ -1,9 +1,7 @@
 # Flashing a black panda (STM32F413) for the Honda City G7 2023 (Brazil)
 
-> Copy of `docs/FLASH_BLACK_PANDA_CITY_G7.md` from `kriptomad/panda@revive-f4` (canonical). Relative paths without a repo prefix refer to that branch.
-
 Step by step guide to put the forked firmware on a freshly assembled black panda so it
-works with the Honda City G7 port. Portuguese version: `FLASH_BLACK_PANDA_CITY_G7.pt-BR.md`.
+works with the Honda City G7 port. Portuguese version: `flash-black-panda-city-g7.pt-br.md`.
 
 Status: this procedure has NOT been executed on real hardware yet. It was written from the
 code in the repositories below and from the PCB files. Treat every step as "expected", not
@@ -16,7 +14,7 @@ following sections; this is just the order of operations.
 
 ```
 git clone -b flowpilot-city-g7-brazil --depth 1 https://github.com/kriptomad/flowpilot-city-g7.git
-git clone --depth 1 https://github.com/kriptomad/Redesign-Panda-Black-Revival-Port-Firmware-City-G7.git hub
+git clone --depth 1 https://github.com/kriptomad/openpilot-honda-city-brasil.git hub
 cd flowpilot-city-g7
 pip install libusb1 pyusb
 
@@ -25,7 +23,7 @@ python -c "from panda import PandaDFU; print(PandaDFU.list())"
 python -c "from panda import PandaDFU; PandaDFU(None).recover()"
 
 # 2. board comes back as bbaa:ddee. Zadig: WinUSB
-python -c "from panda import Panda; Panda().flash(fn=r'..\hub\10_FLOWPILOT\panda_fw_out\panda.bin.signed')"
+python -c "from panda import Panda; Panda().flash(fn=r'..\hub\firmware\prebuilt\flowpilot-black-panda\panda.bin.signed')"
 
 # 3. board comes back as bbaa:ddcc. Zadig: WinUSB
 python -c "from panda import Panda; p=Panda(); print(p.get_type(), p.get_version(), p.health()['uptime'])"
@@ -56,11 +54,11 @@ software you will run.
 
 | Option | Use with | Source | Prebuilt binaries |
 |---|---|---|---|
-| **A - flowpilot** (phone) | APK from `kriptomad/flowpilot-city-g7` (branch `flowpilot-city-g7-brazil`) | `panda/` directory inside that repo (commaai/panda `abdc4185`, F4 generic target `panda`) | hub repo `10_FLOWPILOT/panda_fw_out/` (`panda.bin.signed` SHA256 `A067B0A1...3CB02`, `bootstub.panda.bin` `C3FDFE02...75E76`, version `DEV-a2f1983c-DEBUG`) |
+| **A - flowpilot** (phone) | APK from `kriptomad/flowpilot-city-g7` (branch `flowpilot-city-g7-brazil`) | `panda/` directory inside that repo (commaai/panda `abdc4185`, F4 generic target `panda`) | hub repo `firmware/prebuilt/flowpilot-black-panda/` (`panda.bin.signed` SHA256 `A067B0A1...3CB02`, `bootstub.panda.bin` `C3FDFE02...75E76`, version `DEV-a2f1983c-DEBUG`) |
 | **B - openpilot 0.9.9 port** (comma-like device or PC) | `kriptomad/openpilot@v0.9.9-cityg7-blackpanda` | `panda` submodule of that branch (commaai/panda `e462c34d`, last upstream with native black panda support) | none here. `scons -j8 panda` at the openpilot root builds `panda/board/obj/`; openpilot's `pandad` also flashes it by itself at startup |
-| **C - pandarevive** (this branch `revive-f4`) | future openpilot master + black panda; the openpilot side is still pending (`03_RESEARCH/PANDAREVIVE_SCOPE.md` section 7) | `kriptomad/panda@revive-f4` (STM32F4 restored on current panda master, target `panda`) | hub repo `09_FIRMWARECITYG7_BLACKPANDA/panda_fw_out_revive_f4/` (`panda.bin.signed` SHA256 `EB07FF3F...991AF`, `bootstub.panda.bin` `3C49135B...EB221`, version `DEV-e78c41e6-DEBUG`) |
+| **C - pandarevive** (this branch `revive-f4`) | future openpilot master + black panda; the openpilot side is still pending (`hardware/research/pandarevive-scope.md` section 7) | `kriptomad/panda@revive-f4` (STM32F4 restored on current panda master, target `panda`) | hub repo `firmware/prebuilt/revive-f4-black-panda/` (`panda.bin.signed` SHA256 `EB07FF3F...991AF`, `bootstub.panda.bin` `3C49135B...EB221`, version `DEV-e78c41e6-DEBUG`) |
 
-Hub repo = `kriptomad/Redesign-Panda-Black-Revival-Port-Firmware-City-G7`.
+Hub repo = `kriptomad/openpilot-honda-city-brasil` (this repository).
 
 Right now the phone/flowpilot path is the one being tested, so **use option A**. Option C
 only makes sense for bench tests of the firmware itself (USB enumeration, `health()`, CAN
@@ -84,7 +82,7 @@ scons -j8 panda            # outputs panda/board/obj/{bootstub.panda.bin,panda.b
 
 # Windows (PowerShell, arm-none-eabi-gcc in PATH, repo venv active)
 cd flowpilot\panda
-python -m SCons -f local_build_windows.scons -j8
+python -m SCons -f local_build_windows.scons -j8   # helper committed in the flowpilot fork; original in hardware/research/local-build-windows.scons
 ```
 
 ### 3.2 Option B (openpilot 0.9.9 tree)
@@ -220,7 +218,7 @@ the button was not held.
 1. Harness box in the car, Bosch B harness between camera and car, panda on the harness box,
    phone (option A) on the panda USB-C via OTG. Ignition ON, engine can stay off.
 2. Option A: in the flowpilot settings set the car to `HONDA CITY 7G` (param `Mycar`,
-   see `PORT_CITY_FLOWPILOT.md` section 8.3) or let the CAN fingerprint pick it.
+   see `../../software/flowpilot-port/port-city-flowpilot.md` section 8.3) or let the CAN fingerprint pick it.
 3. Expected panda state once `controlsd` is up (query from a PC with the panda temporarily on
    the PC, or read the flowpilot log): `health()['safety_mode'] == 20`
    (`SAFETY_HONDA_BOSCH` in the flowpilot tree) and `safety_param` with bit 8 set

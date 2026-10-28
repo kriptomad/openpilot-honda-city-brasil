@@ -1,6 +1,6 @@
 # Reference sources (read-only upstream clones)
 
-These repositories are cloned locally under `02_REFERENCE/` as read-only consultation
+These repositories are cloned locally under `hardware/reference/` as read-only consultation
 sources (firmware, hardware, software). They are **not** committed to this repository
 (see `.gitignore`); re-create them with the commands below to reproduce the exact state
 used during the reverse-engineering work.
@@ -21,7 +21,7 @@ used during the reverse-engineering work.
 ## Re-clone
 
 ```powershell
-cd 02_REFERENCE
+cd hardware/reference
 git clone https://github.com/commaai/hardware.git                  ; git -C hardware                  checkout a42a475
 git clone https://github.com/commaai/harness_tester_challenge.git  ; git -C harness_tester_challenge  checkout 069f724
 git clone https://github.com/commaai/neo.git                       ; git -C neo                       checkout 9869dee
@@ -38,5 +38,5 @@ git clone https://github.com/commaai/panda.git panda_legacy_f4     ; git -C pand
 
 ## Tools not committed
 
-- `05_SCRIPTS/tools/freerouting/freerouting-2.5.0.jar` (GPL) — download from
+- `hardware/scripts/tools/freerouting/freerouting-2.5.0.jar` (GPL) — download from
   https://github.com/freerouting/freerouting/releases/tag/v2.5.0 ; requires Java 25.

@@ -2,7 +2,7 @@ import pcbnew, sys, os
 from pcbnew import ToMM
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import hp_common as hp
-b = pcbnew.LoadBoard(os.path.join(str(hp.OUTPUT_ROOT), "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb"))
+b = pcbnew.LoadBoard(os.path.join(str(hp.OUTPUT_ROOT), "hardware", "hybrid-panda", "HybridPanda.kicad_pcb"))
 
 
 def _seg_dist(px, py, x1, y1, x2, y2):

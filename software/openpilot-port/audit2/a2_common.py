@@ -12,7 +12,7 @@ import sys
 import zstandard
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OP_TREE = os.path.join(BASE, 'openpilot_cityg7_v0.9.9')
+OP_TREE = os.path.join(BASE, '..', 'openpilot-v0.9.9-city-g7')
 RLOG = os.path.join(os.environ.get('TEMP', '.'), 'city_rlog', 'rlog.zst')
 
 

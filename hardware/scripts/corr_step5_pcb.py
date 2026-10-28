@@ -1,6 +1,6 @@
-"""Step 5: MEDIUM items from 06_REPORTS/si_pi_audit/proposed_changes.md, applied one sub-command at a time.
+"""Step 5: MEDIUM items from hardware/reports/si-pi-audit/proposed-changes.md, applied one sub-command at a time.
 
-Each sub-command edits the PCB, refills zones, saves, and appends a log entry to 06_REPORTS/corr/step5_pcb.json.
+Each sub-command edits the PCB, refills zones, saves, and appends a log entry to hardware/reports/corrections/step5_pcb.json.
 Run the DRC gate (corr_gate.py drc --tag step5x) after every sub-command.
 
 Usage (KiCad 10 python):
@@ -29,8 +29,8 @@ from pcbnew import FromMM, ToMM
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import hp_common as hp  # noqa: E402
 
-PCB = os.path.join(str(hp.OUTPUT_ROOT), "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb")
-LOG = os.path.join(str(hp.REPORT_DIR), "corr", "step5_pcb.json")
+PCB = os.path.join(str(hp.OUTPUT_ROOT), "hardware", "hybrid-panda", "HybridPanda.kicad_pcb")
+LOG = os.path.join(str(hp.REPORT_DIR), "corrections", "step5_pcb.json")
 CAN_NETS = ["BUS0_H", "BUS0_L", "BUS1N_H", "BUS1N_L", "BUS1O_H", "BUS1O_L", "BUS2_H", "BUS2_L"]
 
 

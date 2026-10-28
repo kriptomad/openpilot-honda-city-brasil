@@ -4,7 +4,7 @@ Data: 2026-10-27 (revisao 2: PB14, HYBRID_BOARD, MISRA, procedimento de gravacao
 Repositorio: clone `panda_hybrid` (origin kriptomad/panda, upstream commaai/panda master `1305b78c`),
 branch `hybrid-h725`, commits `a8babfea` (port inicial) e `78e37994` (PB14 + HYBRID_BOARD).
 Publicado em: https://github.com/kriptomad/panda/tree/hybrid-h725 (mesmo fork que hospeda `revive-f4`).
-Fonte de verdade dos pinos: `04_PROJECT\HybridPanda\HybridPanda.kicad_sch` -> netlist kicadxml
+Fonte de verdade dos pinos: `hardware\hybrid-panda\HybridPanda.kicad_sch` -> netlist kicadxml
 (`kicad-cli sch export netlist --format kicadxml`), componente U7 = STM32H725ZGT6 (LQFP144).
 Nada aqui foi testado em hardware (ver secao 10).
 
@@ -308,7 +308,7 @@ Opcoes:
    binario incompativel com red panda real; o bootrom DFU da ST pode escrever CR3 antes do bootstub (aviso no
    `clock.h`) - se escrever SMPS, a placa nao enumera em DFU e so pode ser gravada por SWD (J1). Nao testado.
 
-Decisao do dono da placa (SI/PI audit, `06_REPORTS\si_pi_audit\SI_PI_AUDIT.md`): aplicar PCR-2. Com isso o alvo e o
+Decisao do dono da placa (SI/PI audit, `hardware\reports\si-pi-audit\si-pi-audit.md`): aplicar PCR-2. Com isso o alvo e o
 caminho SMPS padrao do `clock.h` (binarios `panda_h7` ou `panda_h7_hybrid`); `panda_h7_ldo` permanece apenas como fallback
 para a revisao atual da PCB.
 
@@ -344,10 +344,10 @@ dependa de `red.h` e para que as diferencas (PB14) fiquem num unico lugar.
 
 Ambiente: Windows, Arm GNU Toolchain 14.2.Rel1 (arm-none-eabi-gcc 14.2.1), SCons 4.11.1, Python 3.13 venv
 (`.venv_h`), opendbc local `b0ef909` (editable, `--ignore-requires-python`), helper nao versionado
-`local_build_windows.scons` (pula `tests/libpanda`, forca plataforma posix). Flags upstream mantidas (`-Wall -Wextra
+`local-build-windows.scons` (pula `tests/libpanda`, forca plataforma posix). Flags upstream mantidas (`-Wall -Wextra
 -Wstrict-prototypes -Werror -Os`). Unico aviso: `ld: section .data type changed to PROGBITS` (pre-existente).
 
-DEBUG, revisao 1 / commit `a8babfea` (`HYBRID_LDO=1 scons -f local_build_windows.scons -j8`):
+DEBUG, revisao 1 / commit `a8babfea` (`HYBRID_LDO=1 scons -f local-build-windows.scons -j8`):
 
 | Saida | bytes |
 |---|---|
@@ -367,7 +367,7 @@ RELEASE=1, revisao 1 (`RELEASE=1 CERT=<debug cert> HYBRID_LDO=1`):
 | board/obj/bootstub.panda_h7_ldo.bin | 19852 |
 | board/obj/body_h7.bin.signed | 65208 |
 
-Matriz de build (revisao 2, commit `78e37994`; `HYBRID_LDO=1 scons -f local_build_windows.scons -j8`, RELEASE com
+Matriz de build (revisao 2, commit `78e37994`; `HYBRID_LDO=1 scons -f local-build-windows.scons -j8`, RELEASE com
 `RELEASE=1 CERT=<board\crypto\certs\debug>`):
 
 | Saida | DEBUG (bytes) | RELEASE=1 (bytes) | Define |
@@ -412,7 +412,7 @@ foi reproduzida manualmente com o mesmo conjunto de flags.
 | PCR-4 | informativo | Pull-ups: STB (R30-R33), SBU (R23/R24), BOOT0 pull-down (R14), USB EN (R26) presentes; nenhum pull-up em falta identificado | - |
 | PCR-5 | nenhuma alteracao de PCB | PB14/Q3/AP22615: resolvido em firmware (secao 11), desde que a placa receba `panda_h7_hybrid` (ou `panda_h7` com o strap PCR-1) | - |
 
-Atualizar `DECISIONS.md` D-02 (Direct SMPS exige VFBSMPS->VCAP) e D-08 (strap PF9) no repositorio HybridPanda
+Atualizar `../../docs/decisions.md` D-02 (Direct SMPS exige VFBSMPS->VCAP) e D-08 (strap PF9) no repositorio HybridPanda
 (nao alterado por esta tarefa).
 
 ## 9. Alteracoes necessarias do lado openpilot
@@ -437,7 +437,7 @@ Atualizar `DECISIONS.md` D-02 (Direct SMPS exige VFBSMPS->VCAP) e D-08 (strap PF
 
 ### 11.1 Reconciliacao da tabela de pinos
 
-A secao C.2 de `06_REPORTS\si_pi_audit\SI_PI_AUDIT.md` lista os mesmos pinos/redes da secao 2 deste relatorio
+A secao C.2 de `hardware\reports\si-pi-audit\si-pi-audit.md` lista os mesmos pinos/redes da secao 2 deste relatorio
 (FDCAN1 PB8/PB9, FDCAN2 PB5/PB6 e PB12/PB13, FDCAN3 PG9/PG10, STB PG11/PB3/PD7/PB4, SBU PC4/PA1, relay PC10/PC11,
 VoltageSens PF11, 5VOUT_S PB1, USB_LOAD PB14, LEDs PE4/PE3/PE2, USB PA11/PA12, HSE PH0/PH1, SWD PA13/PA14, BOOT0).
 Nenhuma divergencia de pino ou de funcao alternativa; a unica exigencia nova e o tratamento de PB14 descrito abaixo.

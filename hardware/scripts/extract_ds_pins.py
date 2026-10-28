@@ -1,9 +1,9 @@
 """
 Extract LQFP144 pin numbers + alternate/additional functions for the pins the panda
 firmware (red.h / stm32h7/peripherals.h / stm32h7/board.h) requires, from the ST datasheet
-DS13311 Rev 5 text dump (02_REFERENCE/datasheets/DS13313_text.txt).
+DS13311 Rev 5 text dump (hardware/reference/datasheets/DS13313_text.txt).
 
-Output: 03_RESEARCH/P3_tabela_pinos_LQFP144_vs_firmware.md + JSON log in 06_REPORTS.
+Output: hardware/research/p3-tabela-pinos-lqfp144-vs-firmware.md + JSON log in hardware/reports.
 Read-only on the datasheet; writes only inside OUTPUT_ROOT (hp_common guard).
 """
 import re, sys, json
@@ -11,9 +11,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from hp_common import OUTPUT_ROOT, assert_inside_output, JsonLog
 
-DS_TXT = OUTPUT_ROOT / "02_REFERENCE" / "datasheets" / "DS13313_text.txt"
-OUT_MD = OUTPUT_ROOT / "03_RESEARCH" / "P3_tabela_pinos_LQFP144_vs_firmware.md"
-OUT_JSON = OUTPUT_ROOT / "03_RESEARCH" / "P3_pinos_LQFP144.json"
+DS_TXT = OUTPUT_ROOT / "hardware/reference" / "datasheets" / "DS13313_text.txt"
+OUT_MD = OUTPUT_ROOT / "hardware/research" / "p3-tabela-pinos-lqfp144-vs-firmware.md"
+OUT_JSON = OUTPUT_ROOT / "hardware/research" / "p3-pinos-lqfp144.json"
 DRY = "--dry-run" in sys.argv
 
 # (port pin, firmware source, function required, net name in new schematic)
@@ -126,8 +126,8 @@ power = {k: [x["lqfp144"] for x in v] for k, v in rows.items() if k in
 md = ["# P3 — Tabela pino LQFP144 (STM32H725ZG) × função exigida pelo firmware × rede",
       "",
       "Fonte: ST **DS13311 Rev 5 (Nov/2023)** 'STM32H725xE/G', Tabela 8 (pin and ball descriptions), "
-      "arquivo `02_REFERENCE/datasheets/DS13313_STM32H725_ae.pdf` (SHA-256 3953CF96…3AA14), texto extraído com pypdf em "
-      "`DS13313_text.txt`. Firmware: `02_REFERENCE/panda` @ 408e14d4. Gerado por `05_SCRIPTS/extract_ds_pins.py` (não editado à mão).",
+      "arquivo `hardware/reference/datasheets/DS13313_STM32H725_ae.pdf` (SHA-256 3953CF96…3AA14), texto extraído com pypdf em "
+      "`DS13313_text.txt`. Firmware: `hardware/reference/panda` @ 408e14d4. Gerado por `hardware/scripts/extract_ds_pins.py` (não editado à mão).",
       "",
       "Coluna 'AF/ADC confirmado' = a função exigida aparece literalmente na lista de funções alternativas/adicionais do pino no datasheet.",
       "",
@@ -140,7 +140,7 @@ md += ["", "## Pinos de alimentação / sistema (LQFP144)", "", "| Nome | Pinos 
 for k, v in power.items():
     md.append(f"| {k} | {', '.join(v)} |")
 # second source: KiCad official symbol (generated from ST CubeMX DB) for system/power pins
-KICAD_TXT = OUTPUT_ROOT / "03_RESEARCH" / "kicad_lib_STM32H725ZGTx_pins.txt"
+KICAD_TXT = OUTPUT_ROOT / "hardware/research" / "kicad-lib-stm32h725zgtx-pins.txt"
 kicad_pins = {}
 for ln in KICAD_TXT.read_text(encoding="utf-8").splitlines():
     m = re.match(r"^(\d+) (\S+) (\S+)$", ln)

@@ -1,10 +1,10 @@
-"""corr_step1_footprints.py - aplica as correcoes de footprint da auditoria (06_REPORTS/footprint_audit).
+"""corr_step1_footprints.py - aplica as correcoes de footprint da auditoria (hardware/reports/footprint-audit).
 
 Reusa proposed_fixes.py (q3_sot323, sot23_comma, led_u5, xl1509_u12, attr_smd, model_3d, courtyard_l3) e acrescenta:
   * P1: pads THT B1-B12 0.60 -> 0.65 (datasheet TYPE-C-31-M-04: anel 0.65) + remocao dos 12 circulos F.Paste soltos
   * R6: footprint Capacitor_SMD:C_0603_1608Metric -> Resistor_SMD:R_0603_1608Metric (biblioteca KiCad 10),
     preservando posicao, rotacao, camada, referencia, valor, path e redes dos pads; tambem no .kicad_sch
-Relatorio: 06_REPORTS/corr/step1_footprints.json
+Relatorio: hardware/reports/corrections/step1_footprints.json
 """
 import importlib.util
 import json
@@ -18,13 +18,13 @@ import pcbnew
 from pcbnew import FromMM, ToMM
 
 ROOT = str(hp.OUTPUT_ROOT)
-PCB = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb")
-SCH = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_sch")
+PCB = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pcb")
+SCH = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_sch")
 FP_LIB = os.path.join(os.path.dirname(os.path.dirname(sys.executable)), "share", "kicad", "footprints")
-OUT = os.path.join(ROOT, "06_REPORTS", "corr", "step1_footprints.json")
+OUT = os.path.join(ROOT, "hardware/reports", "corrections", "step1_footprints.json")
 
 spec = importlib.util.spec_from_file_location(
-    "proposed_fixes", os.path.join(ROOT, "06_REPORTS", "footprint_audit", "proposed_fixes.py"))
+    "proposed_fixes", os.path.join(ROOT, "hardware/reports", "footprint-audit", "proposed_fixes.py"))
 pf = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(pf)
 

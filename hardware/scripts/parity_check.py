@@ -14,7 +14,7 @@ Checks (structural, independent of net names)
   * power pins of the MCU: VDD*/VSS*/VCAP/VREF/VDDA/VBAT reported for completeness
   * MCU pins connected in the netlist but absent from the firmware table -> SEM_USO (informational)
 
-Output: 06_REPORTS/parity_<profile>_<netlist-stem>.{md,json}. Exit code 1 if any DIVERGENTE / NAO_CONECTADO
+Output: hardware/reports/parity_<profile>_<netlist-stem>.{md,json}. Exit code 1 if any DIVERGENTE / NAO_CONECTADO
 (non-optional) so STEP 7 can gate on it.
 """
 from __future__ import annotations
@@ -70,7 +70,7 @@ def main():
     ap.add_argument("--netlist", required=True)
     ap.add_argument("--profile", required=True, choices=["red_h7", "black_f4"])
     ap.add_argument("--mcu", default=None)
-    ap.add_argument("--h7-lib-pins", default=str(hp.OUTPUT_ROOT / "03_RESEARCH" / "kicad_lib_STM32H725ZGTx_pins.txt"),
+    ap.add_argument("--h7-lib-pins", default=str(hp.OUTPUT_ROOT / "hardware/research" / "kicad-lib-stm32h725zgtx-pins.txt"),
                     help="fallback pad->port table when the symbol pinfunction lacks the port name")
     args = ap.parse_args()
     hp.apply_args(args)

@@ -1,13 +1,14 @@
-"""Audit 2: build proposed_patches/0002-opendbc-pyproject-restore-lf.patch (CRLF -> LF on pyproject.toml, content unchanged)
-and proposed_patches/0003-openpilot-torqued-allow-honda.patch (optional parity: upstream 839a77334)."""
+"""Audit 2: build proposed-patches/0002-opendbc-pyproject-restore-lf.patch (CRLF -> LF on pyproject.toml, content unchanged)
+and proposed-patches/0003-openpilot-torqued-allow-honda.patch (optional parity: upstream 839a77334)."""
 import os
 import subprocess
 import tempfile
 
-BASE = r"C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\09_FIRMWARECITYG7_BLACKPANDA"
-ODBC = os.path.join(BASE, "opendbc_firmwarecityg7")
-OP = os.path.join(BASE, "openpilot_cityg7_v0.9.9")
-PATCH_DIR = os.path.join(BASE, "audit2", "proposed_patches")
+AUDIT2 = os.path.dirname(os.path.abspath(__file__))
+BASE = os.path.dirname(AUDIT2)  # software/openpilot-port
+ODBC = os.path.join(BASE, "..", "opendbc-v0.9.9-city-g7")
+OP = os.path.join(BASE, "..", "openpilot-v0.9.9-city-g7")
+PATCH_DIR = os.path.join(AUDIT2, "proposed-patches")
 
 
 def no_index_diff(tmp, rel, old, new):

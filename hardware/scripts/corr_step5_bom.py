@@ -1,6 +1,6 @@
 """corr_step5_bom.py - Step 5 BOM impact: C23/C24 15pF -> 18pF (SI/PI item 24).
 
-Edits 06_REPORTS/bom_real/BOM_HYBRIDPANDA_v1.csv and BOM_JLCPCB.csv, then regenerates 06_REPORTS/hybrid_BOM.csv
+Edits hardware/reports/bom-real/BOM_HYBRIDPANDA_v1.csv and BOM_JLCPCB.csv, then regenerates hardware/reports/hybrid_BOM.csv
 with the same kicad-cli command used by corr_step4_bom.py / step7_validate.py (schematic properties were already
 changed by corr_step5_sch.py). Usage: python -u corr_step5_bom.py [--dry]  (system python is enough)
 """
@@ -13,10 +13,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import hp_common as hp  # noqa: E402
 
 ROOT = hp.OUTPUT_ROOT
-V1 = ROOT / "06_REPORTS" / "bom_real" / "BOM_HYBRIDPANDA_v1.csv"
-JLC = ROOT / "06_REPORTS" / "bom_real" / "BOM_JLCPCB.csv"
-HYB = ROOT / "06_REPORTS" / "hybrid_BOM.csv"
-SCH = ROOT / "04_PROJECT" / "HybridPanda" / "HybridPanda.kicad_sch"
+V1 = ROOT / "hardware/reports" / "bom-real" / "BOM_HYBRIDPANDA_v1.csv"
+JLC = ROOT / "hardware/reports" / "bom-real" / "BOM_JLCPCB.csv"
+HYB = ROOT / "hardware/reports" / "hybrid_BOM.csv"
+SCH = ROOT / "hardware" / "hybrid-panda" / "HybridPanda.kicad_sch"
 
 EDIT = {
     "C23,C24": {

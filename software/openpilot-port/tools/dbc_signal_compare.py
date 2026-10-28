@@ -1,4 +1,5 @@
-import zstandard, capnp, collections, cantools, warnings
+import os, zstandard, capnp, collections, cantools, warnings
+REPO_ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))
 warnings.filterwarnings("ignore")
 capnp.remove_import_hook()
 log = capnp.load(r"C:\Users\costabr\AppData\Local\Temp\city_route\schema\log.capnp")
@@ -15,7 +16,7 @@ def ld(p):
         out.append(l)
     txt="\n".join(out)
     return cantools.database.load_string(txt, "dbc", strict=False)
-old = ld(r"C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\09_FIRMWARECITYG7_BLACKPANDA\opendbc_firmwarecityg7\opendbc\dbc\honda_civic_ex_2022_can_generated.dbc")
+old = ld(os.path.join(REPO_ROOT, "software", "opendbc-v0.9.9-city-g7", "opendbc", "dbc", "honda_civic_ex_2022_can_generated.dbc"))
 new = ld(r"C:\Users\costabr\AppData\Local\Temp\city_route\head_bosch_radarless.dbc")
 frames = collections.defaultdict(list)
 for m in log.Event.read_multiple_bytes(raw, traversal_limit_in_words=2**30):

@@ -1,17 +1,17 @@
 # STEP 4 — Esquemático Hybrid Panda (STM32H725ZGT6) — relatório
 
-Data: 2026-10-23 · Protocolo v3 (STEP 4, spec 0x04 A–G) · Projeto: `04_PROJECT\HybridPanda\HybridPanda.kicad_sch`
+Data: 2026-10-23 · Protocolo v3 (STEP 4, spec 0x04 A–G) · Projeto: `hardware\hybrid-panda\HybridPanda.kicad_sch`
 
 > Status honesto: esquemático **gerado e verificado por ferramenta** (ERC 0 erros, paridade firmware 36/36, geometria 100 % ancorada). **Não** é "pronto para fabricar": restam STEP 5 (PCB), STEP 6 (DRC/fab), e itens PROVISÓRIOS de BOM (cristal CL, indutor, ESD) a confirmar em datasheet primário.
 
 ## 1. Método (reprodutível)
 | Passo | Ferramenta | Evidência |
 |---|---|---|
-| Cópia do baseline → `04_PROJECT` + prova round-trip | `05_SCRIPTS\step4_copy_and_roundtrip.py` | `06_REPORTS\step4_roundtrip.md` (348/348 tuplas de netlist idênticas; PCB 86 fp/387 pads/998 trilhas idênticos) |
-| Prova da transformação de pinos (kiutils) | `05_SCRIPTS\sch_geom.py` selftest | baseline: 382 pinos ancorados / 10 soltos (todos soltos já no original: #PWR015/016/017, U6.2/3, U2.6, U4.14–17) |
-| Geração do esquemático | `05_SCRIPTS\step4_build_schematic.py` (+ `step4_bom_values.json`) | `06_REPORTS\step4_build_schematic.json`; backups em `99_BACKUPS\*_step4_build` |
-| Netlist / ERC / paridade / geometria | `05_SCRIPTS\step4_verify.ps1` | `06_REPORTS\hybrid_HybridPanda_netlist.xml`, `hybrid_ERC.json`, `parity_red_h7_hybrid_HybridPanda_netlist.md` |
-| PDF / BOM | kicad-cli | `06_REPORTS\hybrid_schematic.pdf`, `06_REPORTS\hybrid_BOM.csv` |
+| Cópia do baseline → `hardware` + prova round-trip | `hardware\scripts\step4_copy_and_roundtrip.py` | `hardware\reports\step4-roundtrip.md` (348/348 tuplas de netlist idênticas; PCB 86 fp/387 pads/998 trilhas idênticos) |
+| Prova da transformação de pinos (kiutils) | `hardware\scripts\sch_geom.py` selftest | baseline: 382 pinos ancorados / 10 soltos (todos soltos já no original: #PWR015/016/017, U6.2/3, U2.6, U4.14–17) |
+| Geração do esquemático | `hardware\scripts\step4_build_schematic.py` (+ `step4_bom_values.json`) | `hardware\reports\step4_build_schematic.json`; backups em `99_BACKUPS\*_step4_build` |
+| Netlist / ERC / paridade / geometria | `hardware\scripts\step4_verify.ps1` | `hardware\reports\hybrid_HybridPanda_netlist.xml`, `hybrid_ERC.json`, `../reports/parity-red-h7-hybrid-hybridpanda-netlist.md` |
+| PDF / BOM | kicad-cli | `hardware\reports\hybrid_schematic.pdf`, `hardware\reports\hybrid_BOM.csv` |
 
 O gerador é idempotente: sempre parte de `HybridPanda.kicad_sch.baseline` (cópia byte-idêntica do baseline, SHA256 conferido com o primeiro backup).
 
@@ -226,7 +226,7 @@ Fonte: netlist exportada (`hybrid_HybridPanda_netlist.xml`). `(NC)` = no-connect
 - `erc.pin_map[power_out][power_out]` foi rebaixado de erro para aviso no `.kicad_pro` (D-19). `sym-lib-table` reapontado para `HybridPanda.symbols`.
 
 ## 8. Paridade com o firmware (`parity_check.py --profile red_h7`)
-`Resultado: SEM DIVERGÊNCIA — OK=36` — todos os 36 pinos do perfil red_h7 (CAN ×12, USB ×2, ADC ×4, relay ×2, LED ×3, HW_TYPE ×7, HSE ×2, BOOT0, SWD ×2, PB14) conectados aos componentes esperados; os 4 grupos CAN resolvem para transceivers distintos com STB no mesmo CI. Relatório: `06_REPORTS\parity_red_h7_hybrid_HybridPanda_netlist.md`. Correção de ferramenta: `PORT_RX` passou a aceitar nomes `PB4(NJTRST)` do símbolo H7.
+`Resultado: SEM DIVERGÊNCIA — OK=36` — todos os 36 pinos do perfil red_h7 (CAN ×12, USB ×2, ADC ×4, relay ×2, LED ×3, HW_TYPE ×7, HSE ×2, BOOT0, SWD ×2, PB14) conectados aos componentes esperados; os 4 grupos CAN resolvem para transceivers distintos com STB no mesmo CI. Relatório: `hardware\reports\parity-red-h7-hybrid-hybridpanda-netlist.md`. Correção de ferramenta: `PORT_RX` passou a aceitar nomes `PB4(NJTRST)` do símbolo H7.
 
 ## 9. BOM (agrupada por valor/footprint, sem símbolos de alimentação) — 48 linhas
 | Ref | Valor | Footprint | Qtd |
@@ -280,7 +280,7 @@ Fonte: netlist exportada (`hybrid_HybridPanda_netlist.xml`). `(NC)` = no-connect
 | U12 | XL1509-3.3 | Package_SO:Diodes_PSOP-8 | 1 |
 | Y1 | 25MHz X322525MOB4SI | Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm | 1 |
 
-Itens **PROVISÓRIOS** (ver `step4_bom_values.json` e `R3v2_componentes_STEP4.md`): Y1 CL 12 pF lido de listagem LCSC (não do datasheet YXC) → C23/C24 15 pF a afinar; L2 DFE201610E-2R2M (Isat não lido do datasheet Murata; footprint `L_Murata_DFE201610P` a conferir com o desenho Murata no STEP 5); FB1 valor genérico 600 Ω@100 MHz (MPN aberto); capacitores sem MPN.
+Itens **PROVISÓRIOS** (ver `step4_bom_values.json` e `r3v2-componentes-step4.md`): Y1 CL 12 pF lido de listagem LCSC (não do datasheet YXC) → C23/C24 15 pF a afinar; L2 DFE201610E-2R2M (Isat não lido do datasheet Murata; footprint `L_Murata_DFE201610P` a conferir com o desenho Murata no STEP 5); FB1 valor genérico 600 Ω@100 MHz (MPN aberto); capacitores sem MPN.
 
 ## 10. Divergências da pesquisa vs. hipóteses anteriores
 - **Transceivers mantidos** (não substituídos): datasheet NXP TJA1042 confirma "timing guaranteed for data rates up to 5 Mbit/s in the CAN FD fast phase" e pinagem TXD1/GND2/VCC3/RXD4/VIO5/CANL6/CANH7/STB8 (R3v2 §3.1, [F]). Linha "Transceivers" da tabela híbrida passa de *Substituído* para *Reaproveitado* (D-20).

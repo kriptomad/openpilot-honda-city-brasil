@@ -1,4 +1,4 @@
-"""step4_build_schematic.py - STEP 4: rebuild 04_PROJECT/HybridPanda/HybridPanda.kicad_sch around the STM32H725ZGT6.
+"""step4_build_schematic.py - STEP 4: rebuild hardware/hybrid-panda/HybridPanda.kicad_sch around the STM32H725ZGT6.
 
 What it does (deterministic, re-runnable from the baseline copy made by step4_copy_and_roundtrip.py):
   1. deletes the F413 block (U7 + HSE/BOOT/VCAP/LED resistors/labels), the 5V-sense divider and the GPS block
@@ -8,7 +8,7 @@ What it does (deterministic, re-runnable from the baseline copy made by step4_co
      SBU ADC conditioning (series R + BAT54S clamp), HW_ID straps, 5VOUT_S divider, STB pull-ups,
      decoupling bank, PWR_FLAG cluster
   5. renames project instances BlackPanda -> HybridPanda and writes the file (backup first via hp_common)
-Pin facts come from 05_SCRIPTS/firmware_pins.json (profile red_h7) and 03_RESEARCH/STEP3_* table (a).
+Pin facts come from hardware/scripts/firmware_pins.json (profile red_h7) and hardware/research/STEP3_* table (a).
 """
 from __future__ import annotations
 
@@ -29,7 +29,7 @@ from kiutils.items.common import Position, Effects, Font, Justify, Property, Pag
 from kiutils.items.schitems import (Connection, GlobalLabel, Junction, NoConnect, SchematicSymbol,
                                     SymbolProjectInstance, SymbolProjectPath, Text)
 
-PROJ = OUTPUT_ROOT / "04_PROJECT" / "HybridPanda"
+PROJ = OUTPUT_ROOT / "hardware" / "hybrid-panda"
 SCH = PROJ / "HybridPanda.kicad_sch"
 KICAD_SYMS = Path(r"C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\share\kicad\symbols")
 SHEET_PATH = "/5994f1e8-15cb-459b-8e2e-160b94fba244"
@@ -553,13 +553,13 @@ def collision_report(sch: Schematic) -> list:
 
 
 def main():
-    bom_path = OUTPUT_ROOT / "05_SCRIPTS" / "step4_bom_values.json"
+    bom_path = OUTPUT_ROOT / "hardware/scripts" / "step4_bom_values.json"
     bom = json.loads(bom_path.read_text(encoding="utf-8"))
     assert_inside_output(SCH)
     # idempotency: always build from the pristine baseline copy
-    pristine = SCH.with_suffix(".kicad_sch.baseline")
+    pristine = SCH.parent / "snapshots" / "HybridPanda.kicad_sch.baseline"
     if not pristine.exists():
-        first_backup = sorted((OUTPUT_ROOT / "99_BACKUPS").glob("*_step4_build/04_PROJECT/HybridPanda/HybridPanda.kicad_sch"))
+        first_backup = sorted((OUTPUT_ROOT / "99_BACKUPS").glob("*_step4_build/hardware/hybrid-panda/HybridPanda.kicad_sch"))
         src = first_backup[0] if first_backup else SCH
         pristine.write_bytes(src.read_bytes())
         log.info("pristine baseline stored", src=str(src))
@@ -596,7 +596,7 @@ def main():
                          "wires": len([g for g in sch.graphicalItems if isinstance(g, Connection)]),
                          "noconnects": len(sch.noConnects), "junctions": len(sch.junctions)},
     }
-    out = OUTPUT_ROOT / "06_REPORTS" / "step4_build_schematic.json"
+    out = OUTPUT_ROOT / "hardware/reports" / "step4_build_schematic.json"
     out.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     log.info("written", report=str(out))
     print(json.dumps({k: v for k, v in report.items() if k in ("baseline_counts", "final_counts", "instances_renamed", "auto_junctions")}, indent=1))

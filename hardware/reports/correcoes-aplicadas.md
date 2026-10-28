@@ -1,14 +1,14 @@
 # CORRECOES APLICADAS - Hybrid Panda (campanha de correcao pos-auditoria)
 
-Data: 2026-10-28. Placa: 04_PROJECT/HybridPanda (KiCad 10.0.7). Branch main.
-Fontes de verdade: 06_REPORTS/si_pi_audit/proposed_changes.md (36 itens),
-06_REPORTS/footprint_audit/FOOTPRINT_AUDIT.md, 06_REPORTS/bom_real/BOM_REPORT.md.
-Guia de retoma por passo: 06_REPORTS/corr/RESUME_STEP3.md. Log de cada edicao do passo 5:
-06_REPORTS/corr/step5_pcb.json.
+Data: 2026-10-28. Placa: hardware/hybrid-panda (KiCad 10.0.7). Branch main.
+Fontes de verdade: hardware/reports/si-pi-audit/proposed-changes.md (36 itens),
+hardware/reports/footprint-audit/footprint-audit.md, hardware/reports/bom-real/bom-report.md.
+Guia de retoma por passo: hardware/reports/corrections/resume-step3.md. Log de cada edicao do passo 5:
+hardware/reports/corrections/step5_pcb.json.
 
-Regra de aceitacao usada em TODAS as edicoes (05_SCRIPTS/corr_gate.py): kicad-cli DRC em JSON apos
+Regra de aceitacao usada em TODAS as edicoes (hardware/scripts/corr_gate.py): kicad-cli DRC em JSON apos
 cada edicao; aceite = 0 clearance, 0 unconnected, 0 schematic_parity e nenhuma categoria de
-severidade erro nova face ao baseline (06_REPORTS/corr/drc_baseline_step7_orig.json); ERC 0 erros.
+severidade erro nova face ao baseline (hardware/reports/corrections/drc_baseline_step7_orig.json); ERC 0 erros.
 Esquema e PCB alterados em conjunto (paridade de netlist 0 divergencias).
 
 ## 1. Commits
@@ -21,11 +21,11 @@ Esquema e PCB alterados em conjunto (paridade de netlist 0 divergencias).
 | eb14492 | 3 | Item 6 fechado (paridade C4/C12 0805), tracks_crossing U13 corrigido, item 16 deferido |
 | 9305ef2 | 4 | Impacto BOM dos passos 1-3 (3 CSV + campos MPN/LCSC no esquema) |
 | 15e11dd | 5 | SI/PI MEDIO: 24, 26p, 28, 30, 31, 33a/b, 35p, 12/13/14p, 17p, 20 |
-| (final) | final | Item 15 (5 vias termicas U6 EP), DRC/ERC finais, exports 07_FABRICATION, este documento, D-34+, PROGRESS, RELATORIO_FINAL |
+| (final) | final | Item 15 (5 vias termicas U6 EP), DRC/ERC finais, exports hardware/fabrication, este documento, D-34+, PROGRESS, RELATORIO_FINAL |
 
 ## 2. Tabela item -> estado
 
-Estado: APLICADO / PARCIAL / DEFERIDO / N-A (nao aplicavel). Evidencia = ficheiro em 06_REPORTS salvo indicacao.
+Estado: APLICADO / PARCIAL / DEFERIDO / N-A (nao aplicavel). Evidencia = ficheiro em hardware/reports salvo indicacao.
 
 | Item | Descricao curta | Estado | Commit | Evidencia |
 |---|---|---|---|---|
@@ -34,22 +34,22 @@ Estado: APLICADO / PARCIAL / DEFERIDO / N-A (nao aplicavel). Evidencia = ficheir
 | 3 | C65 4.7uF em VDDSMPS (U7.16) | APLICADO | a5d60b8 | idem |
 | 4 | R1 1k -> 10k R_0603 | APLICADO | b209b08 | corr/drc_step3c.json |
 | 5 | D15 zener 12 V SOD-123 (BZT52C12) | APLICADO (B.Cu) | b209b08 | corr/drc_step3c.json |
-| 6 | Cin TPS5450 C4/C12 2.2uF -> 10uF | APLICADO com desvio: 0805 50 V (1206 nao cabe) | b209b08, eb14492 | corr/drc_step3e.json, corr/RESUME_STEP3.md |
+| 6 | Cin TPS5450 C4/C12 2.2uF -> 10uF | APLICADO com desvio: 0805 50 V (1206 nao cabe) | b209b08, eb14492 | corr/drc_step3e.json, corr/corrections/resume-step3.md |
 | 7 | R6 footprint C_0603 -> R_0603 | APLICADO | a8b98a9 | footprint_audit/, corr/drc_step1*.json |
 | 8 | U13 ESD USB USBLC6-2SC6 | APLICADO (flow-through, F.Cu) | b209b08, eb14492 | corr/drc_step3e.json |
-| 9 | D10 BAS70H funcao | DEFERIDO: decisao de arquitectura (ligar so com USB?) pertence ao dono; sem alteracao | - | si_pi_audit/proposed_changes.md |
+| 9 | D10 BAS70H funcao | DEFERIDO: decisao de arquitectura (ligar so com USB?) pertence ao dono; sem alteracao | - | si_pi_audit/si-pi-audit/proposed-changes.md |
 | 10 | 100nF em BOOT0 / VIO (opcional) | DEFERIDO: opcional, exige 5 caps novos sem espaco junto ao U7 em B.Cu | - | - |
 | 11 | +5V -> U1.6 alargado | APLICADO | b209b08 | corr/drc_step3c.json |
 | 12 | +5V -> U12.1 0.2 -> 0.5 mm | APLICADO (9 segmentos) | 15e11dd | corr/step5_pcb.json (widen 12) |
 | 13 | USB_PWR 0.6 -> 1.0 mm | PARCIAL: 1.0 mm no trajecto, 0.8 mm junto a via e 0.3 mm na entrada do pad U1.1 (curto/clearance) | 15e11dd | corr/step5_pcb.json (widen 13, widen_fix) |
 | 14 | +3V3 saida L3.2 0.2 -> 0.4 mm | PARCIAL: 0.4 mm excepto 2 segmentos de entrada em U12.4 (0.2) | 15e11dd | corr/step5_pcb.json (widen 14) |
 | 15 | Vias GND no pad termico U6.9 | APLICADO: 5 vias 0.6/0.3 entre os quadrados de pasta + ligacao solida; a fila inferior (3 vias) nao cabe (SWDIO em In2 a y 43.56) | (final) | corr/drc_step5r.json, corr/step5_pcb.json (u6ep) |
-| 16 | No SW TPS5450: mover L4/D12/C37 | DEFERIDO: D12 na posicao proposta colide com U6; a zona SW e o unico cobre largo U6.8 -> D12.1; aproximar L4 obriga a realocar C4/C6/C7/L4 (re-floorplan); C37.2 -> PH < 2 mm impossivel (BOOT pino 1 e PH pino 8 opostos) | - | corr/RESUME_STEP3.md |
+| 16 | No SW TPS5450: mover L4/D12/C37 | DEFERIDO: D12 na posicao proposta colide com U6; a zona SW e o unico cobre largo U6.8 -> D12.1; aproximar L4 obriga a realocar C4/C6/C7/L4 (re-floorplan); C37.2 -> PH < 2 mm impossivel (BOOT pino 1 e PH pino 8 opostos) | - | corr/corrections/resume-step3.md |
 | 17 | Retirar trilhas de potencia das camadas internas | PARCIAL: +12V e 12V_Protected removidos de In2; 12V_Protected mantido em In1 (0.35/0.3/0.2 por clearance NRST e furo); trecho necessario para conectividade | 15e11dd | corr/step5_pcb.json (inner17*) |
 | 18 | R20/R21 22R para B.Cu junto a U7.100/101 | APLICADO | b209b08 | corr/drc_step3c.json |
 | 19 | USB_R_D+/D- par acoplado | APLICADO (In1 0.2 mm / gap 0.3, uma camada ate U13) | b209b08, eb14492 | corr/drc_step3e.json |
 | 20 | VCAP em B.Cu 0.3 mm | APLICADO parcialmente: trilho In1 0.3 mm mantido (remover deixa 1 unconnected); C64 do item 2 feito | a5d60b8, 15e11dd | corr/step5_pcb.json (inner17 VCAP / restore) |
-| 21 | C41/C42 mais perto de U7.15/17 | DEFERIDO: posicoes propostas colidem com L5 e com trilhos VCAP/VLXSMPS; exige rerotear o bloco SMPS | - | si_pi_audit/SI_PI_AUDIT.md |
+| 21 | C41/C42 mais perto de U7.15/17 | DEFERIDO: posicoes propostas colidem com L5 e com trilhos VCAP/VLXSMPS; exige rerotear o bloco SMPS | - | si_pi_audit/si-pi-audit/si-pi-audit.md |
 | 22 | C38 100nF NRST junto a U7.27 | DEFERIDO: posicao proposta (104.6,68.9) ocupada por trilhos LED_*/SWD em B.Cu; exige rerotear | - | idem |
 | 23 | Mover U5 LED + R17-R19 para a borda | DEFERIDO: re-floorplan + rerotear 4 redes; sem ganho de SI mensuravel | - | idem |
 | 24 | C23/C24 15pF -> 18pF | APLICADO (esquema, PCB, BOM) | 15e11dd | corr/erc_step5.json, bom_real/BOM_HYBRIDPANDA_v1.csv |
@@ -64,14 +64,14 @@ Estado: APLICADO / PARCIAL / DEFERIDO / N-A (nao aplicavel). Evidencia = ficheir
 | 33 | U3 copper_edge (2) | APLICADO: contorno +0.4 mm em x para y < 48.6 (33a) e shell U3 pinos 5/6 a GND (33b) | 15e11dd | corr/drc_step5b.json, corr/erc_step5.json |
 | 34 | D1 SMAJ16CA junto a P1.A4/B4 | DEFERIDO: posicao proposta (138.6,56.0) ocupada por P1/Q4; trilha actual 1.0-1.5 mm aceite | - | - |
 | 35 | Silk/texto | PARCIAL: 23 refs 0.5 -> 0.8 mm; 45 mantidos em 0.5 (sobreposicao com pads/outras refs) | 15e11dd | corr/drc_step5n.json, corr/drc_step5o.json |
-| 36 | Cout TPS5450 polimero 100uF 7343 | DEFERIDO: case 7343 nao cabe no local de C21 sem re-floorplan; 47uF 0805 10 V mantido | - | bom_real/BOM_REPORT.md |
-| FA | Footprints (Q1/Q2/Q3, U5, U12, P1, R6, atributos, 3D) | APLICADO | a8b98a9 | footprint_audit/FOOTPRINT_AUDIT.md |
-| BOM-a | C8 10uF 0402 -> 0603 | DEFERIDO: 0603 nao cabe entre U12 e L3; peca 0402 10uF 10 V X5R com derating registado | - | bom_real/BOM_REPORT.md |
+| 36 | Cout TPS5450 polimero 100uF 7343 | DEFERIDO: case 7343 nao cabe no local de C21 sem re-floorplan; 47uF 0805 10 V mantido | - | bom_real/bom-real/bom-report.md |
+| FA | Footprints (Q1/Q2/Q3, U5, U12, P1, R6, atributos, 3D) | APLICADO | a8b98a9 | footprint_audit/footprint-audit/footprint-audit.md |
+| BOM-a | C8 10uF 0402 -> 0603 | DEFERIDO: 0603 nao cabe entre U12 e L3; peca 0402 10uF 10 V X5R com derating registado | - | bom_real/bom-real/bom-report.md |
 | BOM-b | U1 AP22615 -> TPS2553 (alternativa) | DEFERIDO: apenas alternativa documentada, pinagem diferente | - | idem |
 
 ## 3. Numeros finais
 
-DRC (06_REPORTS/hybrid_DRC_final.json = corr/drc_final.json): total 135 (baseline passo 7: 182-184).
+DRC (hardware/reports/hybrid_DRC_final.json = corr/drc_final.json): total 135 (baseline passo 7: 182-184).
 - clearance 0, unconnected 0, schematic_parity 0, shorting_items 0, tracks_crossing 0.
 - Restantes (todos herdados do baseline OpenBlackPanda ou avisos): hole_clearance 8 (P1, item 32),
   lib_footprint_mismatch 73 (footprints editados localmente de proposito: FA, P1, U12, fiduciais),
@@ -79,18 +79,18 @@ DRC (06_REPORTS/hybrid_DRC_final.json = corr/drc_final.json): total 135 (baselin
 - Categorias eliminadas face ao baseline: copper_edge_clearance (2 -> 0), starved_thermal (18 -> 0),
   drill_out_of_range (1 -> 0), footprint_type_mismatch (10 -> 0).
 
-ERC (06_REPORTS/hybrid_ERC_final.json): 0 erros, 373 avisos (endpoint_off_grid 145, lib_symbol_issues 6, ...).
+ERC (hardware/reports/hybrid_ERC_final.json): 0 erros, 373 avisos (endpoint_off_grid 145, lib_symbol_issues 6, ...).
 
-final_audit.py (06_REPORTS/final_audit.json, 03_RESEARCH/AUDITORIA_FINAL.md): curtos geometricos 0,
+final_audit.py (hardware/reports/final_audit.json, docs/final-audit.md): curtos geometricos 0,
 via-in-pad 0 (5 vias termicas no EP do U6 classificadas a parte, mesma rede), clearance real 0,
 hole_hits 8 (P1), redes partidas 0, teia de mascara 0. ALTO restantes: 8x folga de furo do P1 e
 BOM com 1 linha sem MPN (JP1, jumper de solda sem peca).
 
-step7_validate.py (06_REPORTS/step7_validation.json): falhas []. Paridade red_h7 36/36.
+step7_validate.py (hardware/reports/step7_validation.json): falhas []. Paridade red_h7 36/36.
 
-step8_fabricate.py (07_FABRICATION, 06_REPORTS/step8_fabrication.json): gerbers, drill, CPL, BOM_JLC.csv
+step8_fabricate.py (hardware/fabrication, hardware/reports/step8_fabrication.json): gerbers, drill, CPL, BOM_JLC.csv
 (117/119 refs com LCSC; JP1 e U1 sem), PDFs, STEP (kicad-cli devolve exit 2 por modelos 3D em falta
-mas o ficheiro e gerado), zip. LEIA-ME.txt continua "NAO FABRICAR".
+mas o ficheiro e gerado), zip. ../fabrication/readme.md continua "NAO FABRICAR".
 
 ## 4. Delta de BOM (passos 1-5)
 
@@ -106,8 +106,8 @@ mas o ficheiro e gerado), zip. LEIA-ME.txt continua "NAO FABRICAR".
 | JP1 (novo) | - | SolderJumper_2_Open | sem peca | n-a |
 | C23, C24 | 15pF | 18pF 0402 C0G (0402CG180J500NT) | C1555 | A VERIFICAR (alt. CL05C180JB5NNNC C307443) |
 
-Ficheiros: 06_REPORTS/hybrid_BOM.csv, 06_REPORTS/bom_real/BOM_HYBRIDPANDA_v1.csv, BOM_JLCPCB.csv,
-07_FABRICATION/assembly/BOM_JLC.csv. Nenhum codigo LCSC foi confirmado no catalogo JLC em sessao;
+Ficheiros: hardware/reports/hybrid_BOM.csv, hardware/reports/bom-real/BOM_HYBRIDPANDA_v1.csv, BOM_JLCPCB.csv,
+hardware/fabrication/assembly/BOM_JLC.csv. Nenhum codigo LCSC foi confirmado no catalogo JLC em sessao;
 todos estao marcados "a verificar".
 
 ## 5. Itens deferidos (resumo com motivo)
@@ -129,5 +129,5 @@ Todos exigem relayout parcial ou decisao do dono; nenhum e bloqueante para o DRC
 - Rotacao CPL para a convencao JLC nao normalizada.
 - Firmware red panda nunca executado neste hardware.
 - Limitacao de ambiente: step7 Make-Manifest falhou temporariamente por ficheiro bloqueado em
-  10_FLOWPILOT (outro agente); passou na re-execucao. final_audit.py termina com os._exit(0) para
+  software/flowpilot-port (outro agente); passou na re-execucao. final_audit.py termina com os._exit(0) para
   contornar hang no teardown do pcbnew (KiCad 10).

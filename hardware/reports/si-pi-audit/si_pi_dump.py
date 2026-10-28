@@ -15,8 +15,8 @@ from collections import defaultdict
 import pcbnew
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
-PCB = os.path.join(ROOT, "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb")
+ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))  # repository root
+PCB = os.path.join(ROOT, "hardware", "hybrid-panda", "HybridPanda.kicad_pcb")
 
 NM = 1e6  # nm per mm
 

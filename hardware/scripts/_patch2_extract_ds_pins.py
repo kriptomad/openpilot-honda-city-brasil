@@ -21,7 +21,7 @@ s = s.replace(old, new)
 
 old2 = 'md += ["", f"## Pinos exigidos ausentes no LQFP144: {missing if missing else \'nenhum\'}",'
 new2 = '''# second source: KiCad official symbol (generated from ST CubeMX DB) for system/power pins
-KICAD_TXT = OUTPUT_ROOT / "03_RESEARCH" / "kicad_lib_STM32H725ZGTx_pins.txt"
+KICAD_TXT = OUTPUT_ROOT / "hardware/research" / "kicad-lib-stm32h725zgtx-pins.txt"
 kicad_pins = {}
 for ln in KICAD_TXT.read_text(encoding="utf-8").splitlines():
     m = re.match(r"^(\\d+) (\\S+) (\\S+)$", ln)

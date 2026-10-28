@@ -1,6 +1,6 @@
 # STEP 6 — Roteamento, impedância e zonas — relatório de medições
 
-Data: 2026-10-26 12:31 · Placa: `04_PROJECT\HybridPanda\HybridPanda.kicad_pcb` · Script: `05_SCRIPTS\step6_reports.py` (só leitura) · JSON: `06_REPORTS\step6_reports.json`
+Data: 2026-10-26 12:31 · Placa: `hardware\hybrid-panda\HybridPanda.kicad_pcb` · Script: `hardware\scripts\step6_reports.py` (só leitura) · JSON: `hardware\reports\step6_reports.json`
 
 > O DRC do KiCad **não verifica impedância**. Os valores abaixo são estimativas analíticas (Hammerstad-Jensen / IPC-2141) a partir do stackup gravado no ficheiro; a referência de retorno real depende de onde há cobre em In1 (zona +3V3 só sob o MCU) — fora dela a referência é In2 (GND) a ≈1,28 mm, o que sobe Z0. Validação só com o fabricante (stackup controlado) ou TDR.
 

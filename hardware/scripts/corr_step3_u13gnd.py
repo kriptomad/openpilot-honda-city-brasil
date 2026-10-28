@@ -14,7 +14,7 @@ from pcbnew import FromMM, ToMM
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import hp_common as hp  # noqa: E402
 
-PCB = os.path.join(str(hp.OUTPUT_ROOT), "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb")
+PCB = os.path.join(str(hp.OUTPUT_ROOT), "hardware", "hybrid-panda", "HybridPanda.kicad_pcb")
 
 
 def P(x, y):

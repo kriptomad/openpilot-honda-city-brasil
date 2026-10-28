@@ -1,13 +1,13 @@
 # Port do Honda City G7 2023 (Brasil) para o flowpilot
 
-Documento de entrega da Fase B. Complementa `FLOWPILOT_SCOPE.md` (Fase A, pesquisa e lista de lacunas).
+Documento de entrega da Fase B. Complementa `flowpilot-scope.md` (Fase A, pesquisa e lista de lacunas).
 
 Nada do que esta descrito aqui foi testado em carro, em celular ou em panda real. A secao 10 lista tudo o
 que permanece nao verificado. Este documento descreve apenas o que foi alterado, como foi conferido no PC e
 o que falta conferir; nao faz nenhuma afirmacao de aptidao para uso em via publica.
 
-Convencoes: caminhos relativos a `10_FLOWPILOT\`; "upstream" = openpilot/opendbc da comma; "port v0.9.9" =
-`09_FIRMWARECITYG7_BLACKPANDA\{opendbc_firmwarecityg7,openpilot_cityg7_v0.9.9}` (fontes de verdade dos fatos
+Convencoes: caminhos relativos a `software\flowpilot-port\`; "upstream" = openpilot/opendbc da comma; "port v0.9.9" =
+`software\openpilot-port\{../opendbc-v0.9.9-city-g7,../openpilot-v0.9.9-city-g7}` (fontes de verdade dos fatos
 do City); "jag" = jagheterfredrik/flowpilot master `9ea918ea` (base escolhida na Fase A).
 
 ## 1. Resumo
@@ -17,7 +17,7 @@ do City); "jag" = jagheterfredrik/flowpilot master `9ea918ea` (base escolhida na
 | Base | jagheterfredrik/flowpilot master `9ea918ea` (2025-03-04), importado como snapshot tarball (commit local `43eab22`) |
 | Branch local | `flowpilot-city-g7-brazil` em `flowpilot\` (panda e opendbc estao achatados no mesmo repo; nao ha submodulos a ramificar) |
 | Commits | `a2f1983` (camada do carro), `fd9e846` (build do firmware no Windows), `275df51` (correcao `CarInterface.apply` + `docs/CARS.md`) |
-| Firmware panda preta (F4) | compilado da arvore `flowpilot\panda` com arm-none-eabi-gcc; saidas em `panda_fw_out\` |
+| Firmware panda preta (F4) | compilado da arvore `flowpilot\panda` com arm-none-eabi-gcc; saidas em `..\..\firmware\prebuilt\flowpilot-black-panda\` |
 | Testes executados no PC | `test_car_interfaces`, `test_fw_fingerprint`, `test_fingerprints`, `test_lateral_limits`, `test_docs` (via shims Windows em `tests_windows\`); `panda/tests/safety` completo com `libpanda.so` compilado por mingw-w64 (`test_honda.py`: 209 passam, 0 falhas; secao 7) |
 | APK | NAO compilado nesta maquina (exige Docker/Linux + NDK); procedimento na secao 8 |
 | Push / fork | nao feito, por decisao do dono |
@@ -38,7 +38,7 @@ git clone https://github.com/jagheterfredrik/flowpilot
 cd flowpilot
 git checkout -b flowpilot-city-g7-brazil 9ea918ea
 # no clone local desta pasta:
-git -C <10_FLOWPILOT>\flowpilot format-patch 43eab22..flowpilot-city-g7-brazil -o <pasta>
+git -C <software/flowpilot-port>\flowpilot format-patch 43eab22..flowpilot-city-g7-brazil -o <pasta>
 git am <pasta>\*.patch
 ```
 
@@ -48,7 +48,7 @@ mas com os mesmos arquivos). Se `git am` reclamar de CRLF, usar `git am --keep-c
 ## 3. Alteracoes arquivo a arquivo e mapeamento para o port v0.9.9
 
 Referencias de commits upstream conforme a tabela de 73 commits em
-`09_FIRMWARECITYG7_BLACKPANDA\AUDITORIA_PORT_CITY_V099.md`, secao 2.
+`software\openpilot-port\auditoria-port-city-v099.md`, secao 2.
 
 ### 3.1 Commit `a2f1983` - camada do carro
 
@@ -72,7 +72,7 @@ para o CIVIC_2022 radarless, sem mudanca), safety `HONDA_BOSCH` com parametro RA
 
 | Arquivo | O que mudou |
 |---|---|
-| `panda/local_build_windows.scons` | copia do helper usado no projeto HybridPanda (`03_RESEARCH`), adaptado para a arvore `flowpilot\panda`: compila `panda`, `panda_h7` e `jungle` com `arm-none-eabi-gcc` sem Docker, chamando o `board/SConscript` original. Nao altera nenhum arquivo do firmware. |
+| `panda/local_build_windows.scons` | copia do helper usado no projeto HybridPanda (`hardware/research`), adaptado para a arvore `flowpilot\panda`: compila `panda`, `panda_h7` e `jungle` com `arm-none-eabi-gcc` sem Docker, chamando o `board/SConscript` original. Nao altera nenhum arquivo do firmware. |
 
 ### 3.3 Commit `275df51` - correcao transversal + docs
 
@@ -121,11 +121,11 @@ de hardware em tempo de execucao; a panda preta e detectada por `detect_board_ty
 Comando (PowerShell, toolchain `arm-none-eabi-gcc` no PATH, venv `.venv_fp` ativo):
 
 ```
-cd 10_FLOWPILOT\flowpilot\panda
+cd software\flowpilot-city-g7\panda
 python -m SCons -f local_build_windows.scons -j8
 ```
 
-Saidas copiadas para `panda_fw_out\`:
+Saidas copiadas para `..\..\firmware\prebuilt\flowpilot-black-panda\`:
 
 | Arquivo | Tamanho | SHA256 |
 |---|---|---|
@@ -224,7 +224,7 @@ scripts/build.sh full        # usa a imagem Docker do jag; compila nativos, pand
 
 O `scripts/build.sh` do jag compila tambem `panda/board/obj/panda.bin.signed` dentro do Docker; esse binario
 e o que vai no APK e e o que o app grava na panda. Conferir que o hash dele coincide com o de
-`panda_fw_out\panda.bin.signed` (secao 5); se o GCC do Docker for diferente, o hash muda sem mudar o
+`..\..\firmware\prebuilt\flowpilot-black-panda\panda.bin.signed` (secao 5); se o GCC do Docker for diferente, o hash muda sem mudar o
 comportamento, mas nesse caso a panda sera regravada pelo app na primeira conexao (normal).
 
 ### 8.2 Instalar no Poco F3 (Android 11-13, MIUI/HyperOS)
@@ -240,7 +240,7 @@ comportamento, mas nesse caso a panda sera regravada pelo app na primeira conexa
 5. O app precisa de GPS/camera; conceder as permissoes quando pedidas.
 
 Requisitos do dispositivo: o jag documenta Android 9+, 64 bits, OpenCL. O Poco F3 (Snapdragon 870, Adreno 650)
-atende aos requisitos nominais; nao ha relato especifico desse aparelho nos issues (ver `FLOWPILOT_SCOPE.md`).
+atende aos requisitos nominais; nao ha relato especifico desse aparelho nos issues (ver `flowpilot-scope.md`).
 
 ### 8.3 Selecionar o carro
 
@@ -255,7 +255,7 @@ ligada e o CAN fluindo antes de o app iniciar o `controlsd`.
 Workflow "Build" do repo kriptomad/flowpilot-city-g7, branch `flowpilot-city-g7-brazil`:
 
 - Run: 40697331404 (2026-10-28), commit `ffd228c`.
-- Artefato `android-release.apk`, copiado para `10_FLOWPILOT/apk_out/android-release.apk` e publicado no release
+- Artefato `android-release.apk`, copiado para `software/flowpilot-port/apk_out/android-release.apk` e publicado no release
   `v0.1-city-g7-brazil` como `flowpilot-city-g7-brazil-ffd228c.apk` (+ `SHA256SUMS.txt`).
 - Tamanho: 235.399.803 bytes. SHA256: `493891cd62d3f2eaf094e414489d7b0dae8bde297a673c305fba6eef298d4adb`.
 - Conteudo verificado: `assets/private.tar` (18,5 MB, 797 entradas: selfdrive/, panda/, opendbc/, common/, cereal/,
@@ -312,7 +312,7 @@ python -c "from panda import Panda; Panda().flash()"
 
    Equivalente no Linux: `python board/recover.py` seguido de `python board/flash.py` (ambos chamam `scons`
    antes). Passo a passo completo, incluindo a placa do Lukas (SW1 = BOOT0) e as tres arvores de firmware:
-   `09_FIRMWARECITYG7_BLACKPANDA\FLASH_BLACK_PANDA_CITY_G7.pt-BR.md`.
+   `docs\flashing\flash-black-panda-city-g7.pt-br.md`.
 5. Reconectar e verificar: `python -c "from panda import Panda; p=Panda(); print(p.get_type(), p.get_version(), p.get_signature().hex()[:16])"`.
    Esperado: tipo `b'\x03'` (black), versao `DEV-a2f1983c-DEBUG`.
 
@@ -359,14 +359,14 @@ Tudo abaixo esta pendente de verificacao real. Nenhum item foi exercitado em car
 11. O flag `HAS_EPB` e detectado em tempo de execucao; para os demais Hondas Bosch da arvore ele depende de
     0x1C2 aparecer durante a janela de fingerprint (nao foi possivel testar em carro que isso ocorre sempre).
 
-## 11. Estrutura da pasta `10_FLOWPILOT\`
+## 11. Estrutura da pasta `software\flowpilot-port\`
 
 | Caminho | Conteudo |
 |---|---|
-| `FLOWPILOT_SCOPE.md` | Fase A (pesquisa, versoes, compatibilidade, lacunas G1-G12) |
-| `PORT_CITY_FLOWPILOT.md` | este documento |
+| `flowpilot-scope.md` | Fase A (pesquisa, versoes, compatibilidade, lacunas G1-G12) |
+| `port-city-flowpilot.md` | este documento |
 | `flowpilot\` | repositorio (branch `flowpilot-city-g7-brazil`) |
-| `panda_fw_out\` | firmware F4 compilado + `SHA256SUMS.txt` |
+| `..\..\firmware\prebuilt\flowpilot-black-panda\` | firmware F4 compilado + `SHA256SUMS.txt` |
 | `tests_windows\` | shims (`fp_shims.py`), runners (`run_car_tests.py`, `run_panda_safety.py`, `run_script.py`), scripts de conferencia e logs |
 | `.venv_fp\` | venv Python 3.13 usado para build e testes |
 | `api_cache\` | respostas da API do GitHub usadas na Fase A |

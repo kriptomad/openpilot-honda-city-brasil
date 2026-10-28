@@ -1,13 +1,13 @@
 """step7_validate.py - STEP 7 (protocolo v3): validação automatizada com logs reais.
 
 Executa (python do KiCad 10: ...\KiCad\10.0\bin\python.exe):
-  1. kicad-cli sch erc (JSON)  -> 06_REPORTS\hybrid_ERC_step7.json
-  2. kicad-cli pcb drc (JSON)  -> 06_REPORTS\hybrid_DRC_step7.json   (comparado com baseline_DRC.json)
+  1. kicad-cli sch erc (JSON)  -> hardware\\reports\hybrid_ERC_step7.json
+  2. kicad-cli pcb drc (JSON)  -> hardware\\reports\hybrid_DRC_step7.json   (comparado com baseline_DRC.json)
   3. netlist esquemático (kicadxml) x PCB (pcbnew): pad->rede, footprints, valores
-  4. BOM (06_REPORTS\hybrid_BOM.csv) x esquemático x PCB
+  4. BOM (hardware\\reports\hybrid_BOM.csv) x esquemático x PCB
   5. parity_check.py --profile red_h7 (subprocesso, python da .venv)
   6. Make-Manifest.ps1 -Step STEP7 -Original (subprocesso)
-Saídas: 06_REPORTS\step7_validation.json, 03_RESEARCH\STEP7_validacao.md. Nada fora de OUTPUT_ROOT.
+Saídas: hardware\\reports\step7_validation.json, hardware\\research\step7-validacao.md. Nada fora de OUTPUT_ROOT.
 Código de saída 0 mesmo com falhas (as falhas ficam registadas — protocolo: "o que persistir fica como falha").
 """
 import csv, json, os, subprocess, sys, time, collections, xml.etree.ElementTree as ET
@@ -16,12 +16,12 @@ import hp_common as hp
 import pcbnew
 
 ROOT = str(hp.OUTPUT_ROOT)
-PROJ = os.path.join(ROOT, "04_PROJECT", "HybridPanda")
+PROJ = os.path.join(ROOT, "hardware", "hybrid-panda")
 SCH = os.path.join(PROJ, "HybridPanda.kicad_sch")
 PCB = os.path.join(PROJ, "HybridPanda.kicad_pcb")
-REP = os.path.join(ROOT, "06_REPORTS")
+REP = os.path.join(ROOT, "hardware/reports")
 CLI = str(hp.KICAD_CLI)
-VENV_PY = os.path.join(ROOT, "05_SCRIPTS", ".venv", "Scripts", "python.exe")
+VENV_PY = os.path.join(ROOT, "hardware/scripts", ".venv", "Scripts", "python.exe")
 T0 = time.time()
 out = {"date": time.strftime("%Y-%m-%d %H:%M:%S"), "commands": [], "failures": [], "notes": []}
 
@@ -68,7 +68,7 @@ out["drc"] = {"unconnected_items": len(drc.get("unconnected_items", [])),
 if out["drc"]["unconnected_items"]: out["failures"].append("DRC: %d item(ns) não ligado(s)" % out["drc"]["unconnected_items"])
 if out["drc"]["clearance"] or out["drc"]["shorting_items"]: out["failures"].append("DRC: clearance %d / curtos %d" % (out["drc"]["clearance"], out["drc"]["shorting_items"]))
 if out["drc"]["courtyards_overlap"]:
-    out["notes"].append("courtyards_overlap %d — herdado do baseline (D7/U9), ver STEP5_layout_H725.md §7.3" % out["drc"]["courtyards_overlap"])
+    out["notes"].append("courtyards_overlap %d — herdado do baseline (D7/U9), ver hardware\\research\\step5-layout-h725.md §7.3" % out["drc"]["courtyards_overlap"])
     if bc.get("courtyards_overlap", 0) < out["drc"]["courtyards_overlap"]: out["failures"].append("DRC: courtyards_overlap novo")
 
 # ---------------------------------------------------------------- 3. netlist sch x pcb
@@ -144,8 +144,8 @@ if no_mpn: out["notes"].append("%d referências sem MPN na BOM (PROVISÓRIO — 
 
 # ---------------------------------------------------------------- 5. paridade firmware x hardware
 pyexe = VENV_PY if os.path.exists(VENV_PY) else sys.executable
-p = run([pyexe, os.path.join(ROOT, "05_SCRIPTS", "parity_check.py"), "--netlist", net_xml, "--profile", "red_h7"], "step7_parity.log")
-par_md = os.path.join(REP, "parity_red_h7_hybrid_HybridPanda_netlist.md")
+p = run([pyexe, os.path.join(ROOT, "hardware/scripts", "parity_check.py"), "--netlist", net_xml, "--profile", "red_h7"], "step7_parity.log")
+par_md = os.path.join(REP, "parity-red-h7-hybrid-hybridpanda-netlist.md")
 par_json = os.path.join(REP, "parity_red_h7_hybrid_HybridPanda_netlist.json")
 par = json.load(open(par_json, encoding="utf-8")).get("summary", {}) if os.path.exists(par_json) else {}
 rows = par.get("rows", [])
@@ -157,7 +157,7 @@ if p.returncode != 0 or out["parity"]["conflicts"]: out["failures"].append("PIN_
 # ---------------------------------------------------------------- 6. manifestos
 # o python do KiCad altera PSModulePath e o powershell perde Get-FileHash -> limpar a variável para o subprocesso
 _env = {k: v for k, v in os.environ.items() if k.upper() != "PSMODULEPATH"}
-p = run(["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", os.path.join(ROOT, "05_SCRIPTS", "Make-Manifest.ps1"), "-Step", "STEP7", "-Original"], "step7_manifest.log", env=_env)
+p = run(["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", os.path.join(ROOT, "hardware/scripts", "Make-Manifest.ps1"), "-Step", "STEP7", "-Original"], "step7_manifest.log", env=_env)
 out["manifests"] = {"exit": p.returncode, "tail": p.stdout.strip().splitlines()[-6:]}
 if p.returncode != 0: out["failures"].append("Make-Manifest falhou")
 
@@ -166,7 +166,7 @@ out["seconds"] = round(time.time() - T0, 1)
 hp.assert_inside_output(os.path.join(REP, "step7_validation.json"))
 with open(os.path.join(REP, "step7_validation.json"), "w", encoding="utf-8") as f: json.dump(out, f, indent=1, ensure_ascii=False, default=str)
 
-L = ["# STEP 7 — Validação automatizada (logs reais em `06_REPORTS`)", "", "Data: %s. Gerado por `05_SCRIPTS\\step7_validate.py` (%.0f s)." % (out["date"], out["seconds"]), ""]
+L = ["# STEP 7 — Validação automatizada (logs reais em `hardware/reports`)", "", "Data: %s. Gerado por `hardware\\scripts\\step7_validate.py` (%.0f s)." % (out["date"], out["seconds"]), ""]
 L += ["## Resumo", ""]
 L += ["- **Falhas persistentes**: %s" % ("nenhuma" if not out["failures"] else "; ".join(out["failures"]))]
 for n in out["notes"]: L.append("- Nota: " + n)
@@ -180,7 +180,7 @@ for t, d in out["drc"]["by_type"].items(): L.append("| %s | %d | %d |" % (t, d["
 L += ["", "Violações cuja assinatura (tipo + itens) **não existe no baseline**: %d" % len(out["drc"]["new_vs_baseline"])]
 for v in out["drc"]["new_vs_baseline"][:60]: L.append("- %s [%s]: %s — %s" % (v["type"], v["severity"], v["desc"], " <> ".join(v["items"])))
 if len(out["drc"]["new_vs_baseline"]) > 60: L.append("- … (+%d, ver JSON)" % (len(out["drc"]["new_vs_baseline"]) - 60))
-L += ["", "Nota: quase todas as 'novas' são do mesmo tipo das herdadas (text_height/lib_footprint_mismatch/silk) com itens renomeados (U7, C38–C63, R28–R33, J1, L5, D13/D14, FB1) ou deslocados pela placa +5 mm; as de cobre relevantes estão discutidas em `STEP5_layout_H725.md` §7.",
+L += ["", "Nota: quase todas as 'novas' são do mesmo tipo das herdadas (text_height/lib_footprint_mismatch/silk) com itens renomeados (U7, C38–C63, R28–R33, J1, L5, D13/D14, FB1) ou deslocados pela placa +5 mm; as de cobre relevantes estão discutidas em `../research/step5-layout-h725.md` §7.",
       "", "## 3. Netlist esquemático × PCB", "",
       "- Componentes no esquemático: %d · footprints no PCB: %d · só no esquemático: %s · só no PCB: %s" % (out["netlist"]["sch_components"], out["netlist"]["pcb_footprints"], out["netlist"]["only_in_sch"] or "—", out["netlist"]["only_in_pcb"] or "—"),
       "- Pads comparados: %d · **redes divergentes: %d** · footprints divergentes: %d · valores divergentes: %d" % (out["netlist"]["pads_compared"], len(real_div), len(fp_diff), len(val_diff)),
@@ -194,11 +194,11 @@ L += ["", "## 4. BOM × esquemático × PCB (`hybrid_BOM.csv`)", "",
 L += ["", "## 5. Paridade firmware × hardware (`%s`)" % out["parity"]["report_md"], "",
       "- Código de saída: %d · estados: %s · **PIN_PARITY_CONFLICT: %d**" % (out["parity"]["exit"], out["parity"]["status_counts"], len(out["parity"]["conflicts"]))]
 L += ["", "## 6. Skew / comprimentos / impedância", "",
-      "- Ver `03_RESEARCH\\STEP6_roteamento_impedancia.md` e `06_REPORTS\\step6_reports.json` (gerados por `step6_reports.py`). **O DRC do KiCad não verifica impedância**; os valores são estimativas analíticas (Hammerstad–Jensen) sobre o stackup declarado, não medidos."]
+      "- Ver `hardware\\research\\step6-roteamento-impedancia.md` e `hardware\\reports\\step6_reports.json` (gerados por `step6_reports.py`). **O DRC do KiCad não verifica impedância**; os valores são estimativas analíticas (Hammerstad–Jensen) sobre o stackup declarado, não medidos."]
 L += ["", "## 7. Manifestos", "", "- `Make-Manifest.ps1 -Step STEP7 -Original` exit %d:" % out["manifests"]["exit"]] + ["  - " + x for x in out["manifests"]["tail"]]
 L += ["", "## 8. Comandos executados", "", "| Comando | Exit | s | Log |", "|---|---|---|---|"]
 for c in out["commands"]: L.append("| `%s` | %d | %s | %s |" % (c["cmd"].replace("|", "\\|")[:160], c["exit"], c["seconds"], c.get("log", "")))
-md = os.path.join(ROOT, "03_RESEARCH", "STEP7_validacao.md")
+md = os.path.join(ROOT, "hardware/research", "step7-validacao.md")
 hp.assert_inside_output(md)
 with open(md, "w", encoding="utf-8") as f: f.write("\n".join(L) + "\n")
 print("falhas:", out["failures"]); print("->", md)

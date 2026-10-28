@@ -3,7 +3,7 @@ posiciona os componentes novos (MCU em B.Cu, D-21). Determinístico e idempotent
 parte sempre de HybridPanda.kicad_pcb.baseline.
 
 Executar com o Python do KiCad 10:
-  "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\python.exe" 05_SCRIPTS\\step5_update_pcb.py
+  "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\python.exe" hardware\\scripts\\step5_update_pcb.py
 
 Fases:
   A. remove footprints ausentes da netlist; troca U7 LQFP-64 -> LQFP-144; adiciona novos
@@ -18,12 +18,12 @@ from collections import defaultdict
 
 import pcbnew
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PRJ = os.path.join(ROOT, "04_PROJECT", "HybridPanda")
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repository root
+PRJ = os.path.join(ROOT, "hardware", "hybrid-panda")
 PCB = os.path.join(PRJ, "HybridPanda.kicad_pcb")
-BASE = PCB + ".baseline"
-NETLIST = os.path.join(ROOT, "06_REPORTS", "hybrid_HybridPanda_netlist.xml")
-REPORT = os.path.join(ROOT, "06_REPORTS", "step5_update_pcb.json")
+BASE = os.path.join(PRJ, "snapshots", "HybridPanda.kicad_pcb.baseline")
+NETLIST = os.path.join(ROOT, "hardware/reports", "hybrid_HybridPanda_netlist.xml")
+REPORT = os.path.join(ROOT, "hardware/reports", "step5_update_pcb.json")
 FPROOT = r"C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\share\kicad\footprints"
 
 MM = pcbnew.FromMM
@@ -602,7 +602,8 @@ pcbnew.ZONE_FILLER(board).Fill(board.Zones())
 pcbnew.SaveBoard(PCB, board)
 report["saved"] = PCB
 # o snapshot do step5b (routing) passa a ser esta saída: descarta o antigo
-if os.path.exists(PCB + ".step5a"): os.remove(PCB + ".step5a"); report["step5a_snapshot_reset"] = True
+_snap5a = os.path.join(PRJ, "snapshots", "HybridPanda.kicad_pcb.step5a")
+if os.path.exists(_snap5a): os.remove(_snap5a); report["step5a_snapshot_reset"] = True
 with open(REPORT, "w", encoding="utf-8") as fh:
     json.dump(report, fh, indent=2, ensure_ascii=False)
 print(json.dumps({k: report["phases"][k] for k in ("A", "C")}, ensure_ascii=False)[:1500])

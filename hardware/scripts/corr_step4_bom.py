@@ -1,10 +1,10 @@
 """corr_step4_bom.py - Step 4: propagate the BOM impact of correction steps 1-3.
 
-  1. rewrites 06_REPORTS/bom_real/BOM_HYBRIDPANDA_v1.csv (line split / new lines / footprint fixes, see DELTA)
-  2. regenerates 06_REPORTS/bom_real/BOM_JLCPCB.csv (Comment,Designator,Footprint,LCSC Part #) from the v1 file
+  1. rewrites hardware/reports/bom-real/BOM_HYBRIDPANDA_v1.csv (line split / new lines / footprint fixes, see DELTA)
+  2. regenerates hardware/reports/bom-real/BOM_JLCPCB.csv (Comment,Designator,Footprint,LCSC Part #) from the v1 file
   3. writes MPN / Manufacturer / LCSC properties into every schematic symbol listed in the v1 file (hidden fields)
      and fixes the D10 datasheet URL (was onsemi MBR1020)
-  4. regenerates 06_REPORTS/hybrid_BOM.csv with the same kicad-cli command step7_validate.py uses
+  4. regenerates hardware/reports/hybrid_BOM.csv with the same kicad-cli command step7_validate.py uses
 Usage: python -u corr_step4_bom.py [--dry]
 """
 from __future__ import annotations
@@ -22,11 +22,11 @@ from kiutils.schematic import Schematic  # noqa: E402
 from kiutils.items.common import Position, Effects, Font, Property  # noqa: E402
 
 ROOT = hp.OUTPUT_ROOT
-SCH = ROOT / "04_PROJECT" / "HybridPanda" / "HybridPanda.kicad_sch"
-V1 = ROOT / "06_REPORTS" / "bom_real" / "BOM_HYBRIDPANDA_v1.csv"
-JLC = ROOT / "06_REPORTS" / "bom_real" / "BOM_JLCPCB.csv"
-HYB = ROOT / "06_REPORTS" / "hybrid_BOM.csv"
-REPORT = ROOT / "06_REPORTS" / "corr" / "step4_bom.json"
+SCH = ROOT / "hardware" / "hybrid-panda" / "HybridPanda.kicad_sch"
+V1 = ROOT / "hardware/reports" / "bom-real" / "BOM_HYBRIDPANDA_v1.csv"
+JLC = ROOT / "hardware/reports" / "bom-real" / "BOM_JLCPCB.csv"
+HYB = ROOT / "hardware/reports" / "hybrid_BOM.csv"
+REPORT = ROOT / "hardware/reports" / "corrections" / "step4_bom.json"
 CLI = str(hp.KICAD_CLI)
 
 DS_D10 = "https://assets.nexperia.com/documents/data-sheet/BAS70H.pdf"
@@ -42,7 +42,7 @@ DELTA_EDIT = {
     "C60-C62": {"Reference": "C60-C62,C65", "Qty": "4",
                 "Net_VoltageClass": "+3V3 (C60-C62) / +3V3 em VDDSMPS U7.16 (C65)",
                 "Notes": "16V X5R. C65 adicionado no passo 2 (SI/PI item 3: 4.7uF junto ao VDDSMPS, pino 16 do U7)."},
-    "D10": {"Notes": "Datasheet do hybrid_BOM (onsemi MBR1020) estava errado; corrigido no esquema (passo 4). SI/PI item 9 (funcao do D10: Schottky 1 A ou DNP) DEFERIDO - decisao de sistema, ver CORRECOES_APLICADAS.md."},
+    "D10": {"Notes": "Datasheet do hybrid_BOM (onsemi MBR1020) estava errado; corrigido no esquema (passo 4). SI/PI item 9 (funcao do D10: Schottky 1 A ou DNP) DEFERIDO - decisao de sistema, ver hardware/reports/correcoes-aplicadas.md."},
 }
 DS_LCSC = "https://www.lcsc.com/product-detail/%s.html"
 DELTA_NEW = [

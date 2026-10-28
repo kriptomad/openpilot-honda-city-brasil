@@ -1,9 +1,9 @@
 # Auditoria SI/PI e revisao de esquematico - Hybrid Panda (STM32H725ZGT6, KiCad 10)
 
-Data: 2026-02 (sessao de auditoria). Fontes: `04_PROJECT\HybridPanda\HybridPanda.kicad_pcb` /
-`.kicad_sch` (somente leitura), `06_REPORTS\hybrid_HybridPanda_netlist.xml`, `06_REPORTS\hybrid_BOM.csv`,
-`02_REFERENCE\panda\board\**` (firmware red panda), `02_REFERENCE\datasheets\DS13313_text.txt`
-(STM32H725 DS), `03_RESEARCH\STEP4/5/6*.md`. Medidas extraidas com `si_pi_dump.py` (saida em
+Data: 2026-02 (sessao de auditoria). Fontes: `hardware\hybrid-panda\HybridPanda.kicad_pcb` /
+`.kicad_sch` (somente leitura), `hardware\reports\hybrid_HybridPanda_netlist.xml`, `hardware\reports\hybrid_BOM.csv`,
+`hardware\reference\panda\board\**` (firmware red panda), `hardware\reference\datasheets\DS13313_text.txt`
+(STM32H725 DS), `hardware\research\STEP4/5/6*.md`. Medidas extraidas com `si_pi_dump.py` (saida em
 `si_pi_dump.json`, `power_nets.json`) e DRC fresco em `drc_audit.json` (182 violacoes, 0 nao conectados).
 Nada foi alterado na placa ou no esquematico.
 
@@ -88,7 +88,7 @@ Nenhuma rede de potencia usa via 0.45/0.25.
 **XL1509-3.3 (U12, 97.74,46.83, PSOP-8), 5 V -> 3.3 V, 150 kHz**
 - Pinagem usada: 1 VIN(+5V), 2 OUT/SW, 3 FB ligado a +3V3 (versao fixa 3.3 V, Vref 1.23 V interno
   com divisor interno), 4-8 GND (inclui ON/OFF em GND = sempre ligado). Heranca do black panda (projeto
-  comprovado). Datasheet XL1509 nao esta em 02_REFERENCE - **BAIXO**: anexar e confirmar pino 3 = FB,
+  comprovado). Datasheet XL1509 nao esta em hardware/reference - **BAIXO**: anexar e confirmar pino 3 = FB,
   pino 5 = ON/OFF.
 - L3 47 uH 2 A, D11 B320AE (3 A / 20 V, SMA) em (97.26,41.27), C16 47 uF 0805 saida, C3 47 uF entrada.
   Para 150 kHz / 0.6 A, 47 uH da ripple ~0.1 A pp - OK. Cout 47 uF 0805 a 3.3 V (~30 uF efetivo) +
@@ -300,7 +300,7 @@ Detalhes (DS13313 Tab.15/16 e Fig.17):
 - J1 SWD 2x5 1.27 mm: 1 VCC 3V3, 2 SWDIO, 4 SWCLK, 10 NRST, 3/5/9 GND, 6/7/8 NC. OK.
 - P1: A5/B5 (CC), A6/A7/B6/B7 (USB D) NC: OK para harness.
 
-### C.2 Mapa de pinos: placa vs firmware red panda (02_REFERENCE\panda\board)
+### C.2 Mapa de pinos: placa vs firmware red panda (hardware\reference\panda\board)
 
 | Funcao | Pino H725 na placa (netlist) | Pino no red panda (firmware) | Acao |
 |--------|------------------------------|------------------------------|------|

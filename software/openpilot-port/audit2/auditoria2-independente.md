@@ -2,7 +2,7 @@
 
 Data: 2026-10-28. Autor: segundo auditor, sem acesso a carro ou hardware.
 Objetivo: tentar PROVAR ERRADO o port, re-derivando tudo de codigo e dados; o
-relatorio do primeiro auditor (`AUDITORIA_PORT_CITY_V099.md`) foi usado apenas
+relatorio do primeiro auditor (`../auditoria-port-city-v099.md`) foi usado apenas
 como lista de afirmacoes a falsificar.
 
 Revisoes auditadas (fixas no inicio da auditoria; nenhuma mudou durante ela):
@@ -21,7 +21,7 @@ opendbc auditado); gitlink `panda` = `e462c34d`.
 
 Nada neste documento foi testado em veiculo. Nenhum repositorio foi alterado:
 tudo foi lido com `git show`/`git diff`/worktrees temporarios; os patches
-propostos estao em `audit2\proposed_patches\` e NAO foram aplicados.
+propostos estao em `audit2\proposed-patches\` e NAO foram aplicados.
 
 ---------------------------------------------------------------------------
 
@@ -363,7 +363,7 @@ ao que a v0.9.9 fazia em producao para ele.
 
 ## 8. Tabela de afirmacoes do primeiro relatorio
 
-| # | Afirmacao (AUDITORIA_PORT_CITY_V099.md) | Veredito | Evidencia desta auditoria |
+| # | Afirmacao (../auditoria-port-city-v099.md) | Veredito | Evidencia desta auditoria |
 |---|---|---|---|
 | 1 | D1: `steerActuatorDelay` 0.15 so apos `d42db044` | CONFIRMADO | replay `get_params` HEAD = 0.15 = carParams da rota |
 | 2 | D2: `ki = 0.3` efetivo para o City; default global 0.1 nao muda outras marcas | CONFIRMADO | `interface.py` l.~150 `ret.lateralTuning.torque.ki = 0.3` apos `configure_torque_tune`; replay ki 0.3; `interfaces.py` igual a `e370a036` |
@@ -397,7 +397,7 @@ ao que a v0.9.9 fazia em producao para ele.
 
 ---------------------------------------------------------------------------
 
-## 9. Divergencias e patches propostos (`audit2\proposed_patches\`)
+## 9. Divergencias e patches propostos (`audit2\proposed-patches\`)
 
 | # | Severidade | Arquivo | Patch | `git apply --check` |
 |---|---|---|---|---|
@@ -528,7 +528,7 @@ definicao antiga do v0.9.9 (registrado como plataforma, abaixo).
 ### 11.4 Check 3 - torqued.py
 
 - `git show 8be62bc95 -- selfdrive/locationd/torqued.py` vs
-  `git show 839a77334 -- selfdrive/locationd/torqued.py` (02_REFERENCE):
+  `git show 839a77334 -- selfdrive/locationd/torqued.py` (hardware/reference):
   as linhas +/- sao identicas (`ALLOWED_CARS = ['toyota', 'hyundai',
   'rivian']` -> `[..., 'honda']`). Restante do arquivo vs upstream
   09aa21390: so 2 mudancas nao relacionadas (import de

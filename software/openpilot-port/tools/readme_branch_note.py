@@ -27,7 +27,7 @@ OPENDBC = """> [!IMPORTANT]
 >
 > `opendbc/safety` is unchanged: the City runs the existing `HONDA_BOSCH` + `RADARLESS` path, verified RX/TX-identical to
 > upstream. Audit reports, verification tools and the equivalent `git format-patch` series live in
-> [kriptomad/PandaH7Openpilot](https://github.com/kriptomad/PandaH7Openpilot/tree/main/09_FIRMWARECITYG7_BLACKPANDA).
+> [kriptomad/openpilot-honda-city-brasil](https://github.com/kriptomad/openpilot-honda-city-brasil/tree/main/software/openpilot-port).
 > Consumed by [kriptomad/openpilot@v0.9.9-cityg7-blackpanda](https://github.com/kriptomad/openpilot/tree/v0.9.9-cityg7-blackpanda).
 """
 
@@ -59,7 +59,7 @@ OPENPILOT = """> [!IMPORTANT]
 > (8 commits, listed in its README). Known, deliberate differences from upstream that are platform-wide and were
 > **not** ported: `common/pid.py` / `latcontrol_torque.py` anti-windup (`455a6a586`, `ab44c9a4f`), `pandad`
 > relay/IsOnroad changes, global torque `ki` default. Audit reports, tools and the `git format-patch` series:
-> [kriptomad/PandaH7Openpilot](https://github.com/kriptomad/PandaH7Openpilot/tree/main/09_FIRMWARECITYG7_BLACKPANDA).
+> [kriptomad/openpilot-honda-city-brasil](https://github.com/kriptomad/openpilot-honda-city-brasil/tree/main/software/openpilot-port).
 """
 
 FLOWPILOT = """> [!IMPORTANT]
@@ -81,7 +81,7 @@ FLOWPILOT = """> [!IMPORTANT]
 > release bootstub must be replaced once over DFU). `safety_honda.h` is unchanged (`HONDA_BOSCH` + `RADARLESS`),
 > `tests/safety/test_honda.py` 209/209 on a mingw-w64 build. Scope research, port report (PT-BR), firmware binaries,
 > Poco F3 install and step-by-step flash procedure:
-> [kriptomad/PandaH7Openpilot/10_FLOWPILOT](https://github.com/kriptomad/PandaH7Openpilot/tree/main/10_FLOWPILOT).
+> [kriptomad/openpilot-honda-city-brasil/software/flowpilot-port](https://github.com/kriptomad/openpilot-honda-city-brasil/tree/main/software/flowpilot-port).
 > Sibling ports of the same car: [opendbc@firmwarecityg7-v0.9.9](https://github.com/kriptomad/opendbc/tree/firmwarecityg7-v0.9.9),
 > [openpilot@v0.9.9-cityg7-blackpanda](https://github.com/kriptomad/openpilot/tree/v0.9.9-cityg7-blackpanda).
 """

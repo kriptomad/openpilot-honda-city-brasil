@@ -1,4 +1,4 @@
-# DECISIONS.md — registro de decisões (ADR curto)
+# decisions.md — registro de decisões (ADR curto)
 
 Formato: ID | data | decisão | alternativas | evidência | status.
 
@@ -15,7 +15,7 @@ Formato: ID | data | decisão | alternativas | evidência | status.
   - TFBGA100 (H723/H725): firmware `stm32h7/clock.h:30-47` força **LDO** nesse pacote; a biblioteca KiCad e DS13311 Tab.8 mostram **ausência de GPIOF/GPIOG** → PF7–PF11, PG9–PG11 (HW_TYPE straps, FDCAN3, STB bus0, VOLT_S) inexistem → paridade 1:1 com `red.h` impossível.
   - LQFP100: idem (sem PF/PG) e PKGR não reconhecido pelo firmware → `while(true)`.
   - UFBGA169: tem SMPS e todos os pinos, mas BGA 0,5 mm é inviável para montagem/4 camadas no formato Black Panda.
-- Evidência: `02_REFERENCE\panda\board\stm32h7\clock.h`, `03_RESEARCH\kicad_lib_STM32H723VGHx_pins.txt`, `03_RESEARCH\P3_tabela_pinos_LQFP144_vs_firmware.md` (39/39 pinos presentes, AF confirmadas, cruzamento com lib KiCad: 0 divergências).
+- Evidência: `hardware\reference\panda\board\stm32h7\clock.h`, `hardware\research\kicad-lib-stm32h723vghx-pins.txt`, `hardware\research\p3-tabela-pinos-lqfp144-vs-firmware.md` (39/39 pinos presentes, AF confirmadas, cruzamento com lib KiCad: 0 divergências).
 - Consequências: alimentação do core via SMPS interno (indutor 2,2 µH + caps conforme DS Tab.16); VDDLDO ainda alimentado; `-DSTM32H725xx` já é o build padrão do red panda.
 - Status: ATIVA.
 
@@ -43,7 +43,7 @@ Formato: ID | data | decisão | alternativas | evidência | status.
 ## D-08 — Straps HW_TYPE para RED (id1 = 0)
 - Data: 2026-10-23
 - Decisão: PF7, PF8, PF9, PF10 ligados a GND (resistor 0 Ω/direto; firmware lê com pull-up interno, `stm32h7/board.h:25-29`). PD4, PD5, PD6 deixados NC (id2 ≠ 3 garantido, pois PD7 é saída STB e flutua alto na leitura). Alternativa rejeitada: resistores de pull-down "fracos" (valor real do red panda NV; 0 Ω elimina margem de erro).
-- Evidência: HRS_red_panda.md §1.
+- Evidência: ../hardware/research/hrs-red-panda.md §1.
 - Status: ATIVA.
 
 ## D-09 — STB dos transceivers com pull-up externo (fail-safe silencioso)
@@ -54,12 +54,12 @@ Formato: ID | data | decisão | alternativas | evidência | status.
 ## D-10 — Clone do openpilot sem objetos Git LFS
 - Data: 2026-10-23
 - Fato: checkout falhava (1255 arquivos) por LFS → `huggingface.co/commaai/openpilot-lfs.git` responde 403, não por long paths. Solução: `GIT_LFS_SKIP_SMUDGE=1`, `filter.lfs.smudge --skip`; 253 ponteiros LFS mantidos como texto. Clone limpo em ff47f484, submódulos iniciados (depth 1).
-- Implicação: nenhuma análise de hardware/host depende de binários LFS. Registrado em LICENSES.md.
+- Implicação: nenhuma análise de hardware/host depende de binários LFS. Registrado em ../LICENSE.md.
 - Status: ATIVA.
 
 ## D-11 — Versão do firmware panda de referência
 - Data: 2026-10-23
-- Fato: openpilot ff47f484 pina o submódulo panda em **a5919516**, enquanto o clone `02_REFERENCE\panda` está em **408e14d4** (master). Decisão: HRS baseado em 408e14d4 (mais recente); antes do STEP 8 (bring-up) comparar `board/boards/red.h`, `stm32h7/*` entre os dois commits e registrar diff (esperado: nenhum impacto em pinos).
+- Fato: openpilot ff47f484 pina o submódulo panda em **a5919516**, enquanto o clone `hardware\reference\panda` está em **408e14d4** (master). Decisão: HRS baseado em 408e14d4 (mais recente); antes do STEP 8 (bring-up) comparar `board/boards/red.h`, `stm32h7/*` entre os dois commits e registrar diff (esperado: nenhum impacto em pinos).
 - Status: ATIVA (diff pendente).
 
 ## D-12 — Caminho SBU → ADC não pode ser direto em PC4
@@ -70,7 +70,7 @@ Formato: ID | data | decisão | alternativas | evidência | status.
 - Data: 2026-10-23
 - Fato: netlist do baseline: bus0 xcvr→B10/B11, bus1-normal→B2/B3, bus1-OBD→A2/A3, bus2→A10/A11, SBU1=A8, SBU2=B8. Pinout oficial do lado harness (OBD-C.sch.pdf): CAN0=A2/A3, CAN1=A10/A11, CAN2=B2/B3, CAN3=B10/B11. O cabo USB-C full-featured cruza TX1(A2/A3)↔RX1(B11/B10), RX2(A11/A10)↔TX2(B2/B3) e SBU1↔SBU2; harness.h:71-75 confirma o cruzamento SBU ("SBU1->SBU2 is the normal orientation connection per USB-C cable spec"). Resultado: panda bus0→CAN0 carro, bus1-normal→CAN1 radar, bus1-OBD→CAN3 comma power, bus2→CAN2 câmera — coerente com o firmware red (red.h:31-61, can_common.h:130-134).
 - Decisão: não alterar a pinagem de P1; só trocar os pinos do MCU nos transceivers. Cruzamento do cabo é inferência da spec USB-C [I]; o comportamento flipped é tratado pelo firmware em qualquer caso.
-- Evidência: STEP3_engenharia_reversa_tabela_hibrida.md §g-1.
+- Evidência: ../hardware/research/step3-engenharia-reversa-tabela-hibrida.md §g-1.
 - Status: ATIVA.
 
 ## D-14 — VDD33USB = 3V3 externo; VDD50USB ligado a VDD33USB
@@ -117,7 +117,7 @@ Formato: ID | data | decisão | alternativas | evidência | status.
 
 ## D-22 — Interpretação das distâncias da regra 0x05 (VCAP/cristal/desacoplamento)
 - Data: 2026-10-24
-- Fato: as distâncias "< 2 mm VCAP", "< 4 mm cristal" são medidas **pad-a-pad** (borda da ilha do capacitor → borda do pad do U7), não centro-a-centro, pois é o comprimento de trilha que importa (indutância). Valores obtidos: VCAP 1,25/1,34 mm; cristal 1,64–3,28 mm; SMPS C41.1→L5 1,94 mm, C42.1→L5 2,68 mm (`06_REPORTS/step5_update_pcb.json` → `distances_cc`).
+- Fato: as distâncias "< 2 mm VCAP", "< 4 mm cristal" são medidas **pad-a-pad** (borda da ilha do capacitor → borda do pad do U7), não centro-a-centro, pois é o comprimento de trilha que importa (indutância). Valores obtidos: VCAP 1,25/1,34 mm; cristal 1,64–3,28 mm; SMPS C41.1→L5 1,94 mm, C42.1→L5 2,68 mm (`hardware/reports/step5_update_pcb.json` → `distances_cc`).
 - Status: ATIVA.
 
 ## D-23 — Roteamento: trilhas críticas por script + Freerouting 2.5.0 (60 passes) + corretor orientado por DRC
@@ -128,7 +128,7 @@ Formato: ID | data | decisão | alternativas | evidência | status.
 ## D-24 — Placa ampliada +5 mm ao sul (Edge.Cuts y_max 73,76 → 78,76)
 - Data: 2026-10-24
 - Fato: a fileira sul do U7 (y = 67,26) ficava a 6,5 mm da borda, disputando espaço com Y1/C23/C24, L5/C41/C42, C45/C60/C63, SW1, Q1/Q2, D14. Autorização do usuário: "se precisar aumentar a area da pcb, nao tem problema" / "ja falei que se precisar aumentar a board, pode aumentar". Implementado na fase E de `step5_update_pcb.py`: todos os pontos do polígono Edge.Cuts com y > y_mid deslocados +5 mm (cantos arredondados preservados). Zonas GND/+3V3 estendidas até a nova borda.
-- Consequência: as STLs de caixa em `01_BASELINE` **não servem mais** (desvio mecânico; nova caixa é tarefa fora do escopo STEP 1–9).
+- Consequência: as STLs de caixa em `archive/baseline-original` **não servem mais** (desvio mecânico; nova caixa é tarefa fora do escopo STEP 1–9).
 - Status: ATIVA.
 
 ## D-25 — Limpeza de "fragmentos" tem de respeitar o preenchimento das zonas
@@ -161,7 +161,7 @@ Formato: ID | data | decisão | alternativas | evidência | status.
 - Ilha +3V3 {U7.119, trilha crítica, C55.1, via 122,49; 53,57}: a via ficava fora do preenchimento In1 (+3V3) por knock-out de uma trilha relay_SBU2 do FR em In1 + via BUS2_TX. Mitigações: clearance da zona +3V3 In1 0,508 → 0,254; `fix_clusters` liga a ilha ao plano.
 - **Curto real** encontrado: a correção M1 do 5c (D-26) desviava a trilha +5V In1 (largura 1,0) para x = 118,3 → bordo em 118,8, sobrepondo a via-in-pad GND do U1.2 (119,0; 53,42; Ø 0,5 → bordo 118,75) — a verificação de colisão era feita antes de adicionar os segmentos. Movido para o 5b como **fase M** (`detour_5v_in1`, x = 117,6, verificação após inserir, rollback) — assim o Freerouting já desvia da nova geometria; M1 do 5c mantém-se como fallback (no-op quando M já foi aplicada).
 - DSN: `(clearance 160 (type via_via))` (3 pares `hole_clearance` via↔via do FR). **Não** `wire_pin` 160: o baseline já tem trilhas a 0,10 de pinos PTH → 159 violações fixas e o Freerouting estagnou em 28 não roteados (corrida 26-10 10:06); a trilha +12V In2 do FR a 0,2317 do furo do P1.B7 é afunilada pelo 5c (`fix_track_vs_hole`, ≥ 0,1375). Vias de costura +3V3 do U7 só são aceites dentro do contorno da zona In1 (`_in_3v3_plane`) — evita `via_dangling` (C61.1 em x = 95,5; C59.1 em y = 37,3). Trilhas do FR com largura < 0,1375 (neck-down junto a 0402, ex.: LED_GREEN 0,10 / BLUE- 0,12, apesar de `automatic_neckdown=false`) são alargadas em `widen_thin_tracks` para 0,20/0,16/0,14 sem colisão.
-- Resultado da corrida de 26-10 09:23 (antes destes últimos ajustes): `unrouted_final` 0, `unconnected_items` 0. Pendentes herdados do baseline e não tocados: 8 `hole_clearance` P1 PTH/NPTH, `isolated_copper` 1, `drill_out_of_range` 1, `courtyards_overlap` D7/U9, 2 `copper_edge_clearance`, silk/text/lib mismatches (ver `03_RESEARCH\STEP5_layout_H725.md`).
+- Resultado da corrida de 26-10 09:23 (antes destes últimos ajustes): `unrouted_final` 0, `unconnected_items` 0. Pendentes herdados do baseline e não tocados: 8 `hole_clearance` P1 PTH/NPTH, `isolated_copper` 1, `drill_out_of_range` 1, `courtyards_overlap` D7/U9, 2 `copper_edge_clearance`, silk/text/lib mismatches (ver `hardware\research\step5-layout-h725.md`).
 - Status: ATIVA.
 
 ## D-30 — Pré-rota travada BUS2_RX, pontes +3V3 sem via nova e micro-segmentos
@@ -173,13 +173,13 @@ Formato: ID | data | decisão | alternativas | evidência | status.
 - Curto emitido pelo próprio Freerouting (corrida 15): via BUS1O_RX (101,93; 47,65) a 0,09 mm de uma trilha SBU1_ADC em In2 — `shorting_items` presente já no SES. O 5c ganhou `fix_shorts` (remove via/trilha destravada + stubs; religa na rodada seguinte) e `nshort` entrou na condição de paragem.
 - Folga de furo (hole_clearance 0,25) nas verificações de colisão do 5b (`via_collides`) e do 5c (`seg_collides`, A*): necessária porque as trilhas/A* do 5c geravam `hole_clearance` contra vias do FR e `fix_holes` arrancava a via errada (BUS1N_RX, 12 itens). Descoberta: a via-in-pad do U1.2 (119,0; 53,42) fica a **exactamente 0,250 mm** da trilha USB_PWR F.Cu (118,5; 51,7→53,8, w 0,2); `SHAPE::Collide(…, clearance)` é estrito (<) tal como o DRC, portanto a margem tem de ser 0,25 exacto — 0,2501 (corrida 19) rejeitava a via e deixava U1.2 GND não ligado (o fallback de `fix_clusters` também não encontra ponte para um pad isolado entre U7.118/U7.120 e a trilha USB_PWR).
 - Limpeza final do 5c: vias destravadas ligadas numa só camada (contando trilhas, pads e preenchimento de zona da mesma rede) são removidas com os seus stubs (`dangling_vias_removed`).
-- Resultado: ver `03_RESEARCH\STEP5_layout_H725.md` §7 (corrida final).
+- Resultado: ver `hardware\research\step5-layout-h725.md` §7 (corrida final).
 - Status: ATIVA.
 
 ## D-31 — Esconder a serigrafia das referências dos componentes adicionados no STEP 5 (`step5d_silk.py`)
 - Contexto: após o pipeline 5a→5c o DRC acusava 20 `silk_over_copper` + 19 `silk_overlap` novos face ao baseline, todos do texto de referência (0402, passo 0,5–0,65 mm junto ao U7) dos 37 componentes adicionados (C38–C63, D13/D14, FB1, J1, L5, R28–R33) sobre pads/serigrafia vizinhos.
-- Alternativas: (a) reposicionar 37 textos manualmente/por script evitando pads — frágil, sem ganho real numa zona densa; (b) esconder a referência (`Reference().SetVisible(False)`) como o baseline já faz para vários 0402 — escolhida. A serigrafia não afecta a electricidade; a identificação fica na BOM/CPL (`07_FABRICATION`).
-- Consequência: `silk_over_copper` 20→0, `silk_overlap` 22→4 (3 baseline + 1 nova C23×Y1, cosmética). Total DRC 217→179 (baseline 194). Relatório `06_REPORTS\step5d_silk.json`; a placa final é o snapshot `.step5_final`.
+- Alternativas: (a) reposicionar 37 textos manualmente/por script evitando pads — frágil, sem ganho real numa zona densa; (b) esconder a referência (`Reference().SetVisible(False)`) como o baseline já faz para vários 0402 — escolhida. A serigrafia não afecta a electricidade; a identificação fica na BOM/CPL (`hardware/fabrication`).
+- Consequência: `silk_over_copper` 20→0, `silk_overlap` 22→4 (3 baseline + 1 nova C23×Y1, cosmética). Total DRC 217→179 (baseline 194). Relatório `hardware\reports\step5d_silk.json`; a placa final é o snapshot `.step5_final`.
 - Status: ATIVA.
 
 ## D-32 - Correctores pos-pipeline fix_audit.py / fix_drc_regressions.py (commits anteriores)
@@ -194,9 +194,9 @@ Formato: ID | data | decisão | alternativas | evidência | status.
 - Status: ATIVA. Snapshot aceite: `HybridPanda.kicad_pcb.step5_final` (= placa actual).
 
 ## D-34 - Campanha de correcao pos-auditoria em passos com gate de DRC (commits a8b98a9 .. final)
-- Contexto: as auditorias de footprint (06_REPORTS/footprint_audit), SI/PI (06_REPORTS/si_pi_audit, 36 itens) e BOM (06_REPORTS/bom_real) encontraram erros reais no snapshot `.step5_final` (VFBSMPS separado de VCAP, pads de Q1/Q2/Q3 fora da geometria, R1 1k no gate do Q4, sem ESD no USB, etc.).
-- Decisao: aplicar as correcoes por passos (1 footprints, 2 criticos de alimentacao, 3 ALTO, 4 BOM, 5 MEDIO, final) com scripts idempotentes `05_SCRIPTS/corr_step*.py` e um gate unico `05_SCRIPTS/corr_gate.py` (kicad-cli DRC JSON apos cada edicao; aceite = 0 clearance / 0 unconnected / 0 paridade e nenhuma categoria de erro nova face ao baseline). Esquema e PCB alterados em conjunto. Item que falhe o gate e revertido e registado como deferido, nunca forcado.
-- Resultado: DRC 182 -> 135 (0/0/0), ERC 0, via-in-pad 0, step7 sem falhas. Tabela completa em `06_REPORTS/CORRECOES_APLICADAS.md`.
+- Contexto: as auditorias de footprint (hardware/reports/footprint-audit), SI/PI (hardware/reports/si-pi-audit, 36 itens) e BOM (hardware/reports/bom-real) encontraram erros reais no snapshot `.step5_final` (VFBSMPS separado de VCAP, pads de Q1/Q2/Q3 fora da geometria, R1 1k no gate do Q4, sem ESD no USB, etc.).
+- Decisao: aplicar as correcoes por passos (1 footprints, 2 criticos de alimentacao, 3 ALTO, 4 BOM, 5 MEDIO, final) com scripts idempotentes `hardware/scripts/corr_step*.py` e um gate unico `hardware/scripts/corr_gate.py` (kicad-cli DRC JSON apos cada edicao; aceite = 0 clearance / 0 unconnected / 0 paridade e nenhuma categoria de erro nova face ao baseline). Esquema e PCB alterados em conjunto. Item que falhe o gate e revertido e registado como deferido, nunca forcado.
+- Resultado: DRC 182 -> 135 (0/0/0), ERC 0, via-in-pad 0, step7 sem falhas. Tabela completa em `hardware/reports/correcoes-aplicadas.md`.
 - Status: ATIVA. O snapshot `.step5_final` deixa de ser a placa aceite; a placa aceite e o HEAD de main.
 
 ## D-35 - VFBSMPS unido a VCAP (topologia Direct SMPS, AN5419) e PF9 em jumper JP1
@@ -204,7 +204,7 @@ Formato: ID | data | decisão | alternativas | evidência | status.
 - Decisao: renomear os labels VFBSMPS para VCAP; C64 2.2 uF 0402 junto a U7.103 (0603 nao cabe) e C65 4.7 uF 0603 junto a VDDSMPS U7.16; PF9 passa a JP1 (SolderJumper_2_Open): fechado = RED (id1 = 0), aberto = HYBRID (id1 = 4) - decisao de firmware fica em aberto, por defeito fechado.
 - Status: ATIVA (commit a5d60b8).
 
-## D-36 - Desvios aceites face a proposed_changes.md
+## D-36 - Desvios aceites face a ../hardware/reports/si-pi-audit/proposed-changes.md
 - Item 6: Cin do TPS5450 10 uF em 0805 50 V X5R (1206 nao cabe sem mover L4/C6/C7); derating DC registado.
 - Item 30: anel anular minimo 0.125 mm (nao 0.13): os PTH do footprint TYPE-C-31-M-04 do P1 tem anel 0.125 e nao podem ser alterados sem trocar o footprint.
 - Item 20/17: 12V_Protected e VCAP mantem um trecho em In1 (0.35/0.3 mm) porque remove-lo deixa redes abertas; so In2 ficou livre de +12V/12V_Protected.
@@ -215,10 +215,10 @@ Formato: ID | data | decisão | alternativas | evidência | status.
 
 ## D-37 - Itens deferidos por exigirem relayout (nao aplicar sem nova sessao de floorplan)
 - 9 (funcao do D10), 10 (100 nF opcionais), 16 (no SW do TPS5450), 21/22/23 (C41/C42/C38/U5 junto ao U7), 25 (D8/D5 junto ao P1), 27 (In2 so GND), 29 pad 69 (via-in-pad em U12.6), 34 (D1 junto ao P1), 36 (polimero 7343), C8 0603, U1 TPS2553.
-- Motivo comum: cada um exige mover blocos de componentes e rerotear redes com o Freerouting (nao deterministico) ou decisao do dono; nenhum e bloqueante para o DRC. Lista com razoes em `06_REPORTS/CORRECOES_APLICADAS.md` ?5.
+- Motivo comum: cada um exige mover blocos de componentes e rerotear redes com o Freerouting (nao deterministico) ou decisao do dono; nenhum e bloqueante para o DRC. Lista com razoes em `hardware/reports/correcoes-aplicadas.md` ?5.
 - Status: ATIVA (em aberto).
 
 ## D-38 - BOM com MPN/LCSC no esquema, codigos "a verificar"
 - Contexto: step8_fabricate.py exporta BOM_JLC.csv a partir dos campos MPN/LCSC do esquema; antes estavam vazios.
-- Decisao: campos MPN/LCSC preenchidos no `.kicad_sch` (commit 9305ef2) a partir de `06_REPORTS/bom_real/BOM_HYBRIDPANDA_v1.csv`; 117/119 referencias com LCSC (JP1 e U1 sem). Nenhum codigo foi confirmado no catalogo JLC em sessao - todos "a verificar" antes de encomendar; C23/C24 18 pF: C1555 nao confirmado (alternativa CL05C180JB5NNNC C307443).
+- Decisao: campos MPN/LCSC preenchidos no `.kicad_sch` (commit 9305ef2) a partir de `hardware/reports/bom-real/BOM_HYBRIDPANDA_v1.csv`; 117/119 referencias com LCSC (JP1 e U1 sem). Nenhum codigo foi confirmado no catalogo JLC em sessao - todos "a verificar" antes de encomendar; C23/C24 18 pF: C1555 nao confirmado (alternativa CL05C180JB5NNNC C307443).
 - Status: ATIVA.

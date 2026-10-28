@@ -1,8 +1,10 @@
 """Audit 2: line-ending / trailing newline check on every file touched by the port commits (opendbc + openpilot)."""
+import os
 import subprocess
 import sys
 
-BASE = r"C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\09_FIRMWARECITYG7_BLACKPANDA"
+# software/openpilot-port (this file lives in audit2/)
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def chk(repo, base, head):
@@ -24,6 +26,6 @@ def chk(repo, base, head):
 
 
 print('--- opendbc e370a036..HEAD')
-chk(BASE + r"\opendbc_firmwarecityg7", 'e370a036', 'HEAD')
+chk(os.path.join(BASE, "..", "opendbc-v0.9.9-city-g7"), 'e370a036', 'HEAD')
 print('--- openpilot 8aadf02b..HEAD')
-chk(BASE + r"\openpilot_cityg7_v0.9.9", '8aadf02b', 'HEAD')
+chk(os.path.join(BASE, "..", "openpilot-v0.9.9-city-g7"), '8aadf02b', 'HEAD')

@@ -1,6 +1,6 @@
 # P3 — Tabela pino LQFP144 (STM32H725ZG) × função exigida pelo firmware × rede
 
-Fonte: ST **DS13311 Rev 5 (Nov/2023)** 'STM32H725xE/G', Tabela 8 (pin and ball descriptions), arquivo `02_REFERENCE/datasheets/DS13313_STM32H725_ae.pdf` (SHA-256 3953CF96…3AA14), texto extraído com pypdf em `DS13313_text.txt`. Firmware: `02_REFERENCE/panda` @ 408e14d4. Gerado por `05_SCRIPTS/extract_ds_pins.py` (não editado à mão).
+Fonte: ST **DS13311 Rev 5 (Nov/2023)** 'STM32H725xE/G', Tabela 8 (pin and ball descriptions), arquivo `hardware/reference/datasheets/DS13313_STM32H725_ae.pdf` (SHA-256 3953CF96…3AA14), texto extraído com pypdf em `DS13313_text.txt`. Firmware: `hardware/reference/panda` @ 408e14d4. Gerado por `hardware/scripts/extract_ds_pins.py` (não editado à mão).
 
 Coluna 'AF/ADC confirmado' = a função exigida aparece literalmente na lista de funções alternativas/adicionais do pino no datasheet.
 

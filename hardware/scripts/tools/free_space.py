@@ -12,7 +12,7 @@ from pcbnew import ToMM
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import hp_common as hp  # noqa: E402
 
-b = pcbnew.LoadBoard(os.path.join(str(hp.OUTPUT_ROOT), "04_PROJECT", "HybridPanda", "HybridPanda.kicad_pcb"))
+b = pcbnew.LoadBoard(os.path.join(str(hp.OUTPUT_ROOT), "hardware", "hybrid-panda", "HybridPanda.kicad_pcb"))
 cell = float(sys.argv[1]) if len(sys.argv) > 1 else 0.5
 bb = b.GetBoardEdgesBoundingBox()
 if len(sys.argv) > 5:

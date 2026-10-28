@@ -16,7 +16,7 @@ import pcbnew
 NM = 1e6
 STD = r"C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\share\kicad\footprints"
 PRJ = os.path.join(os.path.dirname(os.path.abspath(sys.argv[1])), "HybridPanda.pretty")
-ORIG = r"C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\01_BASELINE\original_copy\BlackPanda\kicad_project\BlackPanda.pretty"
+ORIG = r"archive\baseline-original\BlackPanda\kicad_project\BlackPanda.pretty"
 
 # Candidate standard footprints to test against BlackPanda:* / suspicious ones
 CANDIDATES = {

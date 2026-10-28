@@ -66,7 +66,7 @@ Debug: **não há header SWD** (PA13/PA14 não conectados); gravação só por D
 
 ## 1.4 Pinout do MCU original (F413) — extraído da netlist
 
-Ver `02_analysis/original_mcu_pinout.txt` (gerado). Mapeamento CAN relevante:
+Ver `02_analysis/original-mcu-pinout.txt` (gerado). Mapeamento CAN relevante:
 
 | Net do esquemático | Pinos F413 | Periférico F413 | Transceiver | Pinos de P1 | Barramento panda |
 |---|---|---|---|---|---|
@@ -108,7 +108,7 @@ Interpretação: a maioria é divergência de biblioteca/versão e texto; as 8 `
 
 ## 1.7 BOM × esquemático × PCB
 
-- BOM do autor (`BlackPanda.csv`, `BlackPanda2.csv/.xlsx`) vs BOM exportada do esquemático (`original_bom_from_sch.csv`): comparação em `02_analysis/bom_crosscheck.md` (gerado adiante).
+- BOM do autor (`BlackPanda.csv`, `BlackPanda2.csv/.xlsx`) vs BOM exportada do esquemático (`original_bom_from_sch.csv`): comparação em `02_analysis/bom-crosscheck.md` (gerado adiante).
 - Valor do cristal Y1 não consta no esquemático (MPN X322516MLB4SI sugere 16 MHz — a verificar).
 
 ## 1.8 Não lido / não interpretado
