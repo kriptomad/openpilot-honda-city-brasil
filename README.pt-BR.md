@@ -97,6 +97,7 @@ flowchart LR
 | [docs/protocol-v3.md](docs/protocol-v3.md) | O protocolo de trabalho seguido pelo projeto (historico). |
 | [docs/reference-sources.md](docs/reference-sources.md) | Clones upstream e commits fixados usados como referencia somente leitura. |
 | [docs/flashing/](docs/flashing) | Guia de gravacao do black panda para o City G7 (EN e pt-BR). |
+| [docs/hardware/](docs/hardware) | Documentacao de hardware do Hybrid Panda: descricao do retrofit, BOM (`bom.md` + `bom.csv`), descricao do esquema, especificacao de fabricacao da PCB (EN e pt-BR). Apenas projeto; nao fabricado. |
 | [docs/legacy-index.md](docs/legacy-index.md) | Indice gerado do repositorio de desenvolvimento com os caminhos antigos, mantido para rastreabilidade. |
 | [hardware/hybrid-panda/](hardware/hybrid-panda) | Projeto KiCad: `HybridPanda.kicad_pcb`, `.kicad_sch`, `.kicad_pro`, footprints locais (`.pretty`), modelos 3D, simbolos; `snapshots/` guarda as copias baseline e STEP 5 da placa. |
 | [hardware/fabrication/](hardware/fabrication) | Gerbers, furacao, montagem (BOM/CPL para JLCPCB), PDFs, modelo STEP, zip JLC. **Nao fabricar** (ver o readme). |
@@ -244,6 +245,18 @@ Numeros atuais (apos a campanha de correcoes pos-auditoria, ver
 Os itens adiados (exigem relayout parcial ou decisao do dono, nenhum bloqueia o DRC) estao na
 secao 5 de [hardware/reports/correcoes-aplicadas.md](hardware/reports/correcoes-aplicadas.md)
 e em D-37.
+
+### Documentacao de hardware
+
+Documentos detalhados, apenas de projeto (nada foi fabricado ou testado), em pt-BR com
+versao EN:
+
+| Documento | Conteudo |
+|---|---|
+| [docs/hardware/red-panda-retrofit-on-black-panda.pt-br.md](docs/hardware/red-panda-retrofit-on-black-panda.pt-br.md) ([EN](docs/hardware/red-panda-retrofit-on-black-panda.md)) | Documento principal: comparacao black/red/Hybrid Panda, diagrama de blocos, o que foi mantido/substituido/adicionado, mapa de pinos do H725, CAN, alimentacao, USB, depuracao, implicacoes de firmware, estado de verificacao. |
+| [docs/hardware/bom.pt-br.md](docs/hardware/bom.pt-br.md) ([EN](docs/hardware/bom.md)), [docs/hardware/bom.csv](docs/hardware/bom.csv) | Lista de materiais por funcao com estado de MPN/LCSC; CSV regenerado por `hardware/scripts/gen-docs-bom.py`. |
+| [docs/hardware/schematic.pt-br.md](docs/hardware/schematic.pt-br.md) ([EN](docs/hardware/schematic.md)) | Descricao do esquema por bloco funcional, pull-ups, redes de interesse, estado do ERC. |
+| [docs/hardware/pcb-specification.pt-br.md](docs/hardware/pcb-specification.pt-br.md) ([EN](docs/hardware/pcb-specification.md)) | Especificacao de fabricacao: dimensoes, stackup, regras de projeto, alvos de impedancia, resumo do DRC, lista de arquivos de fabricacao, estado NAO FABRICAR. |
 
 ## Firmware
 

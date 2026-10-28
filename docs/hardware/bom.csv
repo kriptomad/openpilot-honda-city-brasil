@@ -1,0 +1,126 @@
+reference,value,footprint,mpn,manufacturer,lcsc,lcsc_status,catalog_confirmed,side,dnp,datasheet,lib_id,source
+C1,100NF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C2,100NF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C3,47uF,Capacitor_SMD:C_0805_2012Metric,0805X476M100NT,Fenghua,C178332,assigned,no,top,no,~,Device:C_Small,schematic
+C4,10uF,Capacitor_SMD:C_0805_2012Metric,CL21A106KBYQNNE,Samsung,C2932476,assigned,no,top,no,~,Device:C_Small,schematic
+C5,100NF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C6,2.2uF,Capacitor_SMD:C_0805_2012Metric,CC0805KKX7R9BB225,Yageo,C125847,assigned,no,top,no,~,Device:C_Small,schematic
+C7,2.2uF,Capacitor_SMD:C_0805_2012Metric,CC0805KKX7R9BB225,Yageo,C125847,assigned,no,top,no,~,Device:C_Small,schematic
+C8,10uF,Capacitor_SMD:C_0402_1005Metric,CL05A106MP5NUNC,Samsung,C315248,assigned,no,top,no,~,Device:C_Small,schematic
+C10,47uF,Capacitor_SMD:C_0805_2012Metric,0805X476M100NT,Fenghua,C178332,assigned,no,top,no,~,Device:C_Small,schematic
+C11,100NF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C12,10uF,Capacitor_SMD:C_0805_2012Metric,CL21A106KBYQNNE,Samsung,C2932476,assigned,no,top,no,~,Device:C_Small,schematic
+C14,100NF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C16,47uF,Capacitor_SMD:C_0805_2012Metric,0805X476M100NT,Fenghua,C178332,assigned,no,top,no,~,Device:C_Small,schematic
+C17,47uF,Capacitor_SMD:C_0805_2012Metric,0805X476M100NT,Fenghua,C178332,assigned,no,top,no,~,Device:C_Small,schematic
+C18,47uF,Capacitor_SMD:C_0805_2012Metric,0805X476M100NT,Fenghua,C178332,assigned,no,top,no,~,Device:C_Small,schematic
+C19,47uF,Capacitor_SMD:C_0805_2012Metric,0805X476M100NT,Fenghua,C178332,assigned,no,top,no,~,Device:C_Small,schematic
+C20,47uF,Capacitor_SMD:C_0805_2012Metric,0805X476M100NT,Fenghua,C178332,assigned,no,top,no,~,Device:C_Small,schematic
+C21,47uF,Capacitor_SMD:C_0805_2012Metric,0805X476M100NT,Fenghua,C178332,assigned,no,top,no,~,Device:C_Small,schematic
+C23,18pF,Capacitor_SMD:C_0402_1005Metric,0402CG180J500NT,Fenghua,C1555,assigned,no,bottom,no,~,Device:C_Small,schematic
+C24,18pF,Capacitor_SMD:C_0402_1005Metric,0402CG180J500NT,Fenghua,C1555,assigned,no,bottom,no,~,Device:C_Small,schematic
+C26,100NF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C27,100NF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C28,100NF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C29,100NF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C30,100NF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C31,100NF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C32,100NF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C33,100NF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C34,0.1uF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C37,10nF (LOW ESR),Capacitor_SMD:C_0402_1005Metric,CL05B103KB5NNNC,Samsung,C15195,assigned,no,top,no,~,Device:C_Small,schematic
+C38,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,bottom,no,~,Device:C_Small,schematic
+C39,2.2uF,Capacitor_SMD:C_0603_1608Metric,CL10A225KO8NNNC,Samsung,C23630,assigned,no,bottom,no,~,Device:C_Small,schematic
+C40,2.2uF,Capacitor_SMD:C_0603_1608Metric,CL10A225KO8NNNC,Samsung,C23630,assigned,no,bottom,no,~,Device:C_Small,schematic
+C41,220pF,Capacitor_SMD:C_0402_1005Metric,0402B221K500NT,Fenghua,C1530,assigned,no,bottom,no,~,Device:C_Small,schematic
+C42,10uF,Capacitor_SMD:C_0805_2012Metric,CL21A106KAYNNNE,Samsung,C15850,assigned,no,bottom,no,~,Device:C_Small,schematic
+C43,1uF,Capacitor_SMD:C_0402_1005Metric,CL05A105KA5NQNC,Samsung,C52923,assigned,no,bottom,no,~,Device:C_Small,schematic
+C44,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,bottom,no,~,Device:C_Small,schematic
+C45,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,bottom,no,~,Device:C_Small,schematic
+C46,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,bottom,no,~,Device:C_Small,schematic
+C47,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C48,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C49,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,bottom,no,~,Device:C_Small,schematic
+C50,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,bottom,no,~,Device:C_Small,schematic
+C51,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,bottom,no,~,Device:C_Small,schematic
+C52,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,bottom,no,~,Device:C_Small,schematic
+C53,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,bottom,no,~,Device:C_Small,schematic
+C54,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,bottom,no,~,Device:C_Small,schematic
+C55,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,bottom,no,~,Device:C_Small,schematic
+C56,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,bottom,no,~,Device:C_Small,schematic
+C57,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,bottom,no,~,Device:C_Small,schematic
+C58,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
+C59,100nF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,bottom,no,~,Device:C_Small,schematic
+C60,4.7uF,Capacitor_SMD:C_0603_1608Metric,CL10A475KO8NNNC,Samsung,C19666,assigned,no,bottom,no,~,Device:C_Small,schematic
+C61,4.7uF,Capacitor_SMD:C_0603_1608Metric,CL10A475KO8NNNC,Samsung,C19666,assigned,no,bottom,no,~,Device:C_Small,schematic
+C62,4.7uF,Capacitor_SMD:C_0603_1608Metric,CL10A475KO8NNNC,Samsung,C19666,assigned,no,bottom,no,~,Device:C_Small,schematic
+C63,1uF,Capacitor_SMD:C_0402_1005Metric,CL05A105KA5NQNC,Samsung,C52923,assigned,no,bottom,no,~,Device:C_Small,schematic
+C64,2.2uF,Capacitor_SMD:C_0402_1005Metric,CL05A225MP5NSNC,Samsung,C23733,assigned,no,bottom,no,~,Device:C_Small,schematic
+C65,4.7uF,Capacitor_SMD:C_0603_1608Metric,CL10A475KO8NNNC,Samsung,C19666,assigned,no,top,no,~,Device:C_Small,schematic
+D1,SMAJ16CA-13-F,BlackPanda:DIOM4325X250N,SMAJ16CA,Littelfuse,C148217,assigned,no,top,no,,SMAJ16CA:SMAJ16CA,schematic
+D2,BAS40WS 43 ,Diode_SMD:D_SOD-323,BAS40WS 43,Changjing,C22648,assigned,no,top,no,~,Device:D_Schottky,schematic
+D5,"PESD2CAN,215",BlackPanda:SOT95P230X110-3N,"PESD2CAN,215",Nexperia,C75176,assigned,no,top,no,,"PESD2CAN_215:PESD2CAN,215",schematic
+D6,"PESD2CAN,215",BlackPanda:SOT95P230X110-3N,"PESD2CAN,215",Nexperia,C75176,assigned,no,top,no,,"PESD2CAN_215:PESD2CAN,215",schematic
+D7,"PESD2CAN,215",BlackPanda:SOT95P230X110-3N,"PESD2CAN,215",Nexperia,C75176,assigned,no,top,no,,"PESD2CAN_215:PESD2CAN,215",schematic
+D8,"PESD2CAN,215",BlackPanda:SOT95P230X110-3N,"PESD2CAN,215",Nexperia,C75176,assigned,no,top,no,,"PESD2CAN_215:PESD2CAN,215",schematic
+D9,"PESD2CAN,215",BlackPanda:SOT95P230X110-3N,"PESD2CAN,215",Nexperia,C75176,assigned,no,top,no,,"PESD2CAN_215:PESD2CAN,215",schematic
+D10,BAS70H 115,Diode_SMD:D_SOD-123F,"BAS70H,115",Nexperia,C426766,assigned,no,top,no,https://assets.nexperia.com/documents/data-sheet/BAS70H.pdf,Diode:MBR1020VL,schematic
+D11,B320AE-13,Diode_SMD:D_SMA,B340A-13-F,Diodes Inc,C85098,assigned,no,top,no,~,Device:D_Schottky,schematic
+D12,SM540C,Diode_SMD:D_SMC,B540C-13-F,Diodes Inc,C72264,assigned,no,top,no,~,Device:D_Schottky,schematic
+D13,BAT54S,Package_TO_SOT_SMD:SOT-23,"BAT54S,215",Nexperia,C47546,assigned,no,bottom,no,~,Diode:BAT54S,schematic
+D14,BAT54S,Package_TO_SOT_SMD:SOT-23,"BAT54S,215",Nexperia,C47546,assigned,no,bottom,no,~,Diode:BAT54S,schematic
+D15,BZT52C12,Diode_SMD:D_SOD-123,BZT52C12,High Diode (ou equivalente),C571379,assigned,no,bottom,no,~,Device:D_Zener,schematic
+FB1,600R@100MHz,Inductor_SMD:L_0603_1608Metric,GZ1608D601TF,Sunlord,C1002,assigned,no,bottom,no,~,Device:FerriteBead_Small,schematic
+FID1,,Fiducial:Fiducial_1mm_Mask2mm,,,,not assigned,no,top,no,,,pcb-only
+FID2,,Fiducial:Fiducial_1mm_Mask2mm,,,,not assigned,no,top,no,,,pcb-only
+FID3,,Fiducial:Fiducial_1mm_Mask2mm,,,,not assigned,no,top,no,,,pcb-only
+FID4,,Fiducial:Fiducial_1mm_Mask2mm,,,,not assigned,no,bottom,no,,,pcb-only
+FID5,,Fiducial:Fiducial_1mm_Mask2mm,,,,not assigned,no,bottom,no,,,pcb-only
+FID6,,Fiducial:Fiducial_1mm_Mask2mm,,,,not assigned,no,bottom,no,,,pcb-only
+J1,SWD,Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD,20021121-00010C4LF,Amphenol ICC,C150517,assigned,no,bottom,no,~,Connector_Generic:Conn_02x05_Odd_Even,schematic
+JP1,HW_ID1,Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm,,,,not assigned,no,top,no,~,Jumper:SolderJumper_2_Open,schematic
+L3,47uH 2A - SMMS0650-470M,BlackPanda:IND-SMD_L7.3-W6.8,SMMS0650-470M,SXN,C149588,assigned,no,top,no,~,Device:L,schematic
+L4,15uH,BlackPanda:L_10.5x11.5_H4.0,MWSA1004S-150MT,Sunlord,C151872,assigned,no,top,no,~,Device:L,schematic
+L5,2.2uH DFE201610E-2R2M,Inductor_SMD:L_Murata_DFE201610P,DFE201610E-2R2M=P2,Murata,C337891,assigned,no,bottom,no,https://www.lcsc.com/product-detail/C337891.html,Device:L,schematic
+P1,TYPE-C-31-M-04,BlackPanda:USB-C-SMD_TYPE-C-USB-20,TYPE-C-31-M-04,Korean Hroparts,C129018,assigned,no,top,no,https://atta.szlcsc.com/upload/public/pdf/source/20190321/C129018_ECAF745BBC5FC08427E0CBD0F9A58A2A.pdf,TYPE-C-31-M-04:TYPE-C-31-M-04,schematic
+Q1,DDTA143ECA-7-F P08,BlackPanda:SOT23-3,DDTA143ECA-7-F,Diodes Inc,C460029,assigned,no,top,no,https://www.mouser.de/datasheet/2/115/DIOD_S_A0006456122_1-2542719.pdf,Device:Q_PNP_BEC_BRT,schematic
+Q2,DDTA143ECA-7-F P08,BlackPanda:SOT23-3,DDTA143ECA-7-F,Diodes Inc,C460029,assigned,no,top,no,https://www.mouser.de/datasheet/2/115/DIOD_S_A0006456122_1-2542719.pdf,Device:Q_PNP_BEC_BRT,schematic
+Q3,PDTC114EU,Package_TO_SOT_SMD:SOT-323_SC-70,"PDTC114EU,115",Nexperia,C135830,assigned,no,top,no,https://www.mouser.de/datasheet/2/916/PDTC114E_SER-2937084.pdf,Device:Q_NPN_BEC_BRT,schematic
+Q4,HY12P03C2,Package_SO:PowerPAK_SO-8_Single,HY12P03C2,HUAYI,C358006,assigned,no,top,no,https://www.vishay.com/docs/65596/si7141dp.pdf,Transistor_FET:Si7141DP,schematic
+R1,10k,Resistor_SMD:R_0603_1608Metric,0603WAF1002T5E,Uniroyal,C25804,assigned,no,top,no,~,Device:R_Small,schematic
+R2,1K,Resistor_SMD:R_0402_1005Metric,0402WGF1001TCE,Uniroyal,C11702,assigned,no,top,no,~,Device:R_Small,schematic
+R3,10K,Resistor_SMD:R_0402_1005Metric,0402WGF1002TCE,Uniroyal,C25744,assigned,no,top,no,~,Device:R_Small,schematic
+R5,10K (1%),Resistor_SMD:R_0402_1005Metric,0402WGF1002TCE,Uniroyal,C25744,assigned,no,top,no,~,Device:R,schematic
+R6,3.16K (1%),Resistor_SMD:R_0603_1608Metric,0603WAF3161T5E,Uniroyal,C22993,assigned,no,top,no,~,Device:R,schematic
+R9,10K,Resistor_SMD:R_0402_1005Metric,0402WGF1002TCE,Uniroyal,C25744,assigned,no,top,no,~,Device:R_Small,schematic
+R14,10k,Resistor_SMD:R_0402_1005Metric,0402WGF1002TCE,Uniroyal,C25744,assigned,no,top,no,~,Device:R_Small,schematic
+R15,10k,Resistor_SMD:R_0402_1005Metric,0402WGF1002TCE,Uniroyal,C25744,assigned,no,top,no,~,Device:R_Small,schematic
+R16,10k,Resistor_SMD:R_0402_1005Metric,0402WGF1002TCE,Uniroyal,C25744,assigned,no,top,no,~,Device:R_Small,schematic
+R17,180R,Resistor_SMD:R_0402_1005Metric,0402WGF1800TCE,Uniroyal,C38941,assigned,no,top,no,~,Device:R_Small,schematic
+R18,110R,Resistor_SMD:R_0402_1005Metric,ERJ2RKF1100X,Panasonic,C413064,assigned,no,top,no,~,Device:R_Small,schematic
+R19,100R,Resistor_SMD:R_0402_1005Metric,0402WGF1000TCE,Uniroyal,C25076,assigned,no,top,no,~,Device:R_Small,schematic
+R20,22R,Resistor_SMD:R_0402_1005Metric,0402WGF220JTCE,Uniroyal,C25092,assigned,no,bottom,no,~,Device:R_Small,schematic
+R21,22R,Resistor_SMD:R_0402_1005Metric,0402WGF220JTCE,Uniroyal,C25092,assigned,no,bottom,no,~,Device:R_Small,schematic
+R23,10K,Resistor_SMD:R_0402_1005Metric,0402WGF1002TCE,Uniroyal,C25744,assigned,no,top,no,~,Device:R_Small,schematic
+R24,10K,Resistor_SMD:R_0402_1005Metric,0402WGF1002TCE,Uniroyal,C25744,assigned,no,top,no,~,Device:R_Small,schematic
+R26,10K,Resistor_SMD:R_0402_1005Metric,0402WGF1002TCE,Uniroyal,C25744,assigned,no,top,no,~,Device:R_Small,schematic
+R27,2.4K,Resistor_SMD:R_0402_1005Metric,0402WGF2401TCE,Uniroyal,C25882,assigned,no,top,no,~,Device:R_Small,schematic
+R28,10k,Resistor_SMD:R_0402_1005Metric,0402WGF1002TCE,Uniroyal,C25744,assigned,no,bottom,no,~,Device:R_Small,schematic
+R29,10k,Resistor_SMD:R_0402_1005Metric,0402WGF1002TCE,Uniroyal,C25744,assigned,no,bottom,no,~,Device:R_Small,schematic
+R30,10k,Resistor_SMD:R_0402_1005Metric,0402WGF1002TCE,Uniroyal,C25744,assigned,no,bottom,no,~,Device:R_Small,schematic
+R31,10k,Resistor_SMD:R_0402_1005Metric,0402WGF1002TCE,Uniroyal,C25744,assigned,no,bottom,no,~,Device:R_Small,schematic
+R32,10k,Resistor_SMD:R_0402_1005Metric,0402WGF1002TCE,Uniroyal,C25744,assigned,no,bottom,no,~,Device:R_Small,schematic
+R33,10k,Resistor_SMD:R_0402_1005Metric,0402WGF1002TCE,Uniroyal,C25744,assigned,no,bottom,no,~,Device:R_Small,schematic
+SW1,SW_Push,Button_Switch_SMD:SW_SPST_SKQG_WithStem,SKQGAFE010,Alps Alpine,C202424,assigned,no,top,no,~,Switch:SW_Push,schematic
+U1,AP22615AWU-7,Package_TO_SOT_SMD:SOT-23-6,AP22615AWU-7,Diodes Inc,,not assigned,no,top,no,https://datasheet.lcsc.com/lcsc/2108071730_Diodes-Incorporated-AP22615AWU-7_C2680357.pdf,Analog_ADC:AP22615AWU-7,schematic
+U3,10_0_QHHTZB6_3,BlackPanda:USB-A-TH_10.0QHHTZB6.3,10.0 QHHTZB6.3,SHOU HAN,C668591,assigned,no,top,no,https://item.szlcsc.com/698534.html,10_0_QHHTZB6_3:10_0_QHHTZB6_3,schematic
+U5,FM-B1921RGBA-SH,BlackPanda:LED-ARRAY-SMD_4P-L2.2-W2.1-BR,FM-B1921RGBA-SH,Foshan NationStar,C727904,assigned,no,top,no,https://atta.szlcsc.com/upload/public/pdf/source/20210824/394DCB7C803784CE665F52BCF49E41B5.pdf,FM-B1921RGBA-SH:FM-B1921RGBA-SH,schematic
+U6,TPS5450DDAR,BlackPanda:CONV_TPS5450DDAR,TPS5450DDAR,Texas Instruments,C114425,assigned,no,top,no,,TPS5450DDAR:TPS5450DDAR,schematic
+U7,STM32H725ZGT6,Package_QFP:LQFP-144_20x20mm_P0.5mm,STM32H725ZGT6,STMicroelectronics,C730156,assigned,no,bottom,no,https://www.st.com/resource/en/datasheet/stm32h725zg.pdf,MCU_ST_STM32H7:STM32H725ZGTx,schematic
+U8,TJA1042TK-3,Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm,TJA1042TK/3/1J,NXP,C131480,assigned,no,top,no,http://www.nxp.com/documents/data_sheet/TJA1042.pdf,Interface_CAN_LIN:TJA1042TK-3,schematic
+U9,TJA1042TK-3,Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm,TJA1042TK/3/1J,NXP,C131480,assigned,no,top,no,http://www.nxp.com/documents/data_sheet/TJA1042.pdf,Interface_CAN_LIN:TJA1042TK-3,schematic
+U10,TJA1042TK-3,Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm,TJA1042TK/3/1J,NXP,C131480,assigned,no,top,no,http://www.nxp.com/documents/data_sheet/TJA1042.pdf,Interface_CAN_LIN:TJA1042TK-3,schematic
+U11,TJA1042TK-3,Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm,TJA1042TK/3/1J,NXP,C131480,assigned,no,top,no,http://www.nxp.com/documents/data_sheet/TJA1042.pdf,Interface_CAN_LIN:TJA1042TK-3,schematic
+U12,XL1509-3.3,Package_SO:Diodes_PSOP-8,XL1509-3.3E1,XLSEMI,C74193,assigned,no,top,no,https://datasheet.lcsc.com/lcsc/1809050422_XLSEMI-XL1509-5-0E1_C61063.pdf,Regulator_Linear:XL1509-3.3,schematic
+U13,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,USBLC6-2SC6,STMicroelectronics,C7519,assigned,no,top,no,~,Power_Protection:USBLC6-2P6,schematic
+Y1,25MHz X322525MOB4SI,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,X322525MOB4SI,YXC,C9006,assigned,no,bottom,no,https://www.lcsc.com/product-detail/C9006.html,Device:Crystal_GND24_Small,schematic
