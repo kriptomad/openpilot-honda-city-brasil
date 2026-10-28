@@ -92,20 +92,64 @@ os.remove(bom_src)
 with open(os.path.join(ASM, "BOM_JLC.csv"), "w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=["Comment", "Designator", "Footprint", "LCSC Part #", "MPN", "Manufacturer", "Qty"]); w.writeheader(); w.writerows(bom_rows)
 aux = board.GetDesignSettings().GetAuxOrigin()
-cpl = []
+# ---- JLCPCB rotation normalisation (A7). Table: cpl_rotations_db.csv (matthewlai/JLCKicadTools, the file downloaded by the
+# Bouni kicad-jlcpcb-tools plugin). Rule selection and bottom-side mirroring follow that plugin (correction_data.find_correction
+# = regex consuming the most characters wins, tried on reference, value, footprint; fabrication._rotation_for_match = bottom
+# angle mirrored as (180 - rot) % 360 before the correction is added). Offsets of the table are NOT applied (only reported).
+ROT_DB = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cpl_rotations_db.csv")
+corrections = []
+with open(ROT_DB, encoding="utf-8", newline="") as f:
+    for row in csv.reader(f):
+        if not row or row[0].startswith("Footprint pattern") or row[0].lstrip().startswith("#"): continue
+        pat = row[0].strip()
+        try: rx = re.compile(pat)
+        except re.error: continue
+        corrections.append({"pattern": pat, "regex": rx, "rotation": int(float(row[1])), "offset": (float(row[2]) if len(row) > 2 and row[2].strip() else 0.0, float(row[3]) if len(row) > 3 and row[3].strip() else 0.0)})
+def find_correction(text):
+    best, best_len = None, -1
+    for c in corrections:
+        m = c["regex"].search(text)
+        if m and len(m.group(0)) > best_len: best, best_len = c, len(m.group(0))
+    return best
+def jlc_rotation(fp):
+    """(kicad_rotation_used, correction_or_None, jlc_rotation) with the Bouni plugin convention."""
+    rot = fp.GetOrientationDegrees()
+    if fp.IsFlipped(): rot = (180 - rot) % 360
+    fpname = fp.GetFPID().GetLibItemName().wx_str()
+    for source, text in (("ref", fp.GetReference()), ("val", fp.GetValue()), ("fpt", fpname)):
+        c = find_correction(text)
+        if c: return rot, dict(c, source=source), (rot + c["rotation"] % 360) % 360
+    return rot, None, rot % 360
+cpl, cpl_detail = [], []
 for ref, fp in sorted(fps.items()):
     if fp.GetAttributes() & pcbnew.FP_EXCLUDE_FROM_POS_FILES: continue
     if fp.IsDNP(): continue
     pos = fp.GetPosition() - aux
+    rot_in, corr, rot_jlc = jlc_rotation(fp)
+    fpname = fp.GetFPID().GetLibItemName().wx_str()
     cpl.append({"Designator": ref, "Mid X": "%.4f" % pcbnew.ToMM(pos.x), "Mid Y": "%.4f" % (-pcbnew.ToMM(pos.y)), "Layer": "Bottom" if fp.IsFlipped() else "Top",
-                "Rotation": "%.1f" % fp.GetOrientationDegrees(), "Footprint": fp.GetFPID().GetLibItemName().wx_str(), "Value": fp.GetValue()})
+                "Rotation": "%.1f" % rot_jlc, "Footprint": fpname, "Value": fp.GetValue()})
+    cpl_detail.append({"Designator": ref, "Footprint": fpname, "Library": fp.GetFPID().GetLibNickname().wx_str(), "Layer": "Bottom" if fp.IsFlipped() else "Top",
+                       "KiCad rotation": "%.1f" % fp.GetOrientationDegrees(), "Mirrored (bottom)": "%.1f" % rot_in, "Rule": corr["pattern"] if corr else "",
+                       "Rule source": corr["source"] if corr else "", "Correction": corr["rotation"] if corr else 0, "Rule offset (not applied)": "%g,%g" % corr["offset"] if corr and any(corr["offset"]) else "",
+                       "JLC rotation": "%.1f" % rot_jlc})
 with open(os.path.join(ASM, "CPL_JLC.csv"), "w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=["Designator", "Mid X", "Mid Y", "Layer", "Rotation", "Footprint", "Value"]); w.writeheader(); w.writerows(cpl)
+with open(os.path.join(ASM, "CPL_rotation_corrections.csv"), "w", encoding="utf-8", newline="") as f:
+    w = csv.DictWriter(f, fieldnames=list(cpl_detail[0].keys())); w.writeheader(); w.writerows(cpl_detail)
 run([CLI, "pcb", "export", "pos", "--format", "csv", "--units", "mm", "--side", "both", "--use-drill-file-origin", "-o", os.path.join(ASM, "pos_kicad_both.csv"), PCB])
+rot_summary = collections.OrderedDict()
+for d in cpl_detail:
+    k = (d["Footprint"], d["Rule"], d["Correction"]); rot_summary.setdefault(k, []).append(d["Designator"])
 out["assembly"] = {"bom_lines": len(bom_rows), "bom_refs": sum(r["Qty"] for r in bom_rows), "cpl_rows": len(cpl), "cpl_top": sum(1 for c in cpl if c["Layer"] == "Top"),
                    "cpl_bottom": sum(1 for c in cpl if c["Layer"] == "Bottom"), "refs_without_LCSC": sorted(set(no_lcsc)), "refs_without_MPN": sorted(set(no_mpn)),
                    "aux_origin_mm": [pcbnew.ToMM(aux.x), pcbnew.ToMM(aux.y)],
-                   "note": "Rotação CPL = orientação KiCad; JLC pode exigir correção por footprint (não verificado). LCSC lido do campo 'LCSC' do esquemático (códigos 'a verificar' em hardware/reports/bom-real/BOM_HYBRIDPANDA_v1.csv)."}
+                   "rotation_db": os.path.basename(ROT_DB), "rotation_rules": len(corrections),
+                   "rotation_corrected": [{"footprint": k[0], "rule": k[1], "correction": k[2], "refs": v} for k, v in rot_summary.items() if k[1]],
+                   "rotation_unmatched": [{"footprint": k[0], "refs": v} for k, v in rot_summary.items() if not k[1]],
+                   "note": "CPL_JLC.csv rotation = KiCad orientation (bottom mirrored as 180-rot) + JLC correction table (cpl_rotations_db.csv, Bouni plugin convention); "
+                           "detail per reference in CPL_rotation_corrections.csv; pos_kicad_both.csv is the raw KiCad export. Not checked against the JLC assembly preview. "
+                           "LCSC read from the schematic 'LCSC' field (codes 'a verificar' in hardware/reports/bom-real/BOM_HYBRIDPANDA_v1.csv)."}
 # ------------------------------------------------------------------ tabela de furação
 holes = []
 for fp in board.GetFootprints():
@@ -167,38 +211,59 @@ with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED) as z:
 v7p = os.path.join(REP, "step7_validation.json")
 v7 = json.load(open(v7p, encoding="utf-8")) if os.path.exists(v7p) else {}
 blocks = []
-if not v7: blocks.append("STEP 7 não executado (step7_validation.json ausente).")
+if not v7: blocks.append("STEP 7 not executed (`step7_validation.json` missing).")
 for fkey in v7.get("failures", []): blocks.append("STEP 7: " + fkey)
 drc7 = v7.get("drc", {})
-inherited = {k: v for k, v in drc7.get("by_type", {}).items() if v.get("hibrida")}
-blocks += ["Impedância/skew CAN-FD e USB: apenas estimativa analítica (step6_reports.py); o DRC do KiCad não verifica impedância; stackup 4 camadas 1.59 mm assumido, não confirmado com o fabricante.",
-           "USB_D± não é par acoplado: Freerouting roteou com vias (ver hardware\\research\\step5-layout-h725.md §5/§7); FS 12 Mb/s tolera, mas não foi validado.",
-           "Nenhuma placa foi fabricada, montada ou medida — zero validação física; firmware red panda oficial NUNCA foi executado neste hardware.",
-           "BOM: %d referências sem MPN e %d sem código LCSC (de %d); códigos LCSC marcados 'a verificar' em hardware\\reports\\bom-real\\BOM_HYBRIDPANDA_v1.csv ainda não confirmados no catálogo JLC — montagem JLC exige confirmar." % (len(out["assembly"]["refs_without_MPN"]), len(out["assembly"]["refs_without_LCSC"]), out["assembly"]["bom_refs"]),
-           "Violações DRC herdadas do baseline OpenBlackPanda não corrigidas (%s) — ver hardware\\research\\step5-layout-h725.md §7.3 e hardware\\reports\\correcoes-aplicadas.md." % (", ".join("%s %d" % (k, v["hibrida"]) for k, v in inherited.items()) or "nenhuma"),
-           "Verificação em visualizador de gerber: NÃO EXECUTADA automaticamente (sem gerbv/gerbview CLI); apenas verificação sintática (gerber_check.json). Abrir gerbers/ no KiCad GerbView antes de qualquer pedido.",
-           "Toolchain ARM: instalada localmente (Arm GNU 14.2.Rel1, %LOCALAPPDATA%\\arm-gnu-toolchain) mas firmware ainda NÃO compilado/assinado para este hardware; dependência do fluxo oficial de DFU/assinatura do commaai (ver STEP9).",
-           "Rotação dos componentes no CPL não normalizada para a convenção JLC (requer ajuste manual por footprint no painel JLC).",
-           "Via-in-pad: 0 após o relayout leste (step5e_relayout_east.py, D-33) + fix_audit.py + fix_vip_reroute.py (U8.3 +5V: via movida para a trilha F.Cu a oeste de C30 e trilha B.Cu reencaminhada). Contagem pela definição do final_audit.py (centro da via dentro da bbox de pad SMD) sobre o tabuleiro actual — reconfirmar em hardware\\reports\\final_audit.json antes de qualquer pedido."]
-R = ["HYBRID PANDA (Black Panda form factor + STM32H725ZGT6 / firmware red panda) — PACOTE DE FABRICAÇÃO", "Gerado: %s por hardware\\scripts\\step8_fabricate.py (KiCad 10.0.7 kicad-cli)" % out["date"], "",
-     "=" * 78, "   ESTADO: NÃO FABRICAR", "=" * 78, "",
-     "Este pacote foi gerado automaticamente para arquivo/revisão. NÃO foi validado para produção. Motivos:", ""]
-R += ["  %d. %s" % (i + 1, b) for i, b in enumerate(blocks)]
-R += ["", "Resultados do STEP 7 (hardware\\reports\\step7_validation.json):",
-      "  ERC erros=%s avisos=%s | DRC não ligados=%s clearance=%s curtos=%s courtyards=%s | netlist divergências=%s | paridade conflitos=%s" %
-      (v7.get("erc", {}).get("errors"), v7.get("erc", {}).get("warnings"), drc7.get("unconnected_items"), drc7.get("clearance"), drc7.get("shorting_items"), drc7.get("courtyards_overlap"),
-       len(v7.get("netlist", {}).get("net_divergences", [])), len(v7.get("parity", {}).get("conflicts", []))),
-      "  DRC por tipo (híbrida/baseline): " + ", ".join("%s %d/%d" % (k, v["hibrida"], v["baseline"]) for k, v in inherited.items()), "",
-      "Conteúdo:", "  gerbers\\            RS-274X (Protel ext, sem X2) — F/In1/In2/B.Cu, F/B.Mask, F/B.SilkS, F/B.Paste, Edge.Cuts",
-      "  drill\\              Excellon PTH + NPTH (mm, 3:3, suppress leading), mapa PDF e Gerber X2",
-      "  assembly\\           BOM_JLC.csv, CPL_JLC.csv (origem = drill/aux origin %.2f,%.2f mm), pos_kicad_both.csv" % tuple(out["assembly"]["aux_origin_mm"]),
-      "  pdf\\                esquemático, cobre por camada, fab/assembly top/bottom", "  3d\\HybridPanda.step  modelo 3D (modelos substituídos quando ausentes)",
-      "  drill_table.md/json  %d furos (%s); broca mín %.3f mm; anel anular mín %s" % (len(holes), ", ".join("%s=%d" % kv for kv in out["drill"]["by_kind"].items()), min_drill, ", ".join("%s %.3f" % kv for kv in min_ring.items())),
-      "  gerber_check.json    verificação sintática; furos Excellon x PCB: %d x %d" % (exc_hits, len(holes)),
-      "  HybridPanda_gerbers_JLC.zip  gerbers+drill prontos para upload (APENAS após remover os bloqueios acima)", "",
-      "Especificação pretendida: 4 camadas, 1.59 mm, FR-4 (εr≈4.5 assumido), cobre 1 oz ext/0.5 oz int, trilha/espaço mín 0.1375/0.1 mm, via 0.4/0.3 mm, furo mín %.2f mm, ENIG recomendado (QFN/LQFP 0.5 mm), máscara verde, HASL NÃO recomendado." % out["drill"]["rule_min_drill_mm"],
-      "", "Problemas na geração: " + ("nenhum" if not out["problems"] else "; ".join(out["problems"])),
-      "Notas: " + ("nenhuma" if not out["notes"] else "; ".join(out["notes"]))]
+by_type = drc7.get("by_type", {})
+inherited = {k: v for k, v in by_type.items() if v.get("hibrida")}
+drc_txt = ", ".join("%s %d" % (k, v["hibrida"]) for k, v in sorted(inherited.items())) or "none"
+A = " **Addressed by software, not physically verified**"
+VP = "../reports/verification-pcb"
+blocks += [
+    "CAN and USB impedance/skew: analytical estimate only (`step6_reports.py`, [`%s/impedance.md`](%s/impedance.md): Hammerstad-Jensen / Kirschning-Jansen for the file stackup and for JLCPCB JLC7628; USB netclass 0.35/0.15 mm, CAN_DIFF 0.22/0.23 mm). KiCad's DRC does not check impedance; the stackup is assumed, not confirmed with the fabricator; no TDR.%s" % (VP, VP, A),
+    "`USB_D+/-`: rerouted as an edge-coupled pair on B.Cu with one symmetric via pair and 0.35/0.15 mm width/gap, skew %s ([`%s/usb-reroute.md`](%s/usb-reroute.md)); previously 2 vias per net on In1.Cu. USB FS 12 Mbit/s is tolerant either way.%s" % ("< 0.3 mm", VP, VP, A),
+    "No board was fabricated, assembled or measured: zero physical verification; the official red panda firmware has never run on this hardware.",
+    "BOM: %d reference(s) without MPN and %d without LCSC code (of %d); LCSC codes marked \"a verificar\" in [`../reports/bom-real/BOM_HYBRIDPANDA_v1.csv`](../reports/bom-real/BOM_HYBRIDPANDA_v1.csv) are not confirmed in the JLC catalogue; JLC assembly requires confirming them." % (len(out["assembly"]["refs_without_MPN"]), len(out["assembly"]["refs_without_LCSC"]), out["assembly"]["bom_refs"]),
+    "DRC inherited from the OpenBlackPanda baseline: now %s ([`%s/drc-cleanup.md`](%s/drc-cleanup.md); `lib_footprint_mismatch` is intentional: local footprint edits). Clearance/unconnected/shorts/courtyards = %s/%s/%s/%s.%s" % (drc_txt, VP, VP, drc7.get("clearance"), drc7.get("unconnected_items"), drc7.get("shorting_items"), drc7.get("courtyards_overlap"), A),
+    "Gerber viewer check: NOT executed automatically (no gerbv/gerbview CLI); only the syntactic check in `gerber_check.json`. Open `gerbers/` in KiCad GerbView before any order.",
+    "ARM toolchain: installed locally (Arm GNU 14.2.Rel1) but the firmware for this hardware (`hybrid-h725` branch in [`firmware/`](../../firmware)) has never run on hardware; depends on the commaai DFU/signing flow (see STEP 9).",
+    "Component rotation in `assembly/CPL_JLC.csv` is normalised with the JLC correction table used by the Bouni kicad-jlcpcb-tools plugin (%d rules, `hardware/scripts/cpl_rotations_db.csv`): %d footprint type(s) corrected, %d without a rule ([`%s/cpl-rotation.md`](%s/cpl-rotation.md), `assembly/CPL_rotation_corrections.csv`). A human must still check every part in the JLC assembly preview (polarised parts and local BlackPanda footprints in particular).%s" % (out["assembly"]["rotation_rules"], len(out["assembly"]["rotation_corrected"]), len(out["assembly"]["rotation_unmatched"]), VP, VP, A),
+    "Via-in-pad: 0 after the east relayout (`step5e_relayout_east.py`, D-33) plus `fix_audit.py` and `fix_vip_reroute.py`. Counted with the `final_audit.py` definition (via centre inside an SMD pad bounding box); reconfirm in [`../reports/final_audit.json`](../reports/final_audit.json) before any order.",
+]
+R = ["# Hybrid Panda fabrication package", "",
+     "**STATUS: DO NOT FABRICATE.** This package was generated automatically for archive and",
+     "review. Physical verification and human review are still missing. No board has ever been built from it.", "",
+     "Hybrid Panda = black panda form factor + STM32H725ZGT6 running the red panda firmware.",
+     "Generated %s by [`hardware/scripts/step8_fabricate.py`](../scripts/step8_fabricate.py)" % out["date"],
+     "with KiCad 10.0.7 `kicad-cli` from [`hardware/hybrid-panda/HybridPanda.kicad_pcb`](../hybrid-panda/HybridPanda.kicad_pcb).",
+     "Items marked \"addressed by software, not physically verified\" were changed in the PCB engineering pass of %s" % out["date"][:10],
+     "(reports in [`hardware/reports/verification-pcb/`](../reports/verification-pcb/)); the remaining items are open.", "",
+     "## Why it must not be fabricated yet", ""]
+R += ["%d. %s" % (i + 1, b) for i, b in enumerate(blocks)]
+R += ["", "## STEP 7 results (`../reports/step7_validation.json`)", "",
+      "- ERC errors = %s, warnings = %s" % (v7.get("erc", {}).get("errors"), v7.get("erc", {}).get("warnings")),
+      "- DRC unconnected = %s, clearance = %s, shorts = %s, courtyards = %s" % (drc7.get("unconnected_items"), drc7.get("clearance"), drc7.get("shorting_items"), drc7.get("courtyards_overlap")),
+      "- Netlist divergences = %d; parity conflicts = %d" % (len(v7.get("netlist", {}).get("net_divergences", [])), len(v7.get("parity", {}).get("conflicts", []))),
+      "- DRC by type (hybrid/baseline): " + (", ".join("%s %d/%d" % (k, v["hibrida"], v["baseline"]) for k, v in sorted(inherited.items())) or "none"), "",
+      "## Contents", "", "| Path | Content |", "|---|---|",
+      "| `gerbers/` | RS-274X (Protel extensions, no X2): F/In1/In2/B.Cu, F/B.Mask, F/B.SilkS, F/B.Paste, Edge.Cuts, job file |",
+      "| `drill/` | Excellon PTH + NPTH (mm, 3:3, suppress leading), map PDF and Gerber X2 |",
+      "| `assembly/` | `BOM_JLC.csv`, `CPL_JLC.csv` (origin = drill/aux origin %.2f,%.2f mm, rotation per JLC table), `CPL_rotation_corrections.csv`, `pos_kicad_both.csv` (raw KiCad) |" % tuple(out["assembly"]["aux_origin_mm"]),
+      "| `pdf/` | schematic, copper per layer, fab/assembly top and bottom |",
+      "| `3d/HybridPanda.step` | 3D model (missing models substituted) |",
+      "| `drill_table.md` / `.json` | %d holes (%s); min drill %.3f mm; min annular ring %s |" % (len(holes), ", ".join("%s %d" % kv for kv in out["drill"]["by_kind"].items()), min_drill, ", ".join("%s %.3f" % kv for kv in min_ring.items())),
+      "| `gerber_check.json` | syntactic check; Excellon holes vs PCB: %d vs %d |" % (exc_hits, len(holes)),
+      "| `HybridPanda_gerbers_JLC.zip` | gerbers + drill for upload, ONLY after the blockers above are removed |", "",
+      "Intended specification: 4 layers, 1.59 mm, FR-4 (er ~4.5 assumed; JLC7628 used for the impedance estimate), copper 1 oz outer / 0.5 oz",
+      "inner, min track/space 0.127/0.1 mm, via 0.4/0.3 mm, min hole %.2f mm, ENIG recommended" % out["drill"]["rule_min_drill_mm"],
+      "(QFN/LQFP 0.5 mm pitch), green mask, HASL not recommended.", "",
+      "Generation problems: " + ("none" if not out["problems"] else "; ".join(out["problems"])) + ". Notes: " + ("none" if not out["notes"] else "; ".join(out["notes"])) + ".", "",
+      "---", "",
+      "pt-BR: **NAO FABRICAR.** Pacote gerado automaticamente para arquivo e revisao; nenhuma placa foi construida e",
+      "falta verificacao fisica e revisao humana. Os itens marcados \"addressed by software, not physically verified\"",
+      "(impedancia com stackup JLC7628, par USB acoplado, limpeza do DRC herdado, rotacao do CPL) foram alterados apenas",
+      "em software no passe de %s; os restantes (zero placas, BOM com codigos LCSC nao confirmados, gerbers sem revisao" % out["date"][:10],
+      "visual, firmware nunca executado) continuam abertos."]
 open(os.path.join(FAB, "readme.md"), "w", encoding="utf-8").write("\n".join(R) + "\n")
 out["readme_blocks"] = blocks
 out["files"] = {d: sorted(os.listdir(os.path.join(FAB, d))) for d in ("gerbers", "drill", "assembly", "pdf", "3d")}

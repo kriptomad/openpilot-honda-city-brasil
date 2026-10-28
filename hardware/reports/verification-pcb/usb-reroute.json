@@ -1,0 +1,297 @@
+{
+ "date": "2026-10-28 16:41:10",
+ "log": [
+  "removed 38 tracks and 9 vias",
+  "R20/R21 rotated: {\"R20\": {\"before\": {\"pos\": \"114.250,43.150\", \"rot\": 180.0}, \"after\": {\"pos\": \"113.690,43.950\", \"rot\": 90.0, \"pads\": {\"USB_D-\": \"113.690,44.460\", \"USB_R_D-\": \"113.690,43.440\"}}}, \"R21\": {\"before\": {\"pos\": \"114.250,44.250\", \"rot\": 0.0}, \"after\": {\"pos\": \"114.750,43.950\", \"rot\": -90.0, \"pads\": {\"USB_R_D+\": \"114.750,43.440\", \"USB_D+\": \"114.750,44.460\"}}}}",
+  "F.Cu D+ loop at y=38.40; copper length D+ 26.403 mm, D- 26.668 mm, skew -0.265 mm",
+  "added 40 segments and 3 vias",
+  "unconnected after fill: 0"
+ ],
+ "removed": {
+  "tracks": 38,
+  "vias": 9,
+  "detail": [
+   "GND PCB_TRACK 114.585,43.900->115.370,42.665",
+   "GND PCB_VIA 115.370,42.665",
+   "GND PCB_VIA 116.280,42.750",
+   "GND PCB_VIA 117.618,42.204",
+   "GND PCB_TRACK 117.400,42.858->117.618,42.204",
+   "GND PCB_TRACK 116.280,43.520->116.280,42.750",
+   "USB_PWR PCB_TRACK 128.850,42.337->128.850,43.547",
+   "USB_PWR PCB_VIA 128.850,43.547",
+   "USB_PWR PCB_VIA 129.780,46.500",
+   "USB_PWR PCB_TRACK 128.850,43.547->129.780,44.477",
+   "USB_PWR PCB_TRACK 129.780,44.477->129.780,46.500",
+   "USB_R_D- PCB_TRACK 129.800,40.062->130.200,40.062",
+   "USB_R_D- PCB_TRACK 130.200,40.062->130.750,40.612",
+   "USB_R_D- PCB_TRACK 129.800,44.100->129.800,42.337",
+   "USB_R_D- PCB_TRACK 129.800,40.062->129.800,42.337",
+   "USB_R_D- PCB_TRACK 128.800,45.100->129.800,44.100",
+   "USB_R_D- PCB_VIA 128.800,45.100",
+   "USB_R_D- PCB_VIA 113.635,42.750",
+   "USB_R_D- PCB_TRACK 113.740,43.150->113.635,42.750",
+   "USB_R_D- PCB_TRACK 117.750,45.100->128.800,45.100",
+   "USB_R_D- PCB_TRACK 114.500,45.100->116.250,45.100",
+   "USB_R_D- PCB_TRACK 113.635,42.750->114.200,43.315",
+   "USB_R_D- PCB_TRACK 114.200,44.800->114.500,45.100",
+   "USB_R_D- PCB_TRACK 116.400,45.250->117.600,45.250",
+   "USB_R_D- PCB_TRACK 114.200,43.315->114.200,44.800",
+   "USB_R_D- PCB_TRACK 117.600,45.250->117.750,45.100",
+   "USB_R_D- PCB_TRACK 116.250,45.100->116.400,45.250",
+   "USB_R_D+ PCB_TRACK 127.900,45.650->127.900,45.650",
+   "USB_R_D+ PCB_TRACK 127.900,40.062->127.900,42.337",
+   "USB_R_D+ PCB_TRACK 127.900,40.062->127.900,38.400",
+   "USB_R_D+ PCB_TRACK 127.900,38.400->130.900,38.400",
+   "USB_R_D+ PCB_TRACK 127.900,45.650->127.900,42.337",
+   "USB_R_D+ PCB_VIA 113.635,44.780",
+   "USB_R_D+ PCB_VIA 127.900,45.650",
+   "USB_R_D+ PCB_TRACK 113.740,44.250->113.635,44.780",
+   "USB_R_D+ PCB_TRACK 113.635,45.600->116.250,45.600",
+   "USB_R_D+ PCB_TRACK 116.400,45.750->117.600,45.750",
+   "USB_R_D+ PCB_TRACK 127.850,45.600->127.900,45.650",
+   "USB_R_D+ PCB_TRACK 117.600,45.750->117.750,45.600",
+   "USB_R_D+ PCB_TRACK 113.635,44.780->113.635,45.600",
+   "USB_R_D+ PCB_TRACK 117.750,45.600->127.850,45.600",
+   "USB_R_D+ PCB_TRACK 116.250,45.600->116.400,45.750",
+   "USB_D- PCB_TRACK 114.250,45.938->114.250,43.150",
+   "USB_D- PCB_TRACK 114.250,43.150->114.760,43.150",
+   "USB_D+ PCB_TRACK 114.750,45.938->114.750,44.250",
+   "SWDIO PCB_TRACK 115.560,43.420->115.250,43.761",
+   "SWDIO PCB_TRACK 115.250,43.761->115.250,45.938"
+  ]
+ },
+ "moved": {
+  "R20": {
+   "before": {
+    "pos": "114.250,43.150",
+    "rot": 180.0
+   },
+   "after": {
+    "pos": "113.690,43.950",
+    "rot": 90.0,
+    "pads": {
+     "USB_D-": "113.690,44.460",
+     "USB_R_D-": "113.690,43.440"
+    }
+   }
+  },
+  "R21": {
+   "before": {
+    "pos": "114.250,44.250",
+    "rot": 0.0
+   },
+   "after": {
+    "pos": "114.750,43.950",
+    "rot": -90.0,
+    "pads": {
+     "USB_R_D+": "114.750,43.440",
+     "USB_D+": "114.750,44.460"
+    }
+   }
+  }
+ },
+ "netclass_usb": {
+  "before": {
+   "track_width": 0.2,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25
+  },
+  "after": {
+   "track_width": 0.35,
+   "diff_pair_width": 0.35,
+   "diff_pair_gap": 0.15
+  }
+ },
+ "lengths_mm": {
+  "D+": 26.403,
+  "D-": 26.668,
+  "skew": -0.265
+ },
+ "loop_y": 38.4,
+ "before": {
+  "USB_D+": {
+   "segments": 1,
+   "vias": [],
+   "length_mm": 1.688,
+   "by_layer_mm": {
+    "B.Cu": 1.688
+   },
+   "widths": [
+    0.2
+   ]
+  },
+  "USB_D-": {
+   "segments": 2,
+   "vias": [],
+   "length_mm": 3.298,
+   "by_layer_mm": {
+    "B.Cu": 3.298
+   },
+   "widths": [
+    0.2
+   ]
+  },
+  "USB_R_D+": {
+   "segments": 13,
+   "vias": [
+    "113.635,44.780",
+    "127.900,45.650"
+   ],
+   "length_mm": 26.02,
+   "by_layer_mm": {
+    "F.Cu": 10.25,
+    "B.Cu": 0.54,
+    "In1.Cu": 15.23
+   },
+   "widths": [
+    0.2
+   ]
+  },
+  "USB_R_D-": {
+   "segments": 14,
+   "vias": [
+    "128.800,45.100",
+    "113.635,42.750"
+   ],
+   "length_mm": 24.176,
+   "by_layer_mm": {
+    "F.Cu": 6.63,
+    "B.Cu": 0.414,
+    "In1.Cu": 17.133
+   },
+   "widths": [
+    0.2
+   ]
+  },
+  "USB_PWR": {
+   "segments": 19,
+   "vias": [
+    "128.850,43.547",
+    "129.780,46.500"
+   ],
+   "length_mm": 31.073,
+   "by_layer_mm": {
+    "F.Cu": 27.735,
+    "B.Cu": 3.338
+   },
+   "widths": [
+    0.2,
+    0.3,
+    0.5,
+    0.6,
+    0.8,
+    1.0
+   ]
+  },
+  "SWDIO": {
+   "segments": 14,
+   "vias": [
+    "115.560,43.420",
+    "100.120,42.936"
+   ],
+   "length_mm": 22.786,
+   "by_layer_mm": {
+    "B.Cu": 6.546,
+    "In2.Cu": 16.241
+   },
+   "widths": [
+    0.2
+   ]
+  }
+ },
+ "after": {
+  "USB_D+": {
+   "segments": 1,
+   "vias": [],
+   "length_mm": 1.478,
+   "by_layer_mm": {
+    "B.Cu": 1.478
+   },
+   "widths": [
+    0.2
+   ]
+  },
+  "USB_D-": {
+   "segments": 3,
+   "vias": [],
+   "length_mm": 1.71,
+   "by_layer_mm": {
+    "B.Cu": 1.71
+   },
+   "widths": [
+    0.2
+   ]
+  },
+  "USB_R_D+": {
+   "segments": 14,
+   "vias": [
+    "127.900,43.600"
+   ],
+   "length_mm": 24.925,
+   "by_layer_mm": {
+    "F.Cu": 9.507,
+    "B.Cu": 15.418
+   },
+   "widths": [
+    0.2,
+    0.35
+   ]
+  },
+  "USB_R_D-": {
+   "segments": 14,
+   "vias": [
+    "129.800,43.600"
+   ],
+   "length_mm": 24.958,
+   "by_layer_mm": {
+    "F.Cu": 6.085,
+    "B.Cu": 18.873
+   },
+   "widths": [
+    0.2,
+    0.35
+   ]
+  },
+  "USB_PWR": {
+   "segments": 18,
+   "vias": [],
+   "length_mm": 30.123,
+   "by_layer_mm": {
+    "F.Cu": 30.123
+   },
+   "widths": [
+    0.2,
+    0.3,
+    0.5,
+    0.6,
+    0.8,
+    1.0
+   ]
+  },
+  "SWDIO": {
+   "segments": 16,
+   "vias": [
+    "115.560,43.420",
+    "100.120,42.936"
+   ],
+   "length_mm": 22.795,
+   "by_layer_mm": {
+    "B.Cu": 6.554,
+    "In2.Cu": 16.241
+   },
+   "widths": [
+    0.2
+   ]
+  }
+ },
+ "drc_counts": {
+  "hole_clearance": 8,
+  "silk_edge_clearance": 4,
+  "lib_footprint_mismatch": 73,
+  "text_height": 45,
+  "silk_overlap": 4,
+  "silk_over_copper": 1
+ },
+ "drc_unconnected": 0,
+ "drc_items_on_usb_nets": []
+}

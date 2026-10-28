@@ -1,0 +1,11609 @@
+{
+ "C1": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C10": {
+  "lib": "Capacitor_SMD:C_0805_2012Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+  ]
+ },
+ "C11": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C12": {
+  "lib": "Capacitor_SMD:C_0805_2012Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+  ]
+ },
+ "C14": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C16": {
+  "lib": "Capacitor_SMD:C_0805_2012Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+  ]
+ },
+ "C17": {
+  "lib": "Capacitor_SMD:C_0805_2012Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+  ]
+ },
+ "C18": {
+  "lib": "Capacitor_SMD:C_0805_2012Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+  ]
+ },
+ "C19": {
+  "lib": "Capacitor_SMD:C_0805_2012Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+  ]
+ },
+ "C2": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C20": {
+  "lib": "Capacitor_SMD:C_0805_2012Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+  ]
+ },
+ "C21": {
+  "lib": "Capacitor_SMD:C_0805_2012Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+  ]
+ },
+ "C23": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C24": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C26": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C27": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C28": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C29": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C3": {
+  "lib": "Capacitor_SMD:C_0805_2012Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+  ]
+ },
+ "C30": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C31": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C32": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C33": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C34": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C37": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C38": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C39": {
+  "lib": "Capacitor_SMD:C_0603_1608Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.775,
+     "y": 0.0,
+     "sx": 0.9,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.775,
+     "y": 0.0,
+     "sx": 0.9,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+  ]
+ },
+ "C4": {
+  "lib": "Capacitor_SMD:C_0805_2012Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+  ]
+ },
+ "C40": {
+  "lib": "Capacitor_SMD:C_0603_1608Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.775,
+     "y": 0.0,
+     "sx": 0.9,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.775,
+     "y": 0.0,
+     "sx": 0.9,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+  ]
+ },
+ "C41": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C42": {
+  "lib": "Capacitor_SMD:C_0805_2012Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+  ]
+ },
+ "C43": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C44": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C45": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C46": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C47": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C48": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C49": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C5": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C50": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C51": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C52": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C53": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C54": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C55": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C56": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C57": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C58": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C59": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C6": {
+  "lib": "Capacitor_SMD:C_0805_2012Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+  ]
+ },
+ "C60": {
+  "lib": "Capacitor_SMD:C_0603_1608Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.775,
+     "y": 0.0,
+     "sx": 0.9,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.775,
+     "y": 0.0,
+     "sx": 0.9,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+  ]
+ },
+ "C61": {
+  "lib": "Capacitor_SMD:C_0603_1608Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.775,
+     "y": 0.0,
+     "sx": 0.9,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.775,
+     "y": 0.0,
+     "sx": 0.9,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+  ]
+ },
+ "C62": {
+  "lib": "Capacitor_SMD:C_0603_1608Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.775,
+     "y": 0.0,
+     "sx": 0.9,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.775,
+     "y": 0.0,
+     "sx": 0.9,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+  ]
+ },
+ "C63": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C64": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "C65": {
+  "lib": "Capacitor_SMD:C_0603_1608Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.775,
+     "y": 0.0,
+     "sx": 0.9,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.775,
+     "y": 0.0,
+     "sx": 0.9,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+  ]
+ },
+ "C7": {
+  "lib": "Capacitor_SMD:C_0805_2012Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.95,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+  ]
+ },
+ "C8": {
+  "lib": "Capacitor_SMD:C_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.48,
+     "y": 0.0,
+     "sx": 0.56,
+     "sy": 0.62,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  ]
+ },
+ "D1": {
+  "lib": "BlackPanda:DIOM4325X250N",
+  "pads_board": {
+   "1": [
+    {
+     "x": -2.115,
+     "y": 0.0,
+     "sx": 2.12,
+     "sy": 1.5,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 2.115,
+     "y": 0.0,
+     "sx": 2.12,
+     "sy": 1.5,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [],
+  "orig_blackpanda_diff": [
+   "'NoneType' object has no attribute 'FootprintLoad'"
+  ],
+  "candidates": {
+   "Diode_SMD/D_SMA": {
+    "best": {
+     "rot": 0,
+     "mirror": false,
+     "rms": 0.115,
+     "n": 2
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -2.0,
+       0.0,
+       2.5,
+       1.8
+      ]
+     ],
+     "2": [
+      [
+       2.0,
+       0.0,
+       2.5,
+       1.8
+      ]
+     ]
+    }
+   },
+   "Diode_SMD/D_SMA_Handsoldering": {
+    "best": {
+     "rot": 180,
+     "mirror": true,
+     "rms": 0.385,
+     "n": 2
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -2.5,
+       0.0,
+       3.5,
+       1.8
+      ]
+     ],
+     "2": [
+      [
+       2.5,
+       0.0,
+       3.5,
+       1.8
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "D10": {
+  "lib": "Diode_SMD:D_SOD-123F",
+  "pads_board": {
+   "1": [
+    {
+     "x": -1.4,
+     "y": 0.0,
+     "sx": 1.1,
+     "sy": 1.1,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 1.4,
+     "y": 0.0,
+     "sx": 1.1,
+     "sy": 1.1,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step"
+  ]
+ },
+ "D11": {
+  "lib": "Diode_SMD:D_SMA",
+  "pads_board": {
+   "1": [
+    {
+     "x": -2.0,
+     "y": 0.0,
+     "sx": 2.5,
+     "sy": 1.8,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 2.0,
+     "y": 0.0,
+     "sx": 2.5,
+     "sy": 1.8,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step"
+  ]
+ },
+ "D12": {
+  "lib": "Diode_SMD:D_SMC",
+  "pads_board": {
+   "1": [
+    {
+     "x": -3.4,
+     "y": 0.0,
+     "sx": 3.3,
+     "sy": 2.5,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 3.4,
+     "y": 0.0,
+     "sx": 3.3,
+     "sy": 2.5,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMC.step"
+  ]
+ },
+ "D13": {
+  "lib": "Package_TO_SOT_SMD:SOT-23",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.9375,
+     "y": -0.95,
+     "sx": 1.475,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -0.9375,
+     "y": 0.95,
+     "sx": 1.475,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": 0.9375,
+     "y": 0.0,
+     "sx": 1.475,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+  ]
+ },
+ "D14": {
+  "lib": "Package_TO_SOT_SMD:SOT-23",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.9375,
+     "y": -0.95,
+     "sx": 1.475,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -0.9375,
+     "y": 0.95,
+     "sx": 1.475,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": 0.9375,
+     "y": 0.0,
+     "sx": 1.475,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+  ]
+ },
+ "D15": {
+  "lib": "Diode_SMD:D_SOD-123",
+  "pads_board": {
+   "1": [
+    {
+     "x": -1.65,
+     "y": 0.0,
+     "sx": 0.9,
+     "sy": 1.2,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 1.65,
+     "y": 0.0,
+     "sx": 0.9,
+     "sy": 1.2,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+  ]
+ },
+ "D2": {
+  "lib": "Diode_SMD:D_SOD-323",
+  "pads_board": {
+   "1": [
+    {
+     "x": -1.05,
+     "y": 0.0,
+     "sx": 0.6,
+     "sy": 0.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 1.05,
+     "y": 0.0,
+     "sx": 0.6,
+     "sy": 0.45,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
+  ]
+ },
+ "D5": {
+  "lib": "BlackPanda:SOT95P230X110-3N",
+  "pads_board": {
+   "1": [
+    {
+     "x": -1.15,
+     "y": -0.95,
+     "sx": 1.0,
+     "sy": 0.6,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -1.15,
+     "y": 0.95,
+     "sx": 1.0,
+     "sy": 0.6,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": 1.15,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 0.6,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [],
+  "orig_blackpanda_diff": [
+   "'NoneType' object has no attribute 'FootprintLoad'"
+  ],
+  "candidates": {
+   "Package_TO_SOT_SMD/SOT-23": {
+    "best": {
+     "rot": 0,
+     "mirror": false,
+     "rms": 0.212,
+     "n": 3
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -0.9375,
+       -0.95,
+       1.475,
+       0.6
+      ]
+     ],
+     "2": [
+      [
+       -0.9375,
+       0.95,
+       1.475,
+       0.6
+      ]
+     ],
+     "3": [
+      [
+       0.9375,
+       0.0,
+       1.475,
+       0.6
+      ]
+     ]
+    }
+   },
+   "Package_TO_SOT_SMD/SOT-23_Handsoldering": {
+    "best": {
+     "rot": 0,
+     "mirror": false,
+     "rms": 0.35,
+     "n": 3
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -1.5,
+       -0.95,
+       1.9,
+       0.8
+      ]
+     ],
+     "2": [
+      [
+       -1.5,
+       0.95,
+       1.9,
+       0.8
+      ]
+     ],
+     "3": [
+      [
+       1.5,
+       0.0,
+       1.9,
+       0.8
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "D6": {
+  "lib": "BlackPanda:SOT95P230X110-3N",
+  "pads_board": {
+   "1": [
+    {
+     "x": -1.15,
+     "y": -0.95,
+     "sx": 1.0,
+     "sy": 0.6,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -1.15,
+     "y": 0.95,
+     "sx": 1.0,
+     "sy": 0.6,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": 1.15,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 0.6,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [],
+  "orig_blackpanda_diff": [
+   "'NoneType' object has no attribute 'FootprintLoad'"
+  ],
+  "candidates": {
+   "Package_TO_SOT_SMD/SOT-23": {
+    "best": {
+     "rot": 0,
+     "mirror": false,
+     "rms": 0.212,
+     "n": 3
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -0.9375,
+       -0.95,
+       1.475,
+       0.6
+      ]
+     ],
+     "2": [
+      [
+       -0.9375,
+       0.95,
+       1.475,
+       0.6
+      ]
+     ],
+     "3": [
+      [
+       0.9375,
+       0.0,
+       1.475,
+       0.6
+      ]
+     ]
+    }
+   },
+   "Package_TO_SOT_SMD/SOT-23_Handsoldering": {
+    "best": {
+     "rot": 0,
+     "mirror": false,
+     "rms": 0.35,
+     "n": 3
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -1.5,
+       -0.95,
+       1.9,
+       0.8
+      ]
+     ],
+     "2": [
+      [
+       -1.5,
+       0.95,
+       1.9,
+       0.8
+      ]
+     ],
+     "3": [
+      [
+       1.5,
+       0.0,
+       1.9,
+       0.8
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "D7": {
+  "lib": "BlackPanda:SOT95P230X110-3N",
+  "pads_board": {
+   "1": [
+    {
+     "x": -1.15,
+     "y": -0.95,
+     "sx": 1.0,
+     "sy": 0.6,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -1.15,
+     "y": 0.95,
+     "sx": 1.0,
+     "sy": 0.6,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": 1.15,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 0.6,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [],
+  "orig_blackpanda_diff": [
+   "'NoneType' object has no attribute 'FootprintLoad'"
+  ],
+  "candidates": {
+   "Package_TO_SOT_SMD/SOT-23": {
+    "best": {
+     "rot": 0,
+     "mirror": false,
+     "rms": 0.212,
+     "n": 3
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -0.9375,
+       -0.95,
+       1.475,
+       0.6
+      ]
+     ],
+     "2": [
+      [
+       -0.9375,
+       0.95,
+       1.475,
+       0.6
+      ]
+     ],
+     "3": [
+      [
+       0.9375,
+       0.0,
+       1.475,
+       0.6
+      ]
+     ]
+    }
+   },
+   "Package_TO_SOT_SMD/SOT-23_Handsoldering": {
+    "best": {
+     "rot": 0,
+     "mirror": false,
+     "rms": 0.35,
+     "n": 3
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -1.5,
+       -0.95,
+       1.9,
+       0.8
+      ]
+     ],
+     "2": [
+      [
+       -1.5,
+       0.95,
+       1.9,
+       0.8
+      ]
+     ],
+     "3": [
+      [
+       1.5,
+       0.0,
+       1.9,
+       0.8
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "D8": {
+  "lib": "BlackPanda:SOT95P230X110-3N",
+  "pads_board": {
+   "1": [
+    {
+     "x": -1.15,
+     "y": -0.95,
+     "sx": 1.0,
+     "sy": 0.6,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -1.15,
+     "y": 0.95,
+     "sx": 1.0,
+     "sy": 0.6,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": 1.15,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 0.6,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [],
+  "orig_blackpanda_diff": [
+   "'NoneType' object has no attribute 'FootprintLoad'"
+  ],
+  "candidates": {
+   "Package_TO_SOT_SMD/SOT-23": {
+    "best": {
+     "rot": 0,
+     "mirror": false,
+     "rms": 0.212,
+     "n": 3
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -0.9375,
+       -0.95,
+       1.475,
+       0.6
+      ]
+     ],
+     "2": [
+      [
+       -0.9375,
+       0.95,
+       1.475,
+       0.6
+      ]
+     ],
+     "3": [
+      [
+       0.9375,
+       0.0,
+       1.475,
+       0.6
+      ]
+     ]
+    }
+   },
+   "Package_TO_SOT_SMD/SOT-23_Handsoldering": {
+    "best": {
+     "rot": 0,
+     "mirror": false,
+     "rms": 0.35,
+     "n": 3
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -1.5,
+       -0.95,
+       1.9,
+       0.8
+      ]
+     ],
+     "2": [
+      [
+       -1.5,
+       0.95,
+       1.9,
+       0.8
+      ]
+     ],
+     "3": [
+      [
+       1.5,
+       0.0,
+       1.9,
+       0.8
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "D9": {
+  "lib": "BlackPanda:SOT95P230X110-3N",
+  "pads_board": {
+   "1": [
+    {
+     "x": -1.15,
+     "y": -0.95,
+     "sx": 1.0,
+     "sy": 0.6,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -1.15,
+     "y": 0.95,
+     "sx": 1.0,
+     "sy": 0.6,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": 1.15,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 0.6,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [],
+  "orig_blackpanda_diff": [
+   "'NoneType' object has no attribute 'FootprintLoad'"
+  ],
+  "candidates": {
+   "Package_TO_SOT_SMD/SOT-23": {
+    "best": {
+     "rot": 0,
+     "mirror": false,
+     "rms": 0.212,
+     "n": 3
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -0.9375,
+       -0.95,
+       1.475,
+       0.6
+      ]
+     ],
+     "2": [
+      [
+       -0.9375,
+       0.95,
+       1.475,
+       0.6
+      ]
+     ],
+     "3": [
+      [
+       0.9375,
+       0.0,
+       1.475,
+       0.6
+      ]
+     ]
+    }
+   },
+   "Package_TO_SOT_SMD/SOT-23_Handsoldering": {
+    "best": {
+     "rot": 0,
+     "mirror": false,
+     "rms": 0.35,
+     "n": 3
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -1.5,
+       -0.95,
+       1.9,
+       0.8
+      ]
+     ],
+     "2": [
+      [
+       -1.5,
+       0.95,
+       1.9,
+       0.8
+      ]
+     ],
+     "3": [
+      [
+       1.5,
+       0.0,
+       1.9,
+       0.8
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "FB1": {
+  "lib": "Inductor_SMD:L_0603_1608Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.7875,
+     "y": 0.0,
+     "sx": 0.875,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.7875,
+     "y": 0.0,
+     "sx": 0.875,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+  ]
+ },
+ "FID1": {
+  "lib": "Fiducial:Fiducial_1mm_Mask2mm",
+  "pads_board": {
+   "": [
+    {
+     "x": 0.0,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.0,
+     "shape": 0,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": []
+ },
+ "FID2": {
+  "lib": "Fiducial:Fiducial_1mm_Mask2mm",
+  "pads_board": {
+   "": [
+    {
+     "x": 0.0,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.0,
+     "shape": 0,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": []
+ },
+ "FID3": {
+  "lib": "Fiducial:Fiducial_1mm_Mask2mm",
+  "pads_board": {
+   "": [
+    {
+     "x": 0.0,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.0,
+     "shape": 0,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": []
+ },
+ "FID4": {
+  "lib": "Fiducial:Fiducial_1mm_Mask2mm",
+  "pads_board": {
+   "": [
+    {
+     "x": 0.0,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.0,
+     "shape": 0,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": []
+ },
+ "FID5": {
+  "lib": "Fiducial:Fiducial_1mm_Mask2mm",
+  "pads_board": {
+   "": [
+    {
+     "x": 0.0,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.0,
+     "shape": 0,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": []
+ },
+ "FID6": {
+  "lib": "Fiducial:Fiducial_1mm_Mask2mm",
+  "pads_board": {
+   "": [
+    {
+     "x": 0.0,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.0,
+     "shape": 0,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": []
+ },
+ "J1": {
+  "lib": "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD",
+  "pads_board": {
+   "1": [
+    {
+     "x": -1.95,
+     "y": -2.54,
+     "sx": 2.4,
+     "sy": 0.74,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 1.95,
+     "y": -2.54,
+     "sx": 2.4,
+     "sy": 0.74,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": -1.95,
+     "y": -1.27,
+     "sx": 2.4,
+     "sy": 0.74,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "4": [
+    {
+     "x": 1.95,
+     "y": -1.27,
+     "sx": 2.4,
+     "sy": 0.74,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "5": [
+    {
+     "x": -1.95,
+     "y": 0.0,
+     "sx": 2.4,
+     "sy": 0.74,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "6": [
+    {
+     "x": 1.95,
+     "y": 0.0,
+     "sx": 2.4,
+     "sy": 0.74,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "7": [
+    {
+     "x": -1.95,
+     "y": 1.27,
+     "sx": 2.4,
+     "sy": 0.74,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "8": [
+    {
+     "x": 1.95,
+     "y": 1.27,
+     "sx": 2.4,
+     "sy": 0.74,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "9": [
+    {
+     "x": -1.95,
+     "y": 2.54,
+     "sx": 2.4,
+     "sy": 0.74,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "10": [
+    {
+     "x": 1.95,
+     "y": 2.54,
+     "sx": 2.4,
+     "sy": 0.74,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_1.27mm.3dshapes/PinHeader_2x05_P1.27mm_Vertical_SMD.step"
+  ]
+ },
+ "JP1": {
+  "lib": "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.65,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.5,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.65,
+     "y": 0.0,
+     "sx": 1.0,
+     "sy": 1.5,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": []
+ },
+ "L3": {
+  "lib": "BlackPanda:IND-SMD_L7.3-W6.8",
+  "pads_board": {
+   "1": [
+    {
+     "x": -3.0,
+     "y": 0.0,
+     "sx": 2.35,
+     "sy": 3.5,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 3.0,
+     "y": 0.0,
+     "sx": 2.35,
+     "sy": 3.5,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KIPRJMOD}/Uno.3d/IND-SMD_L7.3-W6.8.wrl"
+  ],
+  "orig_blackpanda_diff": [
+   "'NoneType' object has no attribute 'FootprintLoad'"
+  ],
+  "candidates": {
+   "Inductor_SMD/L_Bourns-SRN6045": "NOT FOUND",
+   "Inductor_SMD/L_Bourns_SRN6045TA": {
+    "best": {
+     "rot": 180,
+     "mirror": true,
+     "rms": 0.925,
+     "n": 2
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -2.075,
+       0.0,
+       2.35,
+       5.1
+      ]
+     ],
+     "2": [
+      [
+       2.075,
+       0.0,
+       2.35,
+       5.1
+      ]
+     ]
+    }
+   },
+   "Inductor_SMD/L_Bourns-SRU8028_8.0x8.0mm": {
+    "best": {
+     "rot": 180,
+     "mirror": true,
+     "rms": 0.9,
+     "n": 2
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -3.9,
+       0.0,
+       2.0,
+       3.2
+      ]
+     ],
+     "2": [
+      [
+       3.9,
+       0.0,
+       2.0,
+       3.2
+      ]
+     ]
+    }
+   },
+   "Inductor_SMD/L_Taiyo-Yuden_NR-60xx": {
+    "best": {
+     "rot": 180,
+     "mirror": true,
+     "rms": 0.65,
+     "n": 2
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -2.35,
+       0.0,
+       1.6,
+       5.7
+      ]
+     ],
+     "2": [
+      [
+       2.35,
+       0.0,
+       1.6,
+       5.7
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "L4": {
+  "lib": "BlackPanda:L_10.5x11.5_H4.0",
+  "pads_board": {
+   "1": [
+    {
+     "x": -4.75,
+     "y": 0.0,
+     "sx": 3.5,
+     "sy": 4.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 4.75,
+     "y": 0.0,
+     "sx": 3.5,
+     "sy": 4.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_10.4x10.4_H4.8.wrl"
+  ],
+  "orig_blackpanda_diff": [
+   "'NoneType' object has no attribute 'FootprintLoad'"
+  ],
+  "candidates": {
+   "Inductor_SMD/L_Wuerth_WE-PD-Typ-LS_10x11": "NOT FOUND",
+   "Inductor_SMD/L_Bourns-SRR1210A": "NOT FOUND",
+   "Inductor_SMD/L_Coilcraft_XAL1010": "NOT FOUND"
+  }
+ },
+ "L5": {
+  "lib": "Inductor_SMD:L_Murata_DFE201610P",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.725,
+     "y": 0.0,
+     "sx": 0.55,
+     "sy": 1.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.725,
+     "y": 0.0,
+     "sx": 0.55,
+     "sy": 1.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Murata_DFE201610P.step"
+  ]
+ },
+ "P1": {
+  "lib": "BlackPanda:USB-C-SMD_TYPE-C-USB-20",
+  "pads_board": {
+   "": [
+    {
+     "x": -3.6749,
+     "y": -2.545,
+     "sx": 0.8,
+     "sy": 0.8,
+     "shape": 0,
+     "attr": 3,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.8
+    },
+    {
+     "x": 3.6751,
+     "y": -2.545,
+     "sx": 0.8,
+     "sy": 0.8,
+     "shape": 0,
+     "attr": 3,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.8
+    }
+   ],
+   "0": [
+    {
+     "x": -4.49,
+     "y": 3.105,
+     "sx": 1.0,
+     "sy": 1.6,
+     "shape": 2,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.6
+    },
+    {
+     "x": -4.13,
+     "y": -1.3049,
+     "sx": 1.0,
+     "sy": 1.6,
+     "shape": 2,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.6
+    },
+    {
+     "x": 4.13,
+     "y": -1.3049,
+     "sx": 1.0,
+     "sy": 1.6,
+     "shape": 2,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.6
+    },
+    {
+     "x": 4.49,
+     "y": 3.105,
+     "sx": 1.0,
+     "sy": 1.6,
+     "shape": 2,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.6
+    }
+   ],
+   "A1": [
+    {
+     "x": -2.7503,
+     "y": -3.105,
+     "sx": 0.3,
+     "sy": 0.9,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "A2": [
+    {
+     "x": -2.2502,
+     "y": -3.105,
+     "sx": 0.3,
+     "sy": 0.9,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "A3": [
+    {
+     "x": -1.7501,
+     "y": -3.105,
+     "sx": 0.3,
+     "sy": 0.9,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "A4": [
+    {
+     "x": -1.2502,
+     "y": -3.105,
+     "sx": 0.3,
+     "sy": 0.9,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "A5": [
+    {
+     "x": -0.7501,
+     "y": -3.105,
+     "sx": 0.3,
+     "sy": 0.9,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "A6": [
+    {
+     "x": -0.2502,
+     "y": -3.105,
+     "sx": 0.3,
+     "sy": 0.9,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "A7": [
+    {
+     "x": 0.2499,
+     "y": -3.105,
+     "sx": 0.3,
+     "sy": 0.9,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "A8": [
+    {
+     "x": 0.7498,
+     "y": -3.105,
+     "sx": 0.3,
+     "sy": 0.9,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "A9": [
+    {
+     "x": 1.2499,
+     "y": -3.105,
+     "sx": 0.3,
+     "sy": 0.9,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "A10": [
+    {
+     "x": 1.7498,
+     "y": -3.105,
+     "sx": 0.3,
+     "sy": 0.9,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "A11": [
+    {
+     "x": 2.2499,
+     "y": -3.105,
+     "sx": 0.3,
+     "sy": 0.9,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "A12": [
+    {
+     "x": 2.7498,
+     "y": -3.105,
+     "sx": 0.3,
+     "sy": 0.9,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "B1": [
+    {
+     "x": 2.8001,
+     "y": -1.895,
+     "sx": 0.65,
+     "sy": 0.65,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.4
+    }
+   ],
+   "B2": [
+    {
+     "x": 2.4001,
+     "y": -1.1949,
+     "sx": 0.65,
+     "sy": 0.65,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.4
+    }
+   ],
+   "B3": [
+    {
+     "x": 1.5999,
+     "y": -1.1949,
+     "sx": 0.65,
+     "sy": 0.65,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.4
+    }
+   ],
+   "B4": [
+    {
+     "x": 1.2002,
+     "y": -1.895,
+     "sx": 0.65,
+     "sy": 0.65,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.4
+    }
+   ],
+   "B5": [
+    {
+     "x": 0.8001,
+     "y": -1.1949,
+     "sx": 0.65,
+     "sy": 0.65,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.4
+    }
+   ],
+   "B6": [
+    {
+     "x": 0.4001,
+     "y": -1.895,
+     "sx": 0.65,
+     "sy": 0.65,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.4
+    }
+   ],
+   "B7": [
+    {
+     "x": -0.4001,
+     "y": -1.895,
+     "sx": 0.65,
+     "sy": 0.65,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.4
+    }
+   ],
+   "B8": [
+    {
+     "x": -0.7998,
+     "y": -1.1949,
+     "sx": 0.65,
+     "sy": 0.65,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.4
+    }
+   ],
+   "B9": [
+    {
+     "x": -1.1999,
+     "y": -1.895,
+     "sx": 0.65,
+     "sy": 0.65,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.4
+    }
+   ],
+   "B10": [
+    {
+     "x": -1.5999,
+     "y": -1.1949,
+     "sx": 0.65,
+     "sy": 0.65,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.4
+    }
+   ],
+   "B11": [
+    {
+     "x": -2.4001,
+     "y": -1.1949,
+     "sx": 0.65,
+     "sy": 0.65,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.4
+    }
+   ],
+   "B12": [
+    {
+     "x": -2.7998,
+     "y": -1.895,
+     "sx": 0.65,
+     "sy": 0.65,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.4
+    }
+   ]
+  },
+  "lib_diff": [
+   "pad 'B1'[0] sx: board=0.65 lib=0.6",
+   "pad 'B1'[0] sy: board=0.65 lib=0.6",
+   "pad 'B2'[0] sx: board=0.65 lib=0.6",
+   "pad 'B2'[0] sy: board=0.65 lib=0.6",
+   "pad 'B3'[0] sx: board=0.65 lib=0.6",
+   "pad 'B3'[0] sy: board=0.65 lib=0.6",
+   "pad 'B4'[0] sx: board=0.65 lib=0.6",
+   "pad 'B4'[0] sy: board=0.65 lib=0.6",
+   "pad 'B5'[0] sx: board=0.65 lib=0.6",
+   "pad 'B5'[0] sy: board=0.65 lib=0.6",
+   "pad 'B6'[0] sx: board=0.65 lib=0.6",
+   "pad 'B6'[0] sy: board=0.65 lib=0.6",
+   "pad 'B7'[0] sx: board=0.65 lib=0.6",
+   "pad 'B7'[0] sy: board=0.65 lib=0.6",
+   "pad 'B8'[0] sx: board=0.65 lib=0.6",
+   "pad 'B8'[0] sy: board=0.65 lib=0.6",
+   "pad 'B9'[0] sx: board=0.65 lib=0.6",
+   "pad 'B9'[0] sy: board=0.65 lib=0.6",
+   "pad 'B10'[0] sx: board=0.65 lib=0.6",
+   "pad 'B10'[0] sy: board=0.65 lib=0.6",
+   "pad 'B11'[0] sx: board=0.65 lib=0.6",
+   "pad 'B11'[0] sy: board=0.65 lib=0.6",
+   "pad 'B12'[0] sx: board=0.65 lib=0.6",
+   "pad 'B12'[0] sy: board=0.65 lib=0.6"
+  ],
+  "lib_models": [
+   "${KIPRJMOD}/Uno.3d/USB-C-SMD_TYPE-C-USB-20.wrl"
+  ],
+  "orig_blackpanda_diff": [
+   "'NoneType' object has no attribute 'FootprintLoad'"
+  ],
+  "candidates": {
+   "Connector_USB/USB_C_Receptacle_HRO_TYPE-C-31-M-12": {
+    "best": {
+     "rot": 0,
+     "mirror": false,
+     "rms": 1.945,
+     "n": 16
+    },
+    "cand_pads": {
+     "": [
+      [
+       -2.89,
+       -2.6,
+       0.65,
+       0.65
+      ],
+      [
+       2.89,
+       -2.6,
+       0.65,
+       0.65
+      ]
+     ],
+     "A1": [
+      [
+       -3.25,
+       -4.045,
+       0.6,
+       1.45
+      ]
+     ],
+     "A4": [
+      [
+       -2.45,
+       -4.045,
+       0.6,
+       1.45
+      ]
+     ],
+     "A5": [
+      [
+       -1.25,
+       -4.045,
+       0.3,
+       1.45
+      ]
+     ],
+     "A6": [
+      [
+       -0.25,
+       -4.045,
+       0.3,
+       1.45
+      ]
+     ],
+     "A7": [
+      [
+       0.25,
+       -4.045,
+       0.3,
+       1.45
+      ]
+     ],
+     "A8": [
+      [
+       1.25,
+       -4.045,
+       0.3,
+       1.45
+      ]
+     ],
+     "A9": [
+      [
+       2.45,
+       -4.045,
+       0.6,
+       1.45
+      ]
+     ],
+     "A12": [
+      [
+       3.25,
+       -4.045,
+       0.6,
+       1.45
+      ]
+     ],
+     "B1": [
+      [
+       3.25,
+       -4.045,
+       0.6,
+       1.45
+      ]
+     ],
+     "B4": [
+      [
+       2.45,
+       -4.045,
+       0.6,
+       1.45
+      ]
+     ],
+     "B5": [
+      [
+       1.75,
+       -4.045,
+       0.3,
+       1.45
+      ]
+     ],
+     "B6": [
+      [
+       0.75,
+       -4.045,
+       0.3,
+       1.45
+      ]
+     ],
+     "B7": [
+      [
+       -0.75,
+       -4.045,
+       0.3,
+       1.45
+      ]
+     ],
+     "B8": [
+      [
+       -1.75,
+       -4.045,
+       0.3,
+       1.45
+      ]
+     ],
+     "B9": [
+      [
+       -2.45,
+       -4.045,
+       0.6,
+       1.45
+      ]
+     ],
+     "B12": [
+      [
+       -3.25,
+       -4.045,
+       0.6,
+       1.45
+      ]
+     ],
+     "SH": [
+      [
+       -4.32,
+       -3.13,
+       1.0,
+       2.1
+      ],
+      [
+       -4.32,
+       1.05,
+       1.0,
+       1.6
+      ],
+      [
+       4.32,
+       -3.13,
+       1.0,
+       2.1
+      ],
+      [
+       4.32,
+       1.05,
+       1.0,
+       1.6
+      ]
+     ]
+    }
+   },
+   "Connector_USB/USB_C_Receptacle_XKB_U262-16XN-4BVC11": {
+    "best": {
+     "rot": 0,
+     "mirror": false,
+     "rms": 1.63,
+     "n": 16
+    },
+    "cand_pads": {
+     "": [
+      [
+       -2.89,
+       -2.605,
+       0.65,
+       0.65
+      ],
+      [
+       2.89,
+       -2.605,
+       0.65,
+       0.65
+      ]
+     ],
+     "A1": [
+      [
+       -3.2,
+       -3.67,
+       0.6,
+       1.15
+      ]
+     ],
+     "A4": [
+      [
+       -2.4,
+       -3.67,
+       0.6,
+       1.15
+      ]
+     ],
+     "A5": [
+      [
+       -1.25,
+       -3.67,
+       0.3,
+       1.15
+      ]
+     ],
+     "A6": [
+      [
+       -0.25,
+       -3.67,
+       0.3,
+       1.15
+      ]
+     ],
+     "A7": [
+      [
+       0.25,
+       -3.67,
+       0.3,
+       1.15
+      ]
+     ],
+     "A8": [
+      [
+       1.25,
+       -3.67,
+       0.3,
+       1.15
+      ]
+     ],
+     "A9": [
+      [
+       2.4,
+       -3.67,
+       0.6,
+       1.15
+      ]
+     ],
+     "A12": [
+      [
+       3.2,
+       -3.67,
+       0.6,
+       1.15
+      ]
+     ],
+     "B1": [
+      [
+       3.2,
+       -3.67,
+       0.6,
+       1.15
+      ]
+     ],
+     "B4": [
+      [
+       2.4,
+       -3.67,
+       0.6,
+       1.15
+      ]
+     ],
+     "B5": [
+      [
+       1.75,
+       -3.67,
+       0.3,
+       1.15
+      ]
+     ],
+     "B6": [
+      [
+       0.75,
+       -3.67,
+       0.3,
+       1.15
+      ]
+     ],
+     "B7": [
+      [
+       -0.75,
+       -3.67,
+       0.3,
+       1.15
+      ]
+     ],
+     "B8": [
+      [
+       -1.75,
+       -3.67,
+       0.3,
+       1.15
+      ]
+     ],
+     "B9": [
+      [
+       -2.4,
+       -3.67,
+       0.6,
+       1.15
+      ]
+     ],
+     "B12": [
+      [
+       -3.2,
+       -3.67,
+       0.6,
+       1.15
+      ]
+     ],
+     "SH": [
+      [
+       -4.32,
+       -3.105,
+       1.0,
+       2.1
+      ],
+      [
+       -4.32,
+       1.075,
+       1.0,
+       1.6
+      ],
+      [
+       4.32,
+       -3.105,
+       1.0,
+       2.1
+      ],
+      [
+       4.32,
+       1.075,
+       1.0,
+       1.6
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "Q1": {
+  "lib": "BlackPanda:SOT23-3",
+  "pads_board": {
+   "1": [
+    {
+     "x": 0.95,
+     "y": -1.0,
+     "sx": 0.6,
+     "sy": 1.475,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -0.95,
+     "y": -1.0,
+     "sx": 0.6,
+     "sy": 1.475,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": 0.0,
+     "y": 1.0,
+     "sx": 0.6,
+     "sy": 1.475,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [
+   "pad '1'[0] x: board=0.95 lib=0.889",
+   "pad '1'[0] y: board=-1.0 lib=-1.016",
+   "pad '1'[0] sx: board=0.6 lib=0.9144",
+   "pad '1'[0] sy: board=1.475 lib=0.9144",
+   "pad '2'[0] x: board=-0.95 lib=-0.889",
+   "pad '2'[0] y: board=-1.0 lib=-1.016",
+   "pad '2'[0] sx: board=0.6 lib=0.9144",
+   "pad '2'[0] sy: board=1.475 lib=0.9144",
+   "pad '3'[0] sx: board=0.6 lib=0.9144",
+   "pad '3'[0] sy: board=1.475 lib=0.9144"
+  ],
+  "lib_models": [
+   "Housing_SOT_SOD/SOT-23.wrl\""
+  ],
+  "orig_blackpanda_diff": [
+   "'NoneType' object has no attribute 'FootprintLoad'"
+  ],
+  "candidates": {
+   "Package_TO_SOT_SMD/SOT-23": {
+    "best": {
+     "rot": 90,
+     "mirror": false,
+     "rms": 0.062,
+     "n": 3
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -0.9375,
+       -0.95,
+       1.475,
+       0.6
+      ]
+     ],
+     "2": [
+      [
+       -0.9375,
+       0.95,
+       1.475,
+       0.6
+      ]
+     ],
+     "3": [
+      [
+       0.9375,
+       0.0,
+       1.475,
+       0.6
+      ]
+     ]
+    }
+   },
+   "Package_TO_SOT_SMD/SOT-23_Handsoldering": {
+    "best": {
+     "rot": 90,
+     "mirror": false,
+     "rms": 0.5,
+     "n": 3
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -1.5,
+       -0.95,
+       1.9,
+       0.8
+      ]
+     ],
+     "2": [
+      [
+       -1.5,
+       0.95,
+       1.9,
+       0.8
+      ]
+     ],
+     "3": [
+      [
+       1.5,
+       0.0,
+       1.9,
+       0.8
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "Q2": {
+  "lib": "BlackPanda:SOT23-3",
+  "pads_board": {
+   "1": [
+    {
+     "x": 0.95,
+     "y": -1.0,
+     "sx": 0.6,
+     "sy": 1.475,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -0.95,
+     "y": -1.0,
+     "sx": 0.6,
+     "sy": 1.475,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": 0.0,
+     "y": 1.0,
+     "sx": 0.6,
+     "sy": 1.475,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [
+   "pad '1'[0] x: board=0.95 lib=0.889",
+   "pad '1'[0] y: board=-1.0 lib=-1.016",
+   "pad '1'[0] sx: board=0.6 lib=0.9144",
+   "pad '1'[0] sy: board=1.475 lib=0.9144",
+   "pad '2'[0] x: board=-0.95 lib=-0.889",
+   "pad '2'[0] y: board=-1.0 lib=-1.016",
+   "pad '2'[0] sx: board=0.6 lib=0.9144",
+   "pad '2'[0] sy: board=1.475 lib=0.9144",
+   "pad '3'[0] sx: board=0.6 lib=0.9144",
+   "pad '3'[0] sy: board=1.475 lib=0.9144"
+  ],
+  "lib_models": [
+   "Housing_SOT_SOD/SOT-23.wrl\""
+  ],
+  "orig_blackpanda_diff": [
+   "'NoneType' object has no attribute 'FootprintLoad'"
+  ],
+  "candidates": {
+   "Package_TO_SOT_SMD/SOT-23": {
+    "best": {
+     "rot": 90,
+     "mirror": false,
+     "rms": 0.062,
+     "n": 3
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -0.9375,
+       -0.95,
+       1.475,
+       0.6
+      ]
+     ],
+     "2": [
+      [
+       -0.9375,
+       0.95,
+       1.475,
+       0.6
+      ]
+     ],
+     "3": [
+      [
+       0.9375,
+       0.0,
+       1.475,
+       0.6
+      ]
+     ]
+    }
+   },
+   "Package_TO_SOT_SMD/SOT-23_Handsoldering": {
+    "best": {
+     "rot": 90,
+     "mirror": false,
+     "rms": 0.5,
+     "n": 3
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -1.5,
+       -0.95,
+       1.9,
+       0.8
+      ]
+     ],
+     "2": [
+      [
+       -1.5,
+       0.95,
+       1.9,
+       0.8
+      ]
+     ],
+     "3": [
+      [
+       1.5,
+       0.0,
+       1.9,
+       0.8
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "Q3": {
+  "lib": "Package_TO_SOT_SMD:SOT-323_SC-70",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.8875,
+     "y": -0.65,
+     "sx": 0.925,
+     "sy": 0.45,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -0.8875,
+     "y": 0.65,
+     "sx": 0.925,
+     "sy": 0.45,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": 0.8875,
+     "y": 0.0,
+     "sx": 0.925,
+     "sy": 0.45,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [
+   "pad '1'[0] shape: board=1 lib=4",
+   "pad '2'[0] shape: board=1 lib=4",
+   "pad '3'[0] shape: board=1 lib=4"
+  ],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.step"
+  ]
+ },
+ "Q4": {
+  "lib": "Package_SO:PowerPAK_SO-8_Single",
+  "pads_board": {
+   "1": [
+    {
+     "x": -2.67,
+     "y": -1.905,
+     "sx": 1.27,
+     "sy": 0.61,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -2.67,
+     "y": -0.635,
+     "sx": 1.27,
+     "sy": 0.61,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": -2.67,
+     "y": 0.635,
+     "sx": 1.27,
+     "sy": 0.61,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "4": [
+    {
+     "x": -2.67,
+     "y": 1.905,
+     "sx": 1.27,
+     "sy": 0.61,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "5": [
+    {
+     "x": 0.69,
+     "y": 0.0,
+     "sx": 3.81,
+     "sy": 3.91,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 2.795,
+     "y": -1.905,
+     "sx": 1.02,
+     "sy": 0.61,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 2.795,
+     "y": -0.635,
+     "sx": 1.02,
+     "sy": 0.61,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 2.795,
+     "y": 0.635,
+     "sx": 1.02,
+     "sy": 0.61,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 2.795,
+     "y": 1.905,
+     "sx": 1.02,
+     "sy": 0.61,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/PowerPAK_SO-8_Single.step"
+  ]
+ },
+ "R1": {
+  "lib": "Resistor_SMD:R_0603_1608Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.825,
+     "y": 0.0,
+     "sx": 0.8,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.825,
+     "y": 0.0,
+     "sx": 0.8,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+  ]
+ },
+ "R14": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R15": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R16": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R17": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R18": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R19": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R2": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R20": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R21": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R23": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R24": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R26": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R27": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R28": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R29": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R3": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R30": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R31": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R32": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R33": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R5": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "R6": {
+  "lib": "Resistor_SMD:R_0603_1608Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.825,
+     "y": 0.0,
+     "sx": 0.8,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.825,
+     "y": 0.0,
+     "sx": 0.8,
+     "sy": 0.95,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+  ]
+ },
+ "R9": {
+  "lib": "Resistor_SMD:R_0402_1005Metric",
+  "pads_board": {
+   "1": [
+    {
+     "x": -0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.51,
+     "y": 0.0,
+     "sx": 0.54,
+     "sy": 0.64,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  ]
+ },
+ "SW1": {
+  "lib": "Button_Switch_SMD:SW_SPST_SKQG_WithStem",
+  "pads_board": {
+   "1": [
+    {
+     "x": -3.1,
+     "y": -1.85,
+     "sx": 1.8,
+     "sy": 1.1,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 3.1,
+     "y": -1.85,
+     "sx": 1.8,
+     "sy": 1.1,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -3.1,
+     "y": 1.85,
+     "sx": 1.8,
+     "sy": 1.1,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 3.1,
+     "y": 1.85,
+     "sx": 1.8,
+     "sy": 1.1,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_SKQG_WithStem.step"
+  ]
+ },
+ "U1": {
+  "lib": "Package_TO_SOT_SMD:SOT-23-6",
+  "pads_board": {
+   "1": [
+    {
+     "x": -1.1375,
+     "y": -0.95,
+     "sx": 1.325,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -1.1375,
+     "y": 0.0,
+     "sx": 1.325,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": -1.1375,
+     "y": 0.95,
+     "sx": 1.325,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "4": [
+    {
+     "x": 1.1375,
+     "y": 0.95,
+     "sx": 1.325,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "5": [
+    {
+     "x": 1.1375,
+     "y": 0.0,
+     "sx": 1.325,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "6": [
+    {
+     "x": 1.1375,
+     "y": -0.95,
+     "sx": 1.325,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+  ]
+ },
+ "U10": {
+  "lib": "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm",
+  "pads_board": {
+   "": [
+    {
+     "x": -0.3875,
+     "y": -0.6,
+     "sx": 0.6,
+     "sy": 1.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": -0.3875,
+     "y": 0.6,
+     "sx": 0.6,
+     "sy": 1.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 0.3875,
+     "y": -0.6,
+     "sx": 0.6,
+     "sy": 1.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 0.3875,
+     "y": 0.6,
+     "sx": 0.6,
+     "sy": 1.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "1": [
+    {
+     "x": -1.55,
+     "y": -0.975,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -1.55,
+     "y": -0.325,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": -1.55,
+     "y": 0.325,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "4": [
+    {
+     "x": -1.55,
+     "y": 0.975,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "5": [
+    {
+     "x": 1.55,
+     "y": 0.975,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "6": [
+    {
+     "x": 1.55,
+     "y": 0.325,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "7": [
+    {
+     "x": 1.55,
+     "y": -0.325,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "8": [
+    {
+     "x": 1.55,
+     "y": -0.975,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "9": [
+    {
+     "x": 0.0,
+     "y": 0.0,
+     "sx": 1.55,
+     "sy": 2.4,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm.step"
+  ]
+ },
+ "U11": {
+  "lib": "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm",
+  "pads_board": {
+   "": [
+    {
+     "x": -0.3875,
+     "y": -0.6,
+     "sx": 0.6,
+     "sy": 1.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": -0.3875,
+     "y": 0.6,
+     "sx": 0.6,
+     "sy": 1.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 0.3875,
+     "y": -0.6,
+     "sx": 0.6,
+     "sy": 1.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 0.3875,
+     "y": 0.6,
+     "sx": 0.6,
+     "sy": 1.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "1": [
+    {
+     "x": -1.55,
+     "y": -0.975,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -1.55,
+     "y": -0.325,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": -1.55,
+     "y": 0.325,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "4": [
+    {
+     "x": -1.55,
+     "y": 0.975,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "5": [
+    {
+     "x": 1.55,
+     "y": 0.975,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "6": [
+    {
+     "x": 1.55,
+     "y": 0.325,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "7": [
+    {
+     "x": 1.55,
+     "y": -0.325,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "8": [
+    {
+     "x": 1.55,
+     "y": -0.975,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "9": [
+    {
+     "x": 0.0,
+     "y": 0.0,
+     "sx": 1.55,
+     "sy": 2.4,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm.step"
+  ]
+ },
+ "U12": {
+  "lib": "Package_SO:Diodes_PSOP-8",
+  "pads_board": {
+   "1": [
+    {
+     "x": -2.7,
+     "y": -1.905,
+     "sx": 1.5,
+     "sy": 0.65,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -2.7,
+     "y": -0.635,
+     "sx": 1.5,
+     "sy": 0.65,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": -2.7,
+     "y": 0.635,
+     "sx": 1.5,
+     "sy": 0.65,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "4": [
+    {
+     "x": -2.7,
+     "y": 1.905,
+     "sx": 1.5,
+     "sy": 0.65,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "5": [
+    {
+     "x": 2.7,
+     "y": 1.905,
+     "sx": 1.5,
+     "sy": 0.65,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "6": [
+    {
+     "x": 2.7,
+     "y": 0.635,
+     "sx": 1.5,
+     "sy": 0.65,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "7": [
+    {
+     "x": 2.7,
+     "y": -0.635,
+     "sx": 1.5,
+     "sy": 0.65,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "8": [
+    {
+     "x": 2.7,
+     "y": -1.905,
+     "sx": 1.5,
+     "sy": 0.65,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "9": [
+    {
+     "x": -0.675,
+     "y": -0.9,
+     "sx": 1.35,
+     "sy": 1.8,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": -0.675,
+     "y": 0.9,
+     "sx": 1.35,
+     "sy": 1.8,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 0.675,
+     "y": -0.9,
+     "sx": 1.35,
+     "sy": 1.8,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 0.675,
+     "y": 0.9,
+     "sx": 1.35,
+     "sy": 1.8,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [
+   "pad '9'[0] layers: board=['F.Cu'] lib=['F.Cu', 'F.Mask', 'F.Paste']",
+   "pad '9'[1] layers: board=['F.Cu'] lib=['F.Cu', 'F.Mask', 'F.Paste']",
+   "pad '9'[2] layers: board=['F.Cu'] lib=['F.Cu', 'F.Mask', 'F.Paste']",
+   "pad '9'[3] layers: board=['F.Cu'] lib=['F.Cu', 'F.Mask', 'F.Paste']"
+  ],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/Diodes_PSOP-8.step"
+  ]
+ },
+ "U13": {
+  "lib": "Package_TO_SOT_SMD:SOT-23-6",
+  "pads_board": {
+   "1": [
+    {
+     "x": -1.1375,
+     "y": -0.95,
+     "sx": 1.325,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -1.1375,
+     "y": 0.0,
+     "sx": 1.325,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": -1.1375,
+     "y": 0.95,
+     "sx": 1.325,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "4": [
+    {
+     "x": 1.1375,
+     "y": 0.95,
+     "sx": 1.325,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "5": [
+    {
+     "x": 1.1375,
+     "y": 0.0,
+     "sx": 1.325,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "6": [
+    {
+     "x": 1.1375,
+     "y": -0.95,
+     "sx": 1.325,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+  ]
+ },
+ "U3": {
+  "lib": "BlackPanda:USB-A-TH_10.0QHHTZB6.3",
+  "pads_board": {
+   "1": [
+    {
+     "x": -3.4999,
+     "y": -4.395,
+     "sx": 1.12,
+     "sy": 2.88,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -1.0,
+     "y": -4.395,
+     "sx": 1.12,
+     "sy": 2.88,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": 1.0,
+     "y": -4.395,
+     "sx": 1.12,
+     "sy": 2.88,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "4": [
+    {
+     "x": 3.4999,
+     "y": -4.395,
+     "sx": 1.12,
+     "sy": 2.88,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "5": [
+    {
+     "x": -6.4501,
+     "y": 4.395,
+     "sx": 1.2,
+     "sy": 3.1,
+     "shape": 2,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.7
+    }
+   ],
+   "6": [
+    {
+     "x": 6.4501,
+     "y": 4.395,
+     "sx": 1.2,
+     "sy": 3.1,
+     "shape": 2,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "B.Mask",
+      "F.Cu",
+      "F.Mask",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.7
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KIPRJMOD}/Uno.3d/USB-A-TH_10.0QHHTZB6.3.wrl"
+  ],
+  "orig_blackpanda_diff": [
+   "'NoneType' object has no attribute 'FootprintLoad'"
+  ]
+ },
+ "U5": {
+  "lib": "BlackPanda:LED-ARRAY-SMD_4P-L2.2-W2.1-BR",
+  "pads_board": {
+   "1": [
+    {
+     "x": 0.8301,
+     "y": 0.6,
+     "sx": 0.66,
+     "sy": 0.7,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 0.8301,
+     "y": -0.6,
+     "sx": 0.66,
+     "sy": 0.7,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": -0.8301,
+     "y": -0.6,
+     "sx": 0.66,
+     "sy": 0.7,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "4": [
+    {
+     "x": -0.8301,
+     "y": 0.6,
+     "sx": 0.66,
+     "sy": 0.7,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [
+   "pad '1'[0] y: board=0.6 lib=0.5",
+   "pad '2'[0] y: board=-0.6 lib=-0.5",
+   "pad '3'[0] y: board=-0.6 lib=-0.5",
+   "pad '4'[0] y: board=0.6 lib=0.5"
+  ],
+  "lib_models": [
+   "${KIPRJMOD}/Uno.3d/LED-ARRAY-SMD_4P-L2.2-W2.1-BR.wrl"
+  ],
+  "orig_blackpanda_diff": [
+   "'NoneType' object has no attribute 'FootprintLoad'"
+  ],
+  "candidates": {
+   "LED_SMD/LED_Cree-PLCC4_2x2mm_CW": {
+    "best": {
+     "rot": 90,
+     "mirror": true,
+     "rms": 0.318,
+     "n": 4
+    },
+    "cand_pads": {
+     "1": [
+      [
+       -0.75,
+       -0.55,
+       1.0,
+       0.8
+      ]
+     ],
+     "2": [
+      [
+       0.75,
+       -0.55,
+       1.0,
+       0.8
+      ]
+     ],
+     "3": [
+      [
+       0.75,
+       0.55,
+       1.0,
+       0.8
+      ]
+     ],
+     "4": [
+      [
+       -0.75,
+       0.55,
+       1.0,
+       0.8
+      ]
+     ]
+    }
+   },
+   "LED_SMD/LED_RGB_PLCC-4_2x2mm": "NOT FOUND"
+  }
+ },
+ "U6": {
+  "lib": "BlackPanda:CONV_TPS5450DDAR",
+  "pads_board": {
+   "1": [
+    {
+     "x": -2.7,
+     "y": -1.905,
+     "sx": 1.55,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -2.7,
+     "y": -0.635,
+     "sx": 1.55,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": -2.7,
+     "y": 0.635,
+     "sx": 1.55,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "4": [
+    {
+     "x": -2.7,
+     "y": 1.905,
+     "sx": 1.55,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "5": [
+    {
+     "x": 2.7,
+     "y": 1.905,
+     "sx": 1.55,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "6": [
+    {
+     "x": 2.7,
+     "y": 0.635,
+     "sx": 1.55,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "7": [
+    {
+     "x": 2.7,
+     "y": -0.635,
+     "sx": 1.55,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "8": [
+    {
+     "x": 2.7,
+     "y": -1.905,
+     "sx": 1.55,
+     "sy": 0.6,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "9": [
+    {
+     "x": -0.65,
+     "y": -1.95,
+     "sx": 0.6,
+     "sy": 0.6,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "F.Cu",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.3
+    },
+    {
+     "x": -0.65,
+     "y": -0.65,
+     "sx": 0.6,
+     "sy": 0.6,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "F.Cu",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.3
+    },
+    {
+     "x": -0.65,
+     "y": 0.65,
+     "sx": 0.6,
+     "sy": 0.6,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "F.Cu",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.3
+    },
+    {
+     "x": -0.65,
+     "y": 1.95,
+     "sx": 0.6,
+     "sy": 0.6,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "F.Cu",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.3
+    },
+    {
+     "x": 0.0,
+     "y": 0.0,
+     "sx": 2.95,
+     "sy": 4.9,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 0.65,
+     "y": -1.95,
+     "sx": 0.6,
+     "sy": 0.6,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "F.Cu",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.3
+    },
+    {
+     "x": 0.65,
+     "y": -0.65,
+     "sx": 0.6,
+     "sy": 0.6,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "F.Cu",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.3
+    },
+    {
+     "x": 0.65,
+     "y": 0.65,
+     "sx": 0.6,
+     "sy": 0.6,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "F.Cu",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.3
+    },
+    {
+     "x": 0.65,
+     "y": 1.95,
+     "sx": 0.6,
+     "sy": 0.6,
+     "shape": 0,
+     "attr": 0,
+     "layers": [
+      "B.Cu",
+      "F.Cu",
+      "In1.Cu",
+      "In10.Cu",
+      "In11.Cu",
+      "In12.Cu",
+      "In13.Cu",
+      "In14.Cu",
+      "In15.Cu",
+      "In16.Cu",
+      "In17.Cu",
+      "In18.Cu",
+      "In19.Cu",
+      "In2.Cu",
+      "In20.Cu",
+      "In21.Cu",
+      "In22.Cu",
+      "In23.Cu",
+      "In24.Cu",
+      "In25.Cu",
+      "In26.Cu",
+      "In27.Cu",
+      "In28.Cu",
+      "In29.Cu",
+      "In3.Cu",
+      "In30.Cu",
+      "In4.Cu",
+      "In5.Cu",
+      "In6.Cu",
+      "In7.Cu",
+      "In8.Cu",
+      "In9.Cu"
+     ],
+     "drill": 0.3
+    }
+   ]
+  },
+  "lib_diff": [
+   "pad '9': count board=9 lib=1",
+   "pad '10': count board=0 lib=1",
+   "pad '11': count board=0 lib=1",
+   "pad '12': count board=0 lib=1",
+   "pad '13': count board=0 lib=1",
+   "pad '14': count board=0 lib=1",
+   "pad '15': count board=0 lib=1",
+   "pad '16': count board=0 lib=1",
+   "pad '17': count board=0 lib=1"
+  ],
+  "lib_models": [],
+  "orig_blackpanda_diff": [
+   "'NoneType' object has no attribute 'FootprintLoad'"
+  ],
+  "candidates": {
+   "Package_SO/HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.1mm": {
+    "best": {
+     "rot": 0,
+     "mirror": false,
+     "rms": 1.093,
+     "n": 17
+    },
+    "cand_pads": {
+     "": [
+      [
+       -0.6,
+       -0.775,
+       0.97,
+       1.25
+      ],
+      [
+       -0.6,
+       0.775,
+       0.97,
+       1.25
+      ],
+      [
+       0.6,
+       -0.775,
+       0.97,
+       1.25
+      ],
+      [
+       0.6,
+       0.775,
+       0.97,
+       1.25
+      ]
+     ],
+     "1": [
+      [
+       -2.65,
+       -1.905,
+       1.6,
+       0.6
+      ]
+     ],
+     "2": [
+      [
+       -2.65,
+       -0.635,
+       1.6,
+       0.6
+      ]
+     ],
+     "3": [
+      [
+       -2.65,
+       0.635,
+       1.6,
+       0.6
+      ]
+     ],
+     "4": [
+      [
+       -2.65,
+       1.905,
+       1.6,
+       0.6
+      ]
+     ],
+     "5": [
+      [
+       2.65,
+       1.905,
+       1.6,
+       0.6
+      ]
+     ],
+     "6": [
+      [
+       2.65,
+       0.635,
+       1.6,
+       0.6
+      ]
+     ],
+     "7": [
+      [
+       2.65,
+       -0.635,
+       1.6,
+       0.6
+      ]
+     ],
+     "8": [
+      [
+       2.65,
+       -1.905,
+       1.6,
+       0.6
+      ]
+     ],
+     "9": [
+      [
+       0.0,
+       0.0,
+       2.41,
+       3.1
+      ]
+     ]
+    }
+   },
+   "Package_SO/Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm": "NOT FOUND",
+   "Package_SO/SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm": {
+    "best": {
+     "rot": 0,
+     "mirror": false,
+     "rms": 1.103,
+     "n": 17
+    },
+    "cand_pads": {
+     "": [
+      [
+       -0.57,
+       -0.75,
+       0.92,
+       1.21
+      ],
+      [
+       -0.57,
+       0.75,
+       0.92,
+       1.21
+      ],
+      [
+       0.57,
+       -0.75,
+       0.92,
+       1.21
+      ],
+      [
+       0.57,
+       0.75,
+       0.92,
+       1.21
+      ]
+     ],
+     "1": [
+      [
+       -2.475,
+       -1.905,
+       1.95,
+       0.6
+      ]
+     ],
+     "2": [
+      [
+       -2.475,
+       -0.635,
+       1.95,
+       0.6
+      ]
+     ],
+     "3": [
+      [
+       -2.475,
+       0.635,
+       1.95,
+       0.6
+      ]
+     ],
+     "4": [
+      [
+       -2.475,
+       1.905,
+       1.95,
+       0.6
+      ]
+     ],
+     "5": [
+      [
+       2.475,
+       1.905,
+       1.95,
+       0.6
+      ]
+     ],
+     "6": [
+      [
+       2.475,
+       0.635,
+       1.95,
+       0.6
+      ]
+     ],
+     "7": [
+      [
+       2.475,
+       -0.635,
+       1.95,
+       0.6
+      ]
+     ],
+     "8": [
+      [
+       2.475,
+       -1.905,
+       1.95,
+       0.6
+      ]
+     ],
+     "9": [
+      [
+       0.0,
+       0.0,
+       2.29,
+       3.0
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "U7": {
+  "lib": "Package_QFP:LQFP-144_20x20mm_P0.5mm",
+  "pads_board": {
+   "1": [
+    {
+     "x": -10.6625,
+     "y": -8.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -10.6625,
+     "y": -8.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": -10.6625,
+     "y": -7.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "4": [
+    {
+     "x": -10.6625,
+     "y": -7.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "5": [
+    {
+     "x": -10.6625,
+     "y": -6.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "6": [
+    {
+     "x": -10.6625,
+     "y": -6.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "7": [
+    {
+     "x": -10.6625,
+     "y": -5.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "8": [
+    {
+     "x": -10.6625,
+     "y": -5.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "9": [
+    {
+     "x": -10.6625,
+     "y": -4.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "10": [
+    {
+     "x": -10.6625,
+     "y": -4.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "11": [
+    {
+     "x": -10.6625,
+     "y": -3.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "12": [
+    {
+     "x": -10.6625,
+     "y": -3.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "13": [
+    {
+     "x": -10.6625,
+     "y": -2.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "14": [
+    {
+     "x": -10.6625,
+     "y": -2.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "15": [
+    {
+     "x": -10.6625,
+     "y": -1.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "16": [
+    {
+     "x": -10.6625,
+     "y": -1.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "17": [
+    {
+     "x": -10.6625,
+     "y": -0.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "18": [
+    {
+     "x": -10.6625,
+     "y": -0.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "19": [
+    {
+     "x": -10.6625,
+     "y": 0.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "20": [
+    {
+     "x": -10.6625,
+     "y": 0.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "21": [
+    {
+     "x": -10.6625,
+     "y": 1.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "22": [
+    {
+     "x": -10.6625,
+     "y": 1.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "23": [
+    {
+     "x": -10.6625,
+     "y": 2.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "24": [
+    {
+     "x": -10.6625,
+     "y": 2.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "25": [
+    {
+     "x": -10.6625,
+     "y": 3.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "26": [
+    {
+     "x": -10.6625,
+     "y": 3.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "27": [
+    {
+     "x": -10.6625,
+     "y": 4.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "28": [
+    {
+     "x": -10.6625,
+     "y": 4.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "29": [
+    {
+     "x": -10.6625,
+     "y": 5.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "30": [
+    {
+     "x": -10.6625,
+     "y": 5.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "31": [
+    {
+     "x": -10.6625,
+     "y": 6.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "32": [
+    {
+     "x": -10.6625,
+     "y": 6.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "33": [
+    {
+     "x": -10.6625,
+     "y": 7.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "34": [
+    {
+     "x": -10.6625,
+     "y": 7.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "35": [
+    {
+     "x": -10.6625,
+     "y": 8.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "36": [
+    {
+     "x": -10.6625,
+     "y": 8.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "37": [
+    {
+     "x": -8.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "38": [
+    {
+     "x": -8.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "39": [
+    {
+     "x": -7.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "40": [
+    {
+     "x": -7.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "41": [
+    {
+     "x": -6.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "42": [
+    {
+     "x": -6.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "43": [
+    {
+     "x": -5.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "44": [
+    {
+     "x": -5.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "45": [
+    {
+     "x": -4.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "46": [
+    {
+     "x": -4.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "47": [
+    {
+     "x": -3.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "48": [
+    {
+     "x": -3.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "49": [
+    {
+     "x": -2.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "50": [
+    {
+     "x": -2.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "51": [
+    {
+     "x": -1.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "52": [
+    {
+     "x": -1.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "53": [
+    {
+     "x": -0.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "54": [
+    {
+     "x": -0.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "55": [
+    {
+     "x": 0.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "56": [
+    {
+     "x": 0.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "57": [
+    {
+     "x": 1.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "58": [
+    {
+     "x": 1.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "59": [
+    {
+     "x": 2.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "60": [
+    {
+     "x": 2.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "61": [
+    {
+     "x": 3.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "62": [
+    {
+     "x": 3.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "63": [
+    {
+     "x": 4.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "64": [
+    {
+     "x": 4.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "65": [
+    {
+     "x": 5.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "66": [
+    {
+     "x": 5.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "67": [
+    {
+     "x": 6.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "68": [
+    {
+     "x": 6.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "69": [
+    {
+     "x": 7.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "70": [
+    {
+     "x": 7.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "71": [
+    {
+     "x": 8.25,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "72": [
+    {
+     "x": 8.75,
+     "y": 10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "73": [
+    {
+     "x": 10.6625,
+     "y": 8.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "74": [
+    {
+     "x": 10.6625,
+     "y": 8.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "75": [
+    {
+     "x": 10.6625,
+     "y": 7.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "76": [
+    {
+     "x": 10.6625,
+     "y": 7.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "77": [
+    {
+     "x": 10.6625,
+     "y": 6.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "78": [
+    {
+     "x": 10.6625,
+     "y": 6.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "79": [
+    {
+     "x": 10.6625,
+     "y": 5.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "80": [
+    {
+     "x": 10.6625,
+     "y": 5.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "81": [
+    {
+     "x": 10.6625,
+     "y": 4.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "82": [
+    {
+     "x": 10.6625,
+     "y": 4.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "83": [
+    {
+     "x": 10.6625,
+     "y": 3.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "84": [
+    {
+     "x": 10.6625,
+     "y": 3.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "85": [
+    {
+     "x": 10.6625,
+     "y": 2.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "86": [
+    {
+     "x": 10.6625,
+     "y": 2.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "87": [
+    {
+     "x": 10.6625,
+     "y": 1.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "88": [
+    {
+     "x": 10.6625,
+     "y": 1.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "89": [
+    {
+     "x": 10.6625,
+     "y": 0.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "90": [
+    {
+     "x": 10.6625,
+     "y": 0.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "91": [
+    {
+     "x": 10.6625,
+     "y": -0.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "92": [
+    {
+     "x": 10.6625,
+     "y": -0.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "93": [
+    {
+     "x": 10.6625,
+     "y": -1.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "94": [
+    {
+     "x": 10.6625,
+     "y": -1.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "95": [
+    {
+     "x": 10.6625,
+     "y": -2.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "96": [
+    {
+     "x": 10.6625,
+     "y": -2.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "97": [
+    {
+     "x": 10.6625,
+     "y": -3.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "98": [
+    {
+     "x": 10.6625,
+     "y": -3.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "99": [
+    {
+     "x": 10.6625,
+     "y": -4.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "100": [
+    {
+     "x": 10.6625,
+     "y": -4.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "101": [
+    {
+     "x": 10.6625,
+     "y": -5.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "102": [
+    {
+     "x": 10.6625,
+     "y": -5.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "103": [
+    {
+     "x": 10.6625,
+     "y": -6.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "104": [
+    {
+     "x": 10.6625,
+     "y": -6.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "105": [
+    {
+     "x": 10.6625,
+     "y": -7.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "106": [
+    {
+     "x": 10.6625,
+     "y": -7.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "107": [
+    {
+     "x": 10.6625,
+     "y": -8.25,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "108": [
+    {
+     "x": 10.6625,
+     "y": -8.75,
+     "sx": 1.475,
+     "sy": 0.3,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "109": [
+    {
+     "x": 8.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "110": [
+    {
+     "x": 8.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "111": [
+    {
+     "x": 7.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "112": [
+    {
+     "x": 7.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "113": [
+    {
+     "x": 6.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "114": [
+    {
+     "x": 6.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "115": [
+    {
+     "x": 5.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "116": [
+    {
+     "x": 5.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "117": [
+    {
+     "x": 4.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "118": [
+    {
+     "x": 4.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "119": [
+    {
+     "x": 3.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "120": [
+    {
+     "x": 3.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "121": [
+    {
+     "x": 2.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "122": [
+    {
+     "x": 2.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "123": [
+    {
+     "x": 1.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "124": [
+    {
+     "x": 1.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "125": [
+    {
+     "x": 0.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "126": [
+    {
+     "x": 0.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "127": [
+    {
+     "x": -0.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "128": [
+    {
+     "x": -0.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "129": [
+    {
+     "x": -1.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "130": [
+    {
+     "x": -1.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "131": [
+    {
+     "x": -2.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "132": [
+    {
+     "x": -2.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "133": [
+    {
+     "x": -3.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "134": [
+    {
+     "x": -3.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "135": [
+    {
+     "x": -4.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "136": [
+    {
+     "x": -4.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "137": [
+    {
+     "x": -5.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "138": [
+    {
+     "x": -5.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "139": [
+    {
+     "x": -6.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "140": [
+    {
+     "x": -6.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "141": [
+    {
+     "x": -7.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "142": [
+    {
+     "x": -7.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "143": [
+    {
+     "x": -8.25,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "144": [
+    {
+     "x": -8.75,
+     "y": -10.6625,
+     "sx": 0.3,
+     "sy": 1.475,
+     "shape": 4,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Package_QFP.3dshapes/LQFP-144_20x20mm_P0.5mm.step"
+  ]
+ },
+ "U8": {
+  "lib": "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm",
+  "pads_board": {
+   "": [
+    {
+     "x": -0.3875,
+     "y": -0.6,
+     "sx": 0.6,
+     "sy": 1.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": -0.3875,
+     "y": 0.6,
+     "sx": 0.6,
+     "sy": 1.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 0.3875,
+     "y": -0.6,
+     "sx": 0.6,
+     "sy": 1.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 0.3875,
+     "y": 0.6,
+     "sx": 0.6,
+     "sy": 1.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "1": [
+    {
+     "x": -1.55,
+     "y": -0.975,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -1.55,
+     "y": -0.325,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": -1.55,
+     "y": 0.325,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "4": [
+    {
+     "x": -1.55,
+     "y": 0.975,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "5": [
+    {
+     "x": 1.55,
+     "y": 0.975,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "6": [
+    {
+     "x": 1.55,
+     "y": 0.325,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "7": [
+    {
+     "x": 1.55,
+     "y": -0.325,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "8": [
+    {
+     "x": 1.55,
+     "y": -0.975,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "9": [
+    {
+     "x": 0.0,
+     "y": 0.0,
+     "sx": 1.55,
+     "sy": 2.4,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm.step"
+  ]
+ },
+ "U9": {
+  "lib": "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm",
+  "pads_board": {
+   "": [
+    {
+     "x": -0.3875,
+     "y": -0.6,
+     "sx": 0.6,
+     "sy": 1.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": -0.3875,
+     "y": 0.6,
+     "sx": 0.6,
+     "sy": 1.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 0.3875,
+     "y": -0.6,
+     "sx": 0.6,
+     "sy": 1.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Paste"
+     ],
+     "drill": 0.0
+    },
+    {
+     "x": 0.3875,
+     "y": 0.6,
+     "sx": 0.6,
+     "sy": 1.0,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "1": [
+    {
+     "x": -1.55,
+     "y": -0.975,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": -1.55,
+     "y": -0.325,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": -1.55,
+     "y": 0.325,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "4": [
+    {
+     "x": -1.55,
+     "y": 0.975,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "5": [
+    {
+     "x": 1.55,
+     "y": 0.975,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "6": [
+    {
+     "x": 1.55,
+     "y": 0.325,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "7": [
+    {
+     "x": 1.55,
+     "y": -0.325,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "8": [
+    {
+     "x": 1.55,
+     "y": -0.975,
+     "sx": 0.65,
+     "sy": 0.35,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "9": [
+    {
+     "x": 0.0,
+     "y": 0.0,
+     "sx": 1.55,
+     "sy": 2.4,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm.step"
+  ]
+ },
+ "Y1": {
+  "lib": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+  "pads_board": {
+   "1": [
+    {
+     "x": -1.1,
+     "y": 0.85,
+     "sx": 1.4,
+     "sy": 1.2,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "2": [
+    {
+     "x": 1.1,
+     "y": 0.85,
+     "sx": 1.4,
+     "sy": 1.2,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "3": [
+    {
+     "x": 1.1,
+     "y": -0.85,
+     "sx": 1.4,
+     "sy": 1.2,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ],
+   "4": [
+    {
+     "x": -1.1,
+     "y": -0.85,
+     "sx": 1.4,
+     "sy": 1.2,
+     "shape": 1,
+     "attr": 1,
+     "layers": [
+      "F.Cu",
+      "F.Mask",
+      "F.Paste"
+     ],
+     "drill": 0.0
+    }
+   ]
+  },
+  "lib_diff": [
+   "pad '1'[0] shape: board=1 lib=4",
+   "pad '2'[0] shape: board=1 lib=4",
+   "pad '3'[0] shape: board=1 lib=4",
+   "pad '4'[0] shape: board=1 lib=4"
+  ],
+  "lib_models": [
+   "${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step"
+  ]
+ }
+}

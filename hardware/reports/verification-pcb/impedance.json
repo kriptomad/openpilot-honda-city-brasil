@@ -1,0 +1,760 @@
+{
+ "date": "2026-10-28 16:32:42",
+ "stackups": [
+  {
+   "name": "file (.kicad_pcb stackup)",
+   "h_mm": 0.2,
+   "t_mm": 0.035,
+   "er_cases": [
+    {
+     "er": 4.5,
+     "single": [
+      {
+       "w": 0.127,
+       "Z0": 82.0,
+       "ereff": 2.93
+      },
+      {
+       "w": 0.15,
+       "Z0": 76.8,
+       "ereff": 2.98
+      },
+      {
+       "w": 0.2,
+       "Z0": 67.8,
+       "ereff": 3.06
+      },
+      {
+       "w": 0.25,
+       "Z0": 60.9,
+       "ereff": 3.13
+      },
+      {
+       "w": 0.3,
+       "Z0": 55.4,
+       "ereff": 3.19
+      },
+      {
+       "w": 0.35,
+       "Z0": 50.9,
+       "ereff": 3.24
+      },
+      {
+       "w": 0.4,
+       "Z0": 47.1,
+       "ereff": 3.29
+      },
+      {
+       "w": 0.5,
+       "Z0": 41.1,
+       "ereff": 3.37
+      }
+     ],
+     "pairs": [
+      {
+       "label": "CAN_DIFF rule now",
+       "w": 0.25,
+       "s": 0.2,
+       "Zodd": 54.0,
+       "Zeven": 71.1,
+       "Zdiff_KJ": 108.0,
+       "Zdiff_IPC2141": 99.4,
+       "Zcm": 35.6
+      },
+      {
+       "label": "USB rule now",
+       "w": 0.2,
+       "s": 0.25,
+       "Zodd": 62.1,
+       "Zeven": 78.2,
+       "Zdiff_KJ": 124.2,
+       "Zdiff_IPC2141": 116.0,
+       "Zcm": 39.1
+      },
+      {
+       "label": "0.20/0.15",
+       "w": 0.2,
+       "s": 0.15,
+       "Zodd": 57.0,
+       "Zeven": 82.5,
+       "Zdiff_KJ": 114.0,
+       "Zdiff_IPC2141": 103.9,
+       "Zcm": 41.3
+      },
+      {
+       "label": "0.25/0.15",
+       "w": 0.25,
+       "s": 0.15,
+       "Zodd": 51.5,
+       "Zeven": 73.1,
+       "Zdiff_KJ": 103.0,
+       "Zdiff_IPC2141": 93.3,
+       "Zcm": 36.6
+      },
+      {
+       "label": "0.28/0.15",
+       "w": 0.28,
+       "s": 0.15,
+       "Zodd": 48.8,
+       "Zeven": 68.5,
+       "Zdiff_KJ": 97.5,
+       "Zdiff_IPC2141": 88.1,
+       "Zcm": 34.2
+      },
+      {
+       "label": "0.30/0.15",
+       "w": 0.3,
+       "s": 0.15,
+       "Zodd": 47.1,
+       "Zeven": 65.7,
+       "Zdiff_KJ": 94.3,
+       "Zdiff_IPC2141": 84.9,
+       "Zcm": 32.9
+      },
+      {
+       "label": "0.30/0.20",
+       "w": 0.3,
+       "s": 0.2,
+       "Zodd": 49.3,
+       "Zeven": 64.1,
+       "Zdiff_KJ": 98.6,
+       "Zdiff_IPC2141": 90.4,
+       "Zcm": 32.1
+      },
+      {
+       "label": "0.127/0.30",
+       "w": 0.127,
+       "s": 0.3,
+       "Zodd": 77.6,
+       "Zeven": 94.4,
+       "Zdiff_KJ": 155.2,
+       "Zdiff_IPC2141": 145.4,
+       "Zcm": 47.2
+      },
+      {
+       "label": "0.127/0.50",
+       "w": 0.127,
+       "s": 0.5,
+       "Zodd": 82.0,
+       "Zeven": 90.1,
+       "Zdiff_KJ": 164.0,
+       "Zdiff_IPC2141": 156.9,
+       "Zcm": 45.0
+      },
+      {
+       "label": "0.15/0.40",
+       "w": 0.15,
+       "s": 0.4,
+       "Zodd": 74.9,
+       "Zeven": 85.5,
+       "Zdiff_KJ": 149.9,
+       "Zdiff_IPC2141": 142.8,
+       "Zcm": 42.7
+      }
+     ],
+     "solutions": {
+      "90": {
+       "by_gap": [
+        {
+         "s": 0.127,
+         "w": 0.312,
+         "feasible": true
+        },
+        {
+         "s": 0.15,
+         "w": 0.329,
+         "feasible": true
+        },
+        {
+         "s": 0.2,
+         "w": 0.356,
+         "feasible": true
+        },
+        {
+         "s": 0.25,
+         "w": 0.374,
+         "feasible": true
+        },
+        {
+         "s": 0.3,
+         "w": 0.387,
+         "feasible": true
+        },
+        {
+         "s": 0.4,
+         "w": 0.405,
+         "feasible": true
+        },
+        {
+         "s": 0.5,
+         "w": 0.416,
+         "feasible": true
+        }
+       ],
+       "gap_for_w0.25": null
+      },
+      "120": {
+       "by_gap": [
+        {
+         "s": 0.127,
+         "w": 0.164,
+         "feasible": true
+        },
+        {
+         "s": 0.15,
+         "w": 0.177,
+         "feasible": true
+        },
+        {
+         "s": 0.2,
+         "w": 0.2,
+         "feasible": true
+        },
+        {
+         "s": 0.25,
+         "w": 0.215,
+         "feasible": true
+        },
+        {
+         "s": 0.3,
+         "w": 0.226,
+         "feasible": true
+        },
+        {
+         "s": 0.4,
+         "w": 0.241,
+         "feasible": true
+        },
+        {
+         "s": 0.5,
+         "w": 0.25,
+         "feasible": true
+        }
+       ],
+       "gap_for_w0.25": 0.503
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "JLCPCB JLC7628 4-layer 1.6 mm",
+   "h_mm": 0.2104,
+   "t_mm": 0.035,
+   "er_cases": [
+    {
+     "er": 4.4,
+     "single": [
+      {
+       "w": 0.127,
+       "Z0": 84.5,
+       "ereff": 2.87
+      },
+      {
+       "w": 0.15,
+       "Z0": 79.2,
+       "ereff": 2.91
+      },
+      {
+       "w": 0.2,
+       "Z0": 70.1,
+       "ereff": 2.99
+      },
+      {
+       "w": 0.25,
+       "Z0": 63.1,
+       "ereff": 3.06
+      },
+      {
+       "w": 0.3,
+       "Z0": 57.5,
+       "ereff": 3.12
+      },
+      {
+       "w": 0.35,
+       "Z0": 52.9,
+       "ereff": 3.17
+      },
+      {
+       "w": 0.4,
+       "Z0": 49.0,
+       "ereff": 3.21
+      },
+      {
+       "w": 0.5,
+       "Z0": 42.8,
+       "ereff": 3.29
+      }
+     ],
+     "pairs": [
+      {
+       "label": "CAN_DIFF rule now",
+       "w": 0.25,
+       "s": 0.2,
+       "Zodd": 55.4,
+       "Zeven": 74.3,
+       "Zdiff_KJ": 110.8,
+       "Zdiff_IPC2141": 101.9,
+       "Zcm": 37.1
+      },
+      {
+       "label": "USB rule now",
+       "w": 0.2,
+       "s": 0.25,
+       "Zodd": 63.7,
+       "Zeven": 81.5,
+       "Zdiff_KJ": 127.4,
+       "Zdiff_IPC2141": 118.7,
+       "Zcm": 40.7
+      },
+      {
+       "label": "0.20/0.15",
+       "w": 0.2,
+       "s": 0.15,
+       "Zodd": 58.2,
+       "Zeven": 86.0,
+       "Zdiff_KJ": 116.5,
+       "Zdiff_IPC2141": 106.3,
+       "Zcm": 43.0
+      },
+      {
+       "label": "0.25/0.15",
+       "w": 0.25,
+       "s": 0.15,
+       "Zodd": 52.7,
+       "Zeven": 76.3,
+       "Zdiff_KJ": 105.5,
+       "Zdiff_IPC2141": 95.7,
+       "Zcm": 38.2
+      },
+      {
+       "label": "0.28/0.15",
+       "w": 0.28,
+       "s": 0.15,
+       "Zodd": 50.0,
+       "Zeven": 71.6,
+       "Zdiff_KJ": 100.0,
+       "Zdiff_IPC2141": 90.4,
+       "Zcm": 35.8
+      },
+      {
+       "label": "0.30/0.15",
+       "w": 0.3,
+       "s": 0.15,
+       "Zodd": 48.4,
+       "Zeven": 68.7,
+       "Zdiff_KJ": 96.8,
+       "Zdiff_IPC2141": 87.2,
+       "Zcm": 34.4
+      },
+      {
+       "label": "0.30/0.20",
+       "w": 0.3,
+       "s": 0.2,
+       "Zodd": 50.7,
+       "Zeven": 67.0,
+       "Zdiff_KJ": 101.4,
+       "Zdiff_IPC2141": 92.9,
+       "Zcm": 33.5
+      },
+      {
+       "label": "0.127/0.30",
+       "w": 0.127,
+       "s": 0.3,
+       "Zodd": 79.3,
+       "Zeven": 97.9,
+       "Zdiff_KJ": 158.7,
+       "Zdiff_IPC2141": 148.3,
+       "Zcm": 48.9
+      },
+      {
+       "label": "0.127/0.50",
+       "w": 0.127,
+       "s": 0.5,
+       "Zodd": 84.2,
+       "Zeven": 93.2,
+       "Zdiff_KJ": 168.3,
+       "Zdiff_IPC2141": 160.7,
+       "Zcm": 46.6
+      },
+      {
+       "label": "0.15/0.40",
+       "w": 0.15,
+       "s": 0.4,
+       "Zodd": 76.9,
+       "Zeven": 88.6,
+       "Zdiff_KJ": 153.8,
+       "Zdiff_IPC2141": 146.2,
+       "Zcm": 44.3
+      }
+     ],
+     "solutions": {
+      "90": {
+       "by_gap": [
+        {
+         "s": 0.127,
+         "w": 0.328,
+         "feasible": true
+        },
+        {
+         "s": 0.15,
+         "w": 0.347,
+         "feasible": true
+        },
+        {
+         "s": 0.2,
+         "w": 0.376,
+         "feasible": true
+        },
+        {
+         "s": 0.25,
+         "w": 0.396,
+         "feasible": true
+        },
+        {
+         "s": 0.3,
+         "w": 0.411,
+         "feasible": true
+        },
+        {
+         "s": 0.4,
+         "w": 0.43,
+         "feasible": true
+        },
+        {
+         "s": 0.5,
+         "w": 0.442,
+         "feasible": true
+        }
+       ],
+       "gap_for_w0.25": null
+      },
+      "120": {
+       "by_gap": [
+        {
+         "s": 0.127,
+         "w": 0.171,
+         "feasible": true
+        },
+        {
+         "s": 0.15,
+         "w": 0.186,
+         "feasible": true
+        },
+        {
+         "s": 0.2,
+         "w": 0.211,
+         "feasible": true
+        },
+        {
+         "s": 0.25,
+         "w": 0.227,
+         "feasible": true
+        },
+        {
+         "s": 0.3,
+         "w": 0.24,
+         "feasible": true
+        },
+        {
+         "s": 0.4,
+         "w": 0.256,
+         "feasible": true
+        },
+        {
+         "s": 0.5,
+         "w": 0.266,
+         "feasible": true
+        }
+       ],
+       "gap_for_w0.25": 0.358
+      }
+     }
+    },
+    {
+     "er": 4.6,
+     "single": [
+      {
+       "w": 0.127,
+       "Z0": 83.0,
+       "ereff": 2.98
+      },
+      {
+       "w": 0.15,
+       "Z0": 77.8,
+       "ereff": 3.03
+      },
+      {
+       "w": 0.2,
+       "Z0": 68.9,
+       "ereff": 3.11
+      },
+      {
+       "w": 0.25,
+       "Z0": 62.0,
+       "ereff": 3.18
+      },
+      {
+       "w": 0.3,
+       "Z0": 56.5,
+       "ereff": 3.24
+      },
+      {
+       "w": 0.35,
+       "Z0": 51.9,
+       "ereff": 3.29
+      },
+      {
+       "w": 0.4,
+       "Z0": 48.1,
+       "ereff": 3.34
+      },
+      {
+       "w": 0.5,
+       "Z0": 42.0,
+       "ereff": 3.42
+      }
+     ],
+     "pairs": [
+      {
+       "label": "CAN_DIFF rule now",
+       "w": 0.25,
+       "s": 0.2,
+       "Zodd": 54.4,
+       "Zeven": 72.8,
+       "Zdiff_KJ": 108.8,
+       "Zdiff_IPC2141": 100.0,
+       "Zcm": 36.4
+      },
+      {
+       "label": "USB rule now",
+       "w": 0.2,
+       "s": 0.25,
+       "Zodd": 62.5,
+       "Zeven": 79.9,
+       "Zdiff_KJ": 125.0,
+       "Zdiff_IPC2141": 116.6,
+       "Zcm": 39.9
+      },
+      {
+       "label": "0.20/0.15",
+       "w": 0.2,
+       "s": 0.15,
+       "Zodd": 57.2,
+       "Zeven": 84.3,
+       "Zdiff_KJ": 114.3,
+       "Zdiff_IPC2141": 104.4,
+       "Zcm": 42.1
+      },
+      {
+       "label": "0.25/0.15",
+       "w": 0.25,
+       "s": 0.15,
+       "Zodd": 51.8,
+       "Zeven": 74.8,
+       "Zdiff_KJ": 103.5,
+       "Zdiff_IPC2141": 93.9,
+       "Zcm": 37.4
+      },
+      {
+       "label": "0.28/0.15",
+       "w": 0.28,
+       "s": 0.15,
+       "Zodd": 49.1,
+       "Zeven": 70.1,
+       "Zdiff_KJ": 98.2,
+       "Zdiff_IPC2141": 88.7,
+       "Zcm": 35.1
+      },
+      {
+       "label": "0.30/0.15",
+       "w": 0.3,
+       "s": 0.15,
+       "Zodd": 47.5,
+       "Zeven": 67.4,
+       "Zdiff_KJ": 95.0,
+       "Zdiff_IPC2141": 85.6,
+       "Zcm": 33.7
+      },
+      {
+       "label": "0.30/0.20",
+       "w": 0.3,
+       "s": 0.2,
+       "Zodd": 49.7,
+       "Zeven": 65.7,
+       "Zdiff_KJ": 99.4,
+       "Zdiff_IPC2141": 91.1,
+       "Zcm": 32.8
+      },
+      {
+       "label": "0.127/0.30",
+       "w": 0.127,
+       "s": 0.3,
+       "Zodd": 77.9,
+       "Zeven": 96.0,
+       "Zdiff_KJ": 155.7,
+       "Zdiff_IPC2141": 145.8,
+       "Zcm": 48.0
+      },
+      {
+       "label": "0.127/0.50",
+       "w": 0.127,
+       "s": 0.5,
+       "Zodd": 82.6,
+       "Zeven": 91.4,
+       "Zdiff_KJ": 165.2,
+       "Zdiff_IPC2141": 157.9,
+       "Zcm": 45.7
+      },
+      {
+       "label": "0.15/0.40",
+       "w": 0.15,
+       "s": 0.4,
+       "Zodd": 75.4,
+       "Zeven": 86.9,
+       "Zdiff_KJ": 150.9,
+       "Zdiff_IPC2141": 143.6,
+       "Zcm": 43.5
+      }
+     ],
+     "solutions": {
+      "90": {
+       "by_gap": [
+        {
+         "s": 0.127,
+         "w": 0.316,
+         "feasible": true
+        },
+        {
+         "s": 0.15,
+         "w": 0.334,
+         "feasible": true
+        },
+        {
+         "s": 0.2,
+         "w": 0.363,
+         "feasible": true
+        },
+        {
+         "s": 0.25,
+         "w": 0.383,
+         "feasible": true
+        },
+        {
+         "s": 0.3,
+         "w": 0.397,
+         "feasible": true
+        },
+        {
+         "s": 0.4,
+         "w": 0.416,
+         "feasible": true
+        },
+        {
+         "s": 0.5,
+         "w": 0.428,
+         "feasible": true
+        }
+       ],
+       "gap_for_w0.25": null
+      },
+      "120": {
+       "by_gap": [
+        {
+         "s": 0.127,
+         "w": 0.164,
+         "feasible": true
+        },
+        {
+         "s": 0.15,
+         "w": 0.178,
+         "feasible": true
+        },
+        {
+         "s": 0.2,
+         "w": 0.202,
+         "feasible": true
+        },
+        {
+         "s": 0.25,
+         "w": 0.218,
+         "feasible": true
+        },
+        {
+         "s": 0.3,
+         "w": 0.23,
+         "feasible": true
+        },
+        {
+         "s": 0.4,
+         "w": 0.246,
+         "feasible": true
+        },
+        {
+         "s": 0.5,
+         "w": 0.256,
+         "feasible": true
+        }
+       ],
+       "gap_for_w0.25": 0.433
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "netclasses_before": {
+  "CAN_DIFF": {
+   "track_width": 0.25,
+   "diff_pair_width": 0.25,
+   "diff_pair_gap": 0.2
+  },
+  "USB": {
+   "track_width": 0.2,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25
+  }
+ },
+ "usb_recommendation": {
+  "w_mm": 0.35,
+  "s_mm": 0.15,
+  "Zdiff_JLC7628_er4.4": 89.6,
+  "Zdiff_JLC7628_er4.6": 87.9,
+  "Zdiff_file_stackup": 87.1,
+  "Zcm": 31.3
+ },
+ "can_recommendation": {
+  "solutions_120": {
+   "0.2": 0.211,
+   "0.23": 0.221,
+   "0.3": 0.24,
+   "0.4": 0.256,
+   "0.5": 0.266
+  },
+  "feasible_at_min_track": true,
+  "w_mm": 0.22,
+  "s_mm": 0.23,
+  "pitch_mm": 0.45,
+  "Zdiff_JLC7628_er4.4": 120.4,
+  "Zdiff_JLC7628_er4.6": 118.1,
+  "Zdiff_file_stackup": 117.3
+ },
+ "can_applied": {
+  "netclass": {
+   "track_width": 0.22,
+   "diff_pair_width": 0.22,
+   "diff_pair_gap": 0.23
+  },
+  "segments_narrowed": {
+   "BUS2_L": 5,
+   "BUS2_H": 6,
+   "BUS1O_L": 7,
+   "BUS1O_H": 10,
+   "BUS0_L": 3,
+   "BUS0_H": 2,
+   "BUS1N_L": 7,
+   "BUS1N_H": 6
+  },
+  "from_width": 0.25
+ }
+}
