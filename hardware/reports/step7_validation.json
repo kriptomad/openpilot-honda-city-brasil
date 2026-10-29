@@ -1,40 +1,40 @@
 {
- "date": "2026-10-29 15:59:16",
+ "date": "2026-10-29 16:44:02",
  "commands": [
   {
    "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch erc --format json --severity-all -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/reports\\hybrid_ERC_step7.json C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_sch",
    "exit": 0,
-   "seconds": 8.2,
+   "seconds": 4.2,
    "log": "step7_erc.log"
   },
   {
    "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb drc --format json --severity-all --units mm -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/reports\\hybrid_DRC_step7.json C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
    "exit": 0,
-   "seconds": 7.8,
+   "seconds": 5.3,
    "log": "step7_drc.log"
   },
   {
    "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch export netlist --format kicadxml -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/reports\\hybrid_HybridPanda_netlist.xml C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_sch",
    "exit": 0,
-   "seconds": 0.9,
+   "seconds": 0.8,
    "log": "step7_netlist.log"
   },
   {
    "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch export bom --fields Reference,Value,Footprint,${QUANTITY},${DNP},MPN,Manufacturer,Datasheet --labels Reference,Value,Footprint,Qty,DNP,MPN,Manufacturer,Datasheet --group-by Value,Footprint,MPN --exclude-dnp -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/reports\\hybrid_BOM.csv C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_sch",
    "exit": 0,
-   "seconds": 0.8,
+   "seconds": 0.7,
    "log": "step7_bom.log"
   },
   {
    "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\python.exe C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/scripts\\parity_check.py --netlist C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/reports\\hybrid_HybridPanda_netlist.xml --profile red_h7",
    "exit": 0,
-   "seconds": 0.5,
+   "seconds": 0.3,
    "log": "step7_parity.log"
   },
   {
    "cmd": "powershell -NoProfile -ExecutionPolicy Bypass -File C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/scripts\\Make-Manifest.ps1 -Step STEP7 -Original",
    "exit": 0,
-   "seconds": 9.5,
+   "seconds": 8.2,
    "log": "step7_manifest.log"
   }
  ],
@@ -291,11 +291,11 @@
  "manifests": {
   "exit": 0,
   "tail": [
-   "OUTPUT_ROOT manifest: 884 files -> C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\archive\\manifests\\OUTPUT_ROOT_STEP7_20261029_1559.sha256",
+   "OUTPUT_ROOT manifest: 927 files -> C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\archive\\manifests\\OUTPUT_ROOT_STEP7_20261029_1644.sha256",
    "hardware/reference unchanged vs reference_clones.sha256: False",
    "ORIGINAL vs BEFORE: IDENTICAL (377 files)",
-   "docs/legacy-index.md rows: 561"
+   "docs/legacy-index.md rows: 604"
   ]
  },
- "seconds": 28.1
+ "seconds": 19.9
 }

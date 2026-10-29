@@ -153,3 +153,17 @@ A placa sera encomendada como PCB nua (JLCPCB) e montada a mao pelo usuario.
 Itens que continuam abertos e que exigem placa montada: impedancia nao medida, firmware nunca executado,
 nenhum teste eletrico. Revisao humana recomendada antes do pedido: abrir a placa no KiCad e os gerbers no
 GerbView, revisor externo, encomendar primeiro so a PCB nua.
+
+## 8. Revisao adversarial independente 2026-10-29 (`verification-pcb/adversarial-review.md`)
+
+Rederivacao completa (netlist, firmware red.h/hybrid.h @408e14d, DS13313, DRC com regras JLC 4 camadas em
+`.kicad_dru` temporario, gerbers reabertos com gerbonara). Nenhum erro fatal de pinagem/alimentacao encontrado.
+Uma correcao aplicada na PCB:
+
+| Item | Resultado |
+|---|---|
+| Furo-a-furo (redes diferentes) < 0,5 mm | 6 pares de vias (0,43-0,50 mm) deslocados 0,02-0,09 mm (`hardware/scripts/adv/fix_h2h.py`): via GREEN- (99,28;69,26), GND (116,00;68,46), GND (121,66;52,10), GND (122,36;57,10), GND (125,49;53,01), BUS0_TX (118,83;62,32). Restam apenas os furos da fileira B de P1 (0,40 mm, inerentes ao TYPE-C-31-M-04). |
+| Folga furo-cobre 0,254 mm | `hardware/scripts/adv/fix_resid.py`: via GND (109,15;71,04) movida 0,02 mm para longe da trilha VCAP em B.Cu (0,251 -> 0,271 mm); duas areas de regra "sem cobre" de 1,2 mm (4 camadas, `P1_NPTH1/2_nocopper`) em volta dos pinos NPTH de P1 (0,2505 -> 0,275 mm). JLC hole_clearance: 9 -> 0. |
+| Cobre-a-borda 0,3 mm (lado direito) | Mesmo script: meandro +12V recuado (x 142,1067 -> 142,08, 10 extremidades; 0,278 -> 0,305 mm); C28 movido 0,04 mm para a esquerda com as 2 trilhas (0,2625 -> 0,3025 mm). Mantidos de proposito a 0,20-0,235 mm: trilhas BUS1N_H e borda da zona GND (regra do projeto 0,2 mm = valor publicado pela JLC para contorno fresado; o brief pedia 0,3). |
+| Regeneracao | Zonas repreenchidas; DRC padrao 73 (so lib_footprint_mismatch), 0 nao conectados; DRC com regras JLC 145 = 73 + annular_width 12 (P1) + hole_to_hole 56 (41 mesma rede >= 0,279 mm, 15 fileira B de P1) + copper_edge_clearance 4 (BUS1N_H x3, zona GND). step7_validate (falhas: []), final_audit (0 curtos/0 via-in-pad), step8_fabricate re-executados; `hardware/fabrication/` regenerado 2026-10-29 16:44; gerbers reabertos com `scripts/adv/gerber_conn.py`: 268 furos, 0 curtos, 0 abertos. Backup pre-revisao: `hybrid-panda/snapshots/HybridPanda.kicad_pcb.pre_adversarial`. Scripts auxiliares em `hardware/scripts/adv/`, evidencias em `reports/verification-pcb/adv/`. |
+| Pendencias (nao corrigidas) | cobre-a-borda 0,20-0,235 mm (BUS1N_H, zona GND); anel anular dos PTH de P1 0,125 mm (regra 0,13); furo-a-furo 0,40 mm na fileira B de P1. Detalhes e tabela PASS/FAIL/NOTE no relatorio. |

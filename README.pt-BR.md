@@ -21,7 +21,7 @@ placa foi fabricada, nenhum panda foi gravado, nenhum carro foi fingerprintado.
 
 | Trilha | Onde | Status (honesto) |
 |---|---|---|
-| PCB Hybrid Panda (STM32H725ZGT6, 4 camadas) | [hardware/hybrid-panda](hardware/hybrid-panda) | Projeto completo. DRC: 0 clearance, 0 unconnected, 0 curtos, 0 erros de paridade com o esquematico (135 itens restantes, todos herdados ou cosmeticos, ver abaixo). ERC 0 erros. Pacote de fabricacao gerado mas **marcado NAO FABRICAR** ate revisao. Nada construido. |
+| PCB Hybrid Panda (STM32H725ZGT6, 4 camadas) | [hardware/hybrid-panda](hardware/hybrid-panda) | Projeto completo e verificado por software (2026-10-29): DRC 0 clearance / 0 unconnected / 0 curtos / 0 paridade, 73 itens restantes todos `lib_footprint_mismatch` intencionais; ERC 0 erros; conectividade reconstruida dos gerbers 0 curto / 0 aberto; revisao independente pino a pino contra o firmware panda. **Nao verificado fisicamente**; pedido de PCB nua a criterio do dono. Nada construido. |
 | Firmware panda `revive-f4` (black panda no panda master atual) | [firmware/panda-revive-f4](firmware/panda-revive-f4) (submodulo) | Compila (debug e release), MISRA limpo, `test.sh` verde no fork. Nunca executado em placa. |
 | Firmware panda `hybrid-h725` (alvo Hybrid Panda) | [firmware/panda-hybrid-h725](firmware/panda-hybrid-h725) (submodulo) | Compila (`panda_h7`, `panda_h7_hybrid`, `panda_h7_ldo`), MISRA limpo. Nunca executado em placa (nao existe placa). |
 | Port do Honda City no openpilot v0.9.9 | [software/openpilot-v0.9.9-city-g7](software/openpilot-v0.9.9-city-g7) + [software/opendbc-v0.9.9-city-g7](software/opendbc-v0.9.9-city-g7) (submodulos) | Port completo, duas auditorias independentes, CI verde no fork (static, build, unit, cars 0-3; process replay difere apenas no bit esperado de `carParams.flags`). Nao testado em carro. |
@@ -235,13 +235,17 @@ Numeros atuais (apos a campanha de correcoes pos-auditoria, ver
 
 | Verificacao | Resultado |
 |---|---|
-| DRC total | 182 -> 135 itens |
-| Categorias bloqueantes do DRC | clearance 0, unconnected 0, paridade com esquematico 0, itens em curto 0, trilhas cruzando 0, courtyard 0 |
-| DRC restante | hole_clearance 8 (footprint USB-C P1, herdado), lib_footprint_mismatch 73 (footprints editados localmente de proposito), silk 9, text_height 45 |
+| DRC total | 182 -> 135 -> 73 itens (passe de verificacao 2026-10-29) |
+| DRC categorias bloqueantes | clearance 0, unconnected 0, paridade com esquematico 0, curtos 0, trilhas cruzando 0, courtyard 0 |
+| DRC restante | apenas lib_footprint_mismatch 73 (footprints editados localmente de proposito, ~61 diferencas so de grafico/caminho 3D); itens hole_clearance, silk e text_height corrigidos |
+| DRC com regras JLCPCB 4 camadas | furo-cobre 0; residuais inerentes ao conector TYPE-C-31-M-04 (anel P1 fila B 0,125 mm, furo-furo 0,40 mm) e cobre-borda 0,20 mm em duas trilhas (valor publicado pela JLC), ver [adversarial-review.md](hardware/reports/verification-pcb/adversarial-review.md) |
 | ERC | 0 erros, 373 avisos |
-| Auditoria geometrica final | curtos 0, via-in-pad 0, redes partidas 0 |
-| BOM | codigos LCSC atribuidos a 117 de 119 referencias (JP1 e U1 sem); **nenhum confirmado no catalogo da JLCPCB ainda** |
-| Stackup / impedancia | 4 camadas, 1,59 mm assumido; impedancia CAN e USB apenas estimada analiticamente, nao confirmada com fabricante |
+| Revisao dos gerbers | conectividade de cobre reconstruida dos gerbers + furacao e comparada com a netlist, duas vezes (dois scripts independentes): 142 nets, 0 curtos, 0 abertos; 268 furos = 268 furos da PCB; contorno unico fechado 51,02 x 46,75 mm |
+| Revisao pino a pino | todos os pinos de sinal e alimentacao do U7 conferidos contra `red.h`/`hybrid.h` e DS13313 (AF FDCAN, USB, SWD, BOOT0, straps HW_TYPE, topologia Direct SMPS): nenhum erro encontrado |
+| Auditoria geometrica final | curtos 0, via-in-pad 0, 9 vias termicas intencionais em pads expostos |
+| BOM | codigos LCSC conferidos no espelho jlcparts: 2 erros de valor corrigidos (C23/C24 18 pF -> C1549, C64 2,2 uF -> C12530); U1 AP22615AWU-7 nao esta mais na JLC (comprar em outro lugar); footprints x datasheets: 0 divergencia |
+| Stackup / impedancia | 4 camadas, 1,59 mm; par USB reroteado acoplado 0,35/0,15 mm (~90 ohm no JLC7628), CAN_DIFF 0,22/0,23 mm; so analitico, camadas internas nao sao planos solidos, logo os valores sao otimistas; sem TDR |
+| Verificacao fisica | **nenhuma** - nenhuma placa construida |
 
 Os itens adiados (exigem relayout parcial ou decisao do dono, nenhum bloqueia o DRC) estao na
 secao 5 de [hardware/reports/correcoes-aplicadas.md](hardware/reports/correcoes-aplicadas.md)
@@ -257,7 +261,7 @@ versao EN:
 | [docs/hardware/red-panda-retrofit-on-black-panda.pt-br.md](docs/hardware/red-panda-retrofit-on-black-panda.pt-br.md) ([EN](docs/hardware/red-panda-retrofit-on-black-panda.md)) | Documento principal: comparacao black/red/Hybrid Panda, diagrama de blocos, o que foi mantido/substituido/adicionado, mapa de pinos do H725, CAN, alimentacao, USB, depuracao, implicacoes de firmware, estado de verificacao. |
 | [docs/hardware/bom.pt-br.md](docs/hardware/bom.pt-br.md) ([EN](docs/hardware/bom.md)), [docs/hardware/bom.csv](docs/hardware/bom.csv) | Lista de materiais por funcao com estado de MPN/LCSC; CSV regenerado por `hardware/scripts/gen-docs-bom.py`. |
 | [docs/hardware/schematic.pt-br.md](docs/hardware/schematic.pt-br.md) ([EN](docs/hardware/schematic.md)) | Descricao do esquema por bloco funcional, pull-ups, redes de interesse, estado do ERC. |
-| [docs/hardware/pcb-specification.pt-br.md](docs/hardware/pcb-specification.pt-br.md) ([EN](docs/hardware/pcb-specification.md)) | Especificacao de fabricacao: dimensoes, stackup, regras de projeto, alvos de impedancia, resumo do DRC, lista de arquivos de fabricacao, estado NAO FABRICAR. |
+| [docs/hardware/pcb-specification.pt-br.md](docs/hardware/pcb-specification.pt-br.md) ([EN](docs/hardware/pcb-specification.md)) | Especificacao de fabricacao: dimensoes, stackup, regras de projeto, alvos de impedancia, resumo do DRC, lista de arquivos de fabricacao, estado de verificacao. |
 
 ## Firmware
 

@@ -1,34 +1,34 @@
 {
- "date": "2026-10-29 15:59:58",
+ "date": "2026-10-29 16:44:34",
  "commands": [
   {
    "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export gerbers --layers F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts --use-drill-file-origin --no-x2 --no-netlist --subtract-soldermask --disable-aperture-macros -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\gerbers\\ C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
-   "exit": 0,
-   "seconds": 1.2,
-   "stderr": ""
-  },
-  {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export drill --format excellon --drill-origin plot --excellon-separate-th --excellon-units mm --excellon-zeros-format suppressleading --generate-map --map-format pdf -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\drill\\ C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
    "exit": 0,
    "seconds": 1.1,
    "stderr": ""
   },
   {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export drill --format excellon --drill-origin plot --excellon-separate-th --excellon-units mm --excellon-zeros-format suppressleading --generate-map --map-format pdf -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\drill\\ C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.0,
+   "stderr": ""
+  },
+  {
    "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export drill --format excellon --drill-origin plot --excellon-separate-th --excellon-units mm --excellon-zeros-format suppressleading --generate-map --map-format gerberx2 -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\drill\\ C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
    "exit": 0,
-   "seconds": 0.9,
+   "seconds": 1.0,
    "stderr": ""
   },
   {
    "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch export pdf -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\pdf\\HybridPanda_schematic.pdf C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_sch",
    "exit": 0,
-   "seconds": 2.6,
+   "seconds": 1.5,
    "stderr": ""
   },
   {
    "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers F.Cu,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\pdf\\HybridPanda_copper_F.pdf C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
    "exit": 0,
-   "seconds": 1.0,
+   "seconds": 1.1,
    "stderr": ""
   },
   {
@@ -46,7 +46,7 @@
   {
    "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers B.Cu,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\pdf\\HybridPanda_copper_B.pdf --mirror C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
    "exit": 0,
-   "seconds": 1.0,
+   "seconds": 1.1,
    "stderr": ""
   },
   {
@@ -64,7 +64,7 @@
   {
    "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers F.Fab,F.CrtYd,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\pdf\\HybridPanda_assembly_top.pdf C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
    "exit": 0,
-   "seconds": 1.2,
+   "seconds": 1.4,
    "stderr": ""
   },
   {
@@ -82,7 +82,7 @@
   {
    "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch export bom --fields Reference,Value,Footprint,${DNP},MPN,LCSC,Manufacturer --labels Reference,Value,Footprint,DNP,MPN,LCSC,Manufacturer --group-by Value,Footprint,MPN,LCSC --exclude-dnp -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\assembly\\_bom_fields.csv C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_sch",
    "exit": 0,
-   "seconds": 0.8,
+   "seconds": 0.7,
    "stderr": ""
   },
   {
@@ -539,5 +539,5 @@
   "Component rotation in `assembly/CPL_JLC.csv` is normalised with the JLC correction table (64 rules, `hardware/scripts/cpl_rotations_db.csv`): 11 footprint type(s) corrected, 20 without a rule ([`../reports/verification-pcb/cpl-rotation.md`](../reports/verification-pcb/cpl-rotation.md)). Only relevant if JLC assembly is ever ordered; not needed for a bare board.",
   "ARM toolchain: installed locally (Arm GNU 14.2.Rel1) but the firmware for this hardware (`hybrid-h725` branch in [`firmware/`](../../firmware)) has never run on hardware; depends on the commaai DFU/signing flow (see STEP 9). **Requires a built board.**"
  ],
- "seconds": 39.6
+ "seconds": 43.6
 }

@@ -1,0 +1,5077 @@
+{
+ "comps": {
+  "C1": {
+   "value": "100NF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C2": {
+   "value": "100NF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C3": {
+   "value": "47uF",
+   "footprint": "Capacitor_SMD:C_0805_2012Metric",
+   "fields": {
+    "Note": "100V Ceramic X5R",
+    "MPN": "0805X476M100NT",
+    "Manufacturer": "Fenghua",
+    "LCSC": "C178332",
+    "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C4": {
+   "value": "10uF",
+   "footprint": "Capacitor_SMD:C_0805_2012Metric",
+   "fields": {
+    "Note": "100V Ceramic X7R",
+    "MPN": "CL21A106KBYQNNE",
+    "Manufacturer": "Samsung",
+    "LCSC": "C2932476",
+    "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C5": {
+   "value": "100NF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C6": {
+   "value": "2.2uF",
+   "footprint": "Capacitor_SMD:C_0805_2012Metric",
+   "fields": {
+    "MPN": "CC0805KKX7R9BB225",
+    "Manufacturer": "Yageo",
+    "LCSC": "C125847",
+    "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C7": {
+   "value": "2.2uF",
+   "footprint": "Capacitor_SMD:C_0805_2012Metric",
+   "fields": {
+    "MPN": "CC0805KKX7R9BB225",
+    "Manufacturer": "Yageo",
+    "LCSC": "C125847",
+    "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C8": {
+   "value": "10uF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05A106MP5NUNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C315248",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C10": {
+   "value": "47uF",
+   "footprint": "Capacitor_SMD:C_0805_2012Metric",
+   "fields": {
+    "Note": "100V Ceramic X5R",
+    "MPN": "0805X476M100NT",
+    "Manufacturer": "Fenghua",
+    "LCSC": "C178332",
+    "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C11": {
+   "value": "100NF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C12": {
+   "value": "10uF",
+   "footprint": "Capacitor_SMD:C_0805_2012Metric",
+   "fields": {
+    "MPN": "CL21A106KBYQNNE",
+    "Manufacturer": "Samsung",
+    "LCSC": "C2932476",
+    "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C14": {
+   "value": "100NF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C16": {
+   "value": "47uF",
+   "footprint": "Capacitor_SMD:C_0805_2012Metric",
+   "fields": {
+    "Note": "Ceramic X7R",
+    "MPN": "0805X476M100NT",
+    "Manufacturer": "Fenghua",
+    "LCSC": "C178332",
+    "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C17": {
+   "value": "47uF",
+   "footprint": "Capacitor_SMD:C_0805_2012Metric",
+   "fields": {
+    "MPN": "0805X476M100NT",
+    "Manufacturer": "Fenghua",
+    "LCSC": "C178332",
+    "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C18": {
+   "value": "47uF",
+   "footprint": "Capacitor_SMD:C_0805_2012Metric",
+   "fields": {
+    "Note": "100V Ceramic X5R",
+    "MPN": "0805X476M100NT",
+    "Manufacturer": "Fenghua",
+    "LCSC": "C178332",
+    "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C19": {
+   "value": "47uF",
+   "footprint": "Capacitor_SMD:C_0805_2012Metric",
+   "fields": {
+    "Note": "100V Ceramic X5R",
+    "MPN": "0805X476M100NT",
+    "Manufacturer": "Fenghua",
+    "LCSC": "C178332",
+    "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C20": {
+   "value": "47uF",
+   "footprint": "Capacitor_SMD:C_0805_2012Metric",
+   "fields": {
+    "Note": "100V Ceramic X5R",
+    "MPN": "0805X476M100NT",
+    "Manufacturer": "Fenghua",
+    "LCSC": "C178332",
+    "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C21": {
+   "value": "47uF",
+   "footprint": "Capacitor_SMD:C_0805_2012Metric",
+   "fields": {
+    "Note": "100V Ceramic X5R",
+    "MPN": "0805X476M100NT",
+    "Manufacturer": "Fenghua",
+    "LCSC": "C178332",
+    "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C23": {
+   "value": "18pF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "0402CG180J500NT",
+    "Manufacturer": "Fenghua",
+    "LCSC": "C1549",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C24": {
+   "value": "18pF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "0402CG180J500NT",
+    "Manufacturer": "Fenghua",
+    "LCSC": "C1549",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C26": {
+   "value": "100NF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C27": {
+   "value": "100NF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C28": {
+   "value": "100NF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C29": {
+   "value": "100NF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C30": {
+   "value": "100NF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C31": {
+   "value": "100NF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C32": {
+   "value": "100NF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C33": {
+   "value": "100NF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C34": {
+   "value": "0.1uF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C37": {
+   "value": "10nF (LOW ESR)",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B103KB5NNNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C15195",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C38": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C39": {
+   "value": "2.2uF",
+   "footprint": "Capacitor_SMD:C_0603_1608Metric",
+   "fields": {
+    "MPN": "CL10A225KO8NNNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C23630",
+    "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C40": {
+   "value": "2.2uF",
+   "footprint": "Capacitor_SMD:C_0603_1608Metric",
+   "fields": {
+    "MPN": "CL10A225KO8NNNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C23630",
+    "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C41": {
+   "value": "220pF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "0402B221K500NT",
+    "Manufacturer": "Fenghua",
+    "LCSC": "C1530",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C42": {
+   "value": "10uF",
+   "footprint": "Capacitor_SMD:C_0805_2012Metric",
+   "fields": {
+    "MPN": "CL21A106KAYNNNE",
+    "Manufacturer": "Samsung",
+    "LCSC": "C15850",
+    "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C43": {
+   "value": "1uF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05A105KA5NQNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C52923",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C44": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C45": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C46": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C47": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C48": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C49": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C50": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C51": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C52": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C53": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C54": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C55": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C56": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C57": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C58": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C59": {
+   "value": "100nF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05B104KB54PNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C307331",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C60": {
+   "value": "4.7uF",
+   "footprint": "Capacitor_SMD:C_0603_1608Metric",
+   "fields": {
+    "MPN": "CL10A475KO8NNNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C19666",
+    "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C61": {
+   "value": "4.7uF",
+   "footprint": "Capacitor_SMD:C_0603_1608Metric",
+   "fields": {
+    "MPN": "CL10A475KO8NNNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C19666",
+    "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C62": {
+   "value": "4.7uF",
+   "footprint": "Capacitor_SMD:C_0603_1608Metric",
+   "fields": {
+    "MPN": "CL10A475KO8NNNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C19666",
+    "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C63": {
+   "value": "1uF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05A105KA5NQNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C52923",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C64": {
+   "value": "2.2uF",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "MPN": "CL05A225MQ5NSNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C12530",
+    "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "C65": {
+   "value": "4.7uF",
+   "footprint": "Capacitor_SMD:C_0603_1608Metric",
+   "fields": {
+    "MPN": "CL10A475KO8NNNC",
+    "Manufacturer": "Samsung",
+    "LCSC": "C19666",
+    "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "capacitor cap",
+    "ki_fp_filters": "C_*"
+   }
+  },
+  "D1": {
+   "value": "SMAJ16CA-13-F",
+   "footprint": "BlackPanda:DIOM4325X250N",
+   "fields": {
+    "MAXIMUM_PACKAGE_HEIGHT": "2.5 mm",
+    "MANUFACTURER": "Taiwan Semiconductor",
+    "PARTREV": "S2102",
+    "STANDARD": "IPC-7351B",
+    "MPN": "SMAJ16CA",
+    "Manufacturer": "Littelfuse",
+    "LCSC": "C148217",
+    "Footprint": "BlackPanda:DIOM4325X250N",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch"
+   }
+  },
+  "D2": {
+   "value": "BAS40WS 43",
+   "footprint": "Diode_SMD:D_SOD-323",
+   "fields": {
+    "MPN": "BAS40WS 43",
+    "Manufacturer": "Changjing",
+    "LCSC": "C22648",
+    "Footprint": "Diode_SMD:D_SOD-323",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "diode Schottky",
+    "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+   }
+  },
+  "D5": {
+   "value": "PESD2CAN,215",
+   "footprint": "BlackPanda:SOT95P230X110-3N",
+   "fields": {
+    "MANUFACTURER": "NXP",
+    "MPN": "PESD2CAN,215",
+    "Manufacturer": "Nexperia",
+    "LCSC": "C75176",
+    "Footprint": "BlackPanda:SOT95P230X110-3N",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch"
+   }
+  },
+  "D6": {
+   "value": "PESD2CAN,215",
+   "footprint": "BlackPanda:SOT95P230X110-3N",
+   "fields": {
+    "MANUFACTURER": "NXP",
+    "MPN": "PESD2CAN,215",
+    "Manufacturer": "Nexperia",
+    "LCSC": "C75176",
+    "Footprint": "BlackPanda:SOT95P230X110-3N",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch"
+   }
+  },
+  "D7": {
+   "value": "PESD2CAN,215",
+   "footprint": "BlackPanda:SOT95P230X110-3N",
+   "fields": {
+    "MANUFACTURER": "NXP",
+    "MPN": "PESD2CAN,215",
+    "Manufacturer": "Nexperia",
+    "LCSC": "C75176",
+    "Footprint": "BlackPanda:SOT95P230X110-3N",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch"
+   }
+  },
+  "D8": {
+   "value": "PESD2CAN,215",
+   "footprint": "BlackPanda:SOT95P230X110-3N",
+   "fields": {
+    "MANUFACTURER": "NXP",
+    "MPN": "PESD2CAN,215",
+    "Manufacturer": "Nexperia",
+    "LCSC": "C75176",
+    "Footprint": "BlackPanda:SOT95P230X110-3N",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch"
+   }
+  },
+  "D9": {
+   "value": "PESD2CAN,215",
+   "footprint": "BlackPanda:SOT95P230X110-3N",
+   "fields": {
+    "MANUFACTURER": "NXP",
+    "MPN": "PESD2CAN,215",
+    "Manufacturer": "Nexperia",
+    "LCSC": "C75176",
+    "Footprint": "BlackPanda:SOT95P230X110-3N",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch"
+   }
+  },
+  "D10": {
+   "value": "BAS70H 115",
+   "footprint": "Diode_SMD:D_SOD-123F",
+   "fields": {
+    "MPN": "BAS70H,115",
+    "Manufacturer": "Nexperia",
+    "LCSC": "C426766",
+    "Footprint": "Diode_SMD:D_SOD-123F",
+    "Datasheet": "https://assets.nexperia.com/documents/data-sheet/BAS70H.pdf",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "forward voltage diode",
+    "ki_fp_filters": "D*SOD?123F*"
+   }
+  },
+  "D11": {
+   "value": "B320AE-13",
+   "footprint": "Diode_SMD:D_SMA",
+   "fields": {
+    "MPN": "B340A-13-F",
+    "Manufacturer": "Diodes Inc",
+    "LCSC": "C85098",
+    "Footprint": "Diode_SMD:D_SMA",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "diode Schottky",
+    "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+   }
+  },
+  "D12": {
+   "value": "SM540C",
+   "footprint": "Diode_SMD:D_SMC",
+   "fields": {
+    "MPN": "B540C-13-F",
+    "Manufacturer": "Diodes Inc",
+    "LCSC": "C72264",
+    "Footprint": "Diode_SMD:D_SMC",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "diode Schottky",
+    "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+   }
+  },
+  "D13": {
+   "value": "BAT54S",
+   "footprint": "Package_TO_SOT_SMD:SOT-23",
+   "fields": {
+    "MPN": "BAT54S,215",
+    "Manufacturer": "Nexperia",
+    "LCSC": "C47546",
+    "Footprint": "Package_TO_SOT_SMD:SOT-23",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "schottky diode",
+    "ki_fp_filters": "SOT?23*"
+   }
+  },
+  "D14": {
+   "value": "BAT54S",
+   "footprint": "Package_TO_SOT_SMD:SOT-23",
+   "fields": {
+    "MPN": "BAT54S,215",
+    "Manufacturer": "Nexperia",
+    "LCSC": "C47546",
+    "Footprint": "Package_TO_SOT_SMD:SOT-23",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "schottky diode",
+    "ki_fp_filters": "SOT?23*"
+   }
+  },
+  "D15": {
+   "value": "BZT52C12",
+   "footprint": "Diode_SMD:D_SOD-123",
+   "fields": {
+    "MPN": "BZT52C12",
+    "Manufacturer": "High Diode (ou equivalente)",
+    "LCSC": "C571379",
+    "Footprint": "Diode_SMD:D_SOD-123",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "diode",
+    "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+   }
+  },
+  "FB1": {
+   "value": "600R@100MHz",
+   "footprint": "Inductor_SMD:L_0603_1608Metric",
+   "fields": {
+    "MPN": "GZ1608D601TF",
+    "Manufacturer": "Sunlord",
+    "LCSC": "C1002",
+    "Footprint": "Inductor_SMD:L_0603_1608Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "L ferrite bead inductor filter",
+    "ki_fp_filters": "Inductor_* L_* *Ferrite*"
+   }
+  },
+  "J1": {
+   "value": "SWD",
+   "footprint": "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD",
+   "fields": {
+    "MPN": "20021121-00010C4LF",
+    "Manufacturer": "Amphenol ICC",
+    "LCSC": "C150517",
+    "Footprint": "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "connector",
+    "ki_fp_filters": "Connector*:*_2x??_*"
+   }
+  },
+  "JP1": {
+   "value": "HW_ID1",
+   "footprint": "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+   "fields": {
+    "Footprint": "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "solder jumper SPST",
+    "ki_fp_filters": "SolderJumper*Open*"
+   }
+  },
+  "L3": {
+   "value": "47uH 2A - SMMS0650-470M",
+   "footprint": "BlackPanda:IND-SMD_L7.3-W6.8",
+   "fields": {
+    "JLCPCB": "C149588",
+    "MPN": "SMMS0650-470M",
+    "Manufacturer": "SXN",
+    "LCSC": "C149588",
+    "Footprint": "BlackPanda:IND-SMD_L7.3-W6.8",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "inductor choke coil reactor magnetic",
+    "ki_fp_filters": "Choke_* *Coil* Inductor_* L_*"
+   }
+  },
+  "L4": {
+   "value": "15uH",
+   "footprint": "BlackPanda:L_10.5x11.5_H4.0",
+   "fields": {
+    "MPN": "MWSA1004S-150MT",
+    "Manufacturer": "Sunlord",
+    "LCSC": "C151872",
+    "Footprint": "BlackPanda:L_10.5x11.5_H4.0",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "inductor choke coil reactor magnetic",
+    "ki_fp_filters": "Choke_* *Coil* Inductor_* L_*"
+   }
+  },
+  "L5": {
+   "value": "2.2uH DFE201610E-2R2M",
+   "footprint": "Inductor_SMD:L_Murata_DFE201610P",
+   "fields": {
+    "MPN": "DFE201610E-2R2M=P2",
+    "Manufacturer": "Murata",
+    "LCSC": "C337891",
+    "Footprint": "Inductor_SMD:L_Murata_DFE201610P",
+    "Datasheet": "https://www.lcsc.com/product-detail/C337891.html",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "inductor choke coil reactor magnetic",
+    "ki_fp_filters": "Choke_* *Coil* Inductor_* L_*"
+   }
+  },
+  "P1": {
+   "value": "TYPE-C-31-M-04",
+   "footprint": "BlackPanda:USB-C-SMD_TYPE-C-USB-20",
+   "fields": {
+    "LCSC": "C129018",
+    "MPN": "TYPE-C-31-M-04",
+    "Manufacturer": "Korean Hroparts",
+    "Footprint": "BlackPanda:USB-C-SMD_TYPE-C-USB-20",
+    "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20190321/C129018_ECAF745BBC5FC08427E0CBD0F9A58A2A.pdf",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "C129018"
+   }
+  },
+  "Q1": {
+   "value": "DDTA143ECA-7-F P08",
+   "footprint": "BlackPanda:SOT23-3",
+   "fields": {
+    "MPN": "DDTA143ECA-7-F",
+    "Manufacturer": "Diodes Inc",
+    "LCSC": "C460029",
+    "Footprint": "BlackPanda:SOT23-3",
+    "Datasheet": "https://www.mouser.de/datasheet/2/115/DIOD_S_A0006456122_1-2542719.pdf",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "transistor PNP"
+   }
+  },
+  "Q2": {
+   "value": "DDTA143ECA-7-F P08",
+   "footprint": "BlackPanda:SOT23-3",
+   "fields": {
+    "MPN": "DDTA143ECA-7-F",
+    "Manufacturer": "Diodes Inc",
+    "LCSC": "C460029",
+    "Footprint": "BlackPanda:SOT23-3",
+    "Datasheet": "https://www.mouser.de/datasheet/2/115/DIOD_S_A0006456122_1-2542719.pdf",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "transistor PNP"
+   }
+  },
+  "Q3": {
+   "value": "PDTC114EU",
+   "footprint": "Package_TO_SOT_SMD:SOT-323_SC-70",
+   "fields": {
+    "MPN": "PDTC114EU,115",
+    "Manufacturer": "Nexperia",
+    "LCSC": "C135830",
+    "Footprint": "Package_TO_SOT_SMD:SOT-323_SC-70",
+    "Datasheet": "https://www.mouser.de/datasheet/2/916/PDTC114E_SER-2937084.pdf",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "transistor NPN"
+   }
+  },
+  "Q4": {
+   "value": "HY12P03C2",
+   "footprint": "Package_SO:PowerPAK_SO-8_Single",
+   "fields": {
+    "MPN": "HY12P03C2",
+    "Manufacturer": "HUAYI",
+    "LCSC": "C358006",
+    "Footprint": "Package_SO:PowerPAK_SO-8_Single",
+    "Datasheet": "https://www.vishay.com/docs/65596/si7141dp.pdf",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "P-Channel MOSFET",
+    "ki_fp_filters": "PowerPAK*SO*Single*"
+   }
+  },
+  "R1": {
+   "value": "10k",
+   "footprint": "Resistor_SMD:R_0603_1608Metric",
+   "fields": {
+    "MPN": "0603WAF1002T5E",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25804",
+    "Footprint": "Resistor_SMD:R_0603_1608Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R2": {
+   "value": "1K",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1001TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C11702",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R3": {
+   "value": "10K",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1002TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25744",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R5": {
+   "value": "10K (1%)",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1002TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25744",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R res resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R6": {
+   "value": "3.16K (1%)",
+   "footprint": "Resistor_SMD:R_0603_1608Metric",
+   "fields": {
+    "MPN": "0603WAF3161T5E",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C22993",
+    "Footprint": "Resistor_SMD:R_0603_1608Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R res resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R9": {
+   "value": "10K",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1002TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25744",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R14": {
+   "value": "10k",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1002TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25744",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R15": {
+   "value": "10k",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1002TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25744",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R16": {
+   "value": "10k",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1002TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25744",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R17": {
+   "value": "180R",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1800TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C38941",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R18": {
+   "value": "110R",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "ERJ2RKF1100X",
+    "Manufacturer": "Panasonic",
+    "LCSC": "C413064",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R19": {
+   "value": "100R",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1000TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25076",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R20": {
+   "value": "22R",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF220JTCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25092",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R21": {
+   "value": "22R",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF220JTCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25092",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R23": {
+   "value": "10K",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1002TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25744",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R24": {
+   "value": "10K",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1002TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25744",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R26": {
+   "value": "10K",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1002TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25744",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R27": {
+   "value": "2.4K",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF2401TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25882",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R28": {
+   "value": "10k",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1002TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25744",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R29": {
+   "value": "10k",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1002TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25744",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R30": {
+   "value": "10k",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1002TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25744",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R31": {
+   "value": "10k",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1002TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25744",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R32": {
+   "value": "10k",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1002TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25744",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "R33": {
+   "value": "10k",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "MPN": "0402WGF1002TCE",
+    "Manufacturer": "Uniroyal",
+    "LCSC": "C25744",
+    "Footprint": "Resistor_SMD:R_0402_1005Metric",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "R resistor",
+    "ki_fp_filters": "R_*"
+   }
+  },
+  "SW1": {
+   "value": "SW_Push",
+   "footprint": "Button_Switch_SMD:SW_SPST_SKQG_WithStem",
+   "fields": {
+    "MPN": "SKQGAFE010",
+    "Manufacturer": "Alps Alpine",
+    "LCSC": "C202424",
+    "Footprint": "Button_Switch_SMD:SW_SPST_SKQG_WithStem",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "switch normally-open pushbutton push-button"
+   }
+  },
+  "U1": {
+   "value": "AP22615AWU-7",
+   "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+   "fields": {
+    "MPN": "AP22615AWU-7",
+    "Manufacturer": "Diodes Inc",
+    "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "Datasheet": "https://datasheet.lcsc.com/lcsc/2108071730_Diodes-Incorporated-AP22615AWU-7_C2680357.pdf",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "16 Bit Analog to digital converter ADC",
+    "ki_fp_filters": "SOT?23*"
+   }
+  },
+  "U3": {
+   "value": "10_0_QHHTZB6_3",
+   "footprint": "BlackPanda:USB-A-TH_10.0QHHTZB6.3",
+   "fields": {
+    "LCSC": "C668591",
+    "MPN": "10.0 QHHTZB6.3",
+    "Manufacturer": "SHOU HAN",
+    "Footprint": "BlackPanda:USB-A-TH_10.0QHHTZB6.3",
+    "Datasheet": "https://item.szlcsc.com/698534.html",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "C668591"
+   }
+  },
+  "U5": {
+   "value": "FM-B1921RGBA-SH",
+   "footprint": "BlackPanda:LED-ARRAY-SMD_4P-L2.2-W2.1-BR",
+   "fields": {
+    "LCSC": "C727904",
+    "MPN": "FM-B1921RGBA-SH",
+    "Manufacturer": "Foshan NationStar",
+    "Footprint": "BlackPanda:LED-ARRAY-SMD_4P-L2.2-W2.1-BR",
+    "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20210824/394DCB7C803784CE665F52BCF49E41B5.pdf",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "C727904"
+   }
+  },
+  "U6": {
+   "value": "TPS5450DDAR",
+   "footprint": "BlackPanda:CONV_TPS5450DDAR",
+   "fields": {
+    "MAXIMUM_PACKAGE_HEIGHT": "1.70 mm",
+    "PARTREV": "D",
+    "MANUFACTURER": "Texas Instruments",
+    "STANDARD": "Manufacturer Recommendations",
+    "MPN": "TPS5450DDAR",
+    "Manufacturer": "Texas Instruments",
+    "LCSC": "C114425",
+    "Footprint": "BlackPanda:CONV_TPS5450DDAR",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch"
+   }
+  },
+  "U7": {
+   "value": "STM32H725ZGT6",
+   "footprint": "Package_QFP:LQFP-144_20x20mm_P0.5mm",
+   "fields": {
+    "MPN": "STM32H725ZGT6",
+    "Manufacturer": "STMicroelectronics",
+    "LCSC": "C730156",
+    "Footprint": "Package_QFP:LQFP-144_20x20mm_P0.5mm",
+    "Datasheet": "https://www.st.com/resource/en/datasheet/stm32h725zg.pdf",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "Arm Cortex-M7 STM32H7 STM32H725/735",
+    "ki_fp_filters": "LQFP*20x20mm*P0.5mm*"
+   }
+  },
+  "U8": {
+   "value": "TJA1042TK-3",
+   "footprint": "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm",
+   "fields": {
+    "MPN": "TJA1042TK/3/1J",
+    "Manufacturer": "NXP",
+    "LCSC": "C131480",
+    "Footprint": "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm",
+    "Datasheet": "http://www.nxp.com/documents/data_sheet/TJA1042.pdf",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "High-Speed CAN Transceiver HVSON-8",
+    "ki_fp_filters": "DFN*1EP*3x3mm*P0.65mm* HVSON*"
+   }
+  },
+  "U9": {
+   "value": "TJA1042TK-3",
+   "footprint": "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm",
+   "fields": {
+    "MPN": "TJA1042TK/3/1J",
+    "Manufacturer": "NXP",
+    "LCSC": "C131480",
+    "Footprint": "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm",
+    "Datasheet": "http://www.nxp.com/documents/data_sheet/TJA1042.pdf",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "High-Speed CAN Transceiver HVSON-8",
+    "ki_fp_filters": "DFN*1EP*3x3mm*P0.65mm* HVSON*"
+   }
+  },
+  "U10": {
+   "value": "TJA1042TK-3",
+   "footprint": "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm",
+   "fields": {
+    "MPN": "TJA1042TK/3/1J",
+    "Manufacturer": "NXP",
+    "LCSC": "C131480",
+    "Footprint": "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm",
+    "Datasheet": "http://www.nxp.com/documents/data_sheet/TJA1042.pdf",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "High-Speed CAN Transceiver HVSON-8",
+    "ki_fp_filters": "DFN*1EP*3x3mm*P0.65mm* HVSON*"
+   }
+  },
+  "U11": {
+   "value": "TJA1042TK-3",
+   "footprint": "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm",
+   "fields": {
+    "MPN": "TJA1042TK/3/1J",
+    "Manufacturer": "NXP",
+    "LCSC": "C131480",
+    "Footprint": "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm",
+    "Datasheet": "http://www.nxp.com/documents/data_sheet/TJA1042.pdf",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "High-Speed CAN Transceiver HVSON-8",
+    "ki_fp_filters": "DFN*1EP*3x3mm*P0.65mm* HVSON*"
+   }
+  },
+  "U12": {
+   "value": "XL1509-3.3",
+   "footprint": "Package_SO:Diodes_PSOP-8",
+   "fields": {
+    "MPN": "XL1509-3.3E1",
+    "Manufacturer": "XLSEMI",
+    "LCSC": "C74193",
+    "Footprint": "Package_SO:Diodes_PSOP-8",
+    "Datasheet": "https://datasheet.lcsc.com/lcsc/1809050422_XLSEMI-XL1509-5-0E1_C61063.pdf",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "linear regulator ldo adjustable positive",
+    "ki_fp_filters": "Diodes*PSOP*"
+   }
+  },
+  "U13": {
+   "value": "USBLC6-2SC6",
+   "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+   "fields": {
+    "MPN": "USBLC6-2SC6",
+    "Manufacturer": "STMicroelectronics",
+    "LCSC": "C7519",
+    "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "Datasheet": "",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "usb ethernet video",
+    "ki_fp_filters": "SOT?666*"
+   }
+  },
+  "Y1": {
+   "value": "25MHz X322525MOB4SI",
+   "footprint": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+   "fields": {
+    "MPN": "X322525MOB4SI",
+    "Manufacturer": "YXC",
+    "LCSC": "C9006",
+    "Footprint": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+    "Datasheet": "https://www.lcsc.com/product-detail/C9006.html",
+    "Description": "",
+    "Sheetname": "BlackPanda",
+    "Sheetfile": "HybridPanda.kicad_sch",
+    "ki_keywords": "quartz ceramic resonator oscillator",
+    "ki_fp_filters": "Crystal*"
+   }
+  }
+ },
+ "nets": {
+  "+3V3": [
+   [
+    "C1",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C11",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C14",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C16",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C2",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C26",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C27",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C28",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C29",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C45",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C46",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C47",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C48",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C49",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C5",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C50",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C51",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C52",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C53",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C54",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C55",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C56",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C57",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C58",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C59",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C60",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C61",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C62",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C63",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C65",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "D13",
+    "2",
+    "K_2",
+    "passive"
+   ],
+   [
+    "D14",
+    "2",
+    "K_2",
+    "passive"
+   ],
+   [
+    "FB1",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "J1",
+    "1",
+    "Pin_1_1",
+    "passive"
+   ],
+   [
+    "L3",
+    "2",
+    "2_2",
+    "passive"
+   ],
+   [
+    "R23",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "R24",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "R30",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "R31",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "R32",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "R33",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "SW1",
+    "2",
+    "2_2",
+    "passive"
+   ],
+   [
+    "U10",
+    "5",
+    "VIO_5",
+    "power_in"
+   ],
+   [
+    "U11",
+    "5",
+    "VIO_5",
+    "power_in"
+   ],
+   [
+    "U12",
+    "3",
+    "FB_3",
+    "input"
+   ],
+   [
+    "U5",
+    "1",
+    "+_1",
+    "unspecified"
+   ],
+   [
+    "U7",
+    "105",
+    "VDDLDO_105",
+    "power_in"
+   ],
+   [
+    "U7",
+    "106",
+    "VDD_106",
+    "power_in"
+   ],
+   [
+    "U7",
+    "119",
+    "VDD_119",
+    "power_in"
+   ],
+   [
+    "U7",
+    "129",
+    "VDD_129",
+    "power_in"
+   ],
+   [
+    "U7",
+    "13",
+    "VDD_13",
+    "power_in"
+   ],
+   [
+    "U7",
+    "142",
+    "PDR_ON_142",
+    "input"
+   ],
+   [
+    "U7",
+    "143",
+    "VDDLDO_143",
+    "power_in"
+   ],
+   [
+    "U7",
+    "144",
+    "VDD_144",
+    "power_in"
+   ],
+   [
+    "U7",
+    "16",
+    "VDDSMPS_16",
+    "power_in"
+   ],
+   [
+    "U7",
+    "19",
+    "VDD_19",
+    "power_in"
+   ],
+   [
+    "U7",
+    "32",
+    "VDD_32",
+    "power_in"
+   ],
+   [
+    "U7",
+    "42",
+    "VDD_42",
+    "power_in"
+   ],
+   [
+    "U7",
+    "56",
+    "VDD_56",
+    "power_in"
+   ],
+   [
+    "U7",
+    "7",
+    "VDD_7",
+    "power_in"
+   ],
+   [
+    "U7",
+    "70",
+    "VDDLDO_70",
+    "power_in"
+   ],
+   [
+    "U7",
+    "71",
+    "VDD_71",
+    "power_in"
+   ],
+   [
+    "U7",
+    "79",
+    "VDD_79",
+    "power_in"
+   ],
+   [
+    "U7",
+    "8",
+    "VBAT_8",
+    "power_in"
+   ],
+   [
+    "U7",
+    "90",
+    "VDD50USB_90",
+    "power_in"
+   ],
+   [
+    "U7",
+    "91",
+    "VDD33USB_91",
+    "power_in"
+   ],
+   [
+    "U7",
+    "92",
+    "VDD_92",
+    "power_in"
+   ],
+   [
+    "U8",
+    "5",
+    "VIO_5",
+    "power_in"
+   ],
+   [
+    "U9",
+    "5",
+    "VIO_5",
+    "power_in"
+   ]
+  ],
+  "+5V": [
+   [
+    "C10",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C18",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C19",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C20",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C21",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C3",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C30",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C31",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C32",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C33",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C8",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "D10",
+    "1",
+    "K_1",
+    "passive"
+   ],
+   [
+    "L4",
+    "2",
+    "2_2",
+    "passive"
+   ],
+   [
+    "Q1",
+    "2",
+    "E_2",
+    "passive"
+   ],
+   [
+    "Q2",
+    "2",
+    "E_2",
+    "passive"
+   ],
+   [
+    "R15",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "R26",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "R5",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "R9",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "U1",
+    "6",
+    "IN_6",
+    "input"
+   ],
+   [
+    "U10",
+    "3",
+    "VCC_3",
+    "power_in"
+   ],
+   [
+    "U11",
+    "3",
+    "VCC_3",
+    "power_in"
+   ],
+   [
+    "U12",
+    "1",
+    "VIN_1",
+    "input"
+   ],
+   [
+    "U8",
+    "3",
+    "VCC_3",
+    "power_in"
+   ],
+   [
+    "U9",
+    "3",
+    "VCC_3",
+    "power_in"
+   ]
+  ],
+  "+12V": [
+   [
+    "D1",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "P1",
+    "A4",
+    "VBUS_A4",
+    "unspecified"
+   ],
+   [
+    "P1",
+    "A9",
+    "VBUS_A9",
+    "unspecified"
+   ],
+   [
+    "P1",
+    "B4",
+    "VBUS_B4",
+    "unspecified"
+   ],
+   [
+    "P1",
+    "B9",
+    "VBUS_B9",
+    "unspecified"
+   ],
+   [
+    "Q4",
+    "5",
+    "D_5",
+    "passive"
+   ]
+  ],
+  "5VOUT_S": [
+   [
+    "R15",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "R16",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "U7",
+    "50",
+    "PB1_50",
+    "bidirectional"
+   ]
+  ],
+  "12V_Protected": [
+   [
+    "C12",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C4",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C6",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C7",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "D15",
+    "1",
+    "K_1",
+    "passive"
+   ],
+   [
+    "D2",
+    "1",
+    "K_1",
+    "passive"
+   ],
+   [
+    "Q4",
+    "1",
+    "S_1",
+    "passive"
+   ],
+   [
+    "Q4",
+    "2",
+    "S_2",
+    "passive"
+   ],
+   [
+    "Q4",
+    "3",
+    "S_3",
+    "passive"
+   ],
+   [
+    "R3",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "U6",
+    "7",
+    "VIN_7",
+    "power_in"
+   ]
+  ],
+  "BLUE-": [
+   [
+    "R17",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "U5",
+    "4",
+    "B-_4",
+    "unspecified"
+   ]
+  ],
+  "BOOT0": [
+   [
+    "R14",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "SW1",
+    "1",
+    "1_1",
+    "passive"
+   ],
+   [
+    "U7",
+    "135",
+    "BOOT0_135",
+    "input"
+   ]
+  ],
+  "BUS0_H": [
+   [
+    "D9",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "P1",
+    "B11",
+    "SSRXp1_B11",
+    "unspecified"
+   ],
+   [
+    "U11",
+    "7",
+    "CANH_7",
+    "bidirectional"
+   ]
+  ],
+  "BUS0_L": [
+   [
+    "D9",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "P1",
+    "B10",
+    "SSRXn1_B10",
+    "unspecified"
+   ],
+   [
+    "U11",
+    "6",
+    "CANL_6",
+    "bidirectional"
+   ]
+  ],
+  "BUS0_RX": [
+   [
+    "U11",
+    "4",
+    "RXD_4",
+    "output"
+   ],
+   [
+    "U7",
+    "136",
+    "PB8_136",
+    "bidirectional"
+   ]
+  ],
+  "BUS0_STB": [
+   [
+    "R30",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "U11",
+    "8",
+    "STB_8",
+    "input"
+   ],
+   [
+    "U7",
+    "124",
+    "PG11_124",
+    "bidirectional"
+   ]
+  ],
+  "BUS0_TX": [
+   [
+    "U11",
+    "1",
+    "TXD_1",
+    "input"
+   ],
+   [
+    "U7",
+    "137",
+    "PB9_137",
+    "bidirectional"
+   ]
+  ],
+  "BUS1N_H": [
+   [
+    "D8",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "P1",
+    "B2",
+    "SSTXp2_B2",
+    "unspecified"
+   ],
+   [
+    "U10",
+    "7",
+    "CANH_7",
+    "bidirectional"
+   ]
+  ],
+  "BUS1N_L": [
+   [
+    "D8",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "P1",
+    "B3",
+    "SSTXn2_B3",
+    "unspecified"
+   ],
+   [
+    "U10",
+    "6",
+    "CANL_6",
+    "bidirectional"
+   ]
+  ],
+  "BUS1N_RX": [
+   [
+    "U10",
+    "4",
+    "RXD_4",
+    "output"
+   ],
+   [
+    "U7",
+    "132",
+    "PB5_132",
+    "bidirectional"
+   ]
+  ],
+  "BUS1N_STB": [
+   [
+    "R31",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "U10",
+    "8",
+    "STB_8",
+    "input"
+   ],
+   [
+    "U7",
+    "130",
+    "PB3(JTDO_130",
+    "bidirectional"
+   ]
+  ],
+  "BUS1N_TX": [
+   [
+    "U10",
+    "1",
+    "TXD_1",
+    "input"
+   ],
+   [
+    "U7",
+    "133",
+    "PB6_133",
+    "bidirectional"
+   ]
+  ],
+  "BUS1O_H": [
+   [
+    "D6",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "P1",
+    "A2",
+    "SSTXP1_A2",
+    "unspecified"
+   ],
+   [
+    "U8",
+    "7",
+    "CANH_7",
+    "bidirectional"
+   ]
+  ],
+  "BUS1O_L": [
+   [
+    "D6",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "P1",
+    "A3",
+    "SSTXn1_A3",
+    "unspecified"
+   ],
+   [
+    "U8",
+    "6",
+    "CANL_6",
+    "bidirectional"
+   ]
+  ],
+  "BUS1O_RX": [
+   [
+    "U7",
+    "72",
+    "PB12_72",
+    "bidirectional"
+   ],
+   [
+    "U8",
+    "4",
+    "RXD_4",
+    "output"
+   ]
+  ],
+  "BUS1O_STB": [
+   [
+    "R32",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "U7",
+    "131",
+    "PB4(NJTRST)_131",
+    "bidirectional"
+   ],
+   [
+    "U8",
+    "8",
+    "STB_8",
+    "input"
+   ]
+  ],
+  "BUS1O_TX": [
+   [
+    "U7",
+    "73",
+    "PB13_73",
+    "bidirectional"
+   ],
+   [
+    "U8",
+    "1",
+    "TXD_1",
+    "input"
+   ]
+  ],
+  "BUS2_H": [
+   [
+    "D7",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "P1",
+    "A11",
+    "SSRXp2_A11",
+    "unspecified"
+   ],
+   [
+    "U9",
+    "7",
+    "CANH_7",
+    "bidirectional"
+   ]
+  ],
+  "BUS2_L": [
+   [
+    "D7",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "P1",
+    "A10",
+    "SSRXn2_A10",
+    "unspecified"
+   ],
+   [
+    "U9",
+    "6",
+    "CANL_6",
+    "bidirectional"
+   ]
+  ],
+  "BUS2_RX": [
+   [
+    "U7",
+    "123",
+    "PG10_123",
+    "bidirectional"
+   ],
+   [
+    "U9",
+    "4",
+    "RXD_4",
+    "output"
+   ]
+  ],
+  "BUS2_STB": [
+   [
+    "R33",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "U7",
+    "121",
+    "PD7_121",
+    "bidirectional"
+   ],
+   [
+    "U9",
+    "8",
+    "STB_8",
+    "input"
+   ]
+  ],
+  "BUS2_TX": [
+   [
+    "U7",
+    "122",
+    "PG9_122",
+    "bidirectional"
+   ],
+   [
+    "U9",
+    "1",
+    "TXD_1",
+    "input"
+   ]
+  ],
+  "GND": [
+   [
+    "C1",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C10",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C11",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C12",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C14",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C16",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C17",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C18",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C19",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C2",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C20",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C21",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C23",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C24",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C26",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C27",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C28",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C29",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C3",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C30",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C31",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C32",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C33",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C34",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C38",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C39",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C4",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C40",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C41",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C42",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C43",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C44",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C45",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C46",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C47",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C48",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C49",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C5",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C50",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C51",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C52",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C53",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C54",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C55",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C56",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C57",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C58",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C59",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C6",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C60",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C61",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C62",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C63",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C64",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C65",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C7",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C8",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "D1",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "D11",
+    "2",
+    "A_2",
+    "passive"
+   ],
+   [
+    "D12",
+    "2",
+    "A_2",
+    "passive"
+   ],
+   [
+    "D13",
+    "1",
+    "A_1",
+    "passive"
+   ],
+   [
+    "D14",
+    "1",
+    "A_1",
+    "passive"
+   ],
+   [
+    "D5",
+    "3",
+    "",
+    "passive"
+   ],
+   [
+    "D6",
+    "3",
+    "",
+    "passive"
+   ],
+   [
+    "D7",
+    "3",
+    "",
+    "passive"
+   ],
+   [
+    "D8",
+    "3",
+    "",
+    "passive"
+   ],
+   [
+    "D9",
+    "3",
+    "",
+    "passive"
+   ],
+   [
+    "J1",
+    "3",
+    "Pin_3_3",
+    "passive"
+   ],
+   [
+    "J1",
+    "5",
+    "Pin_5_5",
+    "passive"
+   ],
+   [
+    "J1",
+    "9",
+    "Pin_9_9",
+    "passive"
+   ],
+   [
+    "JP1",
+    "1",
+    "A_1",
+    "passive"
+   ],
+   [
+    "P1",
+    "0",
+    "0_0",
+    "unspecified"
+   ],
+   [
+    "P1",
+    "A1",
+    "GND_A1",
+    "unspecified"
+   ],
+   [
+    "P1",
+    "A12",
+    "GND_A12",
+    "unspecified"
+   ],
+   [
+    "P1",
+    "B1",
+    "GND_B1",
+    "unspecified"
+   ],
+   [
+    "P1",
+    "B12",
+    "GND_B12",
+    "unspecified"
+   ],
+   [
+    "Q3",
+    "2",
+    "E_2",
+    "passive"
+   ],
+   [
+    "R1",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "R14",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "R16",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "R2",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "R27",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "R6",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "U1",
+    "2",
+    "GND_2",
+    "power_in"
+   ],
+   [
+    "U10",
+    "2",
+    "GND_2",
+    "power_in"
+   ],
+   [
+    "U10",
+    "9",
+    "GND_9",
+    "power_in"
+   ],
+   [
+    "U11",
+    "2",
+    "GND_2",
+    "power_in"
+   ],
+   [
+    "U11",
+    "9",
+    "GND_9",
+    "power_in"
+   ],
+   [
+    "U12",
+    "4",
+    "EN_4",
+    "input"
+   ],
+   [
+    "U12",
+    "5",
+    "GND_5",
+    "power_in"
+   ],
+   [
+    "U12",
+    "6",
+    "GND_6",
+    "power_in"
+   ],
+   [
+    "U12",
+    "7",
+    "GND_7",
+    "power_in"
+   ],
+   [
+    "U12",
+    "8",
+    "GND_8",
+    "power_in"
+   ],
+   [
+    "U13",
+    "2",
+    "GND_2",
+    "passive"
+   ],
+   [
+    "U3",
+    "4",
+    "GND_4",
+    "unspecified"
+   ],
+   [
+    "U3",
+    "5",
+    "5_5",
+    "unspecified"
+   ],
+   [
+    "U3",
+    "6",
+    "6_6",
+    "unspecified"
+   ],
+   [
+    "U6",
+    "6",
+    "GND_6",
+    "power_in"
+   ],
+   [
+    "U6",
+    "9",
+    "POWERPAD_9",
+    "power_in"
+   ],
+   [
+    "U7",
+    "104",
+    "VSS_104",
+    "passive"
+   ],
+   [
+    "U7",
+    "118",
+    "VSS_118",
+    "passive"
+   ],
+   [
+    "U7",
+    "12",
+    "VSS_12",
+    "passive"
+   ],
+   [
+    "U7",
+    "128",
+    "VSS_128",
+    "passive"
+   ],
+   [
+    "U7",
+    "14",
+    "VSSSMPS_14",
+    "power_in"
+   ],
+   [
+    "U7",
+    "141",
+    "VSS_141",
+    "passive"
+   ],
+   [
+    "U7",
+    "18",
+    "VSS_18",
+    "passive"
+   ],
+   [
+    "U7",
+    "21",
+    "PF7_21",
+    "bidirectional"
+   ],
+   [
+    "U7",
+    "22",
+    "PF8_22",
+    "bidirectional"
+   ],
+   [
+    "U7",
+    "24",
+    "PF10_24",
+    "bidirectional"
+   ],
+   [
+    "U7",
+    "33",
+    "VSS_33",
+    "passive"
+   ],
+   [
+    "U7",
+    "34",
+    "VSSA_34",
+    "power_in"
+   ],
+   [
+    "U7",
+    "41",
+    "VSS_41",
+    "passive"
+   ],
+   [
+    "U7",
+    "55",
+    "VSS_55",
+    "passive"
+   ],
+   [
+    "U7",
+    "6",
+    "VSS_6",
+    "power_in"
+   ],
+   [
+    "U7",
+    "69",
+    "VSS_69",
+    "passive"
+   ],
+   [
+    "U7",
+    "80",
+    "VSS_80",
+    "passive"
+   ],
+   [
+    "U7",
+    "89",
+    "VSS_89",
+    "passive"
+   ],
+   [
+    "U8",
+    "2",
+    "GND_2",
+    "power_in"
+   ],
+   [
+    "U8",
+    "9",
+    "GND_9",
+    "power_in"
+   ],
+   [
+    "U9",
+    "2",
+    "GND_2",
+    "power_in"
+   ],
+   [
+    "U9",
+    "9",
+    "GND_9",
+    "power_in"
+   ],
+   [
+    "Y1",
+    "2",
+    "2_2",
+    "passive"
+   ],
+   [
+    "Y1",
+    "4",
+    "4_4",
+    "passive"
+   ]
+  ],
+  "GREEN-": [
+   [
+    "R18",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "U5",
+    "3",
+    "G-_3",
+    "unspecified"
+   ]
+  ],
+  "HSE_IN": [
+   [
+    "C23",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "U7",
+    "25",
+    "PH0_25",
+    "bidirectional"
+   ],
+   [
+    "Y1",
+    "1",
+    "1_1",
+    "passive"
+   ]
+  ],
+  "HSE_OUT": [
+   [
+    "C24",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "U7",
+    "26",
+    "PH1_26",
+    "bidirectional"
+   ],
+   [
+    "Y1",
+    "3",
+    "3_3",
+    "passive"
+   ]
+  ],
+  "L4": [
+   [
+    "C37",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "D12",
+    "1",
+    "K_1",
+    "passive"
+   ],
+   [
+    "L4",
+    "1",
+    "1_1",
+    "passive"
+   ],
+   [
+    "U6",
+    "8",
+    "PH_8",
+    "output"
+   ]
+  ],
+  "LED_BLUE": [
+   [
+    "R17",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "U7",
+    "1",
+    "PE2_1",
+    "bidirectional"
+   ]
+  ],
+  "LED_GREEN": [
+   [
+    "R18",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "U7",
+    "2",
+    "PE3_2",
+    "bidirectional"
+   ]
+  ],
+  "LED_RED": [
+   [
+    "R19",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "U7",
+    "3",
+    "PE4_3",
+    "bidirectional"
+   ]
+  ],
+  "NRST": [
+   [
+    "C38",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "J1",
+    "10",
+    "Pin_10_10",
+    "passive"
+   ],
+   [
+    "U7",
+    "27",
+    "NRST_27",
+    "input"
+   ]
+  ],
+  "Net-(D11-K)": [
+   [
+    "D11",
+    "1",
+    "K_1",
+    "passive"
+   ],
+   [
+    "L3",
+    "1",
+    "1_1",
+    "passive"
+   ],
+   [
+    "U12",
+    "2",
+    "OUT_2",
+    "output"
+   ]
+  ],
+  "Net-(D15-A)": [
+   [
+    "D15",
+    "2",
+    "A_2",
+    "passive"
+   ],
+   [
+    "D2",
+    "2",
+    "A_2",
+    "passive"
+   ],
+   [
+    "Q4",
+    "4",
+    "G_4",
+    "input"
+   ],
+   [
+    "R1",
+    "2",
+    "",
+    "passive"
+   ]
+  ],
+  "Net-(JP1-B)": [
+   [
+    "JP1",
+    "2",
+    "B_2",
+    "passive"
+   ],
+   [
+    "U7",
+    "23",
+    "PF9_23",
+    "bidirectional"
+   ]
+  ],
+  "Net-(Q3-C)": [
+   [
+    "Q3",
+    "3",
+    "C_3",
+    "passive"
+   ],
+   [
+    "R26",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "U1",
+    "4",
+    "EN_4",
+    "bidirectional"
+   ]
+  ],
+  "Net-(U1-FLG)": [
+   [
+    "R9",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "U1",
+    "3",
+    "FLG_3",
+    "input"
+   ]
+  ],
+  "Net-(U1-ISET)": [
+   [
+    "R27",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "U1",
+    "5",
+    "ISET_5",
+    "bidirectional"
+   ]
+  ],
+  "Net-(U6-BOOT)": [
+   [
+    "C37",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "U6",
+    "1",
+    "BOOT_1",
+    "output"
+   ]
+  ],
+  "RED-": [
+   [
+    "R19",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "U5",
+    "2",
+    "R-_2",
+    "unspecified"
+   ]
+  ],
+  "SBU1": [
+   [
+    "D5",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "P1",
+    "A8",
+    "SUB1_A8",
+    "unspecified"
+   ],
+   [
+    "Q2",
+    "3",
+    "C_3",
+    "passive"
+   ],
+   [
+    "R24",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "R28",
+    "1",
+    "",
+    "passive"
+   ]
+  ],
+  "SBU1_ADC": [
+   [
+    "D13",
+    "3",
+    "COM_3",
+    "passive"
+   ],
+   [
+    "R28",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "U7",
+    "47",
+    "PC4_47",
+    "bidirectional"
+   ]
+  ],
+  "SBU2": [
+   [
+    "D5",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "P1",
+    "B8",
+    "SUB2_B8",
+    "unspecified"
+   ],
+   [
+    "Q1",
+    "3",
+    "C_3",
+    "passive"
+   ],
+   [
+    "R23",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "R29",
+    "1",
+    "",
+    "passive"
+   ]
+  ],
+  "SBU2_ADC": [
+   [
+    "D14",
+    "3",
+    "COM_3",
+    "passive"
+   ],
+   [
+    "R29",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "U7",
+    "38",
+    "PA1_38",
+    "bidirectional"
+   ]
+  ],
+  "SWCLK": [
+   [
+    "J1",
+    "4",
+    "Pin_4_4",
+    "passive"
+   ],
+   [
+    "U7",
+    "107",
+    "PA14(JTCK_107",
+    "bidirectional"
+   ]
+  ],
+  "SWDIO": [
+   [
+    "J1",
+    "2",
+    "Pin_2_2",
+    "passive"
+   ],
+   [
+    "U7",
+    "102",
+    "PA13(JTMS_102",
+    "bidirectional"
+   ]
+  ],
+  "USB_D+": [
+   [
+    "R21",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "U7",
+    "101",
+    "PA12_101",
+    "bidirectional"
+   ]
+  ],
+  "USB_D-": [
+   [
+    "R20",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "U7",
+    "100",
+    "PA11_100",
+    "bidirectional"
+   ]
+  ],
+  "USB_LOAD": [
+   [
+    "Q3",
+    "1",
+    "B_1",
+    "input"
+   ],
+   [
+    "U7",
+    "74",
+    "PB14_74",
+    "bidirectional"
+   ]
+  ],
+  "USB_PWR": [
+   [
+    "C17",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "C34",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "D10",
+    "2",
+    "A_2",
+    "passive"
+   ],
+   [
+    "U1",
+    "1",
+    "OUT_1",
+    "output"
+   ],
+   [
+    "U13",
+    "5",
+    "VBUS_5",
+    "passive"
+   ],
+   [
+    "U3",
+    "1",
+    "VCC_1",
+    "unspecified"
+   ]
+  ],
+  "USB_R_D+": [
+   [
+    "R21",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "U13",
+    "3",
+    "I/O2_3",
+    "passive"
+   ],
+   [
+    "U13",
+    "4",
+    "I/O2_4",
+    "passive"
+   ],
+   [
+    "U3",
+    "3",
+    "D+_3",
+    "unspecified"
+   ]
+  ],
+  "USB_R_D-": [
+   [
+    "R20",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "U13",
+    "1",
+    "I/O1_1",
+    "passive"
+   ],
+   [
+    "U13",
+    "6",
+    "I/O1_6",
+    "passive"
+   ],
+   [
+    "U3",
+    "2",
+    "D-_2",
+    "unspecified"
+   ]
+  ],
+  "VCAP": [
+   [
+    "C39",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C40",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C42",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C64",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "L5",
+    "2",
+    "2_2",
+    "passive"
+   ],
+   [
+    "U7",
+    "103",
+    "VCAP_103",
+    "power_out"
+   ],
+   [
+    "U7",
+    "140",
+    "VCAP_140",
+    "power_out"
+   ],
+   [
+    "U7",
+    "17",
+    "VFBSMPS_17",
+    "input"
+   ],
+   [
+    "U7",
+    "68",
+    "VCAP_68",
+    "power_out"
+   ]
+  ],
+  "VDDA": [
+   [
+    "C43",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "C44",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "FB1",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "U7",
+    "35",
+    "VREF+_35",
+    "input"
+   ],
+   [
+    "U7",
+    "36",
+    "VDDA_36",
+    "power_in"
+   ]
+  ],
+  "VLXSMPS": [
+   [
+    "C41",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "L5",
+    "1",
+    "1_1",
+    "passive"
+   ],
+   [
+    "U7",
+    "15",
+    "VLXSMPS_15",
+    "power_in"
+   ]
+  ],
+  "VSENSE": [
+   [
+    "R5",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "R6",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "U6",
+    "4",
+    "VSENSE_4",
+    "input"
+   ]
+  ],
+  "VoltageSens": [
+   [
+    "R2",
+    "2",
+    "",
+    "passive"
+   ],
+   [
+    "R3",
+    "1",
+    "",
+    "passive"
+   ],
+   [
+    "U7",
+    "52",
+    "PF11_52",
+    "bidirectional"
+   ]
+  ],
+  "relay_SBU1": [
+   [
+    "Q2",
+    "1",
+    "B_1",
+    "input"
+   ],
+   [
+    "U7",
+    "109",
+    "PC10_109",
+    "bidirectional"
+   ]
+  ],
+  "relay_SBU2": [
+   [
+    "Q1",
+    "1",
+    "B_1",
+    "input"
+   ],
+   [
+    "U7",
+    "110",
+    "PC11_110",
+    "bidirectional"
+   ]
+  ],
+  "unconnected-(J1-Pin_6-Pad6)": [
+   [
+    "J1",
+    "6",
+    "Pin_6_6",
+    "passive+no_connect"
+   ]
+  ],
+  "unconnected-(J1-Pin_7-Pad7)": [
+   [
+    "J1",
+    "7",
+    "Pin_7_7",
+    "passive+no_connect"
+   ]
+  ],
+  "unconnected-(J1-Pin_8-Pad8)": [
+   [
+    "J1",
+    "8",
+    "Pin_8_8",
+    "passive+no_connect"
+   ]
+  ],
+  "unconnected-(P1-CC1-PadA5)": [
+   [
+    "P1",
+    "A5",
+    "CC1_A5",
+    "unspecified+no_connect"
+   ]
+  ],
+  "unconnected-(P1-CC2-PadB5)": [
+   [
+    "P1",
+    "B5",
+    "CC2_B5",
+    "unspecified+no_connect"
+   ]
+  ],
+  "unconnected-(P1-DN1-PadA7)": [
+   [
+    "P1",
+    "A7",
+    "DN1_A7",
+    "unspecified+no_connect"
+   ]
+  ],
+  "unconnected-(P1-DN2-PadB7)": [
+   [
+    "P1",
+    "B7",
+    "DN2_B7",
+    "unspecified+no_connect"
+   ]
+  ],
+  "unconnected-(P1-DP1-PadA6)": [
+   [
+    "P1",
+    "A6",
+    "DP1_A6",
+    "unspecified+no_connect"
+   ]
+  ],
+  "unconnected-(P1-DP2-PadB6)": [
+   [
+    "P1",
+    "B6",
+    "DP2_B6",
+    "unspecified+no_connect"
+   ]
+  ],
+  "unconnected-(U6-ENA-Pad5)": [
+   [
+    "U6",
+    "5",
+    "ENA_5",
+    "input+no_connect"
+   ]
+  ],
+  "unconnected-(U6-NC_2-Pad2)": [
+   [
+    "U6",
+    "2",
+    "NC_2_2",
+    "no_connect"
+   ]
+  ],
+  "unconnected-(U6-NC_3-Pad3)": [
+   [
+    "U6",
+    "3",
+    "NC_3_3",
+    "no_connect"
+   ]
+  ],
+  "unconnected-(U7-PA0-Pad37)": [
+   [
+    "U7",
+    "37",
+    "PA0_37",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PA2-Pad39)": [
+   [
+    "U7",
+    "39",
+    "PA2_39",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PA3-Pad40)": [
+   [
+    "U7",
+    "40",
+    "PA3_40",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PA4-Pad43)": [
+   [
+    "U7",
+    "43",
+    "PA4_43",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PA5-Pad44)": [
+   [
+    "U7",
+    "44",
+    "PA5_44",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PA6-Pad45)": [
+   [
+    "U7",
+    "45",
+    "PA6_45",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PA7-Pad46)": [
+   [
+    "U7",
+    "46",
+    "PA7_46",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PA8-Pad97)": [
+   [
+    "U7",
+    "97",
+    "PA8_97",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PA9-Pad98)": [
+   [
+    "U7",
+    "98",
+    "PA9_98",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PA10-Pad99)": [
+   [
+    "U7",
+    "99",
+    "PA10_99",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PA15(JTDI)-Pad108)": [
+   [
+    "U7",
+    "108",
+    "PA15(JTDI)_108",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PB0-Pad49)": [
+   [
+    "U7",
+    "49",
+    "PB0_49",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PB2-Pad51)": [
+   [
+    "U7",
+    "51",
+    "PB2_51",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PB7-Pad134)": [
+   [
+    "U7",
+    "134",
+    "PB7_134",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PB10-Pad66)": [
+   [
+    "U7",
+    "66",
+    "PB10_66",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PB11-Pad67)": [
+   [
+    "U7",
+    "67",
+    "PB11_67",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PB15-Pad75)": [
+   [
+    "U7",
+    "75",
+    "PB15_75",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PC0-Pad28)": [
+   [
+    "U7",
+    "28",
+    "PC0_28",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PC1-Pad29)": [
+   [
+    "U7",
+    "29",
+    "PC1_29",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PC2_C-Pad30)": [
+   [
+    "U7",
+    "30",
+    "PC2_C_30",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PC3_C-Pad31)": [
+   [
+    "U7",
+    "31",
+    "PC3_C_31",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PC5-Pad48)": [
+   [
+    "U7",
+    "48",
+    "PC5_48",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PC6-Pad93)": [
+   [
+    "U7",
+    "93",
+    "PC6_93",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PC7-Pad94)": [
+   [
+    "U7",
+    "94",
+    "PC7_94",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PC8-Pad95)": [
+   [
+    "U7",
+    "95",
+    "PC8_95",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PC9-Pad96)": [
+   [
+    "U7",
+    "96",
+    "PC9_96",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PC12-Pad111)": [
+   [
+    "U7",
+    "111",
+    "PC12_111",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PC13-Pad9)": [
+   [
+    "U7",
+    "9",
+    "PC13_9",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PC14-Pad10)": [
+   [
+    "U7",
+    "10",
+    "PC14_10",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PC15-Pad11)": [
+   [
+    "U7",
+    "11",
+    "PC15_11",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PD0-Pad112)": [
+   [
+    "U7",
+    "112",
+    "PD0_112",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PD1-Pad113)": [
+   [
+    "U7",
+    "113",
+    "PD1_113",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PD2-Pad114)": [
+   [
+    "U7",
+    "114",
+    "PD2_114",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PD3-Pad115)": [
+   [
+    "U7",
+    "115",
+    "PD3_115",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PD4-Pad116)": [
+   [
+    "U7",
+    "116",
+    "PD4_116",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PD5-Pad117)": [
+   [
+    "U7",
+    "117",
+    "PD5_117",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PD6-Pad120)": [
+   [
+    "U7",
+    "120",
+    "PD6_120",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PD8-Pad76)": [
+   [
+    "U7",
+    "76",
+    "PD8_76",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PD9-Pad77)": [
+   [
+    "U7",
+    "77",
+    "PD9_77",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PD10-Pad78)": [
+   [
+    "U7",
+    "78",
+    "PD10_78",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PD11-Pad81)": [
+   [
+    "U7",
+    "81",
+    "PD11_81",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PD12-Pad82)": [
+   [
+    "U7",
+    "82",
+    "PD12_82",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PD13-Pad83)": [
+   [
+    "U7",
+    "83",
+    "PD13_83",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PD14-Pad84)": [
+   [
+    "U7",
+    "84",
+    "PD14_84",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PD15-Pad85)": [
+   [
+    "U7",
+    "85",
+    "PD15_85",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PE0-Pad138)": [
+   [
+    "U7",
+    "138",
+    "PE0_138",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PE1-Pad139)": [
+   [
+    "U7",
+    "139",
+    "PE1_139",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PE5-Pad4)": [
+   [
+    "U7",
+    "4",
+    "PE5_4",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PE6-Pad5)": [
+   [
+    "U7",
+    "5",
+    "PE6_5",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PE7-Pad57)": [
+   [
+    "U7",
+    "57",
+    "PE7_57",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PE8-Pad58)": [
+   [
+    "U7",
+    "58",
+    "PE8_58",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PE9-Pad59)": [
+   [
+    "U7",
+    "59",
+    "PE9_59",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PE10-Pad60)": [
+   [
+    "U7",
+    "60",
+    "PE10_60",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PE11-Pad61)": [
+   [
+    "U7",
+    "61",
+    "PE11_61",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PE12-Pad62)": [
+   [
+    "U7",
+    "62",
+    "PE12_62",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PE13-Pad63)": [
+   [
+    "U7",
+    "63",
+    "PE13_63",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PE14-Pad64)": [
+   [
+    "U7",
+    "64",
+    "PE14_64",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PE15-Pad65)": [
+   [
+    "U7",
+    "65",
+    "PE15_65",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PF6-Pad20)": [
+   [
+    "U7",
+    "20",
+    "PF6_20",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PF14-Pad53)": [
+   [
+    "U7",
+    "53",
+    "PF14_53",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PF15-Pad54)": [
+   [
+    "U7",
+    "54",
+    "PF15_54",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PG6-Pad86)": [
+   [
+    "U7",
+    "86",
+    "PG6_86",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PG7-Pad87)": [
+   [
+    "U7",
+    "87",
+    "PG7_87",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PG8-Pad88)": [
+   [
+    "U7",
+    "88",
+    "PG8_88",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PG12-Pad125)": [
+   [
+    "U7",
+    "125",
+    "PG12_125",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PG13-Pad126)": [
+   [
+    "U7",
+    "126",
+    "PG13_126",
+    "bidirectional+no_connect"
+   ]
+  ],
+  "unconnected-(U7-PG14-Pad127)": [
+   [
+    "U7",
+    "127",
+    "PG14_127",
+    "bidirectional+no_connect"
+   ]
+  ]
+ }
+}

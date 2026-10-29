@@ -1,9 +1,9 @@
 {
  "HybridPanda-B_Cu.gbl": {
-  "bytes": 480450,
+  "bytes": 477557,
   "apertures": 16,
   "flashes_D03": 283,
-  "draws_D01": 16773,
+  "draws_D01": 16657,
   "has_M02": true,
   "format_FS": true,
   "unit_MM": true
@@ -45,10 +45,10 @@
   "unit_MM": true
  },
  "HybridPanda-F_Cu.gtl": {
-  "bytes": 465828,
+  "bytes": 463251,
   "apertures": 46,
   "flashes_D03": 383,
-  "draws_D01": 16426,
+  "draws_D01": 16327,
   "has_M02": true,
   "format_FS": true,
   "unit_MM": true
@@ -81,19 +81,19 @@
   "unit_MM": true
  },
  "HybridPanda-In1_Cu.g1": {
-  "bytes": 385842,
+  "bytes": 383970,
   "apertures": 14,
   "flashes_D03": 266,
-  "draws_D01": 14812,
+  "draws_D01": 14737,
   "has_M02": true,
   "format_FS": true,
   "unit_MM": true
  },
  "HybridPanda-In2_Cu.g2": {
-  "bytes": 191755,
+  "bytes": 189359,
   "apertures": 8,
   "flashes_D03": 266,
-  "draws_D01": 7308,
+  "draws_D01": 7212,
   "has_M02": true,
   "format_FS": true,
   "unit_MM": true

@@ -1,5 +1,5 @@
 {
- "date": "2026-10-29 15:59:45",
+ "date": "2026-10-29 16:44:23",
  "board": "hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
  "findings": [
   {
@@ -20,7 +20,7 @@
   {
    "sev": "INFO",
    "area": "montagem",
-   "msg": "123 vias sob corpos de componentes (tenting F/B = True/True)"
+   "msg": "124 vias sob corpos de componentes (tenting F/B = True/True)"
   },
   {
    "sev": "INFO",
@@ -109,7 +109,7 @@
   }
  ],
  "shorts": {
-  "pairs_tested": 764,
+  "pairs_tested": 751,
   "copper_overlap_other_net": [],
   "clearance_lt_0.10": [],
   "zone_overlap_other_net": [],
@@ -184,10 +184,7 @@
  },
  "edge": {
   "pads_fora": [],
-  "pads_a_lt_0.3_da_borda": [
-   "pad C28.1 [+3V3]",
-   "pad C28.2 [GND]"
-  ],
+  "pads_a_lt_0.3_da_borda": [],
   "footprints_fora_bbox": [],
   "board_mm": [
    91.96,
@@ -213,7 +210,7 @@
  "vias_under_components": {
   "tent_front": true,
   "tent_back": true,
-  "count": 123,
+  "count": 124,
   "list": [
    {
     "via": "+3V3 @103.00,65.86",
@@ -441,7 +438,7 @@
     "rede_do_componente": true
    },
    {
-    "via": "GND @116.00,68.46",
+    "via": "GND @116.06,68.44",
     "sob": "SW1",
     "rede_do_componente": false
    },
@@ -488,6 +485,11 @@
    {
     "via": "GND @106.75,65.50",
     "sob": "U7",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @109.13,71.04",
+    "sob": "C23",
     "rede_do_componente": true
    },
    {
@@ -766,7 +768,7 @@
     "rede_do_componente": true
    },
    {
-    "via": "BUS0_TX @118.83,62.32",
+    "via": "BUS0_TX @118.91,62.27",
     "sob": "U7",
     "rede_do_componente": true
    },
@@ -1007,7 +1009,7 @@
   "GND": {
    "min_w": 0.2,
    "max_w": 0.8,
-   "len_mm": 214.2,
+   "len_mm": 214.1,
    "n": 221,
    "vias": 98,
    "min_w_at": "97.94,63.39 F.Cu"
@@ -1031,7 +1033,7 @@
   "+12V": {
    "min_w": 0.2,
    "max_w": 1.5,
-   "len_mm": 34.2,
+   "len_mm": 34.1,
    "n": 30,
    "vias": 4,
    "min_w_at": "141.40,51.11 F.Cu"
@@ -1505,7 +1507,7 @@
    ]
   }
  ],
- "seconds": 11.7,
+ "seconds": 10.5,
  "by_severity": {
   "INFO": 20,
   "BAIXO": 1

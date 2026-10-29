@@ -21,7 +21,7 @@ No board has been fabricated, no panda has been flashed, no car has been fingerp
 
 | Track | Where | Status (honest) |
 |---|---|---|
-| Hybrid Panda PCB (STM32H725ZGT6, 4 layers) | [hardware/hybrid-panda](hardware/hybrid-panda) | Design complete. DRC: 0 clearance, 0 unconnected, 0 shorts, 0 schematic parity errors (135 remaining items, all inherited or cosmetic, see below). ERC 0 errors. Fabrication package generated but **marked DO NOT FABRICATE** pending review. Nothing built. |
+| Hybrid Panda PCB (STM32H725ZGT6, 4 layers) | [hardware/hybrid-panda](hardware/hybrid-panda) | Design complete and software-verified (2026-10-29): DRC 0 clearance / 0 unconnected / 0 shorts / 0 parity, 73 remaining items all intentional `lib_footprint_mismatch`; ERC 0 errors; gerber-rebuilt connectivity 0 short / 0 open; independent pin-by-pin review against the panda firmware. **Not physically verified**; bare-PCB order at the owner's discretion. Nothing built. |
 | panda firmware `revive-f4` (black panda on current panda master) | [firmware/panda-revive-f4](firmware/panda-revive-f4) (submodule) | Compiles (debug and release), MISRA clean, `test.sh` green on the fork. Never executed on a board. |
 | panda firmware `hybrid-h725` (Hybrid Panda target) | [firmware/panda-hybrid-h725](firmware/panda-hybrid-h725) (submodule) | Compiles (`panda_h7`, `panda_h7_hybrid`, `panda_h7_ldo`), MISRA clean. Never executed on a board (no board exists). |
 | openpilot v0.9.9 Honda City port | [software/openpilot-v0.9.9-city-g7](software/openpilot-v0.9.9-city-g7) + [software/opendbc-v0.9.9-city-g7](software/opendbc-v0.9.9-city-g7) (submodules) | Port complete, two independent audits, CI green on the fork (static, build, unit, cars 0-3; process replay differs only by the expected `carParams.flags` bit). Untested in a car. |
@@ -234,13 +234,17 @@ Current numbers (after the post-audit correction campaign, see
 
 | Check | Result |
 |---|---|
-| DRC total | 182 -> 135 items |
+| DRC total | 182 -> 135 -> 73 items (verification pass 2026-10-29) |
 | DRC blocking categories | clearance 0, unconnected 0, schematic parity 0, shorting items 0, tracks crossing 0, courtyard 0 |
-| DRC remaining | hole_clearance 8 (P1 USB-C footprint, inherited), lib_footprint_mismatch 73 (footprints edited locally on purpose), silk 9, text_height 45 |
+| DRC remaining | lib_footprint_mismatch 73 only (footprints edited locally on purpose, ~61 graphics/3D-path differences); hole_clearance, silk and text_height items fixed |
+| DRC with JLCPCB 4-layer rules | hole-to-copper 0; residuals inherent to the TYPE-C-31-M-04 connector (P1 B-row annular 0.125 mm, hole-to-hole 0.40 mm) and copper-to-edge 0.20 mm on two tracks (JLC published figure), see [adversarial-review.md](hardware/reports/verification-pcb/adversarial-review.md) |
 | ERC | 0 errors, 373 warnings |
-| Geometric final audit | shorts 0, via-in-pad 0, split nets 0 |
-| BOM | LCSC part numbers assigned to 117 of 119 references (JP1 and U1 without); **none confirmed in the JLCPCB catalogue yet** |
-| Stackup / impedance | 4 layers, 1.59 mm assumed; CAN and USB impedance only estimated analytically, not confirmed with a fabricator |
+| Gerber review | copper connectivity rebuilt from the gerbers + drill and compared with the netlist, twice (two independent scripts): 142 nets, 0 shorts, 0 opens; 268 drill hits = 268 PCB holes; one closed outline 51.02 x 46.75 mm |
+| Pin-by-pin review | every U7 signal and power pin checked against `red.h`/`hybrid.h` and DS13313 (FDCAN AF, USB, SWD, BOOT0, HW_TYPE straps, Direct SMPS topology): no error found |
+| Geometric final audit | shorts 0, via-in-pad 0, 9 intentional thermal vias in exposed pads |
+| BOM | LCSC codes checked against the jlcparts mirror: 2 value errors fixed (C23/C24 18 pF -> C1549, C64 2.2 uF -> C12530); U1 AP22615AWU-7 no longer at JLC (buy elsewhere); footprints vs datasheets: 0 mismatch |
+| Stackup / impedance | 4 layers, 1.59 mm; USB pair rerouted coupled 0.35/0.15 mm (~90 ohm on JLC7628), CAN_DIFF 0.22/0.23 mm; analytical only, inner layers are not solid planes so figures are optimistic; no TDR |
+| Physical verification | **none** - no board built |
 
 Deferred items (require partial relayout or an owner decision, none blocks DRC) are listed in
 section 5 of [hardware/reports/correcoes-aplicadas.md](hardware/reports/correcoes-aplicadas.md)
@@ -255,7 +259,7 @@ Detailed, design-only documents (nothing has been fabricated or tested), EN with
 | [docs/hardware/red-panda-retrofit-on-black-panda.md](docs/hardware/red-panda-retrofit-on-black-panda.md) ([pt-BR](docs/hardware/red-panda-retrofit-on-black-panda.pt-br.md)) | Main document: black/red/Hybrid Panda comparison, block diagram, what was kept/replaced/added, H725 pin map, CAN, power, USB, debug, firmware implications, verification state. |
 | [docs/hardware/bom.md](docs/hardware/bom.md) ([pt-BR](docs/hardware/bom.pt-br.md)), [docs/hardware/bom.csv](docs/hardware/bom.csv) | Bill of materials by function with MPN/LCSC status; CSV regenerated by `hardware/scripts/gen-docs-bom.py`. |
 | [docs/hardware/schematic.md](docs/hardware/schematic.md) ([pt-BR](docs/hardware/schematic.pt-br.md)) | Schematic description per functional block, pull-ups, nets of interest, ERC status. |
-| [docs/hardware/pcb-specification.md](docs/hardware/pcb-specification.md) ([pt-BR](docs/hardware/pcb-specification.pt-br.md)) | Fabrication specification: dimensions, stackup, design rules, impedance targets, DRC summary, fabrication file list, DO NOT FABRICATE status. |
+| [docs/hardware/pcb-specification.md](docs/hardware/pcb-specification.md) ([pt-BR](docs/hardware/pcb-specification.pt-br.md)) | Fabrication specification: dimensions, stackup, design rules, impedance targets, DRC summary, fabrication file list, verification status. |
 
 ## Firmware
 

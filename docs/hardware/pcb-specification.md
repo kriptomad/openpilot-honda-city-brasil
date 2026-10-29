@@ -1,6 +1,6 @@
 # Hybrid Panda: PCB fabrication specification
 
-Status: design only. **DO NOT FABRICATE.** No board has been ordered, built or tested. This
+Status: design only, software-verified (2026-10-29 pass, see `hardware/reports/verification-pcb/`). **Not physically verified.** No board has been ordered, built or tested. This
 document describes what the KiCad files and the generated fabrication package specify, not
 what a fabricator has confirmed. Portuguese version:
 [pcb-specification.pt-br.md](pcb-specification.pt-br.md).
@@ -212,7 +212,7 @@ drill map as Gerber X2 (`.gbr`) and PDF for each.
 
 ## 10. Status and deferred items
 
-**DO NOT FABRICATE.** The package exists for archive and review. The blocking reasons, as
+**Software-verified, not physically verified; bare-PCB order at the owner's discretion.** The former blocking reasons, as
 listed in `hardware/fabrication/readme.md` and `docs/decisions.md` D-37:
 
 1. Impedance (CAN 120 ohm, USB 90 ohm) only estimated analytically (addressed by software 2026-10-29:

@@ -1,0 +1,3134 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-29T16:29:09",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "HybridPanda.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Annular width (rule 'JLC_annular' min annular width 0,1300 mm; actual 0,1250 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B1 [GND] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 56.079898
+                    },
+                    "uuid": "20229526-8b00-445b-b8db-2b3d1a982949"
+                }
+            ],
+            "severity": "error",
+            "type": "annular_width"
+        },
+        {
+            "description": "Annular width (rule 'JLC_annular' min annular width 0,1300 mm; actual 0,1250 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B2 [BUS1N_H] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 56.479949
+                    },
+                    "uuid": "8184914e-2f1e-4873-9c64-35b4d00a7b22"
+                }
+            ],
+            "severity": "error",
+            "type": "annular_width"
+        },
+        {
+            "description": "Annular width (rule 'JLC_annular' min annular width 0,1300 mm; actual 0,1250 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B3 [BUS1N_L] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 57.280051
+                    },
+                    "uuid": "c227916c-342b-4806-9d25-51d21e69b2c1"
+                }
+            ],
+            "severity": "error",
+            "type": "annular_width"
+        },
+        {
+            "description": "Annular width (rule 'JLC_annular' min annular width 0,1300 mm; actual 0,1250 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B4 [+12V] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 57.679848
+                    },
+                    "uuid": "826418f2-b7be-4722-b923-4882c62c99b7"
+                }
+            ],
+            "severity": "error",
+            "type": "annular_width"
+        },
+        {
+            "description": "Annular width (rule 'JLC_annular' min annular width 0,1300 mm; actual 0,1250 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B5 [unconnected-(P1-CC2-PadB5)] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 58.079898
+                    },
+                    "uuid": "325a9707-fb5f-481f-854b-41687525e113"
+                }
+            ],
+            "severity": "error",
+            "type": "annular_width"
+        },
+        {
+            "description": "Annular width (rule 'JLC_annular' min annular width 0,1300 mm; actual 0,1250 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B6 [unconnected-(P1-DP2-PadB6)] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 58.479949
+                    },
+                    "uuid": "dd9e75ad-51b9-4fe1-8b24-92b50bf5a7a9"
+                }
+            ],
+            "severity": "error",
+            "type": "annular_width"
+        },
+        {
+            "description": "Annular width (rule 'JLC_annular' min annular width 0,1300 mm; actual 0,1250 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B7 [unconnected-(P1-DN2-PadB7)] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 59.280051
+                    },
+                    "uuid": "774724a0-6783-412a-aa9d-f9a7b2678655"
+                }
+            ],
+            "severity": "error",
+            "type": "annular_width"
+        },
+        {
+            "description": "Annular width (rule 'JLC_annular' min annular width 0,1300 mm; actual 0,1250 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B8 [SBU2] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 59.679848
+                    },
+                    "uuid": "eacc4c83-9066-498c-8628-cc9ea196d2c8"
+                }
+            ],
+            "severity": "error",
+            "type": "annular_width"
+        },
+        {
+            "description": "Annular width (rule 'JLC_annular' min annular width 0,1300 mm; actual 0,1250 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B9 [+12V] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 60.079898
+                    },
+                    "uuid": "7d3cf4a5-40b9-49a7-ab47-0ab1656f5927"
+                }
+            ],
+            "severity": "error",
+            "type": "annular_width"
+        },
+        {
+            "description": "Annular width (rule 'JLC_annular' min annular width 0,1300 mm; actual 0,1250 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B10 [BUS0_L] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 60.479949
+                    },
+                    "uuid": "de849e09-f691-40e9-b38b-3568600d1b06"
+                }
+            ],
+            "severity": "error",
+            "type": "annular_width"
+        },
+        {
+            "description": "Annular width (rule 'JLC_annular' min annular width 0,1300 mm; actual 0,1250 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B11 [BUS0_H] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 61.280051
+                    },
+                    "uuid": "710fd69a-67fe-4a16-845a-b93d763ff973"
+                }
+            ],
+            "severity": "error",
+            "type": "annular_width"
+        },
+        {
+            "description": "Annular width (rule 'JLC_annular' min annular width 0,1300 mm; actual 0,1250 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B12 [GND] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 61.679848
+                    },
+                    "uuid": "5b8d3564-634b-40b9-bf8a-6bfa547cefb6"
+                }
+            ],
+            "severity": "error",
+            "type": "annular_width"
+        },
+        {
+            "description": "Hole clearance violation (rule 'JLC_hole_to_copper' clearance 0,2540 mm; actual 0,2510 mm)",
+            "items": [
+                {
+                    "description": "Track [VCAP] on B.Cu, length 5,5509 mm",
+                    "pos": {
+                        "x": 109.425,
+                        "y": 72.75173
+                    },
+                    "uuid": "216c268f-b05c-4195-bbb7-2caa16b1a305"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.15,
+                        "y": 71.042499
+                    },
+                    "uuid": "c1f07977-adf8-4d09-b7b5-1c60ce751c6d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'JLC_hole_to_copper' clearance 0,2540 mm; actual 0,2505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of P1",
+                    "pos": {
+                        "x": 134.940042,
+                        "y": 62.554879
+                    },
+                    "uuid": "3537f85f-94c3-4945-a43e-c54c5ef0310d"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, B.Cu and 2 more, priority 0",
+                    "pos": {
+                        "x": 85.07,
+                        "y": 26.88
+                    },
+                    "uuid": "c983a438-601f-4ab9-a61f-435bbeaecf84"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'JLC_hole_to_copper' clearance 0,2540 mm; actual 0,2505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of P1",
+                    "pos": {
+                        "x": 134.940042,
+                        "y": 62.554879
+                    },
+                    "uuid": "3537f85f-94c3-4945-a43e-c54c5ef0310d"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, B.Cu and 2 more, priority 0",
+                    "pos": {
+                        "x": 85.07,
+                        "y": 26.88
+                    },
+                    "uuid": "c983a438-601f-4ab9-a61f-435bbeaecf84"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'JLC_hole_to_copper' clearance 0,2540 mm; actual 0,2505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of P1",
+                    "pos": {
+                        "x": 134.940042,
+                        "y": 62.554879
+                    },
+                    "uuid": "3537f85f-94c3-4945-a43e-c54c5ef0310d"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, B.Cu and 2 more, priority 0",
+                    "pos": {
+                        "x": 85.07,
+                        "y": 26.88
+                    },
+                    "uuid": "c983a438-601f-4ab9-a61f-435bbeaecf84"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'JLC_hole_to_copper' clearance 0,2540 mm; actual 0,2505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of P1",
+                    "pos": {
+                        "x": 134.940042,
+                        "y": 62.554879
+                    },
+                    "uuid": "3537f85f-94c3-4945-a43e-c54c5ef0310d"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, B.Cu and 2 more, priority 0",
+                    "pos": {
+                        "x": 85.07,
+                        "y": 26.88
+                    },
+                    "uuid": "c983a438-601f-4ab9-a61f-435bbeaecf84"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'JLC_hole_to_copper' clearance 0,2540 mm; actual 0,2505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of P1",
+                    "pos": {
+                        "x": 134.940042,
+                        "y": 55.204867
+                    },
+                    "uuid": "c2c21dd7-2782-4dc3-9789-16d006076289"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, B.Cu and 2 more, priority 0",
+                    "pos": {
+                        "x": 85.07,
+                        "y": 26.88
+                    },
+                    "uuid": "c983a438-601f-4ab9-a61f-435bbeaecf84"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'JLC_hole_to_copper' clearance 0,2540 mm; actual 0,2505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of P1",
+                    "pos": {
+                        "x": 134.940042,
+                        "y": 55.204867
+                    },
+                    "uuid": "c2c21dd7-2782-4dc3-9789-16d006076289"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, B.Cu and 2 more, priority 0",
+                    "pos": {
+                        "x": 85.07,
+                        "y": 26.88
+                    },
+                    "uuid": "c983a438-601f-4ab9-a61f-435bbeaecf84"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'JLC_hole_to_copper' clearance 0,2540 mm; actual 0,2505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of P1",
+                    "pos": {
+                        "x": 134.940042,
+                        "y": 55.204867
+                    },
+                    "uuid": "c2c21dd7-2782-4dc3-9789-16d006076289"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, B.Cu and 2 more, priority 0",
+                    "pos": {
+                        "x": 85.07,
+                        "y": 26.88
+                    },
+                    "uuid": "c983a438-601f-4ab9-a61f-435bbeaecf84"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'JLC_hole_to_copper' clearance 0,2540 mm; actual 0,2505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of P1",
+                    "pos": {
+                        "x": 134.940042,
+                        "y": 55.204867
+                    },
+                    "uuid": "c2c21dd7-2782-4dc3-9789-16d006076289"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, B.Cu and 2 more, priority 0",
+                    "pos": {
+                        "x": 85.07,
+                        "y": 26.88
+                    },
+                    "uuid": "c983a438-601f-4ab9-a61f-435bbeaecf84"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (rule 'JLC_edge' clearance 0,3000 mm; actual 0,2350 mm)",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Track [BUS1N_H] on F.Cu, length 3,9000 mm",
+                    "pos": {
+                        "x": 142.175,
+                        "y": 65.7
+                    },
+                    "uuid": "2f42bf22-167b-4a1d-b89b-77ff72b8cc01"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (rule 'JLC_edge' clearance 0,3000 mm; actual 0,2100 mm)",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Track [BUS1N_H] on F.Cu, length 7,5237 mm",
+                    "pos": {
+                        "x": 142.175,
+                        "y": 61.8
+                    },
+                    "uuid": "4c4d154c-051a-4035-acc6-cc85cd96acd7"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (rule 'JLC_edge' clearance 0,3000 mm; actual 0,2350 mm)",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Track [BUS1N_H] on F.Cu, length 0,1414 mm",
+                    "pos": {
+                        "x": 142.075,
+                        "y": 65.8
+                    },
+                    "uuid": "e424aae4-6a7b-45e6-956c-500737c1d750"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (rule 'JLC_edge' clearance 0,3000 mm; actual 0,2783 mm)",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Track [+12V] on F.Cu, length 0,7117 mm",
+                    "pos": {
+                        "x": 141.395,
+                        "y": 51.11
+                    },
+                    "uuid": "2797ea54-66ac-4d17-a30f-b1da8c459fed"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (rule 'JLC_edge' clearance 0,3000 mm; actual 0,2795 mm)",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Track [+12V] on F.Cu, length 0,7117 mm",
+                    "pos": {
+                        "x": 141.395,
+                        "y": 48.57
+                    },
+                    "uuid": "2c6bb0a5-4fb6-46c8-8cb3-be3304589044"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (rule 'JLC_edge' clearance 0,3000 mm; actual 0,2783 mm)",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Track [+12V] on F.Cu, length 1,2700 mm",
+                    "pos": {
+                        "x": 142.1067,
+                        "y": 51.11
+                    },
+                    "uuid": "337bad25-8025-458c-97b2-fa2bf8e6bc90"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (rule 'JLC_edge' clearance 0,3000 mm; actual 0,2783 mm)",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Track [+12V] on F.Cu, length 1,2700 mm",
+                    "pos": {
+                        "x": 142.1067,
+                        "y": 49.84
+                    },
+                    "uuid": "41605597-d985-4fad-b512-2186fb9d9902"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (rule 'JLC_edge' clearance 0,3000 mm; actual 0,2783 mm)",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Track [+12V] on F.Cu, length 1,2700 mm",
+                    "pos": {
+                        "x": 142.1067,
+                        "y": 49.84
+                    },
+                    "uuid": "41605597-d985-4fad-b512-2186fb9d9902"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (rule 'JLC_edge' clearance 0,3000 mm; actual 0,2783 mm)",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Track [+12V] on F.Cu, length 0,7117 mm",
+                    "pos": {
+                        "x": 141.395,
+                        "y": 49.84
+                    },
+                    "uuid": "5dee9ffb-8b99-466a-9d07-5efa9fcd2861"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (rule 'JLC_edge' clearance 0,3000 mm; actual 0,2783 mm)",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Track [+12V] on F.Cu, length 0,7117 mm",
+                    "pos": {
+                        "x": 141.395,
+                        "y": 52.38
+                    },
+                    "uuid": "8bd8d30f-2769-4c4b-87dc-09507c4f8b0c"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (rule 'JLC_edge' clearance 0,3000 mm; actual 0,2783 mm)",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Track [+12V] on F.Cu, length 1,2700 mm",
+                    "pos": {
+                        "x": 142.1067,
+                        "y": 51.11
+                    },
+                    "uuid": "ee25a642-3ed1-45f8-a863-40c0b191834a"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (rule 'JLC_edge' clearance 0,3000 mm; actual 0,2005 mm)",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, B.Cu and 2 more, priority 0",
+                    "pos": {
+                        "x": 85.07,
+                        "y": 26.88
+                    },
+                    "uuid": "c983a438-601f-4ab9-a61f-435bbeaecf84"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (rule 'JLC_edge' clearance 0,3000 mm; actual 0,2625 mm)",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Pad 1 [+3V3] of C28 on F.Cu",
+                    "pos": {
+                        "x": 141.9125,
+                        "y": 69.082
+                    },
+                    "uuid": "19e4b07a-f436-4a5c-be5e-8155129ce344"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (rule 'JLC_edge' clearance 0,3000 mm; actual 0,2625 mm)",
+            "items": [
+                {
+                    "description": "Polygon on Edge.Cuts",
+                    "pos": {
+                        "x": 141.934585,
+                        "y": 32.061229
+                    },
+                    "uuid": "3fb694f7-b7af-493f-84be-8bbe486a91ea"
+                },
+                {
+                    "description": "Pad 2 [GND] of C28 on F.Cu",
+                    "pos": {
+                        "x": 141.9125,
+                        "y": 70.042
+                    },
+                    "uuid": "ba15bdec-59f4-4892-98b1-a2483b76ad68"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3375 mm)",
+            "items": [
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 65.862501
+                    },
+                    "uuid": "00b61a48-12b3-48ea-9e3d-cece83b8b7e2"
+                },
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 103.612742,
+                        "y": 66.038556
+                    },
+                    "uuid": "a444e88a-0ad6-4593-899e-c10c82cf8f39"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,2873 mm)",
+            "items": [
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 129.26,
+                        "y": 64.6
+                    },
+                    "uuid": "78f9e840-c449-4edb-9972-cd9f7df870c3"
+                },
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 129.474119,
+                        "y": 65.146891
+                    },
+                    "uuid": "95417ac7-ce13-40a4-b9a0-0577fdfc69f4"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3673 mm)",
+            "items": [
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 129.401737,
+                        "y": 65.810212
+                    },
+                    "uuid": "798e9c77-f014-4384-8544-d50427facef0"
+                },
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 129.474119,
+                        "y": 65.146891
+                    },
+                    "uuid": "95417ac7-ce13-40a4-b9a0-0577fdfc69f4"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4301 mm)",
+            "items": [
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 136.61,
+                        "y": 68.46
+                    },
+                    "uuid": "a27a56a9-5066-4b36-890c-7ba085dda24b"
+                },
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 136.491297,
+                        "y": 69.180342
+                    },
+                    "uuid": "aff0da9a-a9b0-4460-bde8-20d4b5e52384"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,2788 mm)",
+            "items": [
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 97.2,
+                        "y": 42.54
+                    },
+                    "uuid": "e7b2dc90-8f10-44d0-b972-115b153e9970"
+                },
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 97.278299,
+                        "y": 43.1135
+                    },
+                    "uuid": "fd303252-d6e4-4c94-84be-129fbec5efa7"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4430 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.06,
+                        "y": 41.2
+                    },
+                    "uuid": "08907051-9c30-4f6d-ab49-164aaa1a3ea5"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 40.84
+                    },
+                    "uuid": "f0600cec-1a2a-4f6a-b970-b7cfe4ec237d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4118 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.06,
+                        "y": 41.2
+                    },
+                    "uuid": "08907051-9c30-4f6d-ab49-164aaa1a3ea5"
+                },
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 41.49
+                    },
+                    "uuid": "4a2ee37b-0a9f-4bad-9f99-ff1a99390edb"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4430 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.06,
+                        "y": 41.2
+                    },
+                    "uuid": "08907051-9c30-4f6d-ab49-164aaa1a3ea5"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 40.84
+                    },
+                    "uuid": "14c11be9-12d2-4a9e-baf4-17090421c19c"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4118 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.06,
+                        "y": 41.2
+                    },
+                    "uuid": "08907051-9c30-4f6d-ab49-164aaa1a3ea5"
+                },
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 41.49
+                    },
+                    "uuid": "6092d07d-cabb-4434-a904-d0948fd53e4d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3934 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 95.008614,
+                        "y": 55.809129
+                    },
+                    "uuid": "12b51bd8-db61-4d2e-9c66-66b7e76e2830"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 95.34,
+                        "y": 55.2
+                    },
+                    "uuid": "9e73c395-8095-4771-be60-779fb1ea0192"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3500 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 40.84
+                    },
+                    "uuid": "14c11be9-12d2-4a9e-baf4-17090421c19c"
+                },
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 40.19
+                    },
+                    "uuid": "d3ad4325-5bbe-493d-b84c-88556184a59f"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3500 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 40.84
+                    },
+                    "uuid": "14c11be9-12d2-4a9e-baf4-17090421c19c"
+                },
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 41.49
+                    },
+                    "uuid": "6092d07d-cabb-4434-a904-d0948fd53e4d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3495 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.0036,
+                        "y": 41.9991
+                    },
+                    "uuid": "16a962f8-9534-4913-b6fb-b0b6900742fa"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.62731,
+                        "y": 42.180468
+                    },
+                    "uuid": "df87eea0-0301-40a3-a7b3-fe6207bf2f53"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3103 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 95.61,
+                        "y": 43.03
+                    },
+                    "uuid": "48636379-55c0-42ec-9948-ebf91ea9ead8"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 95.26,
+                        "y": 42.53
+                    },
+                    "uuid": "7db951b0-8d63-44a8-9a8a-8735d3ca1c1f"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3209 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 95.074788,
+                        "y": 63.160492
+                    },
+                    "uuid": "a23f13bf-6413-46c0-bf0d-c6de35b16113"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 94.88,
+                        "y": 63.75
+                    },
+                    "uuid": "b0355360-8eff-4c60-9283-a467dbd5aecc"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3500 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 41.49
+                    },
+                    "uuid": "6092d07d-cabb-4434-a904-d0948fd53e4d"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 42.14
+                    },
+                    "uuid": "ad648c62-bf88-47f3-97e7-4d9df292972e"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3500 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 42.14
+                    },
+                    "uuid": "ad648c62-bf88-47f3-97e7-4d9df292972e"
+                },
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 42.79
+                    },
+                    "uuid": "edef7ee4-e999-41e7-b551-58135b48fe00"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3090 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.15,
+                        "y": 71.042499
+                    },
+                    "uuid": "c1f07977-adf8-4d09-b7b5-1c60ce751c6d"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.639218,
+                        "y": 71.374072
+                    },
+                    "uuid": "de989db4-5d9c-4a07-907a-8eba8f71eb36"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3500 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 42.79
+                    },
+                    "uuid": "100b50ae-0539-447f-8678-d6720f3a1146"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 42.14
+                    },
+                    "uuid": "de1b26ba-3836-4d0b-9656-c86f113842ea"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3500 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 41.49
+                    },
+                    "uuid": "4a2ee37b-0a9f-4bad-9f99-ff1a99390edb"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 42.14
+                    },
+                    "uuid": "de1b26ba-3836-4d0b-9656-c86f113842ea"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4943 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 44.09
+                    },
+                    "uuid": "3bbaa62f-3580-4f29-b09d-6154a2bf23d8"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.25,
+                        "y": 44.737501
+                    },
+                    "uuid": "e1dae653-f98e-43ff-9f26-0274bf1ad584"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3500 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 41.49
+                    },
+                    "uuid": "4a2ee37b-0a9f-4bad-9f99-ff1a99390edb"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 40.84
+                    },
+                    "uuid": "f0600cec-1a2a-4f6a-b970-b7cfe4ec237d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3500 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 40.19
+                    },
+                    "uuid": "3e84a074-2dc9-4432-b409-0b4143c945a4"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 40.84
+                    },
+                    "uuid": "f0600cec-1a2a-4f6a-b970-b7cfe4ec237d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4874 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 119.532842,
+                        "y": 46.436827
+                    },
+                    "uuid": "cdb3316d-3e03-42f3-803c-a4eb65a377f3"
+                },
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.275,
+                        "y": 46.7
+                    },
+                    "uuid": "d09bc31b-a42f-43ca-bd77-1a8038f3a305"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3718 mm)",
+            "items": [
+                {
+                    "description": "Via [12V_Protected] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 112.7,
+                        "y": 36.65
+                    },
+                    "uuid": "119c274c-3b1b-4c09-9ad3-18a8c914d3a1"
+                },
+                {
+                    "description": "Via [12V_Protected] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 113.175,
+                        "y": 36.175
+                    },
+                    "uuid": "bc46722b-619e-44dc-8c43-b66c5ce8292c"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4500 mm)",
+            "items": [
+                {
+                    "description": "Via [12V_Protected] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 114.6,
+                        "y": 36.125
+                    },
+                    "uuid": "4a71b125-be97-4afe-afd6-94232636ce33"
+                },
+                {
+                    "description": "Via [12V_Protected] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 113.85,
+                        "y": 36.125
+                    },
+                    "uuid": "fe4c90ec-9bd9-4011-8e19-afc8ffafa5f9"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3768 mm)",
+            "items": [
+                {
+                    "description": "Via [12V_Protected] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 113.175,
+                        "y": 36.175
+                    },
+                    "uuid": "bc46722b-619e-44dc-8c43-b66c5ce8292c"
+                },
+                {
+                    "description": "Via [12V_Protected] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 113.85,
+                        "y": 36.125
+                    },
+                    "uuid": "fe4c90ec-9bd9-4011-8e19-afc8ffafa5f9"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3651 mm)",
+            "items": [
+                {
+                    "description": "Via [+12V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 140.73739,
+                        "y": 53.037609
+                    },
+                    "uuid": "899ca18f-b767-469e-9690-42566135a838"
+                },
+                {
+                    "description": "Via [+12V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 140.09,
+                        "y": 53.19
+                    },
+                    "uuid": "db2fa881-c8b1-4021-83b4-c05be2e91d28"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4700 mm)",
+            "items": [
+                {
+                    "description": "Via [+12V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 139.32,
+                        "y": 53.19
+                    },
+                    "uuid": "9b3ce1c8-703c-4bf9-bb6a-45bbc9aea524"
+                },
+                {
+                    "description": "Via [+12V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 140.09,
+                        "y": 53.19
+                    },
+                    "uuid": "db2fa881-c8b1-4021-83b4-c05be2e91d28"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4700 mm)",
+            "items": [
+                {
+                    "description": "Via [+12V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 139.32,
+                        "y": 53.19
+                    },
+                    "uuid": "9b3ce1c8-703c-4bf9-bb6a-45bbc9aea524"
+                },
+                {
+                    "description": "Via [+12V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 138.55,
+                        "y": 53.19
+                    },
+                    "uuid": "fd4af55b-96f5-47e3-bc04-a21ee5cfbcdd"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3500 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 40.19
+                    },
+                    "uuid": "3e84a074-2dc9-4432-b409-0b4143c945a4"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 40.84
+                    },
+                    "uuid": "f0600cec-1a2a-4f6a-b970-b7cfe4ec237d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4118 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.06,
+                        "y": 41.2
+                    },
+                    "uuid": "08907051-9c30-4f6d-ab49-164aaa1a3ea5"
+                },
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 41.49
+                    },
+                    "uuid": "4a2ee37b-0a9f-4bad-9f99-ff1a99390edb"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3500 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 41.49
+                    },
+                    "uuid": "4a2ee37b-0a9f-4bad-9f99-ff1a99390edb"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 42.14
+                    },
+                    "uuid": "de1b26ba-3836-4d0b-9656-c86f113842ea"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3500 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 41.49
+                    },
+                    "uuid": "4a2ee37b-0a9f-4bad-9f99-ff1a99390edb"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 40.84
+                    },
+                    "uuid": "f0600cec-1a2a-4f6a-b970-b7cfe4ec237d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3500 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 42.79
+                    },
+                    "uuid": "100b50ae-0539-447f-8678-d6720f3a1146"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.41,
+                        "y": 42.14
+                    },
+                    "uuid": "de1b26ba-3836-4d0b-9656-c86f113842ea"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3500 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 40.84
+                    },
+                    "uuid": "14c11be9-12d2-4a9e-baf4-17090421c19c"
+                },
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 40.19
+                    },
+                    "uuid": "d3ad4325-5bbe-493d-b84c-88556184a59f"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4118 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.06,
+                        "y": 41.2
+                    },
+                    "uuid": "08907051-9c30-4f6d-ab49-164aaa1a3ea5"
+                },
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 41.49
+                    },
+                    "uuid": "6092d07d-cabb-4434-a904-d0948fd53e4d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3500 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 40.84
+                    },
+                    "uuid": "14c11be9-12d2-4a9e-baf4-17090421c19c"
+                },
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 41.49
+                    },
+                    "uuid": "6092d07d-cabb-4434-a904-d0948fd53e4d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3500 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 41.49
+                    },
+                    "uuid": "6092d07d-cabb-4434-a904-d0948fd53e4d"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 42.14
+                    },
+                    "uuid": "ad648c62-bf88-47f3-97e7-4d9df292972e"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3500 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 42.14
+                    },
+                    "uuid": "ad648c62-bf88-47f3-97e7-4d9df292972e"
+                },
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 42.79
+                    },
+                    "uuid": "edef7ee4-e999-41e7-b551-58135b48fe00"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4943 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 9 [GND] of U6",
+                    "pos": {
+                        "x": 108.71,
+                        "y": 44.09
+                    },
+                    "uuid": "3bbaa62f-3580-4f29-b09d-6154a2bf23d8"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.25,
+                        "y": 44.737501
+                    },
+                    "uuid": "e1dae653-f98e-43ff-9f26-0274bf1ad584"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4063 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B1 [GND] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 56.079898
+                    },
+                    "uuid": "20229526-8b00-445b-b8db-2b3d1a982949"
+                },
+                {
+                    "description": "PTH pad B2 [BUS1N_H] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 56.479949
+                    },
+                    "uuid": "8184914e-2f1e-4873-9c64-35b4d00a7b22"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4001 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B2 [BUS1N_H] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 56.479949
+                    },
+                    "uuid": "8184914e-2f1e-4873-9c64-35b4d00a7b22"
+                },
+                {
+                    "description": "PTH pad B3 [BUS1N_L] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 57.280051
+                    },
+                    "uuid": "c227916c-342b-4806-9d25-51d21e69b2c1"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4061 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B4 [+12V] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 57.679848
+                    },
+                    "uuid": "826418f2-b7be-4722-b923-4882c62c99b7"
+                },
+                {
+                    "description": "PTH pad B3 [BUS1N_L] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 57.280051
+                    },
+                    "uuid": "c227916c-342b-4806-9d25-51d21e69b2c1"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3998 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B5 [unconnected-(P1-CC2-PadB5)] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 58.079898
+                    },
+                    "uuid": "325a9707-fb5f-481f-854b-41687525e113"
+                },
+                {
+                    "description": "PTH pad B3 [BUS1N_L] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 57.280051
+                    },
+                    "uuid": "c227916c-342b-4806-9d25-51d21e69b2c1"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4001 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B4 [+12V] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 57.679848
+                    },
+                    "uuid": "826418f2-b7be-4722-b923-4882c62c99b7"
+                },
+                {
+                    "description": "PTH pad B6 [unconnected-(P1-DP2-PadB6)] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 58.479949
+                    },
+                    "uuid": "dd9e75ad-51b9-4fe1-8b24-92b50bf5a7a9"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4063 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B5 [unconnected-(P1-CC2-PadB5)] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 58.079898
+                    },
+                    "uuid": "325a9707-fb5f-481f-854b-41687525e113"
+                },
+                {
+                    "description": "PTH pad B4 [+12V] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 57.679848
+                    },
+                    "uuid": "826418f2-b7be-4722-b923-4882c62c99b7"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4063 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B5 [unconnected-(P1-CC2-PadB5)] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 58.079898
+                    },
+                    "uuid": "325a9707-fb5f-481f-854b-41687525e113"
+                },
+                {
+                    "description": "PTH pad B6 [unconnected-(P1-DP2-PadB6)] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 58.479949
+                    },
+                    "uuid": "dd9e75ad-51b9-4fe1-8b24-92b50bf5a7a9"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4001 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B7 [unconnected-(P1-DN2-PadB7)] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 59.280051
+                    },
+                    "uuid": "774724a0-6783-412a-aa9d-f9a7b2678655"
+                },
+                {
+                    "description": "PTH pad B6 [unconnected-(P1-DP2-PadB6)] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 58.479949
+                    },
+                    "uuid": "dd9e75ad-51b9-4fe1-8b24-92b50bf5a7a9"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4061 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B7 [unconnected-(P1-DN2-PadB7)] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 59.280051
+                    },
+                    "uuid": "774724a0-6783-412a-aa9d-f9a7b2678655"
+                },
+                {
+                    "description": "PTH pad B8 [SBU2] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 59.679848
+                    },
+                    "uuid": "eacc4c83-9066-498c-8628-cc9ea196d2c8"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,3998 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B7 [unconnected-(P1-DN2-PadB7)] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 59.280051
+                    },
+                    "uuid": "774724a0-6783-412a-aa9d-f9a7b2678655"
+                },
+                {
+                    "description": "PTH pad B9 [+12V] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 60.079898
+                    },
+                    "uuid": "7d3cf4a5-40b9-49a7-ab47-0ab1656f5927"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4063 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B9 [+12V] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 60.079898
+                    },
+                    "uuid": "7d3cf4a5-40b9-49a7-ab47-0ab1656f5927"
+                },
+                {
+                    "description": "PTH pad B8 [SBU2] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 59.679848
+                    },
+                    "uuid": "eacc4c83-9066-498c-8628-cc9ea196d2c8"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4001 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B10 [BUS0_L] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 60.479949
+                    },
+                    "uuid": "de849e09-f691-40e9-b38b-3568600d1b06"
+                },
+                {
+                    "description": "PTH pad B8 [SBU2] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 59.679848
+                    },
+                    "uuid": "eacc4c83-9066-498c-8628-cc9ea196d2c8"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4063 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B9 [+12V] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 60.079898
+                    },
+                    "uuid": "7d3cf4a5-40b9-49a7-ab47-0ab1656f5927"
+                },
+                {
+                    "description": "PTH pad B10 [BUS0_L] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 60.479949
+                    },
+                    "uuid": "de849e09-f691-40e9-b38b-3568600d1b06"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4001 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B11 [BUS0_H] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 61.280051
+                    },
+                    "uuid": "710fd69a-67fe-4a16-845a-b93d763ff973"
+                },
+                {
+                    "description": "PTH pad B10 [BUS0_L] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 60.479949
+                    },
+                    "uuid": "de849e09-f691-40e9-b38b-3568600d1b06"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (rule 'JLC_hole_to_hole' min 0,5000 mm; actual 0,4061 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B12 [GND] of P1",
+                    "pos": {
+                        "x": 135.590029,
+                        "y": 61.679848
+                    },
+                    "uuid": "5b8d3564-634b-40b9-bf8a-6bfa547cefb6"
+                },
+                {
+                    "description": "PTH pad B11 [BUS0_H] of P1",
+                    "pos": {
+                        "x": 136.290055,
+                        "y": 61.280051
+                    },
+                    "uuid": "710fd69a-67fe-4a16-845a-b93d763ff973"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C14",
+                    "pos": {
+                        "x": 102.445,
+                        "y": 51.985
+                    },
+                    "uuid": "04de2401-2753-4aae-aa35-c1a95552c314"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R27",
+                    "pos": {
+                        "x": 117.48,
+                        "y": 55.75
+                    },
+                    "uuid": "0b463a10-e560-467c-9b60-8b38b8772d5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint D7",
+                    "pos": {
+                        "x": 131.24,
+                        "y": 55.24
+                    },
+                    "uuid": "0c47f109-2869-4efd-92e8-34b9a65f7737"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C10",
+                    "pos": {
+                        "x": 109.63,
+                        "y": 47.33
+                    },
+                    "uuid": "0d037015-dc79-4794-bf3f-5e129bcab677"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R23",
+                    "pos": {
+                        "x": 121.675,
+                        "y": 70.2
+                    },
+                    "uuid": "0d2cb21f-4e5a-48af-ba1e-1bf383833646"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R24",
+                    "pos": {
+                        "x": 130.675,
+                        "y": 68.5
+                    },
+                    "uuid": "13e9b04a-3f0c-46ce-b36b-9447d39609be"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R5",
+                    "pos": {
+                        "x": 108.31,
+                        "y": 45.39
+                    },
+                    "uuid": "1866b60a-06ef-43a1-ad93-b22a2986af80"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Diodes_PSOP-8' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U12",
+                    "pos": {
+                        "x": 97.74,
+                        "y": 46.83
+                    },
+                    "uuid": "1ca779e4-ed8d-495e-9fa2-47eb99f78245"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 103.65,
+                        "y": 50.325
+                    },
+                    "uuid": "2180c155-ed34-49e7-8215-e499917b3044"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C37",
+                    "pos": {
+                        "x": 103.8,
+                        "y": 40.225
+                    },
+                    "uuid": "27bf1f6b-c3bb-4934-b9be-42c1ab88ef3b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R16",
+                    "pos": {
+                        "x": 97.065,
+                        "y": 59.335
+                    },
+                    "uuid": "2d7d905f-6a86-4ee2-bdd3-c082dce4daaa"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C28",
+                    "pos": {
+                        "x": 141.9125,
+                        "y": 69.562
+                    },
+                    "uuid": "2d9820d7-af2e-4535-8dfa-d21f34ec92cd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U9",
+                    "pos": {
+                        "x": 127.02,
+                        "y": 55.245
+                    },
+                    "uuid": "301e5505-10c7-4272-b5d2-2f3051556e31"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R19",
+                    "pos": {
+                        "x": 104.68,
+                        "y": 67.46
+                    },
+                    "uuid": "35782a08-ea57-499d-851d-78d41327c1bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C27",
+                    "pos": {
+                        "x": 128.33,
+                        "y": 57.535
+                    },
+                    "uuid": "3ac142d1-5997-40a6-aa31-bc77d430db72"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R9",
+                    "pos": {
+                        "x": 120.875,
+                        "y": 51.675
+                    },
+                    "uuid": "3dca25b9-6df2-4b36-97a9-a295e9960cd3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT-23-6' does not match copy in library 'Package_TO_SOT_SMD'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 118.3125,
+                        "y": 53.425
+                    },
+                    "uuid": "4333b92e-e347-4c8f-b82a-806c8ec6250d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C18",
+                    "pos": {
+                        "x": 112.37,
+                        "y": 46.7
+                    },
+                    "uuid": "441d35a3-7a34-40d6-b094-61186da73131"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C11",
+                    "pos": {
+                        "x": 112.025,
+                        "y": 55.885
+                    },
+                    "uuid": "4470a828-03a4-4ce3-9e7b-0385d96f1d77"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U8",
+                    "pos": {
+                        "x": 127.1175,
+                        "y": 61.51
+                    },
+                    "uuid": "4b966269-6289-4d3c-9cf0-545505f6968d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C29",
+                    "pos": {
+                        "x": 137.2525,
+                        "y": 69.552
+                    },
+                    "uuid": "4c7c524b-48a4-4112-8aa8-b4b9bd366728"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R18",
+                    "pos": {
+                        "x": 103.67,
+                        "y": 67.46
+                    },
+                    "uuid": "5aed9885-2eeb-452d-a191-a2b15be50f15"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C20",
+                    "pos": {
+                        "x": 116.4,
+                        "y": 47.825
+                    },
+                    "uuid": "5d7e45c6-052e-4218-8d6c-8578dc0c2f70"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C30",
+                    "pos": {
+                        "x": 123.46,
+                        "y": 61.51
+                    },
+                    "uuid": "608faeb4-bf2c-4e1a-947d-30d2e8a7a29c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint D9",
+                    "pos": {
+                        "x": 136.93,
+                        "y": 66.22
+                    },
+                    "uuid": "60fd2a5c-43f9-4f41-a8ae-36456f518ae3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT23-3' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint Q1",
+                    "pos": {
+                        "x": 125.55,
+                        "y": 71.35
+                    },
+                    "uuid": "6b991e2c-bfd1-4063-8250-d77127f423d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C32",
+                    "pos": {
+                        "x": 139.6525,
+                        "y": 74.052
+                    },
+                    "uuid": "6e26cda2-1f0b-4e74-8cd9-bfa5f0cd3b5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C21",
+                    "pos": {
+                        "x": 118.475,
+                        "y": 47.825
+                    },
+                    "uuid": "6e6f2f20-4a62-4a44-a8e1-d999b0fdf563"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint D5",
+                    "pos": {
+                        "x": 127.325,
+                        "y": 67.65
+                    },
+                    "uuid": "73704966-8cae-4809-989b-d2d4ecc12698"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R17",
+                    "pos": {
+                        "x": 102.66,
+                        "y": 67.45
+                    },
+                    "uuid": "772ea7c6-1af6-4503-bc15-81dc4e4c13b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint D6",
+                    "pos": {
+                        "x": 131.22,
+                        "y": 62.46
+                    },
+                    "uuid": "7ae74b2f-03e8-4c73-a168-76d3f9c9def7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT23-3' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint Q2",
+                    "pos": {
+                        "x": 128.8,
+                        "y": 71.35
+                    },
+                    "uuid": "7bf54be9-9d9d-4f6f-84bc-757bebf528c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C12",
+                    "pos": {
+                        "x": 113.635,
+                        "y": 43.9
+                    },
+                    "uuid": "84ba9a39-f8ea-4e95-b6f1-ac9b26a8021e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C19",
+                    "pos": {
+                        "x": 114.37,
+                        "y": 46.7
+                    },
+                    "uuid": "886e2174-d7fd-400a-ba9d-a619475133c8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint D8",
+                    "pos": {
+                        "x": 140.539998,
+                        "y": 66.22
+                    },
+                    "uuid": "95b49ab4-c370-41cd-87af-75c52e37f927"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'CONV_TPS5450DDAR' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint U6",
+                    "pos": {
+                        "x": 108.06,
+                        "y": 42.14
+                    },
+                    "uuid": "981ce348-4cf2-4530-b4d2-e5d0d4f560a0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C17",
+                    "pos": {
+                        "x": 127.3,
+                        "y": 51.65
+                    },
+                    "uuid": "98c0d906-5f05-409d-9cb3-82a81581c31d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 103.1,
+                        "y": 44.625
+                    },
+                    "uuid": "9cd0fa05-54b5-401f-adc7-9108a004d671"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 98.425,
+                        "y": 64.435
+                    },
+                    "uuid": "9e70049b-270b-4c38-8ee7-db60a9f3835e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'LED-ARRAY-SMD_4P-L2.2-W2.1-BR' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint U5",
+                    "pos": {
+                        "x": 104.025,
+                        "y": 70.175
+                    },
+                    "uuid": "a3ec704c-cc8d-494f-838f-68fbe4f560ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+            "items": [
+                {
+                    "description": "Footprint FID2",
+                    "pos": {
+                        "x": 140.484998,
+                        "y": 76.710002
+                    },
+                    "uuid": "a5dc672d-8132-4a5c-b63c-d308de338c97"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'IND-SMD_L7.3-W6.8' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint L3",
+                    "pos": {
+                        "x": 97.25,
+                        "y": 36.025
+                    },
+                    "uuid": "a7521b3b-2142-47b4-ad5a-7b5b11ec26c3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+            "items": [
+                {
+                    "description": "Footprint FID3",
+                    "pos": {
+                        "x": 96.759999,
+                        "y": 35.26
+                    },
+                    "uuid": "afae8b79-bfb6-4cb9-bab0-151c286ced24"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C31",
+                    "pos": {
+                        "x": 123.625,
+                        "y": 55.35
+                    },
+                    "uuid": "b18b44b5-45d2-4f1e-85de-2af9ea6ca68b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT-323_SC-70' does not match copy in library 'Package_TO_SOT_SMD'",
+            "items": [
+                {
+                    "description": "Footprint Q3",
+                    "pos": {
+                        "x": 113.425,
+                        "y": 53.025
+                    },
+                    "uuid": "b624e904-da82-4809-8d8d-00e37bd15264"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PowerPAK_SO-8_Single' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint Q4",
+                    "pos": {
+                        "x": 138.6,
+                        "y": 50.475
+                    },
+                    "uuid": "b728cfaf-e177-42f3-9080-39070bfc95c2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 113.635,
+                        "y": 37.85
+                    },
+                    "uuid": "bb1b3107-151c-4a44-95db-dd3c3f7b8dcb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U10",
+                    "pos": {
+                        "x": 139.645,
+                        "y": 70.4
+                    },
+                    "uuid": "bd1a5fec-ff84-4fac-a4db-e91547e4d548"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C16",
+                    "pos": {
+                        "x": 93.47,
+                        "y": 44.86
+                    },
+                    "uuid": "c29d4f0d-623a-4249-9cd7-f1e318ce396f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C8",
+                    "pos": {
+                        "x": 115.7025,
+                        "y": 54.635
+                    },
+                    "uuid": "c33f3c98-3e49-469a-842b-ad47eef6b0a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U11",
+                    "pos": {
+                        "x": 134.98,
+                        "y": 70.372
+                    },
+                    "uuid": "cb383547-35cc-4aee-a0a2-4bd2bda8cf6f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R15",
+                    "pos": {
+                        "x": 97.065,
+                        "y": 58.315
+                    },
+                    "uuid": "cbb7a860-e00a-4f5b-81ac-95a1aa01a755"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'DIOM4325X250N' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 131.225,
+                        "y": 49.8
+                    },
+                    "uuid": "cefc3c7a-7646-4878-a357-4f599daf8692"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 97.425,
+                        "y": 56.535
+                    },
+                    "uuid": "d3ff01b0-900d-4e63-bc02-ce790f309a3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C5",
+                    "pos": {
+                        "x": 109.875,
+                        "y": 65.535
+                    },
+                    "uuid": "d531bc23-3551-4e96-8228-25a6e350e518"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C26",
+                    "pos": {
+                        "x": 127.96,
+                        "y": 63.78
+                    },
+                    "uuid": "d999ced4-4372-49fe-9ea0-688e9912652a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C33",
+                    "pos": {
+                        "x": 134.8925,
+                        "y": 74.022
+                    },
+                    "uuid": "dcade19c-5e03-47be-8f07-2f676ea60fa4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R14",
+                    "pos": {
+                        "x": 113.56,
+                        "y": 58.1
+                    },
+                    "uuid": "ddfe9f7e-7c87-4528-b6ec-72d1d8d87100"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+            "items": [
+                {
+                    "description": "Footprint FID1",
+                    "pos": {
+                        "x": 93.96,
+                        "y": 72.310002
+                    },
+                    "uuid": "de6699c9-5a3d-430f-8750-993947cb7365"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R3",
+                    "pos": {
+                        "x": 103.65,
+                        "y": 49.325
+                    },
+                    "uuid": "de98c4b5-c2a5-411d-8239-83087a63b8a2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R26",
+                    "pos": {
+                        "x": 115.7125,
+                        "y": 52.665
+                    },
+                    "uuid": "e0492c47-aa7e-4bfe-b922-fb257a2e6492"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'USB-C-SMD_TYPE-C-USB-20' does not match copy in library 'BlackPanda'",
+            "items": [
+                {
+                    "description": "Footprint P1",
+                    "pos": {
+                        "x": 137.485,
+                        "y": 58.88
+                    },
+                    "uuid": "e9d49a08-3f11-4d1a-a7c1-56f7b7e34b27"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C34",
+                    "pos": {
+                        "x": 119.45,
+                        "y": 51.225
+                    },
+                    "uuid": "e9efbbdb-5bae-49dc-9379-6a7decf925b6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C7",
+                    "pos": {
+                        "x": 113.635,
+                        "y": 41.8833
+                    },
+                    "uuid": "f01acd8c-3e90-4727-b00d-60c31d3a6ac8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C6",
+                    "pos": {
+                        "x": 113.635,
+                        "y": 39.8667
+                    },
+                    "uuid": "fa4091f1-bd4f-4d75-8898-8ca1b35f0728"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C23",
+                    "pos": {
+                        "x": 108.6828,
+                        "y": 70.1453
+                    },
+                    "uuid": "3629e877-423d-4419-84c1-f86c5959f114"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C24",
+                    "pos": {
+                        "x": 102.3172,
+                        "y": 70.1453
+                    },
+                    "uuid": "57b4d8ea-91d7-4617-99d1-037cfce30156"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R21",
+                    "pos": {
+                        "x": 114.75,
+                        "y": 43.95
+                    },
+                    "uuid": "90e39039-09cb-4966-b38f-67dbc12f60f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+            "items": [
+                {
+                    "description": "Footprint FID4",
+                    "pos": {
+                        "x": 93.96,
+                        "y": 72.310002
+                    },
+                    "uuid": "a90387d8-db33-46de-bfcf-d200661bfdf1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+            "items": [
+                {
+                    "description": "Footprint FID6",
+                    "pos": {
+                        "x": 93.96,
+                        "y": 43.66
+                    },
+                    "uuid": "cd63b18e-4ddf-4dc4-a694-668df5c12ffa"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_0402_1005Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R20",
+                    "pos": {
+                        "x": 113.69,
+                        "y": 43.95
+                    },
+                    "uuid": "d14ff9c1-3bfc-460f-979c-cb31d8e01ed9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Crystal_SMD_3225-4Pin_3.2x2.5mm' does not match copy in library 'Crystal'",
+            "items": [
+                {
+                    "description": "Footprint Y1",
+                    "pos": {
+                        "x": 105.5,
+                        "y": 71.0125
+                    },
+                    "uuid": "e5cd965a-3afd-42da-858c-50349fc918f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial'",
+            "items": [
+                {
+                    "description": "Footprint FID5",
+                    "pos": {
+                        "x": 140.484998,
+                        "y": 35.26
+                    },
+                    "uuid": "e663b141-ba85-4d79-b3a8-95b056aa8d82"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}

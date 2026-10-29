@@ -343,7 +343,7 @@ document was written; the following facts come from `hardware/research/hybrid-fw
 | Footprint vs datasheet audit | done; `Q1`/`Q2`/`Q3` pad geometry corrected in step 1 of the correction campaign | `hardware/reports/footprint-audit/`, `correcoes-aplicadas.md` |
 | SI/PI audit | 36 items reviewed analytically; critical ones applied (VFBSMPS to VCAP, R1, D15, C4/C12, U13), others deferred | `hardware/reports/si-pi-audit/` |
 | BOM | 119 references, 118 with MPN, 117 with LCSC code; `JP1` (no part) and `U1` (not in catalogue) without; **no LCSC code confirmed** | `hardware/reports/bom-real/bom-report.md`, `docs/hardware/bom.csv` |
-| Fabrication package | generated 2026-10-28 by `step8_fabricate.py`; marked DO NOT FABRICATE | `hardware/fabrication/readme.md` |
+| Fabrication package | regenerated 2026-10-29 by `step8_fabricate.py` after the software verification pass; not physically verified | `hardware/fabrication/readme.md` |
 
 Explicit statement: **the Hybrid Panda has not been fabricated, assembled, powered,
 flashed or connected to a vehicle.** No electrical, thermal, EMC or functional
@@ -382,4 +382,4 @@ Risks:
 - `hardware/reports/hybrid_DRC_final.json`, `hardware/reports/hybrid_ERC_final.json`.
 - `hardware/hybrid-panda/HybridPanda.kicad_sch`, `HybridPanda.kicad_pcb`, `HybridPanda.kicad_pro`.
 - `archive/baseline-original/BlackPanda/` - OpenBlackPanda v2 by Lukas Loetkolben (MIT).
-- `hardware/fabrication/readme.md` - fabrication package and DO NOT FABRICATE notice.
+- `hardware/fabrication/readme.md` - fabrication package and status notice.

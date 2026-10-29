@@ -1,0 +1,693 @@
+board layers 4 thickness 1.59
+min clearance 0.1 min track 0.127 min via dia 0.4 min through hole 0.3 hole-to-hole 0.25 hole clearance 0.25 min annular 0.125 cu-edge 0.2 mask min web 0.1 mask expansion 0.0 silk min 0.8 0.08
+edge bbox 91.91 32.01 51.024998 46.750002
+enabled layers: ['F.Cu', 'In1.Cu', 'In2.Cu', 'B.Cu']
+
+== FOOTPRINTS ==
+C1 | 100NF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(98.42,64.44) rot=180.0 | pads smd/pth/npth=2/0/0
+C10 | 47uF | Capacitor_SMD:C_0805_2012Metric | layer=F.Cu | pos=(109.63,47.33) rot=180.0 | pads smd/pth/npth=2/0/0
+C11 | 100NF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(112.03,55.88) rot=-90.0 | pads smd/pth/npth=2/0/0
+C12 | 10uF | Capacitor_SMD:C_0805_2012Metric | layer=F.Cu | pos=(113.64,43.90) rot=0.0 | pads smd/pth/npth=2/0/0
+C14 | 100NF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(102.44,51.98) rot=90.0 | pads smd/pth/npth=2/0/0
+C16 | 47uF | Capacitor_SMD:C_0805_2012Metric | layer=F.Cu | pos=(93.47,44.86) rot=-90.0 | pads smd/pth/npth=2/0/0
+C17 | 47uF | Capacitor_SMD:C_0805_2012Metric | layer=F.Cu | pos=(127.30,51.65) rot=90.0 | pads smd/pth/npth=2/0/0
+C18 | 47uF | Capacitor_SMD:C_0805_2012Metric | layer=F.Cu | pos=(112.37,46.70) rot=90.0 | pads smd/pth/npth=2/0/0
+C19 | 47uF | Capacitor_SMD:C_0805_2012Metric | layer=F.Cu | pos=(114.37,46.70) rot=90.0 | pads smd/pth/npth=2/0/0
+C2 | 100NF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(97.42,56.53) rot=90.0 | pads smd/pth/npth=2/0/0
+C20 | 47uF | Capacitor_SMD:C_0805_2012Metric | layer=F.Cu | pos=(116.40,47.83) rot=90.0 | pads smd/pth/npth=2/0/0
+C21 | 47uF | Capacitor_SMD:C_0805_2012Metric | layer=F.Cu | pos=(118.47,47.83) rot=90.0 | pads smd/pth/npth=2/0/0
+C23 | 18pF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(108.68,70.15) rot=-90.0 | pads smd/pth/npth=2/0/0
+   pad    1 net=HSE_IN         rrect  size=(0.560,0.620) drill=(0.00,0.00) at=(108.683,69.665) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    2 net=GND            rrect  size=(0.560,0.620) drill=(0.00,0.00) at=(108.683,70.625) layers=['B.Cu', 'B.Mask', 'B.Paste']
+C24 | 18pF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(102.32,70.15) rot=-90.0 | pads smd/pth/npth=2/0/0
+   pad    1 net=HSE_OUT        rrect  size=(0.560,0.620) drill=(0.00,0.00) at=(102.317,69.665) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    2 net=GND            rrect  size=(0.560,0.620) drill=(0.00,0.00) at=(102.317,70.625) layers=['B.Cu', 'B.Mask', 'B.Paste']
+C26 | 100NF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(127.96,63.78) rot=180.0 | pads smd/pth/npth=2/0/0
+C27 | 100NF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(128.33,57.53) rot=180.0 | pads smd/pth/npth=2/0/0
+C28 | 100NF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(141.91,69.56) rot=-90.0 | pads smd/pth/npth=2/0/0
+C29 | 100NF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(137.25,69.55) rot=-90.0 | pads smd/pth/npth=2/0/0
+C3 | 47uF | Capacitor_SMD:C_0805_2012Metric | layer=F.Cu | pos=(103.10,44.62) rot=-90.0 | pads smd/pth/npth=2/0/0
+C30 | 100NF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(123.46,61.51) rot=-90.0 | pads smd/pth/npth=2/0/0
+C31 | 100NF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(123.62,55.35) rot=-90.0 | pads smd/pth/npth=2/0/0
+C32 | 100NF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(139.65,74.05) rot=0.0 | pads smd/pth/npth=2/0/0
+C33 | 100NF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(134.89,74.02) rot=0.0 | pads smd/pth/npth=2/0/0
+C34 | 0.1uF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(119.45,51.23) rot=180.0 | pads smd/pth/npth=2/0/0
+C37 | 10nF (LOW ESR) | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(103.80,40.23) rot=90.0 | pads smd/pth/npth=2/0/0
+C38 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(106.74,74.11) rot=-90.0 | pads smd/pth/npth=2/0/0
+C39 | 2.2uF | Capacitor_SMD:C_0603_1608Metric | layer=B.Cu | pos=(95.63,50.36) rot=180.0 | pads smd/pth/npth=2/0/0
+C4 | 10uF | Capacitor_SMD:C_0805_2012Metric | layer=F.Cu | pos=(113.64,37.85) rot=0.0 | pads smd/pth/npth=2/0/0
+C40 | 2.2uF | Capacitor_SMD:C_0603_1608Metric | layer=B.Cu | pos=(123.46,63.35) rot=0.0 | pads smd/pth/npth=2/0/0
+C41 | 220pF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(111.47,72.66) rot=-90.0 | pads smd/pth/npth=2/0/0
+C42 | 10uF | Capacitor_SMD:C_0805_2012Metric | layer=B.Cu | pos=(109.42,73.70) rot=-90.0 | pads smd/pth/npth=2/0/0
+C43 | 1uF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(101.75,72.53) rot=-90.0 | pads smd/pth/npth=2/0/0
+C44 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(100.75,69.86) rot=-90.0 | pads smd/pth/npth=2/0/0
+C45 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(115.25,69.86) rot=-90.0 | pads smd/pth/npth=2/0/0
+C46 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(113.05,69.86) rot=-90.0 | pads smd/pth/npth=2/0/0
+C47 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(109.25,68.46) rot=-90.0 | pads smd/pth/npth=2/0/0
+C48 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(101.73,69.70) rot=-90.0 | pads smd/pth/npth=2/0/0
+C49 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(96.24,62.85) rot=180.0 | pads smd/pth/npth=2/0/0
+C5 | 100NF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(109.88,65.53) rot=0.0 | pads smd/pth/npth=2/0/0
+C50 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(96.24,55.85) rot=180.0 | pads smd/pth/npth=2/0/0
+C51 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(96.24,48.35) rot=180.0 | pads smd/pth/npth=2/0/0
+C52 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(102.95,43.34) rot=90.0 | pads smd/pth/npth=2/0/0
+C53 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(112.65,43.34) rot=90.0 | pads smd/pth/npth=2/0/0
+C54 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(117.40,43.34) rot=90.0 | pads smd/pth/npth=2/0/0
+C55 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(122.76,52.85) rot=0.0 | pads smd/pth/npth=2/0/0
+C56 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(122.76,57.85) rot=0.0 | pads smd/pth/npth=2/0/0
+C57 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(122.76,65.35) rot=0.0 | pads smd/pth/npth=2/0/0
+C58 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(106.99,47.64) rot=90.0 | pads smd/pth/npth=2/0/0
+C59 | 100nF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(108.95,38.17) rot=90.0 | pads smd/pth/npth=2/0/0
+C6 | 2.2uF | Capacitor_SMD:C_0805_2012Metric | layer=F.Cu | pos=(113.64,39.87) rot=0.0 | pads smd/pth/npth=2/0/0
+C60 | 4.7uF | Capacitor_SMD:C_0603_1608Metric | layer=B.Cu | pos=(115.75,72.73) rot=-90.0 | pads smd/pth/npth=2/0/0
+C61 | 4.7uF | Capacitor_SMD:C_0603_1608Metric | layer=B.Cu | pos=(95.31,57.54) rot=180.0 | pads smd/pth/npth=2/0/0
+C62 | 4.7uF | Capacitor_SMD:C_0603_1608Metric | layer=B.Cu | pos=(116.75,40.47) rot=90.0 | pads smd/pth/npth=2/0/0
+C63 | 1uF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(113.88,72.36) rot=-90.0 | pads smd/pth/npth=2/0/0
+C64 | 2.2uF | Capacitor_SMD:C_0402_1005Metric | layer=B.Cu | pos=(116.28,44.00) rot=90.0 | pads smd/pth/npth=2/0/0
+C65 | 4.7uF | Capacitor_SMD:C_0603_1608Metric | layer=F.Cu | pos=(109.30,70.10) rot=180.0 | pads smd/pth/npth=2/0/0
+C7 | 2.2uF | Capacitor_SMD:C_0805_2012Metric | layer=F.Cu | pos=(113.64,41.88) rot=0.0 | pads smd/pth/npth=2/0/0
+C8 | 10uF | Capacitor_SMD:C_0402_1005Metric | layer=F.Cu | pos=(115.70,54.63) rot=90.0 | pads smd/pth/npth=2/0/0
+D1 | SMAJ16CA-13-F | BlackPanda:DIOM4325X250N | layer=F.Cu | pos=(131.22,49.80) rot=90.0 | pads smd/pth/npth=2/0/0
+   pad    1 net=GND            rect   size=(2.120,1.500) drill=(0.00,0.00) at=(131.225,51.915) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    2 net=+12V           rect   size=(2.120,1.500) drill=(0.00,0.00) at=(131.225,47.685) layers=['F.Cu', 'F.Mask', 'F.Paste']
+D10 | BAS70H 115 | Diode_SMD:D_SOD-123F | layer=F.Cu | pos=(119.78,57.45) rot=180.0 | pads smd/pth/npth=2/0/0
+D11 | B320AE-13 | Diode_SMD:D_SMA | layer=F.Cu | pos=(97.26,41.27) rot=180.0 | pads smd/pth/npth=2/0/0
+   pad    1 net=Net-(D11-K)    rrect  size=(2.500,1.800) drill=(0.00,0.00) at=(99.260,41.270) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    2 net=GND            rrect  size=(2.500,1.800) drill=(0.00,0.00) at=(95.260,41.270) layers=['F.Cu', 'F.Mask', 'F.Paste']
+D12 | SM540C | Diode_SMD:D_SMC | layer=F.Cu | pos=(106.87,35.87) rot=180.0 | pads smd/pth/npth=2/0/0
+   pad    1 net=L4             rrect  size=(3.300,2.500) drill=(0.00,0.00) at=(110.270,35.870) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    2 net=GND            rrect  size=(3.300,2.500) drill=(0.00,0.00) at=(103.470,35.870) layers=['F.Cu', 'F.Mask', 'F.Paste']
+D13 | BAT54S | Package_TO_SOT_SMD:SOT-23 | layer=B.Cu | pos=(131.45,66.30) rot=0.0 | pads smd/pth/npth=3/0/0
+   pad    1 net=GND            rrect  size=(1.475,0.600) drill=(0.00,0.00) at=(130.511,67.253) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    2 net=+3V3           rrect  size=(1.475,0.600) drill=(0.00,0.00) at=(130.511,65.353) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    3 net=SBU1_ADC       rrect  size=(1.475,0.600) drill=(0.00,0.00) at=(132.386,66.303) layers=['B.Cu', 'B.Mask', 'B.Paste']
+D14 | BAT54S | Package_TO_SOT_SMD:SOT-23 | layer=B.Cu | pos=(121.57,70.55) rot=0.0 | pads smd/pth/npth=3/0/0
+D15 | BZT52C12 | Diode_SMD:D_SOD-123 | layer=B.Cu | pos=(133.90,50.45) rot=-90.0 | pads smd/pth/npth=2/0/0
+D2 | BAS40WS 43 | Diode_SMD:D_SOD-323 | layer=F.Cu | pos=(133.95,50.25) rot=-90.0 | pads smd/pth/npth=2/0/0
+D5 | PESD2CAN,215 | BlackPanda:SOT95P230X110-3N | layer=F.Cu | pos=(127.33,67.65) rot=-90.0 | pads smd/pth/npth=3/0/0
+   pad    1 net=SBU1           rect   size=(1.000,0.600) drill=(0.00,0.00) at=(128.275,66.500) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    2 net=SBU2           rect   size=(1.000,0.600) drill=(0.00,0.00) at=(126.375,66.500) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    3 net=GND            rect   size=(1.000,0.600) drill=(0.00,0.00) at=(127.325,68.800) layers=['F.Cu', 'F.Mask', 'F.Paste']
+D6 | PESD2CAN,215 | BlackPanda:SOT95P230X110-3N | layer=F.Cu | pos=(131.22,62.46) rot=180.0 | pads smd/pth/npth=3/0/0
+D7 | PESD2CAN,215 | BlackPanda:SOT95P230X110-3N | layer=F.Cu | pos=(131.24,55.24) rot=180.0 | pads smd/pth/npth=3/0/0
+D8 | PESD2CAN,215 | BlackPanda:SOT95P230X110-3N | layer=F.Cu | pos=(140.54,66.22) rot=-90.0 | pads smd/pth/npth=3/0/0
+D9 | PESD2CAN,215 | BlackPanda:SOT95P230X110-3N | layer=F.Cu | pos=(136.93,66.22) rot=-90.0 | pads smd/pth/npth=3/0/0
+FB1 | 600R@100MHz | Inductor_SMD:L_0603_1608Metric | layer=B.Cu | pos=(99.88,73.96) rot=-90.0 | pads smd/pth/npth=2/0/0
+   pad    1 net=VDDA           rrect  size=(0.875,0.950) drill=(0.00,0.00) at=(99.884,73.175) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    2 net=+3V3           rrect  size=(0.875,0.950) drill=(0.00,0.00) at=(99.884,74.750) layers=['B.Cu', 'B.Mask', 'B.Paste']
+FID1 | Fiducial | Fiducial:Fiducial_1mm_Mask2mm | layer=F.Cu | pos=(93.96,72.31) rot=0.0 | pads smd/pth/npth=1/0/0
+FID2 | Fiducial | Fiducial:Fiducial_1mm_Mask2mm | layer=F.Cu | pos=(140.48,76.71) rot=0.0 | pads smd/pth/npth=1/0/0
+FID3 | Fiducial | Fiducial:Fiducial_1mm_Mask2mm | layer=F.Cu | pos=(96.76,35.26) rot=0.0 | pads smd/pth/npth=1/0/0
+FID4 | Fiducial | Fiducial:Fiducial_1mm_Mask2mm | layer=B.Cu | pos=(93.96,72.31) rot=180.0 | pads smd/pth/npth=1/0/0
+FID5 | Fiducial | Fiducial:Fiducial_1mm_Mask2mm | layer=B.Cu | pos=(140.48,35.26) rot=180.0 | pads smd/pth/npth=1/0/0
+FID6 | Fiducial | Fiducial:Fiducial_1mm_Mask2mm | layer=B.Cu | pos=(93.96,43.66) rot=180.0 | pads smd/pth/npth=1/0/0
+J1 | SWD | Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD | layer=B.Cu | pos=(99.13,38.07) rot=0.0 | pads smd/pth/npth=10/0/0
+   pad    1 net=+3V3           rect   size=(2.400,0.740) drill=(0.00,0.00) at=(97.178,40.614) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    2 net=SWDIO          rect   size=(2.400,0.740) drill=(0.00,0.00) at=(101.078,40.614) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    3 net=GND            rect   size=(2.400,0.740) drill=(0.00,0.00) at=(97.178,39.343) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    4 net=SWCLK          rect   size=(2.400,0.740) drill=(0.00,0.00) at=(101.078,39.343) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    5 net=GND            rect   size=(2.400,0.740) drill=(0.00,0.00) at=(97.178,38.074) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    6 net=unconnected-(J1-Pin_6-Pad6) rect   size=(2.400,0.740) drill=(0.00,0.00) at=(101.078,38.074) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    7 net=unconnected-(J1-Pin_7-Pad7) rect   size=(2.400,0.740) drill=(0.00,0.00) at=(97.178,36.803) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    8 net=unconnected-(J1-Pin_8-Pad8) rect   size=(2.400,0.740) drill=(0.00,0.00) at=(101.078,36.803) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    9 net=GND            rect   size=(2.400,0.740) drill=(0.00,0.00) at=(97.178,35.533) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   10 net=NRST           rect   size=(2.400,0.740) drill=(0.00,0.00) at=(101.078,35.533) layers=['B.Cu', 'B.Mask', 'B.Paste']
+JP1 | HW_ID1 | Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm | layer=F.Cu | pos=(107.60,72.90) rot=90.0 | pads smd/pth/npth=2/0/0
+   pad    1 net=GND            rect   size=(1.000,1.500) drill=(0.00,0.00) at=(107.600,73.550) layers=['F.Cu', 'F.Mask']
+   pad    2 net=Net-(JP1-B)    rect   size=(1.000,1.500) drill=(0.00,0.00) at=(107.600,72.250) layers=['F.Cu', 'F.Mask']
+L3 | 47uH 2A - SMMS0650-470M | BlackPanda:IND-SMD_L7.3-W6.8 | layer=F.Cu | pos=(97.25,36.02) rot=180.0 | pads smd/pth/npth=2/0/0
+   pad    1 net=Net-(D11-K)    rect   size=(2.350,3.500) drill=(0.00,0.00) at=(100.250,36.025) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    2 net=+3V3           rect   size=(2.350,3.500) drill=(0.00,0.00) at=(94.250,36.025) layers=['F.Cu', 'F.Mask', 'F.Paste']
+L4 | 15uH | BlackPanda:L_10.5x11.5_H4.0 | layer=F.Cu | pos=(121.19,39.58) rot=-90.0 | pads smd/pth/npth=2/0/0
+   pad    1 net=L4             rect   size=(3.500,4.000) drill=(0.00,0.00) at=(121.185,34.825) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    2 net=+5V            rect   size=(3.500,4.000) drill=(0.00,0.00) at=(121.185,44.325) layers=['F.Cu', 'F.Mask', 'F.Paste']
+L5 | 2.2uH DFE201610E-2R2M | Inductor_SMD:L_Murata_DFE201610P | layer=B.Cu | pos=(110.75,70.26) rot=180.0 | pads smd/pth/npth=2/0/0
+   pad    1 net=VLXSMPS        rrect  size=(0.550,1.600) drill=(0.00,0.00) at=(111.475,70.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    2 net=VCAP           rrect  size=(0.550,1.600) drill=(0.00,0.00) at=(110.025,70.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+P1 | TYPE-C-31-M-04 | BlackPanda:USB-C-SMD_TYPE-C-USB-20 | layer=F.Cu | pos=(137.49,58.88) rot=90.0 | pads smd/pth/npth=12/16/2
+   pad      net=               circ   size=(0.650,0.650) drill=(0.65,0.65) at=(134.940,62.555) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad      net=               circ   size=(0.650,0.650) drill=(0.65,0.65) at=(134.940,55.205) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad    0 net=GND            oval   size=(1.000,1.500) drill=(0.60,1.20) at=(140.590,63.370) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad    0 net=GND            oval   size=(1.000,1.500) drill=(0.60,1.20) at=(136.180,63.010) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad    0 net=GND            oval   size=(1.000,1.500) drill=(0.60,1.20) at=(136.180,54.750) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad    0 net=GND            oval   size=(1.000,1.500) drill=(0.60,1.20) at=(140.590,54.390) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad   A1 net=GND            rect   size=(0.300,0.900) drill=(0.00,0.00) at=(134.380,61.630) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad   A2 net=BUS1O_H        rect   size=(0.300,0.900) drill=(0.00,0.00) at=(134.380,61.130) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad   A3 net=BUS1O_L        rect   size=(0.300,0.900) drill=(0.00,0.00) at=(134.380,60.630) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad   A4 net=+12V           rect   size=(0.300,0.900) drill=(0.00,0.00) at=(134.380,60.130) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad   A5 net=unconnected-(P1-CC1-PadA5) rect   size=(0.300,0.900) drill=(0.00,0.00) at=(134.380,59.630) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad   A6 net=unconnected-(P1-DP1-PadA6) rect   size=(0.300,0.900) drill=(0.00,0.00) at=(134.380,59.130) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad   A7 net=unconnected-(P1-DN1-PadA7) rect   size=(0.300,0.900) drill=(0.00,0.00) at=(134.380,58.630) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad   A8 net=SBU1           rect   size=(0.300,0.900) drill=(0.00,0.00) at=(134.380,58.130) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad   A9 net=+12V           rect   size=(0.300,0.900) drill=(0.00,0.00) at=(134.380,57.630) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad  A10 net=BUS2_L         rect   size=(0.300,0.900) drill=(0.00,0.00) at=(134.380,57.130) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad  A11 net=BUS2_H         rect   size=(0.300,0.900) drill=(0.00,0.00) at=(134.380,56.630) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad  A12 net=GND            rect   size=(0.300,0.900) drill=(0.00,0.00) at=(134.380,56.130) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad   B1 net=GND            circ   size=(0.650,0.650) drill=(0.40,0.40) at=(135.590,56.080) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad   B2 net=BUS1N_H        circ   size=(0.650,0.650) drill=(0.40,0.40) at=(136.290,56.480) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad   B3 net=BUS1N_L        circ   size=(0.650,0.650) drill=(0.40,0.40) at=(136.290,57.280) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad   B4 net=+12V           circ   size=(0.650,0.650) drill=(0.40,0.40) at=(135.590,57.680) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad   B5 net=unconnected-(P1-CC2-PadB5) circ   size=(0.650,0.650) drill=(0.40,0.40) at=(136.290,58.080) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad   B6 net=unconnected-(P1-DP2-PadB6) circ   size=(0.650,0.650) drill=(0.40,0.40) at=(135.590,58.480) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad   B7 net=unconnected-(P1-DN2-PadB7) circ   size=(0.650,0.650) drill=(0.40,0.40) at=(135.590,59.280) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad   B8 net=SBU2           circ   size=(0.650,0.650) drill=(0.40,0.40) at=(136.290,59.680) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad   B9 net=+12V           circ   size=(0.650,0.650) drill=(0.40,0.40) at=(135.590,60.080) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad  B10 net=BUS0_L         circ   size=(0.650,0.650) drill=(0.40,0.40) at=(136.290,60.480) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad  B11 net=BUS0_H         circ   size=(0.650,0.650) drill=(0.40,0.40) at=(136.290,61.280) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad  B12 net=GND            circ   size=(0.650,0.650) drill=(0.40,0.40) at=(135.590,61.680) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+Q1 | DDTA143ECA-7-F P08 | BlackPanda:SOT23-3 | layer=F.Cu | pos=(125.55,71.35) rot=180.0 | pads smd/pth/npth=3/0/0
+   pad    1 net=relay_SBU2     rect   size=(0.600,1.475) drill=(0.00,0.00) at=(124.600,72.350) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    2 net=+5V            rect   size=(0.600,1.475) drill=(0.00,0.00) at=(126.500,72.350) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    3 net=SBU2           rect   size=(0.600,1.475) drill=(0.00,0.00) at=(125.550,70.350) layers=['F.Cu', 'F.Mask', 'F.Paste']
+Q2 | DDTA143ECA-7-F P08 | BlackPanda:SOT23-3 | layer=F.Cu | pos=(128.80,71.35) rot=180.0 | pads smd/pth/npth=3/0/0
+Q3 | PDTC114EU | Package_TO_SOT_SMD:SOT-323_SC-70 | layer=F.Cu | pos=(113.42,53.02) rot=0.0 | pads smd/pth/npth=3/0/0
+Q4 | HY12P03C2 | Package_SO:PowerPAK_SO-8_Single | layer=F.Cu | pos=(138.60,50.48) rot=0.0 | pads smd/pth/npth=9/0/0
+   pad    1 net=12V_Protected  rect   size=(1.270,0.610) drill=(0.00,0.00) at=(135.930,48.570) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    2 net=12V_Protected  rect   size=(1.270,0.610) drill=(0.00,0.00) at=(135.930,49.840) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    3 net=12V_Protected  rect   size=(1.270,0.610) drill=(0.00,0.00) at=(135.930,51.110) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    4 net=Net-(D15-A)    rect   size=(1.270,0.610) drill=(0.00,0.00) at=(135.930,52.380) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    5 net=+12V           rect   size=(3.810,3.910) drill=(0.00,0.00) at=(139.290,50.475) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    5 net=+12V           rect   size=(1.020,0.610) drill=(0.00,0.00) at=(141.395,48.570) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    5 net=+12V           rect   size=(1.020,0.610) drill=(0.00,0.00) at=(141.395,49.840) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    5 net=+12V           rect   size=(1.020,0.610) drill=(0.00,0.00) at=(141.395,51.110) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    5 net=+12V           rect   size=(1.020,0.610) drill=(0.00,0.00) at=(141.395,52.380) layers=['F.Cu', 'F.Mask', 'F.Paste']
+R1 | 10k | Resistor_SMD:R_0603_1608Metric | layer=F.Cu | pos=(134.00,53.40) rot=90.0 | pads smd/pth/npth=2/0/0
+R14 | 10k | Resistor_SMD:R_0402_1005Metric | layer=F.Cu | pos=(113.56,58.10) rot=0.0 | pads smd/pth/npth=2/0/0
+R15 | 10k | Resistor_SMD:R_0402_1005Metric | layer=F.Cu | pos=(97.06,58.31) rot=0.0 | pads smd/pth/npth=2/0/0
+R16 | 10k | Resistor_SMD:R_0402_1005Metric | layer=F.Cu | pos=(97.06,59.34) rot=180.0 | pads smd/pth/npth=2/0/0
+R17 | 180R | Resistor_SMD:R_0402_1005Metric | layer=F.Cu | pos=(102.66,67.45) rot=90.0 | pads smd/pth/npth=2/0/0
+R18 | 110R | Resistor_SMD:R_0402_1005Metric | layer=F.Cu | pos=(103.67,67.46) rot=90.0 | pads smd/pth/npth=2/0/0
+R19 | 100R | Resistor_SMD:R_0402_1005Metric | layer=F.Cu | pos=(104.68,67.46) rot=90.0 | pads smd/pth/npth=2/0/0
+R2 | 1K | Resistor_SMD:R_0402_1005Metric | layer=F.Cu | pos=(103.65,50.33) rot=180.0 | pads smd/pth/npth=2/0/0
+R20 | 22R | Resistor_SMD:R_0402_1005Metric | layer=B.Cu | pos=(113.69,43.95) rot=90.0 | pads smd/pth/npth=2/0/0
+R21 | 22R | Resistor_SMD:R_0402_1005Metric | layer=B.Cu | pos=(114.75,43.95) rot=-90.0 | pads smd/pth/npth=2/0/0
+R23 | 10K | Resistor_SMD:R_0402_1005Metric | layer=F.Cu | pos=(121.67,70.20) rot=90.0 | pads smd/pth/npth=2/0/0
+R24 | 10K | Resistor_SMD:R_0402_1005Metric | layer=F.Cu | pos=(130.68,68.50) rot=-90.0 | pads smd/pth/npth=2/0/0
+R26 | 10K | Resistor_SMD:R_0402_1005Metric | layer=F.Cu | pos=(115.71,52.66) rot=-90.0 | pads smd/pth/npth=2/0/0
+R27 | 2.4K | Resistor_SMD:R_0402_1005Metric | layer=F.Cu | pos=(117.48,55.75) rot=0.0 | pads smd/pth/npth=2/0/0
+R28 | 10k | Resistor_SMD:R_0402_1005Metric | layer=B.Cu | pos=(127.95,65.50) rot=90.0 | pads smd/pth/npth=2/0/0
+R29 | 10k | Resistor_SMD:R_0402_1005Metric | layer=B.Cu | pos=(122.48,67.25) rot=90.0 | pads smd/pth/npth=2/0/0
+R3 | 10K | Resistor_SMD:R_0402_1005Metric | layer=F.Cu | pos=(103.65,49.33) rot=0.0 | pads smd/pth/npth=2/0/0
+R30 | 10k | Resistor_SMD:R_0402_1005Metric | layer=B.Cu | pos=(134.98,70.37) rot=90.0 | pads smd/pth/npth=2/0/0
+R31 | 10k | Resistor_SMD:R_0402_1005Metric | layer=B.Cu | pos=(139.65,70.40) rot=90.0 | pads smd/pth/npth=2/0/0
+R32 | 10k | Resistor_SMD:R_0402_1005Metric | layer=B.Cu | pos=(126.76,61.16) rot=90.0 | pads smd/pth/npth=2/0/0
+R33 | 10k | Resistor_SMD:R_0402_1005Metric | layer=B.Cu | pos=(127.27,55.24) rot=90.0 | pads smd/pth/npth=2/0/0
+R5 | 10K (1%) | Resistor_SMD:R_0402_1005Metric | layer=F.Cu | pos=(108.31,45.39) rot=0.0 | pads smd/pth/npth=2/0/0
+R6 | 3.16K (1%) | Resistor_SMD:R_0603_1608Metric | layer=F.Cu | pos=(105.81,45.64) rot=0.0 | pads smd/pth/npth=2/0/0
+R9 | 10K | Resistor_SMD:R_0402_1005Metric | layer=F.Cu | pos=(120.88,51.67) rot=-90.0 | pads smd/pth/npth=2/0/0
+SW1 | SW_Push | Button_Switch_SMD:SW_SPST_SKQG_WithStem | layer=F.Cu | pos=(115.97,68.86) rot=0.0 | pads smd/pth/npth=4/0/0
+   pad    1 net=BOOT0          rect   size=(1.800,1.100) drill=(0.00,0.00) at=(112.870,67.010) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    1 net=BOOT0          rect   size=(1.800,1.100) drill=(0.00,0.00) at=(119.070,67.010) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    2 net=+3V3           rect   size=(1.800,1.100) drill=(0.00,0.00) at=(112.870,70.710) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    2 net=+3V3           rect   size=(1.800,1.100) drill=(0.00,0.00) at=(119.070,70.710) layers=['F.Cu', 'F.Mask', 'F.Paste']
+U1 | AP22615AWU-7 | Package_TO_SOT_SMD:SOT-23-6 | layer=F.Cu | pos=(118.31,53.42) rot=180.0 | pads smd/pth/npth=6/0/0
+   pad    1 net=USB_PWR        rrect  size=(1.325,0.600) drill=(0.00,0.00) at=(119.450,54.375) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    2 net=GND            rrect  size=(1.325,0.600) drill=(0.00,0.00) at=(119.450,53.425) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    3 net=Net-(U1-FLG)   rrect  size=(1.325,0.600) drill=(0.00,0.00) at=(119.450,52.475) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    4 net=Net-(Q3-C)     rrect  size=(1.325,0.600) drill=(0.00,0.00) at=(117.175,52.475) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    5 net=Net-(U1-ISET)  rrect  size=(1.325,0.600) drill=(0.00,0.00) at=(117.175,53.425) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    6 net=+5V            rrect  size=(1.325,0.600) drill=(0.00,0.00) at=(117.175,54.375) layers=['F.Cu', 'F.Mask', 'F.Paste']
+U10 | TJA1042TK-3 | Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm | layer=F.Cu | pos=(139.65,70.40) rot=90.0 | pads smd/pth/npth=13/0/0
+U11 | TJA1042TK-3 | Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm | layer=F.Cu | pos=(134.98,70.37) rot=90.0 | pads smd/pth/npth=13/0/0
+U12 | XL1509-3.3 | Package_SO:Diodes_PSOP-8 | layer=F.Cu | pos=(97.74,46.83) rot=-90.0 | pads smd/pth/npth=12/0/0
+   pad    1 net=+5V            rect   size=(1.500,0.650) drill=(0.00,0.00) at=(99.645,44.130) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    2 net=Net-(D11-K)    rect   size=(1.500,0.650) drill=(0.00,0.00) at=(98.375,44.130) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    3 net=+3V3           rect   size=(1.500,0.650) drill=(0.00,0.00) at=(97.105,44.130) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    4 net=GND            rect   size=(1.500,0.650) drill=(0.00,0.00) at=(95.835,44.130) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    5 net=GND            rect   size=(1.500,0.650) drill=(0.00,0.00) at=(95.835,49.530) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    6 net=GND            rect   size=(1.500,0.650) drill=(0.00,0.00) at=(97.105,49.530) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    7 net=GND            rect   size=(1.500,0.650) drill=(0.00,0.00) at=(98.375,49.530) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    8 net=GND            rect   size=(1.500,0.650) drill=(0.00,0.00) at=(99.645,49.530) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    9 net=               rect   size=(1.350,1.800) drill=(0.00,0.00) at=(98.640,46.155) layers=['F.Cu']
+   pad    9 net=               rect   size=(1.350,1.800) drill=(0.00,0.00) at=(96.840,46.155) layers=['F.Cu']
+   pad    9 net=               rect   size=(1.350,1.800) drill=(0.00,0.00) at=(98.640,47.505) layers=['F.Cu']
+   pad    9 net=               rect   size=(1.350,1.800) drill=(0.00,0.00) at=(96.840,47.505) layers=['F.Cu']
+U13 | USBLC6-2SC6 | Package_TO_SOT_SMD:SOT-23-6 | layer=F.Cu | pos=(128.85,41.20) rot=-90.0 | pads smd/pth/npth=6/0/0
+   pad    1 net=USB_R_D-       rrect  size=(1.325,0.600) drill=(0.00,0.00) at=(129.800,40.062) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    2 net=GND            rrect  size=(1.325,0.600) drill=(0.00,0.00) at=(128.850,40.062) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    3 net=USB_R_D+       rrect  size=(1.325,0.600) drill=(0.00,0.00) at=(127.900,40.062) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    4 net=USB_R_D+       rrect  size=(1.325,0.600) drill=(0.00,0.00) at=(127.900,42.337) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    5 net=USB_PWR        rrect  size=(1.325,0.600) drill=(0.00,0.00) at=(128.850,42.337) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    6 net=USB_R_D-       rrect  size=(1.325,0.600) drill=(0.00,0.00) at=(129.800,42.337) layers=['F.Cu', 'F.Mask', 'F.Paste']
+U3 | 10_0_QHHTZB6_3 | BlackPanda:USB-A-TH_10.0QHHTZB6.3 | layer=F.Cu | pos=(136.44,39.78) rot=90.0 | pads smd/pth/npth=4/2/0
+   pad    1 net=USB_PWR        rect   size=(1.120,2.880) drill=(0.00,0.00) at=(132.050,43.280) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    2 net=USB_R_D-       rect   size=(1.120,2.880) drill=(0.00,0.00) at=(132.050,40.780) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    3 net=USB_R_D+       rect   size=(1.120,2.880) drill=(0.00,0.00) at=(132.050,38.780) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    4 net=GND            rect   size=(1.120,2.880) drill=(0.00,0.00) at=(132.050,36.280) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    5 net=GND            oval   size=(1.200,3.100) drill=(0.70,2.50) at=(140.840,46.230) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+   pad    6 net=GND            oval   size=(1.200,3.100) drill=(0.70,2.50) at=(140.840,33.330) layers=['F.Cu', 'F.Mask', 'B.Cu', 'B.Mask']
+U5 | FM-B1921RGBA-SH | BlackPanda:LED-ARRAY-SMD_4P-L2.2-W2.1-BR | layer=F.Cu | pos=(104.03,70.17) rot=0.0 | pads smd/pth/npth=4/0/0
+   pad    1 net=+3V3           rect   size=(0.660,0.700) drill=(0.00,0.00) at=(104.855,70.775) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    2 net=RED-           rect   size=(0.660,0.700) drill=(0.00,0.00) at=(104.855,69.575) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    3 net=GREEN-         rect   size=(0.660,0.700) drill=(0.00,0.00) at=(103.195,69.575) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    4 net=BLUE-          rect   size=(0.660,0.700) drill=(0.00,0.00) at=(103.195,70.775) layers=['F.Cu', 'F.Mask', 'F.Paste']
+U6 | TPS5450DDAR | BlackPanda:CONV_TPS5450DDAR | layer=F.Cu | pos=(108.06,42.14) rot=0.0 | pads smd/pth/npth=9/8/0
+   pad    1 net=Net-(U6-BOOT)  rrect  size=(1.550,0.600) drill=(0.00,0.00) at=(105.360,40.235) layers=['F.Cu', 'F.Paste']
+   pad    2 net=unconnected-(U6-NC_2-Pad2) rrect  size=(1.550,0.600) drill=(0.00,0.00) at=(105.360,41.505) layers=['F.Cu', 'F.Paste']
+   pad    3 net=unconnected-(U6-NC_3-Pad3) rrect  size=(1.550,0.600) drill=(0.00,0.00) at=(105.360,42.775) layers=['F.Cu', 'F.Paste']
+   pad    4 net=VSENSE         rrect  size=(1.550,0.600) drill=(0.00,0.00) at=(105.360,44.045) layers=['F.Cu', 'F.Paste']
+   pad    5 net=unconnected-(U6-ENA-Pad5) rrect  size=(1.550,0.600) drill=(0.00,0.00) at=(110.760,44.045) layers=['F.Cu', 'F.Paste']
+   pad    6 net=GND            rrect  size=(1.550,0.600) drill=(0.00,0.00) at=(110.760,42.775) layers=['F.Cu', 'F.Paste']
+   pad    7 net=12V_Protected  rrect  size=(1.550,0.600) drill=(0.00,0.00) at=(110.760,41.505) layers=['F.Cu', 'F.Paste']
+   pad    8 net=L4             rrect  size=(1.550,0.600) drill=(0.00,0.00) at=(110.760,40.235) layers=['F.Cu', 'F.Paste']
+   pad    9 net=GND            circ   size=(0.600,0.600) drill=(0.30,0.30) at=(107.410,40.190) layers=['F.Cu', 'B.Cu']
+   pad    9 net=GND            circ   size=(0.600,0.600) drill=(0.30,0.30) at=(107.410,41.490) layers=['F.Cu', 'B.Cu']
+   pad    9 net=GND            circ   size=(0.600,0.600) drill=(0.30,0.30) at=(107.410,42.790) layers=['F.Cu', 'B.Cu']
+   pad    9 net=GND            circ   size=(0.600,0.600) drill=(0.30,0.30) at=(107.410,44.090) layers=['F.Cu', 'B.Cu']
+   pad    9 net=GND            rect   size=(2.950,4.900) drill=(0.00,0.00) at=(108.060,42.140) layers=['F.Cu']
+   pad    9 net=GND            circ   size=(0.600,0.600) drill=(0.30,0.30) at=(108.710,40.190) layers=['F.Cu', 'B.Cu']
+   pad    9 net=GND            circ   size=(0.600,0.600) drill=(0.30,0.30) at=(108.710,41.490) layers=['F.Cu', 'B.Cu']
+   pad    9 net=GND            circ   size=(0.600,0.600) drill=(0.30,0.30) at=(108.710,42.790) layers=['F.Cu', 'B.Cu']
+   pad    9 net=GND            circ   size=(0.600,0.600) drill=(0.30,0.30) at=(108.710,44.090) layers=['F.Cu', 'B.Cu']
+U7 | STM32H725ZGT6 | Package_QFP:LQFP-144_20x20mm_P0.5mm | layer=B.Cu | pos=(109.50,56.60) rot=90.0 | pads smd/pth/npth=144/0/0
+   pad    1 net=LED_BLUE       rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(118.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    2 net=LED_GREEN      rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(117.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    3 net=LED_RED        rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(117.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    4 net=unconnected-(U7-PE5-Pad4) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(116.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    5 net=unconnected-(U7-PE6-Pad5) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(116.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    6 net=GND            rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(115.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    7 net=+3V3           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(115.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    8 net=+3V3           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(114.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    9 net=unconnected-(U7-PC13-Pad9) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(114.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   10 net=unconnected-(U7-PC14-Pad10) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(113.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   11 net=unconnected-(U7-PC15-Pad11) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(113.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   12 net=GND            rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(112.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   13 net=+3V3           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(112.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   14 net=GND            rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(111.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   15 net=VLXSMPS        rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(111.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   16 net=+3V3           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(110.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   17 net=VCAP           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(110.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   18 net=GND            rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(109.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   19 net=+3V3           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(109.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   20 net=unconnected-(U7-PF6-Pad20) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(108.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   21 net=GND            rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(108.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   22 net=GND            rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(107.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   23 net=Net-(JP1-B)    rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(107.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   24 net=GND            rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(106.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   25 net=HSE_IN         rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(106.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   26 net=HSE_OUT        rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(105.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   27 net=NRST           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(105.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   28 net=unconnected-(U7-PC0-Pad28) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(104.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   29 net=unconnected-(U7-PC1-Pad29) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(104.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   30 net=unconnected-(U7-PC2_C-Pad30) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(103.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   31 net=unconnected-(U7-PC3_C-Pad31) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(103.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   32 net=+3V3           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(102.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   33 net=GND            rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(102.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   34 net=GND            rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(101.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   35 net=VDDA           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(101.250,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   36 net=VDDA           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(100.750,67.263) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   37 net=unconnected-(U7-PA0-Pad37) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,65.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   38 net=SBU2_ADC       rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,64.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   39 net=unconnected-(U7-PA2-Pad39) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,64.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   40 net=unconnected-(U7-PA3-Pad40) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,63.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   41 net=GND            rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,63.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   42 net=+3V3           rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,62.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   43 net=unconnected-(U7-PA4-Pad43) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,62.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   44 net=unconnected-(U7-PA5-Pad44) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,61.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   45 net=unconnected-(U7-PA6-Pad45) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,61.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   46 net=unconnected-(U7-PA7-Pad46) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,60.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   47 net=SBU1_ADC       rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,60.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   48 net=unconnected-(U7-PC5-Pad48) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,59.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   49 net=unconnected-(U7-PB0-Pad49) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,59.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   50 net=5VOUT_S        rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,58.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   51 net=unconnected-(U7-PB2-Pad51) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,58.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   52 net=VoltageSens    rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,57.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   53 net=unconnected-(U7-PF14-Pad53) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,57.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   54 net=unconnected-(U7-PF15-Pad54) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,56.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   55 net=GND            rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,56.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   56 net=+3V3           rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,55.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   57 net=unconnected-(U7-PE7-Pad57) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,55.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   58 net=unconnected-(U7-PE8-Pad58) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,54.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   59 net=unconnected-(U7-PE9-Pad59) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,54.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   60 net=unconnected-(U7-PE10-Pad60) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,53.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   61 net=unconnected-(U7-PE11-Pad61) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,53.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+C:\jenkins\workspace\build-win-10.0-stable\.build\kicad\pcbnew\pcb_track.cpp(387): assert "false" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+   pad   62 net=unconnected-(U7-PE12-Pad62) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,52.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   63 net=unconnected-(U7-PE13-Pad63) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,52.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   64 net=unconnected-(U7-PE14-Pad64) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,51.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   65 net=unconnected-(U7-PE15-Pad65) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,51.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   66 net=unconnected-(U7-PB10-Pad66) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,50.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   67 net=unconnected-(U7-PB11-Pad67) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,50.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   68 net=VCAP           rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,49.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   69 net=GND            rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,49.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   70 net=+3V3           rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,48.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   71 net=+3V3           rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,48.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   72 net=BUS1O_RX       rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(98.838,47.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   73 net=BUS1O_TX       rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(100.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   74 net=USB_LOAD       rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(101.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   75 net=unconnected-(U7-PB15-Pad75) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(101.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   76 net=unconnected-(U7-PD8-Pad76) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(102.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   77 net=unconnected-(U7-PD9-Pad77) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(102.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   78 net=unconnected-(U7-PD10-Pad78) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(103.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   79 net=+3V3           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(103.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   80 net=GND            rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(104.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   81 net=unconnected-(U7-PD11-Pad81) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(104.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   82 net=unconnected-(U7-PD12-Pad82) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(105.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   83 net=unconnected-(U7-PD13-Pad83) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(105.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   84 net=unconnected-(U7-PD14-Pad84) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(106.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   85 net=unconnected-(U7-PD15-Pad85) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(106.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   86 net=unconnected-(U7-PG6-Pad86) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(107.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   87 net=unconnected-(U7-PG7-Pad87) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(107.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   88 net=unconnected-(U7-PG8-Pad88) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(108.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   89 net=GND            rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(108.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   90 net=+3V3           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(109.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   91 net=+3V3           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(109.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   92 net=+3V3           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(110.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   93 net=unconnected-(U7-PC6-Pad93) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(110.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   94 net=unconnected-(U7-PC7-Pad94) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(111.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   95 net=unconnected-(U7-PC8-Pad95) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(111.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   96 net=unconnected-(U7-PC9-Pad96) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(112.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   97 net=unconnected-(U7-PA8-Pad97) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(112.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   98 net=unconnected-(U7-PA9-Pad98) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(113.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad   99 net=unconnected-(U7-PA10-Pad99) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(113.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  100 net=USB_D-         rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(114.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  101 net=USB_D+         rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(114.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  102 net=SWDIO          rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(115.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  103 net=VCAP           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(115.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  104 net=GND            rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(116.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  105 net=+3V3           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(116.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  106 net=+3V3           rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(117.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  107 net=SWCLK          rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(117.750,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  108 net=unconnected-(U7-PA15(JTDI)-Pad108) rrect  size=(1.475,0.300) drill=(0.00,0.00) at=(118.250,45.938) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  109 net=relay_SBU1     rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,47.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  110 net=relay_SBU2     rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,48.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  111 net=unconnected-(U7-PC12-Pad111) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,48.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  112 net=unconnected-(U7-PD0-Pad112) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,49.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  113 net=unconnected-(U7-PD1-Pad113) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,49.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  114 net=unconnected-(U7-PD2-Pad114) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,50.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  115 net=unconnected-(U7-PD3-Pad115) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,50.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  116 net=unconnected-(U7-PD4-Pad116) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,51.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  117 net=unconnected-(U7-PD5-Pad117) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,51.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  118 net=GND            rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,52.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  119 net=+3V3           rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,52.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  120 net=unconnected-(U7-PD6-Pad120) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,53.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  121 net=BUS2_STB       rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,53.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  122 net=BUS2_TX        rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,54.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  123 net=BUS2_RX        rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,54.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  124 net=BUS0_STB       rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,55.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  125 net=unconnected-(U7-PG12-Pad125) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,55.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  126 net=unconnected-(U7-PG13-Pad126) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,56.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  127 net=unconnected-(U7-PG14-Pad127) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,56.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  128 net=GND            rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,57.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  129 net=+3V3           rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,57.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  130 net=BUS1N_STB      rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,58.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  131 net=BUS1O_STB      rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,58.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  132 net=BUS1N_RX       rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,59.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  133 net=BUS1N_TX       rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,59.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  134 net=unconnected-(U7-PB7-Pad134) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,60.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  135 net=BOOT0          rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,60.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  136 net=BUS0_RX        rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,61.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  137 net=BUS0_TX        rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,61.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  138 net=unconnected-(U7-PE0-Pad138) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,62.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  139 net=unconnected-(U7-PE1-Pad139) rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,62.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  140 net=VCAP           rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,63.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  141 net=GND            rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,63.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  142 net=+3V3           rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,64.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  143 net=+3V3           rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,64.850) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad  144 net=+3V3           rrect  size=(0.300,1.475) drill=(0.00,0.00) at=(120.162,65.350) layers=['B.Cu', 'B.Mask', 'B.Paste']
+U8 | TJA1042TK-3 | Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm | layer=F.Cu | pos=(127.12,61.51) rot=0.0 | pads smd/pth/npth=13/0/0
+   pad      net=               rect   size=(0.600,1.000) drill=(0.00,0.00) at=(126.730,60.910) layers=['F.Paste']
+   pad      net=               rect   size=(0.600,1.000) drill=(0.00,0.00) at=(126.730,62.110) layers=['F.Paste']
+   pad      net=               rect   size=(0.600,1.000) drill=(0.00,0.00) at=(127.505,60.910) layers=['F.Paste']
+   pad      net=               rect   size=(0.600,1.000) drill=(0.00,0.00) at=(127.505,62.110) layers=['F.Paste']
+   pad    1 net=BUS1O_TX       rect   size=(0.650,0.350) drill=(0.00,0.00) at=(125.567,60.535) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    2 net=GND            rect   size=(0.650,0.350) drill=(0.00,0.00) at=(125.567,61.185) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    3 net=+5V            rect   size=(0.650,0.350) drill=(0.00,0.00) at=(125.567,61.835) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    4 net=BUS1O_RX       rect   size=(0.650,0.350) drill=(0.00,0.00) at=(125.567,62.485) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    5 net=+3V3           rect   size=(0.650,0.350) drill=(0.00,0.00) at=(128.667,62.485) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    6 net=BUS1O_L        rect   size=(0.650,0.350) drill=(0.00,0.00) at=(128.667,61.835) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    7 net=BUS1O_H        rect   size=(0.650,0.350) drill=(0.00,0.00) at=(128.667,61.185) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    8 net=BUS1O_STB      rect   size=(0.650,0.350) drill=(0.00,0.00) at=(128.667,60.535) layers=['F.Cu', 'F.Mask', 'F.Paste']
+   pad    9 net=GND            rect   size=(1.550,2.400) drill=(0.00,0.00) at=(127.118,61.510) layers=['F.Cu', 'F.Mask']
+U9 | TJA1042TK-3 | Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm | layer=F.Cu | pos=(127.02,55.24) rot=0.0 | pads smd/pth/npth=13/0/0
+Y1 | 25MHz X322525MOB4SI | Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm | layer=B.Cu | pos=(105.50,71.01) rot=180.0 | pads smd/pth/npth=4/0/0
+   pad    1 net=HSE_IN         rect   size=(1.400,1.200) drill=(0.00,0.00) at=(106.600,71.862) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    2 net=GND            rect   size=(1.400,1.200) drill=(0.00,0.00) at=(104.400,71.862) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    3 net=HSE_OUT        rect   size=(1.400,1.200) drill=(0.00,0.00) at=(104.400,70.162) layers=['B.Cu', 'B.Mask', 'B.Paste']
+   pad    4 net=GND            rect   size=(1.400,1.200) drill=(0.00,0.00) at=(106.600,70.162) layers=['B.Cu', 'B.Mask', 'B.Paste']
+
+== ZONES ==
+zone  ['F.Cu'] filled False prio 0 area_mm2 0.0 minw 0.25 clr 0.0
+zone  ['F.Cu'] filled False prio 0 area_mm2 0.0 minw 0.25 clr 0.0
+zone +5V ['F.Cu'] filled True prio 2 area_mm2 31.1 minw 0.25 clr 0.508
+zone L4 ['F.Cu'] filled True prio 8 area_mm2 7.0 minw 0.25 clr 0.508
+zone USB_PWR ['F.Cu'] filled True prio 10 area_mm2 8.0 minw 0.25 clr 0.508
+zone  ['F.Cu'] filled False prio 0 area_mm2 0.0 minw 0.25 clr 0.0
+zone GND ['F.Cu', 'B.Cu', 'In1.Cu', 'In2.Cu'] filled True prio 0 area_mm2 5931.3 minw 0.2 clr 0.254
+zone  ['B.Cu'] filled False prio 0 area_mm2 0.0 minw 0.25 clr 0.0
+zone  ['B.Cu'] filled False prio 0 area_mm2 0.0 minw 0.25 clr 0.0
+zone +12V ['B.Cu'] filled True prio 600 area_mm2 27.6 minw 0.25 clr 0.508
+zone  ['B.Cu'] filled False prio 0 area_mm2 0.0 minw 0.25 clr 0.0
+zone 12V_Protected ['B.Cu'] filled True prio 500 area_mm2 101.5 minw 0.25 clr 0.508
+zone +5V ['B.Cu'] filled True prio 9 area_mm2 8.9 minw 0.25 clr 0.508
+zone +5V ['In1.Cu'] filled True prio 5 area_mm2 16.8 minw 0.25 clr 0.508
+zone +3V3 ['In1.Cu'] filled True prio 4 area_mm2 866.0 minw 0.25 clr 0.254
+zone +5V ['In1.Cu'] filled True prio 1 area_mm2 1.2 minw 0.25 clr 0.508
+zone +5V ['In2.Cu'] filled True prio 6 area_mm2 40.9 minw 0.25 clr 0.508
+
+== TRACKS ==
+track widths {('F.Cu', 0.3): 22, ('F.Cu', 0.4): 14, ('F.Cu', 0.2): 320, ('F.Cu', 0.6): 20, ('F.Cu', 0.25): 42, ('F.Cu', 1.0): 16, ('F.Cu', 0.35): 34, ('F.Cu', 0.5): 38, ('B.Cu', 0.25): 138, ('B.Cu', 0.2): 173, ('B.Cu', 0.3): 24, ('In1.Cu', 0.2): 103, ('In1.Cu', 0.6): 3, ('In1.Cu', 0.4): 1, ('In1.Cu', 0.45): 2, ('In2.Cu', 0.8): 3, ('In2.Cu', 0.2): 86, ('F.Cu', 0.8): 18, ('F.Cu', 0.75): 17, ('B.Cu', 0.6): 4, ('F.Cu', 2.0): 4, ('F.Cu', 0.22): 46, ('F.Cu', 0.15): 29, ('In1.Cu', 0.35): 5, ('In1.Cu', 0.5): 2, ('In1.Cu', 1.0): 8, ('B.Cu', 0.15): 18, ('F.Cu', 0.175): 1, ('F.Cu', 0.14): 2, ('F.Cu', 1.5): 3, ('F.Cu', 0.275): 2, ('B.Cu', 0.5): 3, ('B.Cu', 0.35): 9, ('In1.Cu', 0.3): 13}
+vias {(0.6, 0.3): 202, (0.7, 0.3): 38}
+
+== TEXT ON COPPER / small silk ==
+
+== EDGE ==
+PCB_SHAPE Polygon 0.0 0.0 0.0 0.0

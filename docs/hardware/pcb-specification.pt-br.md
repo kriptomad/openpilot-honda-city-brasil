@@ -1,6 +1,6 @@
 # Hybrid Panda: especificacao de fabricacao da PCB
 
-Estado: apenas projeto. **NAO FABRICAR.** Nenhuma placa foi encomendada, construida ou
+Estado: apenas projeto, verificado por software (passe de 2026-10-29, ver `hardware/reports/verification-pcb/`). **Nao verificado fisicamente.** Nenhuma placa foi encomendada, construida ou
 testada. Este documento descreve o que os arquivos KiCad e o pacote de fabricacao gerado
 especificam, nao o que um fabricante confirmou. Versao em ingles:
 [pcb-specification.md](pcb-specification.md).
@@ -213,7 +213,7 @@ Excellon, mm, 3:3, supressao de zeros a esquerda: `HybridPanda-PTH.drl`,
 
 ## 10. Estado e itens deferidos
 
-**NAO FABRICAR.** O pacote existe para arquivo e revisao. Os motivos de bloqueio, conforme
+**Verificado por software, nao verificado fisicamente; pedido de PCB nua a criterio do dono.** Os antigos motivos de bloqueio, conforme
 `hardware/fabrication/readme.md` e `docs/decisions.md` D-37:
 
 1. Impedancia (CAN 120 ohm, USB 90 ohm) apenas estimada analiticamente (tratado por software em 2026-10-29:

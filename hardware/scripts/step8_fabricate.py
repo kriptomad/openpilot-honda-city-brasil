@@ -251,15 +251,18 @@ asm_blocks = [
 ]
 blocks = pcb_blocks + asm_blocks
 R = ["# Hybrid Panda fabrication package", "",
-     "**STATUS: DO NOT FABRICATE.** This package was generated automatically for archive and",
-     "review. Physical verification and human review are still missing. No board has ever been built from it.", "",
+     "**STATUS: SOFTWARE-VERIFIED, NOT PHYSICALLY VERIFIED. Bare-PCB order is at the owner's discretion (small batch first).**",
+     "Every check that can be done in software has been run and passed (DRC/ERC, gerber-rebuilt connectivity 0 short / 0 open,",
+     "drill count, outline, pin-by-pin review against the panda firmware and the STM32H725 datasheet, footprint review for hand",
+     "soldering). What remains cannot be closed without a built board. No board has ever been built from this package; the",
+     "Hybrid Panda is unproven hardware.", "",
      "Hybrid Panda = black panda form factor + STM32H725ZGT6 running the red panda firmware.",
      "Generated %s by [`hardware/scripts/step8_fabricate.py`](../scripts/step8_fabricate.py)" % out["date"],
      "with KiCad 10.0.7 `kicad-cli` from [`hardware/hybrid-panda/HybridPanda.kicad_pcb`](../hybrid-panda/HybridPanda.kicad_pcb).",
      "Intended order: bare PCB only (JLCPCB), all components bought and hand-soldered by the user.",
      "Items marked \"addressed by software, not physically verified\" were changed in the PCB engineering pass of %s" % out["date"][:10],
      "(reports in [`hardware/reports/verification-pcb/`](../reports/verification-pcb/)); items marked \"requires a built board\" can only be closed after a board exists.", "",
-     "## Why it must not be fabricated yet", "", "### PCB fabrication (bare board)", ""]
+     "## Status of each former blocker", "", "### PCB fabrication (bare board)", ""]
 R += ["%d. %s" % (i + 1, b) for i, b in enumerate(pcb_blocks)]
 R += ["", "### Assembly (manual, by the user)", ""]
 R += ["%d. %s" % (len(pcb_blocks) + i + 1, b) for i, b in enumerate(asm_blocks)]
@@ -282,13 +285,13 @@ R += ["", "## STEP 7 results (`../reports/step7_validation.json`)", "",
       "| `3d/HybridPanda.step` | 3D model (missing models substituted) |",
       "| `drill_table.md` / `.json` | %d holes (%s); min drill %.3f mm; min annular ring %s |" % (len(holes), ", ".join("%s %d" % kv for kv in out["drill"]["by_kind"].items()), min_drill, ", ".join("%s %.3f" % kv for kv in min_ring.items())),
       "| `gerber_check.json` | syntactic check; Excellon holes vs PCB: %d vs %d |" % (exc_hits, len(holes)),
-      "| `HybridPanda_gerbers_JLC.zip` | gerbers + drill for upload, ONLY after the blockers above are removed |", "",
+      "| `HybridPanda_gerbers_JLC.zip` | gerbers + drill for upload (bare PCB); read the status and the remaining human checks above first |", "",
       "Intended specification: 4 layers, 1.59 mm, FR-4 (er ~4.5 assumed; JLC7628 used for the impedance estimate), copper 1 oz outer / 0.5 oz",
       "inner, min track/space 0.127/0.1 mm, via 0.4/0.3 mm, min hole %.2f mm, ENIG recommended" % out["drill"]["rule_min_drill_mm"],
       "(QFN/LQFP 0.5 mm pitch), green mask, HASL not recommended.", "",
       "Generation problems: " + ("none" if not out["problems"] else "; ".join(out["problems"])) + ". Notes: " + ("none" if not out["notes"] else "; ".join(out["notes"])) + ".", "",
       "---", "",
-      "pt-BR: **NAO FABRICAR.** Pacote gerado automaticamente para arquivo e revisao; nenhuma placa foi construida e",
+      "pt-BR: **VERIFICADO POR SOFTWARE, NAO VERIFICADO FISICAMENTE.** Pedido de PCB nua a criterio do dono (lote pequeno primeiro). Nenhuma placa foi construida e",
       "falta verificacao fisica e revisao humana. A encomenda prevista e so da PCB nua (JLCPCB), com todos os componentes",
       "comprados e soldados a mao pelo utilizador. Os itens marcados \"addressed by software, not physically verified\"",
       "(impedancia com stackup JLC7628, par USB acoplado, limpeza do DRC herdado, revisao dos gerbers com comparacao de",

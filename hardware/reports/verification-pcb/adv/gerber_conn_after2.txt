@@ -1,0 +1,21 @@
+F.Cu: 1154 primitives -> 156 islands, area 1857.3 mm2
+In1.Cu: 460 primitives -> 138 islands, area 2041.2 mm2
+In2.Cu: 360 primitives -> 128 islands, area 2074.6 mm2
+B.Cu: 893 primitives -> 209 islands, area 1891.4 mm2
+PTH drill objects 266 (slots 6: [(136.18, -54.75, 0.6, 0.6), (136.18, -63.01, 0.6, 0.6), (140.59, -54.39, 0.6, 0.6), (140.59, -63.37, 0.6, 0.6), (140.84, -33.33, 0.7, 1.8), (140.84, -46.23, 0.7, 1.8)]), NPTH 2, total 268
+PTH holes touching <2 copper layers: 0
+pads not on any copper (should be 0): 0 []
+SHORTS (clusters with >1 net): 0
+OPENS (nets split over >1 cluster): 0
+vias whose copper cluster does not carry their net: 0
+copper islands with no pad/net (area>0.3mm2): 8
+   F.Cu 4.86 (97.74, -47.51)
+   F.Cu 4.86 (97.74, -46.16)
+   F.Cu 0.78 (93.96, -72.29)
+   B.Cu 0.78 (93.96, -72.29)
+   F.Cu 0.78 (96.76, -35.24)
+   F.Cu 0.78 (140.48, -76.69)
+   B.Cu 0.78 (93.96, -43.64)
+   B.Cu 0.78 (140.48, -35.24)
+edge primitives 266 merged -> LineString closed: True bounds [91.96, -78.71, 142.88, -32.06]
+min copper-to-edge (mm): 0.2  islands outside outline: 0

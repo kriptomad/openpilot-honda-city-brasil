@@ -1,6 +1,6 @@
-OUTPUT_ROOT manifest: 884 files -> C:\Users\costabr\Downloads\openpilot\openpilot-honda-city-brasil\archive\manifests\OUTPUT_ROOT_STEP7_20261029_1559.sha256
+OUTPUT_ROOT manifest: 927 files -> C:\Users\costabr\Downloads\openpilot\openpilot-honda-city-brasil\archive\manifests\OUTPUT_ROOT_STEP7_20261029_1644.sha256
 hardware/reference unchanged vs reference_clones.sha256: False
 ORIGINAL vs BEFORE: IDENTICAL (377 files)
-docs/legacy-index.md rows: 561
+docs/legacy-index.md rows: 604
 
 --- stderr ---

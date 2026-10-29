@@ -1,6 +1,6 @@
 # STEP 7 — Validação automatizada (logs reais em `hardware/reports`)
 
-Data: 2026-10-29 15:59:16. Gerado por `hardware\scripts\step7_validate.py` (28 s).
+Data: 2026-10-29 16:44:02. Gerado por `hardware\scripts\step7_validate.py` (20 s).
 
 ## Resumo
 
@@ -76,18 +76,18 @@ Nota: quase todas as 'novas' são do mesmo tipo das herdadas (text_height/lib_fo
 ## 7. Manifestos
 
 - `Make-Manifest.ps1 -Step STEP7 -Original` exit 0:
-  - OUTPUT_ROOT manifest: 884 files -> C:\Users\costabr\Downloads\openpilot\openpilot-honda-city-brasil\archive\manifests\OUTPUT_ROOT_STEP7_20261029_1559.sha256
+  - OUTPUT_ROOT manifest: 927 files -> C:\Users\costabr\Downloads\openpilot\openpilot-honda-city-brasil\archive\manifests\OUTPUT_ROOT_STEP7_20261029_1644.sha256
   - hardware/reference unchanged vs reference_clones.sha256: False
   - ORIGINAL vs BEFORE: IDENTICAL (377 files)
-  - docs/legacy-index.md rows: 561
+  - docs/legacy-index.md rows: 604
 
 ## 8. Comandos executados
 
 | Comando | Exit | s | Log |
 |---|---|---|---|
-| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe sch erc --format json --severity-all -o C:\Users\costabr\Downloads\openpilot\openpilot-hond` | 0 | 8.2 | step7_erc.log |
-| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe pcb drc --format json --severity-all --units mm -o C:\Users\costabr\Downloads\openpilot\ope` | 0 | 7.8 | step7_drc.log |
-| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe sch export netlist --format kicadxml -o C:\Users\costabr\Downloads\openpilot\openpilot-hond` | 0 | 0.9 | step7_netlist.log |
-| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe sch export bom --fields Reference,Value,Footprint,${QUANTITY},${DNP},MPN,Manufacturer,Datas` | 0 | 0.8 | step7_bom.log |
-| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\python.exe C:\Users\costabr\Downloads\openpilot\openpilot-honda-city-brasil\hardware/scripts\parity_check` | 0 | 0.5 | step7_parity.log |
-| `powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\costabr\Downloads\openpilot\openpilot-honda-city-brasil\hardware/scripts\Make-Manifest.ps1 -Step ST` | 0 | 9.5 | step7_manifest.log |
+| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe sch erc --format json --severity-all -o C:\Users\costabr\Downloads\openpilot\openpilot-hond` | 0 | 4.2 | step7_erc.log |
+| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe pcb drc --format json --severity-all --units mm -o C:\Users\costabr\Downloads\openpilot\ope` | 0 | 5.3 | step7_drc.log |
+| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe sch export netlist --format kicadxml -o C:\Users\costabr\Downloads\openpilot\openpilot-hond` | 0 | 0.8 | step7_netlist.log |
+| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe sch export bom --fields Reference,Value,Footprint,${QUANTITY},${DNP},MPN,Manufacturer,Datas` | 0 | 0.7 | step7_bom.log |
+| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\python.exe C:\Users\costabr\Downloads\openpilot\openpilot-honda-city-brasil\hardware/scripts\parity_check` | 0 | 0.3 | step7_parity.log |
+| `powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\costabr\Downloads\openpilot\openpilot-honda-city-brasil\hardware/scripts\Make-Manifest.ps1 -Step ST` | 0 | 8.2 | step7_manifest.log |
