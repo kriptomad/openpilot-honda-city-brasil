@@ -1,79 +1,7 @@
 {
- "date": "2026-10-28 10:16:21",
- "board": "04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+ "date": "2026-10-29 15:59:45",
+ "board": "hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
  "findings": [
-  {
-   "sev": "ALTO",
-   "area": "curto",
-   "msg": "folga furo < 0,20",
-   "layer": "F.Cu",
-   "hole": "pad P1. []",
-   "item": "pad P1.0 [GND]",
-   "kind": "folga furo < 0,20"
-  },
-  {
-   "sev": "ALTO",
-   "area": "curto",
-   "msg": "folga furo < 0,20",
-   "layer": "F.Cu",
-   "hole": "pad P1. []",
-   "item": "pad P1.0 [GND]",
-   "kind": "folga furo < 0,20"
-  },
-  {
-   "sev": "ALTO",
-   "area": "curto",
-   "msg": "folga furo < 0,20",
-   "layer": "In1.Cu",
-   "hole": "pad P1. []",
-   "item": "pad P1.0 [GND]",
-   "kind": "folga furo < 0,20"
-  },
-  {
-   "sev": "ALTO",
-   "area": "curto",
-   "msg": "folga furo < 0,20",
-   "layer": "In1.Cu",
-   "hole": "pad P1. []",
-   "item": "pad P1.0 [GND]",
-   "kind": "folga furo < 0,20"
-  },
-  {
-   "sev": "ALTO",
-   "area": "curto",
-   "msg": "folga furo < 0,20",
-   "layer": "In2.Cu",
-   "hole": "pad P1. []",
-   "item": "pad P1.0 [GND]",
-   "kind": "folga furo < 0,20"
-  },
-  {
-   "sev": "ALTO",
-   "area": "curto",
-   "msg": "folga furo < 0,20",
-   "layer": "In2.Cu",
-   "hole": "pad P1. []",
-   "item": "pad P1.0 [GND]",
-   "kind": "folga furo < 0,20"
-  },
-  {
-   "sev": "ALTO",
-   "area": "curto",
-   "msg": "folga furo < 0,20",
-   "layer": "B.Cu",
-   "hole": "pad P1. []",
-   "item": "pad P1.0 [GND]",
-   "kind": "folga furo < 0,20"
-  },
-  {
-   "sev": "ALTO",
-   "area": "curto",
-   "msg": "folga furo < 0,20",
-   "layer": "B.Cu",
-   "hole": "pad P1. []",
-   "item": "pad P1.0 [GND]",
-   "kind": "folga furo < 0,20"
-  },
   {
    "sev": "INFO",
    "area": "montagem",
@@ -82,31 +10,7 @@
   {
    "sev": "INFO",
    "area": "montagem",
-   "msg": "5 vias térmicas (mesma rede) em pads expostos (CONV_TPS5450DDAR): voiding/sucção de solda no EP é esperado; posicionadas entre os quadrados de pasta"
-  },
-  {
-   "sev": "MEDIO",
-   "area": "borda",
-   "msg": "footprint com caixa fora do contorno (verificar visualmente)",
-   "ref": "U3",
-   "bbox": [
-    130.61,
-    32.29,
-    143.68,
-    47.27
-   ]
-  },
-  {
-   "sev": "MEDIO",
-   "area": "borda",
-   "msg": "footprint com caixa fora do contorno (verificar visualmente)",
-   "ref": "P1",
-   "bbox": [
-    133.08,
-    53.83,
-    143.23,
-    63.93
-   ]
+   "msg": "9 vias térmicas (mesma rede) em pads expostos (CONV_TPS5450DDAR, DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm): voiding/sucção de solda no EP é esperado; posicionadas entre os quadrados de pasta"
   },
   {
    "sev": "INFO",
@@ -116,12 +20,12 @@
   {
    "sev": "INFO",
    "area": "montagem",
-   "msg": "124 vias sob corpos de componentes (tenting F/B = True/True)"
+   "msg": "123 vias sob corpos de componentes (tenting F/B = True/True)"
   },
   {
    "sev": "INFO",
    "area": "montagem",
-   "msg": "125 componentes, 45 no lado B (C38, FB1, D14, C52, C42, C63, C23, C50, R28, C62, D15, C53…), THT: U6, U3, P1; 52 referências sem serigrafia (identificação só pelo CPL)"
+   "msg": "125 componentes, 45 no lado B (C38, FB1, D14, C52, C42, C63, C23, C50, R28, C62, D15, C53…), THT: U6, U3, P1; 64 referências sem serigrafia (identificação só pelo CPL)"
   },
   {
    "sev": "INFO",
@@ -131,7 +35,7 @@
   {
    "sev": "BAIXO",
    "area": "fabrico",
-   "msg": "122 junções de trilha com ângulo agudo (< 90°) — 'acid traps' cosméticos em processo moderno; o Freerouting gera 45°/90° mas o A* do 5c pode gerar outros"
+   "msg": "121 junções de trilha com ângulo agudo (< 90°) — 'acid traps' cosméticos em processo moderno; o Freerouting gera 45°/90° mas o A* do 5c pode gerar outros"
   },
   {
    "sev": "INFO",
@@ -199,67 +103,18 @@
    "msg": "U11 TJA1042: {'1': 'BUS0_TX', '2': 'GND', '3': '+5V', '4': 'BUS0_RX', '5': '+3V3', '6': 'BUS0_L', '7': 'BUS0_H', '8': 'BUS0_STB'}"
   },
   {
-   "sev": "ALTO",
+   "sev": "INFO",
    "area": "BOM",
-   "msg": "54 linhas / 76 referências; 53 linhas com MPN — não encomendável sem preencher as restantes; itens críticos marcados (VCAP ESR, SMPS, L5, Y1 CL)"
+   "msg": "54 linhas / 76 referências; todas com MPN (LCSC 'a verificar' em hardware/reports/bom-real/BOM_HYBRIDPANDA_v1.csv); itens críticos marcados (VCAP ESR, SMPS, L5, Y1 CL)"
   }
  ],
  "shorts": {
-  "pairs_tested": 748,
+  "pairs_tested": 764,
   "copper_overlap_other_net": [],
   "clearance_lt_0.10": [],
   "zone_overlap_other_net": [],
   "zone_clearance_lt_0.10": [],
-  "hole_vs_other_net": [
-   {
-    "layer": "F.Cu",
-    "hole": "pad P1. []",
-    "item": "pad P1.0 [GND]",
-    "kind": "folga furo < 0,20"
-   },
-   {
-    "layer": "F.Cu",
-    "hole": "pad P1. []",
-    "item": "pad P1.0 [GND]",
-    "kind": "folga furo < 0,20"
-   },
-   {
-    "layer": "In1.Cu",
-    "hole": "pad P1. []",
-    "item": "pad P1.0 [GND]",
-    "kind": "folga furo < 0,20"
-   },
-   {
-    "layer": "In1.Cu",
-    "hole": "pad P1. []",
-    "item": "pad P1.0 [GND]",
-    "kind": "folga furo < 0,20"
-   },
-   {
-    "layer": "In2.Cu",
-    "hole": "pad P1. []",
-    "item": "pad P1.0 [GND]",
-    "kind": "folga furo < 0,20"
-   },
-   {
-    "layer": "In2.Cu",
-    "hole": "pad P1. []",
-    "item": "pad P1.0 [GND]",
-    "kind": "folga furo < 0,20"
-   },
-   {
-    "layer": "B.Cu",
-    "hole": "pad P1. []",
-    "item": "pad P1.0 [GND]",
-    "kind": "folga furo < 0,20"
-   },
-   {
-    "layer": "B.Cu",
-    "hole": "pad P1. []",
-    "item": "pad P1.0 [GND]",
-    "kind": "folga furo < 0,20"
-   }
-  ],
+  "hole_vs_other_net": [],
   "kicad_unconnected": 0,
   "nets_split": [],
   "nets_total": 142,
@@ -280,6 +135,18 @@
    "footprint": "CONV_TPS5450DDAR"
   },
   {
+   "via": "GND @126.69,55.24 d0.60/0.30",
+   "pad": "pad U9.9 [GND]",
+   "mesma_rede": true,
+   "footprint": "DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm"
+  },
+  {
+   "via": "GND @135.58,70.35 d0.60/0.30",
+   "pad": "pad U11.9 [GND]",
+   "mesma_rede": true,
+   "footprint": "DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm"
+  },
+  {
    "via": "GND @108.71,42.14 d0.60/0.30",
    "pad": "pad U6.9 [GND]",
    "mesma_rede": true,
@@ -292,10 +159,22 @@
    "footprint": "CONV_TPS5450DDAR"
   },
   {
+   "via": "GND @127.54,60.91 d0.60/0.30",
+   "pad": "pad U8.9 [GND]",
+   "mesma_rede": true,
+   "footprint": "DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm"
+  },
+  {
    "via": "GND @107.41,40.84 d0.60/0.30",
    "pad": "pad U6.9 [GND]",
    "mesma_rede": true,
    "footprint": "CONV_TPS5450DDAR"
+  },
+  {
+   "via": "GND @140.25,70.38 d0.60/0.30",
+   "pad": "pad U10.9 [GND]",
+   "mesma_rede": true,
+   "footprint": "DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm"
   }
  ],
  "mask": {
@@ -309,26 +188,7 @@
    "pad C28.1 [+3V3]",
    "pad C28.2 [GND]"
   ],
-  "footprints_fora_bbox": [
-   {
-    "ref": "U3",
-    "bbox": [
-     130.61,
-     32.29,
-     143.68,
-     47.27
-    ]
-   },
-   {
-    "ref": "P1",
-    "bbox": [
-     133.08,
-     53.83,
-     143.23,
-     63.93
-    ]
-   }
-  ],
+  "footprints_fora_bbox": [],
   "board_mm": [
    91.96,
    32.06,
@@ -353,7 +213,7 @@
  "vias_under_components": {
   "tent_front": true,
   "tent_back": true,
-  "count": 124,
+  "count": 123,
   "list": [
    {
     "via": "+3V3 @103.00,65.86",
@@ -541,17 +401,22 @@
     "rede_do_componente": true
    },
    {
+    "via": "GND @126.69,55.24",
+    "sob": "U9",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @116.28,43.00",
+    "sob": "L4",
+    "rede_do_componente": false
+   },
+   {
     "via": "GND @117.43,48.77",
     "sob": "U7",
     "rede_do_componente": true
    },
    {
     "via": "GND @115.67,40.27",
-    "sob": "L4",
-    "rede_do_componente": false
-   },
-   {
-    "via": "GND @116.28,42.75",
     "sob": "L4",
     "rede_do_componente": false
    },
@@ -596,6 +461,11 @@
     "rede_do_componente": true
    },
    {
+    "via": "GND @135.58,70.35",
+    "sob": "U11",
+    "rede_do_componente": true
+   },
+   {
     "via": "GND @116.36,69.88",
     "sob": "SW1",
     "rede_do_componente": false
@@ -609,11 +479,6 @@
     "via": "GND @108.71,42.14",
     "sob": "U6",
     "rede_do_componente": true
-   },
-   {
-    "via": "GND @117.62,42.20",
-    "sob": "L4",
-    "rede_do_componente": false
    },
    {
     "via": "GND @96.13,33.70",
@@ -661,6 +526,11 @@
     "rede_do_componente": false
    },
    {
+    "via": "GND @127.54,60.91",
+    "sob": "U8",
+    "rede_do_componente": true
+   },
+   {
     "via": "GND @108.25,65.86",
     "sob": "U7",
     "rede_do_componente": true
@@ -673,6 +543,11 @@
    {
     "via": "GND @107.41,40.84",
     "sob": "U6",
+    "rede_do_componente": true
+   },
+   {
+    "via": "GND @140.25,70.38",
+    "sob": "U10",
     "rede_do_componente": true
    },
    {
@@ -826,11 +701,6 @@
     "rede_do_componente": true
    },
    {
-    "via": "USB_PWR @129.78,46.50",
-    "sob": "D1",
-    "rede_do_componente": false
-   },
-   {
     "via": "BUS1O_TX @102.97,47.67",
     "sob": "U7",
     "rede_do_componente": true
@@ -899,21 +769,6 @@
     "via": "BUS0_TX @118.83,62.32",
     "sob": "U7",
     "rede_do_componente": true
-   },
-   {
-    "via": "USB_R_D- @113.64,42.75",
-    "sob": "C7",
-    "rede_do_componente": false
-   },
-   {
-    "via": "USB_R_D- @113.64,42.75",
-    "sob": "R20",
-    "rede_do_componente": true
-   },
-   {
-    "via": "USB_R_D+ @113.64,44.78",
-    "sob": "C12",
-    "rede_do_componente": false
    },
    {
     "via": "Net-(JP1-B) @107.30,66.20",
@@ -1065,29 +920,41 @@
    "Y1"
   ],
   "ref_silk_escondida": [
+   "D7",
    "R1",
+   "R5",
+   "D2",
+   "C28",
+   "C18",
+   "C29",
+   "C20",
    "C47",
    "C58",
+   "C12",
    "L4",
    "FID2",
    "FID3",
+   "Q4",
    "C65",
    "FID1",
    "U13",
    "C48",
    "JP1",
+   "C6",
    "C38",
    "FB1",
    "D14",
    "C52",
    "C42",
    "C63",
+   "C23",
    "C50",
    "R28",
    "C62",
    "D15",
    "C53",
    "C46",
+   "C24",
    "C57",
    "R30",
    "D13",
@@ -1140,9 +1007,9 @@
   "GND": {
    "min_w": 0.2,
    "max_w": 0.8,
-   "len_mm": 215.5,
-   "n": 222,
-   "vias": 96,
+   "len_mm": 214.2,
+   "n": 221,
+   "vias": 98,
    "min_w_at": "97.94,63.39 F.Cu"
   },
   "+5V": {
@@ -1156,9 +1023,9 @@
   "USB_PWR": {
    "min_w": 0.2,
    "max_w": 1.0,
-   "len_mm": 31.1,
-   "n": 19,
-   "vias": 2,
+   "len_mm": 30.1,
+   "n": 18,
+   "vias": 0,
    "min_w_at": "119.08,54.38 F.Cu"
   },
   "+12V": {
@@ -1170,7 +1037,7 @@
    "min_w_at": "141.40,51.11 F.Cu"
   }
  },
- "acute_angles": 122,
+ "acute_angles": 121,
  "rules": {
   "min_track_mm": 0.14,
   "min_via_drill_mm": 0.3,
@@ -1435,9 +1302,7 @@
    "value": "HW_ID1",
    "footprint": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
    "qty": "1",
-   "notas": [
-    "sem MPN"
-   ]
+   "notas": []
   },
   {
    "refs": "L3",
@@ -1640,11 +1505,9 @@
    ]
   }
  ],
- "seconds": 21.2,
+ "seconds": 11.7,
  "by_severity": {
-  "ALTO": 9,
-  "INFO": 19,
-  "MEDIO": 2,
+  "INFO": 20,
   "BAIXO": 1
  }
 }

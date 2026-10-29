@@ -219,27 +219,56 @@ inherited = {k: v for k, v in by_type.items() if v.get("hibrida")}
 drc_txt = ", ".join("%s %d" % (k, v["hibrida"]) for k, v in sorted(inherited.items())) or "none"
 A = " **Addressed by software, not physically verified**"
 VP = "../reports/verification-pcb"
-blocks += [
+fa_p = os.path.join(REP, "final_audit.json")
+fa = json.load(open(fa_p, encoding="utf-8")) if os.path.exists(fa_p) else {}
+gr_p = os.path.join(ROOT, "hardware", "reports", "verification-pcb", "gerber-review.json")
+gr = json.load(open(gr_p, encoding="utf-8")) if os.path.exists(gr_p) else {}
+tv_p = os.path.join(ROOT, "hardware", "reports", "verification-pcb", "thermal-vias.json")
+tv = json.load(open(tv_p, encoding="utf-8")) if os.path.exists(tv_p) else {}
+if gr:
+    conn = gr.get("connectivity", {})
+    gerber_txt = ("Gerber review executed in software ([`%s/gerber-review.md`](%s/gerber-review.md)): %d layers rendered to PNG "
+                  "(`%s/gerber-render/`), Edge.Cuts outline %s mm vs PCB %s mm, drill hits %s vs PCB holes %s, copper connectivity "
+                  "rebuilt from the gerbers + drill and compared with the KiCad netlist: %s short(s), %s open(s) over %s nets.%s "
+                  "A human look in KiCad GerbView is still part of the remaining checks below."
+                  % (VP, VP, gr.get("layers_rendered", 0), VP, gr.get("edge_bbox_mm"), gr.get("pcb_bbox_mm"), gr.get("drill_hits"),
+                     gr.get("pcb_holes"), conn.get("shorts"), conn.get("opens"), conn.get("nets_compared"), A))
+else:
+    gerber_txt = "Gerber viewer check: NOT executed automatically; only the syntactic check in `gerber_check.json`. Open `gerbers/` in KiCad GerbView before any order."
+pcb_blocks = [
     "CAN and USB impedance/skew: analytical estimate only (`step6_reports.py`, [`%s/impedance.md`](%s/impedance.md): Hammerstad-Jensen / Kirschning-Jansen for the file stackup and for JLCPCB JLC7628; USB netclass 0.35/0.15 mm, CAN_DIFF 0.22/0.23 mm). KiCad's DRC does not check impedance; the stackup is assumed, not confirmed with the fabricator; no TDR.%s" % (VP, VP, A),
     "`USB_D+/-`: rerouted as an edge-coupled pair on B.Cu with one symmetric via pair and 0.35/0.15 mm width/gap, skew %s ([`%s/usb-reroute.md`](%s/usb-reroute.md)); previously 2 vias per net on In1.Cu. USB FS 12 Mbit/s is tolerant either way.%s" % ("< 0.3 mm", VP, VP, A),
-    "No board was fabricated, assembled or measured: zero physical verification; the official red panda firmware has never run on this hardware.",
-    "BOM: %d reference(s) without MPN and %d without LCSC code (of %d); LCSC codes marked \"a verificar\" in [`../reports/bom-real/BOM_HYBRIDPANDA_v1.csv`](../reports/bom-real/BOM_HYBRIDPANDA_v1.csv) are not confirmed in the JLC catalogue; JLC assembly requires confirming them." % (len(out["assembly"]["refs_without_MPN"]), len(out["assembly"]["refs_without_LCSC"]), out["assembly"]["bom_refs"]),
     "DRC inherited from the OpenBlackPanda baseline: now %s ([`%s/drc-cleanup.md`](%s/drc-cleanup.md); `lib_footprint_mismatch` is intentional: local footprint edits). Clearance/unconnected/shorts/courtyards = %s/%s/%s/%s.%s" % (drc_txt, VP, VP, drc7.get("clearance"), drc7.get("unconnected_items"), drc7.get("shorting_items"), drc7.get("courtyards_overlap"), A),
-    "Gerber viewer check: NOT executed automatically (no gerbv/gerbview CLI); only the syntactic check in `gerber_check.json`. Open `gerbers/` in KiCad GerbView before any order.",
-    "ARM toolchain: installed locally (Arm GNU 14.2.Rel1) but the firmware for this hardware (`hybrid-h725` branch in [`firmware/`](../../firmware)) has never run on hardware; depends on the commaai DFU/signing flow (see STEP 9).",
-    "Component rotation in `assembly/CPL_JLC.csv` is normalised with the JLC correction table used by the Bouni kicad-jlcpcb-tools plugin (%d rules, `hardware/scripts/cpl_rotations_db.csv`): %d footprint type(s) corrected, %d without a rule ([`%s/cpl-rotation.md`](%s/cpl-rotation.md), `assembly/CPL_rotation_corrections.csv`). A human must still check every part in the JLC assembly preview (polarised parts and local BlackPanda footprints in particular).%s" % (out["assembly"]["rotation_rules"], len(out["assembly"]["rotation_corrected"]), len(out["assembly"]["rotation_unmatched"]), VP, VP, A),
-    "Via-in-pad: 0 after the east relayout (`step5e_relayout_east.py`, D-33) plus `fix_audit.py` and `fix_vip_reroute.py`. Counted with the `final_audit.py` definition (via centre inside an SMD pad bounding box); reconfirm in [`../reports/final_audit.json`](../reports/final_audit.json) before any order.",
+    gerber_txt,
+    "Via-in-pad: %s (`final_audit.py` definition: via centre inside an SMD pad of another net or of a small pad); %s same-net thermal vias inside exposed pads (U6 PowerPAD, U8-U11 DFN EP, placed by `vpcb_a10_thermal_vias.py`) are deliberate ([`%s/hand-assembly.md`](%s/hand-assembly.md)).%s" % (len(fa.get("via_in_pad", [])) if fa else "n/a", len(fa.get("thermal_vias", [])) if fa else "n/a", VP, VP, A),
+    "Hand-solder friendliness: solder mask minimum web 0.1 mm (`solder_mask_min_width`), mask slivers >= 0.2 mm between U7 LQFP-144 and P1 USB-C 0.5 mm pads, DFN pin-to-EP mask 0.13 mm, one 0.6/0.3 mm GND via in each DFN exposed pad, vias tented both sides; ENIG recommended ([`%s/hand-assembly.md`](%s/hand-assembly.md)).%s" % (VP, VP, A),
+    "No board was fabricated, assembled or measured: zero physical verification (continuity/isolation of the built board, impedance, power rails, USB enumeration, CAN). **Requires a built board.**",
 ]
+asm_blocks = [
+    "BOM: %d reference(s) without MPN and %d without LCSC code (of %d); U1 AP22615AWU-7 is no longer in the JLC catalogue (buy from Mouser/Digi-Key). The user buys and hand-solders every part, so LCSC codes and basic/extended status are informational only." % (len(out["assembly"]["refs_without_MPN"]), len(out["assembly"]["refs_without_LCSC"]), out["assembly"]["bom_refs"]),
+    "Component rotation in `assembly/CPL_JLC.csv` is normalised with the JLC correction table (%d rules, `hardware/scripts/cpl_rotations_db.csv`): %d footprint type(s) corrected, %d without a rule ([`%s/cpl-rotation.md`](%s/cpl-rotation.md)). Only relevant if JLC assembly is ever ordered; not needed for a bare board." % (out["assembly"]["rotation_rules"], len(out["assembly"]["rotation_corrected"]), len(out["assembly"]["rotation_unmatched"]), VP, VP),
+    "ARM toolchain: installed locally (Arm GNU 14.2.Rel1) but the firmware for this hardware (`hybrid-h725` branch in [`firmware/`](../../firmware)) has never run on hardware; depends on the commaai DFU/signing flow (see STEP 9). **Requires a built board.**",
+]
+blocks = pcb_blocks + asm_blocks
 R = ["# Hybrid Panda fabrication package", "",
      "**STATUS: DO NOT FABRICATE.** This package was generated automatically for archive and",
      "review. Physical verification and human review are still missing. No board has ever been built from it.", "",
      "Hybrid Panda = black panda form factor + STM32H725ZGT6 running the red panda firmware.",
      "Generated %s by [`hardware/scripts/step8_fabricate.py`](../scripts/step8_fabricate.py)" % out["date"],
      "with KiCad 10.0.7 `kicad-cli` from [`hardware/hybrid-panda/HybridPanda.kicad_pcb`](../hybrid-panda/HybridPanda.kicad_pcb).",
+     "Intended order: bare PCB only (JLCPCB), all components bought and hand-soldered by the user.",
      "Items marked \"addressed by software, not physically verified\" were changed in the PCB engineering pass of %s" % out["date"][:10],
-     "(reports in [`hardware/reports/verification-pcb/`](../reports/verification-pcb/)); the remaining items are open.", "",
-     "## Why it must not be fabricated yet", ""]
-R += ["%d. %s" % (i + 1, b) for i, b in enumerate(blocks)]
+     "(reports in [`hardware/reports/verification-pcb/`](../reports/verification-pcb/)); items marked \"requires a built board\" can only be closed after a board exists.", "",
+     "## Why it must not be fabricated yet", "", "### PCB fabrication (bare board)", ""]
+R += ["%d. %s" % (i + 1, b) for i, b in enumerate(pcb_blocks)]
+R += ["", "### Assembly (manual, by the user)", ""]
+R += ["%d. %s" % (len(pcb_blocks) + i + 1, b) for i, b in enumerate(asm_blocks)]
+R += ["", "## Remaining human checks", "",
+      "- Visual review of the PCB in KiCad (placement, silk legibility, polarity marks, reference designators) by a person.",
+      "- Open `HybridPanda_gerbers_JLC.zip` in KiCad GerbView (or the JLCPCB online viewer) and compare with the renders in `%s/gerber-render/`." % VP,
+      "- Independent review by a second person (schematic against datasheets and PCB layout).",
+      "- Order a small batch of bare boards first (no assembly); continuity/isolation test with a multimeter before populating.",
+      "- JLC assembly preview for rotations: only if JLC assembly is ever ordered (not planned)."]
 R += ["", "## STEP 7 results (`../reports/step7_validation.json`)", "",
       "- ERC errors = %s, warnings = %s" % (v7.get("erc", {}).get("errors"), v7.get("erc", {}).get("warnings")),
       "- DRC unconnected = %s, clearance = %s, shorts = %s, courtyards = %s" % (drc7.get("unconnected_items"), drc7.get("clearance"), drc7.get("shorting_items"), drc7.get("courtyards_overlap")),
@@ -260,10 +289,11 @@ R += ["", "## STEP 7 results (`../reports/step7_validation.json`)", "",
       "Generation problems: " + ("none" if not out["problems"] else "; ".join(out["problems"])) + ". Notes: " + ("none" if not out["notes"] else "; ".join(out["notes"])) + ".", "",
       "---", "",
       "pt-BR: **NAO FABRICAR.** Pacote gerado automaticamente para arquivo e revisao; nenhuma placa foi construida e",
-      "falta verificacao fisica e revisao humana. Os itens marcados \"addressed by software, not physically verified\"",
-      "(impedancia com stackup JLC7628, par USB acoplado, limpeza do DRC herdado, rotacao do CPL) foram alterados apenas",
-      "em software no passe de %s; os restantes (zero placas, BOM com codigos LCSC nao confirmados, gerbers sem revisao" % out["date"][:10],
-      "visual, firmware nunca executado) continuam abertos."]
+      "falta verificacao fisica e revisao humana. A encomenda prevista e so da PCB nua (JLCPCB), com todos os componentes",
+      "comprados e soldados a mao pelo utilizador. Os itens marcados \"addressed by software, not physically verified\"",
+      "(impedancia com stackup JLC7628, par USB acoplado, limpeza do DRC herdado, revisao dos gerbers com comparacao de",
+      "conectividade, vias termicas nos DFN, mascara minima 0.1 mm, rotacao do CPL) foram alterados apenas em software",
+      "no passe de %s; os restantes (zero placas construidas, firmware nunca executado) exigem uma placa fisica." % out["date"][:10]]
 open(os.path.join(FAB, "readme.md"), "w", encoding="utf-8").write("\n".join(R) + "\n")
 out["readme_blocks"] = blocks
 out["files"] = {d: sorted(os.listdir(os.path.join(FAB, d))) for d in ("gerbers", "drill", "assembly", "pdf", "3d")}

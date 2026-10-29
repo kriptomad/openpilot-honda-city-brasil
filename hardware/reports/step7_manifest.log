@@ -1,6 +1,6 @@
-OUTPUT_ROOT manifest: 20789 files -> C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\00_MANIFESTS\OUTPUT_ROOT_STEP7_20261028_1017.sha256
-02_REFERENCE unchanged vs reference_clones.sha256: False
+OUTPUT_ROOT manifest: 884 files -> C:\Users\costabr\Downloads\openpilot\openpilot-honda-city-brasil\archive\manifests\OUTPUT_ROOT_STEP7_20261029_1559.sha256
+hardware/reference unchanged vs reference_clones.sha256: False
 ORIGINAL vs BEFORE: IDENTICAL (377 files)
-INDEX.md rows: 14938
+docs/legacy-index.md rows: 561
 
 --- stderr ---

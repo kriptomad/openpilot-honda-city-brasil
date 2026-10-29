@@ -1,6 +1,6 @@
 {
- "when": "2026-10-26 12:31",
- "pcb": "C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+ "when": "2026-10-29 12:36",
+ "pcb": "C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
  "stackup": [
   {
    "layer": "F.SilkS",
@@ -79,7 +79,9 @@
     },
     "total_mm": 8.96,
     "widths_mm": [
-     0.15
+     0.15,
+     0.2,
+     0.22
     ],
     "locked": 5
    },
@@ -91,9 +93,8 @@
     },
     "total_mm": 10.12,
     "widths_mm": [
-     0.15,
      0.2,
-     0.25
+     0.22
     ],
     "locked": 5
    },
@@ -110,11 +111,13 @@
     "segments": 10,
     "vias": 0,
     "length_mm": {
-     "F.Cu": 18.76
+     "F.Cu": 19.01
     },
-    "total_mm": 18.76,
+    "total_mm": 19.01,
     "widths_mm": [
-     0.15
+     0.15,
+     0.2,
+     0.22
     ],
     "locked": 10
    },
@@ -122,18 +125,19 @@
     "segments": 13,
     "vias": 0,
     "length_mm": {
-     "F.Cu": 20.69
+     "F.Cu": 20.72
     },
-    "total_mm": 20.69,
+    "total_mm": 20.72,
     "widths_mm": [
      0.15,
-     0.25
+     0.2,
+     0.22
     ],
     "locked": 12
    },
-   "skew_mm": 1.93,
+   "skew_mm": 1.71,
    "vias_on_pair": 0,
-   "gap_cc_mm": 0.822,
+   "gap_cc_mm": 0.79,
    "layers": [
     "F.Cu"
    ]
@@ -148,7 +152,7 @@
     },
     "total_mm": 12.06,
     "widths_mm": [
-     0.15
+     0.22
     ],
     "locked": 10
    },
@@ -162,7 +166,8 @@
     "widths_mm": [
      0.15,
      0.175,
-     0.25
+     0.2,
+     0.22
     ],
     "locked": 10
    },
@@ -179,11 +184,12 @@
     "segments": 7,
     "vias": 0,
     "length_mm": {
-     "F.Cu": 7.34
+     "F.Cu": 7.59
     },
-    "total_mm": 7.34,
+    "total_mm": 7.59,
     "widths_mm": [
-     0.15
+     0.15,
+     0.22
     ],
     "locked": 7
    },
@@ -191,12 +197,12 @@
     "segments": 6,
     "vias": 0,
     "length_mm": {
-     "F.Cu": 6.21
+     "F.Cu": 6.46
     },
-    "total_mm": 6.21,
+    "total_mm": 6.46,
     "widths_mm": [
      0.15,
-     0.25
+     0.22
     ],
     "locked": 5
    },
@@ -210,73 +216,71 @@
   "USB_D+/USB_D-": {
    "class": "USB",
    "USB_D+": {
-    "segments": 11,
-    "vias": 1,
+    "segments": 1,
+    "vias": 0,
     "length_mm": {
-     "F.Cu": 11.01,
-     "B.Cu": 5.87
+     "B.Cu": 1.48
     },
-    "total_mm": 16.88,
+    "total_mm": 1.48,
     "widths_mm": [
      0.2
     ],
     "locked": 0
    },
    "USB_D-": {
-    "segments": 10,
-    "vias": 3,
+    "segments": 3,
+    "vias": 0,
     "length_mm": {
-     "F.Cu": 4.62,
-     "In1.Cu": 6.19,
-     "In2.Cu": 5.37,
-     "B.Cu": 3.19
+     "B.Cu": 1.71
     },
-    "total_mm": 19.37,
+    "total_mm": 1.71,
     "widths_mm": [
      0.2
     ],
     "locked": 0
    },
-   "skew_mm": 2.49,
-   "vias_on_pair": 4,
-   "gap_cc_mm": 1.081,
+   "skew_mm": 0.23,
+   "vias_on_pair": 0,
+   "gap_cc_mm": 0.5,
    "layers": [
-    "B.Cu",
-    "F.Cu",
-    "In1.Cu",
-    "In2.Cu"
+    "B.Cu"
    ]
   },
   "USB_R_D+/USB_R_D-": {
    "class": "USB",
    "USB_R_D+": {
-    "segments": 8,
-    "vias": 0,
+    "segments": 14,
+    "vias": 1,
     "length_mm": {
-     "F.Cu": 14.5
+     "F.Cu": 9.51,
+     "B.Cu": 15.42
     },
-    "total_mm": 14.5,
+    "total_mm": 24.92,
     "widths_mm": [
-     0.2
+     0.2,
+     0.35
     ],
     "locked": 0
    },
    "USB_R_D-": {
-    "segments": 8,
-    "vias": 0,
+    "segments": 14,
+    "vias": 1,
     "length_mm": {
-     "F.Cu": 14.5
+     "F.Cu": 6.09,
+     "B.Cu": 18.87
     },
-    "total_mm": 14.5,
+    "total_mm": 24.96,
     "widths_mm": [
-     0.2
+     0.2,
+     0.35
     ],
     "locked": 0
    },
-   "skew_mm": 0.0,
-   "vias_on_pair": 0,
-   "gap_cc_mm": 0.45,
+   "skew_mm": 0.04,
+   "vias_on_pair": 2,
+   "gap_cc_mm": 0.645,
    "layers": [
+    "B.Cu",
     "F.Cu"
    ]
   }
@@ -314,11 +318,11 @@
    "ref": "In1.Cu",
    "h_mm": 0.2,
    "er": 4.5,
-   "w_mm": 0.25,
-   "Z0_ohm": 58.3,
-   "eeff": 3.32,
-   "gap_edge_mm": 0.401,
-   "Zdiff_ohm": 108.4,
+   "w_mm": 0.22,
+   "Z0_ohm": 61.8,
+   "eeff": 3.29,
+   "gap_edge_mm": 0.431,
+   "Zdiff_ohm": 116.1,
    "note": "referência In1 só é plano sob o MCU (+3V3); fora dela a referência real é In2 (h maior → Z maior)"
   },
   {
@@ -330,8 +334,8 @@
    "w_mm": 0.15,
    "Z0_ohm": 72.4,
    "eeff": 3.22,
-   "gap_edge_mm": 0.672,
-   "Zdiff_ohm": 142.0,
+   "gap_edge_mm": 0.64,
+   "Zdiff_ohm": 141.6,
    "note": "referência In1 só é plano sob o MCU (+3V3); fora dela a referência real é In2 (h maior → Z maior)"
   },
   {
@@ -340,11 +344,24 @@
    "ref": "In1.Cu",
    "h_mm": 0.2,
    "er": 4.5,
-   "w_mm": 0.25,
-   "Z0_ohm": 58.3,
-   "eeff": 3.32,
-   "gap_edge_mm": 0.572,
-   "Zdiff_ohm": 113.0,
+   "w_mm": 0.2,
+   "Z0_ohm": 64.5,
+   "eeff": 3.27,
+   "gap_edge_mm": 0.59,
+   "Zdiff_ohm": 125.4,
+   "note": "referência In1 só é plano sob o MCU (+3V3); fora dela a referência real é In2 (h maior → Z maior)"
+  },
+  {
+   "pair": "BUS1N_H/BUS1N_L",
+   "layer": "F.Cu",
+   "ref": "In1.Cu",
+   "h_mm": 0.2,
+   "er": 4.5,
+   "w_mm": 0.22,
+   "Z0_ohm": 61.8,
+   "eeff": 3.29,
+   "gap_edge_mm": 0.57,
+   "Zdiff_ohm": 119.8,
    "note": "referência In1 só é plano sob o MCU (+3V3); fora dela a referência real é In2 (h maior → Z maior)"
   },
   {
@@ -379,11 +396,24 @@
    "ref": "In1.Cu",
    "h_mm": 0.2,
    "er": 4.5,
-   "w_mm": 0.25,
-   "Z0_ohm": 58.3,
-   "eeff": 3.32,
-   "gap_edge_mm": 0.698,
-   "Zdiff_ohm": 114.6,
+   "w_mm": 0.2,
+   "Z0_ohm": 64.5,
+   "eeff": 3.27,
+   "gap_edge_mm": 0.748,
+   "Zdiff_ohm": 127.3,
+   "note": "referência In1 só é plano sob o MCU (+3V3); fora dela a referência real é In2 (h maior → Z maior)"
+  },
+  {
+   "pair": "BUS1O_H/BUS1O_L",
+   "layer": "F.Cu",
+   "ref": "In1.Cu",
+   "h_mm": 0.2,
+   "er": 4.5,
+   "w_mm": 0.22,
+   "Z0_ohm": 61.8,
+   "eeff": 3.29,
+   "gap_edge_mm": 0.728,
+   "Zdiff_ohm": 121.8,
    "note": "referência In1 só é plano sob o MCU (+3V3); fora dela a referência real é In2 (h maior → Z maior)"
   },
   {
@@ -405,11 +435,11 @@
    "ref": "In1.Cu",
    "h_mm": 0.2,
    "er": 4.5,
-   "w_mm": 0.25,
-   "Z0_ohm": 58.3,
-   "eeff": 3.32,
-   "gap_edge_mm": 0.508,
-   "Zdiff_ohm": 111.7,
+   "w_mm": 0.22,
+   "Z0_ohm": 61.8,
+   "eeff": 3.29,
+   "gap_edge_mm": 0.538,
+   "Zdiff_ohm": 119.1,
    "note": "referência In1 só é plano sob o MCU (+3V3); fora dela a referência real é In2 (h maior → Z maior)"
   },
   {
@@ -421,32 +451,35 @@
    "w_mm": 0.2,
    "Z0_ohm": 64.5,
    "eeff": 3.27,
-   "gap_edge_mm": 0.881,
-   "Zdiff_ohm": 128.1,
+   "gap_edge_mm": 0.3,
+   "Zdiff_ohm": 114.3,
    "note": ""
   },
   {
-   "pair": "USB_D+/USB_D-",
-   "layer": "F.Cu",
-   "ref": "In1.Cu",
+   "pair": "USB_R_D+/USB_R_D-",
+   "layer": "B.Cu",
+   "ref": "In2.Cu",
    "h_mm": 0.2,
    "er": 4.5,
    "w_mm": 0.2,
    "Z0_ohm": 64.5,
    "eeff": 3.27,
-   "gap_edge_mm": 0.881,
-   "Zdiff_ohm": 128.1,
-   "note": "referência In1 só é plano sob o MCU (+3V3); fora dela a referência real é In2 (h maior → Z maior)"
+   "gap_edge_mm": 0.445,
+   "Zdiff_ohm": 121.7,
+   "note": ""
   },
   {
-   "pair": "USB_D+/USB_D-",
-   "layer": "In1.Cu",
-   "note": "camada interna: não estimado"
-  },
-  {
-   "pair": "USB_D+/USB_D-",
-   "layer": "In2.Cu",
-   "note": "camada interna: não estimado"
+   "pair": "USB_R_D+/USB_R_D-",
+   "layer": "B.Cu",
+   "ref": "In2.Cu",
+   "h_mm": 0.2,
+   "er": 4.5,
+   "w_mm": 0.35,
+   "Z0_ohm": 49.1,
+   "eeff": 3.4,
+   "gap_edge_mm": 0.295,
+   "Zdiff_ohm": 86.8,
+   "note": ""
   },
   {
    "pair": "USB_R_D+/USB_R_D-",
@@ -457,68 +490,73 @@
    "w_mm": 0.2,
    "Z0_ohm": 64.5,
    "eeff": 3.27,
-   "gap_edge_mm": 0.25,
-   "Zdiff_ohm": 110.4,
+   "gap_edge_mm": 0.445,
+   "Zdiff_ohm": 121.7,
+   "note": "referência In1 só é plano sob o MCU (+3V3); fora dela a referência real é In2 (h maior → Z maior)"
+  },
+  {
+   "pair": "USB_R_D+/USB_R_D-",
+   "layer": "F.Cu",
+   "ref": "In1.Cu",
+   "h_mm": 0.2,
+   "er": 4.5,
+   "w_mm": 0.35,
+   "Z0_ohm": 49.1,
+   "eeff": 3.4,
+   "gap_edge_mm": 0.295,
+   "Zdiff_ohm": 86.8,
    "note": "referência In1 só é plano sob o MCU (+3V3); fora dela a referência real é In2 (h maior → Z maior)"
   }
  ],
  "planes": {
   "GND": {
    "clusters": [
-    417
+    454
    ],
    "layers": {
     "F.Cu": {
-     "outline_count": 19,
-     "area_mm2": 1249.7,
-     "largest_mm2": 764.6,
-     "largest_fraction": 0.612,
-     "small_fragments_lt_5mm2": 11
+     "outline_count": 14,
+     "area_mm2": 1412.9,
+     "largest_mm2": 1256.1,
+     "largest_fraction": 0.889,
+     "small_fragments_lt_5mm2": 8
     },
     "In2.Cu": {
-     "outline_count": 10,
-     "area_mm2": 1720.3,
-     "largest_mm2": 1545.0,
-     "largest_fraction": 0.898,
-     "small_fragments_lt_5mm2": 5
+     "outline_count": 3,
+     "area_mm2": 1932.8,
+     "largest_mm2": 1847.1,
+     "largest_fraction": 0.956,
+     "small_fragments_lt_5mm2": 0
     },
     "B.Cu": {
-     "outline_count": 14,
-     "area_mm2": 1398.1,
-     "largest_mm2": 1334.4,
-     "largest_fraction": 0.954,
-     "small_fragments_lt_5mm2": 9
+     "outline_count": 13,
+     "area_mm2": 1531.2,
+     "largest_mm2": 1450.6,
+     "largest_fraction": 0.947,
+     "small_fragments_lt_5mm2": 7
     }
    }
   },
   "+3V3": {
    "clusters": [
-    333
+    364
    ],
    "layers": {
     "In1.Cu": {
-     "outline_count": 3,
-     "area_mm2": 729.9,
-     "largest_mm2": 693.3,
-     "largest_fraction": 0.95,
+     "outline_count": 7,
+     "area_mm2": 866.0,
+     "largest_mm2": 552.1,
+     "largest_fraction": 0.638,
      "small_fragments_lt_5mm2": 0
     }
    }
   }
  },
  "totals": {
-  "tracks": 1201,
-  "vias": 204,
-  "min_track_width_mm": 0.15,
+  "tracks": 1223,
+  "vias": 240,
+  "min_track_width_mm": 0.14,
   "via_sizes": [
-   [
-    0.45,
-    0.25
-   ],
-   [
-    0.5,
-    0.3
-   ],
    [
     0.6,
     0.3

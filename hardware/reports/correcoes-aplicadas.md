@@ -126,8 +126,30 @@ Todos exigem relayout parcial ou decisao do dono; nenhum e bloqueante para o DRC
 - CL do cristal com C23/C24 18pF: confirmar por medida de frequencia.
 - Thermals (item 28): soldabilidade dos pads solidos ao plano (C28.2, U9.2, U7.104, U3.5/6) nao avaliada em reflow.
 - hole_clearance P1: aceitar o desvio com o fabricante ou substituir o footprint TYPE-C-31-M-04.
-- Rotacao CPL para a convencao JLC nao normalizada.
+- Rotacao CPL para a convencao JLC: normalizada em 2026-10-29 (secao 7); secundario para montagem manual.
 - Firmware red panda nunca executado neste hardware.
 - Limitacao de ambiente: step7 Make-Manifest falhou temporariamente por ficheiro bloqueado em
   software/flowpilot-port (outro agente); passou na re-execucao. final_audit.py termina com os._exit(0) para
   contornar hang no teardown do pcbnew (KiCad 10).
+
+## 7. Passe de verificacao por software 2026-10-28/29
+
+Relatorios em `hardware/reports/verification-pcb/`. Tudo por software; nada foi verificado fisicamente.
+A placa sera encomendada como PCB nua (JLCPCB) e montada a mao pelo usuario.
+
+| Item | Resultado |
+|---|---|
+| A1/A2 BOM e footprints | `hardware/reports/verification/` (passe anterior): 2 codigos LCSC errados encontrados, corrigidos aqui (abaixo). |
+| A3/A4 revisao dos gerbers | `gerber-review.md` + `vpcb_a4_gerber_review.py`: 11 camadas + furacao renderizadas em PNG (`gerber-render/`, compostos topo/fundo); contorno Edge.Cuts 51,02 x 46,75 mm = PCB; Excellon 268 furos = 268 na PCB (posicoes e diametros); conectividade do cobre reconstruida dos gerbers + furos e comparada com a netlist: 142 redes, 0 curtos, 0 abertos, 481 pads com rede todos sobre cobre. Teste negativo (remover 93 furos de via) gerou 38 abertos, confirmando sensibilidade do metodo. |
+| A5 impedancia | `impedance.md`: CAN 120 ohm e USB 90 ohm recalculados analiticamente (stackup do arquivo e JLC7628). |
+| A6 USB | `usb-reroute.md`: netclass USB 0,35/0,15 mm, par acoplado em B.Cu, uma via por rede, skew -0,27 mm. |
+| A7 CPL | `cpl-rotation.md`: 64 regras de rotacao, 11 refs corrigidas, 20 sem regra; secundario (montagem manual). |
+| A8 DRC | `drc-cleanup.md`: 135 -> 73 itens, todos `lib_footprint_mismatch` intencionais (~61 so grafica/3D); 0 nao conectados; 0 paridade. Rasgos de P1 1,0x1,5 mm, 45 textos 0,8/0,15 mm, serigrafia U3/P1. |
+| A9 regeneracao | step6/step7/final_audit/step8 re-executados: ERC 0 erros / 373 avisos; DRC 73; 1223 trilhas, 240 vias, 268 furos (26 PTH, 2 NPTH); final_audit 0 curtos, 0 via-in-pad, 9 vias termicas; `hardware/fabrication/` regenerado em 2026-10-29 (gerbers, furacao, BOM/CPL, PDF, zip `HybridPanda_gerbers_JLC.zip`, readme com cabecalho DO NOT FABRICATE e bloqueadores separados em PCB nua vs montagem manual). |
+| A10 montagem manual | `hand-assembly.md`: largura minima de mascara 0,1 mm (`.kicad_pcb`/`.kicad_pro`); slivers de mascara U7 0,20 mm, P1 0,155 mm; 4 vias termicas GND adicionadas nos pads expostos de U8-U11 (`vpcb_a10_thermal_vias.py`, com desvio da trilha BUS1N_STB em In2.Cu); U6 ja tinha 8 pads-via + 1 via; U12 sem EP; fiducials e NPTH inofensivos para PCB nua; recomendado ENIG. |
+| BOM | C23/C24: C1555 (22 pF) -> C1549, MPN 0402CG180J500NT (18 pF 50 V C0G, Basic); C64: C23733 (4,7 uF) -> C12530, MPN CL05A225MQ5NSNC (2,2 uF 10 V 0402); U1 AP22615AWU-7 mantido (fora do catalogo JLC; comprar em Mouser/Digi-Key). Esquematico editado (backup `snapshots/HybridPanda.kicad_sch.pre_bomfix`), `docs/hardware/bom.*` e `bom-real/BOM_HYBRIDPANDA_v1.csv` atualizados. |
+| Correcoes em scripts | `final_audit.py`: `GetWidth(layer)`/`GetSize(layer)` do pcbnew 10 (evita dialogo wx que travava o processo), pads so de pasta ignorados, JPx isento de MPN. `step8_fabricate.py`: bloco do readme reescrito. |
+
+Itens que continuam abertos e que exigem placa montada: impedancia nao medida, firmware nunca executado,
+nenhum teste eletrico. Revisao humana recomendada antes do pedido: abrir a placa no KiCad e os gerbers no
+GerbView, revisor externo, encomendar primeiro so a PCB nua.

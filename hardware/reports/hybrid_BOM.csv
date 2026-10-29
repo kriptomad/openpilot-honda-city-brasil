@@ -13,7 +13,7 @@
 "C42","10uF","Capacitor_SMD:C_0805_2012Metric","1","","CL21A106KAYNNNE","Samsung",""
 "C43,C63","1uF","Capacitor_SMD:C_0402_1005Metric","2","","CL05A105KA5NQNC","Samsung",""
 "C60-C62,C65","4.7uF","Capacitor_SMD:C_0603_1608Metric","4","","CL10A475KO8NNNC","Samsung",""
-"C64","2.2uF","Capacitor_SMD:C_0402_1005Metric","1","","CL05A225MP5NSNC","Samsung",""
+"C64","2.2uF","Capacitor_SMD:C_0402_1005Metric","1","","CL05A225MQ5NSNC","Samsung",""
 "D1","SMAJ16CA-13-F","BlackPanda:DIOM4325X250N","1","","SMAJ16CA","Littelfuse",""
 "D2","BAS40WS 43","Diode_SMD:D_SOD-323","1","","BAS40WS 43","Changjing",""
 "D5-D9","PESD2CAN,215","BlackPanda:SOT95P230X110-3N","5","","PESD2CAN,215","Nexperia",""

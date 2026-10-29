@@ -1,16 +1,16 @@
-# Tabela de furação — HybridPanda (gerada por step8_fabricate.py, 2026-10-28 10:19:21)
+# Tabela de furação — HybridPanda (gerada por step8_fabricate.py, 2026-10-29 15:59:58)
 
-Total de furos: 270 (PTH=26, NPTH=2, VIA=242). Menor broca: 0.300 mm (regra: 0.300). Anel anular mínimo: PTH 0.125 mm, VIA 0.150 mm (regra: 0.125 mm).
+Total de furos: 268 (PTH=26, NPTH=2, VIA=240). Menor broca: 0.300 mm (regra: 0.300). Anel anular mínimo: PTH 0.125 mm, VIA 0.150 mm (regra: 0.125 mm).
 
 | Tipo | Broca (mm) | Slot | Qtd |
 |---|---|---|---|
-| NPTH | 0.800 | não | 2 |
+| NPTH | 0.650 | não | 2 |
 | PTH | 0.300 | não | 8 |
 | PTH | 0.400 | não | 12 |
 | PTH | 1.199 | sim | 2 |
 | PTH | 1.200 | sim | 2 |
 | PTH | 2.500 | sim | 2 |
-| VIA | 0.300 | não | 242 |
+| VIA | 0.300 | não | 240 |
 
 ## Furos PTH/NPTH de componentes
 
@@ -26,12 +26,12 @@ Total de furos: 270 (PTH=26, NPTH=2, VIA=242). Menor broca: 0.300 mm (regra: 0.3
 | PTH | U6 | 9 | 0.300 | 0.150 | 108.710 | 44.090 |
 | PTH | U3 | 5 | 2.500 | 0.250 | 140.840 | 46.230 |
 | PTH | U3 | 6 | 2.500 | 0.250 | 140.840 | 33.330 |
-| NPTH | P1 |  | 0.800 | - | 134.940 | 62.555 |
-| NPTH | P1 |  | 0.800 | - | 134.940 | 55.205 |
-| PTH | P1 | 0 | 1.200 | 0.200 | 140.590 | 63.370 |
-| PTH | P1 | 0 | 1.199 | 0.200 | 136.180 | 63.010 |
-| PTH | P1 | 0 | 1.199 | 0.200 | 136.180 | 54.750 |
-| PTH | P1 | 0 | 1.200 | 0.200 | 140.590 | 54.390 |
+| NPTH | P1 |  | 0.650 | - | 134.940 | 62.555 |
+| NPTH | P1 |  | 0.650 | - | 134.940 | 55.205 |
+| PTH | P1 | 0 | 1.200 | 0.150 | 140.590 | 63.370 |
+| PTH | P1 | 0 | 1.199 | 0.151 | 136.180 | 63.010 |
+| PTH | P1 | 0 | 1.199 | 0.151 | 136.180 | 54.750 |
+| PTH | P1 | 0 | 1.200 | 0.150 | 140.590 | 54.390 |
 | PTH | P1 | B1 | 0.400 | 0.125 | 135.590 | 56.080 |
 | PTH | P1 | B2 | 0.400 | 0.125 | 136.290 | 56.480 |
 | PTH | P1 | B3 | 0.400 | 0.125 | 136.290 | 57.280 |
@@ -45,4 +45,4 @@ Total de furos: 270 (PTH=26, NPTH=2, VIA=242). Menor broca: 0.300 mm (regra: 0.3
 | PTH | P1 | B11 | 0.400 | 0.125 | 136.290 | 61.280 |
 | PTH | P1 | B12 | 0.400 | 0.125 | 135.590 | 61.680 |
 
-Vias: 242 (detalhe em drill_table.json). Mapa de furação: `drill\HybridPanda-drl_map.pdf`; relatório Excellon: `drill\HybridPanda-drl.rpt` (se gerado).
+Vias: 240 (detalhe em drill_table.json). Mapa de furação: `drill\HybridPanda-drl_map.pdf`; relatório Excellon: `drill\HybridPanda-drl.rpt` (se gerado).

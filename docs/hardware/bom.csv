@@ -17,8 +17,8 @@ C18,47uF,Capacitor_SMD:C_0805_2012Metric,0805X476M100NT,Fenghua,C178332,assigned
 C19,47uF,Capacitor_SMD:C_0805_2012Metric,0805X476M100NT,Fenghua,C178332,assigned,no,top,no,~,Device:C_Small,schematic
 C20,47uF,Capacitor_SMD:C_0805_2012Metric,0805X476M100NT,Fenghua,C178332,assigned,no,top,no,~,Device:C_Small,schematic
 C21,47uF,Capacitor_SMD:C_0805_2012Metric,0805X476M100NT,Fenghua,C178332,assigned,no,top,no,~,Device:C_Small,schematic
-C23,18pF,Capacitor_SMD:C_0402_1005Metric,0402CG180J500NT,Fenghua,C1555,assigned,no,bottom,no,~,Device:C_Small,schematic
-C24,18pF,Capacitor_SMD:C_0402_1005Metric,0402CG180J500NT,Fenghua,C1555,assigned,no,bottom,no,~,Device:C_Small,schematic
+C23,18pF,Capacitor_SMD:C_0402_1005Metric,0402CG180J500NT,Fenghua,C1549,assigned,no,bottom,no,~,Device:C_Small,schematic
+C24,18pF,Capacitor_SMD:C_0402_1005Metric,0402CG180J500NT,Fenghua,C1549,assigned,no,bottom,no,~,Device:C_Small,schematic
 C26,100NF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
 C27,100NF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
 C28,100NF,Capacitor_SMD:C_0402_1005Metric,CL05B104KB54PNC,Samsung,C307331,assigned,no,top,no,~,Device:C_Small,schematic
@@ -55,7 +55,7 @@ C60,4.7uF,Capacitor_SMD:C_0603_1608Metric,CL10A475KO8NNNC,Samsung,C19666,assigne
 C61,4.7uF,Capacitor_SMD:C_0603_1608Metric,CL10A475KO8NNNC,Samsung,C19666,assigned,no,bottom,no,~,Device:C_Small,schematic
 C62,4.7uF,Capacitor_SMD:C_0603_1608Metric,CL10A475KO8NNNC,Samsung,C19666,assigned,no,bottom,no,~,Device:C_Small,schematic
 C63,1uF,Capacitor_SMD:C_0402_1005Metric,CL05A105KA5NQNC,Samsung,C52923,assigned,no,bottom,no,~,Device:C_Small,schematic
-C64,2.2uF,Capacitor_SMD:C_0402_1005Metric,CL05A225MP5NSNC,Samsung,C23733,assigned,no,bottom,no,~,Device:C_Small,schematic
+C64,2.2uF,Capacitor_SMD:C_0402_1005Metric,CL05A225MQ5NSNC,Samsung,C12530,assigned,no,bottom,no,~,Device:C_Small,schematic
 C65,4.7uF,Capacitor_SMD:C_0603_1608Metric,CL10A475KO8NNNC,Samsung,C19666,assigned,no,top,no,~,Device:C_Small,schematic
 D1,SMAJ16CA-13-F,BlackPanda:DIOM4325X250N,SMAJ16CA,Littelfuse,C148217,assigned,no,top,no,,SMAJ16CA:SMAJ16CA,schematic
 D2,BAS40WS 43 ,Diode_SMD:D_SOD-323,BAS40WS 43,Changjing,C22648,assigned,no,top,no,~,Device:D_Schottky,schematic

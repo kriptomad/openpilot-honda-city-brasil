@@ -1,94 +1,94 @@
 {
- "date": "2026-10-28 10:19:21",
+ "date": "2026-10-29 15:59:58",
  "commands": [
   {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export gerbers --layers F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts --use-drill-file-origin --no-x2 --no-netlist --subtract-soldermask --disable-aperture-macros -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\gerbers\\ C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export gerbers --layers F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts --use-drill-file-origin --no-x2 --no-netlist --subtract-soldermask --disable-aperture-macros -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\gerbers\\ C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
    "exit": 0,
-   "seconds": 1.0,
+   "seconds": 1.2,
    "stderr": ""
   },
   {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export drill --format excellon --drill-origin plot --excellon-separate-th --excellon-units mm --excellon-zeros-format suppressleading --generate-map --map-format pdf -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\drill\\ C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export drill --format excellon --drill-origin plot --excellon-separate-th --excellon-units mm --excellon-zeros-format suppressleading --generate-map --map-format pdf -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\drill\\ C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.1,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export drill --format excellon --drill-origin plot --excellon-separate-th --excellon-units mm --excellon-zeros-format suppressleading --generate-map --map-format gerberx2 -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\drill\\ C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
    "exit": 0,
    "seconds": 0.9,
    "stderr": ""
   },
   {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export drill --format excellon --drill-origin plot --excellon-separate-th --excellon-units mm --excellon-zeros-format suppressleading --generate-map --map-format gerberx2 -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\drill\\ C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch export pdf -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\pdf\\HybridPanda_schematic.pdf C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_sch",
+   "exit": 0,
+   "seconds": 2.6,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers F.Cu,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\pdf\\HybridPanda_copper_F.pdf C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.0,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers In1.Cu,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\pdf\\HybridPanda_copper_In1.pdf C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.0,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers In2.Cu,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\pdf\\HybridPanda_copper_In2.pdf C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.0,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers B.Cu,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\pdf\\HybridPanda_copper_B.pdf --mirror C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.0,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers F.Fab,F.SilkS,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\pdf\\HybridPanda_fab_top.pdf C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.2,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers B.Fab,B.SilkS,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\pdf\\HybridPanda_fab_bottom.pdf --mirror C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.1,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers F.Fab,F.CrtYd,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\pdf\\HybridPanda_assembly_top.pdf C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.2,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers B.Fab,B.CrtYd,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\pdf\\HybridPanda_assembly_bottom.pdf --mirror C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
+   "exit": 0,
+   "seconds": 1.1,
+   "stderr": ""
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export step --subst-models --include-tracks --include-zones --force -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\3d\\HybridPanda.step C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
+   "exit": 2,
+   "seconds": 20.6,
+   "stderr": "RML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats."
+  },
+  {
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch export bom --fields Reference,Value,Footprint,${DNP},MPN,LCSC,Manufacturer --labels Reference,Value,Footprint,DNP,MPN,LCSC,Manufacturer --group-by Value,Footprint,MPN,LCSC --exclude-dnp -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\assembly\\_bom_fields.csv C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_sch",
    "exit": 0,
    "seconds": 0.8,
    "stderr": ""
   },
   {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch export pdf -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_schematic.pdf C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_sch",
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pos --format csv --units mm --side both --use-drill-file-origin -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/fabrication\\assembly\\pos_kicad_both.csv C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
    "exit": 0,
-   "seconds": 1.2,
-   "stderr": ""
-  },
-  {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers F.Cu,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_copper_F.pdf C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
-   "exit": 0,
-   "seconds": 1.0,
-   "stderr": ""
-  },
-  {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers In1.Cu,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_copper_In1.pdf C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
-   "exit": 0,
-   "seconds": 0.9,
-   "stderr": ""
-  },
-  {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers In2.Cu,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_copper_In2.pdf C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
-   "exit": 0,
-   "seconds": 1.0,
-   "stderr": ""
-  },
-  {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers B.Cu,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_copper_B.pdf --mirror C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
-   "exit": 0,
-   "seconds": 1.0,
-   "stderr": ""
-  },
-  {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers F.Fab,F.SilkS,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_fab_top.pdf C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
-   "exit": 0,
-   "seconds": 1.2,
-   "stderr": ""
-  },
-  {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers B.Fab,B.SilkS,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_fab_bottom.pdf --mirror C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
-   "exit": 0,
-   "seconds": 1.0,
-   "stderr": ""
-  },
-  {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers F.Fab,F.CrtYd,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_assembly_top.pdf C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
-   "exit": 0,
-   "seconds": 1.1,
-   "stderr": ""
-  },
-  {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pdf --layers B.Fab,B.CrtYd,Edge.Cuts --include-border-title -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\pdf\\HybridPanda_assembly_bottom.pdf --mirror C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
-   "exit": 0,
-   "seconds": 1.1,
-   "stderr": ""
-  },
-  {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export step --subst-models --include-tracks --include-zones --force -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\3d\\HybridPanda.step C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
-   "exit": 2,
-   "seconds": 14.3,
-   "stderr": "RML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats.\nCannot use VRML models when exporting to non-mesh formats."
-  },
-  {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch export bom --fields Reference,Value,Footprint,${DNP},MPN,LCSC,Manufacturer --labels Reference,Value,Footprint,DNP,MPN,LCSC,Manufacturer --group-by Value,Footprint,MPN,LCSC --exclude-dnp -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\assembly\\_bom_fields.csv C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_sch",
-   "exit": 0,
-   "seconds": 0.7,
-   "stderr": ""
-  },
-  {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb export pos --format csv --units mm --side both --use-drill-file-origin -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\07_FABRICATION\\assembly\\pos_kicad_both.csv C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
-   "exit": 0,
-   "seconds": 0.7,
+   "seconds": 0.8,
    "stderr": ""
   }
  ],
@@ -118,6 +118,7 @@
   "assembly": [
    "BOM_JLC.csv",
    "CPL_JLC.csv",
+   "CPL_rotation_corrections.csv",
    "pos_kicad_both.csv"
   ],
   "pdf": [
@@ -156,14 +157,315 @@
    0.0,
    0.0
   ],
-  "note": "Rotação CPL = orientação KiCad; JLC pode exigir correção por footprint (não verificado). LCSC lido do campo 'LCSC' do esquemático (códigos 'a verificar' em 06_REPORTS/bom_real/BOM_HYBRIDPANDA_v1.csv)."
+  "rotation_db": "cpl_rotations_db.csv",
+  "rotation_rules": 64,
+  "rotation_corrected": [
+   {
+    "footprint": "SOT-23",
+    "rule": "^SOT-23",
+    "correction": -90,
+    "refs": [
+     "D13",
+     "D14"
+    ]
+   },
+   {
+    "footprint": "SOT95P230X110-3N",
+    "rule": "^SOT95P230X110-3N$",
+    "correction": -90,
+    "refs": [
+     "D5",
+     "D6",
+     "D7",
+     "D8",
+     "D9"
+    ]
+   },
+   {
+    "footprint": "PinHeader_2x05_P1.27mm_Vertical_SMD",
+    "rule": "^PinHeader_2x05_P1\\.27mm_Vertical",
+    "correction": 90,
+    "refs": [
+     "J1"
+    ]
+   },
+   {
+    "footprint": "SOT23-3",
+    "rule": "^SOT23-3$",
+    "correction": 180,
+    "refs": [
+     "Q1",
+     "Q2"
+    ]
+   },
+   {
+    "footprint": "SOT-323_SC-70",
+    "rule": "^SOT-323_SC-70",
+    "correction": -90,
+    "refs": [
+     "Q3"
+    ]
+   },
+   {
+    "footprint": "PowerPAK_SO-8_Single",
+    "rule": "^PowerPAK_SO-8_Single",
+    "correction": 270,
+    "refs": [
+     "Q4"
+    ]
+   },
+   {
+    "footprint": "SOT-23-6",
+    "rule": "^SOT-23",
+    "correction": -90,
+    "refs": [
+     "U1",
+     "U13"
+    ]
+   },
+   {
+    "footprint": "DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm",
+    "rule": "^DFN-",
+    "correction": 270,
+    "refs": [
+     "U10",
+     "U11",
+     "U8",
+     "U9"
+    ]
+   },
+   {
+    "footprint": "Diodes_PSOP-8",
+    "rule": "^Diodes_PSOP-8",
+    "correction": 270,
+    "refs": [
+     "U12"
+    ]
+   },
+   {
+    "footprint": "CONV_TPS5450DDAR",
+    "rule": "^CONV_TPS5450DDAR$",
+    "correction": 270,
+    "refs": [
+     "U6"
+    ]
+   },
+   {
+    "footprint": "LQFP-144_20x20mm_P0.5mm",
+    "rule": "^LQFP-",
+    "correction": 270,
+    "refs": [
+     "U7"
+    ]
+   }
+  ],
+  "rotation_unmatched": [
+   {
+    "footprint": "C_0402_1005Metric",
+    "refs": [
+     "C1",
+     "C11",
+     "C14",
+     "C2",
+     "C23",
+     "C24",
+     "C26",
+     "C27",
+     "C28",
+     "C29",
+     "C30",
+     "C31",
+     "C32",
+     "C33",
+     "C34",
+     "C37",
+     "C38",
+     "C41",
+     "C43",
+     "C44",
+     "C45",
+     "C46",
+     "C47",
+     "C48",
+     "C49",
+     "C5",
+     "C50",
+     "C51",
+     "C52",
+     "C53",
+     "C54",
+     "C55",
+     "C56",
+     "C57",
+     "C58",
+     "C59",
+     "C63",
+     "C64",
+     "C8"
+    ]
+   },
+   {
+    "footprint": "C_0805_2012Metric",
+    "refs": [
+     "C10",
+     "C12",
+     "C16",
+     "C17",
+     "C18",
+     "C19",
+     "C20",
+     "C21",
+     "C3",
+     "C4",
+     "C42",
+     "C6",
+     "C7"
+    ]
+   },
+   {
+    "footprint": "C_0603_1608Metric",
+    "refs": [
+     "C39",
+     "C40",
+     "C60",
+     "C61",
+     "C62",
+     "C65"
+    ]
+   },
+   {
+    "footprint": "DIOM4325X250N",
+    "refs": [
+     "D1"
+    ]
+   },
+   {
+    "footprint": "D_SOD-123F",
+    "refs": [
+     "D10"
+    ]
+   },
+   {
+    "footprint": "D_SMA",
+    "refs": [
+     "D11"
+    ]
+   },
+   {
+    "footprint": "D_SMC",
+    "refs": [
+     "D12"
+    ]
+   },
+   {
+    "footprint": "D_SOD-123",
+    "refs": [
+     "D15"
+    ]
+   },
+   {
+    "footprint": "D_SOD-323",
+    "refs": [
+     "D2"
+    ]
+   },
+   {
+    "footprint": "L_0603_1608Metric",
+    "refs": [
+     "FB1"
+    ]
+   },
+   {
+    "footprint": "IND-SMD_L7.3-W6.8",
+    "refs": [
+     "L3"
+    ]
+   },
+   {
+    "footprint": "L_10.5x11.5_H4.0",
+    "refs": [
+     "L4"
+    ]
+   },
+   {
+    "footprint": "L_Murata_DFE201610P",
+    "refs": [
+     "L5"
+    ]
+   },
+   {
+    "footprint": "USB-C-SMD_TYPE-C-USB-20",
+    "refs": [
+     "P1"
+    ]
+   },
+   {
+    "footprint": "R_0603_1608Metric",
+    "refs": [
+     "R1",
+     "R6"
+    ]
+   },
+   {
+    "footprint": "R_0402_1005Metric",
+    "refs": [
+     "R14",
+     "R15",
+     "R16",
+     "R17",
+     "R18",
+     "R19",
+     "R2",
+     "R20",
+     "R21",
+     "R23",
+     "R24",
+     "R26",
+     "R27",
+     "R28",
+     "R29",
+     "R3",
+     "R30",
+     "R31",
+     "R32",
+     "R33",
+     "R5",
+     "R9"
+    ]
+   },
+   {
+    "footprint": "SW_SPST_SKQG_WithStem",
+    "refs": [
+     "SW1"
+    ]
+   },
+   {
+    "footprint": "USB-A-TH_10.0QHHTZB6.3",
+    "refs": [
+     "U3"
+    ]
+   },
+   {
+    "footprint": "LED-ARRAY-SMD_4P-L2.2-W2.1-BR",
+    "refs": [
+     "U5"
+    ]
+   },
+   {
+    "footprint": "Crystal_SMD_3225-4Pin_3.2x2.5mm",
+    "refs": [
+     "Y1"
+    ]
+   }
+  ],
+  "note": "CPL_JLC.csv rotation = KiCad orientation (bottom mirrored as 180-rot) + JLC correction table (cpl_rotations_db.csv, Bouni plugin convention); detail per reference in CPL_rotation_corrections.csv; pos_kicad_both.csv is the raw KiCad export. Not checked against the JLC assembly preview. LCSC read from the schematic 'LCSC' field (codes 'a verificar' in hardware/reports/bom-real/BOM_HYBRIDPANDA_v1.csv)."
  },
  "drill": {
-  "total": 270,
+  "total": 268,
   "by_kind": {
    "PTH": 26,
    "NPTH": 2,
-   "VIA": 242
+   "VIA": 240
   },
   "min_drill_mm": 0.3,
   "min_annular_mm": {
@@ -175,7 +477,7 @@
   "sizes": [
    {
     "kind": "NPTH",
-    "drill_mm": 0.8,
+    "drill_mm": 0.65,
     "slot": false,
     "count": 2
    },
@@ -213,28 +515,29 @@
     "kind": "VIA",
     "drill_mm": 0.3,
     "slot": false,
-    "count": 242
+    "count": 240
    }
   ]
  },
  "gerber_check": {
   "files": 13,
   "excellon_vs_pcb": {
-   "excellon": 270,
-   "pcb_holes": 270,
+   "excellon": 268,
+   "pcb_holes": 268,
    "match": true
   }
  },
  "readme_blocks": [
-  "Impedância/skew CAN-FD e USB: apenas estimativa analítica (step6_reports.py); o DRC do KiCad não verifica impedância; stackup 4 camadas 1.59 mm assumido, não confirmado com o fabricante.",
-  "USB_D± não é par acoplado: Freerouting roteou com vias (ver STEP5_layout_H725.md §5/§7); FS 12 Mb/s tolera, mas não foi validado.",
-  "Nenhuma placa foi fabricada, montada ou medida — zero validação física; firmware red panda oficial NUNCA foi executado neste hardware.",
-  "BOM: 1 referências sem MPN e 2 sem código LCSC (de 119); códigos LCSC marcados 'a verificar' em 06_REPORTS\\bom_real\\BOM_HYBRIDPANDA_v1.csv ainda não confirmados no catálogo JLC — montagem JLC exige confirmar.",
-  "Violações DRC herdadas do baseline OpenBlackPanda não corrigidas (hole_clearance 8, lib_footprint_mismatch 73, silk_edge_clearance 4, silk_over_copper 1, silk_overlap 4, text_height 45) — ver STEP5_layout_H725.md §7.3 e 06_REPORTS\\CORRECOES_APLICADAS.md.",
-  "Verificação em visualizador de gerber: NÃO EXECUTADA automaticamente (sem gerbv/gerbview CLI); apenas verificação sintática (gerber_check.json). Abrir gerbers/ no KiCad GerbView antes de qualquer pedido.",
-  "Toolchain ARM: instalada localmente (Arm GNU 14.2.Rel1, %LOCALAPPDATA%\\arm-gnu-toolchain) mas firmware ainda NÃO compilado/assinado para este hardware; dependência do fluxo oficial de DFU/assinatura do commaai (ver STEP9).",
-  "Rotação dos componentes no CPL não normalizada para a convenção JLC (requer ajuste manual por footprint no painel JLC).",
-  "Via-in-pad: 0 após o relayout leste (step5e_relayout_east.py, D-33) + fix_audit.py + fix_vip_reroute.py (U8.3 +5V: via movida para a trilha F.Cu a oeste de C30 e trilha B.Cu reencaminhada). Contagem pela definição do final_audit.py (centro da via dentro da bbox de pad SMD) sobre o tabuleiro actual — reconfirmar em 06_REPORTS\\final_audit.json antes de qualquer pedido."
+  "CAN and USB impedance/skew: analytical estimate only (`step6_reports.py`, [`../reports/verification-pcb/impedance.md`](../reports/verification-pcb/impedance.md): Hammerstad-Jensen / Kirschning-Jansen for the file stackup and for JLCPCB JLC7628; USB netclass 0.35/0.15 mm, CAN_DIFF 0.22/0.23 mm). KiCad's DRC does not check impedance; the stackup is assumed, not confirmed with the fabricator; no TDR. **Addressed by software, not physically verified**",
+  "`USB_D+/-`: rerouted as an edge-coupled pair on B.Cu with one symmetric via pair and 0.35/0.15 mm width/gap, skew < 0.3 mm ([`../reports/verification-pcb/usb-reroute.md`](../reports/verification-pcb/usb-reroute.md)); previously 2 vias per net on In1.Cu. USB FS 12 Mbit/s is tolerant either way. **Addressed by software, not physically verified**",
+  "DRC inherited from the OpenBlackPanda baseline: now lib_footprint_mismatch 73 ([`../reports/verification-pcb/drc-cleanup.md`](../reports/verification-pcb/drc-cleanup.md); `lib_footprint_mismatch` is intentional: local footprint edits). Clearance/unconnected/shorts/courtyards = 0/0/0/0. **Addressed by software, not physically verified**",
+  "Gerber review executed in software ([`../reports/verification-pcb/gerber-review.md`](../reports/verification-pcb/gerber-review.md)): 11 layers rendered to PNG (`../reports/verification-pcb/gerber-render/`), Edge.Cuts outline 51.02 x 46.75 mm vs PCB 51.02 x 46.75 mm, drill hits 268 vs PCB holes 268, copper connectivity rebuilt from the gerbers + drill and compared with the KiCad netlist: 0 short(s), 0 open(s) over 142 nets. **Addressed by software, not physically verified** A human look in KiCad GerbView is still part of the remaining checks below.",
+  "Via-in-pad: 0 (`final_audit.py` definition: via centre inside an SMD pad of another net or of a small pad); 9 same-net thermal vias inside exposed pads (U6 PowerPAD, U8-U11 DFN EP, placed by `vpcb_a10_thermal_vias.py`) are deliberate ([`../reports/verification-pcb/hand-assembly.md`](../reports/verification-pcb/hand-assembly.md)). **Addressed by software, not physically verified**",
+  "Hand-solder friendliness: solder mask minimum web 0.1 mm (`solder_mask_min_width`), mask slivers >= 0.2 mm between U7 LQFP-144 and P1 USB-C 0.5 mm pads, DFN pin-to-EP mask 0.13 mm, one 0.6/0.3 mm GND via in each DFN exposed pad, vias tented both sides; ENIG recommended ([`../reports/verification-pcb/hand-assembly.md`](../reports/verification-pcb/hand-assembly.md)). **Addressed by software, not physically verified**",
+  "No board was fabricated, assembled or measured: zero physical verification (continuity/isolation of the built board, impedance, power rails, USB enumeration, CAN). **Requires a built board.**",
+  "BOM: 1 reference(s) without MPN and 2 without LCSC code (of 119); U1 AP22615AWU-7 is no longer in the JLC catalogue (buy from Mouser/Digi-Key). The user buys and hand-solders every part, so LCSC codes and basic/extended status are informational only.",
+  "Component rotation in `assembly/CPL_JLC.csv` is normalised with the JLC correction table (64 rules, `hardware/scripts/cpl_rotations_db.csv`): 11 footprint type(s) corrected, 20 without a rule ([`../reports/verification-pcb/cpl-rotation.md`](../reports/verification-pcb/cpl-rotation.md)). Only relevant if JLC assembly is ever ordered; not needed for a bare board.",
+  "ARM toolchain: installed locally (Arm GNU 14.2.Rel1) but the firmware for this hardware (`hybrid-h725` branch in [`firmware/`](../../firmware)) has never run on hardware; depends on the commaai DFU/signing flow (see STEP 9). **Requires a built board.**"
  ],
- "seconds": 221.2
+ "seconds": 39.6
 }

@@ -3,7 +3,7 @@
 [INFO] CAN group FDCAN2_OBD {'xcvr': ['U8'], 'stb_ok': True}
 [INFO] CAN group FDCAN2_NORMAL {'xcvr': ['U10'], 'stb_ok': True}
 [INFO] CAN group FDCAN3 {'xcvr': ['U9'], 'stb_ok': True}
-log -> C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\06_REPORTS\parity_red_h7_hybrid_HybridPanda_netlist.json
-report -> C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\06_REPORTS\parity_red_h7_hybrid_HybridPanda_netlist.md
+log -> C:\Users\costabr\Downloads\openpilot\openpilot-honda-city-brasil\hardware\reports\parity_red_h7_hybrid_HybridPanda_netlist.json
+report -> C:\Users\costabr\Downloads\openpilot\openpilot-honda-city-brasil\hardware\reports\parity_red_h7_hybrid_HybridPanda_netlist.md
 
 --- stderr ---

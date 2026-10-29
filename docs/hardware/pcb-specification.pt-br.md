@@ -11,6 +11,11 @@ Fontes principais: `hardware/hybrid-panda/HybridPanda.kicad_pcb`, `HybridPanda.k
 Os numeros marcados "extraido" foram obtidos por parsing dos arquivos S-expression do KiCad
 para este documento.
 
+Atualizado em 2026-10-29 apos o passe de verificacao por software (`hardware/reports/verification-pcb/`): DRC com 73 itens
+(todos `lib_footprint_mismatch`, intencionais), 0 nao conectados; netclass USB 0,35/0,15 mm; 240 vias, 268 furos;
+largura minima de mascara 0,1 mm; revisao dos gerbers com comparacao de conectividade 0 curtos / 0 abertos; pacote de
+fabricacao regenerado em 2026-10-29. A placa deve ser encomendada como PCB nua e montada a mao.
+
 ## 1. Resumo da placa
 
 | Item | Valor | Fonte |
@@ -26,8 +31,8 @@ para este documento.
 | Pads | 526 | extraido |
 | Redes | 142 nomeadas no arquivo da PCB (62 redes reais, 80 redes `unconnected-*` de nao conexao) | extraido |
 | Segmentos de trilha | 1218 (F.Cu 628, B.Cu 352, In1.Cu 152, In2.Cu 86) | extraido |
-| Vias | 242 (203 x 0,6/0,3 mm, 39 x 0,7/0,3 mm), todas passantes, sem cegas/enterradas, sem via-in-pad | extraido; `fabrication/readme.md` item 9 |
-| Componentes com furo passante | `P1` (receptaculo OBD-C, 12 PTH 0,4 mm + 4 rasgos + 2 NPTH 0,8 mm), `U3` (USB-A, 2 PTH 2,5 mm), vias termicas de `U6` (8 x PTH 0,3 mm) | `drill_table.md` |
+| Vias | 240 (0,6/0,3 mm e 0,7/0,3 mm), todas passantes, sem cegas/enterradas, sem via-in-pad; 4 vias termicas da mesma rede dentro dos pads expostos de `U8`-`U11` | `step6_reports.json`; `fabrication/readme.md` item 5 |
+| Componentes com furo passante | `P1` (receptaculo OBD-C, 12 PTH 0,4 mm + 4 rasgos + 2 NPTH 0,65 mm), `U3` (USB-A, 2 PTH 2,5 mm), pads-via termicos de `U6` (8 x PTH 0,3 mm + 1 via) | `drill_table.md` |
 | Zonas de cobre | 17: GND nas quatro camadas; +3V3 em In1.Cu; +5V em F/B/In1 (x2)/In2; +12V e 12V_Protected em B.Cu; USB_PWR em F.Cu; L4 (no de comutacao) em F.Cu; 6 areas keep-out | extraido |
 | Fiduciais | 6 (`FID1`-`FID3` topo, `FID4`-`FID6` fundo), apenas na PCB, sem simbolo no esquema | extraido; `correcoes-aplicadas.md` |
 | Painelizacao | Nenhuma (placa unica) | `fabrication/readme.md` |
@@ -98,20 +103,20 @@ Classes de rede:
 |---|---|---|---|---|
 | Default | todas as demais | 0,2 mm | 0,7 / 0,3 mm | 0,2 / 0,25 mm |
 | CAN_DIFF | BUSx_H / BUSx_L | 0,25 mm | 0,7 / 0,3 mm | 0,25 / 0,2 mm |
-| USB | USB_D+/-, USB_R_D+/- | 0,2 mm | 0,7 / 0,3 mm | 0,2 / 0,25 mm |
+| USB | USB_D+/-, USB_R_D+/- | 0,35 mm | 0,6 / 0,3 mm | 0,35 / 0,15 mm (par acoplado em B.Cu, `verification-pcb/usb-reroute.md`) |
 
 ## 5. Valores usados na placa
 
 | Parametro | Valor | Fonte |
 |---|---|---|
 | Menor largura de trilha presente | 0,14 mm | extraido (em segmentos de estreitamento; a maioria das trilhas de sinal tem 0,2 a 0,25 mm) |
-| Menor afastamento de cobre presente | DRC passa a 0,1 mm; 0 violacoes `clearance` | `hybrid_DRC_final.json` |
+| Menor afastamento de cobre presente | DRC passa a 0,1 mm; 0 violacoes `clearance` | `verification-pcb/drc_a9_final.json` |
 | Menor furo | 0,300 mm (vias e vias termicas de `U6`) | `drill_table.md` |
-| Tamanhos de via usados | 0,6/0,3 mm (203), 0,7/0,3 mm (39) | extraido |
+| Tamanhos de via usados | 0,6/0,3 mm e 0,7/0,3 mm (240 no total) | `step6_reports.json` |
 | Anel minimo | PTH 0,125 mm, via 0,150 mm | `drill_table.md` |
-| Quantidade de furos | 270 (PTH 26, NPTH 2, via 242) | `drill_table.md`, `gerber_check.json` (Excellon vs PCB 270 vs 270) |
+| Quantidade de furos | 268 (PTH 26, NPTH 2, via 240) | `drill_table.md`, `gerber_check.json` (Excellon vs PCB 268 vs 268), `verification-pcb/gerber-review.md` |
 | Rasgos | 4 (1,199 a 1,2 mm de largura, carcaca de `P1`) | `drill_table.md` |
-| Maiores furos | PTH 2,5 mm x2 (`U3`), NPTH 0,8 mm x2 (`P1`) | `drill_table.md` |
+| Maiores furos | PTH 2,5 mm x2 (`U3`), NPTH 0,65 mm x2 (`P1`) | `drill_table.md` |
 | Menor passo SMD | 0,5 mm (`U7` LQFP-144, `U8`-`U11` HVSON-8) | footprints |
 | Menores passivos | 0402 (39 capacitores, 22 resistores) | contagem de footprints extraida |
 
@@ -123,41 +128,30 @@ nao verifica impedancia (`fabrication/readme.md` item 1).
 | Par | Alvo | Camada / geometria na placa | Estimativa analitica no repositorio | Estado |
 |---|---|---|---|---|
 | CAN BUSx_H/L (4 pares) | 120 ohm diferencial (nominal do barramento) | microstrip em F.Cu / B.Cu, largura 0,25 mm, gap 0,2 mm sobre prepreg de 0,2 mm para GND | faixa de 108 a 143 ohm reportada por `step6_reports.py` | nao confirmado; trilhas curtas entre transceptor e `P1`, a terminacao fica no chicote do veiculo, nao na placa |
-| USB_R_D+/D- (full speed) | 90 ohm diferencial | par acoplado em In1.Cu, largura 0,2 mm, gap 0,3 mm, uma camada ate `U13` (`correcoes-aplicadas.md` item 19) | nao recalculada apos o reroteamento | nao confirmado; USB FS a 12 Mbit/s e tolerante, mas nada foi medido |
+| USB_D+/- (full speed) | 90 ohm diferencial | par acoplado em B.Cu, largura 0,35 mm, gap 0,15 mm, um par de vias, skew < 0,3 mm (`verification-pcb/usb-reroute.md`, 2026-10-29) | `verification-pcb/impedance.md` (Hammerstad-Jensen / Kirschning-Jansen, stackup do arquivo e JLC7628) | nao confirmado; USB FS a 12 Mbit/s e tolerante, mas nada foi medido |
 
-Nota: o item 2 de `fabrication/readme.md` ainda afirma que USB_D+/- foi roteado pelo
-Freerouting com vias e nao como par acoplado. Esse texto e anterior ao item 19 da auditoria
-SI/PI, que reroteou `USB_R_D+/D-` como par acoplado em In1.Cu. Os trechos do lado do MCU
-`USB_D+/-` (entre `U7` e os resistores serie de 22 ohm `R20`/`R21`) permanecem como foram
-roteados. Nao foi possivel determinar pelo repositorio se os gerbers em
-`hardware/fabrication/` refletem a placa posterior ao item 19 (ambos foram importados no
-mesmo commit); regenerar o pacote antes de qualquer pedido.
+Nota: o pacote de fabricacao foi regenerado em 2026-10-29 a partir da placa atual, apos o reroteamento do USB
+(o item 2 de `fabrication/readme.md` descreve agora o par acoplado em B.Cu).
 
 ## 7. Resumo do resultado do DRC
 
-Ferramenta: kicad-cli 10.0.7, todas as severidades, `hardware/reports/hybrid_DRC_final.json`
-(2026-10-28T10:16:47).
+Ferramenta: kicad-cli 10.0.7, todas as severidades, `hardware/reports/verification-pcb/drc_a9_final.json`
+(2026-10-29; historico em `verification-pcb/drc-cleanup.md`: 135 itens antes do passe, `drc_a8_before.json`).
 
 | Categoria | Quantidade | Natureza |
 |---|---|---|
 | Itens nao conectados | 0 | |
 | Paridade com o esquema | 0 | |
 | `clearance`, `shorting_items`, `courtyards_overlap`, `copper_edge_clearance`, `starved_thermal`, `drill_out_of_range`, `footprint_type_mismatch`, `track_width`, `via_dangling` | 0 | as quatro ultimas categorias existiam no baseline/placas intermediarias e foram eliminadas pelos scripts de correcao |
-| `lib_footprint_mismatch` | 73 | footprints na placa diferem das copias da biblioteca (edicoes locais, versoes de biblioteca do KiCad 10); informativo |
-| `text_height` | 45 | texto de serigrafia abaixo de 0,8 mm, herdado do baseline (baseline tinha 82) |
-| `hole_clearance` | 8 | herdado do baseline (8/8); em torno dos furos de fixacao de `P1` / `U3` |
-| `silk_edge_clearance` | 4 | herdado (4/4) |
-| `silk_overlap` | 4 | baseline 3 |
-| `silk_over_copper` | 1 | baseline 0; cosmetico |
-| **Total** | **135** | reduzido de 182 antes das correcoes SI/PI (`correcoes-aplicadas.md`) |
+| `lib_footprint_mismatch` | 73 | footprints na placa diferem das copias da biblioteca (edicoes locais: ~61 so grafica/caminho 3D, Q1/Q2/Q3/U5/Y1 corrigidos na placa, P1/U6/U12 documentados); informativo |
+| `text_height`, `hole_clearance`, `silk_edge_clearance`, `silk_overlap`, `silk_over_copper`, `solder_mask_bridge` | 0 | 62 itens resolvidos em 2026-10-28/29 (`verification-pcb/drc-cleanup.md`) |
+| **Total** | **73** | reduzido de 135 antes do passe de verificacao e de 182 antes das correcoes SI/PI |
 
-Todos os 135 itens restantes sao cosmeticos ou de controle de biblioteca; nenhum e violacao
-eletrica. Foram deliberadamente deixados (D-37, "deferidos"). Recomenda-se nova execucao do
-DRC com a placa final e serigrafia atualizada antes de qualquer pedido.
+Os 73 itens restantes sao apenas controle de biblioteca; nenhum e violacao eletrica.
 
 ## 8. Arquivos de fabricacao
 
-Diretorio `hardware/fabrication/`, gerado em 2026-10-28 10:19:21 por
+Diretorio `hardware/fabrication/`, regenerado em 2026-10-29 por
 `hardware/scripts/step8_fabricate.py` com `kicad-cli` do KiCad 10.0.7.
 
 ### 8.1 Gerbers (`gerbers/`, RS-274X, extensoes Protel, sem atributos X2)
@@ -194,7 +188,7 @@ Excellon, mm, 3:3, supressao de zeros a esquerda: `HybridPanda-PTH.drl`,
 | `pdf/` | esquema, cobre por camada (F, In1, In2, B), desenho de fabricacao topo/fundo, desenho de montagem topo/fundo |
 | `3d/HybridPanda.step` | exportacao STEP (28,2 MB; modelos apenas VRML omitidos, portanto alguns corpos 3D faltam) |
 | `drill_table.md`, `drill_table.json` | tabela de furos |
-| `gerber_check.json` | apenas verificacao sintatica de gerber/Excellon; nenhuma verificacao em visualizador foi feita |
+| `gerber_check.json` | verificacao sintatica de gerber/Excellon; a comparacao de render, contorno, furos e conectividade do cobre esta em `hardware/reports/verification-pcb/gerber-review.md` |
 | `HybridPanda_gerbers_JLC.zip` | 16 entradas: os 11 gerbers, o job file, os arquivos de furacao PTH e NPTH e os 2 PDFs de mapa de furacao; preparado para upload mas **nao deve ser enviado** ate que os bloqueios abaixo sejam resolvidos |
 
 ## 9. Notas de montagem
@@ -204,7 +198,7 @@ Excellon, mm, 3:3, supressao de zeros a esquerda: `HybridPanda-PTH.drl`,
   0402 sob `U7`, `JP1`, fiduciais `FID4`-`FID6`). O lado exato por referencia esta em
   `docs/hardware/bom.csv` (coluna `side`).
 - Furo passante / misto: `P1` (receptaculo OBD-C, pads de sinal SMD mais carcaca THT), `U3`
-  (USB-A, carcaca THT), ambos no topo. `U6` tem 8 vias termicas sob o pad exposto.
+  (USB-A, carcaca THT), ambos no topo. `U6` tem 8 pads-via termicos + 1 via sob o pad exposto; `U8`-`U11` uma via GND cada (`verification-pcb/hand-assembly.md`).
 - Fiduciais: 3 por lado (cobre de 1 mm, abertura de mascara de 2 mm, footprints de fiducial
   padrao do KiCad).
 - Camadas de pasta exportadas para os dois lados; a espessura do estencil nao esta
@@ -222,17 +216,16 @@ Excellon, mm, 3:3, supressao de zeros a esquerda: `HybridPanda-PTH.drl`,
 **NAO FABRICAR.** O pacote existe para arquivo e revisao. Os motivos de bloqueio, conforme
 `hardware/fabrication/readme.md` e `docs/decisions.md` D-37:
 
-1. Impedancia (CAN 120 ohm, USB 90 ohm) apenas estimada analiticamente; stackup nao
-   acordado com um fabricante.
+1. Impedancia (CAN 120 ohm, USB 90 ohm) apenas estimada analiticamente (tratado por software em 2026-10-29:
+   `verification-pcb/impedance.md`, stackup JLC7628); stackup nao acordado com um fabricante.
 2. Zero validacao fisica: nenhuma placa construida, montada ou medida; o firmware da red
    panda nunca rodou neste hardware.
 3. BOM: 1 referencia sem MPN (`JP1`), 2 sem LCSC (`JP1`, `U1`); codigos LCSC "a verificar"
    nao confirmados; `U1` indisponivel na JLC.
-4. 135 itens de DRC herdados (cosmeticos) nao resolvidos; serigrafia incompleta (52 refs).
-5. Gerbers nao revisados em visualizador (apenas verificacao sintatica).
-6. Rotacoes do CPL nao normalizadas.
-7. Possivel divergencia entre a exportacao de fabricacao e a placa final (ver nota da
-   secao 6); nova exportacao necessaria.
+4. Itens de DRC herdados: resolvidos em 2026-10-28/29 (135 -> 73 `lib_footprint_mismatch`, intencionais); tratado por software, nao verificado fisicamente.
+5. Gerbers: revisados por software em 2026-10-29 (renders, contorno, furos, conectividade do cobre vs netlist: 0 curtos / 0 abertos, `verification-pcb/gerber-review.md`); a inspecao humana no GerbView continua listada em `fabrication/readme.md`.
+6. Rotacoes do CPL normalizadas com a tabela JLC (`verification-pcb/cpl-rotation.md`); so relevante se algum dia for pedida montagem na JLC (o plano e PCB nua + montagem manual).
+7. Exportacao de fabricacao regenerada a partir da placa final em 2026-10-29 (`step8_fabricate.py`).
 8. Itens SI/PI deferidos (`correcoes-aplicadas.md`: 9, 10, 16, 21/22/23, 25, 27, 29, 34,
    36), troca de encapsulamento de `C8`, alternativa para `U1`, espacamento de courtyard e
    um novo gabinete (o degrau na borda do USB-A e os componentes mais altos nao foram

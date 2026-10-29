@@ -1,18 +1,18 @@
 {
  "HybridPanda-B_Cu.gbl": {
-  "bytes": 482793,
+  "bytes": 480450,
   "apertures": 16,
-  "flashes_D03": 285,
-  "draws_D01": 16887,
+  "flashes_D03": 283,
+  "draws_D01": 16773,
   "has_M02": true,
   "format_FS": true,
   "unit_MM": true
  },
  "HybridPanda-B_Mask.gbs": {
-  "bytes": 76336,
-  "apertures": 7,
-  "flashes_D03": 37,
-  "draws_D01": 1792,
+  "bytes": 145150,
+  "apertures": 0,
+  "flashes_D03": 0,
+  "draws_D01": 5412,
   "has_M02": true,
   "format_FS": true,
   "unit_MM": true
@@ -27,10 +27,10 @@
   "unit_MM": true
  },
  "HybridPanda-B_Silkscreen.gbo": {
-  "bytes": 86582,
-  "apertures": 10,
-  "flashes_D03": 37,
-  "draws_D01": 2001,
+  "bytes": 152067,
+  "apertures": 2,
+  "flashes_D03": 0,
+  "draws_D01": 5555,
   "has_M02": true,
   "format_FS": true,
   "unit_MM": true
@@ -45,19 +45,19 @@
   "unit_MM": true
  },
  "HybridPanda-F_Cu.gtl": {
-  "bytes": 466148,
-  "apertures": 45,
-  "flashes_D03": 385,
-  "draws_D01": 16435,
+  "bytes": 465828,
+  "apertures": 46,
+  "flashes_D03": 383,
+  "draws_D01": 16426,
   "has_M02": true,
   "format_FS": true,
   "unit_MM": true
  },
  "HybridPanda-F_Mask.gts": {
-  "bytes": 94288,
-  "apertures": 26,
-  "flashes_D03": 132,
-  "draws_D01": 2924,
+  "bytes": 166680,
+  "apertures": 0,
+  "flashes_D03": 0,
+  "draws_D01": 6265,
   "has_M02": true,
   "format_FS": true,
   "unit_MM": true
@@ -72,28 +72,28 @@
   "unit_MM": true
  },
  "HybridPanda-F_Silkscreen.gto": {
-  "bytes": 210225,
-  "apertures": 35,
-  "flashes_D03": 132,
-  "draws_D01": 5227,
+  "bytes": 264790,
+  "apertures": 7,
+  "flashes_D03": 0,
+  "draws_D01": 8217,
   "has_M02": true,
   "format_FS": true,
   "unit_MM": true
  },
  "HybridPanda-In1_Cu.g1": {
-  "bytes": 389226,
+  "bytes": 385842,
   "apertures": 14,
-  "flashes_D03": 268,
-  "draws_D01": 14934,
+  "flashes_D03": 266,
+  "draws_D01": 14812,
   "has_M02": true,
   "format_FS": true,
   "unit_MM": true
  },
  "HybridPanda-In2_Cu.g2": {
-  "bytes": 192419,
+  "bytes": 191755,
   "apertures": 8,
-  "flashes_D03": 268,
-  "draws_D01": 7335,
+  "flashes_D03": 266,
+  "draws_D01": 7308,
   "has_M02": true,
   "format_FS": true,
   "unit_MM": true
@@ -106,15 +106,15 @@
   "metric": true
  },
  "HybridPanda-PTH.drl": {
-  "bytes": 4690,
+  "bytes": 4660,
   "tools": 5,
-  "hits": 268,
+  "hits": 266,
   "has_M30": true,
   "metric": true
  },
  "_excellon_total_hits_vs_pcb": {
-  "excellon": 270,
-  "pcb_holes": 270,
+  "excellon": 268,
+  "pcb_holes": 268,
   "match": true
  }
 }

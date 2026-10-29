@@ -1,10 +1,10 @@
 {
   "meta": {
     "script": "parity_red_h7_hybrid_HybridPanda_netlist",
-    "started": "2026-10-28T10:17:04",
+    "started": "2026-10-29T15:59:35",
     "dry_run": false,
-    "output_root": "C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616",
-    "python": "3.13.9"
+    "output_root": "C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil",
+    "python": "3.11.5"
   },
   "summary": {
     "result": "OK",
@@ -645,11 +645,11 @@
         "net": "VDDA"
       }
     ],
-    "report": "C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\06_REPORTS\\parity_red_h7_hybrid_HybridPanda_netlist.md"
+    "report": "C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\reports\\parity_red_h7_hybrid_HybridPanda_netlist.md"
   },
   "events": [
     {
-      "t": 0.005,
+      "t": 0.032,
       "level": "INFO",
       "msg": "MCU",
       "ref": "U7",
@@ -657,7 +657,7 @@
       "footprint": "Package_QFP:LQFP-144_20x20mm_P0.5mm"
     },
     {
-      "t": 0.008,
+      "t": 0.037,
       "level": "INFO",
       "msg": "CAN group FDCAN1",
       "xcvr": [
@@ -666,7 +666,7 @@
       "stb_ok": true
     },
     {
-      "t": 0.008,
+      "t": 0.037,
       "level": "INFO",
       "msg": "CAN group FDCAN2_OBD",
       "xcvr": [
@@ -675,7 +675,7 @@
       "stb_ok": true
     },
     {
-      "t": 0.008,
+      "t": 0.037,
       "level": "INFO",
       "msg": "CAN group FDCAN2_NORMAL",
       "xcvr": [
@@ -684,7 +684,7 @@
       "stb_ok": true
     },
     {
-      "t": 0.008,
+      "t": 0.037,
       "level": "INFO",
       "msg": "CAN group FDCAN3",
       "xcvr": [
@@ -693,5 +693,5 @@
       "stb_ok": true
     }
   ],
-  "finished": "2026-10-28T10:17:04"
+  "finished": "2026-10-29T15:59:35"
 }

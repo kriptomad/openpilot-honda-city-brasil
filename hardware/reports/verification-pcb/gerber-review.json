@@ -1,0 +1,101 @@
+{
+ "date": "2026-10-29 16:00:47",
+ "zip": "hardware\\fabrication\\HybridPanda_gerbers_JLC.zip",
+ "problems": [],
+ "zip_matches_folders": true,
+ "edge": {
+  "segments": 266,
+  "line_width_mm": 0.1,
+  "bbox_gerber_mm": [
+   91.91,
+   -78.76,
+   142.935,
+   -32.01
+  ],
+  "size_mm": [
+   51.025,
+   46.75
+  ],
+  "closed": true,
+  "open_endpoints": [],
+  "bbox_pcb_mm": [
+   91.91,
+   -78.76,
+   142.935,
+   -32.01
+  ],
+  "pcb_size_mm": [
+   51.025,
+   46.75
+  ],
+  "bbox_match": true
+ },
+ "drill": {
+  "pth_hits": 266,
+  "npth_hits": 2,
+  "slots": 6,
+  "total_hits": 268,
+  "pcb_holes": 268,
+  "pcb_by_kind": {
+   "PTH": 26,
+   "NPTH": 2,
+   "VIA": 240
+  },
+  "tools_pth_mm": [
+   0.3,
+   0.4,
+   0.6,
+   0.7
+  ],
+  "tools_npth_mm": [
+   0.65
+  ],
+  "pcb_holes_without_exact_hit": [],
+  "match": true
+ },
+ "render": {
+  "dir": "hardware\\reports\\verification-pcb\\gerber-render",
+  "files": [
+   "F_Cu.png",
+   "In1_Cu.png",
+   "In2_Cu.png",
+   "B_Cu.png",
+   "F_Mask.png",
+   "B_Mask.png",
+   "F_Paste.png",
+   "B_Paste.png",
+   "F_SilkS.png",
+   "B_SilkS.png",
+   "Edge_Cuts.png",
+   "Drill.png",
+   "composite_top.png",
+   "composite_bottom.png"
+  ],
+  "px_per_mm": 20
+ },
+ "connectivity": {
+  "method": "per-layer union of gerber copper (gerbonara primitives -> shapely), PTH drill hits join layers, KiCad pad centres mapped (x, -y) onto the copper polygons; nets compared by pad groups",
+  "copper_islands": {
+   "F.Cu": 156,
+   "In1.Cu": 138,
+   "In2.Cu": 128,
+   "B.Cu": 209
+  },
+  "pads_with_net": 481,
+  "nets_compared": 142,
+  "shorts": 0,
+  "opens": 0,
+  "short_list": [],
+  "open_list": [],
+  "pads_without_copper": [],
+  "vias_inconsistent": [],
+  "pth_drills_touching_lt2_layers": 0,
+  "pcb_nets_total": 142
+ },
+ "seconds": 2.0,
+ "layers_rendered": 11,
+ "edge_bbox_mm": "51.02 x 46.75",
+ "pcb_bbox_mm": "51.02 x 46.75",
+ "drill_hits": 268,
+ "pcb_holes": 268
+}

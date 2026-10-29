@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_20261022_1616\04_PROJECT\HybridPanda\HybridPanda.kicad_sch</source>
-    <date>2026-10-28T10:17:02</date>
+    <source>C:\Users\costabr\Downloads\openpilot\openpilot-honda-city-brasil\hardware\hybrid-panda\HybridPanda.kicad_sch</source>
+    <date>2026-10-29T15:59:33</date>
     <tool>Eeschema 10.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -586,7 +586,7 @@
       <fields>
         <field name="MPN">0402CG180J500NT</field>
         <field name="Manufacturer">Fenghua</field>
-        <field name="LCSC">C1555</field>
+        <field name="LCSC">C1549</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
@@ -594,7 +594,7 @@
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="MPN" value="0402CG180J500NT"/>
       <property name="Manufacturer" value="Fenghua"/>
-      <property name="LCSC" value="C1555"/>
+      <property name="LCSC" value="C1549"/>
       <property name="Sheetname" value="BlackPanda"/>
       <property name="Sheetfile" value="HybridPanda.kicad_sch"/>
       <property name="ki_keywords" value="capacitor cap"/>
@@ -616,7 +616,7 @@
       <fields>
         <field name="MPN">0402CG180J500NT</field>
         <field name="Manufacturer">Fenghua</field>
-        <field name="LCSC">C1555</field>
+        <field name="LCSC">C1549</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
@@ -624,7 +624,7 @@
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="MPN" value="0402CG180J500NT"/>
       <property name="Manufacturer" value="Fenghua"/>
-      <property name="LCSC" value="C1555"/>
+      <property name="LCSC" value="C1549"/>
       <property name="Sheetname" value="BlackPanda"/>
       <property name="Sheetfile" value="HybridPanda.kicad_sch"/>
       <property name="ki_keywords" value="capacitor cap"/>
@@ -1724,17 +1724,17 @@
       <value>2.2uF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
-        <field name="MPN">CL05A225MP5NSNC</field>
+        <field name="MPN">CL05A225MQ5NSNC</field>
         <field name="Manufacturer">Samsung</field>
-        <field name="LCSC">C23733</field>
+        <field name="LCSC">C12530</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <property name="MPN" value="CL05A225MP5NSNC"/>
+      <property name="MPN" value="CL05A225MQ5NSNC"/>
       <property name="Manufacturer" value="Samsung"/>
-      <property name="LCSC" value="C23733"/>
+      <property name="LCSC" value="C12530"/>
       <property name="Sheetname" value="BlackPanda"/>
       <property name="Sheetfile" value="HybridPanda.kicad_sch"/>
       <property name="ki_keywords" value="capacitor cap"/>

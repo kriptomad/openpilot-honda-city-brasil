@@ -14,7 +14,7 @@ tabela e [bom.csv](bom.csv), gerada a partir do esquema e da PCB KiCad por
 | Referencias com MPN | 118 de 119 (o jumper de solda `JP1` nao tem peca) | `gen-docs-bom.py` |
 | Referencias com codigo LCSC atribuido | 117 de 119 (`JP1`, `U1` sem codigo) | `gen-docs-bom.py`; `README.md` "Hardware: Hybrid Panda" |
 | Codigos LCSC confirmados no catalogo JLCPCB | 0 (nenhum confirmado neste repositorio) | `hardware/reports/bom-real/bom-report.md` ("STATUS: PARCIAL"), `README.md` |
-| Codigos marcados TO-VERIFY | `C64` C23733, `C4`/`C12` C2932476, `D15` C571379, `C23`/`C24` C1555 | `hardware/reports/correcoes-aplicadas.md` secao 4 |
+| Codigos marcados TO-VERIFY | `C4`/`C12` C2932476, `D15` C571379 (`C64` -> C12530 e `C23`/`C24` -> C1549 corrigidos em 2026-10-29) | `hardware/reports/correcoes-aplicadas.md` secao 4 |
 | Linhas de compra distintas | 55 linhas agrupando por valor + footprint + MPN + LCSC (48 linhas / 114 componentes no snapshot `BOM_HYBRIDPANDA_v1.csv` de 2026-10-27, antes de a campanha de correcao adicionar `C64`, `C65`, `D15`, `U13`, `JP1`) | `bom.csv`; `bom-report.md` linha 6 |
 | Custo estimado de componentes | USD 26,93 por placa a precos de 10 pecas, 47 linhas, sem `U1`; MCU USD 15,74 (precos JLCPCB consultados em 2026-10-27, nao cotados) | `bom-report.md` linhas 47-49 |
 | Peca indisponivel na JLCPCB | `U1` AP22615AWU-7 (C2680357 removido); a alternativa TPS2553DBVR C55266 tem a mesma pinagem mas outra faixa de resistor ILIM, logo `R27` 2,4 k teria de mudar | `bom-report.md` linha 59 |
@@ -37,9 +37,9 @@ exatamente os armazenados no esquema.
 |---|---|---|---|---|---|---|---|---|
 | U7 | 1 | STM32H725ZGT6 | LQFP-144_20x20mm_P0.5mm | STM32H725ZGT6 | STMicroelectronics | C730156 | atribuido / nao confirmado | Face inferior. 1 MB flash exigido (D-02). So o grau -40..85 C foi encontrado (`bom-report.md`). |
 | Y1 | 1 | 25MHz X322525MOB4SI | Crystal_SMD_3225-4Pin_3.2x2.5mm | X322525MOB4SI | YXC | C9006 | atribuido / nao confirmado | CL 12 pF segundo `bom-report.md`. |
-| C23, C24 | 2 | 18pF | C_0402_1005Metric | 0402CG180J500NT | Fenghua | C1555 | atribuido / TO-VERIFY | 15 pF -> 18 pF (item 24). Alternativa C307443 em `correcoes-aplicadas.md`. |
+| C23, C24 | 2 | 18pF | C_0402_1005Metric | 0402CG180J500NT | Fenghua | C1549 | atribuido / MPN confere no catalogo (2026-10-29) | 15 pF -> 18 pF (item 24). Era C1555 (= 22 pF no catalogo JLC, `hardware/reports/verification/lcsc-confirmation.md`). Alternativa C307443 em `correcoes-aplicadas.md`. |
 | C39, C40 | 2 | 2.2uF | C_0603_1608Metric | CL10A225KO8NNNC | Samsung | C23630 | atribuido / nao confirmado | VCAP. |
-| C64 | 1 | 2.2uF | C_0402_1005Metric | CL05A225MP5NSNC | Samsung | C23733 | atribuido / TO-VERIFY | VCAP em U7.103 (item 2), 0402 por espaco. |
+| C64 | 1 | 2.2uF | C_0402_1005Metric | CL05A225MQ5NSNC | Samsung | C12530 | atribuido / MPN confere no catalogo (2026-10-29) | VCAP em U7.103 (item 2), 0402 por espaco. Era CL05A225MP5NSNC / C23733 (= 4,7 uF no catalogo); C12530 e a peca 6,3 V X5R Basic (VCAP ~1,2 V). |
 | L5 | 1 | 2.2uH DFE201610E-2R2M | L_Murata_DFE201610P | DFE201610E-2R2M=P2 | Murata | C337891 | atribuido / nao confirmado | Indutor do Direct SMPS. |
 | C41 | 1 | 220pF | C_0402_1005Metric | 0402B221K500NT | Fenghua | C1530 | atribuido / nao confirmado | VLXSMPS. |
 | C42 | 1 | 10uF | C_0805_2012Metric | CL21A106KAYNNNE | Samsung | C15850 | atribuido / nao confirmado | Saida do SMPS (VCAP). |

@@ -1,40 +1,40 @@
 {
- "date": "2026-10-28 10:16:52",
+ "date": "2026-10-29 15:59:16",
  "commands": [
   {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch erc --format json --severity-all -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\06_REPORTS\\hybrid_ERC_step7.json C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_sch",
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch erc --format json --severity-all -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/reports\\hybrid_ERC_step7.json C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_sch",
    "exit": 0,
-   "seconds": 3.9,
+   "seconds": 8.2,
    "log": "step7_erc.log"
   },
   {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb drc --format json --severity-all --units mm -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\06_REPORTS\\hybrid_DRC_step7.json C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_pcb",
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb drc --format json --severity-all --units mm -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/reports\\hybrid_DRC_step7.json C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_pcb",
    "exit": 0,
-   "seconds": 5.6,
+   "seconds": 7.8,
    "log": "step7_drc.log"
   },
   {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch export netlist --format kicadxml -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\06_REPORTS\\hybrid_HybridPanda_netlist.xml C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_sch",
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch export netlist --format kicadxml -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/reports\\hybrid_HybridPanda_netlist.xml C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_sch",
    "exit": 0,
-   "seconds": 0.7,
+   "seconds": 0.9,
    "log": "step7_netlist.log"
   },
   {
-   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch export bom --fields Reference,Value,Footprint,${QUANTITY},${DNP},MPN,Manufacturer,Datasheet --labels Reference,Value,Footprint,Qty,DNP,MPN,Manufacturer,Datasheet --group-by Value,Footprint,MPN --exclude-dnp -o C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\06_REPORTS\\hybrid_BOM.csv C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\04_PROJECT\\HybridPanda\\HybridPanda.kicad_sch",
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch export bom --fields Reference,Value,Footprint,${QUANTITY},${DNP},MPN,Manufacturer,Datasheet --labels Reference,Value,Footprint,Qty,DNP,MPN,Manufacturer,Datasheet --group-by Value,Footprint,MPN --exclude-dnp -o C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/reports\\hybrid_BOM.csv C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware\\hybrid-panda\\HybridPanda.kicad_sch",
    "exit": 0,
-   "seconds": 0.7,
+   "seconds": 0.8,
    "log": "step7_bom.log"
   },
   {
-   "cmd": "C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\05_SCRIPTS\\.venv\\Scripts\\python.exe C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\05_SCRIPTS\\parity_check.py --netlist C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\06_REPORTS\\hybrid_HybridPanda_netlist.xml --profile red_h7",
+   "cmd": "C:\\Users\\costabr\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\python.exe C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/scripts\\parity_check.py --netlist C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/reports\\hybrid_HybridPanda_netlist.xml --profile red_h7",
    "exit": 0,
-   "seconds": 0.4,
+   "seconds": 0.5,
    "log": "step7_parity.log"
   },
   {
-   "cmd": "powershell -NoProfile -ExecutionPolicy Bypass -File C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\05_SCRIPTS\\Make-Manifest.ps1 -Step STEP7 -Original",
+   "cmd": "powershell -NoProfile -ExecutionPolicy Bypass -File C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\hardware/scripts\\Make-Manifest.ps1 -Step STEP7 -Original",
    "exit": 0,
-   "seconds": 136.3,
+   "seconds": 9.5,
    "log": "step7_manifest.log"
   }
  ],
@@ -56,7 +56,7 @@
  "drc": {
   "unconnected_items": 0,
   "unconnected_list": [],
-  "violations_total": 135,
+  "violations_total": 73,
   "baseline_total": 194,
   "by_type": {
    "copper_edge_clearance": {
@@ -76,7 +76,7 @@
     "baseline": 11
    },
    "hole_clearance": {
-    "hibrida": 8,
+    "hibrida": 0,
     "baseline": 8
    },
    "isolated_copper": {
@@ -88,15 +88,11 @@
     "baseline": 67
    },
    "silk_edge_clearance": {
-    "hibrida": 4,
+    "hibrida": 0,
     "baseline": 4
    },
-   "silk_over_copper": {
-    "hibrida": 1,
-    "baseline": 0
-   },
    "silk_overlap": {
-    "hibrida": 4,
+    "hibrida": 0,
     "baseline": 3
    },
    "starved_thermal": {
@@ -104,7 +100,7 @@
     "baseline": 13
    },
    "text_height": {
-    "hibrida": 45,
+    "hibrida": 0,
     "baseline": 82
    }
   },
@@ -244,24 +240,6 @@
     "items": [
      "Footprint FID5"
     ]
-   },
-   {
-    "type": "silk_over_copper",
-    "severity": "warning",
-    "desc": "Silkscreen clipped by solder mask",
-    "items": [
-     "Segment of P1 on F.Silkscreen",
-     "Pad 1 [GND] of R1 on F.Cu"
-    ]
-   },
-   {
-    "type": "silk_overlap",
-    "severity": "warning",
-    "desc": "Silkscreen clearance",
-    "items": [
-     "Reference field of C23",
-     "Segment of Y1 on B.Silkscreen"
-    ]
    }
   ],
   "clearance": 0,
@@ -306,18 +284,18 @@
   "status_counts": {
    "OK": 36
   },
-  "report_md": "06_REPORTS\\parity_red_h7_hybrid_HybridPanda_netlist.md",
+  "report_md": "hardware\\reports\\parity-red-h7-hybrid-hybridpanda-netlist.md",
   "conflicts": [],
   "optional_not_ok": []
  },
  "manifests": {
   "exit": 0,
   "tail": [
-   "OUTPUT_ROOT manifest: 20789 files -> C:\\Users\\costabr\\Downloads\\openpilot\\HybridPanda_v2_20261022_1616\\00_MANIFESTS\\OUTPUT_ROOT_STEP7_20261028_1017.sha256",
-   "02_REFERENCE unchanged vs reference_clones.sha256: False",
+   "OUTPUT_ROOT manifest: 884 files -> C:\\Users\\costabr\\Downloads\\openpilot\\openpilot-honda-city-brasil\\archive\\manifests\\OUTPUT_ROOT_STEP7_20261029_1559.sha256",
+   "hardware/reference unchanged vs reference_clones.sha256: False",
    "ORIGINAL vs BEFORE: IDENTICAL (377 files)",
-   "INDEX.md rows: 14938"
+   "docs/legacy-index.md rows: 561"
   ]
  },
- "seconds": 148.0
+ "seconds": 28.1
 }

@@ -103,7 +103,7 @@
 "kind": "NPTH",
 "ref": "P1",
 "pad": "",
-"drill_mm": 0.8,
+"drill_mm": 0.65,
 "slot": false,
 "annular_mm": null,
 "x": 134.94,
@@ -113,7 +113,7 @@
 "kind": "NPTH",
 "ref": "P1",
 "pad": "",
-"drill_mm": 0.8,
+"drill_mm": 0.65,
 "slot": false,
 "annular_mm": null,
 "x": 134.94,
@@ -125,7 +125,7 @@
 "pad": "0",
 "drill_mm": 1.2,
 "slot": true,
-"annular_mm": 0.2,
+"annular_mm": 0.15,
 "x": 140.59,
 "y": 63.37
 },
@@ -135,7 +135,7 @@
 "pad": "0",
 "drill_mm": 1.199,
 "slot": true,
-"annular_mm": 0.2,
+"annular_mm": 0.151,
 "x": 136.18,
 "y": 63.01
 },
@@ -145,7 +145,7 @@
 "pad": "0",
 "drill_mm": 1.199,
 "slot": true,
-"annular_mm": 0.2,
+"annular_mm": 0.151,
 "x": 136.18,
 "y": 54.75
 },
@@ -155,7 +155,7 @@
 "pad": "0",
 "drill_mm": 1.2,
 "slot": true,
-"annular_mm": 0.2,
+"annular_mm": 0.15,
 "x": 140.59,
 "y": 54.39
 },
@@ -776,16 +776,6 @@
 "drill_mm": 0.3,
 "slot": false,
 "annular_mm": 0.15,
-"x": 115.37,
-"y": 42.665
-},
-{
-"kind": "VIA",
-"ref": "GND",
-"pad": "",
-"drill_mm": 0.3,
-"slot": false,
-"annular_mm": 0.15,
 "x": 111.75,
 "y": 65.863
 },
@@ -1086,6 +1076,16 @@
 "drill_mm": 0.3,
 "slot": false,
 "annular_mm": 0.15,
+"x": 126.695,
+"y": 55.245
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
 "x": 130.5,
 "y": 76.0
 },
@@ -1116,6 +1116,16 @@
 "drill_mm": 0.3,
 "slot": false,
 "annular_mm": 0.15,
+"x": 116.28,
+"y": 43.0
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
 "x": 117.43,
 "y": 48.775
 },
@@ -1128,16 +1138,6 @@
 "annular_mm": 0.2,
 "x": 115.666,
 "y": 40.266
-},
-{
-"kind": "VIA",
-"ref": "GND",
-"pad": "",
-"drill_mm": 0.3,
-"slot": false,
-"annular_mm": 0.15,
-"x": 116.28,
-"y": 42.75
 },
 {
 "kind": "VIA",
@@ -1315,6 +1315,16 @@
 "pad": "",
 "drill_mm": 0.3,
 "slot": false,
+"annular_mm": 0.15,
+"x": 135.58,
+"y": 70.347
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
 "annular_mm": 0.2,
 "x": 106.622,
 "y": 75.331
@@ -1438,16 +1448,6 @@
 "annular_mm": 0.15,
 "x": 94.88,
 "y": 63.75
-},
-{
-"kind": "VIA",
-"ref": "GND",
-"pad": "",
-"drill_mm": 0.3,
-"slot": false,
-"annular_mm": 0.2,
-"x": 117.618,
-"y": 42.204
 },
 {
 "kind": "VIA",
@@ -1636,6 +1636,16 @@
 "drill_mm": 0.3,
 "slot": false,
 "annular_mm": 0.15,
+"x": 127.543,
+"y": 60.91
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
 "x": 108.25,
 "y": 65.863
 },
@@ -1688,6 +1698,16 @@
 "annular_mm": 0.2,
 "x": 114.079,
 "y": 73.567
+},
+{
+"kind": "VIA",
+"ref": "GND",
+"pad": "",
+"drill_mm": 0.3,
+"slot": false,
+"annular_mm": 0.15,
+"x": 140.245,
+"y": 70.375
 },
 {
 "kind": "VIA",
@@ -2121,26 +2141,6 @@
 },
 {
 "kind": "VIA",
-"ref": "USB_PWR",
-"pad": "",
-"drill_mm": 0.3,
-"slot": false,
-"annular_mm": 0.15,
-"x": 128.85,
-"y": 43.547
-},
-{
-"kind": "VIA",
-"ref": "USB_PWR",
-"pad": "",
-"drill_mm": 0.3,
-"slot": false,
-"annular_mm": 0.15,
-"x": 129.78,
-"y": 46.5
-},
-{
-"kind": "VIA",
 "ref": "BUS1O_TX",
 "pad": "",
 "drill_mm": 0.3,
@@ -2506,28 +2506,8 @@
 "drill_mm": 0.3,
 "slot": false,
 "annular_mm": 0.15,
-"x": 128.8,
-"y": 45.1
-},
-{
-"kind": "VIA",
-"ref": "USB_R_D-",
-"pad": "",
-"drill_mm": 0.3,
-"slot": false,
-"annular_mm": 0.15,
-"x": 113.635,
-"y": 42.75
-},
-{
-"kind": "VIA",
-"ref": "USB_R_D+",
-"pad": "",
-"drill_mm": 0.3,
-"slot": false,
-"annular_mm": 0.15,
-"x": 113.635,
-"y": 44.78
+"x": 129.8,
+"y": 43.6
 },
 {
 "kind": "VIA",
@@ -2537,7 +2517,7 @@
 "slot": false,
 "annular_mm": 0.15,
 "x": 127.9,
-"y": 45.65
+"y": 43.6
 },
 {
 "kind": "VIA",

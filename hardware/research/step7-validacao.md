@@ -1,6 +1,6 @@
 # STEP 7 — Validação automatizada (logs reais em `hardware/reports`)
 
-Data: 2026-10-28 10:16:52. Gerado por `hardware\scripts\step7_validate.py` (148 s).
+Data: 2026-10-29 15:59:16. Gerado por `hardware\scripts\step7_validate.py` (28 s).
 
 ## Resumo
 
@@ -25,16 +25,15 @@ Data: 2026-10-28 10:16:52. Gerado por `hardware\scripts\step7_validate.py` (148 
 | courtyards_overlap | 0 | 1 |
 | drill_out_of_range | 0 | 1 |
 | footprint_type_mismatch | 0 | 11 |
-| hole_clearance | 8 | 8 |
+| hole_clearance | 0 | 8 |
 | isolated_copper | 0 | 1 |
 | lib_footprint_mismatch | 73 | 67 |
-| silk_edge_clearance | 4 | 4 |
-| silk_over_copper | 1 | 0 |
-| silk_overlap | 4 | 3 |
+| silk_edge_clearance | 0 | 4 |
+| silk_overlap | 0 | 3 |
 | starved_thermal | 0 | 13 |
-| text_height | 45 | 82 |
+| text_height | 0 | 82 |
 
-Violações cuja assinatura (tipo + itens) **não existe no baseline**: 19
+Violações cuja assinatura (tipo + itens) **não existe no baseline**: 17
 - lib_footprint_mismatch [warning]: Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda' — Footprint D7
 - lib_footprint_mismatch [warning]: Footprint 'SOT95P230X110-3N' does not match copy in library 'BlackPanda' — Footprint D9
 - lib_footprint_mismatch [warning]: Footprint 'SOT23-3' does not match copy in library 'BlackPanda' — Footprint Q1
@@ -52,10 +51,8 @@ Violações cuja assinatura (tipo + itens) **não existe no baseline**: 19
 - lib_footprint_mismatch [warning]: Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial' — Footprint FID4
 - lib_footprint_mismatch [warning]: Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial' — Footprint FID6
 - lib_footprint_mismatch [warning]: Footprint 'Fiducial_1mm_Mask2mm' does not match copy in library 'Fiducial' — Footprint FID5
-- silk_over_copper [warning]: Silkscreen clipped by solder mask — Segment of P1 on F.Silkscreen <> Pad 1 [GND] of R1 on F.Cu
-- silk_overlap [warning]: Silkscreen clearance — Reference field of C23 <> Segment of Y1 on B.Silkscreen
 
-Nota: quase todas as 'novas' são do mesmo tipo das herdadas (text_height/lib_footprint_mismatch/silk) com itens renomeados (U7, C38–C63, R28–R33, J1, L5, D13/D14, FB1) ou deslocados pela placa +5 mm; as de cobre relevantes estão discutidas em `step5-layout-h725.md` §7.
+Nota: quase todas as 'novas' são do mesmo tipo das herdadas (text_height/lib_footprint_mismatch/silk) com itens renomeados (U7, C38–C63, R28–R33, J1, L5, D13/D14, FB1) ou deslocados pela placa +5 mm; as de cobre relevantes estão discutidas em `../research/step5-layout-h725.md` §7.
 
 ## 3. Netlist esquemático × PCB
 
@@ -79,18 +76,18 @@ Nota: quase todas as 'novas' são do mesmo tipo das herdadas (text_height/lib_fo
 ## 7. Manifestos
 
 - `Make-Manifest.ps1 -Step STEP7 -Original` exit 0:
-  - OUTPUT_ROOT manifest: 20789 files -> archive\manifests\OUTPUT_ROOT_STEP7_20261028_1017.sha256
+  - OUTPUT_ROOT manifest: 884 files -> C:\Users\costabr\Downloads\openpilot\openpilot-honda-city-brasil\archive\manifests\OUTPUT_ROOT_STEP7_20261029_1559.sha256
   - hardware/reference unchanged vs reference_clones.sha256: False
   - ORIGINAL vs BEFORE: IDENTICAL (377 files)
-  - docs/legacy-index.md rows: 14938
+  - docs/legacy-index.md rows: 561
 
 ## 8. Comandos executados
 
 | Comando | Exit | s | Log |
 |---|---|---|---|
-| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe sch erc --format json --severity-all -o C:\Users\costabr\Downloads\openpilot\HybridPanda_v2` | 0 | 3.9 | step7_erc.log |
-| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe pcb drc --format json --severity-all --units mm -o C:\Users\costabr\Downloads\openpilot\Hyb` | 0 | 5.6 | step7_drc.log |
-| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe sch export netlist --format kicadxml -o C:\Users\costabr\Downloads\openpilot\HybridPanda_v2` | 0 | 0.7 | step7_netlist.log |
-| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe sch export bom --fields Reference,Value,Footprint,${QUANTITY},${DNP},MPN,Manufacturer,Datas` | 0 | 0.7 | step7_bom.log |
-| `hardware\scripts\.venv\Scripts\python.exe C:\Users\costabr\Downloads\openpilot\HybridPanda_v2_202610` | 0 | 0.4 | step7_parity.log |
-| `powershell -NoProfile -ExecutionPolicy Bypass -File hardware\scripts\Make-Manifest.ps1 -Step STEP7 -` | 0 | 136.3 | step7_manifest.log |
+| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe sch erc --format json --severity-all -o C:\Users\costabr\Downloads\openpilot\openpilot-hond` | 0 | 8.2 | step7_erc.log |
+| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe pcb drc --format json --severity-all --units mm -o C:\Users\costabr\Downloads\openpilot\ope` | 0 | 7.8 | step7_drc.log |
+| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe sch export netlist --format kicadxml -o C:\Users\costabr\Downloads\openpilot\openpilot-hond` | 0 | 0.9 | step7_netlist.log |
+| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe sch export bom --fields Reference,Value,Footprint,${QUANTITY},${DNP},MPN,Manufacturer,Datas` | 0 | 0.8 | step7_bom.log |
+| `C:\Users\costabr\AppData\Local\Programs\KiCad\10.0\bin\python.exe C:\Users\costabr\Downloads\openpilot\openpilot-honda-city-brasil\hardware/scripts\parity_check` | 0 | 0.5 | step7_parity.log |
+| `powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\costabr\Downloads\openpilot\openpilot-honda-city-brasil\hardware/scripts\Make-Manifest.ps1 -Step ST` | 0 | 9.5 | step7_manifest.log |

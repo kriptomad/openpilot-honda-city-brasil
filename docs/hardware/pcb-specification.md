@@ -10,6 +10,11 @@ Primary sources: `hardware/hybrid-panda/HybridPanda.kicad_pcb`, `HybridPanda.kic
 `hardware/fabrication/gerbers/HybridPanda-job.gbrjob`, `hardware/reports/hybrid_DRC_final.json`.
 Numbers marked "extracted" were parsed from the KiCad S-expression files for this document.
 
+Updated 2026-10-29 after the software verification pass (`hardware/reports/verification-pcb/`): DRC 73 items
+(all `lib_footprint_mismatch`, intentional), 0 unconnected; USB netclass 0.35/0.15 mm; 240 vias, 268 holes;
+solder mask minimum web 0.1 mm; gerber review with connectivity comparison 0 shorts / 0 opens; fabrication
+package regenerated 2026-10-29. The board is intended to be ordered as a bare PCB and hand-assembled.
+
 ## 1. Board summary
 
 | Item | Value | Source |
@@ -25,8 +30,8 @@ Numbers marked "extracted" were parsed from the KiCad S-expression files for thi
 | Pads | 526 | extracted |
 | Nets | 142 named in the PCB file (62 real nets, 80 `unconnected-*` no-connect nets) | extracted |
 | Track segments | 1218 (F.Cu 628, B.Cu 352, In1.Cu 152, In2.Cu 86) | extracted |
-| Vias | 242 (203 x 0.6/0.3 mm, 39 x 0.7/0.3 mm), all through-hole, no blind/buried, no via-in-pad | extracted; `fabrication/readme.md` item 9 |
-| Through-hole parts | `P1` (OBD-C receptacle, 12 PTH 0.4 mm + 4 slots + 2 NPTH 0.8 mm), `U3` (USB-A, 2 PTH 2.5 mm), `U6` thermal vias (8 x 0.3 mm PTH) | `drill_table.md` |
+| Vias | 240 (0.6/0.3 mm and 0.7/0.3 mm), all through-hole, no blind/buried, no via-in-pad; 4 same-net thermal vias inside the `U8`-`U11` exposed pads | `step6_reports.json`; `fabrication/readme.md` item 5 |
+| Through-hole parts | `P1` (OBD-C receptacle, 12 PTH 0.4 mm + 4 slots + 2 NPTH 0.65 mm), `U3` (USB-A, 2 PTH 2.5 mm), `U6` thermal via-pads (8 x 0.3 mm PTH + 1 via) | `drill_table.md` |
 | Copper zones | 17: GND on all four layers; +3V3 on In1.Cu; +5V on F/B/In1 (x2)/In2; +12V and 12V_Protected on B.Cu; USB_PWR on F.Cu; L4 (switch node) on F.Cu; 6 keep-out areas | extracted |
 | Fiducials | 6 (`FID1`-`FID3` top, `FID4`-`FID6` bottom), PCB-only, no schematic symbol | extracted; `correcoes-aplicadas.md` |
 | Panelization | None (single board) | `fabrication/readme.md` |
@@ -97,20 +102,20 @@ Net classes:
 |---|---|---|---|---|
 | Default | all others | 0.2 mm | 0.7 / 0.3 mm | 0.2 / 0.25 mm |
 | CAN_DIFF | BUSx_H / BUSx_L | 0.25 mm | 0.7 / 0.3 mm | 0.25 / 0.2 mm |
-| USB | USB_D+/-, USB_R_D+/- | 0.2 mm | 0.7 / 0.3 mm | 0.2 / 0.25 mm |
+| USB | USB_D+/-, USB_R_D+/- | 0.35 mm | 0.6 / 0.3 mm | 0.35 / 0.15 mm (edge-coupled on B.Cu, `verification-pcb/usb-reroute.md`) |
 
 ## 5. Values used on the board
 
 | Parameter | Value | Source |
 |---|---|---|
 | Minimum track width present | 0.14 mm | extracted (on neck-down segments; most signal tracks 0.2 to 0.25 mm) |
-| Minimum copper clearance present | DRC passes at 0.1 mm; 0 `clearance` violations | `hybrid_DRC_final.json` |
+| Minimum copper clearance present | DRC passes at 0.1 mm; 0 `clearance` violations | `verification-pcb/drc_a9_final.json` |
 | Minimum drill | 0.300 mm (vias and `U6` thermal vias) | `drill_table.md` |
-| Via sizes used | 0.6/0.3 mm (203), 0.7/0.3 mm (39) | extracted |
+| Via sizes used | 0.6/0.3 mm and 0.7/0.3 mm (240 total) | `step6_reports.json` |
 | Minimum annular ring | PTH 0.125 mm, via 0.150 mm | `drill_table.md` |
-| Hole count | 270 (PTH 26, NPTH 2, via 242) | `drill_table.md`, `gerber_check.json` (Excellon vs PCB 270 vs 270) |
+| Hole count | 268 (PTH 26, NPTH 2, via 240) | `drill_table.md`, `gerber_check.json` (Excellon vs PCB 268 vs 268), `verification-pcb/gerber-review.md` |
 | Slots | 4 (1.199 to 1.2 mm wide, `P1` shell) | `drill_table.md` |
-| Largest holes | 2.5 mm PTH x2 (`U3`), 0.8 mm NPTH x2 (`P1`) | `drill_table.md` |
+| Largest holes | 2.5 mm PTH x2 (`U3`), 0.65 mm NPTH x2 (`P1`) | `drill_table.md` |
 | Smallest SMD pitch | 0.5 mm (`U7` LQFP-144, `U8`-`U11` HVSON-8) | footprints |
 | Smallest passives | 0402 (39 capacitors, 22 resistors) | extracted footprint counts |
 
@@ -122,40 +127,30 @@ check impedance (`fabrication/readme.md` item 1).
 | Pair | Target | Layer / geometry on board | Analytic estimate in repo | Status |
 |---|---|---|---|---|
 | CAN BUSx_H/L (4 pairs) | 120 ohm differential (bus nominal) | F.Cu / B.Cu microstrip, 0.25 mm width, 0.2 mm gap over 0.2 mm prepreg to GND | 108 to 143 ohm range reported by `step6_reports.py` | not confirmed; short traces between transceiver and `P1`, termination is in the vehicle harness, not on the board |
-| USB_R_D+/D- (full speed) | 90 ohm differential | In1.Cu coupled pair, 0.2 mm width, 0.3 mm gap, single layer up to `U13` (`correcoes-aplicadas.md` item 19) | not recomputed after the re-route | not confirmed; USB FS at 12 Mbit/s is tolerant, but nothing was measured |
+| USB_D+/- (full speed) | 90 ohm differential | B.Cu edge-coupled pair, 0.35 mm width, 0.15 mm gap, one via pair, skew < 0.3 mm (`verification-pcb/usb-reroute.md`, 2026-10-29) | `verification-pcb/impedance.md` (Hammerstad-Jensen / Kirschning-Jansen, file stackup and JLC7628) | not confirmed; USB FS at 12 Mbit/s is tolerant, but nothing was measured |
 
-Note: `fabrication/readme.md` item 2 still says that USB_D+/- was routed by Freerouting with
-vias and not as a coupled pair. That text predates SI/PI item 19, which re-routed
-`USB_R_D+/D-` as a coupled pair on In1.Cu. The MCU-side segments `USB_D+/-` (between `U7`
-and the 22 ohm series resistors `R20`/`R21`) remain as routed. Whether the gerbers in
-`hardware/fabrication/` reflect the post-item-19 board was not determined from the repo
-(both were imported in the same commit); regenerate the package before any order.
+Note: the fabrication package was regenerated on 2026-10-29 from the current board, after the USB re-route
+(`fabrication/readme.md` item 2 now describes the coupled pair on B.Cu).
 
 ## 7. DRC result summary
 
-Tool: kicad-cli 10.0.7, all severities, `hardware/reports/hybrid_DRC_final.json`
-(2026-10-28T10:16:47).
+Tool: kicad-cli 10.0.7, all severities, `hardware/reports/verification-pcb/drc_a9_final.json`
+(2026-10-29; history in `verification-pcb/drc-cleanup.md`: 135 items before the pass, `drc_a8_before.json`).
 
 | Category | Count | Nature |
 |---|---|---|
 | Unconnected items | 0 | |
 | Schematic parity | 0 | |
 | `clearance`, `shorting_items`, `courtyards_overlap`, `copper_edge_clearance`, `starved_thermal`, `drill_out_of_range`, `footprint_type_mismatch`, `track_width`, `via_dangling` | 0 | the last four categories were present in the baseline/intermediate boards and were eliminated by the correction scripts |
-| `lib_footprint_mismatch` | 73 | footprints in the board differ from the library copies (local edits, KiCad 10 library versions); informational |
-| `text_height` | 45 | silkscreen text below 0.8 mm, inherited from baseline (baseline had 82) |
-| `hole_clearance` | 8 | inherited from baseline (8/8); around `P1` / `U3` mounting holes |
-| `silk_edge_clearance` | 4 | inherited (4/4) |
-| `silk_overlap` | 4 | baseline 3 |
-| `silk_over_copper` | 1 | baseline 0; cosmetic |
-| **Total** | **135** | down from 182 before the SI/PI corrections (`correcoes-aplicadas.md`) |
+| `lib_footprint_mismatch` | 73 | footprints in the board differ from the library copies (local edits: ~61 graphics/3D path only, Q1/Q2/Q3/U5/Y1 corrected on the board, P1/U6/U12 documented); informational |
+| `text_height`, `hole_clearance`, `silk_edge_clearance`, `silk_overlap`, `silk_over_copper`, `solder_mask_bridge` | 0 | 62 items cleared on 2026-10-28/29 (`verification-pcb/drc-cleanup.md`) |
+| **Total** | **73** | down from 135 before the verification pass and 182 before the SI/PI corrections |
 
-All 135 remaining items are cosmetic or library-bookkeeping; none is an electrical
-violation. They were deliberately not cleared (D-37, "deferred"). A DRC run with the final
-board and an updated silkscreen is recommended before any order.
+The 73 remaining items are library bookkeeping only; none is an electrical violation.
 
 ## 8. Fabrication files
 
-Directory `hardware/fabrication/`, generated 2026-10-28 10:19:21 by
+Directory `hardware/fabrication/`, regenerated 2026-10-29 by
 `hardware/scripts/step8_fabricate.py` with KiCad 10.0.7 `kicad-cli`.
 
 ### 8.1 Gerbers (`gerbers/`, RS-274X, Protel extensions, no X2 attributes)
@@ -192,7 +187,7 @@ drill map as Gerber X2 (`.gbr`) and PDF for each.
 | `pdf/` | schematic, copper per layer (F, In1, In2, B), fabrication drawing top/bottom, assembly drawing top/bottom |
 | `3d/HybridPanda.step` | STEP export (28.2 MB; VRML-only models omitted, so some 3D bodies are missing) |
 | `drill_table.md`, `drill_table.json` | hole table |
-| `gerber_check.json` | syntactic gerber/Excellon check only; no viewer check was done |
+| `gerber_check.json` | syntactic gerber/Excellon check; the render, outline, drill and copper-connectivity comparison is in `hardware/reports/verification-pcb/gerber-review.md` |
 | `HybridPanda_gerbers_JLC.zip` | 16 entries: the 11 gerbers, the job file, PTH and NPTH drill files and the 2 drill-map PDFs; prepared for upload but **not to be uploaded** until the blockers below are closed |
 
 ## 9. Assembly notes
@@ -202,7 +197,7 @@ drill map as Gerber X2 (`.gbr`) and PDF for each.
   fiducials `FID4`-`FID6`). Exact side per reference is in `docs/hardware/bom.csv` (column
   `side`).
 - Through-hole / mixed: `P1` (OBD-C receptacle, SMD signal pads plus THT shell), `U3`
-  (USB-A, THT shell), both top. `U6` has 8 thermal vias under the exposed pad.
+  (USB-A, THT shell), both top. `U6` has 8 thermal via-pads + 1 via under the exposed pad; `U8`-`U11` one GND via each (`verification-pcb/hand-assembly.md`).
 - Fiducials: 3 per side (1 mm copper, 2 mm mask opening, standard KiCad fiducial
   footprints).
 - Paste layers were exported for both sides; stencil thickness is not specified in the repo
@@ -220,17 +215,16 @@ drill map as Gerber X2 (`.gbr`) and PDF for each.
 **DO NOT FABRICATE.** The package exists for archive and review. The blocking reasons, as
 listed in `hardware/fabrication/readme.md` and `docs/decisions.md` D-37:
 
-1. Impedance (CAN 120 ohm, USB 90 ohm) only estimated analytically; stackup not agreed
-   with a fabricator.
+1. Impedance (CAN 120 ohm, USB 90 ohm) only estimated analytically (addressed by software 2026-10-29:
+   `verification-pcb/impedance.md`, JLC7628 stackup); stackup not agreed with a fabricator.
 2. Zero physical validation: no board built, assembled or measured; the red panda firmware
    has never run on this hardware.
 3. BOM: 1 reference without MPN (`JP1`), 2 without LCSC (`JP1`, `U1`); "to verify" LCSC
    codes not confirmed; `U1` unavailable at JLC.
-4. 135 inherited DRC items (cosmetic) not cleared; silkscreen incomplete (52 refs).
-5. Gerbers not reviewed in a viewer (only syntactic check).
-6. CPL rotations not normalised.
-7. Possible mismatch between the fabrication export and the final board (see section 6
-   note); re-export required.
+4. Inherited DRC items: cleared on 2026-10-28/29 (135 -> 73 `lib_footprint_mismatch`, intentional); addressed by software, not physically verified.
+5. Gerbers: reviewed by software on 2026-10-29 (renders, outline, drill, copper connectivity vs netlist: 0 shorts / 0 opens, `verification-pcb/gerber-review.md`); a human look in GerbView is still listed in `fabrication/readme.md`.
+6. CPL rotations normalised with the JLC table (`verification-pcb/cpl-rotation.md`); only relevant if JLC assembly is ever ordered (bare PCB + hand assembly is the plan).
+7. Fabrication export regenerated from the final board on 2026-10-29 (`step8_fabricate.py`).
 8. Deferred SI/PI items (`correcoes-aplicadas.md`: 9, 10, 16, 21/22/23, 25, 27, 29, 34,
    36), `C8` package change, `U1` alternative, courtyard spacing, and a new enclosure
    (the step at the USB-A edge and the taller components were not checked against the

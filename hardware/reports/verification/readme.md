@@ -11,6 +11,8 @@ Date of snapshot: 2026-10-28 (PCB file mtime 15:36, git HEAD `0b4802a`, uncommit
 | `readme.md` | this summary |
 | `work/` | evidence: PCB/schematic snapshot (`snapshot.kicad_pcb`, `.kicad_sch`, `.kicad_pro`, `fp-lib-table`, `HybridPanda.pretty` copy), `board_dump.json`, `drc_snapshot.json`, `lib_compare_snapshot.json`, `jlc_rows.json`, fetched datasheets `ds/*.pdf`, helper scripts `gfx_dump.py`, `pdftool.py`, `dl.ps1` |
 
+Follow-up (2026-10-28/29): the PCB-side verification pass that acted on these findings is in [`../verification-pcb/`](../verification-pcb/) (impedance, USB re-route, CPL rotation, DRC cleanup, gerber review with connectivity comparison, hand-assembly review, thermal vias). Open items 1 (C23/C24 -> C1549, C64 -> C12530) and 7 (CPL rotation table) below were done there; item 2 is moot for a bare-PCB order (U1 bought from Mouser/Digi-Key).
+
 ## Method
 
 - BOM: `docs/hardware/bom.csv` parsed with Python csv; cross-read against `hardware/reports/bom-real/BOM_HYBRIDPANDA_v1.csv` and `hardware/fabrication/assembly/BOM_JLC.csv` + `CPL_JLC.csv`.

@@ -137,14 +137,16 @@ bbox_board = outline.BBox()
 vip, thermal_vias = [], []
 for v in vias:
     for p in pads:
-        if p.GetDrillSize().x == 0 and p.GetBoundingBox().Contains(v.GetPosition()):
+        if p.GetDrillSize().x == 0 and p.GetBoundingBox().Contains(v.GetPosition()) and \
+                (p.IsOnLayer(pcbnew.F_Cu) or p.IsOnLayer(pcbnew.B_Cu)):  # skip paste-only aperture pads (DFN EP paste split)
             l = pcbnew.F_Cu if p.IsOnLayer(pcbnew.F_Cu) else pcbnew.B_Cu
-            if p.GetEffectiveShape(l).Collide(pcbnew.SHAPE_CIRCLE(v.GetPosition(), v.GetWidth() // 2), 0):
-                rec = {"via": "%s @%.2f,%.2f d%.2f/%.2f" % (v.GetNetname(), ToMM(v.GetPosition().x), ToMM(v.GetPosition().y), ToMM(v.GetWidth()), ToMM(v.GetDrill())),
+            if p.GetEffectiveShape(l).Collide(pcbnew.SHAPE_CIRCLE(v.GetPosition(), v.GetWidth(l) // 2), 0):
+                rec = {"via": "%s @%.2f,%.2f d%.2f/%.2f" % (v.GetNetname(), ToMM(v.GetPosition().x), ToMM(v.GetPosition().y), ToMM(v.GetWidth(l)), ToMM(v.GetDrill())),
                        "pad": desc_pad(p), "mesma_rede": v.GetNetCode() == p.GetNetCode(), "footprint": p.GetParentFootprint().GetFPID().GetLibItemName().wx_str()}
-                sz = p.GetSize()
-                # same-net via inside an exposed/thermal pad (>= 2 mm both ways) is a deliberate thermal via, not a defect
-                if rec["mesma_rede"] and min(ToMM(sz.x), ToMM(sz.y)) >= 2.0:
+                sz = p.GetSize(l)
+                # same-net via inside an exposed/thermal pad (>= 1.5 mm both ways: DFN-8 EP 1.55x2.4, TPS5450 EP 2.95x4.9)
+                # is a deliberate thermal via, not a defect
+                if rec["mesma_rede"] and min(ToMM(sz.x), ToMM(sz.y)) >= 1.5:
                     thermal_vias.append(rec)
                 else:
                     vip.append(rec)
@@ -309,7 +311,7 @@ flags = []
 for r in bom:
     v, fp_, refs = r["Value"], r["Footprint"].split(":")[-1], r["Reference"]
     note = []
-    if not r.get("MPN"): note.append("sem MPN")
+    if not r.get("MPN") and not refs.startswith("JP"): note.append("sem MPN")  # JPx = solder jumper (copper only, no part)
     try:
         if "uF" in v.lower() or "µ" in v:
             uf = float(v.lower().replace("µf", "").replace("uf", "").replace(",", "."))
