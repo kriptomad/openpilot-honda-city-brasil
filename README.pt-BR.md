@@ -23,6 +23,7 @@ placa foi fabricada, nenhum panda foi gravado, nenhum carro foi fingerprintado.
 |---|---|---|
 | PCB Hybrid Panda (STM32H725ZGT6, 4 camadas) | [hardware/hybrid-panda](hardware/hybrid-panda) | Projeto completo e verificado por software (2026-10-29): DRC 0 clearance / 0 unconnected / 0 curtos / 0 paridade, 73 itens restantes todos `lib_footprint_mismatch` intencionais; ERC 0 erros; conectividade reconstruida dos gerbers 0 curto / 0 aberto; revisao independente pino a pino contra o firmware panda. **Nao verificado fisicamente**; pedido de PCB nua a criterio do dono. Nada construido. |
 | Firmware panda `revive-f4` (black panda no panda master atual) | [firmware/panda-revive-f4](firmware/panda-revive-f4) (submodulo) | Compila (debug e release), MISRA limpo, `test.sh` verde no fork. Nunca executado em placa. |
+| pandarevive (lado host do openpilot master para a black panda) | [docs/pandarevive.pt-br.md](docs/pandarevive.pt-br.md), repo [kriptomad/pandarevive](https://github.com/kriptomad/pandarevive) | Branch `revive-f4` do openpilot (4 commits sobre o master da commaai `0152aab4`): transporte USB de volta no `pandad`, gravacao de panda externa, testes. CI do openpilot verde em runners do GitHub. Nunca executado em placa. |
 | Firmware panda `hybrid-h725` (alvo Hybrid Panda) | [firmware/panda-hybrid-h725](firmware/panda-hybrid-h725) (submodulo) | Compila (`panda_h7`, `panda_h7_hybrid`, `panda_h7_ldo`), MISRA limpo. Nunca executado em placa (nao existe placa). |
 | Port do Honda City no openpilot v0.9.9 | [software/openpilot-v0.9.9-city-g7](software/openpilot-v0.9.9-city-g7) + [software/opendbc-v0.9.9-city-g7](software/opendbc-v0.9.9-city-g7) (submodulos) | Port completo, duas auditorias independentes, CI verde no fork (static, build, unit, cars 0-3; process replay difere apenas no bit esperado de `carParams.flags`). Nao testado em carro. |
 | APK standalone do flowpilot | [software/flowpilot-city-g7](software/flowpilot-city-g7) (submodulo) | APK compila no GitHub Actions. Inicia em um Samsung Galaxy S24 Ultra ate "waiting for controls" sem panda. Nao testado com panda nem carro. |
@@ -97,6 +98,7 @@ flowchart LR
 | [docs/protocol-v3.md](docs/protocol-v3.md) | O protocolo de trabalho seguido pelo projeto (historico). |
 | [docs/reference-sources.md](docs/reference-sources.md) | Clones upstream e commits fixados usados como referencia somente leitura. |
 | [docs/flashing/](docs/flashing) | Guia de gravacao do black panda para o City G7 (EN e pt-BR). |
+| [docs/pandarevive.pt-br.md](docs/pandarevive.pt-br.md) ([EN](docs/pandarevive.md)) | pandarevive: black panda no openpilot master atual; o que as branches `revive-f4` do panda e do openpilot restauram, estado do CI, o que nao esta feito. Aponta para [kriptomad/pandarevive](https://github.com/kriptomad/pandarevive). |
 | [docs/hardware/](docs/hardware) | Documentacao de hardware do Hybrid Panda: descricao do retrofit, BOM (`bom.md` + `bom.csv`), descricao do esquema, especificacao de fabricacao da PCB (EN e pt-BR). Apenas projeto; nao fabricado. |
 | [docs/legacy-index.md](docs/legacy-index.md) | Indice gerado do repositorio de desenvolvimento com os caminhos antigos, mantido para rastreabilidade. |
 | [hardware/hybrid-panda/](hardware/hybrid-panda) | Projeto KiCad: `HybridPanda.kicad_pcb`, `.kicad_sch`, `.kicad_pro`, footprints locais (`.pretty`), modelos 3D, simbolos; `snapshots/` guarda as copias baseline e STEP 5 da placa. |
@@ -274,7 +276,7 @@ radarless existe nas tres).
 |---|---|---|---|
 | panda do flowpilot (commaai/panda `abdc4185`, achatado no repo do flowpilot) | `panda/` dentro de [software/flowpilot-city-g7](software/flowpilot-city-g7) | APK do flowpilot (trilha A) | [firmware/prebuilt/flowpilot-black-panda](firmware/prebuilt/flowpilot-black-panda) |
 | submodulo panda do openpilot 0.9.9 (commaai/panda `e462c34d`) | `panda/` dentro de [software/openpilot-v0.9.9-city-g7](software/openpilot-v0.9.9-city-g7) | port openpilot v0.9.9 (trilha B) | nenhum; o `scons` compila e o `pandad` grava |
-| `revive-f4` (STM32F4 / black panda restaurado no panda master atual) | [firmware/panda-revive-f4](firmware/panda-revive-f4) | openpilot master futuro quando o lado host existir (pandarevive); testes de bancada do proprio firmware | [firmware/prebuilt/revive-f4-black-panda](firmware/prebuilt/revive-f4-black-panda) |
+| `revive-f4` (STM32F4 / black panda restaurado no panda master atual) | [firmware/panda-revive-f4](firmware/panda-revive-f4) | openpilot master com o lado host do pandarevive: [kriptomad/openpilot](https://github.com/kriptomad/openpilot) branch `revive-f4` (ver [docs/pandarevive.pt-br.md](docs/pandarevive.pt-br.md)); testes de bancada do proprio firmware | [firmware/prebuilt/revive-f4-black-panda](firmware/prebuilt/revive-f4-black-panda) |
 | `hybrid-h725` (alvo Hybrid Panda, H7) | [firmware/panda-hybrid-h725](firmware/panda-hybrid-h725) | PCB Hybrid Panda (nao existe placa) | nenhum |
 
 Hashes dos binarios pre-compilados (SHA-256; tambem em cada `SHA256SUMS.txt`):
@@ -331,7 +333,7 @@ de carState). Ambas em portugues.
 | [kriptomad/flowpilot-city-g7](https://github.com/kriptomad/flowpilot-city-g7) | Fork do flowpilot: branch `flowpilot-city-g7-brazil`, releases do APK. |
 | [kriptomad/PandaH7Openpilot](https://github.com/kriptomad/PandaH7Openpilot) | Historico de desenvolvimento / substituido por este repositorio. |
 | [kriptomad/Redesign-Panda-Black-Revival-Port-Firmware-City-G7](https://github.com/kriptomad/Redesign-Panda-Black-Revival-Port-Firmware-City-G7) | Historico de desenvolvimento / substituido por este repositorio. |
-| pandarevive (lado openpilot) | Placeholder: o lado host do openpilot para o `revive-f4` no master atual ainda nao existe (ver [hardware/research/pandarevive-scope.md](hardware/research/pandarevive-scope.md) secao 7). |
+| [kriptomad/pandarevive](https://github.com/kriptomad/pandarevive) | pandarevive: black panda no openpilot master atual. README (EN + pt-BR), STATUS.md com commits e resultados de CI, submodulos `panda` e `openpilot` (ambos branch `revive-f4`). Branch do fork: [kriptomad/openpilot `revive-f4`](https://github.com/kriptomad/openpilot/tree/revive-f4). |
 
 ## Roadmap / itens em aberto
 
